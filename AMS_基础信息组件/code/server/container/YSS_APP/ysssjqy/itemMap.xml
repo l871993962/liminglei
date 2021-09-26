@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Maps>
+	<!--连接到efundfatest数据库 相当于205测试环境-->
+    <!-- 2.5指标 -->
+    <Map version = "2.5" A0 = "101证券投资合计" c_key_code = "ZQTZHJ"  desc = "证券投资合计"/>
+    <Map version = "2.5" A0 = "102其中股票投资" c_key_code = "QZGPTZ"  desc = "股票投资"/>
+    <Map version = "2.5" A0 = "103其中债券投资" c_key_code = "QZZQTZ"  desc = "债券投资"/>
+    <Map version = "2.5" A0 = "104其中基金投资" c_key_code = "QZJJTZ"  desc = "基金投资"/>
+    <Map version = "2.5" A0 = "201流通股票投资合计" c_key_code = "LTGP_TZHJ"  desc = "流通股票投资合计"/>
+    <Map version = "2.5" A0 = "203[其中深圳流通股票]" c_key_code = "LTGP_SZ_TZHJ"  desc = "其中深圳流通股票"/>
+    <Map version = "2.5" A0 = "202[其中上海流通股票]" c_key_code = "LTGP_SH_TZHJ"  desc = "其中上海流通股票"/>
+    <Map version = "2.5" A0 = "401融资业务投资合计" c_key_code = "RZYWTZHJ"  desc = "融资业务投资合计"/>
+    <Map version = "2.5" A0 = "402融券业务投资合计" c_key_code = "RQYWTZHJ"  desc = "融券业务投资合计"/>
+    
+	<Map version = "2.5" A0 = "902今日单位净值：" c_key_code = "DWJZ"  desc = "单位净值"/>
+	<Map version = "2.5" A0 = "605负债类合计：" c_key_code = "FZHJ"  desc = "负债合计"/>
+	<Map version = "2.5" A0 = "601实收基金" c_key_code = "SSZB"  desc = "实收资本"/>
+	<Map version = "2.5" A0 = "601实收资本" c_key_code = "SSZB"  desc = "实收资本"/>
+	<Map version = "2.5" A0 = "603实收资本：" c_key_code = "SSZB"  desc = "实收资本"/>
+	<Map version = "2.5" A0 = "604资产类合计：" c_key_code = "ZCHJ"  desc = "资产合计"/>
+	<Map version = "2.5" A0 = "701基金资产净值：" c_key_code = "ZCJZ"  desc = "资产净值"/>
+	<Map version = "2.5" A0 = "602损益平准金未实现" c_key_code = "SYPZJ_WSX"  desc = "损益平准金-未实现"/>
+	<Map version = "2.5" A0 = "602未实现利得平准金" c_key_code = "SYPZJ_WSX"  desc = "损益平准金-未实现"/>
+	<Map version = "2.5" A0 = "603损益平准金" c_key_code = "SYPZJ"  desc = "损益平准金"/>
+	<Map version = "2.5" A0 = "603损益平准金已实现" c_key_code = "SYPZJ_YSX"  desc = "损益平准金-已实现"/>
+	<Map version = "2.5" A0 = "901期初单位净值：" c_key_code = "QCDWJZ"  desc = "期初单位净值"/>
+	<Map version = "2.5" A0 = "902昨日单位净值：" c_key_code = "ZRDWJZ"  desc = "昨日单位净值"/>
+	<Map version = "2.5" A0 = "904累计派现金额：" c_key_code = "LJPXJE"  desc = "累计派现金额"/>
+	<Map version = "2.5" A0 = "914单位可分配收益：" c_key_code = "DWKFPSY"  desc = "单位可分配收益"/>
+	<Map version = "2.5" A0 = "913可分配收益：" c_key_code = "KFPSY"  desc = "可分配收益"/>
+	<Map version = "2.5" A0 = "912实现收益：" c_key_code = "SXSY"  desc = "实现收益"/>
+	<Map version = "2.5" A0 = "905累计单位净值：" c_key_code = "LJDWJZ"  desc = "累计单位净值"/>
+	<Map version = "2.5" A0 = "906单位现金差额：" c_key_code = "DWXJCE"  desc = "单位现金差额"/>
+	
+	<Map version = "2.5" A0 = "804偏离度：" c_key_code = "PLD"  desc = "偏离度"/>
+	<Map version = "2.5" A0 = "920现金类占净值比：" c_key_code = "XJLZJZB"  desc = "现金类占净值比"/> 
+	<Map version = "2.5" A0 = "903净值日增长率：" c_key_code = "RJZZZL"  desc = "日净值增长率"/>
+	<Map version = "2.5" A0 = "903净值增长率：" c_key_code = "BQJZZZL"  desc = "本期净值增长率"/>
+	<Map version = "2.5" A0 = "901基金本日收益：" c_key_code = "BRSY"  desc = "本日收益"/>
+	<Map version = "2.5" A0 = "902每万份基金收益：" c_key_code = "MWFSY"  desc = "每万份收益"/>
+	<Map version = "2.5" A0 = "903每万份基金本年累计收益：" c_key_code = "MWFBNLJSY"  desc = "每万份本年累计收益"/>
+	<Map version = "2.5" A0 = "904基金期间累计收益：" c_key_code = "LJBRSY"  desc = "期间累计本日收益"/>
+	<Map version = "2.5" A0 = "905基金期间累计万份收益：" c_key_code = "QJLJWFSY"  desc = "期间累计万份收益"/>
+	<Map version = "2.5" A0 = "907基金七日收益率：" c_key_code = "QRNHSYL"  desc = "七日年化收益率"/>
+	<Map version = "2.5" A0 = "908投资组合平均到期日：" c_key_code = "SYQX"  desc = "投资组合剩余期限"/> 
+	<Map version = "2.5" A0 = "922与影子价估值的偏离度：" c_key_code = "PLD"  desc = "偏离度"/>
+    <Map version = "2.5" A0 = "908投资组合平均到期日：" c_key_code = "SYQX"  desc = "投资组合剩余期限"/>
+
+    <Map version = "2.5" A0 = "920现金类占净值比：" c_key_code = "XJLZJZB"  desc = "现金类占净值比"/>
+	<Map version = "2.5" A0 = "901基金本日收益：" c_key_code = "BRSY"  desc = "本日收益"/>
+	<Map version = "2.5" A0 = "A24K值（TV看涨/TV看跌）" c_key_code = "TVKZBLCLS"  desc = "TV看涨/TV看跌"/>
+	<Map version = "2.5" A0 = "A32多空力量比（一天版）" c_key_code = "DKLLB"  desc = "多空力量比（一天版）"/>
+	<Map version = "2.5" A0 = "902每万份基金收益：" c_key_code = "MWFSY"  desc = "每万份收益"/>
+	<Map version = "2.5" A0 = "904基金期间累计收益：" c_key_code = "LJBRSY"  desc = "基金期间累计收益"/>
+	<Map version = "2.5" A0 = "905基金期间累计万份收益：" c_key_code = "QJLJWFSY"  desc = "基金期间累计万份收益"/>
+	
+	
+	<Map version = "2.5" A0 = "988基金年化收益率：" c_key_code = "NHSYL"  desc = "年化收益率"/>
+	<Map version = "2.5" A0 = "989基金七日浮动年化收益率：" c_key_code = "QRFDNHSYL"  desc = "七日浮动年化收益率"/>
+	<Map version = "2.5" A0 = "990基金七日固定年化收益率：" c_key_code = "QRGDNHSYL"  desc = "七日固定年化收益率"/>
+	<Map version = "2.5" A0 = "995基金累积固定收益：" c_key_code = "LJGDSY"  desc = "累积固定收益"/>
+	<Map version = "2.5" A0 = "994基金累积浮动收益：" c_key_code = "LJFDSY"  desc = "累积浮动收益"/>
+	<Map version = "2.5" A0 = "997基金固定收益率：" c_key_code = "GDSYL"  desc = "基金固定收益率"/>
+	<Map version = "2.5" A0 = "996基金浮动收益率：" c_key_code = "FDSYL"  desc = "基金浮动收益率"/>
+	<Map version = "2.5" A0 = "992基金固定收益：" c_key_code = "GDSY"  desc = "基金固定收益"/>
+	<Map version = "2.5" A0 = "991基金浮动收益：" c_key_code = "FDSY"  desc = "基金浮动收益"/>	
+	<Map version = "2.5" A0 = "600实收资本金额" c_key_code = "SSZBJE"  desc = "实收资本金额"/>
+	<Map version = "2.5" A0 = "520今日可用头寸" c_key_code = "JRKYTC"  desc = "今日可用头寸"/>
+	
+	<Map version = "2.5" A0 = "950预算最低备付金：" c_key_code = "YSZDBFJ"  desc = "预算最低备付金"/>
+	<Map version = "2.5" A0 = "951其中上海预算最低备付金：" c_key_code = "YSZDBFJ_SH"  desc = "其中上海预算最低备付金"/>
+	<Map version = "2.5" A0 = "951其中深圳预算最低备付金：" c_key_code = "YSZDBFJ_SZ"  desc = "其中深圳预算最低备付金"/>
+	<Map version = "2.5" A0 = "801净值(按成本)：" c_key_code = "ZJCB"  desc = "净值(成本)"/>
+	<Map version = "2.5" A0 = "802净值(按市值)：" c_key_code = "ZJSZ"  desc = "净值(市值)"/>
+	<Map version = "2.5" A0 = "803偏离金额：" c_key_code = "PLJE"  desc = "偏离金额"/>
+	
+	
+	
+	
+	<!-- 4.0指标 -->	<Map version = "4.0" A0 = "8600" c_key_code = "JRKYTC"  desc = "今日可用头寸"/>
+		<Map version = "4.0" A0 = "9600" c_key_code = "DWJZ"  desc = "单位净值"/>	<Map version = "4.0" A0 = "02" c_key_code = "901"  desc = "基金单位净值"/>	<Map version = "4.0" A0 = "A9600" c_key_code = "901_162719"  desc = "今日单位净值"/>	<Map version = "4.0" A0 = "B9600" c_key_code = "901_004243"  desc = "今日单位净值"/>
+	<Map version = "4.0" A0 = "8801" c_key_code = "FZHJ"  desc = "负债合计"/>
+	<Map version = "4.0" A0 = "8700" c_key_code = "SSZB"  desc = "实收资本"/>	<Map version = "4.0" A0 = "04" c_key_code = "811"  desc = "实收资本"/>	<Map version = "4.0" A0 = "A400101" c_key_code = "811_162719"  desc = "实收资本"/>	<Map version = "4.0" A0 = "B400102" c_key_code = "811_004243"  desc = "实收资本"/>
+	<Map version = "4.0" A0 = "8800" c_key_code = "ZCHJ"  desc = "资产合计"/>
+	<Map version = "4.0" A0 = "9000" c_key_code = "ZCJZ"  desc = "资产净值"/>    <Map version = "4.0" A0 = "01" c_key_code = "841"  desc = "资产净值"/>	
+	<Map version = "4.0" A0 = "05" c_key_code = "849"  desc = "份额总净值"/>    <Map version = "4.0" A0 = "A4001" c_key_code = "841_162719"  desc = "资产净值"/>	    <Map version = "4.0" A0 = "B4001" c_key_code = "841_004243"  desc = "资产净值"/>			<Map version = "4.0" A0 = "8803" c_key_code = "SYPZJ_WSX"  desc = "损益平准金-未实现"/>
+	<Map version = "4.0" A0 = "8806" c_key_code = "SYPZJ_YSX"  desc = "损益平准金-已实现"/>    <Map version = "4.0" A0 = "A41040201000001" c_key_code = "920_162719"  desc = "实现收益"/>	    <Map version = "4.0" A0 = "B41040201000002" c_key_code = "920_004243"  desc = "实现收益"/>	 
+	<Map version = "4.0" A0 = "9991" c_key_code = "RJZZZL"  desc = "日净值增长率"/>
+	<Map version = "4.0" A0 = "9612" c_key_code = "LJDWJZ"  desc = "累计单位净值"/>    <Map version = "4.0" A0 = "03" c_key_code = "904"  desc = "累计单位净值"/>
+	
+	<!-- 恒生3.0指标 -->
+	<Map version = "3.0" A0 = "[证券投资]合计:" c_key_code = "ZQTZHJ"  desc = "证券投资合计"/>	
+    <Map version = "3.0" A0 = "其中股票投资:" c_key_code = "GPTZ"  desc = "股票投资"/>
+    <Map version = "3.0" A0 = "其中基金投资:" c_key_code = "QZJJTZ"  desc = "基金投资"/>
+    <Map version = "3.0" A0 = "其中债券投资:" c_key_code = "ZQTZ"  desc = "债券投资"/>
+    <Map version = "3.0" A0 = "实收资本金额" c_key_code = "SSZBJE"  desc = "实收资本金额"/>
+    <Map version = "3.0" A0 = "今日可用头寸" c_key_code = "JRKYTC"  desc = "今日可用头寸"/>
+    <Map version = "3.0" A0 = "今日单位净值:" c_key_code = "DWJZ"  desc = "单位净值"/>
+    <Map version = "3.0" A0 = "资产净值:" c_key_code = "ZCJZ"  desc = "资产净值"/>
+    <Map version = "3.0" A0 = "资产类合计:" c_key_code = "ZCHJ"  desc = "资产合计"/>
+    <Map version = "3.0" A0 = "负债类合计:" c_key_code = "FZHJ"  desc = "负债合计"/>	<!-- 4.5指标 4.5指标核对和其他版本相反,这里配置的是不需要核对的指标项-->	<Map version = "4.5" A0 = "债券投资" c_key_code = "ZQTZ"  desc = "债券投资"/> 	<Map version = "4.5" A0 = "今日可用头寸" c_key_code = "JRKYTC"  desc = "今日可用头寸"/> 	<Map version = "4.5" A0 = "其中债券投资" c_key_code = "QZZQTZ"  desc = "其中债券投资"/>   
+</Maps>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appinfo> 
+  <app c_APP_CODE="YSSDATAINTEGRATION" c_APP_NAME="数据集成系统" c_VERSION="1.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="REPORTCENTER" c_APP_NAME="报表中心" c_VERSION="1.0.0.1" c_DB_LINK="" c_FEATURE="1" c_LOG_LINK=""> 
+    <applink c_IP="192.168.16.139" c_PORT="${app_config_port}" c_SERVER_NAME="sofa/sofa-reportcent" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="XBRL" c_APP_NAME="信息披露" c_VERSION="1.0.0.1" c_DB_LINK="" c_FEATURE="1" c_LOG_LINK=""> 
+    <applink c_IP="192.168.16.139" c_PORT="8080" c_SERVER_NAME="XBRL" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSUCO" c_APP_NAME="核算业务系统" c_VERSION="1.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSPERIPHERAL" c_APP_NAME="对账外围接口" c_VERSION="1.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSDATAMIG" c_APP_NAME="数据迁移接口" c_VERSION="1.0.0.1" c_DB_LINK="ora39" c_FEATURE="0" c_LOG_LINK="ora39"> 
+    <applink c_IP="${app_config_ip}" c_PORT="8080" c_SERVER_NAME="YSSDATAMIG" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSCLEAR" c_APP_NAME="清算接口应用" c_VERSION="1.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSRECONCILIATION" c_APP_NAME="对账数据接收" c_VERSION="1.19.1.0.6" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="YSSELECRECO" c_APP_NAME="电子对账" c_VERSION="1.19.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSTRANSFER" c_APP_NAME="划款指令" c_VERSION="1.19.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSUNIFYPAY" c_APP_NAME="统一支付" c_VERSION="1.19.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSPOOL" c_APP_NAME="负债管理" c_VERSION="1.1.1.0.1" c_DB_LINK="v45zxzq" c_FEATURE="0" c_LOG_LINK="v45zxzq"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSALLOCATION" c_APP_NAME="资产分配应用" c_VERSION="1.1.1.0.1" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="YSSTA" c_APP_NAME="Ta销售管理" c_VERSION="1.0.0.1" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="YSSWORKFLOW" c_APP_NAME="流程管理" c_VERSION="1.0.0.0.0" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="WORKFLOWDEMO" c_APP_NAME="流程演示" c_VERSION="1.0.0.0.0" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="TASKSCHEDULER" c_APP_NAME="任务调度" c_VERSION="1.0.0.0.0" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSMAIL" c_APP_NAME="邮件应用" c_VERSION="1.0.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSOUTERDATAVERIFY" c_APP_NAME="外部数据核对" c_VERSION="1.19.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="YSSMONITOR" c_APP_NAME="业务监控应用" c_VERSION="1.0.0.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+    <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSCP" c_APP_NAME="通讯组件" c_VERSION="1.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="FastDbUpGrade" c_APP_NAME="数据库升级组件" c_VERSION="1.1.0.6" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="YSSINFO" c_APP_NAME="公共信息" c_VERSION="1.0.0.0.0" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="YSSAPI" c_APP_NAME="API应用" c_VERSION="1.1.1.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="YSSAVAL" c_APP_NAME="算法应用" c_VERSION="1.1.1.0.1" c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"/>  
+  <app c_APP_CODE="FASTCACHE" c_APP_NAME="缓存" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="FASTMQSUPPORT" c_APP_NAME="消息总线" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="YSSRIGHT" c_APP_NAME="权限框架" c_VERSION="1.0.0.1" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>  
+  <app c_APP_CODE="YSSSYSTEMMANAGER" c_APP_NAME="系统管理组件" c_VERSION="1.0.0.0" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>
+  <app c_APP_CODE="YSSDOCTOR" c_APP_NAME="性能诊断组件" c_VERSION="1.0.0.1" c_DB_LINK="" c_FEATURE="0" c_LOG_LINK=""/>
+   <app c_APP_CODE="YSSPRODUCTINFO" c_APP_NAME="产品信息" c_VERSION="1.0.0.0.0"  c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+     <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+  <app c_APP_CODE="YSSSECINFO" c_APP_NAME="资讯信息" c_VERSION="1.0.0.0.0"  c_DB_LINK="V45" c_FEATURE="0" c_LOG_LINK="V45"> 
+     <applink c_IP="${app_config_ip}" c_PORT="${app_config_port}" c_SERVER_NAME="YSSUCOBRIDGE" c_TYPE="HTTP"/> 
+  </app>  
+
+</appinfo>

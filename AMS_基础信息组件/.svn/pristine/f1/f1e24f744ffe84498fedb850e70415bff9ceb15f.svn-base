@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "QDII4.0公共类" >  
+		<Info_Cls name = "基本信息" >  
+			    <Info_Detail dateCol="" table="LSETLIST">LSETLIST_套账信息表</Info_Detail>			    
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0年份组合类" >  
+	    <Info_Cls name = "财务数据" >  
+		        <Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LCURRENCY">LCURRENCY_币种表</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LACCOUNT">LACCOUNT_科目表</Info_Detail>
+		        <Info_Detail dateCol="FDATE"  fsetCol ="C_FSET" table="A{year}{port}FCWVCH">FCWVCH_财务凭证</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LBALANCE">LBALANCE_余额表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABCELL">LTABCELL_报表格式表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABDATALIST">LTABDATALIST_报表数据列表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABLIST">LTABLIST_报表目录</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABDATA">LTABDATA_报表数据表</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0业务数据" >   
+		<Info_Cls name = "业务数据" >  
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_TRADE">DATA_TRADE_交易数据主表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_SUBTRADE">DATA_SUBTRADE_交易数据子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_RATETRADE">DATA_RATETRADE_外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FORWARDTRADE">DATA_FORWARDTRADE_外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_SECEXCHANGEOUT">DATA_SECEXCHANGEOUT_证券兑换-流出</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_SECEXCHANGEIN">DATA_SECEXCHANGEIN_证券兑换-流入</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_SECEXCHANGE">DATA_SECEXCHANGE_证券兑换</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_MULTICLASSNET">DATA_MULTICLASSNET_多CLASS资产净值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FUTURESTRADE">DATA_FUTURESTRADE_期货交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FUTSETTLEDETAIL">DATA_FUTSETTLEDETAIL_期货交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FUTTRADERELA">DATA_FUTTRADERELA_期货结算信息表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_INDEXFUTURESDATA">REP_INDEXFUTURESDATA_期货台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_GUESSVALUE">REP_GUESSVALUE_财务估值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_GUESSVALUE_B">REP_GUESSVALUE_B_财务估值表(旧)</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_TRADE">TA_TRADE_TA交易数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_SELLNET">TA_SELLNET_销售网点设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_CASHSETTLE">TA_CASHSETTLETA_现金结算链接设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_FEELINK">TA_FEELINKTA_费用链接设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_PORTCLS">TA_PORTCLS_组合分级设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_FUNDRIGHT">TA_FUNDRIGHTTA_基金权益信息</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0业务参数" >  
+	    <Info_Cls name = "业务参数" >
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_PORTFOLIO">PARA_PORTFOLIO_组合设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_PORTFOLIO_RELASHIP">PARA_PORTFOLIO_RELASHIP_资产组合关联信息表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_SECURITY">PARA_SECURITY_证券信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_FIXINTEREST">PARA_FIXINTEREST_债券信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_FORWARD">PARA_FORWARD_远期品种信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_INDEXFUTURES">PARA_INDEXFUTURES_股指期货信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_PURCHASE">PARA_PURCHASE_回购品种信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_CASH_SAVINGOUTACC">CASH_SAVINGOUTACC_定存流出帐户</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_CASH_SAVINGINACC">CASH_SAVINGINACC_定存流入帐户</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_CASH_CONSAVINGPRIEXT">CASH_CONSAVINGPRIEXT_协议定存本金提取</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_INDEX">PARA_INDEX_指数基本信息</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_CASHACCOUNT">PARA_CASHACCOUNT_现金账户设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_CASHACCLINK">PARA_CASHACCLINK_现金账户关联设置</Info_Detail>
+				<Info_Detail dateCol="" table="TB_BASE_CHILDHOLIDAY">TB_BASE_CHILDHOLIDAY_节假日设置子表</Info_Detail>
+				<Info_Detail dateCol="" table="TB_BASE_CATEGORY">TB_BASE_CATEGORY_证券品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_INTERESTTIME">PARA_INTERESTTIME_债券浮息期间设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_DEPOSITDURATION">PARA_DEPOSITDURATION_定期存款期限设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_PARA_PERIOD">PARA_PERIOD_期间设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_PERFORMULA_RELA">PARA_PERFORMULA_RELA_比率公式关联设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_PARA_INVESTPAY">PARA_INVESTPAY_投资运营收支设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_PFOPER_PUBPARA">PFOPER_PUBPARA_通用业务参数设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_DAO_EXCHANGEBOND">DAO_EXCHANGEBOND_交易所债券参数设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_DAO_TRADEFEE">DAO_TRADEFEE_交易费用计算方式</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_DAO_FEEWAY">DAO_FEEWAY_费用承担方向</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0营改增" >  
+	    <Info_Cls name = "营改增相关表" >
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSINVOICESET">PARA_ZZSINVOICESET_增值税发票设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_TRANSFERVAT">REP_TRANSFERVAT_金融商品转让台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_UNINCREMENTVAT">REP_UNINCREMENTVAT_未实现估值增值台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_LOANSERINCOMEVAT">REP_LOANSERINCOMEVAT_贷款服务收入台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_INPUTTAXVAT">REP_INPUTTAXVAT_进项税台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_ZZSVAT">REP_ZZSVAT_增值税台帐修改记录</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPROJECTSET">PARA_ZZSPROJECTSET_增值税方案设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPROJECTSET_SPZR">PARA_ZZSPROJECTSET_SPZR_增值税方案设置-金融商品转让</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPROJECTSET_FWSR">PARA_ZZSPROJECTSET_FWSR_增值税方案设置-贷款服务收入</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPROJECTSET_JXS">PARA_ZZSPROJECTSET_JXS_增值税方案设置-进项税</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPROJECTSET_FJS">PARA_ZZSPROJECTSET_FJS_增值税方案设置-附加税</Info_Detail>
+		        <Info_Detail dateCol="" table="TB_BASE_ZZSTYPESET">BASE_ZZSTYPESET_增值税品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_ZZSPAYREC">DATA_ZZSPAYREC_增值税应收应付</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPARAM">PARA_ZZSPARAM_增值税参数设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSPARAM_INIT">PARA_ZZSPARAM_INIT_增值税参数设置-初始化时排除的证券</Info_Detail>
+		</Info_Cls> 
+        <Info_Cls name = "营改增相关表深圳" >
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_ADDTAXSTANDINGBOOK">DATA_ADDTAXSTANDINGBOOK_营改增台账表</Info_Detail>
+		</Info_Cls>  		
+	</Info_Cls>
+</Info_List> 

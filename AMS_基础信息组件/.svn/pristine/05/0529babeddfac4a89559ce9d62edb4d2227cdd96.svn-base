@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appinfo>
+	<!-- 资源库类型为database时kettle 资源库信息 -->
+  <rep RepositoryType="DbRepository">
+	<repinfo repName="admin" repPassword="admin" />
+	<repinfo job="" transform="" />
+  </rep>
+  <!-- 资源库类型为xml时kettle 资源库信息 -->
+  <!--rep RepositoryType="XmlRepository" name="" >
+	<repinfo fileName="" />
+	<repinfo fileName="" />
+  </rep-->
+</appinfo>

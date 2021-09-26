@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.yss</groupId>
+		<artifactId>Aggregator_Projects</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../../../../Aggregator/Aggregator_Projects/pom.xml</relativePath>
+	</parent>
+	
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>com.yss.ams.db.upgrade.syncdata</artifactId>
+	<name>com.yss.ams.db.upgrade.syncdata</name>
+	<version>${ams.jcxx.version}</version>
+
+	<dependencies>
+		<!-- lib中的依赖包 -->
+	
+		<!-- 定义在MF文件中的Require-Bundle -->
+		<dependency>
+		  <groupId>com.yss</groupId>
+		  <artifactId>org.eclipse.osgi</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>com.yss</groupId>
+		  <artifactId>com.yss.fast.db.upgrade.support</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>org.osgi</groupId>
+		  <artifactId>org.osgi.framework</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<!-- 自定义打包插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+            </plugin>
+		</plugins>
+	</build>
+
+</project>

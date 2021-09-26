@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sso-config>
+    <sso-server check-login-ip="true" enable="true">
+        <authentication-chain>
+            <!--
+                可不进行任何<bean/>配置，则系统不使用任何验证器。
+                <bean />
+                    功能：对应一个登录认证配置
+                        name:   认证名称，如：用户名密码认证。  必须配置
+                        class:  对应的验证接口实现全路径类名。此处使用的服务必须发布为OSGI服务。必须配置
+                        enable: true 开启验证  false 不开启验证 必须配置
+            -->
+            <bean enable="true" name="用户名密码认证"
+                  class="com.yss.fast.sso.server.core.handler.UserPasswordAuthenticationHandler"/>
+        </authentication-chain>
+
+        <!-- 服务端策略配置,整个策略配置可以不用配置，相关配置采用默认值。 -->
+        <strategy-config>
+            <!-- 票据过期时间,单位(分)，默认30分
+                 当设置为-1时，则票据将永不过期，除非用户登出操作则票据过期。
+                 其他<=0的情况，则设置为默认值30分钟。
+            -->
+            <ticket-timeout>5</ticket-timeout>
+            <!-- 票据存储方式，默认内存,目前仅支持memory -->
+            <ticket-storage>memory</ticket-storage>
+            <!-- 成功登录后重定向服务地址，默认转向到fast门户。如果请求中未带有service参数(目标访问的地址)，则重定向到该参数所配置的页面。-->
+            <redirect-service>http://${sso_server_url}/YSSUCOBRIDGE/webplus/index</redirect-service>
+
+            <!-- 数据签名
+                 对服务端ST验证返回的结果报文进行数字签名，校验报文是否被篡改。
+    `				 此功能尚未提供
+                enable  true 开启数字签名 false 关闭数字签名
+                默认不开启数据签名,，需与SSO-Client的数据签名配置配合使用 -->
+            <signature enable="false">
+                <!-- 私钥存储路径 开启该配置，则此配置为必须配置
+                    支持全局变量配置变量名称 ${SIGN.KEYSTORE.DIR} -> 代表 localhost-env.ini文件中 SIGN.KEYSTORE.DIR的值。
+                -->
+                <keystore>D:\\security\private.key</keystore>
+            </signature>
+            <!-- 服务端向客户端连接时，等待连接成功所允许最大的等待时间，默认为60秒 单位：秒-->
+            <http-connect-timeout>60</http-connect-timeout>
+            <!-- 服务端向客户端连接成功，等待响应所允许最大的等待时间，默认为60秒 单位：秒-->
+            <http-resp-timeout>60</http-resp-timeout>
+        </strategy-config>
+        <!-- 视图相关配置为必须配置。-->
+        <view-config>
+            <!-- 使用的视图目录, 默认值为使用default。
+                com.yss.fast.sso.server.web.support 提供 default视图。
+            -->
+            <used-view>default</used-view>
+            <!-- 使用的认证扩展名, 默认值为使用default视图。
+                com.yss.fast.sso.server.web.support 提供 compatible验证方式。
+            -->
+            <auth-name>default</auth-name>
+            <!-- 相关参数配置-->
+            <params>
+                <!-- 关闭前端加密功能，默认false， 仅适用fast默认提供的视图有效。 -->
+                <param key="enable-encrypt" value="true"></param>
+                <!-- 开启密码记忆功能，默认false， -->
+                <param key="enable-remember" value="false"></param>
+                <!-- 设置记录密码Cookie有效时间，默认60 单位(分钟) -1表示永不过期 -->
+                <param key="remember-cookie-maxage" value="30"></param>
+            </params>
+        </view-config>
+    </sso-server>
+</sso-config>

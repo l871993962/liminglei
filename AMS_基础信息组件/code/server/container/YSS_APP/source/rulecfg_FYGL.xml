@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="FYGL" name="费用关联" funcode="feerelatequy" datasource="DB">
+	<!-- 数据导出配置 -->
+	<exp>
+		<data id="feerela">
+			<table-name>T_S_DF_FEE_RELA</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_DF_FEE_RELA where C_FEE_CODE in (select * from table(?)) and C_TD_TYPE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_FEE_CODE</value>
+					</cons_column>
+
+					<cons_column ref-data="" ref-column="">
+						<value>C_TD_TYPE</value>
+					</cons_column>					
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+
+		<data id="item">
+			<table-name>T_S_IE_ITEM</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_IE_ITEM  where  C_IE_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="feerela" ref-column="C_IE_CODE">
+						<value>C_IE_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>
+
+	</exp>
+	
+	<imp>
+		<outfile name="feerela">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>C_FEE_CODE</check_column>
+			<check_column>C_TD_TYPE</check_column>			
+		</outfile>
+
+		<outfile name="item">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>C_IE_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

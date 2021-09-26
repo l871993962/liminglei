@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品信息 -->
+<product code="BaseInfo" name="基础参数">
+	<module_1 code="DICT" name="数据字典" >
+	</module_1>
+	<module_1 code="PUBLIC" name="公共信息" >
+	</module_1>
+</product>

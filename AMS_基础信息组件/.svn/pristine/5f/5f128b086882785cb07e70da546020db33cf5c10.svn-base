@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="JYSX" name="交易属性" funcode="dtatdattrquy" datasource="DB">
+	<exp>
+		<data id="dtatd">
+			<table-name>T_S_DTA_TD_ATTR</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_DTA_TD_ATTR  where C_DTA_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_DTA_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="dtatd">
+			<check_column>C_DTA_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

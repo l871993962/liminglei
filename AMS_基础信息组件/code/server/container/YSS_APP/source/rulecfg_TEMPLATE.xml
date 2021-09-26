@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="TEMPLATE" name="文档模板" funcode="templateManager" datasource="FILE">
+	<exp>
+		<data id="template"></data>	
+	</exp>
+	
+	<imp>
+		<outfile name="template"></outfile>
+	</imp>
+</source>

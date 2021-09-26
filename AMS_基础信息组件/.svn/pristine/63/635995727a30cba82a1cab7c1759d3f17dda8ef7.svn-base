@@ -1,0 +1,4 @@
+还有组件未启动:com.yss.fast.workflow,com.yss.fast.db.migration,com.yss.ams.product.information,com.yss.fast.task,com.yss.ams.sec.information,com.yss.fast.webplus,com.yss.fast.doctor,
+还有组件未启动:com.yss.ams.product.information,com.yss.fast.task,com.yss.ams.sec.information,
+还有组件未启动:com.yss.fast.task,
+所有应用启动完成，请到地址:{}查看启动报告http://127.0.0.1:8083/YSSUCOBRIDGE/start/report

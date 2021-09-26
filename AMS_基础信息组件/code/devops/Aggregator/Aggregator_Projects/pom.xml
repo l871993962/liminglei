@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.yss</groupId>
+	<artifactId>Aggregator_Projects</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>AggregatorProjects</name>
+	
+	<properties>
+		<!-- AMS_产品管理组件 -->
+		<ams.cpgl.version>V1.300.7.0-SNAPSHOT</ams.cpgl.version>
+		
+		<!-- AMS_基础信息组件 -->
+		<ams.jcxx.version>V1.300.7.0-SNAPSHOT</ams.jcxx.version>
+
+		<!-- AMS_资讯信息组件 -->
+		<ams.zxxx.version>V1.300.7.0-SNAPSHOT</ams.zxxx.version>
+		
+		<!-- FAST、FAST_脚本升级 -->
+		<ams.fast.version>V3.0.0.0-SNAPSHOT</ams.fast.version>
+	</properties>
+		
+	<!-- 配置deploy时的私服仓库 -->
+	<distributionManagement>
+		<repository>
+			<id>release</id>
+			<name>Release Repository</name>
+			<url>${ReleaseRepository}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<name>Snapshot Repository</name>
+			<url>${SnapshotRepository}</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+	<!-- 依赖管理配置 -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- lib包依赖 -->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>curator-recipes</artifactId>
+			  <version>2.12.0</version>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>javax.servlet</artifactId>
+			  <version>3.0.0.v201112011016</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.core.runtime</artifactId>
+			  <version>3.9.100.v20131218-1515</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.core.runtime.compatibility</artifactId>
+			  <version>3.2.0.v20090413</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.equinox.common</artifactId>
+			  <version>3.6.200.v20130402-1505</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.equinox.http.servlet</artifactId>
+			  <version>1.1.400.v20130418-1354</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.equinox.http.registry</artifactId>
+			  <version>1.1.300.v20130402-1529</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.equinox.registry</artifactId>
+			  <version>3.5.301.v20130717-1549</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.equinox.jsp.jasper.registry</artifactId>
+			  <version>1.0.300.v20130327-1442</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.osgi</artifactId>
+			  <version>3.9.1.v20140110-1610</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>org.eclipse.osgi.services</artifactId>
+			  <version>3.3.100.v20130513-1956</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>org.osgi</groupId>
+			  <artifactId>org.osgi.framework</artifactId>
+			  <version>1.9.0</version>
+			  <scope>provided</scope>
+			</dependency>
+			
+			<!-- 其他组件依赖 -->
+			<!-- AMS_产品管理组件 -->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.product.information</artifactId>
+			  <version>${ams.cpgl.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.product.information.support</artifactId>
+			  <version>${ams.cpgl.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.product.plm.support</artifactId>
+			  <version>${ams.cpgl.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.xbrl.support</artifactId>
+			  <version>${ams.cpgl.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.db.upgrade.productinfo</artifactId>
+			  <version>${ams.cpgl.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+		
+			<!-- AMS_基础信息组件 -->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.base.information</artifactId>
+			  <version>${ams.jcxx.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.base.information.support</artifactId>
+			  <version>${ams.jcxx.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.syncdata.support</artifactId>
+			  <version>${ams.jcxx.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			 
+			<!-- AMS资讯信息组件 -->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.ams.sec.information.support</artifactId>
+			  <version>${ams.zxxx.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+
+			<!-- FAST -->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.communicationProtocol.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.atomicdata</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.atomicdata.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>	
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.cache</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.db.upgrade.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.doctor</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.doctor.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.document.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.mq.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.right.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.runtime</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.runtime.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.servicecenter.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<!--
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.sso</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			-->
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.sso.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.systemmanager.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.task.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>	
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.webplus</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.webplus.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.workflow</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.workflow.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.framework</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.platform.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.dataintegration</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.dataintegration.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.deployment</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.monitor</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.monitor.support</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.uco.reference</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			<dependency>
+			  <groupId>com.yss</groupId>
+			  <artifactId>com.yss.fast.doctor.reference</artifactId>
+			  <version>${ams.fast.version}</version>
+			  <scope>provided</scope>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>
+	
+	<!-- 插件与目录等配置 -->
+	<build>
+		<!-- 插件配置 -->
+		<pluginManagement>
+			<plugins>
+				<!-- 编译插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.5.1</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+				<!-- 自定义打包插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-assembly-plugin</artifactId>
+	                <configuration>
+	                	<!-- 打出来的jar名称不含Assembly Descriptor文件id -->
+	                    <appendAssemblyId>false</appendAssemblyId>
+	                    <!-- 指定Assembly Descriptor -->
+	                    <descriptors>  
+					        <descriptor>assemblies.xml</descriptor>  
+					    </descriptors>
+	                    <archive> 
+	                    	<!-- 指定构建jar中的MANIFEST.MF -->
+						    <manifestFile>META-INF/MANIFEST.MF</manifestFile>  
+						</archive>
+						<!-- 输出构建的jar到哪个目录 -->
+	                    <outputDirectory>target</outputDirectory>
+	               </configuration>
+	               <!-- 绑定到package生命周期 -->
+	                <executions>
+	                    <execution>
+	                        <id>make-assembly</id>
+	                        <phase>package</phase>
+	                        <goals>
+	                            <goal>single</goal>
+	                        </goals>
+	                    </execution>
+	                </executions>
+	            </plugin>
+				
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-pmd-plugin</artifactId>
+					<version>3.11.0</version>
+					<configuration>
+					   <linkXref>true</linkXref>
+					   <sourceEncoding>utf-8</sourceEncoding>
+					   <targetJdk>1.6</targetJdk>
+					   <rulesets>
+							<!-- <ruleset>/rulesets/java/yss-rule.xml</ruleset> -->
+							<ruleset>D:\Jenkins\rules\yss-rule.xml</ruleset>
+							<!-- <ruleset>/rulesets/java/maven-pmd-plugin-default.xml</ruleset> -->
+					   </rulesets>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+				  <groupId>org.apache.maven.plugins</groupId>
+				  <artifactId>maven-jxr-plugin</artifactId>
+				  <version>3.0.0</version>
+				  <configuration>
+					   <inputEncoding>utf-8</inputEncoding>
+				  </configuration>
+				</plugin>
+				
+				<plugin>
+				  <groupId>org.apache.maven.plugins</groupId>
+				  <artifactId>maven-checkstyle-plugin</artifactId>
+				  <version>3.0.0</version>
+				  <configuration>
+					<!-- <configLocation>config/maven_checks.xml</configLocation> -->
+					<configLocation>D:\Jenkins\rules\yss-checkstyle-rule.xml</configLocation>
+					<encoding>UTF-8</encoding>
+					<consoleOutput>false</consoleOutput>
+					<failsOnError>false</failsOnError>
+					<includeTestSourceDirectory>false</includeTestSourceDirectory>
+					<linkXref>false</linkXref>
+				  </configuration>
+				</plugin>
+				
+				<!-- findbugs插件 -->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>findbugs-maven-plugin</artifactId>
+					<version>2.5.5</version>
+					<configuration>
+						<!-- 设置分析工作的等级，可以为Min、Default和Max -->
+						<effort>Low</effort>
+						<!-- Low、Medium和High (Low最严格) -->
+						<threshold>Medium</threshold>
+						<failOnError>false</failOnError>
+						<includeTests>false</includeTests>
+						<!--findbugs需要忽略的错误的配置文件-->
+						<!-- <excludeFilterFile>findbugs/findbugs-exclude-filter.xml</excludeFilterFile> -->
+					</configuration> 
+					<!-- <executions>
+						<execution>
+							<id>run-findbugs</id>
+							<phase>package</phase>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions> -->
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	
+	<modules>
+		<!-- AMS_产品管理组件 -->
+		<!-- <module>../../AMS_产品管理组件/server/source/com.yss.ams.db.upgrade.plminfo</module> -->
+		<module>../../AMS_产品管理组件/server/source/com.yss.ams.db.upgrade.productinfo</module>
+		<!-- <module>../../AMS_产品管理组件/server/source/com.yss.ams.db.upgrade.xbrl</module> -->
+		<!-- <module>../../AMS_产品管理组件/server/source/com.yss.ams.plm.sys.databackfill</module> -->
+		<module>../../AMS_产品管理组件/server/source/com.yss.ams.product.information</module>
+		<module>../../AMS_产品管理组件/server/source/com.yss.ams.product.information.support</module>
+		<!-- <module>../../AMS_产品管理组件/server/source/com.yss.ams.product.plm</module>
+		<module>../../AMS_产品管理组件/server/source/com.yss.ams.product.plm.support</module> -->
+		<!-- <module>../../AMS_产品管理组件/server/source/com.yss.ams.xbrl</module>
+		<module>../../AMS_产品管理组件/server/source/com.yss.ams.xbrl.support</module> -->
+			
+		<!-- AMS_基础信息组件 -->
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.base.information</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.base.information.support</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.db.upgrade.baseinfo</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.db.upgrade.syncdata</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.syncdata</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ams.syncdata.support</module>
+		<module>../../AMS_基础信息组件/server/source/com.yss.ifa.szt.tool</module>
+
+		<!-- AMS_资讯信息组件 -->
+		<module>../../AMS_资讯信息组件/server/source/com.yss.ams.db.upgrade.secinfo</module>
+		<module>../../AMS_资讯信息组件/server/source/com.yss.ams.sec.information</module>
+		<module>../../AMS_资讯信息组件/server/source/com.yss.ams.sec.information.support</module>
+		
+		<!-- FAST 
+		<module>../../FAST/server/source/com.yss.communicationProtocol</module>
+		<module>../../FAST/server/source/com.yss.communicationProtocol.support</module>
+		<module>../../FAST/server/source/com.yss.fast.atomicdata</module>
+		<module>../../FAST/server/source/com.yss.fast.atomicdata.support</module>
+		<module>../../FAST/server/source/com.yss.fast.cache</module>
+		<module>../../FAST/server/source/com.yss.fast.db.upgrade</module>
+		<module>../../FAST/server/source/com.yss.fast.db.upgrade.support</module>
+		<module>../../FAST/server/source/com.yss.fast.doctor</module>
+		-->
+		<!-- <module>../../FAST/server/source/com.yss.fast.doctor.dbpool</module>
+		<module>../../FAST/server/source/com.yss.fast.doctor.server.thread</module> 
+		<module>../../FAST/server/source/com.yss.fast.doctor.support</module>
+		<module>../../FAST/server/source/com.yss.fast.document</module>
+		<module>../../FAST/server/source/com.yss.fast.document.support</module>
+		<module>../../FAST/server/source/com.yss.fast.mq</module>
+		-->
+		<!-- <module>../../FAST/server/source/com.yss.fast.mq.common</module>
+		<module>../../FAST/server/source/com.yss.fast.mq.support</module>
+		<module>../../FAST/server/source/com.yss.fast.right</module>
+		<module>../../FAST/server/source/com.yss.fast.right.support</module>
+		<module>../../FAST/server/source/com.yss.fast.runtime</module>
+		<module>../../FAST/server/source/com.yss.fast.runtime.support</module>
+		<module>../../FAST/server/source/com.yss.fast.servicecenter</module>
+		<module>../../FAST/server/source/com.yss.fast.servicecenter.support</module>
+		 -->
+		<!--<module>../../FAST/server/source/com.yss.fast.sso</module>
+		<module>../../FAST/server/source/com.yss.fast.sso.support</module>
+		<module>../../FAST/server/source/com.yss.fast.systemmanager</module>
+		<module>../../FAST/server/source/com.yss.fast.systemmanager.support</module>
+		<module>../../FAST/server/source/com.yss.fast.task</module>
+		<module>../../FAST/server/source/com.yss.fast.task.client</module>
+		<module>../../FAST/server/source/com.yss.fast.task.support</module>
+		<module>../../FAST/server/source/com.yss.fast.webplus</module>
+		<module>../../FAST/server/source/com.yss.fast.webplus.support</module>
+		<module>../../FAST/server/source/com.yss.fast.workflow</module>
+		<module>../../FAST/server/source/com.yss.fast.workflow.support</module>
+		<module>../../FAST/server/source/com.yss.fast.zklib</module>
+		<module>../../FAST/server/source/com.yss.fast.zookeeper</module>
+		<module>../../FAST/server/source/com.yss.framework</module>
+		<module>../../FAST/server/source/com.yss.platform.support</module>
+		<module>../../FAST/server/source/com.yss.uco.dataintegration</module>
+		<module>../../FAST/server/source/com.yss.uco.dataintegration.exp.automatic</module>
+		<module>../../FAST/server/source/com.yss.uco.dataintegration.imp.automatic</module>
+		<module>../../FAST/server/source/com.yss.uco.dataintegration.support</module>
+		<module>../../FAST/server/source/com.yss.uco.deployment</module>
+		<module>../../FAST/server/source/com.yss.uco.monitor</module>
+		<module>../../FAST/server/source/com.yss.uco.monitor.support</module>
+		<module>../../FAST/server/source/com.yss.uco.reference</module>
+		<module>../../FAST/server/source/com.yss.fast.doctor.reference</module>
+		-->
+		<!-- FAST_脚本升级 -->
+		<!--<module>../../FAST_脚本升级/server/com.yss.fast.db.upgrade.platform</module>-->
+	</modules>
+	
+</project>

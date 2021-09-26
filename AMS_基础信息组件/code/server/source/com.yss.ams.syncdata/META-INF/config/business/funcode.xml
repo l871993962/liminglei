@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systemCodes>
+	<!-- code为业务系统的系统标识 ：估值核算：SYS_GZHS;信息披露：SYS_XXPL; 场外交易:SYS_CWJY;支付平台:SYS_ZFPT;TA清算:SYS_TAQS-->
+	<systemCode code="SYS_GZHS" name="估值核算">
+		<!-- code为同步功能模块funcode;service为各处理服务接口-->
+		<funcode code = "productsInfo" name="产品基本信息" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncPort" 
+			serviceId="IPortSyncService"/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId="IFundAccSyncService"/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId="ICashAccService"/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId="IPortAccSyncService"/>
+		<funcode code = "tradeAccount" name="交易账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc" 
+			serviceId="IShAccSyncService"/>
+		<funcode code = "futureAccount" name="期货账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc" 
+			serviceId="IQhAccSyncService"/>
+		<funcode code = "subjectInfo" name="主体信息设置" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncSubjectInfo" 
+			serviceId="ISubjectInfoSyncService"/>
+		<funcode code = "saleOrg" name="销售机构管理" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncSaleOrg" 
+			serviceId="ISaleOrgSyncService"/>
+		<funcode code = "tradeUnitManage" name="交易单元管理" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeUnitManage" 
+			serviceId="ITradeUnitManageSyncService"/>
+		<funcode code = "tradeUnitBind" name="交易单元绑定" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeUnitBind" 
+			serviceId="ITradeUnitBindSyncService"/>
+	</systemCode>
+	<systemCode code="SYS_XXPL" name="信息披露">
+		<!-- code为同步功能模块funcode;service为各处理服务接口-->
+		<funcode code = "productsInfo" name="产品基本信息" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncPort" 
+			serviceId=""/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId=" "/>
+		<funcode code = "tradeAccount" name="交易账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc" 
+			serviceId=" "/>
+		<funcode code = "futureAccount" name="期货账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc" 
+			serviceId=" "/>
+	</systemCode>
+	<systemCode code="SYS_CWJY" name="场外交易">
+		<!-- code为同步功能模块funcode;service为各处理服务接口-->
+		<funcode code = "productsInfo" name="产品基本信息" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncPort" 
+			serviceId=""/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId=" "/>
+		<funcode code = "tradeAccount" name="交易账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc" 
+			serviceId="ICWFundAccSyncService"/>
+		<funcode code = "futureAccount" name="期货账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc" 
+			serviceId=" "/>
+	</systemCode>
+	<systemCode code="SYS_ZFPT" name="支付平台">
+		<!-- code为同步功能模块funcode;service为各处理服务接口-->
+		<funcode code = "productsInfo" name="产品基本信息" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncPort" 
+			serviceId=""/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId="IFundAccSyncService"/>
+		<funcode code = "tradeAccount" name="交易账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc" 
+			serviceId=" "/>
+		<funcode code = "futureAccount" name="期货账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc" 
+			serviceId=" "/>
+	</systemCode>
+	<systemCode code="SYS_TAQS" name="TA清算">
+		<!-- code为同步功能模块funcode;service为各处理服务接口-->
+		<funcode code = "productsInfo" name="产品基本信息" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncPort" 
+			serviceId=""/>
+		<funcode code = "bankAccount" name="银行账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc" 
+			serviceId=" "/>
+		<funcode code = "tradeAccount" name="交易账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc" 
+			serviceId=" "/>
+		<funcode code = "futureAccount" name="期货账户" pojo = "com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc" 
+			serviceId=" "/>
+	</systemCode>
+</systemCodes>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssInformation.Support</RootNamespace>
+    <AssemblyName>YssInformation.Support</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bi\AccountTree\Pojo\AccountTreeA.cs" />
+    <Compile Include="Bi\AccountTree\Pojo\AccountTreeB.cs" />
+    <Compile Include="Bi\AccountTree\Service\IAccountTreeADataService.cs" />
+    <Compile Include="Bi\AccountTree\Service\IAccountTreeAService.cs" />
+    <Compile Include="Bi\AccountTree\Service\IAccountTreeBService.cs" />
+    <Compile Include="Bi\Account\Pojo\AreaCity.cs" />
+    <Compile Include="Bi\Account\Pojo\CashAcc.cs" />
+    <Compile Include="Bi\Account\Pojo\FundAcc.cs" />
+    <Compile Include="Bi\Account\Pojo\PortRela.cs" />
+    <Compile Include="Bi\Account\Service\IAreaCityDataService.cs" />
+    <Compile Include="Bi\Account\Service\IFundAccDataService.cs" />
+    <Compile Include="Bi\Account\Service\IFundAccService.cs" />
+    <Compile Include="Bi\AssociationOrgan\Cache\OrgCache.cs" />
+    <Compile Include="Bi\AssociationOrgan\Pojo\Org.cs" />
+    <Compile Include="Bi\AssociationOrgan\Service\IOrgDataService.cs" />
+    <Compile Include="Bi\AssociationOrgan\Service\IOrgService.cs" />
+    <Compile Include="Bi\CuryPair\Pojo\CuryPair.cs" />
+    <Compile Include="Bi\CuryPair\Service\ICuryPairDataService.cs" />
+    <Compile Include="Bi\CuryPair\Service\ICuryPairService.cs" />
+    <Compile Include="Bi\DacType\Pojo\AccountType.cs" />
+    <Compile Include="Bi\DacType\Service\IAccountTypeService.cs" />
+    <Compile Include="Bi\DacType\Service\IAccountTypeDataService.cs" />
+    <Compile Include="Bi\Holidays\Service\IHDayDataService.cs" />
+    <Compile Include="Bi\Holidays\Service\IHdayService.cs" />
+    <Compile Include="Bi\Holidays_A\Pojo\Hday.cs" />
+    <Compile Include="Bi\Holidays_A\Pojo\HdayGen.cs" />
+    <Compile Include="Bi\Holidays_A\Pojo\HdayGroup.cs" />
+    <Compile Include="Bi\Holidays_A\Service\IHdayGroupService.cs" />
+    <Compile Include="Bi\IeLinks\Pojo\IeLink.cs" />
+    <Compile Include="Bi\IeLinks\Service\IIeLinkDataService.cs" />
+    <Compile Include="Bi\IeLinks\Service\IIeLinkService.cs" />
+    <Compile Include="Bi\Ies\Pojo\Ie.cs" />
+    <Compile Include="Bi\Ies\Service\IHkTypeService.cs" />
+    <Compile Include="Bi\Ies\Service\IIeDataService.cs" />
+    <Compile Include="Bi\Ies\Service\IIeService.cs" />
+    <Compile Include="Bi\Market\Pojo\Mkt.cs" />
+    <Compile Include="Bi\Market\Pojo\MktExtend.cs" />
+    <Compile Include="Bi\Market\Service\IMktDataService.cs" />
+    <Compile Include="Bi\Market\Service\IMktService.cs" />
+    <Compile Include="Bi\organmgr\Pojo\OrgMgr.cs" />
+    <Compile Include="Bi\organmgr\Service\IOrgMgrService.cs" />
+    <Compile Include="Bi\Region\Pojo\Area.cs" />
+    <Compile Include="Bi\Region\Service\IAreaDataService.cs" />
+    <Compile Include="Bi\Region\Service\IAreaService.cs" />
+    <Compile Include="Bi\SourceRecord\Pojo\SrcSign.cs" />
+    <Compile Include="Bi\SourceRecord\Service\ISrcSignService.cs" />
+    <Compile Include="Bi\TaselNet\Pojo\SalesNet.cs" />
+    <Compile Include="Bi\TaselNet\Service\INetDataService.cs" />
+    <Compile Include="Bi\TaselNet\Service\ISalesNetService.cs" />
+    <Compile Include="common\ServiceIdConstant.cs" />
+    <Compile Include="Context\AssociaType.cs" />
+    <Compile Include="Fun\BaseInfoUtil.cs" />
+    <Compile Include="Fun\ClsBizCons.cs" />
+    <Compile Include="Fun\ClsDaeMapping.cs" />
+    <Compile Include="Fun\ClsQuyStrUtil.cs" />
+    <Compile Include="Fun\Cons.cs" />
+    <Compile Include="Interface\IDaeDetailLoader.cs" />
+    <Compile Include="Interface\IDaeFactor.cs" />
+    <Compile Include="Interface\I_IE_RELA.cs" />
+    <Compile Include="Interface\I_SecVar.cs" />
+    <Compile Include="Pojo\ClsBaseDaeDeail.cs" />
+    <Compile Include="Pojo\Cls_DAE_ELEM.cs" />
+    <Compile Include="Pojo\MarketVoc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\YssTechnology.snk" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Pojo\AutomaticSetPathPojo.cs" />
+    <Compile Include="Sys\automaticSet\Pojo\AutomaticSetPojo.cs" />
+    <Compile Include="Sys\automaticSet\Service\IAutomaticSetPathService.cs" />
+    <Compile Include="Sys\automaticSet\Service\IAutomaticSetService.cs" />
+    <Compile Include="Sys\ConvertDict\Zdorg\Pojo\Cls_ZD_ORG.cs" />
+    <Compile Include="Sys\ConvertDict\Zdorg\Pojo\ZdCorpOrg.cs" />
+    <Compile Include="Sys\ConvertDict\Zdorg\Pojo\ZdOrgTreeView.cs" />
+    <Compile Include="Sys\ConvertDict\Zdorg\Service\IZdOrgService.cs" />
+    <Compile Include="Sys\ConvertDict\Zhzd\Pojo\Zhzd.cs" />
+    <Compile Include="Sys\ConvertDict\Zhzd\Service\IZhzdDataService.cs" />
+    <Compile Include="Sys\ConvertDict\Zhzd\Service\IZhzdService.cs" />
+    <Compile Include="Sys\DcCury\Pojo\DcCury.cs" />
+    <Compile Include="Sys\DcCury\Service\IDcCuryQuyService.cs" />
+    <Compile Include="Sys\DcCury\Service\IDcCuryService.cs" />
+    <Compile Include="Sys\DcCury\Service\IDCDataService.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\AccEleDetail.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\AccType.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\CashFlow.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\ClsDaeElem.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\Cls_DAT_ASS_TYPE.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DAI.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DatAssType.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DeExp.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DspPara.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DtatdAttr.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DttdMode.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DvaItem.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\DzType.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\FeeRelation.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\FinItem.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\IeItem.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\Indexdi.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\Mktsdi.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\SClIndex.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\SecVar.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\SecVarDi.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\SecVarExtend.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\TdChan.cs" />
+    <Compile Include="Sys\Dictionary\Pojo\Zzywgl_A.cs" />
+    <Compile Include="Sys\Dictionary\Service\IAccEleService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IAccProDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IAccTypeDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IAccTypeService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ICashFlowService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDaeElemDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDaeElemQueryDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDaeElemService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDaiDictService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDeExpService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDspParaService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDtaTdAttrDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDtatdAttrService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDtTdModeDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDttdModeService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDvaItemDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDvaItemService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IDzTypeDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IEDaiDictService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IFeeRelationService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IFinItemService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IIeItemDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IIeItemService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IIndexdiService.cs" />
+    <Compile Include="Sys\Dictionary\Service\IMktsdiService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ISClIndexService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ISecSeatDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ISecVarDataService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ISecVarDiService.cs" />
+    <Compile Include="Sys\Dictionary\Service\ISecVarService.cs" />
+    <Compile Include="Sys\PortBusinessRange\Pojo\PortBusinessRangePojo.cs" />
+    <Compile Include="Sys\PortBusinessRange\Service\IPortBusinessRangeService.cs" />
+    <Compile Include="Sys\Statepojo\StatePojo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bi\Holidays\Pojo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="产品基本信息_v3.0" />
+	<Info_Detail name="交易账户设置_v3.0" />
+	<Info_Detail name="交易渠道设置_v3.0" />
+	<Info_Detail name="现金流中间表_V3.0" />
+	<Info_Detail name="估值指标中间表_V3.0" />
+</Info_List> 

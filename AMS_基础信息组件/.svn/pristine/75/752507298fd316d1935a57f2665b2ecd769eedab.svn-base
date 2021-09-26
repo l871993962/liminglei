@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Check_List>
+	<Check_Detail c_dv_item_code_P="[root]" c_dv_item_code="GZBHD" >估值项核对</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="GZBHD"  c_dv_item_code="ckGZB" >估值表</Check_Detail> 
+
+	<Check_Detail c_dv_item_code_P="[root]"  c_dv_item_code="YEBHD" >余额项核对</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="YEBHD"  c_dv_item_code="ckYEB" >余额表</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="YEBHD"  c_dv_item_code="ckQCSI9" >I9期初</Check_Detail>
+	<!--<Check_Detail c_dv_item_code_P="YEBHD"  c_dv_item_code="ckLSYEB" >历史余额表</Check_Detail>-->
+
+	<Check_Detail c_dv_item_code_P="[root]"  c_dv_item_code="YGZTZHD">营改增台账</Check_Detail>
+	<Check_Detail c_dv_item_code_P="YGZTZHD" c_dv_item_code="ckYGZ_GZZZ" >增值税暂估台账表</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="YGZTZHD" c_dv_item_code="ckYGZ_LXSR_MX" >贷款服务收入台账表</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="YGZTZHD" c_dv_item_code="ckYGZ_CJSR_MX" >金融商品转让台账表</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="YGZTZHD" c_dv_item_code="HDGLBDS" >营改增关联表</Check_Detail> 
+
+	<Check_Detail c_dv_item_code_P="[root]"  c_dv_item_code="ETFHD" >ETF核对</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="ETFHD"  c_dv_item_code="ckETFGZB" >ETF估值表</Check_Detail> 
+	<Check_Detail c_dv_item_code_P="ETFHD"  c_dv_item_code="ckETF_TZB" >ETF台账表</Check_Detail> 
+
+	<!--<Check_Detail c_dv_item_code_P="[root]" c_dv_item_code="JYBHD" >交易项核对</Check_Detail>--> 
+	<!--<Check_Detail c_dv_item_code_P="JYBHD"  c_dv_item_code="ckJYB" >交易表(v45)</Check_Detail>--> 
+	<!--<Check_Detail c_dv_item_code_P="JYBHD"  c_dv_item_code="ckHZJKQSB" >汇总接口清算表(v25)</Check_Detail>--> 
+
+	<!--<Check_Detail c_dv_item_code_P="[root]" c_dv_item_code="PZBHD" >凭证项核对</Check_Detail>--> 
+	<!--<Check_Detail c_dv_item_code_P="PZBHD"  c_dv_item_code="ckPZB" >凭证表</Check_Detail>--> 
+
+	<!--<Check_Detail c_dv_item_code_P="[root]" c_dv_item_code="KCBHD" >库存项核对</Check_Detail>--> 
+	<!--<Check_Detail c_dv_item_code_P="KCBHD"  c_dv_item_code="ckQCS" >期初数</Check_Detail> -->
+	<!--<Check_Detail c_dv_item_code_P="KCBHD"  c_dv_item_code="ckTJLSKC" >统计历史库存</Check_Detail> -->
+</Check_List>

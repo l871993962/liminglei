@@ -1,0 +1,18 @@
+package com.yss.ams.base.information.support.fast.controller;
+
+import javax.ws.rs.Path;
+
+import com.yss.ams.base.information.common.YssServiceIdConstant;
+import com.yss.framework.api.commonInfo.controller.IFastHolidayController;
+import com.yss.framework.api.commonInfo.service.IFastHolidayService;
+import com.yss.framework.api.distributed.ProductLine;
+import com.yss.framework.api.restful.annotations.RestfulClient;
+
+@Path("")
+@RestfulClient(serviceId = YssServiceIdConstant.OSGI_BASEINFO,
+impl = "com.yss.ams.base.information.fast.service.FastHolidayService",
+interfaceClass = com.yss.framework.api.commonInfo.service.IFastHolidayService.class,
+productLine = ProductLine.PRODUCTINFO, serviceMapId = "IFastHolidayService", menuId = "IFastHolidayService")
+public interface IBaseFastHolidayController extends IFastHolidayController<IFastHolidayService> {
+
+}

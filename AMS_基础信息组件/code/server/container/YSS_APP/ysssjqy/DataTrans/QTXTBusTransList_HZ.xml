@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="基金成立信息_HS3.0"/>    
+	<Info_Detail name="产品权益信息_HS3.0"/>    
+	<Info_Detail name="对价派息业务_HS3.0"/>    
+	<Info_Detail name="债券交易业务_HS3.0"/>    
+	<Info_Detail name="债券交易业务_银行间分销_HS3.0"/>    
+	<Info_Detail name="证券送配业务_HS3.0"/>    
+	<Info_Detail name="开基申赎业务_基金_HS3.0"/>    
+	<Info_Detail name="开基申赎业务_理财产品_HS3.0"/>    
+	<Info_Detail name="理财产品业务_HS3.0"/>    
+	<Info_Detail name="凭证表_HS3.0"/>    
+	<Info_Detail name="期初转换_HS3.0"/>    
+	<Info_Detail name="估值表_HS3.0"/>    
+	<Info_Detail name="估值汇率行情_HS3.0"/>    
+	<Info_Detail name="股票交易业务_HS3.0"/>    
+	<Info_Detail name="更新凭证业务类型_HS3.0"/>    
+	<Info_Detail name="KmMapRuleHS"/>    
+	<Info_Detail name="updateKmCodeHS"/>    
+</Info_List> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="ZCLX" name="资产类型" funcode="acctypequy" datasource="DB">
+	<exp>
+		<data id="type">
+			<table-name>T_S_DAT_ASS_TYPE</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_DAT_ASS_TYPE where C_DAT_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_DAT_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="type">
+			<check_column>C_DAT_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

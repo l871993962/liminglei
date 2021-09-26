@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <services>
+      <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.AreaCityDataMapControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IAreaCityDataMapController" />
+      <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.AreaCityDataControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IAreaCityDataController" />
+      <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.FundAccDataControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IFundAccDataController" />
+      <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.FundAccControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IFundAccController" />
+      <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.PortRelaDataControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IPortRelaDataController" />
+  
+  	  <service class="com.yss.ams.base.information.modules.bi.accountTreeA.controller.impl.AccountTreeAControllerImpl" interface="com.yss.ams.base.information.support.bi.accountTreeA.controller.IAccountTreeAController" />
+      <service class="com.yss.ams.base.information.modules.bi.accountTreeA.controller.impl.AccountTreeADataControllerImpl" interface="com.yss.ams.base.information.support.bi.accountTreeA.controller.IAccountTreeADataController" />
+  
+      <service class="com.yss.ams.base.information.modules.bi.accountTreeB.controller.impl.AccountTreeBControllerImpl" interface="com.yss.ams.base.information.support.bi.accountTreeB.controller.IAccountTreeBController" />
+  
+  	  <service class="com.yss.ams.base.information.modules.bi.curypair.controller.impl.CuryPairControllerImpl" interface="com.yss.ams.base.information.support.bi.curypair.controller.ICuryPairController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.curypair.controller.impl.CuryPairDataControllerImpl" interface="com.yss.ams.base.information.support.bi.curypair.controller.ICuryPairDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.accountType.controller.impl.AccountTypeControllerImpl" interface="com.yss.ams.base.information.support.bi.dactype.controller.IAccountTypeController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.accountType.controller.impl.AccountTypeDataControllerImpl" interface="com.yss.ams.base.information.support.bi.dactype.controller.IAccountTypeDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.hday.controller.impl.HdayControllerImpl" interface="com.yss.ams.base.information.support.bi.hday.controller.IHdayController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.hdaygroup.controller.impl.HDayDataControllerImpl" interface="com.yss.ams.base.information.support.bi.hdaygroup.controller.IHDayDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.hdaygroup.controller.impl.HdayGroupControllerImpl" interface="com.yss.ams.base.information.support.bi.hdaygroup.controller.IHdayGroupController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.ie.controller.impl.IeControllerImpl" interface="com.yss.ams.base.information.support.bi.ie.controller.IIeController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.ie.controller.impl.IeDataControllerImpl" interface="com.yss.ams.base.information.support.bi.ie.controller.IIeDataController" />
+  	 
+  	  <service class="com.yss.ams.base.information.modules.bi.ieLink.controller.impl.FeeControllerImpl" interface="com.yss.ams.base.information.support.bi.ieLink.controller.IFeeController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.ieLink.controller.impl.FeeDataControllerImpl" interface="com.yss.ams.base.information.support.bi.ieLink.controller.IFeeDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.ieLink.controller.impl.IeLinkControllerImpl" interface="com.yss.ams.base.information.support.bi.ieLink.controller.IIeLinkController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.ieLink.controller.impl.IeLinkDataControllerImpl" interface="com.yss.ams.base.information.support.bi.ieLink.controller.IIeLinkDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.mkt.controller.impl.MktControllerImpl" interface="com.yss.ams.base.information.support.bi.mkt.controller.IMktController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.mkt.controller.impl.MktDataControllerImpl" interface="com.yss.ams.base.information.support.bi.mkt.controller.IMktDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.mkt.controller.impl.MktHDayDataControllerImpl" interface="com.yss.ams.base.information.support.bi.mkt.controller.IMktHDayDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.mkt.controller.impl.MktVarDataControllerImpl" interface="com.yss.ams.base.information.support.bi.mkt.controller.IMktVarDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.org.controller.impl.OrgControllerImpl" interface="com.yss.ams.base.information.support.bi.org.controller.IOrgController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.org.controller.impl.OrgDataControllerImpl" interface="com.yss.ams.base.information.support.bi.org.controller.IOrgDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.org.controller.impl.OrgLinkRelaControllerImpl" interface="com.yss.ams.base.information.support.bi.org.controller.IOrgLinkRelaController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.orgmgr.controller.impl.OrgMgrControllerImpl" interface="com.yss.ams.base.information.support.bi.orgmgr.controller.IOrgMgrController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.region.controller.impl.AreaControllerImpl" interface="com.yss.ams.base.information.support.bi.region.controller.IAreaController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.region.controller.impl.AreaDataControllerImpl" interface="com.yss.ams.base.information.support.bi.region.controller.IAreaDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.salesnet.controller.impl.NetDataControllerImpl" interface="com.yss.ams.base.information.support.bi.salesnet.controller.INetDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.salesnet.controller.impl.SalesNetControllerImpl" interface="com.yss.ams.base.information.support.bi.salesnet.controller.ISalesNetController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.srcsign.controller.impl.SrcSignControllerImpl" interface="com.yss.ams.base.information.support.bi.srcsign.controller.ISrcSignController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.tdchan.controller.impl.SecSeatDataControllerImpl" interface="com.yss.ams.base.information.support.bi.tdchan.controller.ISecSeatDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.accele.controller.impl.AccEleControllerImpl" interface="com.yss.ams.base.information.support.sys.accele.controller.IAccEleController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.accele.controller.impl.DaeElemDataControllerImpl" interface="com.yss.ams.base.information.support.sys.accele.controller.IDaeElemDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.acctype.controller.impl.AccTypeControllerImpl" interface="com.yss.ams.base.information.support.sys.acctype.controller.IAccTypeController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.acctype.controller.impl.AccTypeDataControllerImpl" interface="com.yss.ams.base.information.support.sys.acctype.controller.IAccTypeDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.cashflow.controller.impl.CashFlowControllerImpl" interface="com.yss.ams.base.information.support.sys.cashflow.controller.ICashFlowController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.convertdict.zdorg.controller.impl.ZdOrgControllerImpl" interface="com.yss.ams.base.information.support.sys.convertdict.zdorg.controller.IZdOrgController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.convertdict.zhzd.controller.impl.ZhzdControllerImpl" interface="com.yss.ams.base.information.support.sys.convertdict.zhzd.controller.IZhzdController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.convertdict.zhzd.controller.impl.ZhzdDataControllerImpl" interface="com.yss.ams.base.information.support.sys.convertdict.zhzd.controller.IZhzdDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.daeelem.controller.impl.DaeElemControllerImpl" interface="com.yss.ams.base.information.support.sys.daeelem.controller.IDaeElemController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dai.controller.impl.AccProControllerImpl" interface="com.yss.ams.base.information.support.sys.dai.controller.IAccProController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dai.controller.impl.AccProDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dai.controller.IAccProDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dai.controller.impl.DaiDictControllerImpl" interface="com.yss.ams.base.information.support.sys.dai.controller.IDaiDictController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dccury.controller.impl.DcCuryControllerImpl" interface="com.yss.ams.base.information.support.sys.dccury.controller.IDcCuryController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dccury.controller.impl.DCDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dccury.controller.IDCDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.deexp.controller.impl.DeExpControllerImpl" interface="com.yss.ams.base.information.support.sys.deexp.controller.IDeExpController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.dsppara.controller.impl.DspParaControllerImpl" interface="com.yss.ams.base.information.support.sys.dsppara.controller.IDspParaController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dtatdattr.controller.impl.DtatdAttrControllerImpl" interface="com.yss.ams.base.information.support.sys.dtatdattr.controller.IDtatdAttrController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dtatdattr.controller.impl.DtaTdAttrDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dtatdattr.controller.IDtaTdAttrDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dttdmode.controller.impl.DttdModeControllerImpl" interface="com.yss.ams.base.information.support.sys.dttdmode.controller.IDttdModeController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dttdmode.controller.impl.DtTdModeDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dttdmode.controller.IDtTdModeDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.dvaitem.controller.impl.DvaItemControllerImpl" interface="com.yss.ams.base.information.support.sys.dvaitem.controller.IDvaItemController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dvaitem.controller.impl.DvaItemDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dvaitem.controller.IDvaItemDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dztype.controller.impl.DzTypeDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dztype.controller.IDzTypeDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.feeRelation.controller.impl.FeeRelationControllerImpl" interface="com.yss.ams.base.information.support.sys.feeRelation.controller.IFeeRelationController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.finitem.controller.impl.FinItemControllerImpl" interface="com.yss.ams.base.information.support.sys.finitem.controller.IFinItemController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.ieItem.controller.impl.IeItemControllerImpl" interface="com.yss.ams.base.information.support.sys.ieItem.controller.IIeItemController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.ieItem.controller.impl.IeItemDataControllerImpl" interface="com.yss.ams.base.information.support.sys.ieItem.controller.IIeItemDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.indexdi.controller.impl.IndexdiControllerImpl" interface="com.yss.ams.base.information.support.sys.indexdi.controller.IIndexdiController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.mktsdi.controller.impl.MktsdiControllerImpl" interface="com.yss.ams.base.information.support.sys.mktsdi.controller.IMktsdiController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.portbusinessrange.controller.impl.PortBusinessRangeControllerImpl" interface="com.yss.ams.base.information.support.sys.portbusinessrange.controller.IPortBusinessRangeController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.sclindex.controller.impl.SClIndexControllerImpl" interface="com.yss.ams.base.information.support.sys.sclindex.controller.ISClIndexController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.secvar.controller.impl.SecVarControllerImpl" interface="com.yss.ams.base.information.support.sys.secvar.controller.ISecVarController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.secvar.controller.impl.SecVarDataControllerImpl" interface="com.yss.ams.base.information.support.sys.secvar.controller.ISecVarDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.secvardi.controller.impl.SecVarDiControllerImpl" interface="com.yss.ams.base.information.support.sys.secvardi.controller.ISecVarDiController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.voc.controller.impl.UcoVocControllerImpl" interface="com.yss.ams.base.information.support.sys.voc.controller.IUcoVocController" />
+  	  
+  	  <service class="com.yss.ams.base.information.util.holidays.controller.impl.HolidaysAideControllerImpl" interface="com.yss.ams.base.information.support.util.holidays.controller.IHolidaysAideController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.portbusinessrange.controller.impl.AutoRouteBusiControllerImpl" interface="com.yss.ams.base.information.support.sys.portbusinessrange.controller.IBaseAutoRouteBusiController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastAssetsControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastAssetsController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastOrgControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastOrgController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastHolidayControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastHolidayController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastDttdModeControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastDttdModeController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastMktDataControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastMktDataController" />
+  	  <service class="com.yss.ams.base.information.fast.controller.impl.FastPortOrgControllerImpl" interface="com.yss.ams.base.information.support.fast.controller.IBaseFastPortOrgController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.bi.ie.controller.impl.IeCacheDataControllerImpl" interface="com.yss.ams.base.information.support.bi.ie.controller.IIeCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.mkt.controller.impl.MktCacheControllerImpl" interface="com.yss.ams.base.information.support.bi.mkt.controller.IMktCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.ieItem.controller.impl.IeItemCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.ieItem.controller.IIeItemCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.tdchan.controller.impl.TdchanCacheDataControllerImpl" interface="com.yss.ams.base.information.support.bi.tdchan.controller.ITdchanCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.org.controller.impl.OrgCacheDataControllerImpl" interface="com.yss.ams.base.information.support.bi.org.controller.IOrgCacheDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.dtatdattr.controller.impl.DtaTdAttrCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dtatdattr.controller.IDtaTdAttrCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dai.controller.impl.DaiCacheDataController" interface="com.yss.ams.base.information.support.sys.dai.controller.IDaiCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dccury.controller.impl.DcCacheControllerImpl" interface="com.yss.ams.base.information.support.sys.dccury.controller.IDcCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dttdmode.controller.impl.DtTdModeCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dttdmode.controller.IDtTdModeCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.dvaitem.controller.impl.DvaItemCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.dvaitem.controller.IDvaItemCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.secvar.controller.impl.SecVarCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.secvar.controller.ISecVarCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.hdaygroup.controller.impl.HDayCacheDataControllerImpl" interface="com.yss.ams.base.information.support.bi.hdaygroup.controller.IHDayCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.sys.voc.controller.impl.UcoVocCacheDataControllerImpl" interface="com.yss.ams.base.information.support.sys.voc.controller.IUcoVocCacheDataController" />
+  	  <service class="com.yss.ams.base.information.modules.bi.account.controller.impl.FundAccCacheDataControllerImpl" interface="com.yss.ams.base.information.support.bi.account.controller.IFundAccCacheDataController" />
+  	  
+  	  <service class="com.yss.ams.base.information.modules.sys.automaticSet.controller.impl.AutomaticSetControllerImpl" interface="com.yss.ams.base.information.support.sys.automaticSet.controller.IAutomaticSetController" />
+  </services>

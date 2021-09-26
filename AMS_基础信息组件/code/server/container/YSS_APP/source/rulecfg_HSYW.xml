@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="HSYW" name="核算业务" funcode="dvaitemquy" datasource="DB">
+	<exp>
+		<data id="dvai">
+			<table-name>T_S_DVA_ITEM</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_DVA_ITEM  where C_DVA_ITEM_CODE in (select * from table(?)) </sql>
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_DVA_ITEM_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="dvai">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>C_DVA_ITEM_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

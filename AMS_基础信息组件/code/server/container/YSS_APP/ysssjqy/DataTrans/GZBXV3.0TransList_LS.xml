@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="创建中间表索引_v3.0" />
+	<Info_Detail name="估值指标中间表_V3.0" />
+	<Info_Detail name="产品基本信息_v3.0" />
+	<Info_Detail name="资产帐户信息表(MD_T_CSSYSJJ不存在)_v3.0" />
+	<Info_Detail name="资产帐户信息表(MD_T_CSSYSJJ存在)_v3.0" />
+	<Info_Detail name="回购代码转换中间表_V3.0" />
+	<Info_Detail name="回购品种对关系设置(一)_v3.0" />
+	<Info_Detail name="回购品种对关系设置(二)_v3.0" />
+	<Info_Detail name="证券品种对关系设置_v3.0" />
+	<Info_Detail name="现金流中间表_V3.0" />
+</Info_List> 

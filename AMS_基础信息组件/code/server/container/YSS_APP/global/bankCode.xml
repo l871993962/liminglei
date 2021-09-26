@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bankCodes>
+<!-- code为业务系统的系统标识，若没有配置则取默认default -->
+<systemId code="default">
+	<!-- code支付网关银行代码 ;value业务系统银行代码; isBeos 是否走平安BEOS-->
+	<!-- 中国银行 -->
+	<bankCode code = "BOC" value="BOC"  isBeos = "false"/>
+	<!-- 民生银行 -->
+	<bankCode code = "MSBANK" value="MSBANK"  isBeos = "false"/>
+	<!-- 工商银行 -->
+	<bankCode code = "ICBC" value="GHBANK"  isBeos = "false"/>
+	<!-- 农业银行 -->
+	<bankCode code = "ABC" value="ABC"  isBeos = "false"/>
+	<!-- 建设银行 -->
+	<bankCode code = "CCB" value="CCB"  isBeos = "false"/>
+	<!-- 交通银行 -->
+	<bankCode code = "COMM" value="BOCOM"  isBeos = "false"/>
+	<!-- 招商银行 -->
+	<bankCode code = "CMB" value="CMBC"  isBeos = "false"/>
+	<!-- 浦发银行 -->
+	<bankCode code = "SPDB" value="PFBANK"  isBeos = "false"/>
+	<!-- 中信银行 -->
+	<bankCode code = "ECITIC" value="ECITIC"  isBeos = "false"/>
+	<!-- 光大银行 -->
+	<bankCode code = "CEB" value="CEB"  isBeos = "false"/>
+	<!-- 上海银行 -->
+	<bankCode code = "BOS" value="BOS"  isBeos = "false"/>
+	<!-- 兴业银行 -->
+	<bankCode code = "CIB" value="CIB"  isBeos = "false"/>
+	<!-- 广发银行 -->
+	<bankCode code = "GDB" value="GDB"  isBeos = "false"/>
+	<!-- 汇丰银行 -->
+	<bankCode code = "HSBC" value="HSBC"  isBeos = "false"/>
+	<!-- 平安银行 -->
+	<bankCode code = "PABANK" value="PABANK"  isBeos = "false"/>
+	<!-- 宁波银行 -->
+	<bankCode code = "NBCB" value="NBBANK"  isBeos = "false"/>
+	<!-- 上清所 -->
+	<bankCode code = "SHCH" value="SHCH"  isBeos = "false"/>
+</systemId>
+<systemId name="">
+	<bankCode code = "" value=""  isBeos = "false"/>
+</systemId>
+</bankCodes>

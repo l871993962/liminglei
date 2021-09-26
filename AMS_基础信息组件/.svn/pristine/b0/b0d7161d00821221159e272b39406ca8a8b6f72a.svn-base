@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appinfo startInit="false">
+  <app c_APP_CODE="TEST" c_APP_NAME="TEST" c_VERSION="1.0.0.1" c_DB_LINK="v45pro_wng" c_FEATURE="0" c_LOG_LINK="v45pro_wng"> 
+    <applink c_IP="192.168.19.13" c_PORT="18013" c_SERVER_NAME="" c_TYPE="HTTP"/> 
+  </app> 
+</appinfo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="产品关联信息_v4.0"/>                
+	<Info_Detail name="期货台账_v4.0"/>                  
+	<Info_Detail name="期初数转换_按日期段_v4.0"/>            
+	<Info_Detail name="凭证查询_v4.0"/>                  
+	<Info_Detail name="估值报表生成_v4.0"/>                
+	<Info_Detail name="新债IPO_v4.0"/>                 
+	<Info_Detail name="回购交易业务_v4.0"/>                
+	<Info_Detail name="开放申赎业务_v4.0"/>                
+	<Info_Detail name="基金交易业务_v4.0"/>                
+	<Info_Detail name="债券交易业务_v4.0"/>                
+	<Info_Detail name="新股IPO_v4.0"/>                 
+	<Info_Detail name="股票交易业务_v4.0"/>                
+	<Info_Detail name="产品权益信息_v4.0"/>                
+	<Info_Detail name="对价派息业务_v4.0"/>             
+</Info_List> 

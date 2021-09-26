@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceParamCheck> 
+  <interfaces desc="接口参数配置"> 
+    <interface id="SHOW2003" desc="上交所行情" cfgCode="INFI_ZX_HQ_SH" paramcheck="SECCHECK_GP"/>  
+	<interface id="SHHQFAST" desc="上交所FAST行情" cfgCode="INFI_ZX_HQ_SHFAST" paramcheck="SECCHECK_GP"/>
+	<interface id="SJSHQ" desc="深交所行情" cfgCode="INFI_ZX_HQ_SZ" paramcheck="SECCHECK_GP"/>
+	<interface id="INFI_JY_V5_SJSXHHQ" desc="深交所现货行情_V5接口" cfgCode="INFI_JY_V5_SJSXHHQ" paramcheck="SECCHECK_GP"/>
+	<interface id="XSBZQHQ" desc="新三板行情" cfgCode="INFI_ZX_NQHQ" paramcheck="SECCHECK_GP"/>
+	<interface id="SJSGH" desc="上交所过户库" cfgCode="INFI_JY_GH_SH" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSGHNEW" desc="上交所过户库(新)" cfgCode="INFI_JY_GH_SH" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="DGH" desc="上交所大宗交易库" cfgCode="INFI_JY_DGH" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="BGH" desc="上交所大过户库" cfgCode="INFI_JY_BGH_SH" paramcheck="SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="ZGH" desc="上交所固定收益平台过户库" cfgCode="INFI_JY_ZGH_SH" paramcheck="SECCHECK_ZQ,CHECK_ACC"/>
+	<interface id="INFI_JY_LOF_SH" desc="上交所LOF场内申赎" cfgCode="" paramcheck="SECCHECK_JJ,CHECK_ACC"/>
+	<interface id="ZDJSMX" desc="上中登结算明细库" cfgCode="INFI_JY_JSMX" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="ZQBD" desc="上交所证券变动库" cfgCode="INFI_QY_ZQBD_SH" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="INFI_JY_QQJSMX" desc="上中登期权交易结算明细文件" cfgCode="INFI_JY_QQJSMX" paramcheck="SECCHECK_QQ,CHECK_ACC"/>
+	<interface id="INFI_JY_QQCCBD" desc="上中登期权合约持仓变动文件" cfgCode="INFI_JY_QQCCBD" paramcheck="SECCHECK_QQ,CHECK_ACC"/>
+	<interface id="OPHYCC" desc="上中登期权合约持仓文件" cfgCode="INFI_JY_QQ_OPHYCC" paramcheck="SECCHECK_QQ,CHECK_ACC"/>
+	<interface id="BJSJG" desc="新三板明细结果库" cfgCode="INFI_QY_BJSJG" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="NQHB" desc="新三板回报库" cfgCode="INFI_JY_NQHB" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="INFI_JY_JSMX_GGT" desc="沪港通结算明细库" cfgCode="INFI_JY_JSMX_GGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="TZXX_GGT" desc="沪港通通知信息" cfgCode="INFI_JC_TZXX_GGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="INFI_JY_ZQBD_GGT" desc="沪港通证券变动库" cfgCode="INFI_JY_ZQBD_GGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="INFI_JC_HBWJ_GGT" desc="沪港通业务回报库" cfgCode="INFI_JC_HBWJ_GGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="INFI_JY_JSHGTJY" desc="嘉实_沪股通交易数据接口" cfgCode="INFI_JY_JSHGTJY" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="SGTJSMX" desc="深港通交易结算明细接口" cfgCode="INFI_JY_JSMX_SGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="SGTZQBD" desc="深港通证券变动结果库接口" cfgCode="INFI_JY_ZQBD_SGT" paramcheck="SECCHECK_GP,CHECK_ACC"/>
+	<interface id="SJSHB" desc="深交所回报库" cfgCode="INFI_JY_HB_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSZHHB" desc="深交所综合回报库" cfgCode="INFI_JY_ZHHB_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSQZCX" desc="深交所V5交易前置程序接口" cfgCode="INFI_JY_V5_SJSQZCX" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSFXNEW" desc="深交所发行库清算(新)" cfgCode="INFI_QY_FXNEW_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,CHECK_ACC"/>
+	<interface id="INFI_JY_SJSLOFCNNEW" desc="深交所LOF场内申赎业务新格式" cfgCode="INFI_JY_LOFNEW_SZ" paramcheck="SECCHECK_JJ,CHECK_ACC"/>
+	<interface id="INFI_JY_SJSLOFCNNEWEQ" desc="深交所LOF场内申赎接口清算(新)二期" cfgCode="INFI_JY_LOFNEWEQ_SZ" paramcheck="SECCHECK_JJ,CHECK_ACC"/>
+	<interface id="INFI_JY_CJHZ" desc="成交汇总文件" cfgCode="INFI_JY_CJHZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSHB" desc="深交所回报库" cfgCode="INFI_JY_HB_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSGF" desc="深交所股份库" cfgCode="INFI_QY_GF_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSJG" desc="深交所结果库" cfgCode="INFI_QY_JG_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="QSMXYH" desc="深中登清算明细库文件(优化)" cfgCode="INFI_JY_QSMXNEW" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="SJSJGNEW" desc="深交所结果库清算(新)" cfgCode="INFI_QY_JGNEW_SZ" paramcheck="SECCHECK_GP,SECCHECK_ZQ,SECCHECK_JJ,SECCHECK_HG,CHECK_ACC"/>
+	<interface id="QH_TD_FORM" desc="中金所期货成交单文件" cfgCode="INFI_JY_CJD_ZJ" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="QH_SETTDETAIL" desc="中金所期货结算明细文件" cfgCode="INFI_ZX_HQ_ZJ" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="QH_DELIVERY" desc="中金所期货交割数据文件" cfgCode="INFI_JY_JGD_ZJ" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="INFI_JY_TRDATA_QH" desc="期货监控中心成交明细文件" cfgCode="INFI_JY_TRDATA_QH" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="INFI_JY_DELIVDETAILS" desc="期货监控中心交割明细数据" cfgCode="INFI_JY_DELIVDETAILS" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="INFI_ZX_HOLDDATA_QH" desc="期货监控中心持仓数据接口" cfgCode="INFI_ZX_HOLDDATA_QH" paramcheck="SECCHECK_QH,CHECK_ACC"/>
+	<interface id="GZQQDETAIL" desc="期权监控中心成交明细" cfgCode="INFI_JY_GZQQ_DETAIL" paramcheck="SECCHECK_QQ,CHECK_ACC"/>
+	<interface id="GZQQXQ" desc="股指期权行权数据接口" cfgCode="INFI_JY_GZQQ_XQ" paramcheck="SECCHECK_QQ"/>
+  </interfaces> 
+</InterfaceParamCheck>

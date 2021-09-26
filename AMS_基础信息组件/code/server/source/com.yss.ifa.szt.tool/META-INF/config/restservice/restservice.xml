@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <services>
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.DzParaControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IDzParaController" />
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.DzPortRelaControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IDzPortRelaController" />
+  	  <!-- <service class="com.yss.ifa.szt.tool.para.service.controller.impl.ElecParaControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IElecParaController" /> -->
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.ErParaControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IErParaController" />
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.ErParaDataControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IErParaDataController" />
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.ErVocDataControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IErVocDataController" />
+  	  <service class="com.yss.ifa.szt.tool.para.service.controller.impl.MrInfoControllerImpl" interface="com.yss.ifa.szt.tool.para.service.controller.IMrInfoController" />
+  	  <service class="com.yss.ifa.szt.tool.rptlog.controller.impl.ErRptLogControllerImpl" interface="com.yss.ifa.szt.tool.rptlog.controller.IErRptLogController" />
+  </services>

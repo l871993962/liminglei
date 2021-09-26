@@ -1,0 +1,113 @@
+20200904 10:25:35检测项目：com.yss.fast.config.check.dbsetting启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.kafka启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.license启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.mq启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.nosql启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.rpc启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.server启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.system.summary启动完成
+20200904 10:25:35检测项目：com.yss.fast.config.check.zoo启动完成
+20200904 10:25:35注册了com.yss.fast.config.check.dbsetting.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.kafka.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.license.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.mq.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.nosql.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.rpc.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.server.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.system.summary.service.impl的检测项
+20200904 10:25:35注册了com.yss.fast.config.check.zoo.service.impl的检测项
+20200904 10:25:38启动检测项目数量为：9，检测项目全部启动完成
+共有9个项目需要检测
+20200904 10:25:38开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200904 10:25:38开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200904 10:25:38开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200904 10:25:39开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200904 10:25:42开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200904 10:25:42开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200904 10:25:42开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集未通过检测:tomcat URIEncoding配置有误，不为utf-8
+有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+共有9个项目需要检测
+20200904 10:25:57开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200904 10:25:57开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200904 10:25:57开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200904 10:25:57开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200904 10:26:00开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200904 10:26:00开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200904 10:26:00开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集未通过检测:tomcat URIEncoding配置有误，不为utf-8
+系统启动失败！每隔15秒重试,现已失败【 2】 次，检测报告请见地址：有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+共有9个项目需要检测
+20200904 10:26:15开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200904 10:26:15开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200904 10:26:15开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200904 10:26:16开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200904 10:26:19开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200904 10:26:19开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200904 10:26:19开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集未通过检测:tomcat URIEncoding配置有误，不为utf-8
+系统启动失败！每隔15秒重试,现已失败【 3】 次，检测报告请见地址：有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+共有9个项目需要检测
+20200904 10:26:34开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200904 10:26:34开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200904 10:26:34开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200904 10:26:34开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200904 10:26:37开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200904 10:26:37开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200904 10:26:37开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集未通过检测:tomcat URIEncoding配置有误，不为utf-8
+系统启动失败！每隔15秒重试,现已失败【 4】 次，检测报告请见地址：有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理
+共有9个项目需要检测
+20200904 10:26:52开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200904 10:26:52开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200904 10:26:52开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200904 10:26:53开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200904 10:26:56开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200904 10:26:56开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200904 10:26:56开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63054, -Dcatalina.home=D:\trunkTomcat, -Djava.endorsed.dirs=D:\trunkTomcat\endorsed, -Dcatalina.base=D:\trunkTomcat, -Djava.io.tmpdir=D:\trunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集未通过检测:tomcat URIEncoding配置有误，不为utf-8
+系统启动失败！每隔15秒重试,现已失败【 5】 次，检测报告请见地址：有检测项未通过检测，请访问:http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html处理

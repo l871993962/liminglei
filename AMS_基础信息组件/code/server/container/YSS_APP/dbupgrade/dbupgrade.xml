@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--start 是否开启自动数据库升级, isDistribute:是否是分布式部署 dropIdxNotInCode:是否删除不存在代码中的索引-->
+<upgrade startInit="false" isDistribute = "false" dropIdxNotInCode="false">
+
+	<!-- 需要执行的组件代码列表 此项为必填项 -->
+	<needExcuteApp>FAST,BaseinfoDbUp,ProductinfoDbUp,SecinfoDbUp,ElecrecoDbUp,DATAMIG,MONITORPLATFORM,MONITOR,YssSyncDataDbUp,AlgorithmDbUp,YssUCODbUp,UnifypayDbUp,PlanlicidDbUp</needExcuteApp>
+
+	<!-- 需要跳过执行的脚本的需求，
+	用","或者"|"分隔，可使用多个skipReqIds节点-->
+	<skipReqIds>122</skipReqIds>
+	
+	<!-- 需要跳过执行的脚本的需求，
+	用","或者"|"分隔，可使用多个skipBugIds节点-->
+	<skipBugIds>233</skipBugIds>
+	
+	<!-- 表空间配置，component表示数据库升级组件的代码  table表示建表时使用的表空间，index表示建立索引时使用的表空间，不填使用默认表空间 -->
+	<tablespace component="YssUCODbUp" table="" index="" />
+	<tablespace component="FAST" table="" index="" />
+	
+	<!-- 配置升级组件在升级时需要指定的数据脚本的配置文件信息[相对于每个升级插件的META-INF/config/dbupgrade目录]
+	不填默认是data.xml -->
+	<updateXmlInfo component="FAST" data="" />
+	
+	<!--创建索引时使用的并行度(为数字)，不配置默认不开启并行，建议最大的并行度不要超过数据库所在电脑cpu的75%.且设置值是偶数 -->
+	<parallel></parallel>
+	
+	<!-- 升级组件执行顺序配置(多个之间用逗号分隔),不用配置FAST,其他配置的组件会按配置串行执行，未配置的会在最后串行执行。注意：不存在的升级组件不能配置，否则在其后面的组件都要等它升级完成 -->
+	<!-- <ExeOrder>BaseinfoDbUp,ProductinfoDbUp,SecinfoDbUp,YssUCODbUp,UnifypayDbUp</ExeOrder> -->
+	<ExeOrder>FAST,BaseinfoDbUp,ProductinfoDbUp,SecinfoDbUp,ElecrecoDbUp,DATAMIG,MONITORPLATFORM,MONITOR,YssSyncDataDbUp,AlgorithmDbUp,YssUCODbUp,UnifypayDbUp,PlanlicidDbUp</ExeOrder>
+	
+	<!-- 做序列检测时配置需要跳过的表 表名（以逗号分隔）-->
+	<skipCheckTable>
+		T_T_ITEM
+	</skipCheckTable>
+	
+	<!--升级时是公共组件的组件代码，多个之间用","分隔，
+	   在分布式部署的情况下，升级组件以创建同义词的方式升级
+	-->
+	<publicApp>FAST,BaseinfoDbUp,ProductinfoDbUp,SecinfoDbUp</publicApp>
+	
+	<!-- 应用信息，component:应用代码（必填），dbUser:数据库用户(必填)， dbLink:数据库链接(可不填) -->
+	<appInfo component="FAST" dbUser="test" dbLink="" />
+	<appInfo component="BaseinfoDbUp" dbUser="test" dbLink="" />
+	<appInfo component="ProductinfoDbUp" dbUser="test" dbLink="" />
+</upgrade>

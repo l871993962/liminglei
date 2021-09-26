@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pojos>	
+	<pojo id="DzPara" class="com.yss.ifa.szt.tool.pojo.DzPara"/>
+	<pojo id="ErPara" class="com.yss.ifa.szt.tool.pojo.ErPara"/>
+	<pojo id="MrInfo" class="com.yss.ifa.szt.tool.pojo.MrInfo"/>
+	<pojo id="DzRelaOrgan" class="com.yss.ifa.szt.tool.pojo.DzRelaOrgan"/>
+	<pojo id="ErRptLog" class="com.yss.ifa.szt.tool.pojo.ErRptLog" />
+	<pojo id="ErVoc" class="com.yss.ifa.szt.tool.pojo.ErVoc" />
+</pojos>

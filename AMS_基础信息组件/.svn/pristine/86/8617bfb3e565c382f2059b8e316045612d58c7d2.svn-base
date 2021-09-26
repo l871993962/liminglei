@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="GJYWMC" name="国家英文名称字典" funcode="natldict" datasource="DB">
+	<exp>
+		<data id="natl">
+			<table-name>T_S_NATIONAL_DICT</table-name>
+			<!-- ���ݲ�ѯSQL -->
+			<sqlmapping>
+				<!--��ѯ��-->
+				<sql>select * from T_S_NATIONAL_DICT</sql>
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_ABBR_NAME</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="natl"></outfile>
+	</imp>
+
+</source>

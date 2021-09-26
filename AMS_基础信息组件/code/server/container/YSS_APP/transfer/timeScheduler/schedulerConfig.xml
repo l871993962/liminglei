@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gbk"?>
+<schedulerConfigs>
+	<schedulerConfig  
+		jobName="ceshi" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.BankAccQueryTimer" 
+		timeRule="0/30 * * * * ?" isexecute="no"/>
+	<schedulerConfig  
+		jobName="Deposits" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.nfjj.DepositsDataFromOA" 
+		timeRule="0/30 * * * * ?" isexecute="no"/>
+	<schedulerConfig  
+		jobName="BondTrade" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.nfjj.BondDataFromOA" 
+		timeRule="0/30 * * * * ?" isexecute="no"/>
+	<schedulerConfig  
+		jobName="BondTrade" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.nfjj.StockDataFromOA" 
+		timeRule="0/30 * * * * ?" isexecute="no"/>
+	<schedulerConfig  
+		jobName="WriteBack" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.nfjj.WriteBackToOA" 
+		timeRule="* 0/30 * * * ?" isexecute="no"/>
+	<schedulerConfig  
+		jobName="BaseInfo" 
+		jobClass="com.yss.uco.transfer.unifypay.timejob.jobs.nfjj.BaseInfoFromOA" 
+		timeRule="* 0/30 * * * ?" isexecute="no"/>
+</schedulerConfigs>

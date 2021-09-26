@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds"> 
+  <property name="logHome" value="/ucolog"/>  
+  <property name="log.maxFileSize" value="30"/>  
+  <property name="log.minIndex" value="1"/>  
+  <property name="log.maxIndex" value="100"/>  
+  <property name="log.maxHistory" value="2"/>  
+  <property name="log.charset" value="UTF-8"/>  
+  <property name="log.level" value="DEBUG"/>  
+  <!-- log output to file  -->  
+  <!-- osgi项目的日志存放路径 RollingFileAppender 表示按照滚动记录文件-->  
+  <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/OSGI/%d{yyyy-MM,aux}/Log_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%X{bundle}] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <appender name="ROLLING_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/OSGI/%d{yyyy-MM,aux}/Error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder>  
+    <!-- 过滤器，只记录ERROR级别的日志 -->  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter> 
+  </appender>  
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> 
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>DEBUG</level>  
+      <!-- 所有DEBUG级别的日志被丢弃，其它级别的交给下一个过滤器 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>NEUTRAL</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>INFO</level>  
+      <!-- 所有INFO级别的日志输出控制台，其它级别的交给下一个过滤器 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>NEUTRAL</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>WARN</level>  
+      <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>NEUTRAL</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter>  
+    <layout class="com.yss.framework.log.layout.Layout"> 
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%X{bundle}] [%file : %line] %X{userName} %msg%n</pattern> 
+    </layout> 
+  </appender>  
+  
+  <appender name="KAFKA" class="com.yss.kafka.logback.KafkaAppender">
+  		<filter class="ch.qos.logback.classic.filter.LevelFilter">   
+		      <level>DEBUG</level> <!-- 所有DEBUG级别的日志被丢弃，其它级别的交给下一个过滤器 -->  
+		      <onMatch>ACCEPT</onMatch>
+		      <onMismatch>NEUTRAL</onMismatch>   
+	    </filter>
+	    <filter class="ch.qos.logback.classic.filter.LevelFilter">   
+		      <level>INFO</level>   <!-- 所有INFO级别的日志输出控制台，其它级别的交给下一个过滤器 --> 
+		      <onMatch>ACCEPT</onMatch>
+		      <onMismatch>NEUTRAL</onMismatch>   
+	    </filter>
+	    <filter class="ch.qos.logback.classic.filter.LevelFilter">   
+		      <level>WARN</level>   <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 --> 
+		      <onMatch>ACCEPT</onMatch>
+		      <onMismatch>NEUTRAL</onMismatch>   
+	    </filter>
+	    <filter class="ch.qos.logback.classic.filter.LevelFilter">   
+		      <level>ERROR</level>   <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 --> 
+		      <onMatch>ACCEPT</onMatch>
+		      <onMismatch>DENY</onMismatch>   
+	    </filter>
+	    <!--<layout class="ch.qos.logback.classic.PatternLayout">  
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{80} - %msg%n</pattern>  
+        </layout>-->
+        <layout class="com.yss.framework.log.layout.Layout">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%X{bundle}] [%file : %line] %X{userName} %msg%n</pattern>  
+        </layout>
+  </appender>
+  
+  <appender name="DATABASE" class="com.yss.framework.log.appender.OperLogAppender"/>  
+  <!-- log output to file  -->  
+  <appender name="YSSALLOCATION" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/OSGI/YSSALLOCATION/%d{yyyy-MM,aux}/Log_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <!-- PLATFORM项目的日志存放路径配置  -->  
+  <!-- 标准控制台输出日志 -->  
+  <appender name="STDOUT_PLATFORM" class="ch.qos.logback.core.ConsoleAppender"> 
+    <encoder charset="${log.charset}" class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line] %X{userName} %msg%n</pattern> 
+      </layout> 
+    </encoder> 
+  </appender>  
+  <appender name="ROLLING_FILE_ALL_PLATFORM" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/PLATFORM/%d{yyyy-MM,aux}/Log_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}KB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <!-- 错误日志文件 -->  
+  <appender name="ROLLING_FILE_ERROR_PLATFORM" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/PLATFORM/%d{yyyy-MM,aux}/Error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder>  
+    <!-- 过滤器，只记录ERROR级别的日志 -->  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter> 
+  </appender>  
+  <!-- YssDataMig项目日志存放路径 -->  
+  <appender name="STDOUT_YSSDATAMIG" class="ch.qos.logback.core.ConsoleAppender"> 
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder" charset="${log.charset}"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line] %X{userName} %msg%n</pattern> 
+      </layout> 
+    </encoder> 
+  </appender>  
+  <appender name="ROLLING_FILE_ALL_YSSDATAMIG" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YssDataMig/%d{yyyy-MM,aux}/Log_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <!-- 错误日志文件 -->  
+  <appender name="ROLLING_FILE_ERROR_YSSDATAMIG" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YssDataMig/%d{yyyy-MM,aux}/Error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder>  
+    <!-- 过滤器，只记录ERROR级别的日志 -->  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter> 
+  </appender>  
+  <!-- YSSUCO项目日志存放路径 -->  
+  <appender name="ROLLING_UCO" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YSSUCO/%d{yyyy-MM,aux}/LOG-%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <appender name="ROLLING_FILE_ERROR_UCO" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YSSUCO/%d{yyyy-MM,aux}/Error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder>  
+    <!-- 过滤器，只记录ERROR级别的日志 -->  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter> 
+  </appender>  
+  <appender name="STDOUT_UCO" class="ch.qos.logback.core.ConsoleAppender"> 
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>DEBUG</level>  
+      <!-- 所有DEBUG级别的日志被丢弃，其它级别的交给下一个过滤器 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>NEUTRAL</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>INFO</level>  
+      <!-- 所有INFO级别的日志输出控制台，其它级别的交给下一个过滤器 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>NEUTRAL</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>WARN</level>  
+      <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter>  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <!-- 所有ERROR级别的日志输出控制台，其它级别的丢弃 -->  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter>  
+    <layout class="com.yss.framework.log.layout.Layout"> 
+      <!-- <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%app] %-5level %X{userName} - %msg%n</pattern>-->  
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line] %X{userName} %msg%n</pattern> 
+    </layout> 
+  </appender>  
+  <!-- YSSPERIPHERAL项目日志存放路径 -->  
+  <appender name="ROLLING_PERIPHERAL" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YSSPERIPHERAL/%d{yyyy-MM,aux}/LOG-%d{yyyy-MM-dd}.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex> 
+    </rollingPolicy>  
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> 
+      <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+    </triggeringPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+  </appender>  
+  <appender name="ROLLING_FILE_ERROR_PERIPHERAL" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/YSSPERIPHERAL/%d{yyyy-MM,aux}/Error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder>  
+    <!-- 过滤器，只记录ERROR级别的日志 -->  
+    <filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+      <level>ERROR</level>  
+      <onMatch>ACCEPT</onMatch>  
+      <onMismatch>DENY</onMismatch> 
+    </filter> 
+  </appender>  
+  <appender name="STDOUT_PERIPHERAL" class="ch.qos.logback.core.ConsoleAppender"> 
+    <layout class="com.yss.framework.log.layout.Layout"> 
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%app] %-5level %X{userName} - %msg%n</pattern> 
+    </layout> 
+  </appender>  
+  <!--  OSGI项目logger配置 -->  
+  <logger name="druid.sql.Statement" level="${log.level}"> 
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.framework" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.busoper" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.datacheck" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.dataservice" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.mvc" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="operLogger.DB" level="${log.level}"> 
+    <appender-ref ref="DATABASE"/> 
+  </logger>  
+  <logger name="com.yss.platform" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.uco" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.elecreco" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="corecls.service" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="dataservice.service" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="dayfsupport" level="${log.level}"> 
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>  
+  <logger name="com.yss.fast.cache" level="${log.level}">  
+    <appender-ref ref="ROLLING"/>  
+    <appender-ref ref="ROLLING_ERROR"/>  
+    <appender-ref ref="STDOUT"/> 
+	<appender-ref ref="KAFKA"/> 
+  </logger>
+  <logger name="com.yss.uco.allocation" level="${log.level}" additivity="false"> 
+    <appender-ref ref="YSSALLOCATION"/> 
+  </logger>  
+  <!--  OSGI项目logger配置 -->  
+  <!--  PLATFORM项目logger配置-->  
+  <logger name="com.yss.framework" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_PLATFORM"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_PLATFORM"/> 
+  </logger>  
+  <logger name="com.yss.mvc" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_PLATFORM"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_PLATFORM"/> 
+  </logger>  
+  <logger name="operLogger.FILE" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_PLATFORM"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_PLATFORM"/> 
+  </logger>  
+  <logger name="com.yss.log" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_PLATFORM"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_PLATFORM"/> 
+  </logger>  
+  <logger name="com.yss.platform" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_PLATFORM"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_PLATFORM"/> 
+  </logger>  
+  <logger name="com.yss.platform" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PLATFROM"/>  
+    <appender-ref ref="ROLLING_PLATFROM"/> 
+  </logger>  
+  <Logger name="operLogger.FILE" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PLATFROM"/> 
+  </Logger>  
+  <!--  PLATFORM项目logger配置-->  
+  <!-- YSSPERIPHERAL 项目日志配置-->  
+  <logger name="jdbc.sqltiming" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.framework" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.mvc" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <Logger name="operLogger.FILE" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </Logger>  
+  <logger name="com.yss.aval" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.calceng" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.corecls" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.elecreco" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.pdmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.fina" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.service" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.servlet" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.sysmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.systools" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <logger name="com.yss.task" level="${log.level}"> 
+    <appender-ref ref="ROLLING_PERIPHERAL"/> 
+  </logger>  
+  <!-- YSSPERIPHERAL 项目日志配置 -->  
+  <!-- YSSUCO项目日志配置-->  
+  <logger name="com.yss.framework" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.daylast" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.mvc" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.platform.support" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <Logger name="operLogger.FILE" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </Logger>  
+  <logger name="com.yss.aval" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.calceng" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.data" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.dayf" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.dict" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.fina" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.main" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.para" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.pub" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.pdmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.report" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.service" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.servlet" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.sysmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.systools" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <logger name="com.yss.task" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <!-- add by yh 2014.4.14 增加com.yss.algo包的日志监控 -->  
+  <logger name="com.yss.algo" level="${log.level}"> 
+    <appender-ref ref="ROLLING_UCO"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_UCO"/>  
+    <appender-ref ref="STDOUT"/> 
+  </logger>  
+  <!-- YSSUCO项目日志配置-->  
+  <!-- YSSDATAMIG项目日志配置 -->  
+  <logger name="com.yss.framework" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.mvc" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.aval" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.calceng" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.corecls" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.elecreco" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.pdmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.fina" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.service" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.servlet" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.sysmgr" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.systools" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.task" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+  <logger name="com.yss.fast.task" level="${log.level}"> 
+    <appender-ref ref="ROLLING_FILE_ALL_YSSDATAMIG"/>  
+    <appender-ref ref="ROLLING_FILE_ERROR_YSSDATAMIG"/> 
+  </logger>  
+
+  <!-- YSSDATAMIG项目日志配置 --> 
+
+  	<!-- 以下为消息总线新增日志内容  --> 
+    <appender name="FastMqBrokerAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/broker_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqProtectionAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/protect_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqWaterMarkAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/wartemark_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqStoreAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/store_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqRemotingAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/remoting_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqStoreErrorAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/storeError_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqTransactionAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/transaction_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqRebalanceLockAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/rebalance_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqStatsAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/stats_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqCommercialAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/commercial_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqFiltersrvAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/filter_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>	
+
+    <appender name="FastMqNamesrvAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/namesrv_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqToolsAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/tools_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <appender name="FastMqClientAppender"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/client_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+	<appender name="FastMqDefaultAppend"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/default_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+	
+	<appender name="FastMqNonJavaAppend"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append> 
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+      <fileNamePattern>${logHome}/MQ/%d{yyyy-MM,aux}/nonjava_%d{yyyy-MM-dd}_%i.log</fileNamePattern>  
+      <minIndex>${log.minIndex}</minIndex>  
+      <maxIndex>${log.maxIndex}</maxIndex>  
+      <maxHistory>${log.maxHistory}</maxHistory>  
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+        <maxFileSize>${log.maxFileSize}MB</maxFileSize> 
+      </timeBasedFileNamingAndTriggeringPolicy> 
+    </rollingPolicy>  
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder"> 
+      <layout class="com.yss.framework.log.layout.Layout"> 
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%app] [%file : %line][%method] %X{userName} %msg%n</pattern> 
+      </layout>  
+      <charset>${log.charset}</charset> 
+    </encoder> 
+    </appender>
+
+    <logger name="FastMqNonJavaClient" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqNonJavaAppend"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="FastMqFiltersrv" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqFiltersrvAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqCommon" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqBrokerAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqRemoting" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqRemotingAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+    
+    <logger name="FastMqBroker" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqBrokerAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqProtection" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqProtectionAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqWaterMark" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqWaterMarkAppender"/>
+    </logger>
+
+    <logger name="FastMqStore" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqStoreAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqStoreError" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqStoreErrorAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqTransaction" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqTransactionAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqRebalanceLock" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqRebalanceLockAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqStats" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqStatsAppender"/>
+    </logger>
+
+    <logger name="FastMqCommercial" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqCommercialAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqNamesrv" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="FastMqNamesrvAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqTools" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="FastMqToolsAppender"/>
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+
+    <logger name="FastMqClient" additivity="false">
+        <level value="DEBUG"/>
+		<appender-ref ref="FastMqClientAppender" />
+        <appender-ref ref="FastMqDefaultAppend"/>
+    </logger>
+	<logger name="org.apache.kafka" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	
+	<logger name="org.apache.kafka.clients.consumer" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="org.apache.kafka.clients.FetchSessionHandler" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="com.mongodb" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="com.mongodb.connection.DefaultServerMonitor" additivity="false">
+		<level value="INFO"/>
+	</logger>
+	<logger name="org.apache.kafka" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	
+	<logger name="org.apache.kafka.clients.consumer" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="org.apache.kafka.clients.FetchSessionHandler" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="com.mongodb" additivity="false">
+		<level value="ERROR"/>
+    </logger>
+	<logger name="com.mongodb.connection.DefaultServerMonitor" additivity="false">
+		<level value="INFO"/>
+	</logger>
+	
+ </configuration>

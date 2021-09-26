@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="创建中间表索引" />
+	<Info_Detail name="估值指标中间表" />
+	<Info_Detail name="产品基本信息" />
+</Info_List> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<classes>
+    <!-- 添加IElecParaService -->
+	<class id="IElecParaService" menuId="dzPara"
+		class="com.yss.ifa.szt.tool.para.service.impl.DzParaService" interface="com.yss.ifa.szt.tool.para.service.IElecParaService" />
+	<class id="IDzParaService" menuId="dzPara"
+		class="com.yss.ifa.szt.tool.para.service.impl.DzParaService" interface="com.yss.ifa.szt.tool.para.service.IDzParaService" />
+	<class id="IErParaService" menuId= "erPara" class="com.yss.ifa.szt.tool.para.service.impl.ErParaService"
+		interface="com.yss.ifa.szt.tool.para.service.IErParaService"/>
+	<class id="IErParaDataService" menuId= "erPara" class="com.yss.ifa.szt.tool.para.service.impl.ErParaDataService"
+		interface="com.yss.ifa.szt.tool.para.service.IErParaDataService"/>
+	<class id="IMrInfoService" menuId= "mrInfo" class="com.yss.ifa.szt.tool.para.service.impl.MrInfoService"
+		interface="com.yss.ifa.szt.tool.para.service.IMrInfoService"/>
+	<class id="IDzPortRelaService" menuId="dzRelaOrgan" class="com.yss.ifa.szt.tool.para.service.impl.DzPortRelaService"
+		interface="com.yss.ifa.szt.tool.para.service.IDzPortRelaService"/>
+	<class id="IErRptLogService" menuId="erRptLog"
+		class="com.yss.ifa.szt.tool.rptlog.service.impl.ErRptLogService"
+		interface="com.yss.ifa.szt.tool.rptlog.service.IErRptLogService" />
+	<class id="IErVocDataService" menuId="base_ervoc"
+		class="com.yss.ifa.szt.tool.para.service.impl.ErVocDataService"
+		interface="com.yss.ifa.szt.tool.para.service.IErVocDataService"/>
+</classes>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pojos>
+	<!-- 数据同步 -->
+	<pojo id="SyncData" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncData"/>
+	<!-- 同步功能木块 -->
+	<pojo id="SyncModule" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncModule"/>
+	<!-- 数据同步-组合信息 -->
+	<pojo id="SyncPort" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncPort"/>
+	<!-- 数据同步-分级组合信息-->
+	<pojo id="SyncPortCls" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncPortCls"/>
+	<!-- 数据同步-银行账户-->
+	<pojo id="SyncBankAcc" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncBankAcc"/>
+	<!-- 数据同步-交易账户-->
+	<pojo id="SyncTradeAcc" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncTradeAcc"/>
+	<!-- 数据同步-期货账户-->
+	<pojo id="SyncFuturesAcc" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncFuturesAcc"/>
+	<!-- 数据同步消息pojo-期货账户-->
+	<pojo id="SyncInfo" class="com.yss.ams.syncdata.support.modules.base.pojo.SyncInfo"/>
+</pojos> 

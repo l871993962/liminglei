@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Detail name="资产帐户信息表_v4.0" />
+	<Info_Detail name="交易账户设置_v4.0" />
+	<Info_Detail name="关联机构_券商_v4.0" />
+	<Info_Detail name="交易渠道设置_v4.0" />
+	<Info_Detail name="创建中间表索引_v4.0" />
+	<Info_Detail name="中间表qd增加字段" />
+</Info_List> 

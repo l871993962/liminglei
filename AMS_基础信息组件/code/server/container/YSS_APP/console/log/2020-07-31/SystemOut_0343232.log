@@ -1,0 +1,79 @@
+2020-07-31 15:45:09.882 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【86b613da-efbd-4d3c-8415-a893f66c0409】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-07-31 15:45:14.689 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【86b613da-efbd-4d3c-8415-a893f66c0409】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSELECRECO","appName":"电子对账","webContent":"YSSUCOBRIDGE","startLevel":8.1}
+2020-07-31 15:45:14.711 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【86b613da-efbd-4d3c-8415-a893f66c0409】组件YSSELECRECO无数据库升级需要
+2020-07-31 15:45:14.900 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【86b613da-efbd-4d3c-8415-a893f66c0409】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSMONITOR","appName":"管控Client","webContent":"YSSUCOBRIDGE","startLevel":8.1}
+2020-07-31 15:45:14.915 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【86b613da-efbd-4d3c-8415-a893f66c0409】组件YSSMONITOR无数据库升级需要
+2020-07-31 15:45:15.037 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[YSSELECRECO][com.yss.uco.elecreco.automic] 启动成功
+2020-07-31 15:45:15.282 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[YSSAPI][com.yss.ams.api.gz] 启动成功
+2020-07-31 15:45:16.205 INFO [com.yss.framework] [ProducerImpl.java : 159]  开始创建生成这。key:{}CACHE
+2020-07-31 15:45:16.401 INFO [com.yss.framework] [ProducerImpl.java : 161]  结束创建生成这。key:{}CACHE
+2020-07-31 15:45:16.768 INFO [com.yss.fast.cache] [CacheManager.java : 604]  【86b613da-efbd-4d3c-8415-a893f66c0409】CACHE日志:刷新了缓存USERPOST
+2020-07-31 15:45:16.769 INFO [com.yss.fast.cache] [ProducerImpl.java : 159]  开始创建生成这。key:{}CLIENTCACHE
+2020-07-31 15:45:16.849 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 79]  【86b613da-efbd-4d3c-8415-a893f66c0409】"com.yss.uco.monitor.client" start to do workflow register work
+2020-07-31 15:45:16.888 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 93]  【86b613da-efbd-4d3c-8415-a893f66c0409】"com.yss.uco.monitor.client" end do workflow register work
+2020-07-31 15:45:17.065 INFO [com.yss.fast.cache] [CacheManager.java : 604]  【86b613da-efbd-4d3c-8415-a893f66c0409】CACHE日志:刷新了缓存USERPOST
+2020-07-31 15:45:17.080 INFO [com.yss.fast.cache] [ProducerImpl.java : 161]  结束创建生成这。key:{}CLIENTCACHE
+2020-07-31 15:45:17.097 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[YSSMONITOR][com.yss.uco.monitor.client] 启动成功
+2020-07-31 15:45:28.723 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[null][com.yss.ams.export.uco] 启动成功
+2020-07-31 15:45:30.487 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【86b613da-efbd-4d3c-8415-a893f66c0409】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSALLOCATION","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":9.0}
+2020-07-31 15:45:30.502 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【86b613da-efbd-4d3c-8415-a893f66c0409】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"AutomaticExp","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":9.0}
+2020-07-31 15:45:30.511 INFO [com.yss.uco.dataintegration.exp.automatic] [AutomaticExpActivator.java : 29]  【86b613da-efbd-4d3c-8415-a893f66c0409】注册部署JAR包消息监听成功:
+2020-07-31 15:45:30.585 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【86b613da-efbd-4d3c-8415-a893f66c0409】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"AutomaticImp","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":9.0}
+2020-07-31 15:45:30.594 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【86b613da-efbd-4d3c-8415-a893f66c0409】组件YSSALLOCATION无数据库升级需要
+2020-07-31 15:45:30.652 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【86b613da-efbd-4d3c-8415-a893f66c0409】组件AutomaticImp无数据库升级需要
+2020-07-31 15:45:30.679 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【86b613da-efbd-4d3c-8415-a893f66c0409】组件AutomaticExp无数据库升级需要
+2020-07-31 15:45:30.794 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[AutomaticImp][com.yss.uco.dataintegration.imp.automatic] 启动成功
+2020-07-31 15:45:31.333 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[AutomaticExp][com.yss.uco.dataintegration.exp.automatic] 启动成功
+2020-07-31 15:45:31.334 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[YSSALLOCATION][com.yss.uco.allocation] 启动成功
+2020-07-31 15:45:31.360 INFO [com.yss.framework] [StartInfoCollectUtil.java : 668]  还有组件未启动:YSSUCO,
+2020-07-31 15:45:34.142 DEBUG [com.yss.framework] [ConnectionConstants.java : 32]  【86b613da-efbd-4d3c-8415-a893f66c0409】prop={SERVER_PORT=6699, CHECK_DUIZHANG=0, PRODUCT_LIMIT_QUERY=0, PRODUCT_LIMIT_MODIFY=0, CHECK_WEICHA=0, ACC_CHECK=0, PJ_BUYSELL=0, OS_FILE_PATH=FILEDIR, PRODUCT_INFO_SET=0, PRODUCT_INFO_QUERY=0, PRODUCT_WFSY=0, SEND_FILE_PATH=ebank/, SERVER_IP=10.5.129.180, PRODUCT_SETT_QUERY=0, ACC_MERGE=0, CHECK_HEGUI=0}
+2020-07-31 15:45:39.322 DEBUG [YSSUCO] [CashAccDao.java : 111]  【86b613da-efbd-4d3c-8415-a893f66c0409】 select * from T_P_BI_CASH_ACC a  where a.N_CHECK_STATE = 1 order by a.c_ca_code 
+2020-07-31 15:45:39.414 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[DaiExtendCache]加载完成-----。
+2020-07-31 15:45:39.417 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[SynchronizedCache]加载完成-----。
+2020-07-31 15:45:39.449 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[SecRemindCache]加载完成-----。
+2020-07-31 15:45:39.496 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[CaCache]加载完成-----。
+2020-07-31 15:45:39.852 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[ProductRemindCache]加载完成-----。
+2020-07-31 15:45:40.909 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【86b613da-efbd-4d3c-8415-a893f66c0409】缓存[DaeElemCache]加载完成-----。
+2020-07-31 15:45:41.414 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_IVT:T_D_AC_TRADE_IVT_DBL
+2020-07-31 15:45:41.415 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_IVT_FEE:T_D_AC_TRADE_IVT_FEE_DBL
+2020-07-31 15:45:41.417 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_SE:T_D_AC_TRADE_SE_DBL
+2020-07-31 15:45:41.417 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_SE_FEE:T_D_AC_TRADE_SE_FEE_DBL
+2020-07-31 15:45:41.418 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_IPO:T_D_AC_TRADE_IPO_DBL
+2020-07-31 15:45:41.419 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_SL:T_D_AC_TRADE_SL_DBL
+2020-07-31 15:45:41.419 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_STOCK:T_D_AI_STOCK_DBL
+2020-07-31 15:45:41.420 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_ACT_VAL:T_D_AI_ACT_VAL_DBL
+2020-07-31 15:45:41.421 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT:T_R_FR_ASTSTAT_DBL
+2020-07-31 15:45:41.421 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_SUM:T_R_FR_ASTSTAT_SUM_DBL
+2020-07-31 15:45:41.422 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_VAL_PR:T_D_AI_VAL_PR_DBL
+2020-07-31 15:45:41.423 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_IVT:T_RT_AC_TRADE_IVT
+2020-07-31 15:45:41.423 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_ACT_VAL:T_RT_AI_ACT_VAL
+2020-07-31 15:45:41.424 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_STOCK:T_RT_AI_STOCK
+2020-07-31 15:45:41.425 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_STOCK_SEC:T_RT_AI_STOCK_SEC
+2020-07-31 15:45:41.425 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_VAL_PR:T_RT_AI_VAL_PR
+2020-07-31 15:45:41.426 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT:T_RT_FR_ASTSTAT
+2020-07-31 15:45:41.427 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_MP_SEC_MKT:T_RT_MP_SEC_MKT
+2020-07-31 15:45:41.427 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_ONE:T_RT_FR_ASTSTAT_ONE
+2020-07-31 15:45:41.433 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_DZSX_GZMXBOOK:T_RT_AC_DZSX_GZMXBOOK
+2020-07-31 15:45:41.434 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_SV_FIDC_INCOME:T_RT_SV_FIDC_INCOME
+2020-07-31 15:45:41.435 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_JX_BOOK:T_RT_AI_JX_BOOK
+2020-07-31 15:45:41.436 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_SUM:T_RT_FR_ASTSTAT_SUM
+2020-07-31 15:45:41.438 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_ONE:T_RT_FR_ASTSTAT_ONE
+2020-07-31 15:45:41.439 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_SV_FI_FACTRATE:T_RT_SV_FI_FACTRATE
+2020-07-31 15:45:41.439 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_EN:T_RT_AC_TRADE_EN
+2020-07-31 15:45:41.440 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_FUTURES:T_RT_AC_FUTURES
+2020-07-31 15:45:41.440 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_TRADE_IVT:V_RT_AC_TRADE_IVT
+2020-07-31 15:45:41.441 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_ACT_VAL:T_RT_AI_ACT_VAL
+2020-07-31 15:45:41.441 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_STOCK:T_RT_AI_STOCK
+2020-07-31 15:45:41.442 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_STOCK_SEC:T_RT_AI_STOCK_SEC
+2020-07-31 15:45:41.442 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_VAL_PR:T_RT_AI_VAL_PR
+2020-07-31 15:45:41.443 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT:T_RT_FR_ASTSTAT_NOVIRTUAL
+2020-07-31 15:45:41.443 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_MP_SEC_MKT:T_RT_MP_SEC_MKT
+2020-07-31 15:45:41.444 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AC_DZSX_GZMXBOOK:T_RT_AC_DZSX_GZMXBOOK
+2020-07-31 15:45:41.445 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_SV_FIDC_INCOME:T_RT_SV_FIDC_INCOME
+2020-07-31 15:45:41.446 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_AI_JX_BOOK:T_RT_AI_JX_BOOK
+2020-07-31 15:45:41.447 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_SUM:T_RT_FR_ASTSTAT_SUM
+2020-07-31 15:45:41.447 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_R_FR_ASTSTAT_ONE:T_RT_FR_ASTSTAT_ONE
+2020-07-31 15:45:41.448 INFO [com.yss.framework] [BaseActivator.java : 890]  【86b613da-efbd-4d3c-8415-a893f66c0409】succeed to register SQLFilter replaceTableName: T_D_SV_FI_FACTRATE:T_RT_SV_FI_FACTRATE
+2020-07-31 15:45:41.448 INFO [com.yss.framework] [BaseActivator.java : 654]  【86b613da-efbd-4d3c-8415-a893f66c0409】应用[YSSUCO][YSSUCO] 启动成功
+2020-07-31 15:45:41.450 INFO [com.yss.framework] [StartInfoCollectUtil.java : 668]  所有应用启动完成,请到地址:{}查看启动报告http://127.0.0.1:8083/YSSUCOBRIDGE/start/report
+整个系统已经启动完成了

@@ -1,0 +1,241 @@
+﻿<ControlsLayout>
+  <assPool LockControlLocation="True">
+    <cboCury DefaultValue="CNY"/>
+    <cboHolidays DefaultValue="CN"/>
+  </assPool>
+  <interestRate LockControlLocation="True">
+    <cboCury DefaultValue="CNY"/>
+  </interestRate>
+  <tatrade>
+  	<cboCury DefaultValue="CNY"/>
+  </tatrade>
+  <tasettle>
+  	<cboCury DefaultValue="CNY"/>
+  	<cboHolidays DefaultValue="CN"/>
+  </tasettle>
+  <portfolio>
+  	<cboPortLever DefaultValue="PORT_LAYER"/>
+  	<cboCurrency DefaultValue="CNY"/>
+  	<cboHolidays DefaultValue="CN"/>
+  </portfolio>
+  <cashaccount>
+  	<cboCury DefaultValue="CNY"/>
+  	<cboAccType DefaultValue="ACC_SAV"/>
+  	<cboAccNature DefaultValue="NA_INT"/>
+  </cashaccount>
+  <fundAccInfo>
+  	<cboCury DefaultValue="CNY"/>
+  </fundAccInfo>
+  <investFee LockControlLocation="True">
+  	<cboCury DefaultValue="CNY"/>
+  	<txtNum DefaultValue="1"/>
+  	<cboHolidays DefaultValue="CN"/>
+  </investFee>
+  <accrdefe>
+  	<cboCury DefaultValue="CNY"/>
+  </accrdefe>
+  <tariskpay>
+  	<cboCury DefaultValue="CNY"/>
+  </tariskpay>
+  <dividendtrade  LockControlLocation="True">
+  	<cboCury DefaultValue="CNY"/>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </dividendtrade>
+  <paySettSet>
+  	<cboCury DefaultValue="CNY"/>
+  </paySettSet>
+  <pubAccInfo>
+  	<cboCury DefaultValue="CNY"/>
+  </pubAccInfo>
+  <stockinfo>
+  	<cboCury DefaultValue="CNY"/>
+  	<cboSecVar DefaultValue="GP_GP"/>
+  </stockinfo>
+  <fixinterest>
+  	<cboCury DefaultValue="CNY"/>
+  </fixinterest>
+  <certificate>
+  	<cboCury DefaultValue="CNY"/>
+  	<cboSecCategory DefaultValue="QZ_QZ"/>
+  </certificate>
+  <financial LockControlLocation="True">
+  	<cboCury DefaultValue="CNY"/>
+  </financial>
+    <dividend LockControlLocation="True">
+  	<cboCury DefaultValue="CNY"/>
+  </dividend>
+  <indexinfo>
+  	<cboCury DefaultValue="CNY"/>
+  </indexinfo>
+  <future>
+  	<cboCury DefaultValue="CNY"/>
+  	<txtMultiple DefaultValue="1"/>
+  </future>
+  <spot>
+  	<cboCury DefaultValue="CNY"/>
+  </spot>
+  <option>
+  	<cboCury DefaultValue="CNY"/>
+  </option>
+  <forward>
+  	<cboCury DefaultValue="CNY"/>
+  </forward>
+  <secswap>
+  	<cboCury DefaultValue="CNY"/>
+  </secswap>
+  <lending>
+  	<cboCury DefaultValue="CNY"/>
+  </lending>
+  <purchase>
+  	<cboCury DefaultValue="CNY"/>
+  </purchase>
+  <billinfo LockControlLocation="True">
+  	<cboCury DefaultValue="CNY"/>
+  	<cboSecVar DefaultValue="PJ_YH"/>
+  	<cboMod DefaultValue="ELC_MEDIUM"/>
+  </billinfo>
+  <depositInfo>
+  	<cboCury DefaultValue="CNY"/>
+  	<cboSavingType DefaultValue="CK_DQ"/>
+  	<cboCountMode DefaultValue="TR_SI"/>
+  </depositInfo>
+  <dividend>
+  	<cboCurry DefaultValue="CNY"/>
+  </dividend>
+  <currencyPair>
+  	<cboBasicCury DefaultValue="CNY"/>
+  	<cboValCury DefaultValue="CNY"/>
+  </currencyPair>
+  <carryoverAccount>
+  	<cboCury DefaultValue="CNY"/>
+  </carryoverAccount>
+  <ROEConvert>
+  	<cboTradeCury DefaultValue="CNY"/>
+  </ROEConvert>
+  <transactionfee>
+  	<cboFeeCury DefaultValue="CNY"/>
+  </transactionfee>
+  <clearingAmount>
+  	<cboHolidays DefaultValue="CN"/>
+  </clearingAmount>
+  <paySettleSet>
+  	<cboHodolays DefaultValue="CN"/>
+  	<cboJzType DefaultValue="JZSZLX_JZ"/>
+ 	<txtJzbl DefaultValue="100"/>
+  	<pnlSett Caption="结转天数">
+  		<cboSettCycle DefaultValue="CF_SEASON"/>
+  		<iniSettDays DefaultValue="21"/>
+  	</pnlSett>
+  	<pnlBase Caption="基准天数">
+  		<cboBaseDaysType DefaultValue="CF_SEASON"/>
+  		<iniJzDays DefaultValue="1"/>
+  	</pnlBase>
+  </paySettleSet>
+  <holidays>
+  	<cboHolidays DefaultValue="CN"/>
+  </holidays>
+  <exchange>
+  	<cboHolidays DefaultValue="CN"/>
+  </exchange>
+  <sharetrade>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </sharetrade>
+  <newsharesg>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssueMode DefaultValue="SS"/>
+  </newsharesg>
+  <newlock>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </newlock>
+  <seccirculatetrade>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </seccirculatetrade>
+  <securitiesshere>
+  	<cboInvCls DefaultValue="IC_TD"/>
+  	<cboInvClsTag DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </securitiesshere>
+  <sectransform>
+  	<cboIvtCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+    <cboIvtClsIn DefaultValue="IC_TD"/>
+    <cboTdAttrIn DefaultValue="PT"/>
+    <cboIssureModeIn DefaultValue="SS"/>
+  </sectransform>
+  <bondtrade LockControlLocation="True">
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </bondtrade>
+  <newbondapply>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssueMode DefaultValue="SS"/>
+  </newbondapply>
+   <!-- BUG #181603 理财交易业务界面字段匹配乱了，组合变成了减值准备阶段 EditbyLiyongjun 20171127 -->
+  <fundtrade LockControlLocation="True">
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </fundtrade>
+  <otcapplyredeem>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </otcapplyredeem>
+  <certificatetrade>
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+  </certificatetrade>
+  <certificateExe LockControlLocation="True">
+  	<cboInvCls DefaultValue="IC_TD"/>
+    <cboTdAttr DefaultValue="PT"/>
+    <cboIssureMode DefaultValue="SS"/>
+    <cboLockPeriod DefaultValue="IC_TD"/>
+  </certificateExe>
+  <optionsExe LockControlLocation="True">
+  	<cboLockPeriod DefaultValue="IC_TD"/>
+    <cboBailCa DefaultValue="PT"/>
+    <cboIssueMode DefaultValue="SS"/>
+  </optionsExe>
+  <treasuryFutures LockControlLocation="True">
+    <cboTdAttrTag DefaultValue="PT"/>
+    <cboIssueModeTag DefaultValue="SS"/>
+  </treasuryFutures>
+  <securitycirculate>
+    <cboIssueStyle DefaultValue="SS"/>
+  </securitycirculate>
+  <riskPlan>
+  	<cboInvestCategory DefaultValue="IC_TD"/>
+    <cboIssueMode DefaultValue="SS"/>
+  </riskPlan>
+  <valPlan LockControlLocation="True">
+  	<cboInvestCategory DefaultValue="IC_TD"/>
+    <cboIssueMode DefaultValue="SS"/>
+  </valPlan>
+  <etfselldata>
+  	<cboInvCls DefaultValue="IC_TD"/>
+  </etfselldata>
+  <etfcapplyredeem>
+  	<cboInvCls DefaultValue="IC_TD"/>
+  </etfcapplyredeem>
+  <tradeAccount>
+  	<cboAccType DefaultValue="SEC_ACC_COMMON"/>
+  </tradeAccount>
+  <!-- 2016年2月10日 liuxiang STORY #29390 （紧急）划款指令优化需求 -->
+  <hkzlMgr LockControlLocation="True">
+  	<cboOrdType DefaultValue="ZLLX_FK"/>
+  </hkzlMgr>
+</ControlsLayout>

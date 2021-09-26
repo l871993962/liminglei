@@ -1,0 +1,33 @@
+﻿#Config Description
+#注意: 属性的Key是区分大小写的，Key不匹配将返回null，这里规定所有的Key都用小写，多个单词间有"_"隔开
+#  布尔值："true","1","yes","y","on","ok"(不区分大小写)表示true，未配置或其它值表示false。开关项使用true表示开启，false表示关闭
+#  限制参数给定的值，表示不允许大于或小于该值(不包含等于)
+#------------------------------------------------------------
+
+#估值报表下载(ReportDownloadService)服务配置
+#------------------------------------------------------------
+# 请求接收成功
+requert_success=000000
+# 参数验证错误，输入参数不合法
+requert_params_error=200000
+# 请求接收失败
+requert_error=200001
+# 用户不存在
+requert_user_not_exist=200002
+# 资产代码对应的组合不存在
+requert_ass_code_not_exist=200003
+# 下载成功
+response_success=0000
+# 下载失败
+response_error=1000
+# 默认导出模版CODE
+report_code=INFO_CW_GZBB_EXCLE
+
+# 资产代码占位符
+ass_code_placeholder=[资产代码]
+# 报表下载回调服务
+report_Reply_Service=reportReplyService
+# 报表下载回调方法名称
+report_download_callback=DownloadCallback
+#财务净值和估值净值不一致
+report_nal_finance_different=2000

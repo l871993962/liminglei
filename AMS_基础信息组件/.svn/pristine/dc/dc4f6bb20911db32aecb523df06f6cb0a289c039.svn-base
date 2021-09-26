@@ -1,0 +1,968 @@
+delete from t_p_ao_val_zh where C_SYS_CLS = :=C_SRC;
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购交易', 'HG', 'MCHG', 'HGJY_ZHG_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行存款计息', 'FYHJX', 'FYHJX', 'RCJT_ZHLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提两费', 'FJTLF', 'FJTLF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '预提及待摊', 'FYTDT', 'FYTDT', 'RCJT_YTDT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股票交易', 'GPBS', 'MRGP', 'GPJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股票交易', 'GPBS', 'MCGP', 'GPJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '债券交易', 'ZQBS', 'MRZQ', 'ZQJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '债券交易', 'ZQBS', 'MCZQ', 'ZQJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '债转股', 'ZQBS', 'KZZGP', 'ZQZH_ZZG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行债券交易', 'YHZQBS', 'MRZQ', 'ZQJY_BUY', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行债券交易', 'YHZQBS', 'MCZQ', 'ZQJY_SELL', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '分销债券交易', 'FXZQBS', 'MRZQ', 'ZQJY_CX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '分销债券交易', 'FXZQBS', 'MCZQ', 'ZQJY_FX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '交易费用', 'JYFY', null, 'JJYF_FY', ' ', null, ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '交易费用', 'JYFY', null, 'JJYF_YJ', ' ', null, ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MRJJ', 'JJJY_BUY', ' ', 'JJ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MCJJ', 'JJJY_SELL', ' ', 'JJ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSG', 'JJJY_SG', ' ', 'JJ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSH', 'JJJY_SH', ' ', 'JJ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MRJJ', 'JJJY_BUY', ' ', 'JJ_KFS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MCJJ', 'JJJY_SELL', ' ', 'JJ_KFS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSG', 'JJJY_SG', ' ', 'JJ_KFS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSH', 'JJJY_SH', ' ', 'JJ_KFS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MRJJ', 'JJJY_BUY', ' ', 'JJ_FBS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MCJJ', 'JJJY_SELL', ' ', 'JJ_FBS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSG', 'JJJY_SG', ' ', 'JJ_FBS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSH', 'JJJY_SH', ' ', 'JJ_FBS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MRJJ', 'JJJY_BUY', ' ', 'JJ_KFS_HBX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'MCJJ', 'JJJY_SELL', ' ', 'JJ_KFS_HBX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSG', 'JJJY_SG', ' ', 'JJ_KFS_HBX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金买卖', 'JJBS', 'JJSH', 'JJJY_SH', ' ', 'JJ_KFS_HBX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XZCE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '产品申购', 'KFXS', 'KFXS', 'TAXS_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '产品分投', 'KFXS', 'KFXS', 'TAXS_FHTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '产品分红', 'KFXS', 'KFXS', 'TAXS_FH', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '产品赎回', 'KFXS', 'KFXS', 'TAXS_SH', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '产品转出', 'KFXS', 'KFXS', 'TAXS_ZC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '强增强减', 'KFXS', 'KFXS', 'TAXS_QZQJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '份额调整', 'KFXS', 'KFXS', 'TAXS_FETZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '风险准备金', 'KFXS', 'KFXS', 'TAXS_FXZBJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '风险补偿', 'KFXS', 'KFXS', 'TAXS_FXBC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '强减份额', 'KFXS', 'KFXS', 'TAXS_QJ_FE', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '利息转份额', 'KFXS', 'KFXS', 'TAXS_LXZFE', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '申购失败', 'KFXS', 'KFXS', 'TAXS_SGSB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '赎回失败', 'KFXS', 'KFXS', 'TAXS_SHSB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '开放式基金买卖', 'JJ_KFSBS', null, 'CWSS_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购交易', 'HG', 'MRHG', 'HGJY_NHG_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购交易', 'HG', 'MRHGDQ', 'HGJY_NHG_DQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购交易', 'HG', 'MCHGDQ', 'HGJY_ZHG_DQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行间回购交易', 'YHHG', 'MRHG', 'HGJY_NHG_SQ', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行间回购交易', 'YHHG', 'MRHGDQ', 'HGJY_NHG_DQ', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行间回购交易', 'YHHG', 'MCHG', 'HGJY_ZHG_SQ', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行间回购交易', 'YHHG', 'MCHGDQ', 'HGJY_ZHG_DQ', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购资金内部拆借', 'HGZJCJYW', null, 'CJJY_CC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购资金内部拆借', 'HGZJCJYW', null, 'CJJY_CR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XZCE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XZCE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XZCE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '新股业务', 'XG', 'XGSG', 'XGSG_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '新股业务', 'XG', 'XGZQ', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '新股业务', 'XG', 'XGLT', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, 'ETF申购赎回', 'ETFSGSH', 'ETFSG', 'CNSS_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, 'ETF申购赎回', 'ETFSGSH', 'ETFSH', 'CNSS_SH', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XSGE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '权证业务', 'QZBS', 'QZBS', 'QZJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '权证业务', 'QZBS', 'QZBS', 'QZJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '权证送配业务', 'QZSP', 'QZSP', 'ZQSP_QZSP', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XSGE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XSGE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XSGE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金红利', 'JJHL', 'JJHL', 'DJPX_FHPX', ' ', 'JJ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金红利', 'JJHL', 'JJHL', 'DJPX_FHPX', ' ', 'JJ_KFS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金红利', 'JJHL', 'JJHL', 'DJPX_FHPX', ' ', 'JJ_FBS', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '基金红利', 'JJHL', 'JJHL', 'DJPX_FHPX', ' ', 'JJ_KFS_HBX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '送股业务', 'QYSG', null, 'ZQSP_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XSGE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '派息业务', 'QYPX', 'QYPX', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '权益兑付业务', 'QYDF_ZD_ZQ', null, 'ZQJY_DF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '集合理财业务', 'JHLCBS', 'CYSQ', 'JJJY_BUY', ' ', 'LC', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XSGE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '集合理财业务', 'JHLCBS', 'TCQR', 'JJJY_SELL', ' ', 'LC', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '存款业务', 'CKYW', 'CKYWSQ', 'CKTZ_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '保险业务', 'BXBS', 'MRBX', 'JJJY_BUY', ' ', 'LC_BX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '保险业务', 'BXBS', 'MCBX', 'JJJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '保险业务', 'BXBS', 'YSLX', 'RCJT_JJSY', ' ', 'LC_BX', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '资金业务', 'ZJYW', null, 'ZJZJTQ_ZJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '资金业务', 'ZJYW', null, 'ZJZJTQ_TQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提风险金', 'JTFXJ', null, 'RCJT_FXJJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提业绩报酬', 'JTYJBC', null, 'TAXS_YJBC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提费用', 'FJTFHB', null, 'RCJT_GDFY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XSGE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XSGE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '回购计息', 'FHGJX', 'MCHG', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '银行回购计息', 'FYHHGJX', 'MRHG', 'RCJT_HGSY', 'XCFE', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '债券计息', 'ZQJX', null, 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '存款投资业务计息', 'FCKYWJX', null, 'RCJT_CKLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '结转损益', 'JZSY', null, 'SYJZ_JZSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '销售结转', 'KFXSJZ', null, 'JYJS_XSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XDCE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '估值增值', 'GZZZ', 'GZZZ', 'ZCGZ_ZQKC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金拆分', 'JJCF', null, 'ZQSP_JJFC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金成立', 'JJCL', null, 'TAXS_JJCL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配股缴款', 'PGJK', null, 'ZQSP_PGJK', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配股确认', 'PGQR', null, 'ZQSP_PG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金折算', 'JJZS', null, 'FECF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XZCE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XZCE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_JG', 'QHJY_JG', ' ', 'QH_SP', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_FY', 'QHJY', ' ', 'QH_SP', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XZCE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XZCE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZQH_JG', 'QHJY_JG', ' ', 'QH_GZ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZQH_FY', 'QHJY', ' ', 'QH_GZ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '开放式基金申赎', 'JJ_SZKFS', 'JJSGQR', 'CWSS_SGQR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '开放式基金申赎', 'JJ_SZKFS', 'JJSHQR', 'CWSS_SHQR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '信托业务', 'XTYW', 'XTSG', 'JJJY_BUY', ' ', 'LC_XT', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '信托业务', 'XTYW', 'XTSH', 'JJJY_SELL', ' ', 'LC_XT', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '信托计息', 'XTJX', 'XTJX', 'RCJT_JJSY', ' ', 'LC_XT', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '收益兑付_信托', 'QYDF_ZD_XT', null, 'JJJY_DF', ' ', 'LC_XT', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XDCE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZSPQH_PC', 'QHJY_PC', 'XDCE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_PC', 'QHJY_PC', 'XDCE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XDCE', 'QH_GZ', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XDCE', 'QH_SP', 'TJ_BUY','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '商品期货', 'SPQH', 'SPQH_KC', 'QHJY_KC', 'XDCE', 'QH_SP', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股指期货', 'GZQH', 'GZQH_KC', 'QHJY_KC', 'XDCE', 'QH_GZ', 'TJ_SELL','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '银行存款计息', 'FYHJX', 'JX', 'RCJT_ZHLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '管理费计提', 'FJTLF', 'JTGLF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '托管费计提', 'FJTLF', 'JTTGF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提利息', 'ZQJX', 'ZQJX', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '银行回购计息', 'FYHHGJX', 'FYHHGJX', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '回购计息', 'FHGJX', 'MRHG', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '回购计息', 'FYHHGJX', 'MRHG', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '回购计息', 'FYHHGJX', 'MCHG', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '清算结转', 'QSJZ', 'QSJZ', 'JYJS_ZQJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股申购中签', 'XG_HD', 'XGZQ', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股申购中签', 'XG_HD', 'XGZQJS', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新债申购中签', 'XZ_HD', 'XZZQ', 'XZSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新债申购中签', 'XZ_HD', 'XZZQJS', 'XZSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股申购中签', 'XG', 'XGQSZQ', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股申购中签', 'XG', 'XGQS', 'JYJS_ZQJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新债申购中签', 'XZ', 'XZQSZQ', 'XZSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新债申购中签', 'XZ', 'XZQS', 'JYJS_ZQJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股流通', 'XG_HD', 'XGLT', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新债流通', 'XZ_HD', 'XZLT', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '港股股票交易', 'GPBS', 'GGT_MRGP', 'GPJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '港股股票交易', 'GPBS', 'GGT_MCGP', 'GPJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券转托管', 'ZQBS', 'ZQZTGLT', 'ZQZH_ZTG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提受托费', 'FJTLF', 'JTSTF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转损益', 'JZSY', 'JZ_SYPZJ', 'SYJZ_JZSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '其他类型', 'HD', '其他类型', 'RCJT_ZDYPZ', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出股票', 'gpgz', 'fysje', 'GPJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券计息', 'gzjtlx', 'fgzjtlx', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券计息', 'ZQJX', 'ZQJX', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into  t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股流通', 'WXXG', 'fgpgz', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '未知业务', 'gpgz', 'fgzyhck', 'RCJT_ZDYPZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转损益', 'JZSY', 'JZZC', 'SYJZ_JZZC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转损益', 'JZSY', 'JZSR', 'SYJZ_JZSR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提风险金', 'fhg', 'fjtfxj', 'RCJT_FXJJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配股清算', 'PGQS', 'PGQS', 'JYJS_ZQJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提管理费', 'HD', 'JJSH', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提管理费', 'HD', 'QYPX_HD_ZQ', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海结算保证金结息', 'ZDY_44SHB', 'ZDY_44SHB', 'ZJHH_LXJZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳结算保证金结息', 'ZDY_44SZB', 'ZDY_44SZB', 'ZJHH_LXJZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上配股手续费返还', 'PGSXFH', 'fpgys', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利分配', 'KFJJ_FH', 'KFJJ_FH', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '黄金租借业务', 'HJBS', 'MRHJ', 'HJZJ_CR', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提债券利息', 'ZQJXTZ', 'ZQJXTZ', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '期货业务', 'ZQQH', 'ZQQH_PC', 'QHJY_PC', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配债手续费返还', 'PZSXF', 'PZSXF', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '黄金租借业务', 'HJZJJX', 'HJZJJX', 'RCJT_HJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '黄金租借业务', 'HJZJ', 'CRHJDQ', 'RCJT_HJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '现货交易业务', 'HJYQ', 'HJYQ_PC', 'XHJY_PC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付托管费', 'ZDY_23TGF', 'ZDY_23TGF', 'SYJZ_JZZC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金拆分', 'JJ_SZLOF', 'JJZS', 'ZQSP_CF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海最低备付金调整', 'ZDY_31SHB', 'ZDY_31SHB', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '划款及支付', 'HD', 'FHD', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提风险基金', 'gpgz', 'fjtfxj', 'RCJT_FXJJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上申购', 'WSXG', 'fxgys', 'XGSG', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '活期存款结息', 'ZDY_41CKJ', 'ZDY_41CKJ', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳清算备付金结息', 'ZDY_47SZQ', 'ZDY_47SZQ', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网下新股申购询价', 'FSGKLX', 'fkfmczqsq', 'XGSG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利到帐', 'ZDQY_FHJZ', 'ZDQY_FFHJZ', 'ZQHL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配股确认', 'PG', 'fpgqr', 'ZQSP_PG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利再投资', 'KFJJ_FH', 'fKFJJ_FH', 'DJPX_HLTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券质押式协议回购', 'ZQZYHG', 'ZQZYHGRQ', 'HGJY_NHG_CSHG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '货币ETF赎回收益确认', 'HBETF_SH_SYQR', ' ', 'RCJT_ZDYPZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金买入', 'HJJJBS', 'MRJJ', 'JJJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债权投资收益', 'ZQTZJX', 'JX', 'RCJT_JJSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , 'LOF基金场内转场外', 'JJ_SZLOF', 'JJCNZCW', 'ZQZH_JJZH', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网下申购询价款计息', 'XGXJ_JX', 'XGJX', 'RCJT_JZLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金分红到帐', 'QYPX', 'JJFH', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '现金替代退款', 'TDKJZ', 'TDKJZ', 'ETFXS_XS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转现金替代款', 'ETFJZXJTD', 'ETFJZXJTD', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提管理费', 'JF', 'FJF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股票业务', 'gpgz', 'fsyj', 'GPJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上新股配售手续费返还', 'PSSXFH', 'fysje', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上新股配售手续费返还', 'PSSXFH', 'fpsys', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网下中签', 'WXXG', 'fxgys', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上中签', 'WSXG', 'fyfje', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '权证送配', 'QZSP_HD', 'QZSP_HD', 'ZQSP_QZSP', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳最低备付金结息', 'ZDY_43SZB', 'ZDY_43SZB', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '申购预收款', 'ETFCWSQ', 'ETFTA', 'CWSS_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上可转债申购手续费返还', 'KZZSXFH', 'fxzys', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '金交所提取保证金', 'HJYQ', 'HJYQ_BZJTQ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '金交所金追加保证', 'HJYQ', 'HJYQ_BZJZJ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券质押式协议回购', 'ZQZYHGJX', 'ZQZYHGJXRQ', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券质押式协议回购', 'ZQZYHGJX', 'ZQZYHGJXRQ', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券质押式协议回购合约到期', 'ZQZYHGJX', 'ZQZYHGJXRQ', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入银行间返售债券', 'fyhhg', 'fmr', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '国债期货', 'ZQQH', 'ZQQH_KC', 'QHJY_PC', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券承兑凭证', 'gzcd', 'fgzcd', 'ZQJY_DF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券承兑凭证', 'gzcd', '', 'ZQJY_DF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债权投资', 'ZQTZFX', 'FX', 'JJJY_DF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '货币ETF红利转投', 'HBETFQYPX', 'JJFH', 'DJPX_HLTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳保证金调整', 'FYZFZD', 'SZBZJTZ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '派息到账', 'QYPX_HD_ZQ', 'QYPX_HD_ZQ', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付上清所结算费用', 'ZDY_52SQJ', 'ZDY_52SQJ', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付中债登结算费用', 'ZDY_51ZDJ', 'ZDY_51ZDJ', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳备付金调整', 'FYZFZD', 'SZBFJTZ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '货币ETF申赎备付金结转', 'HBETF_SSBFJJZ', 'HBETF_SSBFJJZ', 'SZJZYW', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '金交所现金差额凭', 'ETFKFJZ', 'ETFKFJZ', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金现金分红结转', 'KFjzk_fh', 'FKFjzk_fh', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金现金分红结转', 'KFjzk_fh', ' ', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上可转债申购手续费返还', 'KZZSXFH', 'fysje', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '送股业务凭证', 'ZDQY_SGPZ', 'ZDQY_FSGPZ', 'ZQSP_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '折算份额调整', 'HD', 'FEZS', 'TAXS_FETZ', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提管理费', 'HD', 'JTGLF', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转赎回款款项', 'ETFCWJZ', 'ETFTA', 'SHJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '承销债券', 'gzcx', 'Fgzcx', 'ZQJY_CX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出回购债券', 'hgjx', 'fhgjx', 'RCJT_HGSY', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上市流通', 'gzss', 'Fgzss', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券交易', 'gpgz', 'fgzlxsy', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股票交易', 'gpgz', 'fyfje', 'GPJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '存款科目利息', 'JX', 'FYHJX', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付信息披露费', 'ZDY_54XPF', 'ZDY_54XPF', 'SZJZYW', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转清算备付金凭证', 'ETFJZQSBFJ', 'ETFJZQSBFJ', 'SZJZYW', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利到帐', 'QYPX_HD', 'QYPX_HD', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , 'LOF基金合并', 'JJ_SZLOF', 'JJHB', 'ZQSP_JJHB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金赎回', 'HBETFSGSH', 'SH', 'CWSS_SHQR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海备付金调整', 'FYZFZD', 'SHBFJTZ', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海保证金调整', 'FYZFZD', 'SHBZJTZ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , 'ETF基金申购', 'HJETFSGSH', 'ETFSG', 'CNSS_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '货币ETF赎回收益交收', 'HBETF_SH_SYJS', 'HBETF_SH_SYJS', 'CNSS_JZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券质押式协议回购', 'ZQZYHG', 'GPZYHGRQDQ', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转应付替代款', 'ETFJZYFTDK', 'ETFJZYFTDK', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入返售到期', 'fhg', 'fmrdq', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出银行间回购到期', 'fyhhg', 'fmcdq', 'HGJY_ZHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出银行间回购', 'fyhhg', 'fmc', 'HGJY_ZHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '配股权证估值增值', 'PGYW', 'fgzgz', 'ZCGZ_ZQKC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入债券', 'cwgz', 'fcwgz', 'ZQJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出债券', 'cwgz', 'fcwgz', 'ZQJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股手续费返还', 'XGSXF', 'XGSXF', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金交易申购结转', 'XGSXF', 'XGSXF', 'SGJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '生成基金赎回交易', 'KFJJ', 'fKFJJ', 'TAXS_SH', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金交易赎回结转', 'KFjzk_sh', 'fKFJJ', 'JYJS_XSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金交易赎回结转', 'HD', 'JX', 'RCJT_ZDYFPPZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出回购到期', 'fhg', 'fmcdq', 'HGJY_ZHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上新股申购手续费返还', 'XGSXFH', 'fxgys', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上新股申购手续费返还', 'XGSXFH', 'fysje', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利到帐凭', 'QY_FHPZ', 'QY_FFHPZ', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付银行间交易费用', 'ZDY_53YHJ', 'ZDY_53YHJ', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '生成赎回凭证', 'ETFKFXS', 'ETFKFXS', 'ETFXS_XS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳最低备付金调整', 'ETFKFXS', 'ETFKFXS', 'ZJHH_HB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转现金差额凭证', 'ETFJZXJYE', 'ETFJZXJYE', 'JYJS_ETFXSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '送股业务凭证', 'SGPZ', 'FSGPZ', 'ZQSP_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '多头现货延期交收合约开仓', 'HJYQ', 'HJYQ_KC', 'XHJY_KC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '金交所ETF基金赎回', 'HJETFSGSH', 'ETFSH', 'ETFXS_XS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '期货交易费用', 'ZQQH', 'ZQQH_FY', 'JJYF_FY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '存入期货保证金', 'ZQQH', 'ZQQH_BZJZJ', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '贴现债调整成本', 'GZZZTZ', 'GZZZTZ', 'RCJT_ZDYPZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '金交所交易费用', 'HJFY', 'HJFYZF', 'JJYF_FY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入返售', 'fhg', 'fmr', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海清算备付金结息', 'ZDY_46SHQ', 'ZDY_46SHQ', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '季度申购款结息', 'ZDY_61SGK', 'ZDY_61SGK', 'ZJHH_LXJZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '计提管理费', 'HD', 'GZZZ', 'RCJT_YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海保证金调整', 'ZDY_33SHB', 'ZDY_33SHB', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '结转损益凭证', 'jzsy', 'fjzsy', 'SYJZ_JZSR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上中签', 'WSXG', 'GZZZTZ', 'XZSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '深圳保证金调整', 'ZDY_34SZB', 'ZDY_34SZB', 'ZJHH_BZJTZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付审计费', 'ZDY_55SJF', 'ZDY_55SJF', 'YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入股票业务', 'gpgz', 'fbyj', 'GPJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '季度申购款结息', 'YTFY', 'YTFY', 'RCJT_YTDT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股票送股', 'QYSG_HD', 'QYSG_HD', 'ZQSP_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付基本管理费', 'ZDY_21GLF', 'ZDY_21GLF', 'YYSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '拆出黄金利息收取', 'HJZJ', 'CCHJDQ', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '无负债结算', 'ZQQH', 'ZQQH_JS', 'ZCGZ_ZQKC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '转入|转出指数', 'FZSZBGZH', 'FZSZBGZH', 'RCJT_ZDYPZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '承兑凭证', 'gzcd', 'fgzcd', 'ZQJY_DF', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出黄金', 'HJBS', 'MCHJ', 'XHJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网上配股手续费返还', 'PGSXFH', 'fysje', 'QTSZ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '赎回费上月费用结转', 'KFjzk_shf', 'KFjzk_shf', 'JYJS_XSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金转出款结转到', 'KFjzk_zc', 'FKFjzk_zc', 'JYJS_XSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '基金转入款结转到', 'KFjzk_zr', 'FKFjzk_zr', 'JYJS_XSJS', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '划入转持股票', 'HRZC', 'HRZCGP', 'ZJZJTQ_ZQZJ_SB', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '卖出回购', 'fhg', 'fmc', 'HGJY_ZHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券计息', 'gpgz', 'fgpgzlx', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '红利到帐凭', 'QY_FHJZPZ', 'QY_FFHJZPZ', 'DJPX_FHPX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '网下退款|网下申购业务凭证', 'WXXG', 'fyhck', 'XGSG_SQ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '申购新股中签', 'XGPS', 'PSZQ', 'XGSG_QR', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股票卖出', 'gpgz', 'fgain', 'GPJY_SELL', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '支付银行汇划费', 'ZDY_1HHF', 'ZDY_1HHF', 'SZJZYW', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '冲减可退替代款', 'CJKTTDK', 'CJKTTDK', 'ETFXS_TBKCJ', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '现货延期交收合约无负债结算', 'HJYQ', 'HJYQ_JS', 'ZCGZ_ZQKC', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '买入银行间返售债券到期', 'fyhhg', 'fmrdq', 'HGJY_NHG_GHJY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '上海最低备付金结息', 'ZDY_42SHB', 'ZDY_42SHB', 'ZJLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券付息凭证', 'gzfx', 'fgzfx', 'ZQJY_HBFX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '送股业务凭证', 'QY_SGPZ', 'QY_FSGPZ', 'ZQSP_SG', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '债券计息', 'gpgz', 'fgzsy', 'RCJT_ZQLX', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '新股转流通业务凭证', 'WXXG', 'WXXG', 'ZQLT_ZQLT', ' ', ' ', ' ','',:=C_SRC);
+
+insert into t_p_ao_val_zh (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE,C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval , '股票买入', 'gpgz', 'fgpgz', 'GPJY_BUY', ' ', ' ', ' ','',:=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提教育附加税', 'JTZZS', 'JTJYFJS', 'VATJT_SURTAX', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提地方教育附加税', 'JTZZS', 'JTDFJYFJS', 'VATJT_SURTAX', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '计提城建费附加税', 'JTZZS', 'JTCJFFJS', 'VATJT_SURTAX', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '金融商品转让', 'JTZZS', 'JTJRSPZR', 'VATJT_VOUCHER', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '贷款服务收入', 'JTZZS', 'JTDKFWSR', 'VATJT_VOUCHER', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '未实现增值税暂估', 'JTZZS', 'GZZGZZS', 'VATJT_VOUCHER', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);
+
+insert into T_P_AO_VAL_ZH (C_IDEN, C_DESC, C_FPZLY, C_FZQJYFS, C_DT_CODE, C_MKT_CODE, C_SEC_VAR_CODE, C_DTA_CODE, C_DVA_ITEM_CODE,C_SYS_CLS)
+values (sequ_p_ao_val_zh.Nextval, '溢折价增值税暂估', 'JTZZS', 'YZJZGZZS', 'VATJT_VOUCHER', ' ', ' ', ' ', 'RCJT_ZZS', :=C_SRC);

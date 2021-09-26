@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clearRules desc="清算模块下的各规则的转换">
+	<mktCvtRules desc="市场的转换">
+		<Mkt id="SH" desc="上海交易所">XSHG</Mkt>
+		<Mkt id="SZ" desc="深圳交易所">XSHE</Mkt>
+		<Mkt id="AU" desc="澳大利亚">XASX</Mkt>
+		<Mkt id="HK" desc="香港">XHKG</Mkt>
+		<Mkt id="NZ" desc="新西兰">XNZE</Mkt>
+		<Mkt id="SP" desc="新加坡">XSES</Mkt>
+		<Mkt id="SW" desc="瑞士交易所">XWX</Mkt>
+		<Mkt id="US" desc="美国交易所">AMEX</Mkt>
+		<Mkt id="SG" desc="新加坡交易所">XSES</Mkt>
+		<Mkt id="GGT" desc="港股通联合交易所">HKCG</Mkt>
+		<Mkt id="CFX" desc="中国金融期货交易所">CCFX</Mkt>
+		<Mkt id="XSB" desc="全国中小企业股转转让市场">NEEQ</Mkt>
+		<Mkt id="YHJ" desc="中国银行间交易市场">XCFE</Mkt>
+		<Mkt id="GTSC" desc="中国柜台交易市场">COTC</Mkt>
+		<Mkt id="HJ" desc="上海黄金交易所">SGEX</Mkt>
+	</mktCvtRules>
+	<secVarRules desc="根据证券代码获得证券品种">
+	<!-- secfixcode 证券代码前三位  varcode 证券品种  参照 上交所2009 证券代码分配规则-->
+		<group id="SH" desc="上海交易所">
+			<sec secfixcode="000%" varcode="QH_GZ" desc = "上证指数，沪深300，中证指数"/>
+			<sec secfixcode="009%" varcode="ZQ_GZXQ" desc = "国债(2000年前发行)"/>
+			<sec secfixcode="010%" varcode="ZQ_GZXQ" desc = "国债(2001-2009)年发行"/>
+			<sec secfixcode="019%" varcode="ZQ_GZXQ" desc = "固定收益电子交易平台交易国债"/>
+			<sec secfixcode="020%" varcode="ZQ_GZXQ" desc = "记账式贴现国债"/>
+			<sec secfixcode="090%" varcode="HG_ZYS_GZXQ" desc = "新国债质押式回购质押券出入库(对应010国债)"/>
+			<sec secfixcode="099%" varcode="HG_ZYS_GZXQ" desc = "新国债质押式回购质押券出入库(对应009国债)"/>
+			
+			<sec secfixcode="100%" varcode="ZQ_KZZ" desc = "可转债"/>
+			<sec secfixcode="104%" varcode="ZQ_GSZ" desc = "公司债"/>
+			<sec secfixcode="105%" varcode="ZQ_QYZ" desc = "(1050**-1058**)分离债出入库，企业债出入库(1059*)"/>
+			<sec secfixcode="106%" varcode="ZQ_DFZFZ" desc = "地方政府债出入库"/>
+			<sec secfixcode="107%" varcode="ZQ_GZXQ" desc = "记账式贴现国债出入库"/>
+			<sec secfixcode="110%" varcode="ZQ_KZZ" desc = "可转债"/>
+			<sec secfixcode="112%" varcode="ZQ_KZZ" desc = "可转债"/>
+			<sec secfixcode="113%" varcode="ZQ_KZZ" desc = "可转债"/>
+			<sec secfixcode="120%" varcode="ZQ_QYZ" desc = "企业债"/>
+			<sec secfixcode="121%" varcode="ZQ" desc = "资产证券化"/>
+			<sec secfixcode="122%" varcode="ZQ_GSZ" desc = "公司债（1220-1224） 登记债(1225-1229)"/>
+			<sec secfixcode="126%" varcode="ZQ_GSZ" desc = "分离交易的可转换公司债"/>
+			<sec secfixcode="128%" varcode="ZQ_GSZ" desc = "可交换公司债"/>
+			<sec secfixcode="129%" varcode="ZQ_QYZ" desc = "企业债"/>
+			<sec secfixcode="130%" varcode="ZQ_DFZFZ" desc = "地方政府债"/>
+			<sec secfixcode="181%" varcode="GP_GP" desc = "可转债转股（600***）"/>
+			<sec secfixcode="190%" varcode="GP_GP" desc = "可转债转股（600***）"/>
+			<sec secfixcode="191%" varcode="GP_GP" desc = "可转债转股（601***）"/>
+			<sec secfixcode="192%" varcode="GP_GP" desc = "可交换公司债转股（128***）"/>
+			
+			<sec secfixcode="201%" varcode="HG" desc="国债回购（席位托管方式）" />
+			<sec secfixcode="202%" varcode="HG" desc="企业债回购" />
+			<sec secfixcode="203%" varcode="HG_MDS_GZXQ" desc="国债买断式回购" />
+			<sec secfixcode="204%" varcode="HG_ZYS" desc="债券质押式回购" />
+			<sec secfixcode="205%" varcode="HG" desc="债券质押式报价回购" />
+			
+			<sec secfixcode="310%" varcode="QH_ZQ"  desc="国债期货" />
+			
+			<sec secfixcode="500%" varcode="JJ_FBS" desc="封闭式基金" />
+			<sec secfixcode="510%" varcode="ZQ_DFZFZ" desc="交易型开放式指数证券投资基金" />
+			<sec secfixcode="519%" varcode="JJ_KFS" desc="开放式基金申购" />
+			<sec secfixcode="521%" varcode="JJ_KFS" desc="开放式基金认购" />
+			<sec secfixcode="522%" varcode="JJ_KFS" desc="开放式基金跨市场转托管" />
+			<sec secfixcode="523%" varcode="JJ_KFS" desc="开放式基金分红" />
+			<sec secfixcode="524%" varcode="JJ_KFS" desc="开放式基金基金转换" />
+			<sec secfixcode="580%" varcode="QZ_QZ" desc="权证（公司权证，股改权证）" />
+			<sec secfixcode="582%" varcode="QZ_QZ" desc="权证行权" />
+			
+			<sec secfixcode="600%" varcode="GP_GP" desc="A股" />
+			<sec secfixcode="601%" varcode="GP_GP" desc="A股" />
+			
+			<sec secfixcode="700%" varcode="GP_GP" desc="配股 ( 对应600***)" />
+			<sec secfixcode="702%" varcode="GP_GP" desc="职工股 配股( 对应600***)" />
+			<sec secfixcode="704%" varcode="GP_GP" desc="持股配债" />
+			<sec secfixcode="705%" varcode="JJ" desc="基金扩募" />
+			<sec secfixcode="706%" varcode="GP_GP" desc="要约收购" />
+			
+			<sec secfixcode="730%" varcode="GP_GP" desc="申购，增发 ( 对应600***)" />
+			<sec secfixcode="731%" varcode="GP_GP" desc="持股增发( 对应600***)" />
+			<sec secfixcode="733%" varcode="GP_GP" desc="可转债申购（ 对应600***)" />
+			<sec secfixcode="735%" varcode="JJ" desc="基金申购" />
+			<sec secfixcode="738%" varcode="GP_GP" desc="网上投票( 对应600***)" />
+			
+			<sec secfixcode="740%" varcode="GP_GP" desc="申购款，增发款 ( 对应600***)" />
+			<sec secfixcode="741%" varcode="GP_GP" desc="申购，增发配号( 对应600***)" />
+			<sec secfixcode="743%" varcode="GP_GP" desc="可转债发债款( 对应600***)" />
+			<sec secfixcode="744%" varcode="GP_GP" desc="可转债配号( 对应600***)" />
+			<sec secfixcode="745%" varcode="JJ" desc="基金申购款" />
+			<sec secfixcode="746%" varcode="JJ" desc="基金申购配号" />
+			
+			<sec secfixcode="751%" varcode="FX" desc="国债（000-199），地方政府债（900-969）对应(130***)，登记债 分销（970-999）对应(122***)" />
+			<sec secfixcode="760%" varcode="GP_GP" desc="配股 ( 对应601***)" />
+			<sec secfixcode="762%" varcode="GP_GP" desc="员工股配股( 对应601***)" />
+			<sec secfixcode="780%" varcode="GP_GP" desc="申购，增发( 对应601***)" />
+			<sec secfixcode="781%" varcode="GP_GP" desc="持股增发( 对应601***)" />
+			<sec secfixcode="783%" varcode="GP_GP" desc="可转债申购( 对应600***)" />
+			<sec secfixcode="788%" varcode="GP_GP" desc="网络投票( 对应601***)" />
+			
+			<sec secfixcode="790%" varcode="GP_GP" desc="申购款或增发款 ( 对应601***)" />
+			<sec secfixcode="791%" varcode="GP_GP" desc="申购或增发配号( 对应601***)" />
+			<sec secfixcode="793%" varcode="GP_GP" desc="可转债申购款 ( 对应601***)" />
+			<sec secfixcode="794%" varcode="GP_GP" desc="可转债配号( 对应601***)" />
+			<sec secfixcode="799%" varcode="GP_GP" desc="指定交易" />
+			
+			<sec secfixcode="900%" varcode="GP_GP" desc="B股" />
+			<sec secfixcode="938%" varcode="GP_GP" desc="网上投票(B股)" />
+			<sec secfixcode="939%" varcode="GP_GP" desc="B股网络投票密码服务" />
+		</group>
+	</secVarRules>
+	<!-- 彭博证券信息 -->
+	<secVarCodeCvtRules desc="证券类型">
+		<SecVarCode id="EQ" desc="股票">GP_GP</SecVarCode>
+		<SecVarCode id="OP" desc="权证">QZ</SecVarCode>
+		<SecVarCode id="FI" desc="债券">ZQ</SecVarCode>
+		<SecVarCode id="TR" desc="基金">JJ</SecVarCode>
+		<SecVarCode id="DE" desc="货币">HB</SecVarCode>
+		<SecVarCode id="RE" desc="回购">HG</SecVarCode>
+		<SecVarCode id="CL" desc="信贷">XD</SecVarCode>
+		<SecVarCode id="DR" desc="存托">CT</SecVarCode>
+		<SecVarCode id="RT" desc="信托">XT</SecVarCode>
+		<SecVarCode id="FW" desc="远期">YQ</SecVarCode>
+		<SecVarCode id="Mortgage" desc=" ">Mortgage</SecVarCode>
+		<SecVarCode id="FU" desc="期货">QH</SecVarCode>
+	</secVarCodeCvtRules>
+</clearRules>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "GZBXV3.0公共类" > 
+		<Info_Cls name = "基本信息" >
+			<Info_Detail dateCol="" table="lsetlist">lsetlist套账信息表</Info_Detail>
+			<Info_Detail dateCol="" table="LVARLIST">LVARLIST结算参数表</Info_Detail>
+			<Info_Detail dateCol="" table="cssysjj">cssysjj产品基本信息</Info_Detail>
+			<Info_Detail dateCol="" table="JJHZXX">JJHZXX基金汇总信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQXX">CSZQXX债券信息表</Info_Detail>
+			<Info_Detail dateCol="" table="cszqdmdzb">cszqdmdzb证券代码对照表</Info_Detail>
+			<Info_Detail dateCol="" table="FDZQLV">FDZQLV债券利率表</Info_Detail>
+			<Info_Detail dateCol="" table="csjjxx">csjjxx基金品种信息表</Info_Detail>
+			<Info_Detail dateCol="" table="HZJKQSYSS">HZJKQSYSS汇总接口清算表</Info_Detail>
+			<Info_Detail dateCol="" table="YHCKYWXX">YHCKYWXX银行存款业务表</Info_Detail>
+			<Info_Detail dateCol="" table="CSGDZH">CSGDZH股东账户信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQSXW">CSQSXW基金交易席位信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSGDLVNEW">CSGDLVNEW席位佣金利率表</Info_Detail>
+			<Info_Detail dateCol="" table="CSGDLV">CSGDLV回购佣金利率表</Info_Detail>
+			<Info_Detail dateCol="" table="CSJYFY">CSJYFY费用承担模式设定</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQJYLV">CSZQJYLV交易所品种费率设定表</Info_Detail>
+			<Info_Detail dateCol="" table="YHJXXX">YHJXXX银行计息设定表</Info_Detail>
+			<Info_Detail dateCol="" table="HZJKQSQDII">HZJKQSQDII汇总接口清算表QDII</Info_Detail>
+			<Info_Detail dateCol="" table="XGYWXX">XGYWXX新股业务表</Info_Detail>
+			<Info_Detail dateCol="" table="ZqZtgLt">ZqZtgLt证券转托管业务表</Info_Detail>
+			<Info_Detail dateCol="" table="YHZQXX">YHZQXX银行间债券业务表</Info_Detail>
+			<Info_Detail dateCol="" table="YHHGXX">YHHGXX银行间回购业务表</Info_Detail>
+			<Info_Detail dateCol="" table="JJHGDYZQ">JJHGDYZQ银行间回购业务标的券表</Info_Detail>
+			<Info_Detail dateCol="" table="JJYWXX">JJYWXX开放式基金业务表</Info_Detail>
+			<Info_Detail dateCol="" table="YtDtXx1">YtDtXx1预提待摊业务表</Info_Detail>
+			<Info_Detail dateCol="" table="JJQYXX">JJQYXX权益业务表</Info_Detail>
+			<Info_Detail dateCol="" table="QHGSXX">QHGSXX期货公司信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQHZHXX">CSQHZHXX期货账户信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CsJyLv_GzQh">CsJyLv_GzQh股指期货费率信息表</Info_Detail>
+			<Info_Detail dateCol="" table="sys_futures_trade_info">sys_futures_trade_info期货数据业务表</Info_Detail>
+			<!--<Info_Detail dateCol="" table="SYS_STOCK_INDEX_FUTURES_INFO">SYS_STOCK_INDEX_FUTURES_INFO股指期货合约信息表</Info_Detail> 表名过长，需特殊处理-->
+			<Info_Detail dateCol="" table="T_YHJXQJINFO">T_YHJXQJINFO计息区间</Info_Detail>
+			<Info_Detail dateCol="" table="CSJTFLXX">CSJTFLXX 管理费托管费率表</Info_Detail>
+			<Info_Detail dateCol="" table="CsGLfxx">CsGLfxx 管理费托管费率表</Info_Detail>
+			<Info_Detail dateCol="" table="jtlfsd">jtlfsd 计提两费设定表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQYXX">CSQYXX权益信息表</Info_Detail>
+		</Info_Cls> 
+		<Info_Cls name = "基本信息-营改增" >
+			<Info_Detail dateCol="" table="ZzsSetting">ZzsSetting增值税设定信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CsZssForJrTy">CsZssForJrTy金融同业设置表</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "GZBXV3.0组合类" >  
+	  <Info_Cls name = "交易数据" >   
+	    <Info_Detail dateCol="FDATE" table="A{port}JJHZGZB">JHZGZB估值表</Info_Detail>
+	    <Info_Detail dateCol="" table="A{port}LBALANCEINSYLBD">LBALANCEINSYLBD实际利率表</Info_Detail>
+	    <Info_Detail dateCol="" table="A{port}ZQPZXX">ZQPZXX债券科目对应表</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "GZBXV3.0年份类" >  
+	   <Info_Cls name = "行情数据" >  
+	   	<Info_Detail dateCol="FDATE" table="A{year}JJHZHQ">JJHZHQ证券行情表</Info_Detail>
+	   </Info_Cls>
+	</Info_Cls>
+	
+	<Info_Cls name = "GZBXV3.0年份组合类" >  
+	    <Info_Cls name = "财务数据" >  
+	    		<!-- 只有年份表才能用C_YEAR -->
+	    		<Info_Detail dateCol="C_YEAR" table="A{year}{port}LCURRENCY">币种表</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LACCOUNT">科目表</Info_Detail>
+		        <Info_Detail dateCol="FDATE" table="A{year}{port}FCWVCH">财务凭证</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LBALANCE">余额表</Info_Detail>
+		</Info_Cls>   
+	    <Info_Cls name = "财务数据-营改增" >  
+				<Info_Detail dateCol="FDATE" table="A{year}{port}JRCPZRTZ">JRCPZRTZ金融商品转让台账表</Info_Detail>
+				<Info_Detail dateCol="FDATE" table="A{year}{port}JRCPZRYZJTZ">JRCPZRYZJTZ金融商品转让溢折价台账表</Info_Detail>
+				<Info_Detail dateCol="FDATE" table="A{year}{port}DKFWTZ">DKFWTZ贷款服务类台账表</Info_Detail>
+				<Info_Detail dateCol="FDATE" table="A{year}{port}JXSTZ">JXSTZ进项税台账表</Info_Detail>
+				<Info_Detail dateCol="FDATE" table="A{year}{port}WSXZZSTZ">WSXZZSTZ未实现增值税台账表</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+</Info_List> 

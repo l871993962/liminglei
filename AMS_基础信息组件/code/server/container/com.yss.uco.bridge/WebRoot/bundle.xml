@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 各个产品线的组件列表 -->
+<bundles> 
+	<bundleList productLine="SECINFO" desc="资讯信息" version="1.300.7.0"> 
+		<bundle code="com.yss.ams.base.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.base.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information.support_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.ams.db.upgrade.secinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.baseinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.productinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.syncdata_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.syncdata.support_1.0.0.jar" desc="" />
+		<dependencies>
+			<dependency productLine="FAST" version="3.0.0.0">
+				<bundle code="com.yss.communicationProtocol.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.atomicdata.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.cache_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.db.upgrade.support_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.db.upgrade_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.doctor.client_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.doctor.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.mq.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.right.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.servicecenter.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.systemmanager.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.framework_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.platform.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.reference_1.0.0.jar" desc=""/>  
+			</dependency>
+		</dependencies>
+  </bundleList>  
+  <bundleList productLine="BASEINFO" desc="基础信息" version="1.300.7.0"> 
+		<bundle code="com.yss.ams.base.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information.support_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.ams.db.upgrade.secinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.baseinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.productinfo_1.0.0.jar" desc="" />
+		<dependencies>
+			<dependency productLine="FAST" version="3.0.0.0">
+				<bundle code="com.yss.communicationProtocol.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.atomicdata.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.cache_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.db.upgrade.support_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.db.upgrade_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.doctor.client_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.doctor.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.mq.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.right.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.task.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.fast.workflow.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.fast.runtime_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.servicecenter.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.systemmanager.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.framework_1.0.0.jar" desc=""/>				
+				<bundle code="com.yss.platform.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.reference_1.0.0.jar" desc=""/>  
+			</dependency>
+			<dependency productLine="UCO" version="1.300.7.0">
+				<bundle code="com.yss.uco.support-1.300.7.0-SNAPSHOT.jar" desc=""/>  
+			</dependency>
+		</dependencies>
+  </bundleList>  
+  <bundleList productLine="PRODUCTINFO" desc="产品信息" version="1.300.7.0"> 
+	<bundle code="com.yss.ams.base.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.base.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.product.information.support_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information_1.0.0.jar" desc=""/>  
+		<bundle code="com.yss.ams.sec.information.support_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.ams.db.upgrade.secinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.baseinfo_1.0.0.jar" desc="" />
+		<bundle code="com.yss.ams.db.upgrade.productinfo_1.0.0.jar" desc="" />
+		<dependencies>
+			<dependency productLine="FAST" version="3.0.0.0">
+				<bundle code="com.yss.communicationProtocol.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.atomicdata.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.cache_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.db.upgrade.support_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.db.upgrade_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.doctor.client_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.doctor.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.mq.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.right.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.servicecenter.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.systemmanager.support_1.0.0.jar" desc=""/>				
+				<bundle code="com.yss.framework_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.platform.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.reference_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.dataintegration.support_1.0.0.jar" desc=""/> 
+			</dependency>
+		</dependencies>
+  </bundleList>  
+</bundles>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--start 是否开启数据库升级  backup数据升级时 是否需要备份 -->
+<FastRight start="true"/>

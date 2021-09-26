@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RESULT>  
+	<VALUE>　　   
+   <name>交易市场</name>　　   
+   <code>T_TRANS_MKT</code> 
+   <funCode>QDgetmarket</funCode>
+	</VALUE>  
+
+	<VALUE>　　   
+   <name>费用品种</name> 　   
+   <code>T_TRANS_FEE</code>
+   <funCode>QDgetfee</funCode>  
+	</VALUE>  
+
+	<VALUE>　　   
+   <name>证券品种</name> 　   
+   <code>T_TRANS_SECCAT</code>
+   <funCode>QDgetseccat</funCode>  
+	</VALUE>  
+
+	<VALUE>　　   
+   <name>来源标识</name> 　   
+   <code>T_TRANS_SOURCE</code>
+   <funCode>QDgetsource</funCode>  
+	</VALUE>  
+
+	<VALUE>　　   
+   <name>现金账户转换</name> 　   
+   <code>T_TRANS_CA</code>
+   <funCode>QDgetca</funCode>  
+	</VALUE>  
+
+	<VALUE>　　   
+   <name>证券标志及业务标志转换</name> 　   
+   <code>T_P_CO_SIGN_ZH</code>
+   <funCode>SecuritiesMark</funCode>  
+	</VALUE>  
+
+   <VALUE>　　   
+   <name>凭证类型转换</name> 　   
+   <code>T_P_AO_VAL_ZH</code>
+   <funCode>VchTypeSwitch</funCode>  
+   </VALUE>  
+
+   <VALUE>　　   
+   <name>科目性质转换</name> 　   
+   <code>T_P_KM_FTATTR_ZH</code>
+   <funCode>SwitchDictDataMig</funCode>  
+   </VALUE>  
+
+   <VALUE>
+   <name>估值指标转换</name> 　   
+   <code>T_TRANS_INDEX</code>
+   <funCode>QDgetindex</funCode>  
+   </VALUE>
+
+   <VALUE>
+   <name>关联机构对应关系</name> 　   
+   <code>T_TRANS_ORG</code>
+   <funCode>QDgetorg</funCode>  
+   </VALUE>
+
+
+   <VALUE>
+   <name>证券代码转换</name> 　   
+   <code>T_TRANS_SEC</code>
+   <funCode>QDgetsec</funCode>  
+   </VALUE> 
+
+   <VALUE>
+   <name>科目代码对应关系</name> 　   
+   <code>T_TRANS_KMMAP</code>
+   <funCode>QDgetkmmap</funCode>  
+   </VALUE> 
+   
+   <VALUE>
+   <name>新老组合转换</name> 　   
+   <code>T_TRANS_PORT</code>
+   <funCode>QDgetport</funCode>  
+   </VALUE>
+   
+   <VALUE>
+   <name>新旧准则投资分类转换</name> 　   
+   <code>T_TRANS_INVEST</code>
+   <funCode>QDgetinvest</funCode>  
+   </VALUE>
+</RESULT>

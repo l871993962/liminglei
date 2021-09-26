@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<path> 
+  <!-- 两个属性分别对应以前的 KmMapRule,updateV4.5KmCode -->
+  <!-- 当前配置为中信证券模式,默认用下面被注释的配置 -->
+  <map KmMapRule = "KmMapRule.nfjj"  updateKmCode = "updateV4.5KmCode" />
+  <!--<map KmMapRule = "KmMapRule"  updateKmCode = "updateV4.5KmCode" /> -->
+</path>

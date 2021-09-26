@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="JYSCP" name="交易市场P" funcode="mktpdiquy" datasource="DB">
+	<exp>
+		<data id="mktp">
+			<table-name>T_P_BI_MKT</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_P_BI_MKT  where C_MKT_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_MKT_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name=""></outfile>
+	</imp>
+
+</source>

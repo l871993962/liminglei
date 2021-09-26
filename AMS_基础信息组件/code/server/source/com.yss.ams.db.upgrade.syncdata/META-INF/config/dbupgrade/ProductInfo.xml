@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品信息 描述文件
+	由于维护产品的层级关系。
+	注意：定义的模块代码不能重复
+-->
+<!-- code:产品代码， name:产品名称 -->
+<product code="SyncData" name="数据同步">
+    <module_1 code="DICT" name="数据字典" >
+	</module_1>
+	<module_1 code="PUBLIC" name="公共信息" >
+	</module_1>
+</product>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+	<!-- STORY #67057 技术平台与公共组件解耦  start -->
+	<class id="IFastAssetsService"
+		interface="com.yss.framework.api.commonInfo.service.IFastAssetsService"
+		menuId="IFastAssetsService" class="com.yss.ams.base.information.fast.service.FastAssetsService" />
+	<class id="IFastOrgService"
+		interface="com.yss.framework.api.commonInfo.service.IFastOrgService"
+		menuId="IFastOrgService" class="com.yss.ams.base.information.fast.service.FastOrgService" />
+	<class id="IFastHolidayService"
+		interface="com.yss.framework.api.commonInfo.service.IFastHolidayService"
+		menuId="IFastHolidayService" class="com.yss.ams.base.information.fast.service.FastHolidayService" />
+	<class id="IFastDttdModeService"
+		interface="com.yss.framework.api.commonInfo.service.IFastDttdModeService"
+		menuId="IFastDttdModeService" class="com.yss.ams.base.information.fast.service.FastDttdModeService" />
+	<class id="IFastMktDataService"
+		interface="com.yss.framework.api.commonInfo.service.IFastMktDataService"
+		menuId="IFastMktDataService" class="com.yss.ams.base.information.fast.service.FastMktDataService" />
+	<!-- STORY #67057 技术平台与公共组件解耦  end-->
+	<!-- 交易市场设置 -->
+	<class id="IMktService" menuId="base_exchange"
+		class="com.yss.ams.base.information.modules.bi.mkt.service.impl.MktService"
+		interface="com.yss.ams.base.information.support.bi.mkt.service.IMktService" />
+	<class id="IMktDataService" menuId="base_exchange"
+		class="com.yss.ams.base.information.modules.bi.mkt.service.impl.MktDataService"
+		interface="com.yss.ams.base.information.support.bi.mkt.service.IMktDataService" />
+	<class id="IMktVarDataService" menuId="base_exchange"
+		class="com.yss.ams.base.information.modules.bi.mkt.service.impl.MktVarDataService"
+		interface="com.yss.ams.base.information.support.bi.mkt.service.IMktVarDataService" />
+	<class id="IMktHDayDataService" menuId="base_mkthday"
+		interface="com.yss.ams.base.information.support.bi.mkt.service.IMktHDayDataService"
+		class="com.yss.ams.base.information.modules.bi.mkt.service.impl.MktHDayDataService" />
+	<!-- 节假日群类型 -->
+	<class id="IHdayGroupService" menuId="base_holidays_A"
+		class="com.yss.ams.base.information.modules.bi.hdaygroup.service.impl.HdayGroupService"
+		interface="com.yss.ams.base.information.support.bi.hdaygroup.service.IHdayGroupService" />
+	<class id="IHDayDataService" menuId="base_holidays"
+		class="com.yss.ams.base.information.modules.bi.hdaygroup.service.impl.HDayDataService"
+		interface="com.yss.ams.base.information.support.bi.hdaygroup.service.IHDayDataService" />
+	<!-- 节假日群设置 -->
+	<class id="IHdayService" menuId="base_holidays"
+		class="com.yss.ams.base.information.modules.bi.hday.service.impl.HdayService"
+		interface="com.yss.ams.base.information.support.bi.hday.service.IHdayService" />
+	<class id="HolidaysAideService" menuId="base_holidays"
+		class="com.yss.ams.base.information.util.holidays.HolidaysAideService"
+		interface="com.yss.ams.base.information.support.util.holidays.IHolidaysAideService" />
+	<!-- 地区信息设置 -->
+	<class id="IAreaService" menuId="base_area"
+		class="com.yss.ams.base.information.modules.bi.region.service.impl.AreaService"
+		interface="com.yss.ams.base.information.support.bi.region.service.IAreaService" />
+	<class id="IAreaDataService" menuId="base_area"
+		class="com.yss.ams.base.information.modules.bi.region.service.impl.AreaDataService"
+		interface="com.yss.ams.base.information.support.bi.region.service.IAreaDataService" />
+	<!-- 货币对设置 开始 -->
+	<class id="ICuryPairService" menuId="base_currencyPair"
+		class="com.yss.ams.base.information.modules.bi.curypair.service.impl.CuryPairService"
+		interface="com.yss.ams.base.information.support.bi.curypair.service.ICuryPairService" />
+	<class id="ICuryPairDataService" menuId="base_currencyPair"
+		class="com.yss.ams.base.information.modules.bi.curypair.service.impl.CuryPairDataService"
+		interface="com.yss.ams.base.information.support.bi.curypair.service.ICuryPairDataService" />
+	<!-- 货币对设置 结束 -->
+	<!-- 国际货币设置 开始 -->
+	<class id="IDcCuryService" menuId="base_currency"
+		class="com.yss.ams.base.information.modules.sys.dccury.service.impl.DcCuryService"
+		interface="com.yss.ams.base.information.support.sys.dccury.service.IDcCuryService" />
+	<class id="IDcCuryQuyService"
+		interface="com.yss.ams.base.information.support.sys.dccury.service.IDCDataService"
+		menuId="base_currency"
+		class="com.yss.ams.base.information.modules.sys.dccury.service.impl.DcCuryDataService" />
+	<class id="IDCDataService"
+		interface="com.yss.ams.base.information.support.sys.dccury.service.IDCDataService"
+		menuId="base_currency"
+		class="com.yss.ams.base.information.modules.sys.dccury.service.impl.DcCuryDataService"></class>
+	<!-- 国际货币设置 结束 -->
+	<!-- 转换字典开始 -->
+	<class id="IZhzdService" menuId="base_zhzd"
+		interface="com.yss.ams.base.information.support.sys.convertdict.zhzd.service.IZhzdService"
+		class="com.yss.ams.base.information.modules.sys.convertdict.zhzd.service.impl.ZhzdService" />
+	<class id="IZhzdDataService" menuId="base_zhzd"
+		interface="com.yss.ams.base.information.support.sys.convertdict.zhzd.service.IZhzdDataService"
+		class="com.yss.ams.base.information.modules.sys.convertdict.zhzd.service.impl.ZhzdDataService" />
+	<class id="IZdOrgService" menuId="base_zdorg"
+		interface="com.yss.ams.base.information.support.sys.convertdict.zdorg.service.IZdOrgService"
+		class="com.yss.ams.base.information.modules.sys.convertdict.zdorg.service.impl.ZdOrgService" />
+	<!-- 转换字典结束 -->
+	<!-- 收支项目设置 -->
+	<class id="IIeService" menuId="base_ie"
+		class="com.yss.ams.base.information.modules.bi.ie.service.impl.IeService"
+		interface="com.yss.ams.base.information.support.bi.ie.service.IIeService" />
+	<class id="IIeDataService" menuId="base_ie"
+		class="com.yss.ams.base.information.modules.bi.ie.service.impl.IeDataService"
+		interface="com.yss.ams.base.information.support.bi.ie.service.IIeDataService" />
+	<!-- 收支分类设置 -->
+	<class id="IIeLinkService" menuId="base_ieLink"
+		class="com.yss.ams.base.information.modules.bi.ieLink.service.impl.IeLinkService"
+		interface="com.yss.ams.base.information.support.bi.ieLink.service.IIeLinkService" />
+	<class id="IIeLinkDataService" menuId="base_ieLink"
+		class="com.yss.ams.base.information.modules.bi.ieLink.service.impl.IeLinkDataService"
+		interface="com.yss.ams.base.information.support.bi.ieLink.service.IIeLinkDataService" />
+	<class id="IFeeDataService" menuId="base_feeRela"
+		class="com.yss.ams.base.information.modules.bi.ieLink.service.impl.FeeDataService"
+		interface="com.yss.ams.base.information.support.bi.ieLink.service.IFeeDataService" />
+	<class id="IFeeService" menuId="base_feeBreed"
+		class="com.yss.ams.base.information.modules.bi.ieLink.service.impl.FeeService"
+		interface="com.yss.ams.base.information.support.bi.ieLink.service.IFeeService" />
+
+
+	<!-- 关联机构 开始 -->
+	<class id="IOrgService" menuId="base_organ"
+		class="com.yss.ams.base.information.modules.bi.org.service.impl.OrgService"
+		interface="com.yss.ams.base.information.support.bi.org.service.IOrgService" />
+	<class id="IOrgDataService" menuId="base_organ"
+		class="com.yss.ams.base.information.modules.bi.org.service.impl.OrgDataService"
+		interface="com.yss.ams.base.information.support.bi.org.service.IOrgDataService" />
+	<!-- 关联机构 结束 -->
+
+
+	<!-- 销售网点设置 -->
+	<class id="INetDataService" menuId="base_taselnet"
+		class="com.yss.ams.base.information.modules.bi.salesnet.service.impl.SalesNetDataService"
+		interface="com.yss.ams.base.information.support.bi.salesnet.service.INetDataService" />
+	<class id="ISalesNetService" menuId="base_taselnet"
+		class="com.yss.ams.base.information.modules.bi.salesnet.service.impl.SalesNetService"
+		interface="com.yss.ams.base.information.support.bi.salesnet.service.ISalesNetService" />
+
+	
+	<!-- 现金流标记字典接口 -->
+	<class id="ICashFlowService" menuId="base_cashflow"
+		class="com.yss.ams.base.information.modules.sys.cashflow.service.impl.CashFlowService"
+		interface="com.yss.ams.base.information.support.sys.cashflow.service.ICashFlowService" />
+	<!-- 信息来源标识 -->
+	<class id="ISrcSignService" menuId="base_baseSourceRecord"
+		class="com.yss.ams.base.information.modules.bi.srcsign.service.impl.SrcSignService"
+		interface="com.yss.ams.base.information.support.bi.srcsign.service.ISrcSignService" />
+	<class id="IOrgMgrService" menuId="base_orgmgr"
+		class="com.yss.ams.base.information.modules.bi.orgmgr.service.impl.OrgMgrService"
+		interface="com.yss.ams.base.information.support.bi.orgmgr.service.IOrgMgrService" />
+	
+	
+		
+	<!-- 对账类型字典 -->
+	<class id="IDzTypeDataService" menuId="base_dzcode"
+		class="com.yss.ams.base.information.modules.sys.dztype.service.impl.DzTypeDataService"
+		interface="com.yss.ams.base.information.support.sys.dztype.service.IDzTypeDataService" />
+	
+	
+	
+		
+	<!-- 费用关联字典 -->    
+    <class id="IFeeRelationService" menuId="base_feeRela"
+		class="com.yss.ams.base.information.modules.sys.feeRelation.service.impl.FeeRelationService"
+		interface="com.yss.ams.base.information.support.sys.feeRelation.service.IFeeRelationService" />
+	
+	<!-- 证券品种接口 -->
+	<class id="ISecVarDataService" menuId="base_seccategory"
+		class="com.yss.ams.base.information.modules.sys.secvar.service.impl.SecVarDataService"
+		interface="com.yss.ams.base.information.support.sys.secvar.service.ISecVarDataService"></class>
+	<class id="ISecVarService" menuId="base_seccategory"
+		class="com.yss.ams.base.information.modules.sys.secvar.service.impl.SecVarService"
+		interface="com.yss.ams.base.information.support.sys.secvar.service.ISecVarService" />
+
+	<class id="ISecVarDiService" menuId="base_seccategoryquy"
+		class="com.yss.ams.base.information.modules.sys.secvardi.service.impl.SecVarDiService"
+		interface="com.yss.ams.base.information.support.sys.secvardi.service.ISecVarDiService" />
+
+	<!-- 资产类型字典 接口 serviceMap.xml -->
+	<class id="IAccTypeDataService" menuId="base_accType"
+		class="com.yss.ams.base.information.modules.sys.acctype.service.impl.AccTypeDataService"
+		interface="com.yss.ams.base.information.support.sys.acctype.service.IAccTypeDataService" />
+	<class id="IAccTypeService" menuId="base_acctypequy"
+		class="com.yss.ams.base.information.modules.sys.acctype.service.impl.AccTypeService"
+		interface="com.yss.ams.base.information.support.sys.acctype.service.IAccTypeService" />
+
+	<!-- 销售/交易方式字典接口 -->
+	<class id="IDttdModeService" menuId="base_dttdmodequy"
+		class="com.yss.ams.base.information.modules.sys.dttdmode.service.impl.DttdModeService"
+		interface="com.yss.ams.base.information.support.sys.dttdmode.service.IDttdModeService" />
+	<class id="IDtTdModeDataService" menuId="base_dttdmode"
+		class="com.yss.ams.base.information.modules.sys.dttdmode.service.impl.DtTdModeDataService"
+		interface="com.yss.ams.base.information.support.sys.dttdmode.service.IDtTdModeDataService" />
+		
+	<!-- 交易属性字典 接口 serviceMap.xml-->
+	<class id="IDtaTdAttrDataService" menuId="base_dtatdattrquy"
+		class="com.yss.ams.base.information.modules.sys.dtatdattr.service.impl.DtaTdAttrDataService"
+		interface="com.yss.ams.base.information.support.sys.dtatdattr.service.IDtaTdAttrDataService" />
+	<class id="IDtatdAttrService" menuId="base_dtatdattrquy"
+		class="com.yss.ams.base.information.modules.sys.dtatdattr.service.impl.DtatdAttrService"
+		interface="com.yss.ams.base.information.support.sys.dtatdattr.service.IDtatdAttrService" />
+		
+	<!-- 核算项目字典 接口 serviceMap.xml-->
+	<class id="IAccProDataService" menuId="base_accPro"
+		class="com.yss.ams.base.information.modules.sys.dai.service.impl.AccProDataService" 
+		interface="com.yss.ams.base.information.support.sys.dai.service.IAccProDataService" />
+	<class id="IAccProService" menuId="base_accPro"
+		class="com.yss.ams.base.information.modules.sys.dai.service.impl.AccProService" 
+		interface="com.yss.ams.base.information.support.sys.dai.service.IAccProService" />
+	<class id="IEDaiDictService" menuId="base_daidictquy"
+		class="com.yss.ams.base.information.modules.sys.dai.service.impl.DaiDictService" 
+		interface="com.yss.ams.base.information.support.sys.dai.service.IDaiDictService"/>
+	<class id="IDaiDictService" menuId="base_DaiDict"
+		class="com.yss.ams.base.information.modules.sys.dai.service.impl.DaiDictService" 
+		interface="com.yss.ams.base.information.support.sys.dai.service.IDaiDictService" />
+	
+	<!-- 核算业务项字典 接口 serviceMap.xml-->
+	<class id="IDvaItemDataService" menuId="base_dvaitemquy"
+		class="com.yss.ams.base.information.modules.sys.dvaitem.service.impl.DvaItemDataService"
+		interface="com.yss.ams.base.information.support.sys.dvaitem.service.IDvaItemDataService" />
+	<class id="IDvaItemDataService" menuId="base_dvaitem" 
+		class="com.yss.ams.base.information.modules.sys.dvaitem.service.impl.DvaItemDataService"
+		interface="com.yss.ams.base.information.support.sys.dvaitem.service.IDvaItemDataService" />
+	<class id="IDvaItemService" menuId="base_dvaitemquy"
+		class="com.yss.ams.base.information.modules.sys.dvaitem.service.impl.DvaItemService" 
+		interface="com.yss.ams.base.information.support.sys.dvaitem.service.IDvaItemService" />
+
+	<!-- 综合参数字典 接口 serviceMap.xml-->
+	<class id="IDspParaService" menuId="base_dspparaquy"
+		class="com.yss.ams.base.information.modules.sys.dsppara.service.impl.DspParaService" 
+		interface="com.yss.ams.base.information.support.sys.dsppara.service.IDspParaService"></class>
+
+	<!-- 表达式字典 接口 serviceMap.xml-->
+	<class id="IDeExpService" menuId="base_deexpquy"
+		class="com.yss.ams.base.information.modules.sys.deexp.service.impl.DeExpService" 
+		interface="com.yss.ams.base.information.support.sys.deexp.service.IDeExpService" />
+
+	<!-- 财务项目字典 接口 serviceMap.xml-->
+	<class id="IFinItemService" menuId="base_finitemquy"
+		class="com.yss.ams.base.information.modules.sys.finitem.service.impl.FinItemService" 
+		interface="com.yss.ams.base.information.support.sys.finitem.service.IFinItemService" />
+
+	<!-- 收支项目字典 接口 serviceMap.xml-->
+	<class id="IIeItemService" menuId="base_ieitemquy"
+		class="com.yss.ams.base.information.modules.sys.ieItem.service.impl.IeItemService" 
+		interface="com.yss.ams.base.information.support.sys.ieItem.service.IIeItemService" />
+	<class id="IIeItemDataService" menuId="base_ieitemquy"
+		class="com.yss.ams.base.information.modules.sys.ieItem.service.impl.IeItemDataService"
+		interface="com.yss.ams.base.information.support.sys.ieItem.service.IIeItemDataService" />
+
+	<!-- 交易市场字典 接口 serviceMap.xml-->
+	<class id="IMktsdiService" menuId="base_mktsdiquy"
+		class="com.yss.ams.base.information.modules.sys.mktsdi.service.impl.MktsdiService" 
+		interface="com.yss.ams.base.information.support.sys.mktsdi.service.IMktsdiService"></class>
+
+	<!-- 合规指标类型字典 接口 serviceMap.xml-->
+	<class id="IIndexdiService" menuId="base_indexdiquy"
+		class="com.yss.ams.base.information.modules.sys.indexdi.service.impl.IndexdiService" 
+		interface="com.yss.ams.base.information.support.sys.indexdi.service.IIndexdiService"></class>
+
+
+	<!-- 合规指标项目字典 接口 serviceMap.xml-->
+	<class id="ISClIndexService" menuId="base_sClIndex"
+		class="com.yss.ams.base.information.modules.sys.sclindex.service.impl.SClIndexService"
+		interface="com.yss.ams.base.information.support.sys.sclindex.service.ISClIndexService" />
+	
+	<!-- 核算元素明细字典 接口 serviceMap.xml-->
+<!-- 	<class id="IDaeElemQueryDataService" menuId="base_accEleDetail" -->
+<!--         class="com.yss.ams.base.information.modules.sys.accele.service.impl.DaeElemQueryDataService"  -->
+<!--         interface="com.yss.ams.base.information.support.sys.accele.service.IDaeElemQueryDataService" /> -->
+	
+	<!-- 核算元素字典 接口 -->
+	<class id="IAccEleService" menuId="base_accelequy"
+		class="com.yss.ams.base.information.modules.sys.accele.service.impl.AccEleService" 
+		interface="com.yss.ams.base.information.support.sys.accele.service.IAccEleService" />
+		
+	<class id="IDaeElemService" menuId="base_DaeElem"
+		class="com.yss.ams.base.information.modules.sys.daeelem.service.impl.DaeElemService" 
+		interface="com.yss.ams.base.information.support.sys.daeelem.service.IDaeElemService" />
+		
+	<class id="IDaeElemDataService" menuId="base_DaeElem"
+		class="com.yss.ams.base.information.modules.sys.accele.service.impl.DaeElemDataService"
+		interface="com.yss.ams.base.information.support.sys.accele.service.IDaeElemDataService" />
+		
+	<!-- 银行账户基本信息服务  迁移至基础information组件  -->		
+	<class id="IFundAccService" menuId="fundAccInfo"
+		class="com.yss.ams.base.information.modules.bi.account.service.impl.FundAccService"
+		interface="com.yss.ams.base.information.support.bi.account.service.IFundAccService" />
+	
+ 	<class id="IFundAccDataService" menuId="fundAccInfo" 
+ 		class="com.yss.ams.base.information.modules.bi.account.service.impl.FundAccDataService" 
+		interface="com.yss.ams.base.information.support.bi.account.service.IFundAccDataService" /> 
+		
+		
+	<!-- 账户类型后台服务 -->
+	<class id="IAccountTypeService" menuId="base_accountType"
+		class="com.yss.ams.base.information.modules.bi.accountType.service.imp.AccountTypeService"
+		interface="com.yss.ams.base.information.support.bi.dactype.service.IAccountTypeService" />
+	<!-- 账户类型data服务-->
+	<class id="IAccountTypeDataService" menuId="base_accountType"
+		class="com.yss.ams.base.information.modules.bi.accountType.service.imp.AccountTypeDataService"
+		interface="com.yss.ams.base.information.support.bi.dactype.service.IAccountTypeDataService" />
+		
+	<!-- 区域信息 -->		
+	<class id="IAreaCityDataService" menuId="base_areacity"
+		class="com.yss.ams.base.information.modules.bi.account.service.impl.AreaCityDataService" interface="com.yss.ams.base.information.support.bi.account.service.IAreaCityDataService" />	
+	<!-- 区域信息data服务-->
+	<class id="IAreaCityDataMapService" menuId="base_areacity"
+		class="com.yss.ams.base.information.modules.bi.account.service.impl.AreaCityDataMapService" interface="com.yss.ams.base.information.support.bi.account.service.IAreaCityDataMapService" />
+		
+	<!-- 账户树形结构A区-->		
+	<class id="IAccountTreeAService" menuId="base_accountTreeA"
+		class="com.yss.ams.base.information.modules.bi.accountTreeA.service.impl.AccountTreeAService" 
+		interface="com.yss.ams.base.information.support.bi.accountTreeA.service.IAccountTreeAService" />	
+	<!-- 账户树形结构A区数据服务-->		
+	<class id="IAccountTreeADataService" menuId="base_accountTreeA"
+		class="com.yss.ams.base.information.modules.bi.accountTreeA.service.impl.AccountTreeADataService" 
+		interface="com.yss.ams.base.information.support.bi.accountTreeA.service.IAccountTreeADataService" />
+	
+	<!-- 账户树形结构B区-->		
+	<class id="IAccountTreeBService" menuId="base_accountTreeB"
+		class="com.yss.ams.base.information.modules.bi.accountTreeB.service.impl.AccountTreeBService" 
+		interface="com.yss.ams.base.information.support.bi.accountTreeB.service.IAccountTreeBService" />
+		
+	<!-- 交易渠道 -->
+	<class id="ISecSeatDataService" menuId="base_tradeSeat"
+		class="com.yss.ams.base.information.modules.bi.tdchan.service.impl.SecSeatDataService"
+		interface="com.yss.ams.base.information.support.bi.tdchan.service.ISecSeatDataService" />	
+	
+	<!-- 查询组合托管行信息 -->	
+	<class id="IFastPortOrgService" menuId="base_fastPortOrg"
+		class="com.yss.ams.base.information.modules.bi.org.service.impl.FastPortOrgServiceImpl" 
+		interface="com.yss.framework.api.commonInfo.service.IFastPortOrgService" />
+		
+	<!-- 产品业务范围-->		
+	<class id="IPortBusinessRangeService" menuId="base_portBusinessRange"
+		class="com.yss.ams.base.information.modules.sys.portbusinessrange.service.impl.PortBusinessRangeServiceImpl" 
+		interface="com.yss.ams.base.information.support.sys.portbusinessrange.service.IPortBusinessRangeService" />	
+		
+	<class id="IAutoRouteBusiService" menuId="base_portBusinessRange"
+		class="com.yss.ams.base.information.modules.sys.portbusinessrange.service.impl.AutoRouteBusiServiceImpl" 
+		interface="com.yss.fast.task.support.automatic.service.IAutoRouteBusiService" />	
+
+	<!-- STORY #76292 【4.5同步】同步“机构名称”、“账户明细类型”、“关联组合”至“现金账户” -->
+	<class id="IPortRelaDataService" menuId="base_portRela"
+  		class="com.yss.ams.base.information.modules.bi.account.service.impl.PortRelaDataServiceImpl"
+  		interface="com.yss.ams.base.information.support.bi.account.service.IPortRelaDataService" />
+  	
+  	<!-- STORY #81326 【华宝兴业】关联结构设置 中联系信息维护调整 -->
+  	<class id="IOrgLinkRelaService" menuId="base_organ"
+		class="com.yss.ams.base.information.modules.bi.org.service.impl.OrgLinkRelaService" 
+		interface="com.yss.ams.base.information.support.bi.org.service.IOrgLinkRelaService" />
+		
+	 <class id="IUcoVocService" menuId=""
+        class="com.yss.ams.base.information.modules.sys.voc.service.impl.UcoVocService" interface="com.yss.ams.base.information.support.sys.voc.service.IUcoVocService" />
+     <class id="IVocCacheDataService" menuId="pubvocabulary"
+		interface="com.yss.platform.support.dataservice.service.IVocCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.voc.service.impl.VocCacheDataService" />
+		
+	<class id="IIeCacheDataService" menuId="IIeCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.ie.service.IIeCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.ie.service.impl.IeCacheDataService" />
+		
+	<class id="IMktCacheDataService" menuId="IMktCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.mkt.service.IMktCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.mkt.service.impl.MktCacheDataService" />
+		
+	<class id="IIeItemCacheDataService" menuId="IIeItemCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.ieItem.service.IIeItemCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.ieItem.service.impl.IeItemCacheDataService" />
+		
+	<class id="ITdChanCacheDataService" menuId="ITdChanCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.tdchan.service.ITdChanCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.tdchan.service.impl.TdchanCacheDataService" />
+		
+	<class id="IOrgCacheDataService" menuId="IOrgCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.org.service.IOrgCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.org.service.impl.OrgCacheDataService" />
+		
+	<class id="IDtaTdAttrCacheDataService" menuId="IDtaTdAttrCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.dtatdattr.service.IDtaTdAttrCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.dtatdattr.service.impl.DtaTdAttrCacheDataService" />
+		
+	<class id="IDaiCacheDataService" menuId="IDaiCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.dai.service.IDaiCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.dai.service.impl.DaiCacheDataService" />
+		
+	<class id="IDCCacheDataService" menuId="IDCCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.dccury.service.IDCCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.dccury.service.impl.DcCacheDataService" />
+		
+	<class id="IDtTdModeCacheDataService" menuId="IDtTdModeCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.dttdmode.service.IDtTdModeCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.dttdmode.service.impl.DtTdModeCacheDataService" />
+		
+	<class id="IDvaItemCacheDataService" menuId="IDvaItemCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.dvaitem.service.IDvaItemCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.dvaitem.service.impl.DvaItemCacheDataService" />
+		
+	<class id="ISecVarCacheDataService" menuId="ISecVarCacheDataService"
+		interface="com.yss.ams.base.information.support.sys.secvar.service.ISecVarCacheDataService"
+		class="com.yss.ams.base.information.modules.sys.secvar.service.impl.SecVarCacheDataService" />
+		
+	<class id="IHDayCacheDataService" menuId="IHDayCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.hdaygroup.service.IHDayCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.hdaygroup.service.impl.HDayCacheDataService" />
+		
+	<class id="IFundAccCacheDataService" menuId="IFundAccCacheDataService"
+		interface="com.yss.ams.base.information.support.bi.account.service.IFundAccCacheDataService"
+		class="com.yss.ams.base.information.modules.bi.account.service.impl.FundAccCacheDataService" />
+		
+	<!-- STORY #90952 【鹏华基金】券商结算模式下数据文件扫描节点判断规则 -->
+	<class id="IAutomaticSetService" menuId="automaticSet"
+		interface="com.yss.ams.base.information.support.sys.automaticSet.service.IAutomaticSetService"
+		class="com.yss.ams.base.information.modules.sys.automaticSet.service.impl.AutomaticSetServiceImpl" />
+	<class id="IAutomaticSetPathService" menuId="automaticSet"
+		interface="com.yss.ams.base.information.support.sys.automaticSet.service.IAutomaticSetPathService"
+		class="com.yss.ams.base.information.modules.sys.automaticSet.service.impl.AutomaticSetPathServiceImpl" />
+		
+	<!-- STORY #105821 【东证资管】券商结算模式增加动态判断的接口 -->
+	<class id="IAutomaticInterfaceExtChannelService" menuId="automaticSet"
+		interface="com.yss.fast.task.support.automatic.service.IAutomaticInterfaceExtChannelService"
+		class="com.yss.ams.base.information.modules.sys.automaticSet.service.impl.AutomaticSetPathServiceImpl" />	
+</classes>

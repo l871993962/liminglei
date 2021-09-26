@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pojos>
+	<!-- 交易市场设置 -->
+	<pojo id="MktExtend" class="com.yss.ams.base.information.support.bi.mkt.pojo.MktExtend" />
+	<pojo id="Mkt" class="com.yss.framework.api.common.co.Mkt" />
+	<pojo id="MarketVoc" class="com.yss.ams.base.information.support.bi.mkt.pojo.MarketVoc" />
+	<!-- 地区信息 -->
+	<pojo id="Area" class="com.yss.ams.base.information.support.bi.region.pojo.Area" />
+	<!-- 节假日群 -->
+	<pojo id="HdayGroup"
+		class="com.yss.ams.base.information.support.bi.hdaygroup.pojo.HdayGroup" />
+	<pojo id="HdayGroupTreeView"
+		class="com.yss.ams.base.information.support.bi.hdaygroup.pojo.HdayGroupTreeView" />
+	<!-- 节假日群设置 -->
+	<pojo id="HdayGen" class="com.yss.ams.base.information.support.bi.hday.pojo.HdayGen" />
+	<pojo id="Hday" class="com.yss.ams.base.information.support.bi.hday.pojo.Hday" />
+	<!-- 收支项目设置 -->
+	<pojo id="Ie" class="com.yss.ams.base.information.support.bi.ie.pojo.Ie" />
+	<!-- 收支分类设置 -->
+	<pojo id="IeLink" class="com.yss.ams.base.information.support.bi.ieLink.pojo.IeLink" />
+	<pojo id="Fee" class="com.yss.ams.base.information.support.bi.ieLink.pojo.Fee" />
+	<!-- 货币对设置 -->
+	<pojo id="CuryPair"
+		class="com.yss.ams.base.information.support.bi.curypair.pojo.CuryPair" />
+	<!-- 国际货币设置 -->
+	<pojo id="DcCury" class="com.yss.ams.base.information.support.sys.dccury.pojo.DcCury" />
+	<!-- 转换字典 开始 -->
+	<pojo id="ZdCorpOrg"
+		class="com.yss.ams.base.information.support.sys.convertdict.zdorg.pojo.ZdCorpOrg" />
+	<pojo id="ZdOrgTreeView"
+		class="com.yss.ams.base.information.support.sys.convertdict.zdorg.pojo.ZdOrgTreeView" />
+	<pojo id="Zhzd"
+		class="com.yss.ams.base.information.support.sys.convertdict.zhzd.pojo.Zhzd" />
+	<!-- 转换字典 结束 -->
+
+	<!-- 关联机构 开始 -->
+	<pojo id="Org" class="com.yss.ams.base.information.support.bi.org.pojo.Org" />
+	<!-- 关联机构 结束 -->
+
+	
+
+	<!-- 销售网点设置 -->
+	<pojo id="SalesNet"
+		class="com.yss.ams.base.information.support.bi.salesnet.pojo.SalesNet" />
+
+	<!-- 证券品种pojo -->
+	<pojo id="SecVar" class="com.yss.ams.base.information.support.sys.secvar.pojo.SecVar" />
+	<pojo id="SecVarExtend"
+		class="com.yss.ams.base.information.support.sys.secvar.pojo.SecVarExtend" />
+	<pojo id="SecVarDi"
+		class="com.yss.ams.base.information.support.sys.secvardi.pojo.SecVarDi" />
+
+	<!-- 资产类型字典 pojo pojoMap.xml -->
+	<pojo id="AccType"
+		class="com.yss.ams.base.information.support.sys.acctype.pojo.AccType" />
+
+	<!-- 交易方式字典 pojo pojoMap.xml -->
+	<pojo id="DttdMode"
+		class="com.yss.ams.base.information.support.sys.dttdmode.pojo.DttdMode" />
+	<pojo id="SrcSign"
+		class="com.yss.ams.base.information.support.bi.srcsign.pojo.SrcSign" />
+	<pojo id="OrgMgr" class="com.yss.ams.base.information.support.bi.orgmgr.pojo.OrgMgr" />
+	<!-- 现金流标记字典 -->
+	<pojo id="CashFlow" class="com.yss.ams.base.information.support.sys.cashflow.pojo.CashFlow"/>
+	
+	<!-- 交易属性字典 pojo pojoMap.xml-->
+	<pojo id="DtatdAttr" class="com.yss.ams.base.information.support.sys.dtatdattr.pojo.DtatdAttr"/>
+	
+	<!-- 核算项目字典 pojo pojoMap.xml-->
+	<pojo id="DaiDict" class="com.yss.ams.base.information.support.sys.dai.pojo.Dai"/>
+	<!-- 对账类型字典 -->
+	<pojo id="DzType" class="com.yss.ams.base.information.support.sys.dztype.pojo.DzType"/>
+	
+	
+	<!-- 核算业务项字典 pojo pojoMap.xml-->
+	<pojo id="DvaItem" class="com.yss.ams.base.information.support.sys.dvaitem.pojo.DvaItem"/>
+	<pojo id="Zzywgl_A" class="com.yss.ams.base.information.support.sys.dvaitem.pojo.Zzywgl_A" />
+
+
+
+	<!-- 综合参数字典 pojo pojoMap.xml-->
+	<pojo id="DspPara" class="com.yss.ams.base.information.support.sys.dsppara.pojo.DspPara"></pojo>
+
+	<!-- 表达式字典 pojo pojoMap.xml-->
+	<pojo id="DeExp" class="com.yss.ams.base.information.support.sys.deexp.pojo.DeExp"/>
+
+	<!-- 财务项目字典 pojo pojoMap.xml-->
+	<pojo id="FinItem" class="com.yss.ams.base.information.support.sys.finitem.pojo.FinItem"/>
+
+	<!-- 收支项目字典 pojo pojoMap.xml-->
+	<pojo id="IeItem" class="com.yss.ams.base.information.support.sys.ieItem.pojo.IeItem" />
+
+	<!-- 交易市场字典 pojo pojoMap.xml-->
+	<pojo id="Mktsdi" class="com.yss.ams.base.information.support.sys.mktsdi.pojo.Mktsdi"></pojo>
+
+	<!-- 合规指标类型字典 pojo pojoMap.xml-->
+	<pojo id="Indexdi" class="com.yss.ams.base.information.support.sys.indexdi.pojo.Indexdi"></pojo>
+
+	<!-- 合规指标项目字典 pojo pojoMap.xml-->
+	<pojo id="SClIndex" class="com.yss.ams.base.information.support.sys.sclindex.pojo.SClIndex"/>
+	
+	<!-- 核算元素明细字典 pojo pojoMap.xml-->
+	<pojo id="AccEle" class="com.yss.ams.base.information.support.sys.accele.pojo.AccEle"/>
+	<pojo id="AccEleDetail" class="com.yss.ams.base.information.support.sys.accele.pojo.AccEleDetail"/>
+	
+	<!-- 核算元素字典 pojo pojoMap.xml-->
+	<pojo id="DaeElem" class="com.yss.ams.base.information.support.sys.daeelem.pojo.DaeElem"/>
+	
+	 <!-- 费用关联字典 -->
+	<pojo id="FeeRelation" class="com.yss.ams.base.information.support.sys.feeRelation.pojo.FeeRelation"/>
+
+	
+	
+	<!-- 银行账户信息对象独立  迁移至基础 information组件 -->
+	<pojo id="FundAcc" class="com.yss.ams.base.information.support.bi.account.pojo.FundAcc" />
+	<pojo id="DataEnclosure" class="com.yss.platform.support.enclosure.pojo.DataEnclosure"></pojo>
+		
+	<!-- 账户类型组件组件 -->
+	<pojo id="AccountType" class="com.yss.ams.base.information.support.bi.dactype.pojo.AccountType" />
+	
+	<!-- 区域信息 -->
+	<pojo id="AreaCity" class="com.yss.ams.base.information.support.bi.account.pojo.AreaCity"/>
+	
+	<!-- 账户树形结构A区 -->
+	<pojo id="AccountTreeA" class="com.yss.ams.base.information.support.bi.accountTreeA.pojo.AccountTreeA"/>
+	
+	<!-- 账户树形结构B区 -->
+	<pojo id="AccountTreeB" class="com.yss.ams.base.information.support.bi.accountTreeB.pojo.AccountTreeB"/>
+	<!-- 交易渠道 -->
+	<pojo id="TdChan" class="com.yss.ams.base.information.support.bi.tdchan.pojo.TdChan"/>
+	
+	<!-- 查询组合托管行信息 -->
+	<pojo id="FastPortOrg" class="com.yss.framework.api.commonInfo.pojo.FastPortOrg"/>
+	
+	<!-- 产品业务范围-->
+	<pojo id="PortBusinessRangePojo" class="com.yss.ams.base.information.support.sys.portbusinessrange.pojo.PortBusinessRangePojo"/>
+	
+	<!-- 自动化业务设置 -->
+	<pojo id="AutomaticSetPojo" class="com.yss.ams.base.information.support.sys.automaticSet.pojo.AutomaticSetPojo"/>
+	<pojo id="AutomaticSetPathPojo" class="com.yss.ams.base.information.support.sys.automaticSet.pojo.AutomaticSetPathPojo"/>
+	
+
+</pojos> 

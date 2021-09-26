@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<InterfaceConfig> 
+  <interfaces desc="接口参数配置"> 
+	<interface id="ZDJSMXNEW" desc="上海中登结算明细库清算(新)" cfgCode="INFI_JY_JSMX" ports="20"/> 
+	<interface id="QSMXYH" desc="深中登清算明细库文件(优化)" cfgCode="INFI_JY_QSMXNEW" ports="20"/>  
+	<interface id="SJSJGNEW" desc="深交所结果库清算(新)" cfgCode="INFI_QY_JGNEW_SZ" ports="20"/>
+	<interface id="SJSGHNEW" desc="上交所过户库(新)" cfgCode="INFI_JY_GH_SH" ports="20"/>
+	<interface id="INFI_ZX_SJSZJ" desc="深交所资金结算信息库旧格式" cfgCode="INFI_ZX_SJSZJ" ports="50"/>
+  </interfaces> 
+</InterfaceConfig>

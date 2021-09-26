@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="XSJYFS" name="销售/交易方式" funcode="dttdmodequy" datasource="DB">
+	<exp>
+		<data id="mode">
+			<table-name>T_S_DT_TD_MODE</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_DT_TD_MODE  where C_DT_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_DT_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="mode">
+			<check_column>C_DT_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

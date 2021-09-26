@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "QDII4.0公共类" >  
+		<Info_Cls name = "基本信息" >  
+			    <Info_Detail dateCol="" table="lsetlist">lsetlist套账信息表</Info_Detail>
+			    <Info_Detail dateCol="" table="LVARLIST">LVARLIST参数表</Info_Detail>
+			     <Info_Detail dateCol="" table="A{year}{port}zqjxqj">zqjxqj债券计息</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0年份组合类" >  
+	    <Info_Cls name = "财务数据" >  
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LCURRENCY">LCURRENCY币种表</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LACCOUNT">LACCOUNT科目表</Info_Detail>
+		        <Info_Detail dateCol="FDATE" table="A{year}{port}FCWVCH">FCWVCH财务凭证</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LBALANCE">LBALANCE余额表</Info_Detail>
+	            <Info_Detail dateCol="" table="A{year}{port}HZJKQS">HZJKQS汇总清算</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0业务数据" >  
+	    <Info_Cls name = "公用信息" >  
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MarketValue">Data_MarketValue行情数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FWMktValue">Data_FWMktValue远期行情数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ExchangeRate">Data_ExchangeRate汇率数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_BondInterest">Data_BondInterest债券利息</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_Index">Data_Index指数行情</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CreditLevel">Data_CreditLevel债券信用评级</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MonFundInterest">Data_MonFundInterest货币基金每万份收益率</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SubMonFundIntst">Data_SubMonFundIntst货币基金每万份收益率子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Base_InvestPayCat">Base_InvestPayCat运营收支品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Base_Holidays">Base_Holidays节假日设置</Info_Detail>
+		</Info_Cls>   
+		<Info_Cls name = "权益信息" >  
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_BonusShare">Data_BonusShare送股权益</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_RightsIssue">Data_RightsIssue配股权益</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_Dividend">Data_Dividend股票分红</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MayApartBond">Data_MayApartBond可分离债送配权益</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CashConsider">Data_CashConsider现金对价</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_DIVIDENDTOINVEST">DATA_DIVIDENDTOINVEST分红转投</Info_Detail>
+		</Info_Cls>   
+		<Info_Cls name = "业务数据" >  
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_Purchase">Data_Purchase回购业务数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_PurchaseRela">Data_PurchaseRela回购冻结证券设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_Trade">Data_Trade交易数据主表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SubTrade">Data_SubTrade交易数据子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SplitSubTrade">Data_SplitSubTrade已拆分交易数据子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_RollBack">Data_RollBack交易回转数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_TradeRela">Data_TradeRela交易关联表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_TradeRelaSub">Data_TradeRelaSub交易关联子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_SecCodeChange">Para_SecCodeChange证券代码变更设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_DividendInvest">Data_DividendInvest股票分红转投明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_TradeSellRela">Data_TradeSellRela买出交易关联表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_TradeDetailA">Data_TradeDetailAA股交易明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_RateTrade">Data_RateTrade外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ForwardTrade">Data_ForwardTrade外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FwTradeSettle">Data_FwTradeSettle远期外汇交易交割明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FWTRADEJESETTLE">DATA_FWTRADEJESETTLE远期外汇交易净额交割明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ForwardTradeAcc">Data_ForwardTradeAcc远期外汇交易帐户表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_Integrated">Data_Integrated综合业务表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SecExchangeOut">Data_SecExchangeOut证券兑换-流出</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SecExchangeIn">Data_SecExchangeIn证券兑换-流入</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SecExchange">Data_SecExchange证券兑换</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_RollBack">Data_RollBack交易数据回转表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SecRecPay">Data_SecRecPay证券应收应付款</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CashPayRec">Data_CashPayRec现金应收应付款</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_InvestPayRec">Data_InvestPayRec运营应收应付收支款</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_NetValue">Data_NetValue资产净值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_NavData">Data_NavData净值数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MultiClassNet">Data_MultiClassNet多class资产净值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ValMktPrice">Data_ValMktPrice估值行情表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ValRate">Data_ValRate估值汇率表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_APPCHECK">Data_APPCHECK估值增值核对表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OpenFundTrade">Data_OpenFundTrade开放式基金交易</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_DevTrustBond">Data_DevTrustBond债券转托管业务</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_IntBakBond">Data_IntBakBond银行间债券交易</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_NewIssueTrade">Data_NewIssueTrade新股新债交易数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FuturesTrade">Data_FuturesTrade期货交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FutSettleDetail">Data_FutSettleDetail期货交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OptionsValCal">Data_OptionsValCal期权和期货保证金账户设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FutTradeRela">Data_FutTradeRela期货结算信息表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_FutureBailChange">DATA_FutureBailChange股指期货初始保证金金额调整设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FuturesFillBail">Data_FuturesFillBail期货保证金补交表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_data_UsedMargin">data_UsedMargin期货占用保证金数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OptionsTrade">Data_OptionsTrade期权交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_optionstraderela">Data_optionstraderela期权交易关联表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OptionsCost">Data_OptionsCost期权成本及卖出估值增值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OptiFIFOStock">Data_OptiFIFOStock期权先入先出库存表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_OptiFIFOAppStk">Data_OptiFIFOAppStk期权先入先出估值增值余额表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_OptionBailChange">DATA_OptionBailChange期权初始保证金金额调整设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FuturesHedging">Data_FuturesHedging期货套期保值数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FutHedgSecurity">Data_FutHedgSecurity期货套期证券关联表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Stock_HedgSecurity">Stock_HedgSecurity期货被套证券库存表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Stock_HedgRecpay">Stock_HedgRecpay期货被套证券应收应付库存表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_HedgRecpay">Data_HedgRecpay期货被套证券应收应付数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_HedgRela">Data_HedgRela期货套期保值交易关联表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_HedgIncome">Data_HedgIncome期货套期保值收益表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_AdjustMoney">Data_AdjustMoney其他款项调整表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_SecLendTRADE">DATA_SecLendTRADE证券借贷交易数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CollateralAdd">Data_CollateralAdd抵押物补交数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CollateralSec">Data_CollateralSec抵押物补交证券子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CollateralAcc">Data_CollateralAcc抵押物补交证券子表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_data_navmortgdate">data_navmortgdate抵押物净值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_SECLENDFIFO">Data_SECLENDFIFO证券卖空先入先出表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_SecMarginAcc">Para_SecMarginAcc融资融券现金账户设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_data_SecMarginStat">data_SecMarginStat融资融券每日计息</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_data_SecMarginTrade">data_SecMarginTrade融资融券业务</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_InsSupFee">Data_InsSupFee保险假设费表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_InsAvgExRate">Data_InsAvgExRate保险平均交易费率表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ExRateEstimate">Data_ExRateEstimate投连交易费率测算表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MaintenanceTpl">Data_MaintenanceTpl维护模板主表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MTplDataDetail">Data_MTplDataDetail维护模板数据明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_MANUALOPERATION">Data_MANUALOPERATION维护模板数据明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_rep_indexfuturesData">rep_indexfuturesData期货台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Rep_GuessValue">Rep_GuessValue财务估值表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_GUESSVALUE_B">REP_GUESSVALUE_B财务估值表(旧)</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_ETF_SubTrade">ETF_SubTradeETF交易业务</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_ETF_StandingBook">ETF_StandingBookETF台账报表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_Trade">TA_TradeTA交易数据</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_SellNet">TA_SellNet销售网点设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_CashSettle">TA_CashSettleTA现金结算链接设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_FeeLink">TA_FeeLinkTA费用链接设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_PortCls">TA_PortCls组合分级设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_ta_LeverShare">ta_LeverShare杠杆基金份额折算</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_TA_FUNDRight">TA_FUNDRightTA基金权益信息</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_RateTrade">Data_RateTrade外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ForwardTrade">Data_ForwardTrade远期外汇交易数据表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FwTradeSettle">Data_FwTradeSettle远期外汇交易交割明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_FWTRADEJESETTLE">Data_FWTRADEJESETTLE远期外汇交易净额交割明细表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ForwardTradeAcc">Data_ForwardTradeAcc远期外汇交易帐户表</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0业务参数" >  
+	    <Info_Cls name = "业务参数" >
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Portfolio">Para_Portfolio组合设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Portfolio_RelaShip">Para_Portfolio_RelaShip资产组合关联信息表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Manager">Para_Manager管理人设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Trustee">Para_Trustee托管人设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Warrantor">Para_Warrantor担保人设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Assignee">Para_Assignee受托人设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Broker">Para_Broker券商设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Security">Para_Security证券信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_FixInterest">Para_FixInterest债券信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Forward">Para_Forward远期品种信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_IndexFutures">Para_IndexFutures股指期货信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Purchase">Para_Purchase回购品种信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_CreditLevel">Data_CreditLevel债券信用评级</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Cash_SavingOutAcc">Cash_SavingOutAcc定存流出帐户</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Cash_SavingInAcc">Cash_SavingInAcc定存流入帐户</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Cash_ConSavingPriExt">Cash_ConSavingPriExt协议定存本金提取</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Index">Para_Index指数基本信息</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_CashAccount">Para_CashAccount现金账户设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_CashAccLink">Para_CashAccLink现金账户关联设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_OptionContract">Para_OptionContract期权参数设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_MonetaryFund">Para_MonetaryFund货币基金信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Broker">Para_Broker券商信息设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_TradeSeat">Para_TradeSeat席位信息设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Stockholder">Para_Stockholder股东信息设置表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Fee">Para_Fee交易费用设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_TradeFeeLink">Para_TradeFeeLink交易费用链接设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DAO_BrokerRate">DAO_BrokerRate券商佣金利率设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_DAO_RateSpeciesType">DAO_RateSpeciesType交易费率品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_Base_LimitedSecurity">Base_LimitedSecurity流通受限证券信息设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_Base_ChildHoliday">Tb_Base_ChildHoliday节假日设置子表</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_Base_Category">Tb_Base_Category证券品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_Fun_CommonParams">Fun_CommonParams申购款计息业务参数</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_Fun_Vocabulary">Tb_Fun_Vocabulary常用词汇表</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_AffiliatedCorp">Para_AffiliatedCorp关联机构设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_InterestTime">Para_InterestTime债券浮息期间设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_DepositDuration">Para_DepositDuration定期存款期限设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_Para_Period">Para_Period期间设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_InvestManager">Para_InvestManager投资经理信息设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_Performula_Rela">Para_Performula_Rela比率公式关联设置</Info_Detail>
+				<Info_Detail dateCol="" table="Tb_{group}_Para_InvestPay">Para_InvestPay投资运营收支设置</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "QDII4.0营改增" >  
+	    <Info_Cls name = "营改增相关表" >
+		        <Info_Detail dateCol="" table="Tb_{group}_Para_ZZSINVOICESET">Para_ZZSINVOICESET增值税发票设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_TRANSFERVAT">REP_TRANSFERVAT金融商品转让台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_UninCreMentVat">REP_UninCreMentVat未实现估值增值台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Rep_LoanserincomeVat">Rep_LoanserincomeVat贷款服务收入台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_InputtaxVat">REP_InputtaxVat进项税台账</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_REP_ZZSVAT">REP_ZZSVAT增值税台帐修改记录</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSProjectSet">PARA_ZZSProjectSet增值税方案设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSProjectSet_spzr">PARA_ZZSProjectSet_spzr增值税方案设置-金融商品转让</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSProjectSet_fwsr">PARA_ZZSProjectSet_fwsr增值税方案设置-贷款服务收入</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSProjectSet_jxs">PARA_ZZSProjectSet_jxs增值税方案设置-进项税</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_PARA_ZZSProjectSet_fjs">PARA_ZZSProjectSet_fjs增值税方案设置-附加税</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_base_ZZSTypeSet">base_ZZSTypeSet增值税品种设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_Data_ZZSPayRec">Data_ZZSPayRec增值税应收应付</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_para_ZZSParam">para_ZZSParam增值税参数设置</Info_Detail>
+		        <Info_Detail dateCol="" table="Tb_{group}_para_zzsparam_init">para_zzsparam_init增值税参数设置-初始化时排除的证券</Info_Detail>
+		</Info_Cls> 
+        <Info_Cls name = "营改增相关表深圳" >
+		        <Info_Detail dateCol="" table="Tb_{group}_DATA_ADDTAXSTANDINGBOOK">DATA_ADDTAXSTANDINGBOOK营改增台账表</Info_Detail>
+		</Info_Cls>  		
+	</Info_Cls>
+</Info_List> 

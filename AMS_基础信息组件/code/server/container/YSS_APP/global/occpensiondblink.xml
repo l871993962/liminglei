@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--distributed,分布式开关，默认false
+	appInfoCode ,引用组件代码
+	appInfoName ,引用组件名称
+	dbLinkCode .连接代码 默认-->
+<occpensionDblinks>
+	<occpensionDblink appInfoCode="YSSUCO"           appInfoName = "核算业务系统"           distributed = "false"   dbLinkCode="YSSUCO"/>  
+	<occpensionDblink appInfoCode="YSSBASEINFO"      appInfoName = "公共信息"           distributed = "false"   dbLinkCode="YSSBASEINFO"/>
+	<occpensionDblink appInfoCode="YSSPRODUCTINFO"   appInfoName = "产品信息"               distributed = "false"   dbLinkCode="YSSPRODUCTINFO"/>
+	<occpensionDblink appInfoCode="YSSSECINFO"       appInfoName = "资讯信息"               distributed = "false"   dbLinkCode="YSSSECINFO"/>
+	<occpensionDblink appInfoCode="PLATFORM"         appInfoName = "FAST技术平台"           distributed = "false"   dbLinkCode="FAST"/>
+	<occpensionDblink appInfoCode="YSSRAPS"          appInfoName = "风控"                    distributed = "false"   dbLinkCode="YSSRAPS"/>
+	<occpensionDblink appInfoCode="YSSUNIFYPAY"      appInfoName = "支付平台"            distributed = "false"   dbLinkCode="YSSUNIFYPAY"/>
+	<occpensionDblink appInfoCode="YSSHTRAPS"        appInfoName = "恒泰风控系统"            distributed = "false"   dbLinkCode="YSSHTRAPS"/>
+	<occpensionDblink appInfoCode="V25"              appInfoName = "2.5核算业务系统"            distributed = "false"   dbLinkCode="V25"/>
+	<occpensionDblink appInfoCode="vw_dip2fa_01_assetsloc"      appInfoName = "海富通基金管理有限公司"            distributed = "false"   dbLinkCode="vw_dip2fa_01_assetsloc"/>
+</occpensionDblinks>

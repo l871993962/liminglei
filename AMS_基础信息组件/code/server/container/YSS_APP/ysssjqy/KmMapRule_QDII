@@ -1,0 +1,109 @@
+/*建立科目对照表 */
+insert into md_km_map_temp
+  (facctcode,
+   facctname,
+   facctlevel,
+   facctparent,
+   facctdetail,
+   facctclass,
+   facctattr,
+   facctattrid,
+   fcurcode,
+   fbaldc,
+   famount,
+   fcarryacc,
+   fename,
+   fby,
+   fset,
+   fyear,
+   fjjdm,
+   src,
+  C_DAI_CODE,
+  C_SEC_CODE,
+  C_SEC_VAR_CODE,
+  C_MKT_CODE,
+  C_DC_CODE,
+  C_DTA_CODE,
+  C_DV_ISSUE_MODE,
+  C_DV_INVEST_CLS,
+  C_CA_CODE,
+  C_DV_ACC_TYPE,
+  C_PORT_CLS_CODE,
+  C_TD_CHAN_CODE,
+  C_FEE_CODE,
+  C_DV_BOOL_TYPE_AUX,
+  C_PLAN_CODE,
+  C_KM_CODE,
+  C_KM_NAME
+   )
+select a.facctcode,a.facctname,a.facctlevel,a.facctparent,a.facctdetail,a.facctclass,
+         b.C_DV_KM_ATTR,a.facctattrid,b.C_DC_CODE,a.fbaldc,a.famount,a.fcarryacc,
+         a.fename,b.C_DV_INVEST_CLS,a.c_fset,a.c_year
+, c.fjjdm,a.src,b.C_DAI_CODE,b.C_SEC_CODE,b.C_SEC_VAR_CODE,b.C_MKT_CODE,b.C_DC_CODE,b.C_DTA_CODE,b.C_DV_ISSUE_MODE,b.C_DV_INVEST_CLS,
+b.C_CA_CODE,b.C_DV_ACC_TYPE,b.C_PORT_CLS_CODE,b.C_TD_CHAN_CODE,b.C_FEE_CODE,a.fauxiacc,b.C_PLAN_CODE,b.C_KM_CODE_V45,b.C_KM_NAME    
+  from md_laccount a
+  left join MD_KM_MAP_ZH b
+  on a.c_fset=b.c_set and a.facctcode=b.c_km_code
+  join md_t_cssysjj c
+    on substr(c.fsetcode,-3) = a.c_fset
+  where  a.facctdetail = 1 {and a.c_year=:year}
+  and  not exists (
+     select 1 from md_km_map mkmp
+     where a.facctcode = mkmp.facctcode
+     and a.c_fset = mkmp.fset 
+     AND B.C_PLAN_CODE=mkmp.c_plan_code
+     {and mkmp.fyear=:year}
+  ) 
+   and exists (select 1 from md_fcwvch f where f.c_fset = a.c_fset and {f.c_year=:year} and  f.fkmh =a.facctcode and f.src = a.src
+				and f.fterm = (case when :endmonth = 0 or :endmonth = 1 then  1 else :endmonth end)
+               union select 1 from md_lbalance f where (f.fbendbal<>0 or f.faendbal<>0) and f.fisdetail=1 and f.fmonth = :endmonth
+               and f.c_fset=a.c_fset and {f.c_year=:year} and f.facctcode=a.facctcode  and f.src = a.src)
+    {and c.fjjdm=:port} ;
+    
+update md_km_map_temp set c_plan_code =:c_plan_code ;
+
+update md_km_map_temp set c_dv_km_cls  = case when facctclass = '资产类' then 'KC_ZC' when facctclass = '负债类' then 'KC_FZ' 
+ when facctclass = '共同类' then 'KC_GT' when facctclass = '权益类' then 'KC_QY' when facctclass = '损益类' then 'KC_SY' else ' ' end
+ WHERE (c_dv_km_cls = '' or c_dv_km_cls is null)     ;
+ 
+update md_km_map_temp set C_DV_JD_WAY  = 'JD_J' WHERE fbaldc = 1 and (C_DV_JD_WAY = '' or C_DV_JD_WAY is null)      ;
+update md_km_map_temp set C_DV_JD_WAY  = 'JD_D' WHERE fbaldc = -1 and (C_DV_JD_WAY = '' or C_DV_JD_WAY is null)     ;
+
+update md_km_map_temp set c_dc_code = (case when fcurcode = 'RMB' then 'CNY' else fcurcode end) where fcurcode = 'RMB'  ;
+
+update md_km_map_temp set c_ds_code = 'TAXS_SH' WHERE FACCTATTR like '%赎回%'  ;
+update md_km_map_temp set c_ds_code = 'TAXS_SG' WHERE FACCTATTR like '%申购%'  ;
+
+update md_km_map_temp a
+   set (a.C_DAI_CODE,
+        a.C_SEC_CODE,
+        a.C_SEC_VAR_CODE,
+        a.C_DTA_CODE,
+        a.C_DV_ISSUE_MODE,
+        a.C_DV_INVEST_CLS,
+        a.C_CA_CODE,
+        a.C_DV_ACC_TYPE,
+        a.C_PORT_CLS_CODE,
+        a.C_TD_CHAN_CODE,
+        a.C_FEE_CODE,
+        a.C_DV_BOOL_TYPE_AUX,
+		a.C_DC_CODE) =
+       (select b.C_DAI_CODE,
+               b.C_SEC_CODE,
+               b.C_SEC_VAR_CODE,
+               b.C_DTA_CODE,
+               b.C_DV_ISSUE_MODE,
+               b.C_DV_INVEST_CLS,
+               b.C_CA_CODE,
+               b.C_DV_ACC_TYPE,
+               b.C_PORT_CLS_CODE,
+               b.C_TD_CHAN_CODE,
+               b.C_FEE_CODE,
+               b.C_DV_BOOL_TYPE_AUX,
+			   b.C_DC_CODE
+		from t_f_sc_km b
+        where b.C_KM_CODE = a.c_km_code
+			and b.C_PLAN_CODE = a.C_PLAN_CODE
+			and b.N_CHECK_STATE = 1
+			and TRIM(a.c_km_code) IS NOT NULL);
+

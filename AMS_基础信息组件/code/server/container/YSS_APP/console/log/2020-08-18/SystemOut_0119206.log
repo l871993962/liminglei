@@ -1,0 +1,1315 @@
+20200818 13:19:19检测项目：com.yss.fast.config.check.dbsetting启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.kafka启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.license启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.mq启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.nosql启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.rpc启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.server启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.system.summary启动完成
+20200818 13:19:19检测项目：com.yss.fast.config.check.zoo启动完成
+20200818 13:19:19注册了com.yss.fast.config.check.dbsetting.service.impl的检测项
+20200818 13:19:19注册了com.yss.fast.config.check.kafka.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.license.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.mq.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.nosql.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.rpc.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.server.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.system.summary.service.impl的检测项
+20200818 13:19:20注册了com.yss.fast.config.check.zoo.service.impl的检测项
+20200818 13:19:22启动检测项目数量为：9，检测项目全部启动完成
+共有9个项目需要检测
+20200818 13:19:22开始执行com.yss.fast.config.check.dbsetting.service.impl检测
+数据库连接通过检测
+20200818 13:19:23开始执行com.yss.fast.config.check.kafka.service.impl检测
+kafka配置通过检测
+20200818 13:19:23开始执行com.yss.fast.config.check.license.service.impl检测
+许可文件通过检测
+20200818 13:19:24开始执行com.yss.fast.config.check.mq.service.impl检测
+消息总线配置通过检测
+20200818 13:19:27开始执行com.yss.fast.config.check.nosql.service.impl检测
+nosql配置通过检测
+20200818 13:19:27开始执行com.yss.fast.config.check.rpc.service.impl检测
+分布式配置通过检测
+20200818 13:19:27开始执行com.yss.fast.config.check.server.service.impl检测
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:49455, -Dcatalina.home=D:\203TrunkTomcat, -Djava.endorsed.dirs=D:\203TrunkTomcat\endorsed, -Dcatalina.base=D:\203TrunkTomcat, -Djava.io.tmpdir=D:\203TrunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+jdk启动参数为：[-agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:49455, -Dcatalina.home=D:\203TrunkTomcat, -Djava.endorsed.dirs=D:\203TrunkTomcat\endorsed, -Dcatalina.base=D:\203TrunkTomcat, -Djava.io.tmpdir=D:\203TrunkTomcat\temp, -Ddruid.log.stmt.executableSql=true, -Xms2048m, -Xmx5120m, -Xmn1536m, -Xss512k, -XX:PermSize=384M, -XX:MaxPermSize=1024m, -Dfile.encoding=UTF-8]
+URI字符集通过检测
+最大线程数通过检测
+JVM参数通过检测
+20200818 13:19:27开始执行com.yss.fast.config.check.system.summary.service.impl检测
+操作系统:通过检测
+应用服务器:通过检测
+路径:通过检测
+主机:通过检测
+IP:通过检测
+端口:通过检测
+总内存:通过检测
+CPU数量:通过检测
+总磁盘空间:通过检测
+可用磁盘空间:通过检测
+语言:通过检测
+JRE版本通过检测
+JVM版本通过检测
+20200818 13:19:27开始执行com.yss.fast.config.check.zoo.service.impl检测
+zookeeper配置通过检测
+系统启动检测通过，检测报告请见地址：http://192.168.4.132:8083/YSSUCOBRIDGE/deploy_console/index.html
+开始将/D:/AMSSVN/TRUNK/AMS_估值核算/server/source/com.yss.uco.bridge//WebRoot/WEB-INF/plugins/下的bundle程序文件复制到/D:/AMSSVN/TRUNK/AMS_估值核算/server/source/YSS_APP/com.yss.uco.deployment/plugins//
+程序文件覆盖参数为：true
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.api.gz_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.api.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.api_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.automatic.gz.clear_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.automatic.gz.dayf_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.aval.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.aval_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.base.information.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.base.information_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.algorithm_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.baseinfo_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.elecreco_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.productinfo_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.secinfo_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.syncdata_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.yssucolic_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.db.upgrade.yssuco_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.export.uco_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.outerdataverify.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.outerdataverify_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.product.information.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.product.information_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.sec.information.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.sec.information_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.syncdata.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.syncdata_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ams.v5transfer_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.communicationProtocol.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.communicationProtocol_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.dataclear_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.atomicdata.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.atomicdata_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.autotest.scheduler_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.cache_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.dataintegration_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.migration.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.migration_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.upgrade.monitorplatform_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.upgrade.platform_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.upgrade.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.db.upgrade_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.deploy.server_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.deploy.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.doctor.client_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.doctor.reference_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.doctor.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.doctor_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.document.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.document_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.mq.manager_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.mq.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.mq_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.proxy_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.right.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.right_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.runtime.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.runtime_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.servicecenter.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.servicecenter_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.sso.client_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.sso.server_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.sso.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.systemmanager.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.systemmanager_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.task.client_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.task.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.task_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.unifydeploy_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.webplus.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.webplus.ui_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.webplus_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.workflow.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.workflow_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.fast.zookeeper_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.framework_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.ifa.szt.tool_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.periphral.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.periphral_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.platform.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.report.integrate_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.allocation.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.allocation_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.bankapi.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.bankapi_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.clear.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.clear_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.dataintegration.exp.automatic_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.dataintegration.imp.automatic_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.dataintegration.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.dataintegration_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.elecreco.automic_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.elecreco.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.elecreco_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.monitor.client_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.monitor.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.monitor_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.reconciliation.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.reconciliation_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.reference_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\com.yss.uco.support_1.0.0.jar覆盖完成
+程序文件D:\AMSSVN\TRUNK\AMS_估值核算\server\source\YSS_APP\com.yss.uco.deployment\plugins\YSSUCO_1.0.0.jar覆盖完成
+需要启动的bundle为（以列表中先后为顺序）：[BundleInfo [code=com.yss.fast.doctor.reference_1.0.0, level=4.0, state=, version=1.0.0, name=DoctorReference], BundleInfo [code=com.yss.uco.reference_1.0.0, level=4.0, state=, version=1.0.0, name=Reference], BundleInfo [code=com.yss.fast.runtime.support_1.0.0, level=4.1, state=, version=1.0.0, name=RutimeSupport], BundleInfo [code=com.yss.fast.task.support_1.0.0, level=5.0, state=, version=1.0.0, name=TaskSupport], BundleInfo [code=com.yss.fast.workflow.support_1.0.0, level=5.0, state=, version=1.0.0, name=WorkflowSupport], BundleInfo [code=com.yss.framework_1.0.0, level=5.0, state=, version=1.0.0, name=基础框架], BundleInfo [code=com.yss.fast.db.upgrade.support_1.0.0, level=5.01, state=, version=1.0.0, name=DbUpSupport], BundleInfo [code=com.yss.fast.zookeeper_1.0.0, level=5.09, state=, version=1.0.0, name=YSSZK], BundleInfo [code=com.yss.fast.db.upgrade_1.0.0, level=5.1, state=, version=1.0.0, name=DbUpgrade], BundleInfo [code=com.yss.fast.deploy.support_1.0.0, level=5.1, state=, version=1.0.0, name=DeploySupport], BundleInfo [code=com.yss.fast.servicecenter.support_1.0.0, level=5.1, state=, version=1.0.0, name=YSSSERVICECENTERSUPPORT], BundleInfo [code=com.yss.fast.deploy.server_1.0.0, level=5.11, state=, version=1.0.0, name=DeployServer], BundleInfo [code=com.yss.fast.proxy_1.0.0, level=5.11, state=, version=1.0.0, name=FastProxy], BundleInfo [code=com.yss.ams.db.upgrade.yssuco_1.0.0, level=5.2, state=, version=1.0.0, name=YssUCODbUp], BundleInfo [code=com.yss.fast.mq.support_1.0.0, level=5.2, state=, version=1.0.0, name=Support], BundleInfo [code=com.yss.fast.cache_1.0.0, level=5.29, state=, version=1.0.0, name=Cache], BundleInfo [code=com.yss.fast.mq_1.0.0, level=5.3, state=, version=1.0.0, name=Mq], BundleInfo [code=com.yss.fast.systemmanager_1.0.0, level=5.5, state=, version=1.0.0, name=Systemmanager], BundleInfo [code=com.yss.communicationProtocol.support_1.0.0, level=6.0, state=, version=1.0.0, name=CommunicationSupport], BundleInfo [code=com.yss.fast.webplus.support_1.0.0, level=6.0, state=, version=1.0.0, name=com.yss.fast.webplus.support], BundleInfo [code=com.yss.fast.webplus.ui_1.0.0, level=6.0, state=, version=1.0.0, name=com.yss.fast.webplus.ui], BundleInfo [code=com.yss.platform.support_1.0.0, level=6.0, state=, version=1.0.0, name=基础平台支撑], BundleInfo [code=com.yss.uco.dataintegration.support_1.0.0, level=6.0, state=, version=1.0.0, name=数据集成支撑], BundleInfo [code=com.yss.uco.support_1.0.0, level=6.0, state=, version=1.0.0, name=UCOSupport], BundleInfo [code=com.yss.ams.base.information.support_1.0.0, level=6.5, state=, version=1.0.0, name=公共信息], BundleInfo [code=com.yss.ams.api.support_1.0.0, level=7.0, state=, version=1.0.0, name=API组件支持包], BundleInfo [code=com.yss.ams.aval.support_1.0.0, level=7.0, state=, version=1.0.0, name=算法支持包], BundleInfo [code=com.yss.ams.base.information_1.0.0, level=7.0, state=, version=1.0.0, name=公共信息], BundleInfo [code=com.yss.ams.outerdataverify.support_1.0.0, level=7.0, state=, version=1.0.0, name=OuterVerifySupport], BundleInfo [code=com.yss.ams.product.information.support_1.0.0, level=7.0, state=, version=1.0.0, name=产品信息], BundleInfo [code=com.yss.ams.sec.information.support_1.0.0, level=7.0, state=, version=1.0.0, name=公共信息], BundleInfo [code=com.yss.ams.syncdata.support_1.0.0, level=7.0, state=, version=1.0.0, name=数据同步], BundleInfo [code=com.yss.ams.v5transfer_1.0.0, level=7.0, state=, version=1.0.0, name=V5Transfer], BundleInfo [code=com.yss.communicationProtocol_1.0.0, level=7.0, state=, version=1.0.0, name=CommunicationProtocol], BundleInfo [code=com.yss.fast.dataintegration_1.0.0, level=7.0, state=, version=1.0.0, name=fastdataintegration], BundleInfo [code=com.yss.fast.document.support_1.0.0, level=7.0, state=, version=1.0.0, name=DocumentSupport], BundleInfo [code=com.yss.fast.runtime_1.0.0, level=7.0, state=, version=1.0.0, name=Manage], BundleInfo [code=com.yss.fast.servicecenter_1.0.0, level=7.0, state=, version=1.0.0, name=YSSSERVICECENTER], BundleInfo [code=com.yss.fast.sso.support_1.0.0, level=7.0, state=, version=1.0.0, name=com.yss.fast.sso.support], BundleInfo [code=com.yss.fast.unifydeploy_1.0.0, level=7.0, state=, version=1.0.0, name=FastDeploy], BundleInfo [code=com.yss.periphral.support_1.0.0, level=7.0, state=, version=1.0.0, name=YSSPERIPHERALSUPPORT], BundleInfo [code=com.yss.uco.bankapi.support_1.0.0, level=7.0, state=, version=1.0.0, name=BankApiSupport], BundleInfo [code=com.yss.uco.clear.support_1.0.0, level=7.0, state=, version=1.0.0, name=资产清算支撑], BundleInfo [code=com.yss.uco.monitor.support_1.0.0, level=7.0, state=, version=1.0.0, name=MonitorSupport], BundleInfo [code=com.yss.uco.reconciliation.support_1.0.0, level=7.0, state=, version=1.0.0, name=Support], BundleInfo [code=com.yss.uco.reconciliation_1.0.0, level=7.0, state=, version=1.0.0, name=Reconciliation], BundleInfo [code=com.yss.periphral_1.0.0, level=7.1, state=, version=1.0.0, name=YSSPERIPHERAL], BundleInfo [code=com.yss.ifa.szt.tool_1.0.0, level=7.5, state=, version=1.0.0, name=Elecreco], BundleInfo [code=com.yss.uco.elecreco.support_1.0.0, level=7.6, state=, version=1.0.0, name=电子对账支撑], BundleInfo [code=com.yss.fast.atomicdata_1.0.0, level=7.8, state=, version=1.0.0, name=YSSATOMICDATA], BundleInfo [code=com.yss.fast.doctor_1.0.0, level=7.9, state=, version=1.0.0, name=Doctor], BundleInfo [code=com.yss.fast.right_1.0.0, level=7.9, state=, version=1.0.0, name=Right], BundleInfo [code=com.yss.fast.sso.server_1.0.0, level=7.9, state=, version=1.0.0, name=com.yss.fast.sso.server], BundleInfo [code=com.yss.fast.workflow_1.0.0, level=7.91, state=, version=1.0.0, name=Workflow], BundleInfo [code=com.yss.fast.task.client_1.0.0, level=7.94, state=, version=1.0.0, name=Task], BundleInfo [code=com.yss.fast.task_1.0.0, level=7.95, state=, version=1.0.0, name=Task], BundleInfo [code=com.yss.ams.api_1.0.0, level=8.0, state=, version=1.0.0, name=API], BundleInfo [code=com.yss.ams.automatic.gz.clear_1.0.0, level=8.0, state=, version=1.0.0, name=Automatic], BundleInfo [code=com.yss.ams.automatic.gz.dayf_1.0.0, level=8.0, state=, version=1.0.0, name=Act], BundleInfo [code=com.yss.ams.aval_1.0.0, level=8.0, state=, version=1.0.0, name=算法公式], BundleInfo [code=com.yss.ams.db.upgrade.algorithm_1.0.0, level=8.0, state=, version=1.0.0, name=AlgorithmDbUp], BundleInfo [code=com.yss.ams.db.upgrade.baseinfo_1.0.0, level=8.0, state=, version=1.0.0, name=BaseinfoDbUp], BundleInfo [code=com.yss.ams.db.upgrade.elecreco_1.0.0, level=8.0, state=, version=1.0.0, name=ElecrecoDbUp], BundleInfo [code=com.yss.ams.db.upgrade.productinfo_1.0.0, level=8.0, state=, version=1.0.0, name=ProductinfoDbUp], BundleInfo [code=com.yss.ams.db.upgrade.secinfo_1.0.0, level=8.0, state=, version=1.0.0, name=SecinfoDbUp], BundleInfo [code=com.yss.ams.db.upgrade.syncdata_1.0.0, level=8.0, state=, version=1.0.0, name=YssSyncDataDbUp], BundleInfo [code=com.yss.ams.db.upgrade.yssucolic_1.0.0, level=8.0, state=, version=1.0.0, name=YssUCOLicDbUp], BundleInfo [code=com.yss.ams.outerdataverify_1.0.0, level=8.0, state=, version=1.0.0, name=OuterDataVerify], BundleInfo [code=com.yss.ams.product.information_1.0.0, level=8.0, state=, version=1.0.0, name=产品信息], BundleInfo [code=com.yss.ams.sec.information_1.0.0, level=8.0, state=, version=1.0.0, name=资讯信息], BundleInfo [code=com.yss.ams.syncdata_1.0.0, level=8.0, state=, version=1.0.0, name=数据同步], BundleInfo [code=com.yss.dataclear_1.0.0, level=8.0, state=, version=1.0.0, name=Dataclear], BundleInfo [code=com.yss.fast.atomicdata.support_1.0.0, level=8.0, state=, version=1.0.0, name=YSSATOMICDATASUPPORT], BundleInfo [code=com.yss.fast.autotest.scheduler_1.0.0, level=8.0, state=, version=1.0.0, name=AutoTestScheduler], BundleInfo [code=com.yss.fast.db.migration.support_1.0.0, level=8.0, state=, version=1.0.0, name=DbmigrationSupport], BundleInfo [code=com.yss.fast.db.migration_1.0.0, level=8.0, state=, version=1.0.0, name=Dbmigration], BundleInfo [code=com.yss.fast.db.upgrade.monitorplatform_1.0.0, level=8.0, state=, version=1.0.0, name=MonitorDbUp], BundleInfo [code=com.yss.fast.db.upgrade.platform_1.0.0, level=8.0, state=, version=1.0.0, name=PlatformDbUp], BundleInfo [code=com.yss.fast.doctor.client_1.0.0, level=8.0, state=, version=1.0.0, name=DoctorClient], BundleInfo [code=com.yss.fast.doctor.support_1.0.0, level=8.0, state=, version=1.0.0, name=DoctorSupport], BundleInfo [code=com.yss.fast.document_1.0.0, level=8.0, state=, version=1.0.0, name=Document], BundleInfo [code=com.yss.fast.mq.manager_1.0.0, level=8.0, state=, version=1.0.0, name=Manager], BundleInfo [code=com.yss.fast.right.support_1.0.0, level=8.0, state=, version=1.0.0, name=RiughtSupport], BundleInfo [code=com.yss.fast.sso.client_1.0.0, level=8.0, state=, version=1.0.0, name=com.yss.fast.sso.client], BundleInfo [code=com.yss.fast.systemmanager.support_1.0.0, level=8.0, state=, version=1.0.0, name=SystemmanagerSupport], BundleInfo [code=com.yss.fast.webplus_1.0.0, level=8.0, state=, version=1.0.0, name=com.yss.fast.webplus], BundleInfo [code=com.yss.report.integrate_1.0.0, level=8.0, state=, version=1.0.0, name=鎶ヨ〃闆嗘垚], BundleInfo [code=com.yss.uco.allocation.support_1.0.0, level=8.0, state=, version=1.0.0, name=YSSALLOCATION], BundleInfo [code=com.yss.uco.bankapi_1.0.0, level=8.0, state=, version=1.0.0, name=Bankapi], BundleInfo [code=com.yss.uco.clear_1.0.0, level=8.0, state=, version=1.0.0, name=资产清算], BundleInfo [code=com.yss.uco.dataintegration_1.0.0, level=8.0, state=, version=1.0.0, name=数据集成], BundleInfo [code=com.yss.uco.elecreco_1.0.0, level=8.0, state=, version=1.0.0, name=电子对账], BundleInfo [code=com.yss.uco.monitor_1.0.0, level=8.0, state=, version=1.0.0, name=Monitor], BundleInfo [code=YSSUCO_1.0.0, level=8.0, state=, version=1.0.0, name=YSSUCO], BundleInfo [code=com.yss.uco.elecreco.automic_1.0.0, level=8.1, state=, version=1.0.0, name=Elecreco], BundleInfo [code=com.yss.uco.monitor.client_1.0.0, level=8.1, state=, version=1.0.0, name=MonitorClient], BundleInfo [code=com.yss.ams.api.gz_1.0.0, level=9.0, state=, version=1.0.0, name=估值API], BundleInfo [code=com.yss.ams.export.uco_1.0.0, level=9.0, state=, version=1.0.0, name=UcoExport], BundleInfo [code=com.yss.uco.allocation_1.0.0, level=9.0, state=, version=1.0.0, name=YSSALLOCATION], BundleInfo [code=com.yss.uco.dataintegration.exp.automatic_1.0.0, level=9.0, state=, version=1.0.0, name=AutomaticExp], BundleInfo [code=com.yss.uco.dataintegration.imp.automatic_1.0.0, level=9.0, state=, version=1.0.0, name=AutomaticImp]]
+startedBundle:com.yss.fast.doctor.reference，耗时：212毫秒
+startedBundle:com.yss.uco.reference，耗时：905毫秒
+startedBundle:com.yss.fast.runtime.support，耗时：4毫秒
+startedBundle:com.yss.fast.task.support，耗时：12毫秒
+startedBundle:com.yss.fast.workflow.support，耗时：25毫秒
+startedBundle:com.yss.framework，耗时：798毫秒
+startedBundle:com.yss.fast.db.upgrade.support，耗时：7毫秒
+startedBundle:com.yss.fast.zookeeper，耗时：45毫秒
+startedBundle:com.yss.fast.db.upgrade，耗时：92毫秒
+startedBundle:com.yss.fast.deploy.support，耗时：5毫秒
+startedBundle:com.yss.fast.servicecenter.support，耗时：6毫秒
+startedBundle:com.yss.fast.deploy.server，耗时：254毫秒
+startedBundle:com.yss.fast.proxy，耗时：259毫秒
+startedBundle:com.yss.ams.db.upgrade.yssuco，耗时：42毫秒
+startedBundle:com.yss.fast.mq.support，耗时：103毫秒
+startedBundle:com.yss.fast.cache，耗时：10毫秒
+startedBundle:com.yss.fast.mq，耗时：19毫秒
+startedBundle:com.yss.fast.systemmanager，耗时：22毫秒
+startedBundle:com.yss.communicationProtocol.support，耗时：8毫秒
+startedBundle:com.yss.fast.webplus.support，耗时：292毫秒
+startedBundle:com.yss.fast.webplus.ui，耗时：6毫秒
+startedBundle:com.yss.platform.support，耗时：327毫秒
+startedBundle:com.yss.uco.dataintegration.support，耗时：430毫秒
+startedBundle:com.yss.uco.support，耗时：16毫秒
+startedBundle:com.yss.ams.base.information.support，耗时：10毫秒
+startedBundle:com.yss.ams.api.support，耗时：6毫秒
+startedBundle:com.yss.ams.aval.support，耗时：7毫秒
+startedBundle:com.yss.ams.base.information，耗时：17毫秒
+startedBundle:com.yss.ams.outerdataverify.support，耗时：6毫秒
+startedBundle:com.yss.ams.product.information.support，耗时：7毫秒
+startedBundle:com.yss.ams.sec.information.support，耗时：7毫秒
+startedBundle:com.yss.ams.syncdata.support，耗时：6毫秒
+startedBundle:com.yss.ams.v5transfer，耗时：6毫秒
+startedBundle:com.yss.communicationProtocol，耗时：75毫秒
+startedBundle:com.yss.fast.dataintegration，耗时：9毫秒
+startedBundle:com.yss.fast.document.support，耗时：9毫秒
+startedBundle:com.yss.fast.runtime，耗时：21毫秒
+startedBundle:com.yss.fast.servicecenter，耗时：7毫秒
+startedBundle:com.yss.fast.sso.support，耗时：10毫秒
+startedBundle:com.yss.fast.unifydeploy，耗时：12毫秒
+startedBundle:com.yss.periphral.support，耗时：9毫秒
+startedBundle:com.yss.uco.bankapi.support，耗时：5毫秒
+startedBundle:com.yss.uco.clear.support，耗时：9毫秒
+startedBundle:com.yss.uco.monitor.support，耗时：7毫秒
+startedBundle:com.yss.uco.reconciliation.support，耗时：3毫秒
+startedBundle:com.yss.uco.reconciliation，耗时：9毫秒
+startedBundle:com.yss.periphral，耗时：199毫秒
+startedBundle:com.yss.ifa.szt.tool，耗时：8毫秒
+startedBundle:com.yss.uco.elecreco.support，耗时：6毫秒
+startedBundle:com.yss.fast.atomicdata，耗时：30毫秒
+startedBundle:com.yss.fast.doctor，耗时：14毫秒
+startedBundle:com.yss.fast.right，耗时：14毫秒
+startedBundle:com.yss.fast.sso.server，耗时：6毫秒
+startedBundle:com.yss.fast.workflow，耗时：258毫秒
+startedBundle:com.yss.fast.task.client，耗时：6毫秒
+startedBundle:com.yss.fast.task，耗时：82毫秒
+startedBundle:com.yss.ams.api，耗时：7毫秒
+startedBundle:com.yss.ams.automatic.gz.clear，耗时：7毫秒
+startedBundle:com.yss.ams.automatic.gz.dayf，耗时：13毫秒
+startedBundle:com.yss.ams.aval，耗时：119毫秒
+startedBundle:com.yss.ams.db.upgrade.algorithm，耗时：5毫秒
+startedBundle:com.yss.ams.db.upgrade.baseinfo，耗时：9毫秒
+startedBundle:com.yss.ams.db.upgrade.elecreco，耗时：5毫秒
+startedBundle:com.yss.ams.db.upgrade.productinfo，耗时：6毫秒
+startedBundle:com.yss.ams.db.upgrade.secinfo，耗时：5毫秒
+startedBundle:com.yss.ams.db.upgrade.syncdata，耗时：11毫秒
+startedBundle:com.yss.ams.db.upgrade.yssucolic，耗时：17毫秒
+startedBundle:com.yss.ams.outerdataverify，耗时：27毫秒
+startedBundle:com.yss.ams.product.information，耗时：11毫秒
+startedBundle:com.yss.ams.sec.information，耗时：12毫秒
+startedBundle:com.yss.ams.syncdata，耗时：191毫秒
+startedBundle:com.yss.dataclear，耗时：4毫秒
+startedBundle:com.yss.fast.atomicdata.support，耗时：5毫秒
+startedBundle:com.yss.fast.autotest.scheduler，耗时：4毫秒
+startedBundle:com.yss.fast.db.migration.support，耗时：29毫秒
+startedBundle:com.yss.fast.db.migration，耗时：6毫秒
+startedBundle:com.yss.fast.db.upgrade.monitorplatform，耗时：5毫秒
+startedBundle:com.yss.fast.db.upgrade.platform，耗时：11毫秒
+startedBundle:com.yss.fast.doctor.client，耗时：20毫秒
+startedBundle:com.yss.fast.doctor.support，耗时：5毫秒
+startedBundle:com.yss.fast.document，耗时：6毫秒
+startedBundle:com.yss.fast.mq.manager，耗时：7毫秒
+startedBundle:com.yss.fast.right.support，耗时：7毫秒
+startedBundle:com.yss.fast.sso.client，耗时：14毫秒
+startedBundle:com.yss.fast.systemmanager.support，耗时：8毫秒
+startedBundle:com.yss.fast.webplus，耗时：58毫秒
+startedBundle:com.yss.report.integrate，耗时：16毫秒
+startedBundle:com.yss.uco.allocation.support，耗时：5毫秒
+startedBundle:com.yss.uco.bankapi，耗时：13毫秒
+startedBundle:com.yss.uco.clear，耗时：41毫秒
+startedBundle:com.yss.uco.dataintegration，耗时：38毫秒
+startedBundle:com.yss.uco.elecreco，耗时：15毫秒
+startedBundle:com.yss.uco.monitor，耗时：9毫秒
+startedBundle:YSSUCO，耗时：743毫秒
+startedBundle:com.yss.uco.elecreco.automic，耗时：11毫秒
+startedBundle:com.yss.uco.monitor.client，耗时：10毫秒
+startedBundle:com.yss.ams.api.gz，耗时：10毫秒
+startedBundle:com.yss.ams.export.uco，耗时：6毫秒
+startedBundle:com.yss.uco.allocation，耗时：21毫秒
+startedBundle:com.yss.uco.dataintegration.exp.automatic，耗时：7毫秒
+startedBundle:com.yss.uco.dataintegration.imp.automatic，耗时：6毫秒
+SLF4J: The following loggers will not work because they were created
+SLF4J: during the default configuration phase of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: com.alibaba.druid.support.logging.SLF4JImpl
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-08-18 13:19:52.560 INFO [com.yss.framework] [FrameworkActivator.java : 209]  当前节点:{"ip":"127.0.0.1","port":"8083","nc":null,"cpu":0,"operationSystem":"Windows 7 amd64 6.1","name":"B1814-PC","productLine":null},环境模式为:PROD,灰度信息为:GrayRouteInfo [isGray=false, ipRange={}, grayUserCodes=[]]
+2020-08-18 13:19:52.942 INFO [com.yss.framework] [FastFileDeleter.java : 39]  begin to delete tmp file
+2020-08-18 13:19:53.114 INFO [com.yss.framework] [FastFileDeleter.java : 42]  path = /D:/AMSSVN/TRUNK/AMS_估值核算/server/source/YSS_APP//yss_temp/, day = 7
+log4j:WARN No appenders could be found for logger (org.apache.log4j.jmx.HierarchyDynamicMBean).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2020-08-18 13:19:53.266 INFO [com.yss.framework] [FastFileDeleter.java : 47]  end to delete tmp file
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2020-08-18 13:19:56.080 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【33c61a16-3240-48ef-b564-addc3b44d0a4】未找到服务,请检查配置:IKmDataServicenull
+2020-08-18 13:19:56.095 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【33c61a16-3240-48ef-b564-addc3b44d0a4】DefaultInvoke调用服务出错,服务:IKmDataService; 调用方法:getUpdateByTimestampCount.参数信息为:无参数
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置：IKmDataService
+null
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:92) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:56.202 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【901eacf8-c84b-4cf8-9249-3bac6934ee09】未找到服务,请检查配置:IKmDataServicenull
+2020-08-18 13:19:56.205 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【901eacf8-c84b-4cf8-9249-3bac6934ee09】DefaultInvoke调用服务出错,服务:IKmDataService; 调用方法:getUpdateByTimestampCount.参数信息为:无参数
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置：IKmDataService
+null
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:92) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:56.451 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:IOrgDataService,实现类为:null
+2020-08-18 13:19:56.453 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:IOrgDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:56.587 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:IOrgDataService,实现类为:null
+2020-08-18 13:19:56.590 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:IOrgDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:57.484 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:57.486 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:57.516 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:57.625 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:57.987 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:57.989 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:58.000 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:58.003 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:58.847 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:58.850 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:19:59.207 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  未找到服务,请检查配置:ISecBaseInfoDataService,实现类为:null
+2020-08-18 13:19:59.208 ERROR [com.yss.framework] [YssException.java : 434]  将客户端传输数据转换为服务端传输数据出错。
+com.yss.framework.api.exception.YssRuntimeException: 未找到服务，请检查配置:ISecBaseInfoDataService,实现类为：null
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:105) [bundlefile:na]
+	at com.yss.framework.api.servlet.util.ClientDataTransferServerData.getTransStructureObj(ClientDataTransferServerData.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.decoder.DefaultClientRequestDecoder.decoderClientRequest(DefaultClientRequestDecoder.java:29) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:118) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:20:05.315 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSSERVICECENTERSUPPORT","appName":"服务中心","webContent":"YSSUCOBRIDGE","startLevel":5.1}
+2020-08-18 13:20:05.337 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件YSSSERVICECENTERSUPPORT无数据库升级需要
+2020-08-18 13:20:05.922 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"FastDbUpGrade","appName":"数据库升级组件","webContent":"YSSUCOBRIDGE","startLevel":5.1}
+2020-08-18 13:20:05.929 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件FastDbUpGrade无数据库升级需要
+2020-08-18 13:20:06.459 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[YSSSERVICECENTERSUPPORT][com.yss.fast.servicecenter.support] 启动成功
+2020-08-18 13:20:07.249 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[FastDbUpGrade][com.yss.fast.db.upgrade] 启动成功
+2020-08-18 13:20:10.356 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSPROXY","appName":"统一代理","webContent":"YSSUCOBRIDGE","startLevel":5.11}
+2020-08-18 13:20:10.387 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件YSSPROXY无数据库升级需要
+2020-08-18 13:20:10.434 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[YSSPROXY][com.yss.fast.proxy] 启动成功
+13:20:10,560  WARN FastProxyActivator:75 - 未在runtime.properties中找到任何代理端口（包括外网和内网），统一代理无法启动！！！！
+2020-08-18 13:20:10.784 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"FASTMQSUPPORT","appName":"消息总线","webContent":"YSSUCOBRIDGE","startLevel":5.2}
+2020-08-18 13:20:10.836 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件FASTMQSUPPORT无数据库升级需要
+2020-08-18 13:20:10.880 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[FASTMQSUPPORT][com.yss.fast.mq.support] 启动成功
+2020-08-18 13:20:10.998 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"FASTCACHE","appName":"缓存","webContent":"YSSUCOBRIDGE","startLevel":5.29}
+2020-08-18 13:20:11.008 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件FASTCACHE无数据库升级需要
+2020-08-18 13:20:12.529 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[FASTCACHE][com.yss.fast.cache] 启动成功
+2020-08-18 13:20:22.531 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"MQ_BUS","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":5.3}
+2020-08-18 13:20:22.560 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件MQ_BUS无数据库升级需要
+2020-08-18 13:20:22.707 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[MQ_BUS][com.yss.fast.mq] 启动成功
+2020-08-18 13:20:23.173 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSSYSTEMMANAGER","appName":"系统管理组件","webContent":"YSSUCOBRIDGE","startLevel":5.5}
+2020-08-18 13:20:23.179 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件YSSSYSTEMMANAGER无数据库升级需要
+2020-08-18 13:20:24.236 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"WEBPLUS","appName":"WebPlus UI","webContent":"YSSUCOBRIDGE","startLevel":6.0}
+2020-08-18 13:20:24.242 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  组件WEBPLUS无数据库升级需要
+2020-08-18 13:20:24.451 INFO [com.yss.framework] [BaseActivator.java : 650]  应用[WEBPLUS][com.yss.fast.webplus.ui] 启动成功
+2020-08-18 13:20:25.615 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSINFO","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:25.648 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSOUTERDATAVERIFY][com.yss.ams.outerdataverify.support] 启动成功
+2020-08-18 13:20:25.649 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSINFO无数据库升级需要
+2020-08-18 13:20:26.006 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[V5Transfer][com.yss.ams.v5transfer] 启动成功
+2020-08-18 13:20:26.545 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSCP","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:26.664 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[NoticeCache]加载完成-----。
+2020-08-18 13:20:26.669 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSCP无数据库升级需要
+2020-08-18 13:20:27.565 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSINFO][com.yss.ams.base.information] 启动成功
+2020-08-18 13:20:27.594 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSFASTDATAINTEGRATION","appName":"数据集成配置","webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:27.661 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSSYSTEMMANAGER][com.yss.fast.systemmanager] 启动成功
+2020-08-18 13:20:27.837 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSFASTDATAINTEGRATION无数据库升级需要
+2020-08-18 13:20:28.186 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSRUNTIME","appName":"运行时组件","webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:28.438 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSSERVICECENTER","appName":"服务管理中心","webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:28.535 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSSERVICECENTER无数据库升级需要
+2020-08-18 13:20:28.536 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSRUNTIME无数据库升级需要
+2020-08-18 13:20:28.917 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"FastDeploy","appName":"统一部署组件","webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:29.468 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[IeItemCache]加载完成-----。
+2020-08-18 13:20:29.470 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[SafeDataCache]加载完成-----。
+2020-08-18 13:20:29.471 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DcCache]加载完成-----。
+2020-08-18 13:20:29.486 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[SecVarCache]加载完成-----。
+2020-08-18 13:20:29.496 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[SysFunCache]加载完成-----。
+2020-08-18 13:20:29.719 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSRECONCILIATION","appName":"对账数据接收","webContent":"YSSUCOBRIDGE","startLevel":7.0}
+2020-08-18 13:20:29.491 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件FastDeploy无数据库升级需要
+2020-08-18 13:20:30.130 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[IeCache]加载完成-----。
+2020-08-18 13:20:30.140 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[MktCache]加载完成-----。
+2020-08-18 13:20:30.184 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSRECONCILIATION无数据库升级需要
+2020-08-18 13:20:30.407 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DaiCache]加载完成-----。
+2020-08-18 13:20:30.430 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DtTdModeCache]加载完成-----。
+2020-08-18 13:20:30.434 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSSERVICECENTER][com.yss.fast.servicecenter] 启动成功
+2020-08-18 13:20:30.908 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.support] 启动成功
+2020-08-18 13:20:30.969 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSFASTDATAINTEGRATION][com.yss.fast.dataintegration] 启动成功
+2020-08-18 13:20:31.007 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DvaItemCache]加载完成-----。
+2020-08-18 13:20:31.152 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSRECONCILIATION][com.yss.uco.reconciliation] 启动成功
+2020-08-18 13:20:31.594 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSPERIPHERAL","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":7.1}
+2020-08-18 13:20:31.940 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSELECRECO","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":7.5}
+2020-08-18 13:20:31.984 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[HDayCache]加载完成-----。
+2020-08-18 13:20:32.565 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSELECRECO无数据库升级需要
+2020-08-18 13:20:32.572 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSPERIPHERAL无数据库升级需要
+2020-08-18 13:20:32.783 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSRUNTIME][com.yss.fast.runtime] 启动成功
+2020-08-18 13:20:33.107 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSELECRECOSUPPORT][com.yss.uco.elecreco.support] 启动成功
+2020-08-18 13:20:33.896 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSATOMICDATA","appName":"基础数据组件","webContent":"YSSUCOBRIDGE","startLevel":7.8}
+2020-08-18 13:20:33.965 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSATOMICDATA无数据库升级需要
+2020-08-18 13:20:34.412 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSDOCTOR","appName":"分布式监控组件","webContent":"YSSUCOBRIDGE","startLevel":7.9}
+2020-08-18 13:20:34.448 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSDOCTOR无数据库升级需要
+2020-08-18 13:20:34.473 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSPERIPHERAL][com.yss.periphral] 启动成功
+2020-08-18 13:20:34.491 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCP][com.yss.communicationProtocol] 启动成功
+2020-08-18 13:20:34.492 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSELECRECO][com.yss.ifa.szt.tool] 启动成功
+2020-08-18 13:20:34.495 INFO [com.yss.uco.reconciliation] [MessageProcess.java : 47]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】启动接收器 
+2020-08-18 13:20:34.496 INFO [com.yss.uco.reconciliation] [MessageProcess.java : 48]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】Thread-105
+2020-08-18 13:20:34.750 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSRIGHT","appName":"权限框架","webContent":"YSSUCOBRIDGE","startLevel":7.9}
+2020-08-18 13:20:34.778 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSRIGHT无数据库升级需要
+2020-08-18 13:20:34.849 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"SSO-SERVER","appName":"SSO Server","webContent":"YSSUCOBRIDGE","startLevel":7.9}
+2020-08-18 13:20:34.935 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件SSO-SERVER无数据库升级需要
+2020-08-18 13:20:35.288 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[FastDeploy][com.yss.fast.unifydeploy] 启动成功
+2020-08-18 13:20:35.313 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[SSO-SERVER][com.yss.fast.sso.server] 启动成功
+2020-08-18 13:20:35.489 WARN [com.yss.framework] [BaseActivator.java : 2018]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】注册本地服务失败!!!!!------->服务[com.yss.fast.monitor.service.stream.low.MonitorStreamServiceLow]-----监控组件注册流式分析服务失败,如果doctor.xml中的开关已经关闭,且运行jdk不为1.8版本,则可忽略该警告信息
+2020-08-18 13:20:36.558 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSWORKFLOW","appName":"流程管理","webContent":"YSSUCOBRIDGE","startLevel":7.91}
+2020-08-18 13:20:36.564 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSWORKFLOW无数据库升级需要
+2020-08-18 13:20:37.049 WARN [com.yss.framework] [BaseActivator.java : 2018]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】注册本地服务失败!!!!!------->服务[com.yss.fast.monitor.service.stream.high.MonitorStreamServiceHigh]-----监控组件注册流式分析服务失败,如果doctor.xml中的开关已经关闭,且运行jdk不为1.8版本,则可忽略该警告信息
+2020-08-18 13:20:37.664 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"TASKSCHEDULER_CLIENT","appName":"流程管理客户端","webContent":"YSSUCOBRIDGE","startLevel":7.94}
+2020-08-18 13:20:37.830 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSATOMICDATA][com.yss.fast.atomicdata] 启动成功
+2020-08-18 13:20:38.031 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件TASKSCHEDULER_CLIENT无数据库升级需要
+2020-08-18 13:20:38.036 DEBUG [com.yss.framework] [DbPool.java : 164]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】DS: {"property":[{"name":"DRIVER_CLASS","value":"oracle.jdbc.driver.OracleDriver"},{"name":"JDBC_URL","value":"jdbc:oracle:thin:@192.168.7.70:1521:orcl"},{"name":"USER","value":"FGJJ_JR1"},{"name":"PASSWORD","value":"sK2fiHhpbYNwjknDTFmaXA=="},{"name":"MAX_POOL_SIZE","value":"200"},{"name":"MIN_POOL_SIZE","value":"3"},{"name":"VALIDATION_QUERY","value":"SELECT 1 FROM dual"},{"name":"TestOnBorrow","value":"false"},{"name":"TestOnReturn","value":"false"}],"id":"dbservice001","reflog":"","used":true,"useAppPool":null,"server":null,"provideUrl":null}
+2020-08-18 13:20:38.168 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[FASTVocCache]加载完成-----。
+2020-08-18 13:20:38.443 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[UserPostCache]加载完成-----。
+2020-08-18 13:20:38.534 INFO [com.yss.framework] [DoctorConfig.java : 431]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】未开启监控开关,请关注:/global/doctor.xml,监控平台不会启动....
+2020-08-18 13:20:38.535 INFO [com.yss.framework] [DoctorConfig.java : 265]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】分布式监控配置信息如下:关系型数据库类型:oracle监控组件是否启动:false流式分析服务器地址:192.168.2.42:9092,192.168.2.42:9192,192.168.2.42:9292默认的分析数据清理时间:1默认的归档数据清理时间:1监控平台数据源id:dbservice001各个监控类型配置如下:FAST_SERVER_RESOURCE_INFO:DoctorMonitorTypeConfig [dataClearPeriod=1]
+2020-08-18 13:20:38.536 INFO [com.yss.framework] [DoctorConfig.java : 431]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】未开启监控开关,请关注:/global/doctor.xml,监控平台不会启动....
+2020-08-18 13:20:38.547 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSDOCTOR][com.yss.fast.doctor] 启动成功
+2020-08-18 13:20:38.749 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:20:38.779 INFO [com.yss.framework] [DoctorConfig.java : 431]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】未开启监控开关,请关注:/global/doctor.xml,监控平台不会启动....
+2020-08-18 13:20:38.789 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[MonitorIndexConfigCache]加载完成-----。
+2020-08-18 13:20:38.860 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[BaseFundAccCache]加载完成-----。
+2020-08-18 13:20:40.382 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[VocCache]加载完成-----。
+2020-08-18 13:20:41.822 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DictCustomCache]加载完成-----。
+2020-08-18 13:20:42.966 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[TASKSCHEDULER_CLIENT][com.yss.fast.task.client] 启动成功
+2020-08-18 13:20:43.133 DEBUG [com.yss.framework] [ClientProxy.java : 495]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.134 DEBUG [com.yss.framework] [ClientProxy.java : 496]  channelMap{}
+2020-08-18 13:20:43.134 DEBUG [com.yss.framework] [ClientProxy.java : 497]  producerMap{}
+2020-08-18 13:20:43.135 DEBUG [com.yss.framework] [ClientProxy.java : 498]  consumerMap{}
+2020-08-18 13:20:43.135 DEBUG [com.yss.framework] [ClientProxy.java : 500]  longUserIpMap{}
+2020-08-18 13:20:43.135 DEBUG [com.yss.framework] [ClientProxy.java : 501]  shortUserIpMap{}
+2020-08-18 13:20:43.135 DEBUG [com.yss.framework] [ClientProxy.java : 502]  shortAddressUserMap{}
+2020-08-18 13:20:43.216 DEBUG [com.yss.framework] [ClientProxy.java : 503]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.275 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"TASKSCHEDULER","appName":"流程管理","webContent":"YSSUCOBRIDGE","startLevel":7.95}
+2020-08-18 13:20:43.299 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件TASKSCHEDULER无数据库升级需要
+2020-08-18 13:20:43.336 DEBUG [com.yss.framework] [ClientProxy.java : 495]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.363 DEBUG [com.yss.framework] [ClientProxy.java : 496]  channelMap{}
+2020-08-18 13:20:43.363 DEBUG [com.yss.framework] [ClientProxy.java : 497]  producerMap{}
+2020-08-18 13:20:43.363 DEBUG [com.yss.framework] [ClientProxy.java : 498]  consumerMap{}
+2020-08-18 13:20:43.363 DEBUG [com.yss.framework] [ClientProxy.java : 500]  longUserIpMap{}
+2020-08-18 13:20:43.363 DEBUG [com.yss.framework] [ClientProxy.java : 501]  shortUserIpMap{}
+2020-08-18 13:20:43.364 DEBUG [com.yss.framework] [ClientProxy.java : 502]  shortAddressUserMap{}
+2020-08-18 13:20:43.372 DEBUG [com.yss.framework] [ClientProxy.java : 503]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 495]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 496]  channelMap{}
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 497]  producerMap{}
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 498]  consumerMap{}
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 500]  longUserIpMap{}
+2020-08-18 13:20:43.417 DEBUG [com.yss.framework] [ClientProxy.java : 501]  shortUserIpMap{}
+2020-08-18 13:20:43.418 DEBUG [com.yss.framework] [ClientProxy.java : 502]  shortAddressUserMap{}
+2020-08-18 13:20:43.523 DEBUG [com.yss.framework] [ClientProxy.java : 503]  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-08-18 13:20:43.711 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=3f0171b4b0b047dda185b82cf30d72de
+2020-08-18 13:20:43.711 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=c25e6eed16624a9689724d23c8a4670d
+2020-08-18 13:20:43.901 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSAPI","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:44.029 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSAPI无数据库升级需要
+2020-08-18 13:20:44.063 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSAPI][com.yss.ams.api] 启动成功
+2020-08-18 13:20:44.126 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSAUTOMATICCLEAR","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:44.230 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSAUTOMATICCLEAR无数据库升级需要
+2020-08-18 13:20:44.270 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[FASTVocabularyDictCache]加载完成-----。
+2020-08-18 13:20:44.325 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSAUTOMATICACT","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:44.372 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSAUTOMATICACT无数据库升级需要
+2020-08-18 13:20:44.413 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=3f0171b4b0b047dda185b82cf30d72de
+2020-08-18 13:20:44.414 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=c25e6eed16624a9689724d23c8a4670d
+2020-08-18 13:20:44.536 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSAUTOMATICCLEAR][com.yss.ams.automatic.gz.clear] 启动成功
+2020-08-18 13:20:44.537 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSAUTOMATICACT][com.yss.ams.automatic.gz.dayf] 启动成功
+2020-08-18 13:20:44.603 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.GeFeiAuthService with key:gefei
+2020-08-18 13:20:44.605 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.GuangFaAuthService with key:gf
+2020-08-18 13:20:45.033 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.UnifiedAuthenService with key:notesId
+2020-08-18 13:20:45.035 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.ESBAuthenService with key:ESB
+2020-08-18 13:20:45.037 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.GDYHAuthService with key:GDYH
+2020-08-18 13:20:44.752 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"ALGORITHM","appName":"算法应用","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:45.043 INFO [com.yss.framework] [BaseActivator.java : 850]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register thirdPartyAuth service: com.yss.fast.right.thirdparty.PALCUMAuthService with key:PALC_UM
+2020-08-18 13:20:45.048 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件ALGORITHM无数据库升级需要
+2020-08-18 13:20:45.095 INFO [com.yss.framework] [BaseActivator.java : 886]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register SQLFilter replaceTableName: T_S_USER:T_S_POST
+2020-08-18 13:20:45.095 INFO [com.yss.framework] [BaseActivator.java : 886]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register SQLFilter replaceTableName: T_S_FUN:T_S_USER
+2020-08-18 13:20:45.096 INFO [com.yss.framework] [BaseActivator.java : 886]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register SQLFilter replaceTableName: T_S_POST:T_S_FUN
+2020-08-18 13:20:45.277 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=3f0171b4b0b047dda185b82cf30d72de
+2020-08-18 13:20:45.277 INFO [com.yss.framework] [ClientProxy.java : 131]  客户端IP-UUID映射：remoteAddress=192.168.13.190:63882,clientUuid=c25e6eed16624a9689724d23c8a4670d
+2020-08-18 13:20:45.504 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSRIGHT][com.yss.fast.right] 启动成功
+2020-08-18 13:20:46.157 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSOUTERDATAVERIFY","appName":"外部数据核对","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:46.289 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSOUTERDATAVERIFY无数据库升级需要
+2020-08-18 13:20:46.458 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[TdChanCache]加载完成-----。
+2020-08-18 13:20:46.556 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSPRODUCTINFO","appName":"产品信息","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:46.582 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSPRODUCTINFO无数据库升级需要
+2020-08-18 13:20:46.801 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSSECINFO","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:46.868 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSSECINFO无数据库升级需要
+2020-08-18 13:20:47.136 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSOUTERDATAVERIFY][com.yss.ams.outerdataverify] 启动成功
+2020-08-18 13:20:47.338 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSSYNCDATA","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:47.353 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSSYNCDATA无数据库升级需要
+2020-08-18 13:20:47.524 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSSYNCDATA][com.yss.ams.syncdata] 启动成功
+2020-08-18 13:20:47.632 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"AUTOTESTSCHEDULER","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:47.642 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件AUTOTESTSCHEDULER无数据库升级需要
+2020-08-18 13:20:47.750 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"DBMIGRATION","appName":"数据清理组件","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:47.754 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件DBMIGRATION无数据库升级需要
+2020-08-18 13:20:47.828 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[AUTOTESTSCHEDULER][com.yss.fast.autotest.scheduler] 启动成功
+2020-08-18 13:20:47.887 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSDOCTORSUPPORT","appName":"性能诊断组件","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:47.971 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSDOCTORSUPPORT无数据库升级需要
+2020-08-18 13:20:48.021 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSDOCTORSUPPORT][com.yss.fast.doctor.support] 启动成功
+2020-08-18 13:20:48.069 INFO [com.yss.fast.task] [ProducerImpl.java : 164]  开始创建生成这。key:{}TASKSCHEDULER
+2020-08-18 13:20:48.131 INFO [com.yss.fast.task] [ProducerImpl.java : 166]  结束创建生成这。key:{}TASKSCHEDULER
+2020-08-18 13:20:48.238 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSDOCTORCLIENT","appName":"性能诊断组件探针","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:48.251 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSDOCTORCLIENT无数据库升级需要
+2020-08-18 13:20:48.947 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:20:49.040 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSDOCTORCLIENT][com.yss.fast.doctor.client] 启动成功
+2020-08-18 13:20:49.458 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSDOCUMENT","appName":"文档管理","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:49.498 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSDOCUMENT无数据库升级需要
+2020-08-18 13:20:49.700 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSDOCUMENT][com.yss.fast.document] 启动成功
+2020-08-18 13:20:49.726 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"MQM","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:49.754 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件MQM无数据库升级需要
+2020-08-18 13:20:49.880 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"SSO-CLIENT","appName":"SSO client","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:49.942 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件SSO-CLIENT无数据库升级需要
+2020-08-18 13:20:50.290 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[SSO-CLIENT][com.yss.fast.sso.client] 启动成功
+2020-08-18 13:20:50.514 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[MQM][com.yss.fast.mq.manager] 启动成功
+2020-08-18 13:20:54.387 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"WEBPLUS","appName":"WebPlus UI","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:54.402 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件WEBPLUS无数据库升级需要
+2020-08-18 13:20:55.301 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"com.yss.report.integrate","appName":"报表中心","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:55.309 INFO [com.yss.report.integrate] [ReportIntegrateActivator.java : 31]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】报表中心组件 registerBundleOperInterface。
+2020-08-18 13:20:55.314 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件com.yss.report.integrate无数据库升级需要
+2020-08-18 13:20:55.343 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[com.yss.report.integrate][com.yss.report.integrate] 启动成功
+2020-08-18 13:20:55.616 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"BANKAPI","appName":null,"webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:55.621 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件BANKAPI无数据库升级需要
+2020-08-18 13:20:55.841 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[BANKAPI][com.yss.uco.bankapi] 启动成功
+2020-08-18 13:20:56.563 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSCLEAR","appName":"清算接口","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:20:56.958 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IDataImpService
+2020-08-18 13:20:56.982 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IDataImpService
+2020-08-18 13:20:56.983 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IAssetStatsCtlInitService
+2020-08-18 13:20:56.986 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IAssetStatsCtlInitService
+2020-08-18 13:20:56.987 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】OSGI中未找到服务[dayfsupport.service.assetStats.IAssetClearCtlService]的实现。如果是系统启动时发生该异常,请尽量不要在系统启动过程中调用服务,或使用YssServiceFactory.getInstance.isServiceExists判断后调用,如果必须保证成功调用可使用循环等待!!!
+2020-08-18 13:20:56.990 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】获取【dayfsupport.service.assetStats.IAssetClearCtlService】服务失败,应用组件可能没启动,请启动组件后重试!
+com.yss.framework.api.exception.ErrorMessageException: OSGI中未找到服务[dayfsupport.service.assetStats.IAssetClearCtlService]的实现。如果是系统启动时发生该异常，请尽量不要在系统启动过程中调用服务，或使用YssServiceFactory.getInstance.isServiceExists判断后调用，如果必须保证成功调用可使用循环等待！！！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:438) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.getOsigServiceByServiceMap(YssServiceFactory.java:268) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createService(YssServiceFactory.java:220) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createServiceByServiceId(YssServiceFactory.java:178) [bundlefile:na]
+	at com.yss.busoper.service.impl.BizControlFactor.getBusItemEntry(BizControlFactor.java:96) [bundlefile:na]
+	at com.yss.busoper.service.impl.DayfBizControlService.getBizAllItems(DayfBizControlService.java:183) [bundlefile:na]
+	at com.yss.fast.autotest.scheduler.AutoTestActivator$1.run(AutoTestActivator.java:53) [bundlefile:na]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:20:56.992 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】获取【dayfsupport.service.assetStats.IAssetClearCtlService】服务失败,应用组件可能没启动,请启动组件后重试!
+2020-08-18 13:20:56.993 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IActControlService
+2020-08-18 13:20:56.996 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IActControlService
+2020-08-18 13:20:56.997 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:ICollControlService
+2020-08-18 13:20:56.998 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:ICollControlService
+2020-08-18 13:20:56.999 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IAssetStatsCtlStatsService
+2020-08-18 13:20:57.000 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IAssetStatsCtlStatsService
+2020-08-18 13:20:57.002 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IDispatchEConfirmService
+2020-08-18 13:20:57.003 ERROR [com.yss.framework] [DayfBizControlService.java : 194]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.framework.api.busoperservice.IBusiness,服务ID:IDispatchEConfirmService
+2020-08-18 13:20:57.306 INFO [com.yss.fast.task] [TaskDescService.java : 91]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】任务调度ID:18432
+2020-08-18 13:20:57.307 INFO [com.yss.fast.task] [TaskDescDao.java : 94] zsm 【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】任务调度ID:18432
+2020-08-18 13:20:57.449 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[DATACLEAR][com.yss.dataclear] 启动成功
+2020-08-18 13:20:58.329 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[DBMIGRATION][com.yss.fast.db.migration] 启动成功
+2020-08-18 13:20:58.943 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[WEBPLUS][com.yss.fast.webplus] 启动成功
+2020-08-18 13:20:59.159 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:21:01.815 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.fxbnym] 启动成功
+2020-08-18 13:21:01.914 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.gpxstz] 启动成功
+2020-08-18 13:21:01.967 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.gpltsx] 启动成功
+2020-08-18 13:21:01.974 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.ldfkzl] 启动成功
+2020-08-18 13:21:02.063 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSCLEAR无数据库升级需要
+2020-08-18 13:21:02.115 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear.zqxx] 启动成功
+2020-08-18 13:21:03.172 INFO [com.yss.uco.clear] [ClearActivator.java : 759]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】清算插件注册完成。
+2020-08-18 13:21:03.753 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSDATAINTEGRATION","appName":"数据导入导出","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:21:03.759 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSDATAINTEGRATION无数据库升级需要
+2020-08-18 13:21:03.774 INFO [com.yss.uco.dataintegration] [DIActivator.java : 84]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】注册部署JAR包消息监听成功:
+2020-08-18 13:21:04.149 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSELECRECO","appName":"电子对账","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:21:04.162 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSELECRECO无数据库升级需要
+2020-08-18 13:21:04.360 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSMONITORMAIN","appName":"管控","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:21:04.393 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSMONITORMAIN无数据库升级需要
+2020-08-18 13:21:07.041 INFO [com.yss.framework] [BaseApplicationActivator.java : 198]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】成功注册应用!!!!! ------->{"ip":"127.0.0.1","port":"8083","appCode":"YSSUCO","appName":"核算业务","webContent":"YSSUCOBRIDGE","startLevel":8.0}
+2020-08-18 13:21:07.051 DEBUG [com.yss.framework] [BaseApplicationActivator.java : 491]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】组件YSSUCO无数据库升级需要
+2020-08-18 13:21:08.107 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSCLEAR][com.yss.uco.clear] 启动成功
+2020-08-18 13:21:10.244 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[TaskWorkSpaceCache]加载完成-----。
+2020-08-18 13:21:10.258 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:21:13.114 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 79]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】"com.yss.fast.workflow" start to do workflow register work
+2020-08-18 13:21:13.138 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 93]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】"com.yss.fast.workflow" end do workflow register work
+2020-08-18 13:21:13.154 INFO [com.yss.fast.workflow] [CheckProcessCompleteConsumer.java : 41]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】开始启动复核流程消费者
+2020-08-18 13:21:13.629 INFO [com.yss.fast.workflow] [CheckProcessCompleteConsumer.java : 150]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】复核流程消费者启动完成
+2020-08-18 13:21:13.630 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSWORKFLOW][com.yss.fast.workflow] 启动成功
+2020-08-18 13:21:16.784 DEBUG [com.yss.uco.elecreco] [SendThreadPool.java : 87]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】发送线程池准备就绪!
+2020-08-18 13:21:16.785 INFO [com.yss.uco.elecreco] [ErActivator.java : 50]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】电子对账发送线程启动完成!
+2020-08-18 13:21:16.786 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSELECRECO][com.yss.uco.elecreco] 启动成功
+2020-08-18 13:21:18.737 INFO [com.yss.uco.monitor] [AbstractDataMigrationTask.java : 1073]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】当前清理任务:null 没有设置要清理的数据表信息,任务将不执行任何清理操作
+2020-08-18 13:21:19.354 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[TagCache]加载完成-----。
+2020-08-18 13:21:20.004 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[DPParamCache]加载完成-----。
+2020-08-18 13:21:20.261 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:21:20.737 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[ALGORITHM][com.yss.ams.aval] 启动成功
+2020-08-18 13:21:21.107 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSSECINFO][com.yss.ams.sec.information] 启动成功
+2020-08-18 13:21:22.250 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 79]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】"com.yss.fast.task" start to do workflow register work
+2020-08-18 13:21:22.468 INFO [com.yss.fast.workflow] [WorkflowRegisterAdmin.java : 93]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】"com.yss.fast.task" end do workflow register work
+2020-08-18 13:21:23.171 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSMONITORMAIN][com.yss.uco.monitor] 启动成功
+2020-08-18 13:21:23.779 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[AlgoCache]加载完成-----。
+2020-08-18 13:21:23.960 INFO [com.yss.framework] [BaseActivator.java : 802]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】succeed to register taskTriggerStrategy service: com.yss.fast.task.task.trigger.DemoTaskTriggerStrategy with key:com.yss.fast.task.task.trigger.DemoTaskTriggerStrategy
+2020-08-18 13:21:24.852 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSPRODUCTINFO][com.yss.ams.product.information] 启动成功
+2020-08-18 13:21:25.634 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[OrgCache]加载完成-----。
+2020-08-18 13:21:30.848 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】YssServiceFactory在上下文未找到serviceMap,请核对:interface com.yss.right.service.IFunRightProvider,实现类:com.yss.ams.xbrl.right.service.IXbrlFunRightProvider
+2020-08-18 13:21:31.545 INFO [com.yss.uco.dataintegration] [DIActivator.java : 155]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】读取到导出config.properties配置的总路径:null
+2020-08-18 13:21:31.547 INFO [com.yss.uco.dataintegration] [DIActivator.java : 128]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】读取到导出总路径:null
+2020-08-18 13:21:31.549 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[YSSDATAINTEGRATION][com.yss.uco.dataintegration] 启动成功
+2020-08-18 13:21:32.600 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[PortClsCache]加载完成-----。
+2020-08-18 13:21:48.782 INFO [com.yss.framework] [BaseActivator.java : 650]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】应用[TASKSCHEDULER][com.yss.fast.task] 启动成功
+2020-08-18 13:22:28.132 DEBUG [com.yss.framework] [ClientRequestUtil.java : 383]  2020-08-18 13:22:28.124【192.168.13.190:63882】：长连接心跳来了
+2020-08-18 13:22:33.624 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[PostRightCache]加载完成-----。
+2020-08-18 13:23:50.681 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[AutoProcessCache]加载完成-----。
+2020-08-18 13:24:13.980 DEBUG [com.yss.framework] [ClientRequestUtil.java : 383]  2020-08-18 13:24:13.98【192.168.13.190:63882】：长连接心跳来了
+2020-08-18 13:24:42.769 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[PortCache]加载完成-----。
+2020-08-18 13:25:58.148 DEBUG [com.yss.framework] [ClientRequestUtil.java : 383]  2020-08-18 13:25:58.148【192.168.13.190:63882】：长连接心跳来了
+2020-08-18 13:26:36.143 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【9d92a49d-9837-411d-a306-6bf8dc010090】OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常,请尽量不要在系统启动过程中调用服务,或使用YssServiceFactory.getInstance.isServiceExists判断后调用,如果必须保证成功调用可使用循环等待!!!
+2020-08-18 13:26:36.148 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【9d92a49d-9837-411d-a306-6bf8dc010090】获取【dataservice.service.IKmDataService】服务失败,应用组件可能没启动,请启动组件后重试!
+com.yss.framework.api.exception.ErrorMessageException: OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常，请尽量不要在系统启动过程中调用服务，或使用YssServiceFactory.getInstance.isServiceExists判断后调用，如果必须保证成功调用可使用循环等待！！！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:438) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.getOsigServiceByServiceMap(YssServiceFactory.java:268) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createService(YssServiceFactory.java:220) [bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:138) [bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:26:36.169 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【9d92a49d-9837-411d-a306-6bf8dc010090】DefaultInvoke调用服务出错,服务:IKmDataService; 调用方法:getUpdateByTimestampCount.参数信息为:无参数
+com.yss.framework.api.exception.YssRuntimeException: 获取【dataservice.service.IKmDataService】服务失败，应用组件可能没启动，请启动组件后重试！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:443) ~[bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.getOsigServiceByServiceMap(YssServiceFactory.java:268) ~[bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createService(YssServiceFactory.java:220) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:138) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+Caused by: com.yss.framework.api.exception.ErrorMessageException: OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常，请尽量不要在系统启动过程中调用服务，或使用YssServiceFactory.getInstance.isServiceExists判断后调用，如果必须保证成功调用可使用循环等待！！！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:438) ~[bundlefile:na]
+	... 51 common frames omitted
+2020-08-18 13:26:36.216 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【61a78d13-7484-4b39-8475-00adb811fb58】OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常,请尽量不要在系统启动过程中调用服务,或使用YssServiceFactory.getInstance.isServiceExists判断后调用,如果必须保证成功调用可使用循环等待!!!
+2020-08-18 13:26:36.220 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【61a78d13-7484-4b39-8475-00adb811fb58】获取【dataservice.service.IKmDataService】服务失败,应用组件可能没启动,请启动组件后重试!
+com.yss.framework.api.exception.ErrorMessageException: OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常，请尽量不要在系统启动过程中调用服务，或使用YssServiceFactory.getInstance.isServiceExists判断后调用，如果必须保证成功调用可使用循环等待！！！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:438) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.getOsigServiceByServiceMap(YssServiceFactory.java:268) [bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createService(YssServiceFactory.java:220) [bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:138) [bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+2020-08-18 13:26:36.321 ERROR [com.yss.framework] [YssRuntimeException.java : 89]  【61a78d13-7484-4b39-8475-00adb811fb58】DefaultInvoke调用服务出错,服务:IKmDataService; 调用方法:getUpdateByTimestampCount.参数信息为:无参数
+com.yss.framework.api.exception.YssRuntimeException: 获取【dataservice.service.IKmDataService】服务失败，应用组件可能没启动，请启动组件后重试！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:443) ~[bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.getOsigServiceByServiceMap(YssServiceFactory.java:268) ~[bundlefile:na]
+	at com.yss.framework.api.service.YssServiceFactory.createService(YssServiceFactory.java:220) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultInvoker.invoke(DefaultInvoker.java:138) ~[bundlefile:na]
+	at com.yss.fast.runtime.invoker.DefaultClientInvoker.invoke(DefaultClientInvoker.java:36) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doGet(ClientInvokeSevlet.java:126) [bundlefile:na]
+	at com.yss.fast.runtime.servlet.ClientInvokeSevlet.doPost(ClientInvokeSevlet.java:188) [bundlefile:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:643) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:38) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.6.jar:1.2.6]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.6.jar:1.2.6]
+	at com.yss.fast.sso.filters.SecondFilter.doFilterInternal(SecondFilter.java:58) [bundlefile:na]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.6.jar:1.2.6]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.sso.filters.FirstFilter.doFilter(FirstFilter.java:33) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at com.yss.fast.runtime.login.LoginFilter.doFilter(LoginFilter.java:399) [bundlefile:na]
+	at org.eclipse.equinox.http.registry.internal.FilterManager$FilterWrapper.doFilter(FilterManager.java:173) [org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterRegistration.doFilter(FilterRegistration.java:81) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:35) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:132) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.400.v20130418-1354.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.eclipse.equinox.servletbridge.BridgeServlet.service(BridgeServlet.java:138) [org.eclipse.equinox.servletbridge_1.2.300.v20130508-1243.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:203) [javamelody.jar:na]
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:181) [javamelody.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127) [catalina.jar:6.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:6.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [catalina.jar:6.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293) [catalina.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861) [tomcat-coyote.jar:6.0.45]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612) [tomcat-coyote.jar:6.0.45]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503) [tomcat-coyote.jar:6.0.45]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_27]
+Caused by: com.yss.framework.api.exception.ErrorMessageException: OSGI中未找到服务[dataservice.service.IKmDataService]的实现。如果是系统启动时发生该异常，请尽量不要在系统启动过程中调用服务，或使用YssServiceFactory.getInstance.isServiceExists判断后调用，如果必须保证成功调用可使用循环等待！！！
+	at com.yss.framework.api.service.YssServiceFactory.getService(YssServiceFactory.java:438) ~[bundlefile:na]
+	... 51 common frames omitted
+2020-08-18 13:27:09.780 INFO [com.yss.fast.cache] [CacheManager.java : 361]  【bdabdcf7-fb47-449c-95a3-d5595ccd2a86】缓存[SecBaseCache]加载完成-----。
+2020-08-18 13:27:33.978 DEBUG [] [OperLogNewService.java : 50]  【a4de9022-30eb-4f63-8272-9f5a336a005e】{"id":"","c_FUN_CODE":"FASTMQSUPPORT","c_SHOW_FUN_CODE":null,"c_FUN_CODE_P":"FASTMQSUPPORT","c_USER_CODE":"","c_CONTENT":"查询操作成功。","c_LOG_TIME":"2020-08-18 13:27:33","d_LOG_DATE":"2020-08-18 13:27:33","c_IP":"","c_MAC":"","c_DETAIL":"","c_CLIENT_NAME":"","c_OPER_TYPE":"BRW","c_RESULT":"Success","childs":[],"c_Start_Time":"2020-08-18 13:27:33:889","c_End_Time":"2020-08-18 13:27:33:933","c_CLASS_NAME":"FastMqService","c_METHOD_NAME":"getFastMqNamesrvAddress","c_OPER_DATA_ID":null,"c_OPER_DATA_CLASS":null,"c_DV_CODE":"BRW","id_S_OPER_LOG":""}
+2020-08-18 13:27:35.056 DEBUG [] [OperLogNewService.java : 50]  【7a05e289-acd8-4d95-99f8-d48007ac2570】{"id":"","c_FUN_CODE":"usermanage","c_SHOW_FUN_CODE":null,"c_FUN_CODE_P":"usermanage","c_USER_CODE":"","c_CONTENT":"其他操作成功。","c_LOG_TIME":"2020-08-18 13:27:35","d_LOG_DATE":"2020-08-18 13:27:35","c_IP":"","c_MAC":"","c_DETAIL":"","c_CLIENT_NAME":"","c_OPER_TYPE":"OTHER_OPER","c_RESULT":"Success","childs":[],"c_Start_Time":"2020-08-18 13:27:34:981","c_End_Time":"2020-08-18 13:27:34:987","c_CLASS_NAME":"UserService","c_METHOD_NAME":"isRememberUserName","c_OPER_DATA_ID":null,"c_OPER_DATA_CLASS":null,"c_DV_CODE":"OTHER_OPER","id_S_OPER_LOG":""}
+2020-08-18 13:27:43.053 DEBUG [com.yss.framework] [ClientRequestUtil.java : 383]  2020-08-18 13:27:43.053【192.168.13.190:63882】：长连接心跳来了

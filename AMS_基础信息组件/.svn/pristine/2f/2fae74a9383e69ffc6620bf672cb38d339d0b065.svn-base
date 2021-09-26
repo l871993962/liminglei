@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+	<diskStore path="java.io.tmpdir" />
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+	
+	<cache name="com.yss.framework.api.common.co.Mkt" maxElementsInMemory="10000" eternal="false"
+		maxElementsOnDisk="10000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.MktCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>	
+		
+	 <cache name="com.yss.ams.base.information.support.bi.hdaygroup.pojo.HdayGroup" maxElementsInMemory="30000" eternal="false"
+		maxElementsOnDisk="1000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.HDayCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	<cache name="HdayGroupDate" maxElementsInMemory="300000" eternal="false"
+		maxElementsOnDisk="1000000" overflowToDisk="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LFU">
+	</cache>
+
+	<!-- 国际货币设置 -->
+	<cache name="com.yss.ams.base.information.support.sys.dccury.pojo.DcCury" maxElementsInMemory="1000" eternal="false"
+		maxElementsOnDisk="1000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.DcCache">
+		</bootstrapCacheLoaderFactory>
+	</cache> 
+	<cache name="com.yss.ams.base.information.support.bi.ie.pojo.Ie" maxElementsInMemory="10000" eternal="false"
+		maxElementsOnDisk="10000" overflowToDisk="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.IeCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	<!-- 关联机构 -->
+	<cache name="com.yss.ams.base.information.support.bi.org.pojo.Org" maxElementsInMemory="500000" eternal="false"
+		maxElementsOnDisk="500000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.OrgCache">
+		</bootstrapCacheLoaderFactory>
+	</cache> 
+	
+	<!-- ehcache.xml证券品种缓存 -->
+	<cache name="com.yss.ams.base.information.support.sys.secvar.pojo.SecVar" maxElementsInMemory="1000" eternal="false"
+		maxElementsOnDisk="10000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.SecVarCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	
+	<!-- ehcache.xml交易方式字典缓存 -->
+	<cache name="com.yss.ams.base.information.support.sys.dttdmode.pojo.DttdMode" maxElementsInMemory="3000" eternal="false"
+		maxElementsOnDisk="1000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.DtTdModeCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	
+	<!-- ehcache.xml核算项目字典缓存 -->
+	<cache name="com.yss.ams.base.information.support.sys.dai.pojo.Dai" maxElementsInMemory="1000" eternal="false"
+		maxElementsOnDisk="1000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.DaiCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	
+	<!-- ehcache.xml 核算业务项字典 缓存 -->
+	<cache name="com.yss.ams.base.information.support.sys.dvaitem.pojo.DvaItem" maxElementsInMemory="3000" eternal="false"
+		maxElementsOnDisk="1000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.DvaItemCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+
+	<!-- 收支项目字典 缓存 ehcache.xml-->
+	<cache name="com.yss.ams.base.information.support.sys.ieItem.pojo.IeItem" maxElementsInMemory="10000" eternal="false"
+		maxElementsOnDisk="10000" overflowToDisk="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.IeItemCache">
+		</bootstrapCacheLoaderFactory>
+	</cache> 
+
+	<cache name="com.yss.ams.base.information.support.bi.account.pojo.FundAcc" maxElementsInMemory="50000" eternal="false"
+		maxElementsOnDisk="50000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.bi.account.cache.BaseFundAccCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	
+	<cache name="com.yss.ams.base.information.support.bi.tdchan.pojo.TdChan" maxElementsInMemory="50000" eternal="false"
+		maxElementsOnDisk="50000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.TdChanCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	<cache name="com.yss.platform.support.dataservice.pojo.dict.Vocabulary" maxElementsInMemory="30000" eternal="false"
+		maxElementsOnDisk="30000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.VocCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	<cache name="VocabularyType" maxElementsInMemory="20000" eternal="false"
+		maxElementsOnDisk="20000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	
+	<cache name="com.yss.ams.base.information.support.sys.dtatdattr.pojo.DtatdAttr" maxElementsInMemory="20000" eternal="false"
+		maxElementsOnDisk="20000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.base.information.support.cache.DtatdAttrCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+</ehcache>  

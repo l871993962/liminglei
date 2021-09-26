@@ -1,0 +1,6 @@
+#Eclipse Runtime Configuration File
+osgi.bundles=org.eclipse.equinox.common@2:start, javax.servlet@start, org.eclipse.osgi.services@start, org.eclipse.equinox.http.servlet@start, org.eclipse.equinox.http.servletbridge@start, org.eclipse.equinox.registry@start, org.eclipse.equinox.http.registry@start, org.apache.felix.gogo.command@start, org.apache.felix.gogo.runtime@start, org.apache.felix.gogo.shell@start, org.eclipse.equinox.console@start, javax.servlet.jsp@start, org.apache.commons.el@start, org.apache.commons.logging@start, org.apache.jasper@start, org.eclipse.equinox.jsp.jasper@start, org.eclipse.equinox.jsp.jasper.registry@start, com.example.time@start, com.example.time.local@start, com.example.time.utc@start,org.eclipse.core.runtime@start,org.eclipse.equinox.common@start,org.eclipse.core.contenttype@start,org.eclipse.core.jobs@start,org.eclipse.core.runtime.compatibility.auth@start,org.eclipse.equinox.app@start,org.eclipse.equinox.preferences@start,com.yss.fast.webplus.resource_1.0.0@3:start,com.yss.uco.deployment_1.0.0@3:start,org.eclipse.equinox.servletbridge.extensionbundle,com.yss.fast.servicecenter.extensionbundle
+osgi.bundles.defaultStartLevel=3
+osgi.startLevel=10
+osgi.clean=true
+#osgi.startLevel设置启动级别，超出该级别的不会自动启动

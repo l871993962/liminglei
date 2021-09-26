@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="FUN" name="功能菜单" funcode="fun" datasource="DB">
+	<exp>
+		<data id="fun">
+			<table-name>T_S_FUN</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_FUN where C_FUN_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_FUN_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+
+		<data id="rights">
+			<table-name>T_S_FUN_RIGHTS</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_FUN_RIGHTS where C_FUN_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="fun" ref-column="C_FUN_CODE">
+						<value>C_FUN_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+
+	</exp>
+	
+	<!-- 数据导入配置 -->
+	<imp>
+		<!-- name对应的需要导入的文件名 opertype为重复数据处理机制 cover覆盖原数据 rename重新赋值筛选字段数据-->
+		<outfile name="fun">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>C_FUN_CODE</check_column>
+		</outfile>
+
+		<outfile name="rights">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>C_FUN_CODE</check_column>
+			<check_column>C_DV_OPER_TYPE</check_column>
+		</outfile>
+
+	</imp>
+
+</source>

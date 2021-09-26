@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+	<!-- 数据同步 -->
+	<class id="ISyncDataService" menuId="syncdata"
+		class="com.yss.ams.syncdata.modules.base.service.impl.SyncDataService"
+		interface="com.yss.ams.syncdata.support.modules.base.service.ISyncDataService" />
+    <class id="ISyncGenerateService" menuId="syncdata"
+		class="com.yss.ams.syncdata.modules.base.service.impl.SyncGenerateService"
+		interface="com.yss.ams.syncdata.support.modules.base.service.ISyncGenerateService"/>
+	<class id="IPortSyncService" menuId="productsInfo"
+		  class="com.yss.ams.syncdata.business.productinfo.service.impl.PortSyncService"
+		  interface="com.yss.ams.syncdata.business.productinfo.service.IPortSyncService" />
+	<!-- STORY #58468 生命周期系统中的账户信息数据同步至基础组件的银行账户信息 -->
+	<class id="IPortAccSyncService" menuId="bankaccount"
+  		class="com.yss.ams.syncdata.business.productinfo.service.impl.PortAccSyncServiceImpl"
+  		interface="com.yss.ams.syncdata.business.productinfo.service.IPortAccSyncService" />
+</classes>

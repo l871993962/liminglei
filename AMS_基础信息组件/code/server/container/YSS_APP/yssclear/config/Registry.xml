@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Registry> 
+    <interfaces desc="接口的注册"> 
+        <interface id="ABCSJ" desc="上中登补充数据文件接口" isPub="false" executeClass="com.yss.uco.clear.abcsj.execute.AbcsjExecute"/>  
+        <interface id="BGH" desc="上海大过户库" isPub="false" executeClass="com.yss.uco.clear.bgh.execute.BGHExecutor"/>  
+        <interface id="BILL_TRADE_INFO" desc="票据电子信息" isPub="false" executeClass="com.yss.uco.clear.billtradeinfo.execute.BillTradeInfoExecutor"/>  
+        <interface id="CAMC_BJ" desc="华夏恒指ETF交易数据库清算" isPub="false" executeClass="com.yss.uco.clear.camcbj.execute.BjExecutor"/>  
+        <interface id="DGH" desc="大宗交易" isPub="false" executeClass="com.yss.uco.clear.dgh.executor.DGHExecutor"/>  
+        <interface id="DXCP" desc="定向产品信息" isPub="false" executeClass="com.yss.uco.clear.dxcp.execute.DxcpExecutor"/>  
+        <interface id="ER" desc="富国汇率数据" isPub="false" executeClass="com.yss.uco.clear.er.execute.ErExecutor"/>  
+        <interface id="ETF_SS_SKEP2" desc="ETF-股票篮文件数据" isPub="false" executeClass="com.yss.uco.clear.etfgpl.execute.EtfGplExecutor"/>  
+        <interface id="ETF_JSMX" desc="ETFTAjsmx文件" isPub="false" executeClass="com.yss.uco.clear.etfjsmx.execute.EtfTaJsmxExecutor"/>  
+        <interface id="RQFII_PCF" desc="汇添富股票篮文件接口" isPub="false" executeClass="com.yss.uco.clear.etfrqfii.execute.EtfTaRQFIIExecutor"/>  
+        <interface id="ETF_SJSGH" desc="ETFTAgh文件" isPub="false" executeClass="com.yss.uco.clear.etftagh.execute.EtfTaghExecutor"/>  
+        <interface id="ETF_SJSHB" desc="ETFTAhb文件" isPub="false" executeClass="com.yss.uco.clear.etftahb.execute.EtfTaHbExecutor"/>  
+        <interface id="ExchangeRate" desc="公共汇率数据" isPub="false" executeClass="com.yss.uco.clear.exchangeRate.execute.ExchangeRateExecutor"/>  
+        <interface id="FX" desc="汇率资料 - 汇添富" isPub="false" executeClass="com.yss.uco.clear.fx.execute.FxExecutor"/>  
+        <interface id="GFJX" desc="广发结息接口清算" isPub="false" executeClass="com.yss.uco.clear.gfjx.execute.GfjxExecutor"/>  
+        <interface id="GROUPING_FUND" desc="分组基金" isPub="false" executeClass="com.yss.uco.clear.groupingfund.execute.GruopingFundExecutor"/>  
+        <interface id="PAR_IRCURVE_DATE" desc="国债收益率曲线" isPub="false" executeClass="com.yss.uco.clear.gzsylqx.execute.GzsylqxExecutor"/>  
+        <interface id="HIS_INDEX_MP" desc="指数历史行情" isPub="false" executeClass="com.yss.uco.clear.indexhismp.execute.IndexHisMpExecutor"/>  
+        <interface id="AMARKETVALUE" desc="彭博恒指ETF行情" isPub="false" executeClass="com.yss.uco.clear.marketvalue.execute.MarketValueExecutor"/>  
+        <interface id="Omgeo" desc="Omgeo数据接口清算" isPub="false" executeClass="com.yss.uco.clear.omgeo.execute.OgExecutor"/>  
+        <interface id="PAR_BOND_FXZ" desc="浮息债券" isPub="false" executeClass="com.yss.uco.clear.parbondfxz.execute.ParBondFxzExecutor"/>  
+        <interface id="PAR_NEWSTOCK_INFO" desc="新股上市信息" isPub="true" executeClass="com.yss.uco.clear.parnewstockinfo.execute.ParNewStockInfoExecutor"/>  
+        <interface id="PAR_OPENFUND_INFO" desc="财汇开放式基金行情" isPub="false" executeClass="com.yss.uco.clear.paropenfundInfo.execute.ParOpenfundInfoExecutor"/>  
+        <interface id="FixInterest" desc="彭博债券信息" isPub="false" executeClass="com.yss.uco.clear.pbbond.execute.PbBondExecutor"/>  
+        <interface id="Security" desc="彭博证券信息" isPub="false" executeClass="com.yss.uco.clear.pbsec.execute.PbSecExecutor"/>  
+        <interface id="Bloomberg" desc="彭博交易接口" isPub="false" executeClass="com.yss.uco.clear.pbtrade.execute.PbTradeExecutor"/>  
+        <interface id="PLATE_INFO" desc="版块信息设置" isPub="false" executeClass="com.yss.uco.clear.plateinfo.execute.PlateInfoExecutor"/>  
+        <interface id="QDIIHQ" desc="境外行情" isPub="false" executeClass="com.yss.uco.clear.qdiihq.execute.QDIIHQExecutor"/>  
+        <interface id="TradeData" desc="QDII数据接口" isPub="false" executeClass="com.yss.uco.clear.qdiitrade.execute.QdiiTradeExecutor"/>  
+        <interface id="QH_DELIVERY" desc="期货交易数据 - 结算会员交割情况表" isPub="false" executeClass="com.yss.uco.clear.qhdelivery.execute.QhDeliveryExecutor"/>  
+        <interface id="QH_SETTDETAIL" desc="期货交易数据 - 标准合约结算明细" isPub="false" executeClass="com.yss.uco.clear.qhsettdetail.execute.QhSettDetailExecutor"/>  
+        <interface id="QH_TD_FORM" desc="期货交易数据 - 成交单" isPub="false" executeClass="com.yss.uco.clear.qhtdform.execute.QhTdFormExecutor"/>  
+        <interface id="PAR_QY_INFO" desc="财汇权益信息" isPub="false" executeClass="com.yss.uco.clear.qyinfo.execute.ChQyInfoExecutor"/>  
+        <interface id="SHOW2003" desc="上交所行情" isPub="false" executeClass="com.yss.uco.clear.show2003.execute.Show2003Executor"/>  
+        <interface id="SJSDZ" desc="深交所对账" isPub="false" executeClass="com.yss.uco.clear.sjsdz.execute.SjsdzExecutor"/>  
+        <interface id="SJSHQ" desc="深交所行情" isPub="false" executeClass="com.yss.uco.clear.sjshq.execute.SjsHqExecutor"/>  
+        <interface id="SJSLOF" desc="上证lof接口清算" isPub="false" executeClass="com.yss.uco.clear.sjslof.execute.LofExecutor"/>  
+        <interface id="SJSXX" desc="深交所证券信息" isPub="true" executeClass="com.yss.uco.clear.sjsxx.execute.XxExecutor"/>  
+        <interface id="SJSZHHB" desc="深交所综合回报库" isPub="false" executeClass="com.yss.uco.clear.sjszhhb.execute.ZHHBExecutor"/>  
+        <interface id="INFI_JY_WH_BBH" desc="BBH换汇接口" isPub="false" executeClass="com.yss.uco.clear.swapbbh.execute.SwapBbhExecutor"/>  
+        <interface id="TA_ADJUSTSHARE" desc="TA交易数据-份额调整与对账" isPub="false" executeClass="com.yss.uco.clear.taadjustshare.execute.TaAdjustShareExecutor"/>  
+        <interface id="TA_ALLOT" desc="TA交易数据-申购" isPub="false" executeClass="com.yss.uco.clear.taallot.execute.TaAllotExecutor"/>  
+        <interface id="TA_ALLOT_BOCI" desc="TA交易数据-中银申购" isPub="false" executeClass="com.yss.uco.clear.taallotboci.execute.TaAllotBociExecutor"/>  
+        <interface id="TA_BONUS" desc="TA交易数据-分红" isPub="false" executeClass="com.yss.uco.clear.tabonus.execute.TaBonusExecutor"/>  
+        <interface id="TA_INCOME" desc="TA交易数据-基金收益" isPub="false" executeClass="com.yss.uco.clear.taincome.execute.TaIncomeExecutor"/>  
+        <interface id="TA_REDEEM" desc="TA交易数据-赎回" isPub="false" executeClass="com.yss.uco.clear.taredeem.execute.TaRedeemExecutor"/>  
+        <interface id="TA_REDEEM_BOCI" desc="TA交易数据-中银赎回" isPub="false" executeClass="com.yss.uco.clear.taredeemboci.execute.TaRedeemBociExecutor"/>  
+        <interface id="TA_SUB" desc="TA交易数据-数据接口-认购" isPub="false" executeClass="com.yss.uco.clear.tasub.execute.TaSubExecutor"/>  
+        <interface id="TA_SWITCH" desc="TA交易数据-基金转换" isPub="false" executeClass="com.yss.uco.clear.taswitch.execute.TaSwithchExecutor"/>  
+        <interface id="TA_SWITCHIN" desc="TA交易数据-转入" isPub="false" executeClass="com.yss.uco.clear.taswitchin.execute.TaSwithchinExecutor"/>  
+        <interface id="TA_SWITCHOUT" desc="TA交易数据-转出" isPub="false" executeClass="com.yss.uco.clear.taswitchout.execute.TaSwithchoutExecutor"/>  
+        <interface id="YFX_JSMX_JS" desc="预发行结算数据" isPub="false" executeClass="com.yss.uco.clear.yfxjs.execute.PreTradeSettExecutor"/>  
+        <interface id="YFX_BGH_TRADE" desc="预发行交易数据" isPub="false" executeClass="com.yss.uco.yfxtrade.execute.YfxTradeExecutor"/>  
+        <interface id="ZDJSMX" desc="上海中登结算明细库清算" isPub="false" executeClass="com.yss.uco.clear.zdjsmx.execute.ZdjsmxExecutor"/>  
+        <interface id="ZDYE" desc="上海中登余额库" isPub="false" executeClass="com.yss.uco.clear.zdye.execute.ZdyeExecutor"/>  
+        <interface id="ZGH" desc="固定收益平台" isPub="false" executeClass="com.yss.uco.clear.zgh.execute.ZGHExecutor"/>  
+        <interface id="ZQBD" desc="上海证券变动库清算" isPub="false" executeClass="com.yss.uco.clear.zqbd.execute.BdExecutor"/>  
+        <interface id="PAR_BOND_INFO" desc="债券信息" isPub="false" executeClass="com.yss.uco.clear.zqxx.execute.ZqxxExecutor"/>  
+        <interface id="ZSMX" desc="深中登征税明细库接口" isPub="false" executeClass="com.yss.uco.clear.zsmx.execute.ZsmxExecute"/>  
+        <interface id="ZZGZHQ" desc="中债估值行情" isPub="false" executeClass="com.yss.uco.clear.zzgzhq.execute.ZzgzhqExecutor"/>  
+        <interface id="ZZGZHQX" desc="中债估值行情新格式" isPub="false" executeClass="com.yss.uco.clear.zzgzhqx.execute.ZzgzhqxExecutor"/>  
+        <interface id="SJSFX" desc="深交所发行库清算" isPub="false" executeClass="com.yss.uco.clear.sjsfx.execute.FxExecutor"/>  
+        <interface id="SJSHB" desc="深交所回报库清算" isPub="false" executeClass="com.yss.uco.clear.sjshb.execute.HbExecutor"/>  
+        <interface id="SJSGF" desc="深交所股份库 清算" isPub="false" executeClass="com.yss.uco.clear.sjsgf.execute.GfExecutor"/>  
+        <interface id="SJSGH" desc="上海过户库" cfgCode="INFI_JY_GH_SH" isPub="false" executeClass="com.yss.uco.clear.sjsgh.execute.GhExecutor"/>  
+        <interface id="ZRTJY" desc="转融通交易数据" cfgCode="INFI_ZRT_JY" isPub="false" executeClass="com.yss.uco.clear.zrtjy.execute.ZrtjyExecutor"/>  
+        <interface id="UNSTANDARDTRADE" desc="非标交易数据清算" cfgCode="INFI_JY_UNSTD_TRADE" isPub="false" executeClass="com.yss.ams.clear.unstandardtrade.execute.UnstandardTradeExecutor"/>  
+        <interface id="INFI_ZX_SJSZJ" desc="资金结算信息库文件" cfgCode="INFI_ZX_SJSZJ" isPub="false" executeClass="com.yss.uco.clear.sjszjinfo.execute.SJSZJInfoExecutor"/>  
+        <interface id="HJJYS_GEMS2JSSBCJD" desc="上海黄金交易所GEMS2交收申报成交单" cfgCode="INFI_JC_HJJY_SH_JSSB" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2jssbcjd.execute.Hjjys_Gems2JssbcjdExecutor"/>  
+        <interface id="HJJYSKCLS" desc="上海黄金交易所库存流水" cfgCode="INFI_JC_HJJY_KCLS" isPub="false" executeClass="com.yss.uco.clear.hjjyskcls.execute.HjjysKclsExecutor"/>  
+        <interface id="HJJYSGEMS2KCLS" desc="上海黄金交易所GEMS2库存流水" cfgCode="INFI_JC_HJJY_SH_KCLS" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2kcls.execute.KCLSExecutor"/>  
+        <interface id="HJJYSGEMS2DYCJD" desc="上海黄金交易所GEMS2递延成交单" cfgCode="INFI_JC_HJJY_SH_DYCJ" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2dycjd.execute.DYCJDExecutor"/>  
+        <interface id="HJJYSGEMS2JQCJD" desc="上海黄金交易所GEMS2即期成交单" cfgCode="INFI_JC_HJJY_SH_JQCJ" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2jqcjd.execute.JQCJDExecutor"/>  
+        <interface id="HJJYSGEMS2XHCJD" desc="上海黄金交易所GEMS2现货成交单" cfgCode="INFI_JC_HJJY_SH_XHCJ" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2xhcjd.execute.XHCJDExecutor"/>  
+        <interface id="HJJYSHYZJ" desc="上海黄金交易所会员资金" cfgCode="INFI_JC_HJJY_HYZJ" isPub="false" executeClass="com.yss.uco.clear.hjjyshyzj.execute.HjjysHyzjExecutor"/>  
+        <interface id="HJJYSKHFYMX" desc="上海黄金交易所客户费用明细" cfgCode="INFI_JC_HJJY_KHFYMX" isPub="false" executeClass="com.yss.uco.clear.hjjyskhfymx.execute.HjjysKhfymxExecutor"/>  
+        <interface id="HJJYSXHCJD" desc="上海黄金交易所现货成交单" cfgCode="INFI_JC_HJJY_XHCJD" isPub="false" executeClass="com.yss.uco.clear.hjjysxhcjd.execute.HjjysXhcjdExecutor"/>  
+        <interface id="HJJYS" desc="上海黄金交易所行情数据" cfgCode="INFI_ZX_HL_HJJYS" isPub="true" executeClass="com.yss.uco.clear.hjjyshq.execute.HjjysExecutor"/>  
+        <interface id="HJJYSGEMS2HYZJ" desc="上海黄金交易所GEMS2会员资金" cfgCode="INFI_JC_HJJY_SH_HYZJ" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2hyzj.execute.HYZJExecutor"/>  
+        <interface id="HJJYSGEMS2KHFYMX" desc="上海黄金交易所GEMS2客户费用明细" cfgCode="INFI_JC_HJJY_SH_KHFY" isPub="false" executeClass="com.yss.uco.clear.hjjys_gems2khfymx.execute.KHFYMXExecutor"/>  
+        <interface id="HJJYSGEMS2HQ" desc="上海黄金交易所GEMS2行情数据" cfgCode="INFI_ZX_HJJY_SH_HQ" isPub="true" executeClass="com.yss.uco.clear.hjjys_gems2hq.execute.HjjysHQExecutor"/>  
+        <interface id="HJJYSDYCJD" desc="上海黄金交易所递延成交单" cfgCode="INFI_JC_HJJY_DYCJD" isPub="false" executeClass="com.yss.uco.clear.hjjysdycjd.execute.HjjysDycjdExecutor"/>  
+        <interface id="PORTINFOSET" desc="产品基本信息和基础设置" cfgCode="INFI_JC_PORT_INFOSET" isPub="true" executeClass="com.yss.uco.clear.portinfoset.execute.InfoSetExecutor"/>  
+        <interface id="QSMXYH" desc="深中登清算明细库文件(优化)" cfgCode="INFI_JY_QSMXNEW" isPub="false" executeClass="com.yss.ams.clear.qsmxnew.execute.QsmxExecutor"/>  
+        <interface id="SJSJGNEW" desc="深交所结果库清算(新)" cfgCode="INFI_QY_JGNEW_SZ" isPub="false" executeClass="com.yss.ams.clear.sjsjgnew.execute.JgExecutor"/>  
+        <interface id="INFI_ZX_FBHQ" desc="非标行情清算接口（兴业银行）" cfgCode="INFI_ZX_FBHQ" isPub="false" executeClass="com.yss.uco.clear.fbhq.execute.FbhqExecutor"/>  
+        <interface id="FXBNYM" desc="换汇_BNY Melon" cfgCode="INFI_JY_FX_BNYM" isPub="false" executeClass="com.yss.uco.clear.fxbnym.execute.FxbnymExecutor"/>  
+        <interface id="GPLTSX" desc="股票流通受限业务清算" cfgCode="INFI_JY_GPLTSX" isPub="false" executeClass="com.yss.uco.clear.gpltsx.execute.GpltsxExecutor"/>  
+        <interface id="GPXSTZ" desc="限售调整业务" cfgCode="INFI_JY_GPXSTZ" isPub="false" executeClass="com.yss.uco.clear.gpxstz.execute.GpxstzExecutor"/>  
+        <interface id="INFI_JZ_LDFKZL" desc="金证系统付款指令清算接口" cfgCode="INFI_JZ_LDFKZL" isPub="false" executeClass="com.yss.uco.clear.ldfkzl.execute.LdfkzlExecutor"/>  
+        <interface id="HSFZJY" desc="恒生-分组交易流水（广发）" cfgCode="INFI_JY_JJJY_GF" isPub="false" executeClass="com.yss.uco.clear.tiftradecurrents.execute.HsExecutor"/>  
+        <interface id="INFI_ZX_ZQXX_CH" desc="债券信息" cfgCode="INFI_ZX_ZQXX_CH" isPub="true" executeClass="com.yss.uco.clear.zqxx.execute.ZqxxExecutor"/>
+    </interfaces> 
+</Registry>

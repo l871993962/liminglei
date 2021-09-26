@@ -1,0 +1,30 @@
+delete from T_TRANS_INDEX where C_SYS_CLS=:=C_SRC;
+
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'SSZBJE', '实收资本金额', '0002', '实收资本金额', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'SSZB', '实收资本', '0003', '实收资本', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'ZCHJ', '资产合计', '0008', '资产类合计:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'FZHJ', '负债合计', '0009', '负债类合计:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'ZCJZ', '资产净值', '0001', '基金资产净值:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'DWJZ', '单位净值', '0110', '今日单位净值:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'LJDWJZ', '累计单位净值', '0114', '累计单位净值:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'JRKYTC', '今日可用头寸', '0130', '今日可用头寸', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'BNYSXSY', '本年已实现收益', '0006', '本年已实现收益:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'KFPSY', '可分配收益', '0007', '可分配利润:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, '', '年初单位净值', '0113', '年初单位净值:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'QCDWJZ', '期初单位净值', '0112', '期初单位净值:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'MWFSY', '每万份收益', '0021', '每万份收益:', :=C_SRC);
+insert into T_TRANS_INDEX (c_iden,c_key_code, c_key_name, c_facctcode, c_facctname, C_SYS_CLS)
+values (sequ_TRANS_MKT.nextval, 'QRNHSYL', '七日年化收益率', '0020', '七日年化收益率:', :=C_SRC);

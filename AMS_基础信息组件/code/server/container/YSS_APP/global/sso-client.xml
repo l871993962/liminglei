@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sso-config>
+    <sso-server address="http://${sso_server_url}/YSSUCOBRIDGE/webplus/sso" enable="true">
+    </sso-server>
+    <!--
+        客户端配置
+        enable:
+			true 开启客户端配置;
+			false 关闭客户端配置.
+        internal-address:
+			为当前客户端内网访问地址。集群部署时，为单点客户端的地址。
+    -->
+    <sso-client enable="true" internal-address="http://${sso_client_url}/YSSUCOBRIDGE/webplus/sso/client">
+        <!-- 策略配置 -->
+        <strategy-config>
+            <!-- 交互协议，默认default为(http 协议), 目前仅支持 http 协议-->
+            <protocol>default</protocol>
+            <!-- Session :
+					本地会话过期时间,单位(分)，默认30分。					
+					设置为-1表示session永不过期。
+					其他<=0的情况，则设置为默认值30分钟。
+			-->
+            <session-timeout>30</session-timeout>
+            <!-- 数据签名
+				 对服务端ST验证返回的结果报文进行数字签名，校验报文是否被篡改。
+`				 此功能尚未提供
+				enable  true 开启数字签名 false 关闭数字签名 
+				默认不开启数据签名，需与SSO-Server的数据签名配置配合使用。 -->
+            <signature enable="false">
+                <!-- 公钥存储路径 -->
+                <keystore>D:\\security\pub.key</keystore>
+            </signature>
+            <!-- 客户端向服务端连接时，等待连接成功所允许最大的等待时间，默认为60秒 单位：秒-->
+            <http-connect-timeout>60</http-connect-timeout>
+            <!-- 客户端向服务端连接成功，等待响应所允许最大的等待时间，默认为60秒 单位：秒-->
+            <http-resp-timeout>60</http-resp-timeout>
+        </strategy-config>
+    </sso-client>
+
+</sso-config>

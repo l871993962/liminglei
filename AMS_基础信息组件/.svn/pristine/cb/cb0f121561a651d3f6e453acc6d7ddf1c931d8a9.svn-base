@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DataSources xmlns="http://www.w3school.com.cn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3school.com.cn dbsetting.xsd">  
+  <!-- id:站点标识 reflog:关键日志标识 used:配置是否使用[true:表示使用 false:表示不使用] -->  
+  <dataSource id="dbservice001" reflog="" used="true"> 
+    <!-- 驱动程序 -->  
+    <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"/>  
+    <!-- 数据库连接参数 --> 
+	<property name="jdbcUrl" value="jdbc:oracle:thin:@${dbsetting_ip}:${dbsetting_port}:${dbsetting_sid}"/>  
+    <property name="user" value="${dbsetting_user}"/>  
+    <property name="password" value="${dbsetting_password}"/>   
+    <!-- 连接池中保留的最大连接数 -->  
+    <property name="maxPoolSize" value="200"/>  
+    <!-- 连接池中保留的最少连接数 -->  
+    <property name="minPoolSize" value="3"/> 
+	<property name="validationQuery" value="SELECT 1 FROM dual"/>  
+    <!-- 连接池中保留的最少连接数 -->  
+    <property name="testOnBorrow" value="false"/> 
+	<property name="testOnReturn" value="false"/> 
+  </dataSource>
+  <welcome-file-list> 
+    <welcome-file>WEB-INF/index.jsp</welcome-file> 
+  </welcome-file-list> 
+</DataSources>

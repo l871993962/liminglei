@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "理财资产管理系统">
+	    <Info_Cls name = "基础数据">
+			<Info_Detail dateCol="" table="Tb_financing_info">Tb_financing_info(产品基本信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="Tb_financing_shareinfo">Tb_financing_shareinfo(产品份额信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="tb_assetbundle_info">tb_assetbundle_info(资产包信息表)</Info_Detail>
+            <Info_Detail dateCol="" table="tb_assetbundle_share">tb_assetbundle_share(资产包份额表)</Info_Detail>
+			<Info_Detail dateCol="" table="tatbond">tatbond(债券信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="Atclassbond">Atclassbond(类债券信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="Aatintrust_plan">Aatintrust_plan(资产管理计划信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="atfund">atfund(基金信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="Atfinanc_tool">Atfinanc_tool(直接融资工具信息表)</Info_Detail>
+			<Info_Detail dateCol="" table="at_tyorg">at_tyorg(机构信息设置)</Info_Detail>
+			<Info_Detail dateCol="" table="avreport_assets">avreport_assets</Info_Detail>
+			<Info_Detail dateCol="" table="tb_prodseries_msg">tb_prodseries_msg</Info_Detail>
+			<Info_Detail dateCol="" table="tsys_dict_item">tsys_dict_item</Info_Detail>
+			<Info_Detail dateCol="" table="at_operation_dict">at_operation_dict(业务字典表)</Info_Detail>
+		</Info_Cls>
+		<Info_Cls name = "交易数据">
+			<Info_Detail portCol="fld_code" dateCol="FLD_TRANSDATE" table="Tb_financ_investassetno">Tb_financ_investassetno(产品投资台账)</Info_Detail>
+			<Info_Detail portCol="" dateCol="FLD_TRANSDATE" table="tb_abundle_investassetno">tb_abundle_investassetno(资产组合投资台账表)</Info_Detail>
+			<Info_Detail portCol="fld_code" dateCol="FLD_BX_DATE" table="Tb_assetcash_no_info">Tb_assetcash_no_info(现金台帐表)</Info_Detail>
+			<Info_Detail portCol="" dateCol="D_DATE" table="Atasset_bonus_info">Atasset_bonus_info(产品收益信息报表)</Info_Detail>
+            <Info_Detail portCol="FLD_FINANC_CODE" dateCol="FLD_DATE " table="tb_financing_fee_info">tb_financing_fee_info(理财产品费用接口表)</Info_Detail>
+			<Info_Detail portCol="FLD_FINANC_CODE" dateCol="FLD_DATE " table="tb_financing_price">tb_financing_price(产品净值信息报表)</Info_Detail>
+			<Info_Detail portCol="FLD_FINANC_CODE" dateCol="FLD_DATE " table="tb_financing_income">tb_financing_income(产品收益信息报表)</Info_Detail>
+            <Info_Detail portCol="C_CODE" dateCol="d_date" table="atasset_amortize">atasset_amortize(资产折溢价摊销表)</Info_Detail>
+			<Info_Detail portCol="" dateCol="d_date" table="atasset_holding">atasset_holding(资产持仓头寸表)</Info_Detail>
+			<Info_Detail portCol="" dateCol="d_date" table="atasset_resolution">atasset_resolution(资产交易拆分表)</Info_Detail>
+			<Info_Detail portCol="" dateCol="d_prepayment_dt" table="atprepayment_rule">atprepayment_rule(资产还本交易)</Info_Detail>
+		    <Info_Detail portCol="fld_financ_code" dateCol="fld_date" table="tb_financ_iassetdetailexpand">tb_financ_iassetdetailexpand(理财产品投资标的资产明细表拓展表)</Info_Detail>
+            <Info_Detail portCol="fld_financ_code" dateCol="fld_date" table="tb_financ_investassetdetail">tb_financ_investassetdetail(理财产品投资标的资产明细表)</Info_Detail>
+		</Info_Cls>
+		<Info_Cls name = "财务数据">
+			<Info_Detail dateCol="" table="Athsaccounttab">Athsaccounttab(恒生科目表)</Info_Detail>
+			<Info_Detail dateCol="" table="athsacctrule">athsacctrule(代客恒生会计分录规则表)</Info_Detail>
+			<Info_Detail portCol="C_CODE" dateCol="D_TRANSDATE" table="Atagentvouchersrc">Atagentvouchersrc(代客待清算数据表)</Info_Detail>
+			<Info_Detail portCol="C_CODE" dateCol="D_ACCT_DATE" table="Athsvoucher">Athsvoucher(代客恒生会计凭证表)</Info_Detail>
+			<Info_Detail dateCol="" table="Athsvoucher_dt">Athsvoucher_dt(代客凭证分录表)</Info_Detail>
+			<Info_Detail portCol="C_CODE" dateCol="C_HSDATE" table="atagentsubjectbalance">atagentsubjectbalance(科目余额表)</Info_Detail>
+		</Info_Cls>
+	</Info_Cls>
+</Info_List> 

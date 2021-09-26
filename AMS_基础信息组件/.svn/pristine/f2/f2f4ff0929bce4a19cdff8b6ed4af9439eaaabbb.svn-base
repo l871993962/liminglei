@@ -1,0 +1,20 @@
+# The number of milliseconds of each tick  心跳间隔 毫秒每次
+tickTime=3000
+# The number of ticks that the initial
+# synchronization phase can take
+initLimit=20
+# The number of ticks that can pass between
+# sending a request and getting anacknowledgement
+syncLimit=10
+minSessionTimeout=30000
+maxSessionTimeout=60000
+# the directory where the snapshot isstored.  //镜像数据位置
+dataDir=D:\\zookeeper\\data\\zookeeper
+#日志位置
+dataLogDir=D:\\zookeeper\\logs\\zookeeper
+# the port at which the clients willconnect  客户端连接的端口
+clientPort=2181
+#autopurge.purgeInterval  这个参数指定了清理频率，单位是小时，需要填写一个1或更大的整数，默认是0，表示不开启自己清理功能。
+#autopurge.snapRetainCount 这个参数和上面的参数搭配使用，这个参数指定了需要保留的文件数目。默认是保留3个。
+autopurge.purgeInterval=24 
+autopurge.snapRetainCount=10

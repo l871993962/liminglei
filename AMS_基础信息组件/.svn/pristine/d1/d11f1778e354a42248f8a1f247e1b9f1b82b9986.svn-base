@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "其他系统公共类">
+		<Info_Cls name = "基本信息">
+			<Info_Detail portCol="" dateCol="" table="TSYSINFO">TSYSINFO_帐套信息表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TFUNDINFO">TFUNDINFO_基金信息表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TZQXX">TZQXX_证券信息表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TZQLL">TZQLL_浮息债利率表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TQS">TQS_券商信息表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TTRADESEAT">TTRADESEAT_席位设置 </Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TGDZTDY">TGDZTDY_股东设置 </Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TFL">TFL_交易所费率设置主表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TFLMX">TFLMX_费率明细表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TYJ">TYJ_佣金费率主表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TYJMX">TYJMX_佣金明细表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TWBZHYZT">TWBZHYZT_资产帐套组合关系表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TZSCFG">TZSCFG_指数成份股设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TJJXSFL">TJJXSFL_基金分级设置表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TJJXSFWFSZ">TJJXSFWFSZ_基金销售服务费率表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TYWLB">TYWLB_业务类别</Info_Detail>
+		</Info_Cls>
+	</Info_Cls>
+	
+	<Info_Cls name = "其他系统组合类">
+		<Info_Cls name = "交易数据">
+			<Info_Detail portCol="" dateCol="D_YWRQ" table="TTMP_H_GZB">TTMP_H_GZB_估值表[全]</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TQSK">TQSK_清算库</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="T_H_QSK">T_H_QSK_清算历史库</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="D_CJRQ" table="THGJY">THGJY_回购交易表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TXG">TXG_新股表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TCAP_CKYW">TCAP_CKYW_存款业务主表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="D_DATE" table="TCAP_CKYWLS">TCAP_CKYWLS_存款业务交易流水表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TCAP_CKYWLL">TCAP_CKYWLL_存款业务利率表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TCAP_CKYWJX">TCAP_CKYWJX_存款业务计息表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TACCOUNTZQJC">TACCOUNTZQJC_证券结存表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TZHAIQUANLX">TZHAIQUANLX_债券计息表</Info_Detail>
+			<Info_Detail portCol="" dateCol="D_YWRQ" table="THQ">THQ_每日行情表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="D_YWRQ" table="THQLOG">THQLOG_历史行情表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TDRLSHQ">TDRLSHQ_当日历史行情</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="TSGHQ">TSGHQ_手工行情表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TGZ">TGZ_估值表 </Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TGZLOG">TGZLOG_估值历史表 </Info_Detail>
+			<Info_Detail portCol="" dateCol="D_YWRQ" table="TPGYZF">TPGYZF_配股对照表</Info_Detail>
+			<Info_Detail portCol="" dateCol="D_YWRQ" table="TQYXX">TQYXX_权益信息表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TFHXX">TFHXXTA_分红信息表</Info_Detail>
+            <Info_Detail portCol="" dateCol="" table="TBJJFH">TBJJFH_产品分红</Info_Detail>
+            <Info_Detail portCol="L_ZTBH" dateCol="" table="TFJYGH">TFJYGH_非交易过户表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TGPSD">TGPSD_新股锁定业务</Info_Detail>
+		</Info_Cls>
+		<Info_Cls name = "财务数据">
+			<Info_Detail portCol="L_FUNDID" dateCol="" table="TACCOUNT">TACCOUNT_会计科目表</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="" table="TACCOUNT_HS">TACCOUNT_HS_会计科目属性表</Info_Detail>
+			<Info_Detail portCol="L_FUNDID" dateCol="D_MAKE" table="TVOUCHER">TVOUCHER_凭证主表</Info_Detail>
+			<Info_Detail portCol="L_FUNDID" dateCol="D_MAKE" table="TVOUCHERS">TVOUCHERS_凭证子表</Info_Detail>
+			<Info_Detail portCol="L_FUNDID" dateCol="D_MAKE" table="T_H_VOUCHER">T_H_VOUCHER_凭证历史表主表</Info_Detail>
+			<Info_Detail portCol="L_FUNDID" dateCol="D_MAKE" table="T_H_VOUCHERS">T_H_VOUCHERS_凭证历史表子表</Info_Detail>
+			<Info_Detail portCol="L_FUNDID" dateCol="" table="TVOUCHERSJC">TVOUCHERSJC_会计结存表</Info_Detail>
+		</Info_Cls>
+		<Info_Cls name = "营改增台账数据">
+			<Info_Detail portCol="" dateCol="D_RQ" table="TZZSCGTZ">TZZSCGTZ_增值税明细台帐</Info_Detail>
+			<Info_Detail portCol="" dateCol="D_RQ" table="TZZSCGTZ_HZ">TZZSCGTZ_HZ_增值税汇总台帐</Info_Detail>
+			<Info_Detail portCol="L_ZTBH" dateCol="D_RQ" table="TVATAXTZ_JCDKB">TVATAXTZ_JCDKB_基础抵扣表</Info_Detail>
+		</Info_Cls>
+	</Info_Cls>
+</Info_List> 

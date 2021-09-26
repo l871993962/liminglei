@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkConfigs>
+    <checkConfig  bankCode="BOC" payType="QTL_DC" checkColoumn="C_IN_ACNT_BANK_PSN" checkRule="notNull"/>
+    <checkConfig  bankCode="MSBANK" payType="" checkColoumn="C_IN_ACNT_BANK_PSN" checkRule="notNull"/>
+    <checkConfig  bankCode="BOC" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="XYBANK" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="CMBC" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="ABC" payType="" checkColoumn="C_USAGE" checkRule="length" length="200"/>
+    <checkConfig  bankCode="CCB" payType="" checkColoumn="C_USAGE" checkRule="length" length="500"/>
+    <checkConfig  bankCode="MSBANK" payType="" checkColoumn="C_USAGE" checkRule="length" length="50"/>
+    <checkConfig  bankCode="ICBC" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="COMM" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="ECITIC" payType="" checkColoumn="C_USAGE" checkRule="length" length="500"/>
+    <checkConfig  bankCode="CEB" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+    <checkConfig  bankCode="NBBANK" payType="" checkColoumn="C_USAGE" checkRule="length" length="100"/>
+</checkConfigs>

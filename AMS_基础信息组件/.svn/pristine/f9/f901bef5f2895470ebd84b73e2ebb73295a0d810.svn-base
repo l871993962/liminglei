@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="GJSF" name="高级算法" funcode="AdvancedAlgorithm">
+	<!-- 数据导出配置 -->
+	<exp>
+		<!-- filename:数据导出的XML文件名 -->
+		<data id="algo">
+			<table-name>T_V_AA_ADV_ALGO</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_V_AA_ADV_ALGO where c_algo_code in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>c_algo_code</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>
+			
+		<data id="algo_zh">
+			<table-name>T_V_AA_ADV_ALGO_ZH</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_V_AA_ADV_ALGO_ZH where c_algo_code in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="algo" ref-column="c_algo_code">
+						<value>c_algo_code</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>
+		<data id="algo_desc">
+			<table-name>T_V_AA_ADV_ALGO_DESC</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_V_AA_ADV_ALGO_DESC where c_algo_code in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="algo" ref-column="c_algo_code">
+						<value>c_algo_code</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>
+
+	</exp>
+	
+	<!-- 数据导入配置 -->
+	<imp>
+		<!-- name对应的需要导入的文件名 opertype为重复数据处理机制 cover覆盖原数据 rename重新赋值筛选字段数据-->
+		<outfile name="algo">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>c_algo_code</check_column>
+		</outfile>
+		<outfile name="algo_zh">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>c_algo_code</check_column>
+		</outfile>
+		<outfile name="algo_desc">
+			<!-- 在保存数据前需要检测数据是否已经存在 column为筛选条件 -->
+			<check_column>c_algo_code</check_column>
+		</outfile>
+	</imp>
+
+</source>

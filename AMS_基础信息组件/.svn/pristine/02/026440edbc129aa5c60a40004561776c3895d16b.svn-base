@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="JYSCS" name="交易市场S" funcode="mktsdiquy" datasource="DB">
+	<exp>
+		<data id="mkts">
+			<table-name>T_S_MKT_VAR</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_MKT_VAR  where C_MKT_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_MKT_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="mkts">
+			<check_column>C_MKT_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

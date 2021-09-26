@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskItems>
+	<TaskItem Name="接口"
+		Class="com.yss.uco.workflow.task.taskregister.impl.TaskIf" Code="dataImportImpl"
+		Desc="数据上传" FunCode="dataImportImpl">
+		<Param Key="C_PORT" Code="Port" Name="组合" Type="Strings"
+			methodName="getPort" />
+		<Param Key="C_ITEM" Code="Item" Name="项目" Type="Strings"
+			methodName="getItems" />
+	</TaskItem>
+	<TaskItem Name="清算"
+		Class="com.yss.uco.workflow.task.taskregister.impl.TaskClr" Code="assetclear"
+		Desc="资产清算" FunCode="assetclear">
+		<Param Key="C_PORT" Code="Port" Name="组合" Type="Strings"
+			methodName="getPort" />
+		<Param Key="C_ITEM" Code="Item" Name="项目" Type="Strings"
+			methodName="getItems" />
+	</TaskItem>
+	<TaskItem Name="核算"
+		Class="com.yss.uco.workflow.task.taskregister.impl.TaskAct" Code="valuation"
+		Desc="估值核算" FunCode="valuation">
+		<Param Key="C_PORT" Code="Port" Name="组合" Type="Strings"
+			methodName="getPort" />
+		<Param Key="C_ITEM" Code="Item" Name="项目" Type="Strings"
+			methodName="getItems" />
+	</TaskItem>
+	<TaskItem Name="调度方案"
+		Class="com.yss.uco.workflow.task.taskregister.impl.TaskSchedulingScheme"
+		Code="dispatchExecute" Desc="调度方案" FunCode="dispatchExecute">
+		<Param Key="dataImportImpl" Code="com.yss.uco.workflow.task.taskregister.impl.TaskIf" Name="数据上传" Type="Strings"
+			methodName="" />
+		<Param Key="sysInit" Code="com.yss.uco.workflow.task.taskregister.impl.TaskInit" Name="业务初始" Type="Strings"
+			methodName="" />
+		<Param Key="assetclear" Code="com.yss.uco.workflow.task.taskregister.impl.TaskClr" Name="资产清算" Type="Strings"
+			methodName="" />
+		<Param Key="valuation" Code="com.yss.uco.workflow.task.taskregister.impl.TaskAct" Name="估值核算" Type="Strings"
+			methodName="" />
+		<Param Key="collection" Code="com.yss.uco.workflow.task.taskregister.impl.TaskColl" Name="汇集调尾" Type="Strings"
+			methodName="" />
+		<Param Key="stockStats" Code="com.yss.uco.workflow.task.taskregister.impl.TaskStock" Name="库存统计" Type="Strings"
+			methodName="" />
+		<Param Key="hkzlGen" Code="com.yss.uco.workflow.task.taskregister.impl.TaskHkzl" Name="划款指令" Type="Strings"
+			methodName="" />
+	</TaskItem>
+</TaskItems>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <services>
+  	  <service class="com.yss.ams.syncdata.business.productinfo.controller.impl.PortAccSyncControllerImpl" interface="com.yss.ams.syncdata.business.productinfo.controller.IPortAccSyncController" />
+  	  <service class="com.yss.ams.syncdata.business.productinfo.controller.impl.PortSyncControllerImpl" interface="com.yss.ams.syncdata.business.productinfo.controller.impl.PortSyncControllerImpl" />
+  	  <service class="com.yss.ams.syncdata.modules.base.controller.impl.SyncDataControllerImpl" interface="com.yss.ams.syncdata.support.modules.base.controller.ISyncDataController" />
+  	  <service class="com.yss.ams.syncdata.modules.base.controller.impl.SyncGenerateControllerImpl" interface="com.yss.ams.syncdata.support.modules.base.controller.ISyncGenerateController" />
+  </services>

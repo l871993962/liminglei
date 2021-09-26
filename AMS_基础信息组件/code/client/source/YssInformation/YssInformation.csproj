@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C9D8991-D93D-4A0A-B86C-CBFFEFD0CA7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssInformation</RootNamespace>
+    <AssemblyName>YssInformation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_L.Designer.cs">
+      <DependentUpon>Frm_ACC_TREE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_S.Designer.cs">
+      <DependentUpon>Frm_ACC_TREE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_SELECT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_SELECT_S.designer.cs">
+      <DependentUpon>Frm_ACC_TREE_SELECT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_S_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AccountTree\Form\Frm_ACC_TREE_S_A.Designer.cs">
+      <DependentUpon>Frm_ACC_TREE_S_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_PORT_FUND_RELA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_PORT_FUND_RELA_S.Designer.cs">
+      <DependentUpon>Frm_PORT_FUND_RELA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_PORT_LIST_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_PORT_LIST_S.Designer.cs">
+      <DependentUpon>Frm_PORT_LIST_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Util\Frm_FILEMSG_BOX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Util\Frm_FILEMSG_BOX_S.designer.cs">
+      <DependentUpon>Frm_FILEMSG_BOX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\AssociationOrgan\Form\Frm_ORG_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AssociationOrgan\Form\Frm_ORG_L.Designer.cs">
+      <DependentUpon>Frm_ORG_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\AssociationOrgan\Form\Frm_ORG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\AssociationOrgan\Form\Frm_ORG_S.Designer.cs">
+      <DependentUpon>Frm_ORG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_L.Designer.cs">
+      <DependentUpon>Frm_CURY_PAIR_HBD_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_S.Designer.cs">
+      <DependentUpon>Frm_CURY_PAIR_HBD_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_CHECK_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_CHECK_S.designer.cs">
+      <DependentUpon>Frm_FUND_ACC_CHECK_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_L.Designer.cs">
+      <DependentUpon>Frm_FUND_ACC_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Account\Form\Frm_FUND_ACC_S.designer.cs">
+      <DependentUpon>Frm_FUND_ACC_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Holidays\Form\Frm_HDAY_CHILD1_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Holidays\Form\Frm_HDAY_CHILD1_S.Designer.cs">
+      <DependentUpon>Frm_HDAY_CHILD1_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Holidays\Form\Frm_HDAY_CHILD_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Holidays\Form\Frm_HDAY_CHILD_S.Designer.cs">
+      <DependentUpon>Frm_HDAY_CHILD_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Holidays_A\Form\Frm_HDAY_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Holidays_A\Form\Frm_HDAY_L.Designer.cs">
+      <DependentUpon>Frm_HDAY_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Holidays_A\Form\Frm_HDAY_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Holidays_A\Form\Frm_HDAY_S.Designer.cs">
+      <DependentUpon>Frm_HDAY_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\IeLinks\Form\Frm_IE_LINK_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\IeLinks\Form\Frm_IE_LINK_L.Designer.cs">
+      <DependentUpon>Frm_IE_LINK_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\IeLinks\Form\Frm_IE_LINK_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\IeLinks\Form\Frm_IE_LINK_S.Designer.cs">
+      <DependentUpon>Frm_IE_LINK_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Ies\Form\Frm_IE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Ies\Form\Frm_IE_L.Designer.cs">
+      <DependentUpon>Frm_IE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Ies\Form\Frm_IE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Ies\Form\Frm_IE_S.Designer.cs">
+      <DependentUpon>Frm_IE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Market\Form\Frm_MKT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Market\Form\Frm_MKT_L.Designer.cs">
+      <DependentUpon>Frm_MKT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Market\Form\Frm_MKT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Market\Form\Frm_MKT_S.Designer.cs">
+      <DependentUpon>Frm_MKT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\organmgr\Form\Frm_ORG_MGR_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\organmgr\Form\Frm_ORG_MGR_L.Designer.cs">
+      <DependentUpon>Frm_ORG_MGR_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\organmgr\Form\Frm_ORG_MGR_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\organmgr\Form\Frm_ORG_MGR_S.Designer.cs">
+      <DependentUpon>Frm_ORG_MGR_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Region\Form\Frm_AREA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Region\Form\Frm_AREA_L.Designer.cs">
+      <DependentUpon>Frm_AREA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\Region\Form\Frm_AREA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\Region\Form\Frm_AREA_S.Designer.cs">
+      <DependentUpon>Frm_AREA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_L.Designer.cs">
+      <DependentUpon>Frm_SRC_SIGN_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_S.Designer.cs">
+      <DependentUpon>Frm_SRC_SIGN_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\TaselNet\Form\Frm_SALES_NET_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\TaselNet\Form\Frm_SALES_NET_L.Designer.cs">
+      <DependentUpon>Frm_SALES_NET_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bi\TaselNet\Form\Frm_SALES_NET_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bi\TaselNet\Form\Frm_SALES_NET_S.Designer.cs">
+      <DependentUpon>Frm_SALES_NET_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\BusinessSystemMenuConfigResource.cs" />
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_INSERT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_INSERT_S.Designer.cs">
+      <DependentUpon>Frm_AUTOMATIC_SET_INSERT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_INTE_TYPE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_INTE_TYPE_S.Designer.cs">
+      <DependentUpon>Frm_AUTOMATIC_SET_INTE_TYPE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_L.Designer.cs">
+      <DependentUpon>Frm_AUTOMATIC_SET_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_S.Designer.cs">
+      <DependentUpon>Frm_AUTOMATIC_SET_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_TYPE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_TYPE_S.Designer.cs">
+      <DependentUpon>Frm_AUTOMATIC_SET_TYPE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_L.Designer.cs">
+      <DependentUpon>Frm_ZHZD_ORG_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_S.Designer.cs">
+      <DependentUpon>Frm_ZHZD_ORG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_L.Designer.cs">
+      <DependentUpon>Frm_SWITCH_DICT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_S.Designer.cs">
+      <DependentUpon>Frm_SWITCH_DICT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\DcCury\Form\Frm_DC_CURY_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\DcCury\Form\Frm_DC_CURY_L.Designer.cs">
+      <DependentUpon>Frm_DC_CURY_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_L.Designer.cs">
+      <DependentUpon>Frm_PortBusinessRange_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_S.Designer.cs">
+      <DependentUpon>Frm_PortBusinessRange_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessTypeSet_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\PortBusinessRange\Form\Frm_PortBusinessTypeSet_S.Designer.cs">
+      <DependentUpon>Frm_PortBusinessTypeSet_S.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bi\AssociationOrgan\Form\Frm_ORG_L.resx">
+      <DependentUpon>Frm_ORG_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\AssociationOrgan\Form\Frm_ORG_S.resx">
+      <DependentUpon>Frm_ORG_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_L.resx">
+      <DependentUpon>Frm_CURY_PAIR_HBD_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\CuryPair\Form\Frm_CURY_PAIR_HBD_S.resx">
+      <DependentUpon>Frm_CURY_PAIR_HBD_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Holidays\Form\Frm_HDAY_CHILD1_S.resx">
+      <DependentUpon>Frm_HDAY_CHILD1_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Holidays\Form\Frm_HDAY_CHILD_S.resx">
+      <DependentUpon>Frm_HDAY_CHILD_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Holidays_A\Form\Frm_HDAY_L.resx">
+      <DependentUpon>Frm_HDAY_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Holidays_A\Form\Frm_HDAY_S.resx">
+      <DependentUpon>Frm_HDAY_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\IeLinks\Form\Frm_IE_LINK_L.resx">
+      <DependentUpon>Frm_IE_LINK_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\IeLinks\Form\Frm_IE_LINK_S.resx">
+      <DependentUpon>Frm_IE_LINK_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Ies\Form\Frm_IE_L.resx">
+      <DependentUpon>Frm_IE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Ies\Form\Frm_IE_S.resx">
+      <DependentUpon>Frm_IE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Market\Form\Frm_MKT_L.resx">
+      <DependentUpon>Frm_MKT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Market\Form\Frm_MKT_S.resx">
+      <DependentUpon>Frm_MKT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\organmgr\Form\Frm_ORG_MGR_L.resx">
+      <DependentUpon>Frm_ORG_MGR_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\organmgr\Form\Frm_ORG_MGR_S.resx">
+      <DependentUpon>Frm_ORG_MGR_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Region\Form\Frm_AREA_L.resx">
+      <DependentUpon>Frm_AREA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Region\Form\Frm_AREA_S.resx">
+      <DependentUpon>Frm_AREA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_L.resx">
+      <DependentUpon>Frm_SRC_SIGN_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\SourceRecord\Form\Frm_SRC_SIGN_S.resx">
+      <DependentUpon>Frm_SRC_SIGN_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\TaselNet\Form\Frm_SALES_NET_L.resx">
+      <DependentUpon>Frm_SALES_NET_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\TaselNet\Form\Frm_SALES_NET_S.resx">
+      <DependentUpon>Frm_SALES_NET_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_L.resx">
+      <DependentUpon>Frm_ZHZD_ORG_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\ConvertDict\Zdorg\Form\Frm_ZHZD_ORG_S.resx">
+      <DependentUpon>Frm_ZHZD_ORG_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_L.resx">
+      <DependentUpon>Frm_SWITCH_DICT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\ConvertDict\Zhzd\Form\Frm_SWITCH_DICT_S.resx">
+      <DependentUpon>Frm_SWITCH_DICT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\DcCury\Form\Frm_DC_CURY_L.resx">
+      <DependentUpon>Frm_DC_CURY_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bi\AccountTree\Form\Frm_ACC_TREE_S.resx">
+      <DependentUpon>Frm_ACC_TREE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\AccountTree\Form\Frm_ACC_TREE_SELECT_S.resx">
+      <DependentUpon>Frm_ACC_TREE_SELECT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\AccountTree\Form\Frm_ACC_TREE_S_A.resx">
+      <DependentUpon>Frm_ACC_TREE_S_A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Form\Frm_FUND_ACC_CHECK_S.resx">
+      <DependentUpon>Frm_FUND_ACC_CHECK_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Form\Frm_FUND_ACC_L.resx">
+      <DependentUpon>Frm_FUND_ACC_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Form\Frm_FUND_ACC_S.resx">
+      <DependentUpon>Frm_FUND_ACC_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Form\Frm_PORT_FUND_RELA_S.resx">
+      <DependentUpon>Frm_PORT_FUND_RELA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Form\Frm_PORT_LIST_S.resx">
+      <DependentUpon>Frm_PORT_LIST_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bi\Account\Util\Frm_FILEMSG_BOX_S.resx">
+      <DependentUpon>Frm_FILEMSG_BOX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\systemConfig.xml" />
+    <EmbeddedResource Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_INSERT_S.resx">
+      <DependentUpon>Frm_AUTOMATIC_SET_INSERT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_L.resx">
+      <DependentUpon>Frm_AUTOMATIC_SET_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_S.resx">
+      <DependentUpon>Frm_AUTOMATIC_SET_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\automaticSet\Form\Frm_AUTOMATIC_SET_TYPE_S.resx">
+      <DependentUpon>Frm_AUTOMATIC_SET_TYPE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_L.resx">
+      <DependentUpon>Frm_PortBusinessRange_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\PortBusinessRange\Form\Frm_PortBusinessRange_S.resx">
+      <DependentUpon>Frm_PortBusinessRange_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\YssTechnology.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

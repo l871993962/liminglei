@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--货币对设置-->
+  <Config funCode="base_currencyPair" funName="货币对设置" listFormClass="YssInformation.Bi.CuryPair.Form.Frm_CURY_PAIR_HBD_L" listFormDll="YssInformation.dll"
+        setFormClass="YssInformation.Bi.CuryPair.Form.Frm_CURY_PAIR_HBD_S" setFormDll="YssInformation.dll"
+        serviceClass="YssInformation.Support.Bi.CuryPair.Service.ICuryPairService"
+        serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.CuryPair.Service.ICuryPairDataService" dataServiceDll="YssInformation.Support.dll"
+        pojoClass="YssInformation.Support.Bi.CuryPair.Pojo.CuryPair" pojoDll="YssInformation.Support.dll" PojoClass-left=""
+        dataPojoClass="YssInformation.Support.Bi.CuryPair.Pojo.CuryPair" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll=""
+        cboDispValue="C_CURY_PAIR_CODE" cboDispName="C_CURY_PAIR_NAME" cboDispColumn="C_CURY_PAIR_NAME" />
+
+  <!--国际货币设置-->
+
+  <Config funCode="base_currency" funName="货币基本信息" listFormClass="YssInformation.Sys.DcCury.Form.Frm_DC_CURY_L"
+          listFormDll="YssInformation.dll"
+          setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.DcCury.Service.IDcCuryService"
+          serviceDll="YssInformation.Support.dll"
+          dataServiceClass="YssInformation.Support.Sys.DcCury.Service.IDCDataService"
+          dataServiceDll="YssInformation.Support.dll"
+          pojoClass="YssInformation.Support.Sys.DcCury.Pojo.DcCury" pojoDll="YssInformation.Support.dll" PojoClass-left=""
+          dataPojoClass="YssInformation.Support.Sys.DcCury.Pojo.DcCury" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll=""
+          cboDispValue="C_DC_CODE" cboDispName="C_DC_NAME" cboDispColumn="C_DC_NAME" />
+
+  <!--<Config funCode="portCurrency" funName="币种基本信息" listFormClass="YssInformation.Sys.DcCury.Form.Frm_DC_CURY_L"
+          listFormDll="YssInformation.dll"
+          setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.DcCury.Service.IDcCuryService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass=""
+          dataServiceDll="" pojoClass="YssInformation.Support.Sys.DcCury.Pojo.DcCury" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll=""
+       cboDispValue="C_DC_CODE" cboDispName="C_DC_NAME" cboDispColumn="C_DC_NAME" />-->
+
+  <!-- 机构结算会员设置 -->
+  <Config funCode="base_orgmgr" funName="机构结算会员" listFormClass="YssInformation.Bi.organmgr.Form.Frm_ORG_MGR_L" listFormDll="YssInformation.dll"
+          setFormClass="YssInformation.Bi.organmgr.Form.Frm_ORG_MGR_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.organmgr.Service.IOrgMgrService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Bi.organmgr.Pojo.OrgMgr" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="" />
+
+  <!--关联机构 new-->
+  <Config funCode="base_organ" funName="机构基本信息" listFormClass="YssInformation.Bi.AssociationOrgan.Form.Frm_ORG_L" listFormDll="YssInformation.dll"
+            setFormClass="YssInformation.Bi.AssociationOrgan.Form.Frm_ORG_S" setFormDll="YssInformation.dll"
+            serviceClass="YssInformation.Support.Bi.AssociationOrgan.Service.IOrgService"
+            serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.AssociationOrgan.Service.IOrgDataService"
+            dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.AssociationOrgan.Pojo.Org" pojoDll="YssInformation.Support.dll"
+            PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.AssociationOrgan.Pojo.Org" dataPojoDll="YssInformation.Support.dll"
+            dataClass="" dataClassDll="" cboDispValue="C_ORG_CODE" cboDispName="C_ORG_NAME" cboDispColumn="C_ORG_CODE;机构代码;true~C_ORG_NAME;机构名称;true">
+    <!-- modified by HeLiang 2017-07-20 组件拆分_下半区关联界面的功能还没有拆出来，且基本信息组件原则上不引用其他拆分组件，查询会报错，因此暂时先把注释掉 -->
+    <RelationChildren>
+      
+      
+    </RelationChildren>
+  </Config>
+
+  <!--来源标识设置-->
+  <Config funCode="base_baseSourceRecord" funName="信息来源标识" listFormClass="YssInformation.Bi.SourceRecord.Form.Frm_SRC_SIGN_L" listFormDll="YssInformation.dll"
+          setFormClass="YssInformation.Bi.SourceRecord.Form.Frm_SRC_SIGN_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.SourceRecord.Service.ISrcSignService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Bi.SourceRecord.Pojo.SrcSign" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SRC_SIGN_CODE"
+          cboDispName="C_SRC_SIGN_NAME" cboDispColumn="C_SRC_SIGN_CODE~C_SRC_SIGN_NAME" />
+  <!--转换字典 开始-->
+
+  <Config funCode="base_zhzd" funName="转换字典" listFormClass="YssInformation.Sys.ConvertDict.Zhzd.Form.Frm_SWITCH_DICT_L"
+          listFormDll="YssInformation.dll" setFormClass="YssInformation.Sys.ConvertDict.Zhzd.Form.Frm_SWITCH_DICT_S"
+          setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Sys.ConvertDict.Zhzd.Service.IZhzdService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Sys.ConvertDict.Zhzd.Service.IZhzdDataService" dataServiceDll="YssInformation.Support.dll"
+          pojoClass="YssInformation.Support.Sys.ConvertDict.Zhzd.Pojo.Zhzd" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="YssInformation.Support.Sys.ConvertDict.Zhzd.Pojo.Zhzd" dataPojoClass="YssInformation.Support.Sys.ConvertDict.Zhzd.Pojo.Zhzd"
+          dataPojoDll="YssInformation.Support.dll" dataClass="YssInformation.Support.Sys.ConvertDict.Zhzd.Pojo.Zhzd" dataClassDll="YssInformation.Support.dll"
+          cboDispValue="C_S_CODE" cboDispName="C_T_CODE" cboDispColumn="C_S_CODE~C_T_CODE" />
+
+  <Config funCode="base_zdorg" funName="转换字典架构" listFormClass="YssInformation.Sys.ConvertDict.Zdorg.Form.Frm_ZHZD_ORG_L"
+          listFormDll="YssInformation.dll" setFormClass="YssInformation.Sys.ConvertDict.Zdorg.Form.Frm_ZHZD_ORG_S"
+          setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Sys.ConvertDict.Zdorg.Service.IZdOrgService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll=""
+          pojoClass="YssInformation.Support.Sys.ConvertDict.Zdorg.Pojo.ZdOrgTreeView" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="YssInformation.Support.Sys.ConvertDict.Zdorg.Pojo.Cls_ZD_ORG"
+          dataPojoClass="YssInformation.Support.Sys.ConvertDict.Zdorg.Pojo.ZdOrgTreeView" dataPojoDll="YssInformation.Support.dll"
+          dataClass="" dataClassDll="" cboDispValue="C_GROUP_CODE" cboDispName="C_GROUP_NAME"
+          cboDispColumn="C_GROUP_CODE~C_GROUP_NAME" />
+  <!--转换字典 结束-->
+  <Config funCode="base_area" funName="地区信息" listFormClass="YssInformation.Bi.Region.Form.Frm_AREA_L"
+          listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Region.Form.Frm_AREA_S"
+          setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Region.Service.IAreaService"
+          serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Region.Service.IAreaDataService"
+          dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Region.Pojo.Area"
+          pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Region.Pojo.Area"
+          dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_AREA_CODE"
+          cboDispName="C_AREA_NAME" cboDispColumn="C_AREA_CODE~C_AREA_NAME" />
+
+
+  <!--基础组件要用到的词汇信息-->
+  <Config funCode="base_exMarketVoc" funName="交易市场词汇信息" 
+          listFormClass="" listFormDll="" setFormClass="" setFormDll="" 
+          serviceClass="FAST.Common.Service.Dict.Service.IVocabularyService" serviceDll="FAST.Common.Service.dll" 
+          dataServiceClass="FAST.Common.Service.DataService.IVocDataService" dataServiceDll="FAST.Common.Service.dll" 
+          pojoClass="FAST.Common.Service.Dict.Pojo.Vocabulary" pojoDll="FAST.Common.Service.dll" PojoClass-left="YssInformation.Support.Pojo.MarketVoc" 
+          dataPojoClass="FAST.Common.Service.Dict.Pojo.Vocabulary" dataPojoDll="FAST.Common.Service.dll" 
+          dataClass="" dataClassDll="" cboDispValue="C_MKTVOC_CODE" cboDispName="C_MKTVOC_NAME" cboDispColumn="C_MKTVOC_CODE~C_MKTVOC_NAME" />
+
+
+  <Config funCode="base_seccategory" funName="证券品种设置" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.ISecVarService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.ISecVarDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.SecVar" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.SecVar" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.SecVarExtend" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_SEC_VAR_CODE" cboDispName="C_SEC_VAR_NAME" cboDispColumn="C_SEC_VAR_NAME~N_ORDER;;false" cboSortColumn="N_ORDER" />
+
+  <Config funCode="base_seccategoryquy" funName="证券品种字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.ISecVarDiService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.SecVarDi" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_VAR_CODE" cboDispName="C_SEC_VAR_NAME" cboDispColumn="C_SEC_VAR_NAME" />
+
+
+  <Config funCode="base_acctypequy" funName="资产类型字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IAccTypeService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.AccType" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_DAT_CODE" cboDispName="C_DAT_NAME" cboDispColumn="C_DAT_NAME" />
+
+  <Config funCode="base_accType" funName="资产类型字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IAccTypeDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.Cls_DAT_ASS_TYPE" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DatAssType" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DAT_CODE" cboDispName="C_DAT_NAME" cboDispColumn="C_DAT_NAME" />
+
+
+  <Config funCode="base_dttdmode" funName="交易方式字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDtTdModeDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.DttdMode" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DttdMode" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DT_CODE" cboDispName="C_DT_NAME" cboDispColumn="C_DT_NAME" />
+
+  <Config funCode="base_dttdmodequy" funName="销售/交易方式字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDttdModeService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DttdMode" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_DT_CODE" cboDispName="C_DT_NAME" cboDispColumn="C_DT_NAME" />
+
+  <Config funCode="base_dtatdattr" funName="交易属性字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDtaTdAttrDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.DtatdAttr" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DtatdAttr" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DTA_CODE" cboDispName="C_DTA_NAME" cboDispColumn="C_DTA_NAME" />
+
+  <Config funCode="base_dtatdattrquy" funName="交易属性字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDtatdAttrService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDtaTdAttrDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DtatdAttr" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DtatdAttr" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DTA_CODE" cboDispName="C_DTA_NAME" cboDispColumn="C_DTA_NAME" />
+
+  <Config funCode="base_accPro" funName="核算项目字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IAccProDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="FAST.Common.Service.Pojo.Cls_DAI_ITEM" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DAI" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DAI_CODE" cboDispName="C_DAI_NAME" cboDispColumn="C_DAI_NAME" />
+
+  <Config funCode="base_daidictquy" funName="核算项目字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IEDaiDictService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="FAST.Platform.Dict.Pojo.DaiDicQuy" pojoDll="FAST.Platform.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_DaiDict" funName="核算项目字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDaiDictService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DAI" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.DAI" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_DAI_CODE" cboDispName="C_DAI_NAME" cboDispColumn="C_DAI_NAME" />
+
+  <Config funCode="base_dvaitem" funName="核算业务项字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDvaItemDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DvaItem" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DVA_ITEM_CODE" cboDispName="C_DVA_ITEM_NAME" cboDispColumn="C_DVA_ITEM_NAME" />
+
+  <Config funCode="base_dvaitemquy" funName="核算业务字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDvaItemService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DvaItem" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_dspparaquy" funName="核算参数字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDspParaService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DspPara" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_deexpquy" funName="表达式字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDeExpService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DeExp" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_finitemquy" funName="财务项字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IFinItemService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.FinItem" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_IeItem" funName="收支项目" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IIeItemDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.IeItem" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_IE_CODE" cboDispName="C_IE_NAME" cboDispColumn="C_IE_NAME" />
+
+  <Config funCode="base_ieitemquy" funName="收支项目字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IIeItemService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IIeItemDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.IeItem" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.IeItem" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_mktsdiquy" funName="交易市场S字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IMktsdiService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.Mktsdi" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_indexdiquy" funName="合规指标类型字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IIndexdiService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.Indexdi" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="base_sClIndex" funName="指标项目配置" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.ISClIndexService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.SClIndex" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.SClIndex" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_INDEX_CODE" cboDispName="C_INDEX_NAME" cboDispColumn="C_INDEX_CODE~C_INDEX_NAME" />
+
+  <Config funCode="base_DaeElem" funName="核算元素字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IDaeElemService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.ClsDaeElem" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.ClsDaeElem" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_DAE_CODE" cboDispName="C_DAE_NAME" cboDispColumn="C_DAE_NAME" />
+
+  <Config funCode="base_accelequy" funName="核算元素字典查询" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.IAccEleService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDaeElemDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="FAST.Platform.Dict.Pojo.AccEle" pojoDll="FAST.Platform.dll" PojoClass-left="" dataPojoClass="FAST.Platform.Dict.Pojo.AccEle" dataPojoDll="FAST.Platform.dll" dataClass="" dataClassDll="" cboDispValue="C_DAE_CODE" cboDispName="C_DAE_NAME" cboDispColumn="C_DAE_NAME" />
+
+  <Config funCode="base_accEle" funName="核算元素字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="" dataServiceDll="" pojoClass="" pojoDll="" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.ClsDaeElem" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_DAE_CODE" cboDispName="C_DAE_NAME" cboDispColumn="C_DAE_NAME" />
+
+  <!--<Config funCode="holidays" funName="节假日群设置" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays.Form.Frm_HDAY_CHILD1_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays.Service.IHdayService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGen" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="YssInformation.Support.Bi.Holidays_A.Pojo.Hday" dataClassDll="YssInformation.Support.dll" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />
+
+  <Config funCode="holidays_A" funName="节假日群类型信息" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays_A.Service.IHdayGroupService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />-->
+
+  <Config funCode="base_holidays" funName="节假日群设置" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays.Form.Frm_HDAY_CHILD1_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays.Service.IHdayService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGen" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="YssInformation.Support.Bi.Holidays_A.Pojo.Hday" dataClassDll="YssInformation.Support.dll" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />
+
+  <Config funCode="base_holidays_A" funName="节假日群类型信息" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays_A.Service.IHdayGroupService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />
+
+  <Config funCode="base_exchange" funName="交易市场信息" listFormClass="YssInformation.Bi.Market.Form.Frm_MKT_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Market.Form.Frm_MKT_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Market.Service.IMktService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Market.Service.IMktDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Market.Pojo.MktExtend" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Bi.Market.Pojo.Mkt" dataPojoClass="YssInformation.Support.Bi.Market.Pojo.MktExtend" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_MKT_CODE" cboDispName="C_MKT_NAME" cboDispColumn="C_MKT_NAME" />
+  
+  <Config funCode="base_tradeSeat" funName="证券交易渠道" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Sys.Dictionary.Service.ISecSeatDataService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.TdChan" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.TdChan" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_TD_CHAN_CODE" cboDispName="C_TD_CHAN_NAME" cboDispColumn="C_TD_CHAN_CODE~C_TD_CHAN_NAME" cboSortColumn="C_DESC"/>
+
+  <Config funCode="base_taselnet" funName="产品销售网点" listFormClass="YssInformation.Bi.TaselNet.Form.Frm_SALES_NET_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.TaselNet.Form.Frm_SALES_NET_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.TaselNet.Service.ISalesNetService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.TaselNet.Service.INetDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.TaselNet.Pojo.SalesNet" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.TaselNet.Pojo.SalesNet" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_NET_CODE" cboDispName="C_NET_NAME" cboDispColumn="C_NET_CODE~C_NET_NAME" >
+   <!-- TA登记过户机构信息 add by yinyuyi 20180125-->
+     <RelationChildren>
+      <RelationChild FunCode ="Ta_OrgInfo">
+      </RelationChild>
+    </RelationChildren> 
+  </Config>
+
+  <Config funCode="base_ie" funName="收支项目设置" listFormClass="YssInformation.Bi.Ies.Form.Frm_IE_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Ies.Form.Frm_IE_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Ies.Service.IIeService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Ies.Service.IIeDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Ies.Pojo.Ie" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Ies.Pojo.Ie" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_FEE_CODE" cboDispName="C_FEE_NAME" cboDispColumn="C_FEE_CODE~C_FEE_NAME" />
+
+  <Config funCode="base_ieLink" funName="收支分类设置" listFormClass="YssInformation.Bi.IeLinks.Form.Frm_IE_LINK_L" listFormDll="YssInformation.dll"
+        setFormClass="YssInformation.Bi.IeLinks.Form.Frm_IE_LINK_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.IeLinks.Service.IIeLinkService"
+        serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.IeLinks.Service.IIeLinkDataService" dataServiceDll="YssInformation.Support.dll"
+        pojoClass="YssInformation.Support.Bi.IeLinks.Pojo.IeLink" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.IeLinks.Pojo.IeLink"
+        dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_FEE_CODE" cboDispName="C_FEE_NAME" cboDispColumn="C_FEE_NAME" />
+
+  <Config funCode="base_cashflow" funName="现金流标记字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.ICashFlowService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="YssInformation.Support.Sys.Dictionary.Pojo.CashFlow" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.CashFlow" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_CASH_FLOW_CODE" cboDispName="C_CASH_FLOW_NAME" cboDispColumn="C_CASH_FLOW_NAME" />
+
+  <Config funCode="base_dzcode" funName="对账类型字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssInformation.Support.Sys.Dictionary.Service.IDzTypeDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="" pojoDll="" PojoClass-left="" dataPojoClass="YssInformation.Support.Sys.Dictionary.Pojo.DzType" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DZ_CODE" cboDispName="C_DZ_NAME" cboDispColumn="C_DZ_NAME" />
+
+  <Config funCode="base_feeRela" funName="资产交易界面费用字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.FeeRelation" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="base_feeRelaDict" funName="费用关联界面" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Sys.Dictionary.Pojo.FeeRelation" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+   <!--FAST为兼容老版本老菜单也需要配置一份 start-->
+  <!--<Config funCode="holidays" funName="节假日群设置" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays.Form.Frm_HDAY_CHILD1_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays.Service.IHdayService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGen" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="YssInformation.Support.Bi.Holidays_A.Pojo.Hday" dataClassDll="YssInformation.Support.dll" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />
+
+  <Config funCode="holidays_A" funName="节假日群类型信息" listFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Holidays_A.Form.Frm_HDAY_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Holidays_A.Service.IHdayGroupService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Holidays.Service.IHDayDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Holidays_A.Pojo.HdayGroup" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_HDAY_CODE" cboDispName="C_HDAY_NAME" cboDispColumn="C_HDAY_CODE~C_HDAY_NAME" />-->
+  <!--FAST为兼容老版本老菜单也需要配置一份 end-->
+  
+  <!-- 银行账户信息界面  从支付平台迁移过来 -->
+  <Config funCode="fundAccInfo" funName="银行账户信息设置" listFormClass="YssInformation.Bi.Account.Form.Frm_FUND_ACC_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.Account.Form.Frm_FUND_ACC_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.Account.Service.IFundAccService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Account.Service.IFundAccDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Account.Pojo.FundAcc" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Bi.Account.Pojo.FundAcc" dataPojoClass="YssInformation.Support.Bi.Account.Pojo.FundAcc" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_OPEN_ACC_NO" cboDispName="C_OPEN_ACC_NAME" cboDispColumn="C_OPEN_ACC_NO~C_OPEN_ACC_NAME" />
+  
+
+
+  <Config funCode="base_accountType" funName="账户类型设置" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Bi.DacType.Service.IAccountTypeService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.DacType.Service.IAccountTypeDataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.DacType.Pojo.AccountType" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Bi.DacType.Pojo.AccountType" dataPojoClass="YssInformation.Support.Bi.DacType.Pojo.AccountType" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_DAC_CODE" cboDispName="C_DAC_NAME" cboDispColumn="C_DAC_NAME~C_DAC_CODE" />
+
+  <Config funCode="base_areacity" funName="区域信息" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssInformation.Support.Bi.Account.Service.IAreaCityDataService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.Account.Service.IAreaCityDataMapService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.Account.Pojo.AreaCity" pojoDll="YssInformation.Support.dll" PojoClass-left="" dataPojoClass="YssInformation.Support.Bi.Account.Pojo.AreaCity" dataPojoDll="YssInformation.Support.dll" dataClass="YssInformation.Support.Bi.Account.Pojo.AreaCity" dataClassDll="YssInformation.Support.dll" cboDispValue="C_Code" cboDispName="C_Name" cboDispColumn="C_Code;区域代码;true~C_Name;区域名称;true" />
+
+  <Config funCode="base_accountTreeA" funName="账户树形结构A区" listFormClass="" listFormDll="" setFormClass="YssInformation.Bi.AccountTree.Form.Frm_ACC_TREE_S_A" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.AccountTree.Service.IAccountTreeAService" serviceDll="YssInformation.Support.dll" dataServiceClass="YssInformation.Support.Bi.AccountTree.Service.IAccountTreeADataService" dataServiceDll="YssInformation.Support.dll" pojoClass="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeA" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeA" dataPojoClass="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeA" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_NODE_CODE" cboDispName="C_NODE_NAME" cboDispColumn="C_NODE_NAME~C_NODE_CODE" />
+  <Config funCode="base_accountTreeB" funName="账户树形结构B区" listFormClass="YssInformation.Bi.AccountTree.Form.Frm_ACC_TREE_L" listFormDll="YssInformation.dll" setFormClass="YssInformation.Bi.AccountTree.Form.Frm_ACC_TREE_S" setFormDll="YssInformation.dll" serviceClass="YssInformation.Support.Bi.AccountTree.Service.IAccountTreeBService" serviceDll="YssInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeB" pojoDll="YssInformation.Support.dll" PojoClass-left="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeB" dataPojoClass="YssInformation.Support.Bi.AccountTree.Pojo.AccountTreeB" dataPojoDll="YssInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_OPEN_ACC_NO" cboDispName="C_OPEN_ACC_NAME" cboDispColumn="C_OPEN_ACC_NO" />
+
+  <!--<Config funCode="pd_relaFund" funName="产品关联账户基本信息" listFormClass="YssProductInfo.Ab.Port.Form.Frm_PORT_FUND_RELA_L" listFormDll="YssProductInfo.dll"
+          setFormClass="" setFormDll=""
+          serviceClass="YssInformation.Support.Bi.Account.Service.IFundAccService" serviceDll="YssInformation.Support.dll"
+          dataServiceClass="YssInformation.Support.Bi.Account.Service.IFundAccDataService" dataServiceDll="YssInformation.Support.dll"
+          pojoClass="YssInformation.Support.Bi.Account.Pojo.FundAcc" pojoDll="YssInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />-->
+  <Config funCode="base_portBusinessRange" funName="产品业务范围" 
+          listFormClass="YssInformation.Sys.PortBusinessRange.Form.Frm_PortBusinessRange_L" listFormDll="YssInformation.dll" 
+          setFormClass="YssInformation.Sys.PortBusinessRange.Form.Frm_PortBusinessRange_S" setFormDll="YssInformation.dll" 
+          serviceClass="YssInformation.Support.Sys.PortBusinessRange.Service.IPortBusinessRangeService" serviceDll="YssInformation.Support.dll" 
+          dataServiceClass="" dataServiceDll="" 
+          pojoClass="YssInformation.Support.Sys.PortBusinessRange.Pojo.PortBusinessRangePojo" pojoDll="YssInformation.Support.dll" 
+          PojoClass-left="" dataPojoClass=""
+          dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="" />
+  <!-- STORY #90952 【鹏华基金】券商结算模式下数据文件扫描节点判断规则 -->
+  <Config funCode="automaticSet" funName="自动化业务设置" 
+          listFormClass="YssInformation.Sys.automaticSet.Form.Frm_AUTOMATIC_SET_L" listFormDll="YssInformation.dll" 
+          setFormClass="YssInformation.Sys.automaticSet.Form.Frm_AUTOMATIC_SET_S" setFormDll="YssInformation.dll" 
+          serviceClass="YssInformation.Support.Sys.automaticSet.Service.IAutomaticSetService" serviceDll="YssInformation.Support.dll" 
+          dataServiceClass="" dataServiceDll="" 
+          pojoClass="YssInformation.Support.Sys.automaticSet.Pojo.AutomaticSetPojo" pojoDll="YssInformation.Support.dll" 
+          PojoClass-left="" dataPojoClass="" 
+          dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" 
+          cboDispName="" cboDispColumn="" />
+</SystemConfig>

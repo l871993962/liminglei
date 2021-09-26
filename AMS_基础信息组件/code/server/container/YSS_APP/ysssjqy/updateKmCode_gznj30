@@ -1,0 +1,145 @@
+﻿update md_km_map_temp a set a.c_km_code = ( 
+select 
+  b.c_km_code as c_km_code_p_t
+  from (select km.*,aux.c_org_code,aux.c_dv_invest_mode,aux.c_dv_sec_dur,aux.c_wart_type,
+                        aux.c_exer_mode,km_p.c_km_name as c_km_name_p
+                        from t_f_sc_km km left join T_F_SC_KM_AUX aux
+                        on km.c_plan_code=aux.c_plan_code and km.c_km_code=aux.c_km_code
+                        left join t_f_sc_km km_p 
+                        on km.c_plan_code=km_p.c_plan_code and km.c_km_code_p=km_p.c_km_code) b
+   where a.c_plan_code = b.c_plan_code
+    and a.c_dai_code = b.c_dai_code
+   and a.c_dv_km_cls = b.c_dv_km_cls
+   --and a.c_dv_jd_way = b.c_dv_jd_way
+   and a.c_dc_code = b.c_dc_code 
+   --AND A.FACCTPARENT=REPLACE(B.C_KM_CODE_P,'.','') 
+   and NVL(CASE WHEN b.c_dv_sec_dur = '[NA]' THEN a.c_dv_sec_dur ELSE  b.c_dv_sec_dur END , ' ') = NVL(a.c_dv_sec_dur,' ')
+   and NVL((case when a.facctlevel=6 then b.c_km_name_p else b.c_km_name end),' ') = NVL(a.c_org_code, ' ')
+   and NVL(CASE WHEN b.C_DTA_CODE = '[NA]' THEN a.c_Dta_Code ELSE  b.C_DTA_CODE END , ' ') = NVL(a.C_DTA_CODE,' ')
+   and NVL(CASE WHEN b.C_DV_ISSUE_MODE = '[NA]' THEN  A.C_DV_ISSUE_MODE ELSE  b.C_DV_ISSUE_MODE end, ' ') = NVL(A.C_DV_ISSUE_MODE,' ')
+   and NVL(case when b.C_DV_VAR_DUR = '[NA]' then a.C_DV_VAR_DUR else b.C_DV_VAR_DUR end , ' ') = NVL(a.C_DV_VAR_DUR,' ')
+   and NVL(a.C_DV_INVEST_CLS, 'IC_TD') = (case when b.C_DV_INVEST_CLS = ' ' then 'IC_TD' when b.C_DV_INVEST_CLS = '[NA]' THEN NVL(a.C_DV_INVEST_CLS, 'IC_TD') else b.C_DV_INVEST_CLS end )
+   --and NVL(case when b.C_PORT_CLS_CODE='[NA]' then a.C_PORT_CLS_CODE ELSE b.C_PORT_CLS_CODE end , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL((case when b.C_PORT_CLS_CODE in ('<PORT_CLS>','[NA]')   and trim(a.C_PORT_CLS_CODE) is not null  then a.C_PORT_CLS_CODE 
+              else b.C_PORT_CLS_CODE end ) , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL(a.C_CA_CODE, ' ') = NVL(CASE WHEN b.C_CA_CODE in( '<CA>','[NA]',' ') then NVL(a.C_CA_CODE, ' ') else  b.C_CA_CODE end,' ')
+   and NVL((case when b.C_SEC_CODE in ('<SEC>','[NA]',' ') then a.C_SEC_CODE else b.C_SEC_CODE end ) , ' ') = NVL(a.C_SEC_CODE,' ')
+   and NVL((case when b.C_FEE_CODE in ('<FEE>','[NA]',' ') then a.C_FEE_CODE else b.C_FEE_CODE end ) , ' ') = NVL(a.C_FEE_CODE,' ')
+   --and NVL(a.C_FEE_CODE, ' ') = b.C_FEE_CODE 
+   and NVL(a.C_NET_CODE, ' ') = b.C_NET_CODE
+   and NVL(a.C_DT_CODE, ' ') = b.C_DT_CODE
+   and NVL(case when b.c_mkt_code in ('<MKT>','[NA]') then a.C_MKT_CODE else b.c_mkt_code end, ' ') = nvl(a.C_MKT_CODE,' ') 
+   --and NVL(a.C_sec_var_code, ' ') = b.C_sec_var_code
+   and case when a.C_sec_var_code like 'JJ_KFS_HBX_%' THEN 'JJ_KFS_HBX' ELSE NVL(a.C_sec_var_code, ' ') END = b.C_sec_var_code
+   and NVL((case when b.C_DV_ACC_TYPE in ('<CA>','[NA]',' ') then a.C_DV_ACC_TYPE else b.C_DV_ACC_TYPE end ) , ' ') = NVL(a.C_DV_ACC_TYPE,' ')
+   --and NVL(a.C_DV_ACC_TYPE, ' ') = b.C_DV_ACC_TYPE
+   and NVL(a.C_DV_FEE_TYPE, ' ') = b.C_DV_FEE_TYPE
+   and NVL(CASE WHEN b.C_DS_CODE = '[NA]' THEN a.C_DS_CODE ELSE  b.C_DS_CODE END , ' ') = NVL(a.C_DS_CODE,' ')
+   and NVL(a.C_TD_CHAN_CODE, ' ') = NVL(CASE WHEN b.C_TD_CHAN_CODE = '<TD_CHAN>' then NVL(a.C_TD_CHAN_CODE, ' ') else  b.C_TD_CHAN_CODE end,' ') 
+   and b.n_detail = 1  
+   and b.n_check_state = 1
+) where (FACCTCODE like '1002%' or FACCTCODE like '1003%' or (substr(a.FACCTCODE,1,6) between '112101' and '112106' ) 
+or (substr(a.FACCTCODE,1,6) between '430101' and '430106' ) or a.FACCTATTR like '%存款%协议_%')
+	and a.c_km_Code is null {and fjjdm=:port} {and fyear=:year};
+	
+update md_km_map_temp a set a.c_km_code = ( 
+select 
+  b.c_km_code as c_km_code_p_t
+  from (select km.*,aux.c_org_code,aux.c_dv_invest_mode,aux.c_dv_sec_dur,aux.c_wart_type,
+         aux.c_exer_mode
+         from t_f_sc_km km left join T_F_SC_KM_AUX aux
+         on km.c_plan_code=aux.c_plan_code and km.c_km_code=aux.c_km_code) b
+   where a.c_plan_code = b.c_plan_code
+    and a.c_dai_code = b.c_dai_code
+   and a.c_dv_km_cls = b.c_dv_km_cls
+   --and a.c_dv_jd_way = b.c_dv_jd_way
+   and a.c_dc_code = b.c_dc_code 
+   --AND A.FACCTPARENT=REPLACE(B.C_KM_CODE_P,'.','') 
+   and NVL(CASE WHEN b.c_dv_sec_dur = '[NA]' THEN a.c_dv_sec_dur ELSE  b.c_dv_sec_dur END , ' ') = NVL(a.c_dv_sec_dur,' ')
+   and NVL(CASE WHEN b.c_org_code = '[NA]' THEN a.c_org_code ELSE  b.c_org_code END , ' ') = NVL(a.c_org_code,' ')
+   and NVL(CASE WHEN b.c_dv_invest_mode = '[NA]' THEN a.c_dv_invest_mode ELSE  b.c_dv_invest_mode END , ' ') = NVL(a.c_dv_invest_mode,' ')
+   and NVL(CASE WHEN b.C_DTA_CODE = '[NA]' THEN a.c_Dta_Code ELSE  b.C_DTA_CODE END , ' ') = NVL(a.C_DTA_CODE,' ')
+   and NVL(CASE WHEN b.C_DV_ISSUE_MODE = '[NA]' THEN  A.C_DV_ISSUE_MODE ELSE  b.C_DV_ISSUE_MODE end, ' ') = NVL(A.C_DV_ISSUE_MODE,' ')
+   and NVL(case when b.C_DV_VAR_DUR = '[NA]' then a.C_DV_VAR_DUR else b.C_DV_VAR_DUR end , ' ') = NVL(a.C_DV_VAR_DUR,' ')
+   and NVL(a.C_DV_INVEST_CLS, 'IC_TD') = (case when b.C_DV_INVEST_CLS = ' ' then 'IC_TD' when b.C_DV_INVEST_CLS = '[NA]' THEN NVL(a.C_DV_INVEST_CLS, 'IC_TD') else b.C_DV_INVEST_CLS end )
+   --and NVL(case when b.C_PORT_CLS_CODE='[NA]' then a.C_PORT_CLS_CODE ELSE b.C_PORT_CLS_CODE end , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL((case when b.C_PORT_CLS_CODE in ('<PORT_CLS>','[NA]')   and trim(a.C_PORT_CLS_CODE) is not null  then a.C_PORT_CLS_CODE 
+              else b.C_PORT_CLS_CODE end ) , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL(a.C_CA_CODE, ' ') = NVL(CASE WHEN b.C_CA_CODE in( '<CA>','[NA]',' ') then NVL(a.C_CA_CODE, ' ') else  b.C_CA_CODE end,' ')
+   and NVL((case when b.C_SEC_CODE in ('<SEC>','[NA]',' ') then a.C_SEC_CODE else b.C_SEC_CODE end ) , ' ') = NVL(a.C_SEC_CODE,' ')
+   and NVL((case when b.C_FEE_CODE in ('<FEE>','[NA]',' ') then a.C_FEE_CODE else b.C_FEE_CODE end ) , ' ') = NVL(a.C_FEE_CODE,' ')
+   --and NVL(a.C_FEE_CODE, ' ') = b.C_FEE_CODE 
+   and NVL(a.C_NET_CODE, ' ') = b.C_NET_CODE
+   and NVL(a.C_DT_CODE, ' ') = b.C_DT_CODE
+   and NVL(case when b.c_mkt_code in ('<MKT>','[NA]') then a.C_MKT_CODE else b.c_mkt_code end, ' ') = nvl(a.C_MKT_CODE,' ') 
+   --and NVL(a.C_sec_var_code, ' ') = b.C_sec_var_code
+   and case when a.C_sec_var_code like 'JJ_KFS_HBX_%' THEN 'JJ_KFS_HBX' ELSE NVL(a.C_sec_var_code, ' ') END = b.C_sec_var_code
+   and NVL((case when b.C_DV_ACC_TYPE in ('<CA>','[NA]',' ') then a.C_DV_ACC_TYPE else b.C_DV_ACC_TYPE end ) , ' ') = NVL(a.C_DV_ACC_TYPE,' ')
+   --and NVL(a.C_DV_ACC_TYPE, ' ') = b.C_DV_ACC_TYPE
+   and NVL(a.C_DV_FEE_TYPE, ' ') = b.C_DV_FEE_TYPE
+   and NVL(CASE WHEN b.C_DS_CODE = '[NA]' THEN a.C_DS_CODE ELSE  b.C_DS_CODE END , ' ') = NVL(a.C_DS_CODE,' ')
+   and NVL(a.C_TD_CHAN_CODE, ' ') = NVL(CASE WHEN b.C_TD_CHAN_CODE = '<TD_CHAN>' then NVL(a.C_TD_CHAN_CODE, ' ') else  b.C_TD_CHAN_CODE end,' ') 
+   and b.n_detail = 1  
+   and b.n_check_state = 1
+) where (a.FACCTCODE not like '1002%' and a.FACCTCODE not like '1003%' and (substr(a.FACCTCODE,1,6) < '112101' 
+or (substr(a.FACCTCODE,1,6)>'112106' and substr(a.FACCTCODE,1,6) < '430101') or substr(a.FACCTCODE,1,6)>'430106' ) and a.FACCTATTR not like '%存款%协议_%') 
+	and a.c_km_Code is null {and fjjdm=:port} {and fyear=:year};
+--批量更新map表的科目代码为科目体系中的科目代码
+update md_km_map_temp a set a.c_km_code = ( 
+select 
+  b.c_km_code as c_km_code_p_t
+  from (select km.*,aux.c_org_code,aux.c_dv_invest_mode,aux.c_dv_sec_dur,aux.c_wart_type,
+         aux.c_exer_mode
+         from t_f_sc_km km left join T_F_SC_KM_AUX aux
+         on km.c_plan_code=aux.c_plan_code and km.c_km_code=aux.c_km_code) b
+   where a.c_plan_code = b.c_plan_code
+    and a.c_dai_code = b.c_dai_code
+   and a.c_dv_km_cls = b.c_dv_km_cls
+   --and a.c_dv_jd_way = b.c_dv_jd_way
+   and a.c_dc_code = b.c_dc_code
+   --AND A.FACCTPARENT=REPLACE(B.C_KM_CODE_P,'.','')  
+   and NVL(CASE WHEN b.c_dv_sec_dur = '[NA]' THEN a.c_dv_sec_dur ELSE  b.c_dv_sec_dur END , ' ') = NVL(a.c_dv_sec_dur,' ')
+   and NVL(CASE WHEN b.c_org_code = '[NA]' THEN a.c_org_code ELSE  b.c_org_code END , ' ') = NVL(a.c_org_code,' ')
+   and NVL(CASE WHEN b.c_dv_invest_mode = '[NA]' THEN a.c_dv_invest_mode ELSE  b.c_dv_invest_mode END , ' ') = NVL(a.c_dv_invest_mode,' ')
+   and NVL(CASE WHEN b.C_DTA_CODE = '[NA]' THEN a.c_Dta_Code ELSE  b.C_DTA_CODE END , ' ') = NVL(a.C_DTA_CODE,' ')
+   and NVL(CASE WHEN b.C_DV_ISSUE_MODE = '[NA]' THEN  A.C_DV_ISSUE_MODE ELSE  b.C_DV_ISSUE_MODE end, ' ') = NVL(A.C_DV_ISSUE_MODE,' ')
+   and NVL(case when b.C_DV_VAR_DUR = '[NA]' then a.C_DV_VAR_DUR else b.C_DV_VAR_DUR end , ' ') = NVL(a.C_DV_VAR_DUR,' ')
+   and NVL(a.C_DV_INVEST_CLS, 'IC_TD') = (case when b.C_DV_INVEST_CLS = ' ' then 'IC_TD' when b.C_DV_INVEST_CLS = '[NA]' THEN NVL(a.C_DV_INVEST_CLS, 'IC_TD') else b.C_DV_INVEST_CLS end )
+   --and NVL(case when b.C_PORT_CLS_CODE='[NA]' then a.C_PORT_CLS_CODE ELSE b.C_PORT_CLS_CODE end , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL((case when b.C_PORT_CLS_CODE in ('<PORT_CLS>','[NA]')   and trim(a.C_PORT_CLS_CODE) is not null  then a.C_PORT_CLS_CODE 
+              else b.C_PORT_CLS_CODE end ) , ' ') = NVL(a.C_PORT_CLS_CODE,' ')
+   and NVL(a.C_CA_CODE, ' ') = NVL(CASE WHEN b.C_CA_CODE in( '<CA>','[NA]',' ') then NVL(a.C_CA_CODE, ' ') else  b.C_CA_CODE end,' ')
+   and NVL((case when b.C_SEC_CODE in ('<SEC>','[NA]',' ') then a.C_SEC_CODE else b.C_SEC_CODE end ) , ' ') = NVL(a.C_SEC_CODE,' ')
+   and NVL((case when b.C_FEE_CODE in ('<FEE>','[NA]',' ') then a.C_FEE_CODE else b.C_FEE_CODE end ) , ' ') = NVL(a.C_FEE_CODE,' ')
+   --and NVL(a.C_FEE_CODE, ' ') = b.C_FEE_CODE 
+   and NVL(a.C_NET_CODE, ' ') = b.C_NET_CODE
+   and NVL(a.C_DT_CODE, ' ') = b.C_DT_CODE
+   and NVL(case when b.c_mkt_code in ('<MKT>','[NA]') then a.C_MKT_CODE else b.c_mkt_code end, ' ') = nvl(a.C_MKT_CODE,' ') 
+   and NVL(a.C_SEC_VAR_CODE,' ') like NVL((case when b.C_SEC_VAR_CODE in ('[NA]',' ') then a.C_SEC_VAR_CODE else b.C_SEC_VAR_CODE end ) , ' ') || '%' 
+   and NVL((case when b.C_DV_ACC_TYPE in ('<CA>','[NA]',' ') then a.C_DV_ACC_TYPE else b.C_DV_ACC_TYPE end ) , ' ') = NVL(a.C_DV_ACC_TYPE,' ')
+   --and NVL(a.C_DV_ACC_TYPE, ' ') = b.C_DV_ACC_TYPE
+   and NVL(a.C_DV_FEE_TYPE, ' ') = b.C_DV_FEE_TYPE
+   and NVL(CASE WHEN b.C_DS_CODE = '[NA]' THEN a.C_DS_CODE ELSE  b.C_DS_CODE END , ' ') = NVL(a.C_DS_CODE,' ')
+   and NVL(a.C_TD_CHAN_CODE, ' ') = NVL(CASE WHEN b.C_TD_CHAN_CODE in( '<TD_CHAN>','[NA]',' ') then NVL(a.C_TD_CHAN_CODE, ' ') else  b.C_TD_CHAN_CODE end,' ')
+   and b.n_detail = 1  
+   and b.n_check_state = 1
+) where (a.FACCTCODE not like '1002%' and a.FACCTCODE not like '1003%' and (substr(a.FACCTCODE,1,6) < '112101' 
+or (substr(a.FACCTCODE,1,6)>'112106' and substr(a.FACCTCODE,1,6) < '430101') or substr(a.FACCTCODE,1,6)>'430106' ) and a.FACCTATTR not like '%存款%协议_%') 
+and a.c_km_Code is null {and fjjdm=:port} {and fyear=:year};
+
+--批量更新map表的科目名称为科目体系中的科目名称
+update md_km_map_temp a set a.c_km_name = (
+select c_km_name from t_f_sc_km b where a.c_km_code = b.c_km_code and a.c_plan_code = b.c_plan_code)
+ where a.c_km_Code is not null {and fjjdm=:port} {and fyear=:year}; 
+
+update md_km_map_temp a set a.c_km_name = facctname
+ where a.c_km_name like '%<%>' {and fjjdm=:port} {and fyear=:year}; 
+
+--差异更新map表的科目代码为科目体系中的科目代码
+
+update  md_km_map_temp set c_km_code='' where c_km_code like '%<SEC>' and c_sec_code is null;
+update  md_km_map_temp set c_km_code='' where c_km_code like '%<CA>' and c_ca_code is null;
+update  md_km_map_temp set c_km_code='' where c_km_code like '%<TD_CHAN>' and c_td_chan_code is null;
+update md_km_map_temp set c_ca_code='' where c_km_code like '%<SEC>';
+--删除md_km_map_temp中未匹配的信息
+--delete from md_km_map_temp where c_km_Code = '' or c_km_code is null; 

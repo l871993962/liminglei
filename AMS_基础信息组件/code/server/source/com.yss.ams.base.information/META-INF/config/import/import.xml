@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<import>
+<keywords>
+<keyword code="NET" class="com.yss.ams.base.information.modules.bi.salesnet.service.impl.SalesNetKeyWordConvert" desc="网点" />
+</keywords>
+</import>

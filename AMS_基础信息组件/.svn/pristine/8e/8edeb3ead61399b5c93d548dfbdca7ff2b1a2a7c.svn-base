@@ -1,0 +1,16 @@
+source.. = src/main/java/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               lib/client.jar,\
+               lib/com.yss.fast.mq.common.jar,\
+               lib/commons-cli-1.2.jar,\
+               lib/commons-io-2.4.jar,\
+               lib/commons-lang-2.6.jar,\
+               lib/fastjson-1.2.12.jar,\
+               lib/jna-4.2.2.jar,\
+               lib/logback-classic-1.2.0.jar,\
+               lib/logback-core-1.2.0.jar,\
+               lib/netty-all-4.1.44.Final.jar,\
+               lib/slf4j-api-1.7.5.jar,\
+               lib/jackson-core-2.5.3.jar

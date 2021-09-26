@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "GZV4.5资讯管理" >  
+		<Info_Cls name = "资讯管理" > 
+		    <Info_Detail portCol="" dateCol="" table="T_S_INDEX">T_S_INDEX_指标模板</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_SV_SEC_BASE">T_P_SV_SEC_BASE_证券信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_SV_FI_PAY">T_D_SV_FI_PAY_债券历史付息</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_D_SV_FI_INCOME">T_D_SV_FI_INCOME_债券每日利息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_SV_FI_FACTRATE">T_D_SV_FI_FACTRATE_债券实际利率值</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_P_SV_INDEX_STOCK">T_P_SV_INDEX_STOCK_指数成分券信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_INDEX">T_D_MP_INDEX_指数行情</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_SV_INDEX">T_P_SV_INDEX_指数基本信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_SEC_FW">T_D_MP_SEC_FW_远期汇率</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_SEC_EQU">T_D_MP_SEC_EQU_证券权益信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_S_DSP_PARA">T_S_DSP_PARA_参数表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_S_IE_ITEM">T_S_IE_ITEM_收支结转项目表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_V_AA_ADV_ALGO">T_V_AA_ADV_ALGO_高级算法公式</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_PRE_STOCK">T_D_MP_PRE_STOCK_优先股计息信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_TD_ACC_CONVERT">T_P_CO_TD_ACC_CONVERT_账户转换字典表</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "GZV4.5业务框架" > 
+	<Info_Cls name = "参数管理" >  
+	    <Info_Cls name = "基础信息参数" > 
+			<Info_Detail portCol="" dateCol="" table="T_P_BI_ORG">T_P_BI_ORG_机构信息设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_BI_IE_RELA">T_P_BI_IE_RELA_收支品种设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_BI_IE">T_P_BI_IE_收支项目设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_BI_SALES_NET">T_P_BI_SALES_NET_销售网点设置</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_P_BI_ORG_MBR">T_P_BI_ORG_MBR_机构结算会员</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_PARAMS">T_P_AO_PARAMS_清算及核算综合参数</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_V_D_GROUP">T_V_D_GROUP_转换字典表</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_V_D_GROUP_DETAIL">T_V_D_GROUP_DETAIL_转换字典表_子表</Info_Detail> 
+		</Info_Cls>   
+	    <Info_Cls name = "清算业务参数" >  
+		    <Info_Detail portCol="" dateCol="" table="T_P_CO_TD_SETT_DAYS">T_P_CO_TD_SETT_DAYS_交易结转天数</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_TD_FEE">T_P_CO_TD_FEE_交易费用设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_TD_SETT_CA">T_P_CO_TD_SETT_CA_交易结转账户</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_TRADE_COMM">T_P_CO_TRADE_COMM_交易佣金设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_SETT">T_P_CO_SETT_销售结转设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_CASH_SETT">T_P_CO_CASH_SETT_资金汇划设置表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_CO_NS_TD_FEE">T_P_CO_NS_TD_FEE_交易费用设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_V_AA_ADV_ALGO">T_V_AA_ADV_ALGO_高级算法设置</Info_Detail>
+		</Info_Cls>   
+	    <Info_Cls name = "核算业务参数" > 
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_ACCR_DEFE">T_P_AO_ACCR_DEFE_预提待摊设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_ACCR_CASH">T_P_AO_ACCR_CASH_现金账户计息</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_ACCR_CASH_PARA" mainTable="T_P_AO_ACCR_CASH">T_P_AO_ACCR_CASH_PARA_现金账户计息子表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_PAY_SETT">T_P_AO_PAY_SETT_收支结转设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_FI_ACT">T_P_AO_FI_ACT_债券核算设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_DAI">T_P_AO_DAI_核算项级别设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_RATIO_FORMULA">T_P_AO_RATIO_FORMULA_比率公式设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_RATIO_FORMULA_RELA" mainTable="T_P_AO_RATIO_FORMULA">T_P_AO_RATIO_FORMULA_RELA_比率公式设置_子表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_INDEX">T_P_AO_INDEX_指标管理</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AI_ACCR_DEFE">T_D_AI_ACCR_DEFE_预提待摊业务</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AI_ACCR_DEFE_RELA" mainTable="T_D_AI_ACCR_DEFE">T_D_AI_ACCR_DEFE_RELA_预提待摊业务子表</Info_Detail>
+		</Info_Cls>   
+	    <Info_Cls name = "资产基础参数" >  
+			<Info_Detail portCol="" dateCol="" table="T_C_CP_FUND_ACC">T_C_CP_FUND_ACC_产品账户设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_TD_CHAN">T_P_AB_TD_CHAN_证券交易渠道</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_SH_ACC">T_P_AB_SH_ACC_股东交易账户</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_PORT_RELA">T_P_AB_PORT_RELA_组合关联信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_PORT">T_P_AB_PORT_组合基本信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_PORT_RELA">T_P_AB_PORT_RELA_组合关联信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_ASS_EQU">T_P_AB_ASS_EQU_资产权益信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_INVE_FEE">T_P_AB_INVE_FEE_计提运营费用</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_INVE_PARA" mainTable="T_P_AB_INVE_FEE">T_P_AB_INVE_PARA_计提运营费用子表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AO_VCH_RELA">T_P_AO_VCH_RELA_关联凭证模板子表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_GROUP">T_P_AB_GROUP_群组基本信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AB_GROUP_RELA">T_P_AB_GROUP_RELA_群组关联信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_E_EXEC_PLAN_RELA">T_E_EXEC_PLAN_RELA_方案关联组合表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_E_EXEC_PLAN">T_E_EXEC_PLAN_执行方案设置</Info_Detail>
+		</Info_Cls>     
+	    <Info_Cls name = "资产高级参数" >  
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_PORT_CLS">T_P_AA_PORT_CLS_分级产品参数</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_PORT_CLS_DAY">T_P_AA_PORT_CLS_DAY_杠杆分级运作天数设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_ETF">T_P_AA_ETF ETF_参数设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_ETF_SETT">T_P_AA_ETF_SETT ETF_结转设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_ETF_STD">T_P_AA_ETF_STD ETF_补票日期设置</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_AA_ETF_CASH">T_P_AA_ETF_CASH ETF_资金划拨设置表</Info_Detail> 
+		</Info_Cls>  
+	</Info_Cls> 
+	<Info_Cls name = "数据管理" >  
+	    <Info_Cls name = "资产清算数据" >
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_IVT">T_D_AC_TRADE_IVT_投资交易数据表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AC_TRADE_IVT_FEE" mainTable="T_D_AC_TRADE_IVT">T_D_AC_TRADE_IVT_FEE_投资交易数据表_费用子表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_ETF">T_D_AC_TRADE_ETF_投资交易数据表_ETF子记录</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AC_TRADE_ZYW" mainTable="T_D_AC_TRADE_IVT">T_D_AC_TRADE_ZYW_股票质押回购业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_IPO">T_D_AC_TRADE_IPO_申购业务</Info_Detail> 
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_LOCK_BEGIN" table="T_D_AC_TRADE_LOCK">T_D_AC_TRADE_LOCK_新股锁定业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="d_trade" table="T_D_AC_TRADE_SALE">T_D_AC_TRADE_SALE_场外申赎业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="d_trade" table="T_D_AC_TRADE_SALE_FEE" mainTable="T_D_AC_TRADE_SALE">T_D_AC_TRADE_SALE_FEE_场外申赎业务_子表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_DEP">T_D_AC_TRADE_DEP_存款投资业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_SE">T_D_AC_TRADE_SE_证券转换业务</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AC_TRADE_SE_FEE" mainTable="T_D_AC_TRADE_SE">T_D_AC_TRADE_SE_FEE_证券转换业务_子表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_SL">T_D_AC_TRADE_SL_证券流通业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_EN">T_D_AC_TRADE_EN_对价派息业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_DS">T_D_AC_TRADE_DS_证券送配业务</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="d_sell" table="T_D_AC_SELL_TA">T_D_AC_SELL_TA_产品销售数据</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_AC_SELL_TA_FEE" mainTable="T_D_AC_SELL_TA">T_D_AC_SELL_TA_FEE_TA交易业务费用表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_ETF_TA">T_D_AC_ETF_TA_ETF产品销售数据</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_ETF_JSMX">T_D_AC_ETF_JSMX_ETF结算明细数据表</Info_Detail> 
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_ETF_SKEP">T_D_MP_ETF_SKEP ETF_股票篮信息</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_D_MP_ETF_SKEP_DETAIL">T_D_MP_ETF_SKEP_DETAIL_ETF股票篮信息_子表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_FUTURES">T_D_AC_FUTURES_期货交易台账</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_ZJZJ">T_D_AC_TRADE_ZJZJ_资金追加提取业务表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_DZSX_GZMXBOOK">T_D_AC_DZSX_GZMXBOOK_大宗受限台帐</Info_Detail>
+		</Info_Cls>
+	    <Info_Cls name = "资产综合数据" > 
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_CHK_ACC" table="T_D_AI_ACT_VAL">T_D_AI_ACT_VAL_核算数据</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_ASTSTAT" table="T_R_FR_ASTSTAT">T_R_FR_ASTSTAT_财务估值表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_BAL" table="T_F_BM_BAL">T_F_BM_BAL_余额表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_ASTSTAT" table="T_R_FR_ASTSTAT_SUM">T_R_FR_ASTSTAT_SUM_估值汇总表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_VAL_ACCT" table="T_D_AI_VAL_PR">T_D_AI_VAL_PR_估值行情汇率</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_CASH">T_D_AC_CASH_资金汇划</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_D_AC_TRADE_SETT">T_D_AC_TRADE_SETT_收支结转业务表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_STOCK" table="T_D_AI_STOCK">T_D_AI_STOCK_库存数据表</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_STOCK" table="T_D_AI_STOCK_SEC">T_D_AI_STOCK_SEC_证券持仓库存统计表</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_P_SV_SUSPENDED">T_P_SV_SUSPENDED_停牌股票信息</Info_Detail>
+			<Info_Detail portCol="C_PORT_CODE" dateCol="D_MKT" table="T_D_MP_SEC_MKT">T_D_MP_SEC_MKT_证券行情资料</Info_Detail>
+			<Info_Detail portCol="" dateCol="" table="T_E_CONFIRM">T_E_CONFIRM_净值确认表</Info_Detail>
+		</Info_Cls>
+	</Info_Cls> 
+	<Info_Cls name = "财务管理" >  
+		<Info_Detail portCol="" dateCol="" table="T_F_SC_KM">T_F_SC_KM_科目设置表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_F_SC_KM_AUX">T_F_SC_KM_AUX_科目辅助表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_F_SC_KM_RELA">T_F_SC_KM_RELA_科目体系方案</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_BI_CASH_ACC">T_P_BI_CASH_ACC_现金账户设置表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AO_VAL_PLAN">T_P_AO_VAL_PLAN_估值方案设置</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_CO_TD_SETT_INVEST">T_P_CO_TD_SETT_INVEST_投资分类设置表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AO_VAL_METHOD">T_P_AO_VAL_METHOD_产品估值方法表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AO_ACT_KM_CONFIG">T_P_AO_ACT_KM_CONFIG_核算科目设置</Info_Detail>
+	</Info_Cls>	
+	<Info_Cls name = "报表管理" > 
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_R_FR_ETF_UNIT_COST">T_R_FR_ETF_UNIT_COST_投资者台账</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_R_FR_ETF_UNIT_INVS">T_R_FR_ETF_UNIT_INVS_股票单位成本台账</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_D_AC_ETF_SKEP">T_D_AC_ETF_SKEP_ETF股票篮市值</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_R_FR_ETF_MAIN">T_R_FR_ETF_MAIN_ETF主记录台账表</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_REM" table="T_R_FR_ETF_REM">T_R_FR_ETF_REM_ETF剩余数量台账表</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_MAKEUP" table="T_R_FR_ETF_MAKEUP">T_R_FR_ETF_MAKEUP_ETF补票记录台账表</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_EXR" table="T_R_FR_ETF_EQU">T_R_FR_ETF_EQU_ETF权益记录台账表</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_TRADE" table="T_R_FR_ETF_UNIT_MAIN">T_R_FR_ETF_UNIT_MAIN_ETF单位主台账</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_EXR" table="T_R_FR_ETF_UNIT_EQU">T_R_FR_ETF_UNIT_EQU_ETF单位权益台账</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_MAKEUP" table="T_R_FR_ETF_UNIT_MAKEUP">T_R_FR_ETF_UNIT_MAKEUP_ETF单位补票台账</Info_Detail>
+		<Info_Detail portCol="" dateCol="D_REM" table="T_R_FR_ETF_UNIT_REM">T_R_FR_ETF_UNIT_REM_ETF单位剩余台账</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_ASTSTAT" table="T_R_FR_ASTSTAT_ONE">T_R_FR_ASTSTAT_ONE_ETF估值表</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_TRADE" table="T_R_FR_ETF_BOOKDETAIL">T_R_FR_ETF_BOOKDETAIL_补票成交明细表</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="" table="T_D_EFT_DC_COUPON">T_D_EFT_DC_COUPON_ETF补券信息</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_D_AC_CASH_DIF">T_D_AC_CASH_DIF_股票篮市值现金差额表</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="" table="T_D_EFT_NGS">T_D_EFT_NGS_ETF非担保交收指令生成表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_R_FR_ASSET_MANDATE">T_R_FR_ASSET_MANDATE_委托资产风险准备金台账</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_D_OD_API">T_D_OD_API_银行间API</Info_Detail>
+	</Info_Cls>
+    <Info_Cls name = "增值税业务管理" >  
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_BOOK_DATE" table="T_R_FR_VAT_ZR">T_R_FR_VAT_ZR_营改增金融转让服务台账表</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_BOOK_DATE" table="T_R_FR_VAT_DK">T_R_FR_VAT_DK_贷款服务收入台账</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_BOOK_DATE" table="T_R_FR_VAT_SURTAX">T_R_FR_VAT_SURTAX_附加税台帐表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AO_VAT_PLAN_GENE">T_P_AO_VAT_PLAN_GENE_增值税方案主数据表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AO_VAT_PLAN_DETA">T_P_AO_VAT_PLAN_DETA_增值税方案明细设置表</Info_Detail>
+		<Info_Detail portCol="" dateCol="" table="T_P_AB_PARAMSETUP">T_P_AB_PARAMSETUP_增值税明细设置</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_ADJUST_DATE" table="T_R_FR_VAT_OA">T_R_FR_VAT_OA_增值税备抵调整表</Info_Detail>
+		<Info_Detail portCol="C_PORT_CODE" dateCol="D_BOOK_DATE" table="T_R_FR_VAT_LOCK">T_R_FR_VAT_LOCK_台帐锁定表</Info_Detail>
+	</Info_Cls>
+	</Info_Cls>
+</Info_List> 

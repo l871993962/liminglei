@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<global-cache>
+	<pool>
+		<maxTotal>1000</maxTotal>
+		<maxIdle>5</maxIdle>
+		<maxWaitMillis>100000</maxWaitMillis>
+	</pool>
+
+	<!--
+		enabled:true 支持Redis缓存
+		isCluster:true  支持集群Redis缓存
+		isCluster:false 支持单点Redis缓存（此时只有一个地址和端口号）
+	-->
+	<servers enabled="false" isCluster="false">		
+		<!--
+		<server address="192.168.17.142" port="7000"/>
+		<server address="192.168.17.142" port="7001"/>
+		<server address="192.168.17.142" port="7002"/>
+		<server address="192.168.17.143" port="7000"/>
+		<server address="192.168.17.143" port="7001"/>
+		<server address="192.168.17.143" port="7002"/>
+		-->
+		
+		<server address="192.168.17.143" port="7005"/>
+	</servers>
+</global-cache>

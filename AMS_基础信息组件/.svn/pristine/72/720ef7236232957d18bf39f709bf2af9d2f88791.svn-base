@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:splits xmlns:tns="http://www.example.org/splitRules" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/splitRules splitRules.xsd ">
+  <!-- 债券交易 -->
+  <tns:split tradeType="ZQJY">
+    <tns:dataEntity id = "EtfMainTrade" class="com.yss.data.ac.etfmaintrade.pojo.EtfMainTrade"/>
+    <tns:dataService id = "ITradeCommDataService" class="com.yss.data.ac.etfmaintrade.service.impl.TradeCommDataService" 
+    	interface="com.yss.data.ac.etfmaintrade.service.ITradeCommDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交数量 -->
+      <tns:field>n_TD_AMOUNT</tns:field>
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INCOME</tns:field>
+      <tns:subFields id="tradeFee" class="com.yss.data.ac.ivttradefee.pojo.IvtTradeFee">
+          <tns:field>n_FEE_MONEY</tns:field>
+      </tns:subFields>
+      <tns:subFields class="com.yss.data.ac.collateral.pojo.Collateral" id="collateral">
+      	  <tns:field>n_TD_AMOUNT</tns:field>
+      </tns:subFields>
+      <!-- 证券清算款 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 基金交易 -->
+  <tns:split tradeType="JJJY">
+    <tns:dataEntity id = "EtfMainTrade" class="com.yss.data.ac.etfmaintrade.pojo.EtfMainTrade"/>
+    <tns:dataService id = "ITradeCommDataService" class="com.yss.data.ac.etfmaintrade.service.impl.TradeCommDataService" 
+    	interface="com.yss.data.ac.etfmaintrade.service.ITradeCommDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交数量 -->
+      <tns:field>n_TD_AMOUNT</tns:field>
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INCOME</tns:field>
+      <tns:subFields id="tradeFee" class="com.yss.data.ac.ivttradefee.pojo.IvtTradeFee">
+          <tns:field>n_FEE_MONEY</tns:field>
+      </tns:subFields>
+      <!-- 证券清算款 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 回购交易 -->
+  <tns:split tradeType="HGJY">
+    <tns:dataEntity id = "EtfMainTrade" class="com.yss.data.ac.etfmaintrade.pojo.EtfMainTrade"/>
+    <tns:dataService id = "ITradeCommDataService" class="com.yss.data.ac.etfmaintrade.service.impl.TradeCommDataService" 
+    	interface="com.yss.data.ac.etfmaintrade.service.ITradeCommDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交数量 -->
+      <tns:field>n_TD_AMOUNT</tns:field>
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 回购收益 -->
+      <tns:field>n_INCOME</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INTEREST</tns:field>
+      <tns:subFields id="tradeFee" class="com.yss.data.ac.ivttradefee.pojo.IvtTradeFee">
+          <tns:field>n_FEE_MONEY</tns:field>
+      </tns:subFields>
+      <!-- 证券清算款 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 拆借交易 -->
+  <tns:split tradeType="CJJY">
+    <tns:dataEntity id = "EtfMainTrade" class="com.yss.data.ac.etfmaintrade.pojo.EtfMainTrade"/>
+    <tns:dataService id = "ITradeCommDataService" class="com.yss.data.ac.etfmaintrade.service.impl.TradeCommDataService" 
+    	interface="com.yss.data.ac.etfmaintrade.service.ITradeCommDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交数量 -->
+      <tns:field>n_TD_AMOUNT</tns:field>
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 拆借收益 -->
+      <tns:field>n_INCOME</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INTEREST</tns:field>
+      <tns:subFields id="tradeFee" class="com.yss.data.ac.ivttradefee.pojo.IvtTradeFee">
+          <tns:field>n_FEE_MONEY</tns:field>
+      </tns:subFields>
+      <!-- 证券清算款 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 开放基金 -->
+  <tns:split tradeType="CWSS">
+    <tns:dataEntity id = "OtcTrade" class="com.yss.data.ac.otcTrade.pojo.OtcTrade"/>
+    <tns:dataService id = "IOtcTradeDataService" class="com.yss.data.ac.otcTrade.service.impl.OtcTradeDataService" 
+    	interface="com.yss.data.ac.otcTrade.service.IOtcTradeDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交数量 -->
+      <tns:field>n_TD_AMOUNT</tns:field>
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INCOME</tns:field>
+      <tns:subFields id="otcTradeFee" class="com.yss.data.ac.otcTradeFee.pojo.OtcTradeFee">
+          <tns:field>n_FEE_MONEY</tns:field>
+      </tns:subFields>
+      <!-- 证券清算款 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 存款投资 -->
+  <tns:split tradeType="CKTZ">
+    <tns:dataEntity id = "Cktz" class="com.yss.data.ac.cktz.pojo.Cktz"/>
+    <tns:dataService id = "ICktzDataService" class="com.yss.data.ac.cktz.service.impl.CktzDataService" 
+    	interface="com.yss.data.ac.cktz.service.ICktzDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 所含利息 -->
+      <tns:field>n_INCOME</tns:field>
+      <!-- 证券清算款 -->
+      <tns:field>n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 票据交易 -->
+  <tns:split tradeType="PJJY">
+    <tns:dataEntity id = "Cktz" class="com.yss.data.ac.cktz.pojo.Cktz"/>
+    <tns:dataService id = "ICktzDataService" class="com.yss.data.ac.cktz.service.impl.CktzDataService" 
+    	interface="com.yss.data.ac.cktz.service.ICktzDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 票面金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 贴现利息 -->
+      <tns:field>n_INCOME</tns:field>
+      <tns:subFields id="billList" class="com.yss.data.ac.billinfo.pojo.BillInfo">
+            <!-- 票面金额 -->
+            <tns:field>n_TD_MONEY</tns:field>
+      		<!-- 贴现利息 -->
+      		<tns:field>n_INCOME</tns:field>
+      		<!-- 结算金额 -->
+      		<tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+      </tns:subFields>
+      <!-- 结算金额 -->
+      <tns:field method="calcSettMoney">n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 支付结转业务 -->
+  <tns:split tradeType="ZFJZ">
+    <tns:dataEntity id = "PaySettTrade" class="com.yss.data.ai.paysetttrade.pojo.PaySettTrade"/>
+    <tns:dataService id = "IPaySettTradeDataService" class="com.yss.data.ai.paysetttrade.service.impl.PaySettTradeDataService" 
+    	interface="com.yss.data.ai.paysetttrade.service.IPaySettTradeDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 应收金额 -->
+      <tns:field>n_MONEY_REC</tns:field>
+      <!-- 到账金额 -->
+      <tns:field>n_MONEY_ACC</tns:field>
+      <!-- 应付金额 -->
+      <tns:field>n_MONEY_COP</tns:field>
+      <!-- 支付金额 -->
+      <tns:field>n_MONEY_PAY</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 产品分红处理-->
+  <tns:split tradeType="CPQY">
+    <tns:dataEntity id = "AssEqu" class="com.yss.para.ab.assequ.pojo.AssEqu"/>
+    <tns:dataService id = "IAssEquDataService" class="com.yss.para.ab.assequ.service.impl.AssEquDataService" 
+    	interface="com.yss.para.ab.assequ.service.IAssEquDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 权益金额-->
+      <tns:field>n_EQU_MONEY</tns:field>
+    </tns:fields>
+  </tns:split>
+  <!-- 资产对价派息 -->
+  <tns:split tradeType="DJPX">
+    <tns:dataEntity id = "Djpx" class="com.yss.uco.support.comm.data.ac.djpx.pojo.Djpx"/>
+    <tns:dataService id = "IDjpxDataService" class="com.yss.data.ac.djpx.service.impl.DjpxDataService" 
+    	interface="dataservice.service.IDjpxDataService"/>
+    <tns:fields id="" class ="">
+      <!-- 成交金额 -->
+      <tns:field>n_TD_MONEY</tns:field>
+      <!-- 清算金额 -->
+      <tns:field>n_SETT_MONEY_DUE</tns:field>
+    </tns:fields>
+  </tns:split>
+</tns:splits>

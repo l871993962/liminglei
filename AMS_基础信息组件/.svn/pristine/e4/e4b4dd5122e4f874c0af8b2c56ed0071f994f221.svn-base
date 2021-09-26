@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "GZV2.5公共类" >  
+		<Info_Cls name = "基本信息" > 
+			<Info_Detail dateCol="" table="T_FeePayInfo">费用支付</Info_Detail>
+			<Info_Detail dateCol="FDATE" table="A{year}JJHZHQ">证券行情表</Info_Detail> 
+			<Info_Detail dateCol="" table="zqjxqj">zqjxqj债券计息</Info_Detail>
+			<Info_Detail dateCol="" table="xwfeiysz">xwfeiysz席位费用参数设置表</Info_Detail>
+			<Info_Detail dateCol="" table="TFILEPATH">TFILEPATH接口路径</Info_Detail>
+			<Info_Detail dateCol="" table="QHZHXX">QHZHXX期货账户</Info_Detail>
+			<Info_Detail dateCol="" table="qhgsxx">qhgsxx期货公司</Info_Detail>
+			<Info_Detail dateCol="" table="CSHOLIDAY">CSHOLIDAY节假日群</Info_Detail> 
+			<Info_Detail dateCol="" table="JJHZXX">JJHZXX基金汇总信息表</Info_Detail><!-- STORY #26338  -->
+			<Info_Detail dateCol="" table="CSGPXX">CSGPXX股票信息表</Info_Detail><!-- STORY #26338  -->
+			<Info_Detail dateCol="" table="YTDTXX1">YTDTXX1预提待摊信息表</Info_Detail>
+			<Info_Detail dateCol="" table="YTDTXX">YTDTXX预提待摊信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQXX">CSZQXX债券信息表</Info_Detail>
+			<Info_Detail dateCol="" table="XGSDXX">XGSDXX新股锁定表</Info_Detail>
+			<Info_Detail dateCol="" table="FUNDINFO">FUNDINFO基金信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSJYLV">CSJYLV交易费率表</Info_Detail>
+			<Info_Detail dateCol="" table="lsetlist">lsetlist套账信息表</Info_Detail>
+			<Info_Detail dateCol="" table="Fxsflv">Fxsflv分级信息表</Info_Detail>
+			<Info_Detail dateCol="" table="YHJXXX">YHJXXX银行计息信息表</Info_Detail>
+			<Info_Detail dateCol="" table="TAJZTS">TAJZTSTA结转天数</Info_Detail>
+			<Info_Detail dateCol="" table="T_TAQZQJ_HX">T_TAQZQJ_HXTA调增调减</Info_Detail>
+			<Info_Detail dateCol="" table="LVARLIST">LVARLIST结算参数表</Info_Detail>
+			<Info_Detail dateCol="" table="CSHBJJSYL">CSHBJJSYL货币基金收益表</Info_Detail>
+			<Info_Detail dateCol="" table="JJHZ_FH">JJHZ_FH产品分红</Info_Detail>
+			<Info_Detail dateCol="" table="T_CSYJLV">T_CSYJLV佣金费率表</Info_Detail>
+			<Info_Detail dateCol="" table="t_cssysjj">t_cssysjj产品基本信息</Info_Detail>
+			<Info_Detail dateCol="" table="CSQSXW">CSQSXW交易席位表</Info_Detail>
+			<Info_Detail dateCol="" table="CSYHCKLV">CSYHCKLV银行存款利率表</Info_Detail>
+			<Info_Detail dateCol="" table="CSGDDM">CSGDDM股东账户表</Info_Detail>
+			<Info_Detail dateCol="" table="XWSET">XWSET席位费用设置表</Info_Detail>
+			<Info_Detail dateCol="" table="JTLFXX">JTLFXX计提两费检查表</Info_Detail>
+			<Info_Detail dateCol="" table="QHHYXX">QHHYXX期货合约信息表</Info_Detail>
+			<Info_Detail dateCol="" table="T_QQHYXX">T_QQHYXX期权合约信息表</Info_Detail>
+			<Info_Detail dateCol="" table="qhbzjxx">qhbzjxx期货保证金信息表</Info_Detail>
+			<Info_Detail dateCol="" table="T_RZRQJYDATA">T_RZRQJYDATA融资融券交易数据表</Info_Detail>
+			<Info_Detail dateCol="" table="FundTwoFee">FundTwoFee年金两费表</Info_Detail>
+			<Info_Detail dateCol="" table="T_TYCS">T_TYCS通用参数表</Info_Detail><!-- STORY 26266 -->
+			<Info_Detail dateCol="" table="T_FGDSYXX">T_FGDSYXX信托基本信息表</Info_Detail><!-- STORY 26347 -->
+			<Info_Detail dateCol="" table="CSZQPJJE">CSZQPJJE债券票面金额表</Info_Detail><!-- STORY 26341 -->
+			<Info_Detail dateCol="" table="FDZQLV">FDZQLV债券利率表</Info_Detail><!-- STORY 26342 -->
+			<Info_Detail dateCol="" table="T_GPZYSHG">T_GPZYSHG股票质押式回购表</Info_Detail><!-- STORY 26345 -->
+			<Info_Detail dateCol="" table="CSXTKFR">CSXTKFR资产开放日表</Info_Detail><!-- STORY 26371 -->
+			<Info_Detail dateCol="" table="CsQyXx">CsQyXx权益信息表</Info_Detail>
+			<Info_Detail dateCol="" table="JJHGDYZQ">JJHGDYZQ回购标的券</Info_Detail>
+			<Info_Detail dateCol="" table="T_BDZQ">T_BDZQ回购质押式标的券</Info_Detail>
+			<Info_Detail dateCol="" table="T_QQHYXX">T_QQHYXX期权合约信息表</Info_Detail>
+			<Info_Detail dateCol="" table="T_QQCCBDB">T_QQCCBDB期权持仓变动表</Info_Detail>
+			<Info_Detail dateCol="" table="JJPREFIX">JJPREFIX数据接口文件设定表</Info_Detail>
+			<Info_Detail dateCol="" table="T_GQJBXX">T_GQJBXX股权基本信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSUBFUNDMAP">CSUBFUNDMAP总分账</Info_Detail>
+			<Info_Detail dateCol="" table="T_YHJXQJINFO">T_YHJXQJINFO银行计息期间设置</Info_Detail>
+			<Info_Detail dateCol="" table="T_VAR_ZSSJ">T_VAR_ZSSJ指数数据</Info_Detail>
+			<Info_Detail dateCol="" table="T_SUBFUNDINFO">T_SUBFUNDINFO分级基金子分级信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CUNIONCODE">CUNIONCODE组合代码设置表</Info_Detail>
+			<Info_Detail dateCol="" table="FUNDMATCHES">FUNDMATCHES 配对信息</Info_Detail>
+			<Info_Detail dateCol="" table="CSNJZJZJ">CSNJZJZJ 资金增加业务</Info_Detail>
+			<Info_Detail dateCol="" table="T_LOFZHYW">T_LOFZHYW LOF基金转换</Info_Detail>
+			<Info_Detail dateCol="" table="T_FJHLCXX">T_FJHLCXX 集合理财产品信息表</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZQJDYW">T_ZQJDYW 债券借贷业务表</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZQJDXX">T_ZQJDXX 债券借贷质押券表</Info_Detail>
+			<Info_Detail dateCol="" table="T_FGDSYXX">T_FGDSYXX 非标资产基本信息表</Info_Detail>
+			<Info_Detail dateCol="" table="T_FBZCYW">T_FBZCYW 非标资产业务表</Info_Detail>
+			<Info_Detail dateCol="" table="T_SYQTZYW">T_SYQTZYW 收益权投资业务表</Info_Detail>
+			<Info_Detail dateCol="" table="T_SYQJZLV">T_SYQJZLV 收益权投资业务利率表</Info_Detail>
+			<Info_Detail dateCol="" table="SGKJX">SGKJX 申购款计息</Info_Detail>
+			<Info_Detail dateCol="" table="T_XDZCTZ">T_XDZCTZ 信贷资产转让业务</Info_Detail>
+			<Info_Detail dateCol="" table="T_XDZCTZ_FX">T_XDZCTZ_FX 付息日期设置表</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZRTYWB">T_ZRTYWB 转融通业务表</Info_Detail>
+			<Info_Detail dateCol="" table="T_XHYXX">T_XHYXX </Info_Detail>
+			<Info_Detail dateCol="" table="T_HYDZB">T_HYDZB 转融通合约对账表</Info_Detail>
+			<Info_Detail dateCol="" table="T_HYCHMX">T_HYCHMX T日合约偿还明细库表</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZRTTQLJB">T_ZRTTQLJB 转融通提前了结表</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZRTQYB">T_ZRTQYB 转融通权益表</Info_Detail>
+			<Info_Detail dateCol="" table="T_XDTZ">T_XDTZ 信贷投资表</Info_Detail>
+			<Info_Detail dateCol="" table="T_YHLCJBXX">T_YHLCJBXX</Info_Detail>
+			<Info_Detail dateCol="" table="T_YLJJBXX">T_YLJJBXX</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZQTZYW">T_ZQTZYW</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZQJBXX">T_ZQJBXX</Info_Detail>
+			<Info_Detail dateCol="" table="T_ZQGZBZ">T_ZQGZBZ</Info_Detail>
+			<Info_Detail dateCol="" table="T_YXGJXXX">T_YXGJXXX 优先股计息设置表</Info_Detail> 
+			<Info_Detail dateCol="" table="EXTYH_ZQJY">EXTYH_ZQJY</Info_Detail>
+			<Info_Detail dateCol="" table="EXTYH_HGJY">EXTYH_HGJY</Info_Detail>
+			<Info_Detail dateCol="" table="T_YXGPXX">T_YXGPXX优先股基本信息</Info_Detail>
+			<Info_Detail dateCol="" table="T_HJZJYW">T_HJZJYW 黄金租借</Info_Detail>
+			<Info_Detail dateCol="" table="ExtYh_Hgdyzq">ExtYh_Hgdyzq 回购质押券信息</Info_Detail>
+			<Info_Detail dateCol="" table="CSXGLT">CSXGLT 新股流通信息</Info_Detail>
+			<Info_Detail dateCol="" table="transferrate">transferrate 估值汇率</Info_Detail>
+			<Info_Detail dateCol="" table="T_LTSXGPWH">T_LTSXGPWH 流通受限股票维护</Info_Detail>	
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "GZV2.5组合类" >  
+	    <Info_Cls name = "交易数据" >  
+	    	<Info_Detail dateCol="" table="A{port}jhlccptz">jhlccptz集合交易流水</Info_Detail>
+	    	<Info_Detail dateCol="" table="A{port}LBALANCEINSYLBD">LBALANCEINSYLBD实际利率表</Info_Detail>
+			<Info_Detail dateCol="" table="A{port}CSQSXW">交易席位表</Info_Detail>
+			<Info_Detail dateCol="" table="A{port}XTYWXX">XTYWXX信托业务信息表</Info_Detail><!-- STORY 26347 -->
+			<Info_Detail dateCol="" table="A{port}qhaccount">qhaccount期货台帐信息表</Info_Detail>
+	    	<Info_Detail dateCol="" table="A{port}yhckywnew">yhckywnew银行账户计息</Info_Detail>
+		    <Info_Detail dateCol="FDATE" table="A{port}TADATA">TADATATA销售</Info_Detail>
+			<Info_Detail dateCol="" table="A{port}HZJKQS">汇总清算</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}cssysjj">产品基本信息</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}CSGDDM">股东账户表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}CSYJLV">佣金费率表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}HZJKHZ">HZJKHZ接口汇总表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}HZJKMX">HZJKMX接口明细表</Info_Detail>
+		    <Info_Detail dateCol="FDATE" table="A{port}HZJKQS">HZJKQS汇总接口清算表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}HZJSMX">HZJSMX结算明细表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}JJCCDQ">JJCCDQ证券到期业务表</Info_Detail>
+	        <Info_Detail dateCol="FDATE" table="A{port}JJHZGZB">JHZGZB估值表</Info_Detail>
+	        <Info_Detail dateCol="FDATE" table="A{port}JJHZGZBETF">JHZGZBETFetf估值表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}JJPREFIX">接口设置表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}JJQYXX">JJQYXX资产权益信息表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}JJYWXX">JJYWXX基金场外交易表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}JTLFXX">计提两费检查表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}XGYWXX">XGYWXX新股业务数据表</Info_Detail>
+		    <Info_Detail dateCol="" table="A{port}XWSET">席位费用设置表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}YHHGXX">YHHGXX银行间回购交易表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}YHZQXX">YHZQXX银行间债券交易表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}YZJTXB">YZJTXB溢折价每日摊销表</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}ZQFXYW">ZQFXYW债券分销业务</Info_Detail>
+	        <Info_Detail dateCol="" table="A{port}ZQJYYZJ">ZQJYYZJ债券交易溢折价</Info_Detail>
+		<Info_Detail dateCol="" table="A{port}LLHHXXB">LLHHXXB利率互换</Info_Detail>  
+	        <Info_Detail dateCol="" table="A{port}ZQPZXX">ZQPZXX债券科目对应表</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}etfaccount">etfaccount ETF台账数据表</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}GPSKEP">GPSKEP ETF篮子</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}ZqZtgLt">ZqZtgLt 证券托管流通</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}BXYWXX">BXYWXX 保险业务表</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}YLJYWXX">YLJYWXX</Info_Detail>
+ 			<Info_Detail dateCol="" table="A{port}ETFqsxx">ETF券商信息</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "GZV2.5年份类" >  
+	   <Info_Cls name = "行情数据" >  
+	   	<Info_Detail dateCol="FDATE" table="A{year}JJHZHQ">JJHZHQ证券行情表</Info_Detail>
+	   </Info_Cls>
+	</Info_Cls>
+
+	<Info_Cls name = "GZV2.5其他类" >  
+	   <Info_Cls name = "营改增金融产品转让" >  
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_CJSR_MX">T_YGZ_CJSR_MX金融产品转让台账明细表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_CJSR_HZ">T_YGZ_CJSR_HZ金融产品转让台账汇总表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_CJSR_QS">T_YGZ_CJSR_QS金融产品转让台账清算表</Info_Detail>
+	   </Info_Cls>
+	   <Info_Cls name = "营改增贷款服务收入" >
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_LXSR_MX">T_YGZ_LXSR_MX贷款服务收入台账明细表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_LXSR_HZ">T_YGZ_LXSR_HZ贷款服务收入台账汇总表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_LXSR_QS">T_YGZ_LXSR_QS贷款服务收入台账清算表</Info_Detail>
+	   </Info_Cls>
+       <Info_Cls name = "营改增进项税" >
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_JXS_MX">T_YGZ_JXS_MX营改增进项税台账明细表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_JXS_HZ">T_YGZ_JXS_HZ营改增进项税台账汇总表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_JXS_QS">T_YGZ_JXS_QS营改增进项税台账清算表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_JXS_ZC">T_YGZ_JXS_ZC营改增进项税转出规则信息表</Info_Detail>
+	   </Info_Cls>
+       <Info_Cls name = "营改增增值税暂估" >
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_GZZZ_MX">T_YGZ_GZZZ_MX营改增增值税暂估台账明细表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_GZZZ_HZ">T_YGZ_GZZZ_HZ营改增增值税暂估台账汇总表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_GZZZ_QS">T_YGZ_GZZZ_QS营改增增值税暂估台账清算表</Info_Detail>
+	   </Info_Cls>
+	   <Info_Cls name = "营改增其他" >
+	   	<Info_Detail dateCol="" table="T_FY_KM">T_FY_KM费用类型与科目性质对应关系表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_ZQ_KM">T_ZQ_KM证券品种与科目性质对应关系表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_US_ZH">T_US_ZH中英文对应关系表</Info_Detail>
+	   	<Info_Detail dateCol="FDATE" table="T_YGZ_LSGZYE">T_YGZ_LSGZYE历史估增余额表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_CJFA">T_CJFA创建方案表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_GLFA">T_GLFA关联方案表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_YGZSLSD">T_YGZSLSD营改增税率设定表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_YGZCSSZ">T_YGZCSSZ营改增参数设置表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_ZZSFPSZ">T_ZZSFPSZ增值税发票设置表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_ZQBBSZ">T_ZQBBSZ证券保本设置表</Info_Detail>
+	   	<Info_Detail dateCol="" table="T_ZQBBSZFMX">T_ZQBBSZFMX证券保本设置表</Info_Detail>
+
+	   </Info_Cls>
+	</Info_Cls>
+
+	<Info_Cls name = "GZV2.5年份组合类" >  
+	    <Info_Cls name = "财务数据" >  
+	    		<!-- 只有年份表才能用C_YEAR -->
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LACCOUNT">LACCOUNT科目表</Info_Detail>
+		        <Info_Detail dateCol="FDATE" table="A{year}{port}FCWVCH">FCWVCH财务凭证</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" table="A{year}{port}LBALANCE">LBALANCE余额表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" table="A{year}{port}LTABCELL">LTABCELL报表格式表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" table="A{year}{port}LTABDATALIST">LTABDATALIST报表数据列表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" table="A{year}{port}LTABLIST">LTABLIST报表目录</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" table="A{year}{port}LTABDATA">LTABDATA报表数据表</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls> 
+	
+	<Info_Cls name = "GZV2.5年份月份组合类" >  
+	   <Info_Cls name = "ETF数据" >  
+	   	<Info_Detail dateCol="FDATE" table="A{year}{month}{port}etfta">etftaETF销售数据表</Info_Detail>
+	   </Info_Cls>
+	</Info_Cls>
+</Info_List> 

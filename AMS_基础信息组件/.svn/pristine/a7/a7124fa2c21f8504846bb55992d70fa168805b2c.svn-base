@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- enable 是否启用监控，如果所有monitorType埋点消息发送、分析、存储都会失效！！ -->
+<doctor enable="false">
+	<!-- 监控基础数据数据库地址【关系型】，id：dbsetting中数据源ID，type：指定使用mysql或oracle -->
+	<dataSource id="dbservice001" type="oracle"></dataSource>
+	<!-- 埋点类型配置信息 defaultDataClearPeriod 单位（天），默认值， 在某一个monitorType未配置dataClearPeriod时生效 -->
+	<monitorTypes defaultDataClearPeriod="1" defaultPartition="3" defaultReplicationFactor="2">
+		<!-- dataClearPeriod 埋点数据清理时间 单位（天） partition:分区数 , replicationFactor:复制因子-->
+		<monitorType key="FAST_SERVER_RESOURCE_INFO" dataClearPeriod="1" partition="3" replicationFactor="2"></monitorType>
+	</monitorTypes>
+	<!--用来指定分析数据保留几天的数据(全局默认，monitor.xml中可对指标个性化配置) -->
+	<analyzerDataClear period="1"></analyzerDataClear>
+	<!--用来指定归档数据保留几天的数据(全局默认，monitor.xml中可对指标个性化配置) -->
+	<archiveDataClear period="1"></archiveDataClear>
+	<!-- 监控平台通讯配置 -->
+	<connector>
+		<!-- 监控平台流式分析服务器地址 -->
+		<servers>192.168.2.42:9092,192.168.2.42:9192,192.168.2.42:9292</servers>
+		<!-- 监控埋点消息发送配置 -->
+		<producer>
+			<!-- 发送失败重试次数 -->
+			<retries>10</retries>
+			<!-- 发送消息大小，单位（M） -->
+			<maxSize>10</maxSize>
+		</producer>
+	</connector>
+	<!-- 埋点探针配置,探针的服务实现必须都写到com.yss.fast.doctor.client组件中！！ -->
+	<agents>
+		<!-- period：周期，单位为秒 , implClass:探针逻辑实现类 -->
+		<agent enable="false" period="30" implClass="com.yss.fast.doctor.client.monitor.biz.systeminfo.agent.SystemInfoMonitorAgent"></agent>
+	</agents>
+</doctor>

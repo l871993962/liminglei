@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="XTZHB" name="系统转换表" funcode="secTransInfo" datasource="DB">
+	<!-- 数据导出配置 -->
+	<exp>
+		<data id="secTransInfo">
+			<table-name>T_S_SEC_TRANS</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_SEC_TRANS where C_SEC_VAR_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_SEC_VAR_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="secTransInfo">
+			<check_column>C_SEC_VAR_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

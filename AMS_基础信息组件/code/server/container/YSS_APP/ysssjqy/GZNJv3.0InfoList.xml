@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info_List>
+	<Info_Cls name = "GZNJV3.0公共类" > 
+		<Info_Cls name = "基本信息" >
+			<Info_Detail dateCol="" table="LSETLIST">LSETLIST_套账信息表</Info_Detail>
+			<Info_Detail dateCol="" table="LSETCSSYSJJ">LSETCSSYSJJ_公用基本参数表</Info_Detail>
+			<Info_Detail dateCol="" table="CSJYLV">CSJYLV_设定交易费率</Info_Detail>
+			<Info_Detail dateCol="" table="LVARLIST">LVARLIST_结算参数表</Info_Detail>
+			<Info_Detail dateCol="" table="JJHZXX">JJHZXX_基金汇总信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQXX">CSZQXX_债券信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQLVXX">CSZQLVXX_债券利率信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSZQDMDZB">CSZQDMDZB_证券代码对照表</Info_Detail>
+			<Info_Detail dateCol="" table="CSJJXX">CSJJXX_基金品种信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQSXW">CSQSXW_基金交易席位信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSGDZH">CSGDZH_股东代码表</Info_Detail>
+			<Info_Detail dateCol="" table="QHGSXX">QHGSXX_期货公司信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQHZHXX">CSQHZHXX_期货账户信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSJYLV_GZQH">CSJYLV_GZQH_股指期货费率信息表</Info_Detail>
+			<Info_Detail dateCol="" table="SYS_FUTURES_TRADE_INFO">SYS_FUTURES_TRADE_INFO_期货数据业务表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQYXX">CSQYXX_权益信息表</Info_Detail>
+			<Info_Detail dateCol="" table="CSQHTZ">CSQHTZ_期货台账表</Info_Detail>
+			<Info_Detail dateCol="" table="JTLFXX">JTLFXX_设定计提两费信息</Info_Detail>
+			<Info_Detail dateCol="" table="CSQZXX">CSQZXX_权证信息表</Info_Detail>
+			<Info_Detail dateCol="" table="JJHZ_FH">JJHZ_FH_基金汇总分红</Info_Detail>
+		</Info_Cls> 
+	</Info_Cls>
+	<Info_Cls name = "GZNJV3.0组合类" >  
+	  <Info_Cls name = "交易数据" >   
+	    <Info_Detail dateCol="FDATE" fsetCol ="C_FSET" table="A{port}JJHZGZB">JHZGZB_估值表</Info_Detail>
+	    <Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}LBALANCEINSYLBD">LBALANCEINSYLBD_实际利率表</Info_Detail>
+	    <Info_Detail dateCol="" table="A{port}CSSYSJJ">CSSYSJJ_产品基本信息</Info_Detail>
+	    <Info_Detail dateCol="" table="A{port}CSGDDM">CSGDDM_股东代码</Info_Detail>
+		<Info_Detail dateCol="" table="A{port}CSYJLV">CSYJLV_券商佣金利率</Info_Detail>
+		<Info_Detail dateCol="" table="A{port}CSXWFY">CSXWFY_券商席位处理</Info_Detail>
+		<Info_Detail dateCol="FDATE" fsetCol ="C_FSET" table="A{port}HZJKQS">HZJKQS_交易接口清算库</Info_Detail>
+		<Info_Detail dateCol="" table="A{port}YTDTXX1">YTDTXX1_设定预提及待摊信息</Info_Detail>
+		<Info_Detail dateCol="" table="A{port}YHJXXX">YHJXXX_银行计息信息</Info_Detail>
+		<Info_Detail dateCol="FJYDATE" fsetCol ="C_FSET" table="A{port}YHHGXX">YHHGXX_银行间回购信息</Info_Detail>
+		<Info_Detail dateCol="FJYDATE" fsetCol ="C_FSET" table="A{port}HGGAINXX">HGGAINXX_回购收益详细信息表</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}JJHGDYZQ">JJHGDYZQ_银行间回购抵押债券表</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}XGYWXX">XGYWXX_设定新股业务信息</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}JJYWXX">JJYWXX_设定基金业务信息</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}JJSY">JJSY_基金收益信息</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}YHCKYW">YHCKYW_银行存款业务</Info_Detail>
+		<Info_Detail dateCol="FDATE" fsetCol ="C_FSET" table="A{port}TADATA">TADATA_TA数据</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}ZQLTYW">ZQLTYW_证券流通业务</Info_Detail>
+		<Info_Detail dateCol="FDATE" fsetCol ="C_FSET" table="A{port}YHZQXX">YHZQXX_设定银行间债券买卖信息</Info_Detail>
+		<Info_Detail dateCol="FDATE" fsetCol ="C_FSET" table="A{port}MRYEB">MRYEB_每日余额表</Info_Detail>
+		<Info_Detail dateCol="" fsetCol ="C_FSET" table="A{port}SGKJX">SGKJX_申购款计息设定</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+	<Info_Cls name = "GZNJV3.0年份类" >
+	    <Info_Cls name = "行情数据" >  
+	        <Info_Detail dateCol="FDATE" table="A{year}JJHZHQ">JJHZHQ_证券行情表</Info_Detail>
+	    </Info_Cls>
+	</Info_Cls>
+	<Info_Cls name = "GZNJV3.0年份组合类" >  
+	    <Info_Cls name = "财务数据" >  
+	    		<!-- 只有年份表才能用C_YEAR -->
+	    		<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LCURRENCY">LCURRENCY_币种表</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LACCOUNT">LACCOUNT_科目表</Info_Detail>
+		        <Info_Detail dateCol="FDATE"  fsetCol ="C_FSET" table="A{year}{port}FCWVCH">FCWVCH_财务凭证</Info_Detail>
+		        <Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LBALANCE">LBALANCE_余额表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABCELL">LTABCELL_报表格式表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABDATALIST">LTABDATALIST_报表数据列表</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABLIST">LTABLIST_报表目录</Info_Detail>
+				<Info_Detail dateCol="C_YEAR" fsetCol ="C_FSET" table="A{year}{port}LTABDATA">LTABDATA_报表数据表</Info_Detail>
+		</Info_Cls>   
+	</Info_Cls>
+</Info_List> 

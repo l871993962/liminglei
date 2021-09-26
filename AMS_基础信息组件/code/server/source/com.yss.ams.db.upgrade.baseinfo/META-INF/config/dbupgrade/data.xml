@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此文档的中class都要继承ScripDesc接口 -->
+<dbupgrade code="BaseInfo" name="基础参数组件">
+	<script class="com.yss.ams.db.upgrade.baseinfo.scripts.BaseInfoScriptsImpl" />
+</dbupgrade>

@@ -1,0 +1,328 @@
+--建立临时科目映射表
+insert into md_km_map_temp
+  (facctcode,
+   facctname,
+   facctlevel,
+   facctparent,
+   facctdetail,
+   facctclass,
+   facctattr,
+   facctattrid,
+   fcurcode,
+   fbaldc,
+   famount,
+   fcarryacc,
+   fename,
+   fby,
+   fset,
+   fyear,
+   fjjdm,
+   src)
+select a.facctcode,a.facctname,a.facctlevel,a.facctparent,a.facctdetail,a.facctclass,
+         a.facctattr,a.facctattrid,a.fcurcode,a.fbaldc,a.famount,a.fcarryacc,
+         a.fename,a.fby,a.c_fset,a.c_year
+, (select fsetid from md_lsetList where src='2.5sb'  {and fyear=:year}
+ and fsetid like 'S%' and fsetcode =to_number(a.c_fset) group by fsetid,fyear,fsetcode) as fjjdm,a.src    
+  from md_laccount a where a.src='2.5sb'  {and a.c_year=:year}  and  a.facctdetail = 1  and a.c_fset in(
+'009',
+'008',
+'011',
+'007',
+'006',
+'002',
+'003',
+'005',
+'001',
+'004',
+'010'
+  )
+    and not exists (
+     select 1 from md_km_map mkmp
+     where a.facctcode = mkmp.facctcode
+     and a.c_fset = mkmp.fset  and a.src = mkmp.src
+      {and mkmp.fyear=:year}
+  ) 
+    and exists (select 1 from md_fcwvch f where f.c_fset = a.c_fset  {and f.c_year=:year} and  f.fkmh =a.facctcode and f.src = a.src	
+               union select 1 from md_lbalance f where (f.fbendbal<>0 or f.faendbal<>0) and f.fisdetail=1 
+               and f.c_fset=a.c_fset  {and f.c_year=:year}  and f.facctcode=a.facctcode  and f.src = a.src) ;
+  
+--变更对应科目体系
+update md_km_map_temp set c_plan_code ='SBKM' ;
+
+--更新V4.5科目
+update md_km_map_temp a set c_km_code=substr(a.facctcode, 0, 4) ||'.' 
+      ||substr(a.facctcode, 5, 2) ||'.'
+      ||substr(a.facctcode, 7, 2) ||'.'
+      ||substr(a.facctcode, 9,100) where a.src='2.5sb';
+      
+--更新二级科目带点数据
+update md_km_map_temp a set a.c_km_code= replace(a.c_km_code,'..','')where a.src='2.5sb';
+
+--更新三级科目带点数据
+update md_km_map_temp a set a.c_km_code= substr(c_km_code,0,length(c_km_code)-1) || decode(substr(c_km_code,-1),'.','',substr(c_km_code,-1)) where a.src='2.5sb';
+
+--更新除1002、2209、1204科目以外四级科目代码
+update md_km_map_temp a set a.c_km_code=substr(a.facctcode, 0, 4) ||'.' ||substr(a.facctcode, 5, 2) ||'.'||substr(a.facctcode, 7, 2) ||'.'||'<SEC>'
+where a.src='2.5sb' and a.c_km_code like '%.%.%.%' and a.c_km_code not like '1002.01%' and a.c_km_code not like '2209.%' and a.c_km_code not like '1204.01.%';
+
+--更新佣金
+update md_km_map_temp a set a.c_km_code=substr(a.facctcode, 0, 4) ||'.' ||substr(a.facctcode, 5, 2) ||'.'||substr(a.facctcode, 7, 2) ||'.'||'<TD_CHAN>'
+where a.src='2.5sb' and a.c_km_code like '%.%.%.%' and a.c_km_code  like '2209.01%' ;
+
+--更新科目名称
+update md_km_map_temp a set a.c_km_name=a.facctname where a.src='2.5sb';
+
+--add zhangmingbo 2007 6 -15 
+update md_km_map_temp a set a.c_km_code= '1021.02' where a.src='2.5sb' and facctcode ='10201';
+update md_km_map_temp a set a.c_km_code= '1021.04' where a.src='2.5sb' and facctcode ='10202';
+update md_km_map_temp a set a.c_km_code= '1021.01' where a.src='2.5sb' and facctcode ='10203';
+update md_km_map_temp a set a.c_km_code= '1021.03' where a.src='2.5sb' and facctcode ='10204';
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000001' where a.src='2.5sb' and facctcode ='10020101';
+update md_km_map_temp a set a.c_km_code= '1002.01.02.000002' where a.src='2.5sb' and facctcode ='10020102';
+
+update md_km_map_temp a set a.c_km_code= '1301.01.01.601328' where a.src='2.5sb' and c_km_code like '1301.01.01%';
+update md_km_map_temp a set a.c_km_code= '1301.01.02.601328' where a.src='2.5sb' and c_km_code like '1301.01.02%';
+update md_km_map_temp a set a.c_km_code= '1301.01.03.601328' where a.src='2.5sb' and c_km_code like '1301.01.03%';
+update md_km_map_temp a set a.c_km_code= '1301.01.04.601328' where a.src='2.5sb' and c_km_code like '1301.01.04%';
+update md_km_map_temp a set a.c_km_code= '2207.02' where a.src='2.5sb' and c_km_code like '2207.01' or c_km_code like '2207.03';
+update md_km_map_temp a set a.c_km_code= '1132.54.99.<SEC>' where a.src='2.5sb' and c_km_code like '1132.54.03%';
+update md_km_map_temp a set a.c_km_code= '1132.74.99.<SEC>' where a.src='2.5sb' and c_km_code like '1132.74.03%';
+update md_km_map_temp a set a.c_km_code= '1204.01.01.002002' where a.src='2.5sb' and c_km_code like '1204.01.01.000002%';
+update md_km_map_temp a set a.c_km_code= '1103.58.99.<SEC>' where a.src='2.5sb' and c_km_code like '1103.58.09%';
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000004' where a.src='2.5sb' and c_km_code like '1002.01.04';
+update md_km_map_temp a set a.c_km_code= '6111.24.02' where a.src='2.5sb' and c_km_code like '6111.21.51';
+
+update md_km_map_temp a
+   set (a.c_km_code_p, a.c_dv_km_cls, a.c_dta_code, a.c_dv_issue_mode, a.c_dv_var_dur, 
+   a.c_dv_invest_cls, a.c_port_cls_code, a.c_dai_code, a.c_ca_code, a.c_sec_code,a.c_fee_code,
+   a.c_net_code,a.c_dt_code,a.c_mkt_code,a.c_sec_var_code,a.c_dv_acc_type,a.c_dc_code,a.c_dv_fee_type,
+   a.c_ds_code,a.c_td_chan_code,a.c_cai_curr,a.n_detail,a.c_dai_detai,a.c_dv_bool_type_am,a.c_dv_jd_way,a.c_dv_bool_type_aux) 
+   = (select b.c_km_code_p, b.c_dv_km_cls, b.c_dta_code, b.c_dv_issue_mode, b.c_dv_var_dur, 
+   b.c_dv_invest_cls, b.c_port_cls_code, b.c_dai_code, b.c_ca_code, b.c_sec_code,b.c_fee_code,
+   b.c_net_code,b.c_dt_code,b.c_mkt_code,b.c_sec_var_code,b.c_dv_acc_type,b.c_dc_code,b.c_dv_fee_type,
+   b.c_ds_code,b.c_td_chan_code,b.c_cai_curr,b.n_detail,b.c_dai_detai,b.c_dv_bool_type_am,b.c_dv_jd_way,b.c_dv_bool_type_aux from t_f_sc_km b 
+ where a.c_km_code = b.c_km_code and b.c_plan_code='SBKM') where a.src='2.5sb';
+
+update md_km_map_temp a set a.c_km_code= '1103.73.01.<SEC>' where a.src='2.5sb' and facctattr like '债券投资_未上市企业债券'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1103.33.01.<SEC>' where a.src='2.5sb' and facctattr like '债券投资_企业债券_深圳'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1103.13.01.<SEC>' where a.src='2.5sb' and facctattr like '债券投资_企业债券'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1204.10.33.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_应收新股询价申购款利息_深圳'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1204.10.33.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_企业债券_深圳'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1204.10.13.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_企业债券'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1204.10.73.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_未上市企业债券'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '1204.20.54.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_国家政策金融债券'  and trim(c_dv_km_cls) is null and facctcode like '%GK%'; 
+update md_km_map_temp a set a.c_km_code= '1204.20.15.<SEC>' where a.src='2.5sb' and facctattr like '应收利息_国家政策金融债券'  and trim(c_dv_km_cls) is null and facctcode not like '%GK%'; 
+update md_km_map_temp a set a.c_km_code= '1204.02.04' where a.src='2.5sb' and facctname like '应收深交所备付金利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.02.01' where a.src='2.5sb' and facctname like '应收上交所最低结算备付金利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.02.03' where a.src='2.5sb' and facctname like '应收深交所最低结算备付金利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.02.02' where a.src='2.5sb' and facctname like '应收上交所备付金利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ;
+ 
+update md_km_map_temp a set a.c_km_code= '1204.01.01.001002' where a.src='2.5sb' and facctname like '应收上海存款利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.01.01.001001' where a.src='2.5sb' and facctname like '应收北京存款利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.01.01.001003' where a.src='2.5sb' and facctname like '应收深圳存款利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1204.01.01.001004' where a.src='2.5sb' and facctname like '应收正回购资金利息' and facctattr like '应收利息'  and trim(c_dv_km_cls) is null ;
+ 
+update md_km_map_temp a set a.c_km_code= '1203.02.01.<SEC>' where a.src='2.5sb' and facctname like '应收上交所封闭式基金红利' and facctattr like '应收基金红利'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1203.01.31.<SEC>' where a.src='2.5sb' and facctname like '应收深交所股利' and facctattr like '应收股利_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1203.01.01.<SEC>' where a.src='2.5sb' and facctname like '应收上交所股利' and facctattr like '应收股利'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '2209.01.09.<TD_CHAN>' where a.src='2.5sb' and facctname like '招商证券' and facctattr like '应付佣金'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '2209.01.07.<TD_CHAN>' where a.src='2.5sb' and facctname like '应付中信建投佣金' and facctattr like '应付佣金'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000003' where a.src='2.5sb' and facctname like '深圳存款' and facctattr like '银行存款_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000002' where a.src='2.5sb' and facctname like '上海存款' and facctattr like '银行存款_上海'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000001' where a.src='2.5sb' and facctname like '北京存款' and facctattr like '银行存款'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1002.01.01.000004' where a.src='2.5sb' and facctname like '正回购资金专用帐户' and facctattr like '银行存款'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6011.01.13' where a.src='2.5sb' and facctname like '%' and facctattr like '新股询价申购款利息收入'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '4002.07' where a.src='2.5sb' and facctname like '%' and facctattr like '未实现利得_权证'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '4002.02' where a.src='2.5sb' and facctname like '%' and facctattr like '未实现利得_企业债'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '4002.02' where a.src='2.5sb' and facctname like '%' and facctattr like '未实现利得_可转债'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '4002.01.01' where a.src='2.5sb' and facctname like '股票未实现利得%' and facctattr like '未实现利得'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1103.13.99.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '投资估值增值_企业债'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1103.19.99.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '投资估值增值_国债'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.22.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认沽_未上市_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.42.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认沽_未上市'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.52.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认沽_未上市_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.41.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认购_未上市'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.14.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认沽_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.12.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认沽'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.12.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认沽'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.51.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认购_未上市_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.21.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_百慕大式_认购_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.01' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1221.99' where a.src='2.5sb' and facctname like '%' and facctattr like '其他应收款%'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '2241.01' where a.src='2.5sb' and facctname like '应付结算保证金%' and facctattr like '其他应付款%'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '2241.99' where a.src='2.5sb' and facctname like '其他%' and facctattr like '其他应付款%'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6211.02.31' where a.src='2.5sb' and facctname like '深交所封闭式基金分红收入%' and facctattr like '基金红利收入_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6211.02.53' where a.src='2.5sb' and facctname like '%' and facctattr like '基金红利收入_开放式'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6211.02.01' where a.src='2.5sb' and facctname like '上交所封闭式基金分%' and facctattr like '基金红利收入'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6111.04.31' where a.src='2.5sb' and facctname like '%封闭式%' and facctattr like '基金差价收入_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6111.04.01' where a.src='2.5sb' and facctname like '%封闭式%' and facctattr like '基金差价收入'  and trim(c_dv_km_cls) is null; 
+update md_km_map_temp a set a.c_km_code= '6111.04.23' where a.src='2.5sb' and facctname like '%开放式%' and facctattr like '基金差价收入_开放式'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6111.01.31' where a.src='2.5sb' and facctname like '%' and facctattr like '股票差价收入_深圳'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6011.03.11' where a.src='2.5sb' and facctname like '%清算备付金利息收入%' and facctattr like '存款利息收入'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '6111.01.01' where a.src='2.5sb' and facctname like '%' and facctattr like '股票差价收入'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.11.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认购'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.12.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认沽'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '4002.02' where a.src='2.5sb' and facctname like '%' and facctattr like '未实现利得_国债'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '2207.01' where a.src='2.5sb' and facctname like '%' and facctattr like '应付托管费'  and trim(c_dv_km_cls) is null ; 
+update md_km_map_temp a set a.c_km_code= '1106.14.01.<SEC>' where a.src='2.5sb' and facctname like '%' and facctattr like '权证投资_欧式_认沽_深圳'  and trim(c_dv_km_cls) is null ; 
+
+
+--通过科目代码更新核算项
+update md_km_map_temp a
+   set (a.c_km_code_p, a.c_dv_km_cls, a.c_dta_code, a.c_dv_issue_mode, a.c_dv_var_dur, 
+   a.c_dv_invest_cls, a.c_port_cls_code, a.c_dai_code, a.c_ca_code, a.c_sec_code,a.c_fee_code,
+   a.c_net_code,a.c_dt_code,a.c_mkt_code,a.c_sec_var_code,a.c_dv_acc_type,a.c_dc_code,a.c_dv_fee_type,
+   a.c_ds_code,a.c_td_chan_code,a.c_cai_curr,a.n_detail,a.c_dai_detai,a.c_dv_bool_type_am,a.c_dv_jd_way,a.c_dv_bool_type_aux) 
+   = (select b.c_km_code_p, b.c_dv_km_cls, b.c_dta_code, b.c_dv_issue_mode, b.c_dv_var_dur, 
+   b.c_dv_invest_cls, b.c_port_cls_code, b.c_dai_code, b.c_ca_code, b.c_sec_code,b.c_fee_code,
+   b.c_net_code,b.c_dt_code,b.c_mkt_code,b.c_sec_var_code,b.c_dv_acc_type,b.c_dc_code,b.c_dv_fee_type,
+   b.c_ds_code,b.c_td_chan_code,b.c_cai_curr,b.n_detail,b.c_dai_detai,b.c_dv_bool_type_am,b.c_dv_jd_way,b.c_dv_bool_type_aux from t_f_sc_km b 
+ where a.c_km_code = b.c_km_code and b.c_plan_code='SBKM') where a.src='2.5sb';
+ 
+--通过V2.5四级科目代码更新证券代码 
+update md_km_map_temp a set a.c_sec_code =substr(a.facctcode,9,100) where a.c_km_code like '%<SEC>' ;
+
+update md_km_map_temp a set a.c_sec_code =substr(a.facctcode,6,100) where a.c_km_code like '%<SEC>' and length(trim(facctcode))=11;
+
+
+--根据证券品种更新不明确到市场的科目
+update md_km_map_temp a
+   set a.c_mkt_code = nvl((select b.c_mkt_code
+                             from t_p_sv_sec_base b
+                            where a.c_sec_code = b.c_sec_mkt_code and a.c_sec_var_code=b.c_sec_var_code ),a.c_mkt_code)
+ where a.c_mkt_code='[NA]'and a.src='2.5sb' and a.facctcode not like '6%';
+
+
+
+
+--把未上市的全部默认未上市_网下
+update md_km_map_temp a set a.c_dv_issue_mode='WSS_WX'  where a.c_km_code_p is not null and a.c_dv_issue_mode ='WSS';
+
+
+--按照V25债券信息更新证券内码
+update md_km_map_temp a
+   set a.c_sec_code = nvl((select max(b.fscdm)
+                                 from md_CSZQXX b
+                                where b.fzqlb like '银行间债券%'
+                                  and b.fzqdm = a.c_sec_code
+                        ),a.c_sec_code)
+ where a.c_km_code_p is not null
+   and a.c_km_code like '%<SEC>'
+   and a.c_sec_var_code like 'ZQ%';
+
+
+--第二次 根据证券品种更新不明确到市场的科目  
+update md_km_map_temp a
+   set a.c_mkt_code = nvl((select b.c_mkt_code
+                             from t_p_sv_sec_base b
+                            where a.c_sec_code = b.c_sec_mkt_code and a.c_sec_var_code=b.c_sec_var_code ),a.c_mkt_code)
+where a.c_mkt_code='[NA]'and a.src='2.5sb' and a.facctcode not like '6%';
+
+
+
+--根据交易所市场更新证券代码后缀
+update md_km_map_temp a set a.c_sec_code=a.c_sec_code||' SH' where a.c_mkt_code='XSHG' and a.c_km_code like '%<SEC>' ;
+update md_km_map_temp a set a.c_sec_code=a.c_sec_code||' SZ' where a.c_mkt_code='XSHE' and a.c_km_code like '%<SEC>' ;
+update md_km_map_temp a set a.c_sec_code=a.c_sec_code||' OTC' where a.c_mkt_code='COTC' and a.c_km_code like '%<SEC>' ;
+update md_km_map_temp a set a.c_sec_code=a.c_sec_code||' CY' where a.c_mkt_code='XCFE' and a.c_km_code like '%<SEC>' ;
+
+
+--通过证券信息更新公司企业债实际品种代码
+update md_km_map_temp a
+   set a.c_sec_var_code = nvl((select b.c_sec_var_code
+                             from t_p_sv_sec_base b
+                            where a.c_sec_code = b.c_sec_code),a.c_sec_var_code)
+ where a.c_sec_var_code = 'ZQ_QYGSZ';
+
+--通过证券信息更新金融债实际品种代码
+ update md_km_map_temp a
+   set a.c_sec_var_code = nvl((select b.c_sec_var_code
+                             from t_p_sv_sec_base b
+                            where a.c_sec_code = b.c_sec_code),a.c_sec_var_code)
+ where a.c_sec_var_code = 'ZQ_JRZ';
+
+ 
+--通过V2.5四级科目代码更新交易佣金代码
+update md_km_map_temp a set a.c_td_chan_code =substr(a.facctcode,9,100) where a.c_km_code like '%<TD_CHAN>' ;
+
+
+
+--根据系统现有的席位变更上海的佣金席位
+update md_km_map_temp a
+   set a.c_td_chan_code = substr(a.c_td_chan_code, 2, 100)
+ where a.c_km_code like '%<TD_CHAN>'
+   and a.c_td_chan_code like '0_____'
+   and a.c_td_chan_code not in
+       (select b.c_td_chan_code from t_p_ab_td_chan b);
+--add zhangmingbo 2000 6 12 添加c_org_code 赋值
+update md_km_map_temp a set a.c_org_code =(select c_org_code from t_f_sc_km_aux b where b.c_plan_code ='SBKM' and b.c_km_code=a.c_km_code ) where a.facctcode like '220901%' ;
+
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='130425 CY'  where trim(c_sec_code)='130425' and facctname='13农发25';
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='110023 CY'  where trim(c_sec_code)='110023' and facctname='民生转债';
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='110019 CY'  where trim(c_sec_code)='110019' and facctname='恒丰转债';
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='110015 CY'  where trim(c_sec_code)='110015' and facctname='石化转债';
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='110016 CY'  where trim(c_sec_code)='110016' and facctname='川投转债';
+update md_km_map_temp a set a.c_mkt_code ='XCFE' ,c_sec_code='110006 CY'  where trim(c_sec_code)='110006' and facctname='龙盛转债';
+update md_km_map_temp a set a.c_mkt_code ='XSHE' ,c_sec_code='128002 SZ'  where trim(c_sec_code)='128002' and facctname='12中石油01';
+update  md_km_map_temp m set c_mkt_code =(select  b.c_mkt_code from t_p_sv_sec_base b where b.c_sec_code like m.c_sec_code ||'%') ,c_sec_code=(select b.c_sec_code from t_p_sv_sec_base b where b.c_sec_code like m.c_sec_code ||'%')
+where c_plan_code ='SBKM'   and c_km_code like '%<SEC>%' and c_sec_code not like '%SZ%'
+and c_sec_code not like '%SH%' and c_sec_code not like '%CY%' and c_sec_code not like '%OTC%' and m.fyear>=2008 ;
+--add wangzhipeng 2007 06 21 发来规则修改
+UPDATE md_km_map_temp SET C_SEC_VAR_CODE = 'ZQ_GSZ' WHERE fjjdm LIKE 'SB%'  AND C_km_CODE like ( '1204.10.13%' ) AND  C_SEC_VAR_CODE = 'ZQ_QYZ';
+
+update md_km_map_temp a set c_mkt_code='XCFE',c_sec_code =c_sec_code ||' CY'   where a.src='2.5sb' and facctattr like '应收利息_国家政策金融债券'  and facctcode like '%GK%' and fyear<2008; 
+
+update  md_km_map_temp m set c_mkt_code=(case when m.facctattr like '%银行%' or facctname like '%银行%' then 'XCFE' when  m.facctattr like '%场外%' or facctname like '%场外%' then 'COTC' when  m.facctattr like '%深圳%' or facctname like '%深圳%' then 'XSHE' else  'XSHG' end ), c_sec_code=(case when m.facctattr like '%银行%' or facctname like '%银行%' then c_sec_code ||' CY' when  m.facctattr like '%场外%' or facctname like '%场外%' then c_sec_code ||' OTC'  when  m.facctattr like '%深圳%' or facctname like '%深圳%' then c_sec_code ||' SZ' else  c_sec_code ||' SH' end )    where c_plan_code ='SBKM'   and c_km_code like '%<SEC>%' and c_sec_code not like '%SZ%'
+and c_sec_code not like '%SH%' and c_sec_code not like '%CY%' and c_sec_code not like '%OTC%' and m.fyear<2008 ;
+
+UPDATE md_km_map_temp  m SET C_SEC_VAR_CODE = nvl((select c_sec_var_Code from t_p_sv_sec_base t where t.c_sec_code=m.c_sec_code) ,m.c_sec_var_code ) WHERE fjjdm LIKE 'SB%'  and C_SEC_VAR_CODE like 'ZQ%'  ;
+
+
+update md_km_map_temp set  C_DTA_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DTA_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')        ;       
+update md_km_map_temp set  C_DV_ISSUE_MODE =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DV_ISSUE_MODE) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')          ;     
+update md_km_map_temp set  C_DV_VAR_DUR    =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DV_VAR_DUR   ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')            ;   
+update md_km_map_temp set  C_DV_INVEST_CLS =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DV_INVEST_CLS) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')              ; 
+update md_km_map_temp set  C_DAI_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DAI_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_CA_CODE       =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_CA_CODE      ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_SEC_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_SEC_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_FEE_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_FEE_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_NET_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_NET_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ; 
+update md_km_map_temp set  C_DT_CODE       =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DT_CODE      ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_MKT_CODE      =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_MKT_CODE     ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ; 
+update md_km_map_temp set  C_SEC_VAR_CODE  =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_SEC_VAR_CODE ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_DV_ACC_TYPE   =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DV_ACC_TYPE  ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_DC_CODE       =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DC_CODE      ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_DV_FEE_TYPE   =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DV_FEE_TYPE  ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_DS_CODE       =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_DS_CODE      ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+update md_km_map_temp set  C_TD_CHAN_CODE  =''  where fjjdm like 'SB%' and src='2.5sb' and trim(C_TD_CHAN_CODE ) in ('[NA]','<SEC>','<TD_CHAN>','<CA>')               ;
+
+update md_km_map_temp set c_sec_code='101552040 CY' where facctcode like '%AF5240' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='101569038 CY' where facctcode like '%AF6938' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='1380362 CY' where facctcode like '%D80362' and src='2.5sb';
+update md_km_map_temp set c_sec_code='1380208 CY' where facctcode like '%1380K8' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='1480245 CY' where facctcode like '%1480O5' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='111707141 CY' where facctcode like '%BHI141' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='170206 CY' where facctcode like '%GK1706' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code='1280130 CY' where facctcode like '%1280D0' and src='2.5sb';
+
+update md_km_map_temp a set c_mkt_code=(select c_mkt_code from t_f_sc_km where  c_plan_code='SBKM' and c_km_code =a.c_km_code  )  where facctcode like '1113%' and src='2.5sb';
+
+update md_km_map_temp a set c_mkt_code=(select c_mkt_code from t_f_sc_km where  c_plan_code='SBKM' and c_km_code =a.c_km_code  )  where facctcode like '120423%' and src='2.5sb';
+
+
+update md_km_map_temp set c_sec_code=(case when substr(facctcode,5,1 )='1' then 'DQ'||fjjdm || '_0000'||substr(facctcode,5,2)||' '||c_mkt_code else 'DQ'||fjjdm || '_00000'||substr(facctcode,6,1) ||' '||c_mkt_code end)  where facctcode like '1113%' and src='2.5sb';
+
+update md_km_map_temp set c_sec_code=(case when substr(facctcode,7,1 ) <> '0' then 'DQ'||fjjdm || '_0000'||substr(facctcode,7,2)||' '||c_mkt_code else 'DQ'||fjjdm || '_00000'||substr(facctcode,8,1)||' '||c_mkt_code end)  where facctcode like '120423%' and src='2.5sb';
+
+--插入正式科目映射表
+--insert into md_km_map select * from md_km_map_temp ;
+
+
+--删除临时科目映射表
+--truncate table md_km_map_temp;

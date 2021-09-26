@@ -1,0 +1,631 @@
+--建立科目对照表 
+insert into md_km_map_temp
+  (facctcode,
+   facctname,
+   facctlevel,
+   facctparent,
+   facctdetail,
+   facctclass,
+   facctattr,
+   facctattrid,
+   fcurcode,
+   fbaldc,
+   famount,
+   fcarryacc,
+   fename,
+   fby,
+   fset,
+   fyear,
+   fjjdm,
+   src
+   )
+select a.facctcode,a.facctname,a.facctlevel,a.facctparent,a.facctdetail,a.facctclass,
+         a.facctattr,a.facctattrid,a.fcurcode,a.fbaldc,a.famount,a.fcarryacc,
+         a.fename,a.fby,a.c_fset,a.c_year
+, c.fjjdm,a.src  	
+  from md_laccount a
+  left join md_t_cssysjj c
+    on substr(c.fsetcode,-3) = a.c_fset and a.src=c.src
+  
+  where  a.facctdetail = 1 {and a.c_year=:year}
+  and  not exists (
+     select 1 from md_km_map mkmp
+     where a.facctcode = mkmp.facctcode and a.src = mkmp.src
+     and a.c_fset = mkmp.fset 
+     {and mkmp.fyear=:year}
+  ) 
+   and exists (select 1 from md_fcwvch f where f.c_fset = a.c_fset and {f.c_year=:year} and  f.fkmh =a.facctcode and f.src = a.src 
+               union select 1 from md_lbalance f where (f.fbendbal<>0 or f.faendbal<>0) and f.fisdetail=1  
+               and f.c_fset=a.c_fset and {f.c_year=:year} and f.facctcode=a.facctcode  and f.src = a.src)
+    {and c.fjjdm=:port} ;
+
+update md_km_map_temp set c_plan_code =:c_plan_code ;
+
+--C_DV_KM_CLS 科目类别
+update md_km_map_temp set c_dv_km_cls  = case  when facctclass = '共同类' or (FACCTCODE LIKE '1004%' OR FACCTCODE LIKE '1106%' ) then 'KC_GT' 
+when facctclass = '资产类' then 'KC_ZC' when facctclass = '负债类' then 'KC_FZ' when facctclass = '权益类' then 'KC_QY' when facctclass = '损益类' then 'KC_SY' else ' ' end
+ WHERE (c_dv_km_cls = '' or c_dv_km_cls is null)     ;
+
+--先设默认核算项目
+update md_km_map_temp set C_DAI_CODE  = ' ' ;
+
+--借贷方向C_DV_JD_WAY(JD_J,JD_D)
+update md_km_map_temp set C_DV_JD_WAY  = 'JD_J' WHERE fbaldc = 1 and (C_DV_JD_WAY = '' or C_DV_JD_WAY is null)      ;
+update md_km_map_temp set C_DV_JD_WAY  = 'JD_D' WHERE fbaldc = -1 and (C_DV_JD_WAY = '' or C_DV_JD_WAY is null)     ;
+
+--更新币种
+update md_km_map_temp set c_dc_code = (case when fcurcode = 'RMB' then 'CNY' else fcurcode end) where fcurcode = 'RMB'  ;
+
+--更新 市场代码
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'XSHG'  where a.FACCTATTRID='H'    ;
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'XSHE'  where a.FACCTATTRID='S'    ;
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'XCFE'  where a.FACCTATTRID='Z'    ; 
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'COTC'  where a.FACCTATTRID='Y'    ;
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'CCFX'  where a.FACCTATTRID='J'    ;
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'XHKG'  where a.FACCTATTRID='K'    ;
+
+--更新 投资分类
+UPDATE md_km_map_temp a SET a.C_DV_INVEST_CLS='IC_TD'  where a.FBY='J' ;
+UPDATE md_km_map_temp a SET a.C_DV_INVEST_CLS='IC_FS'  where a.FBY='F' ;
+UPDATE md_km_map_temp a SET a.C_DV_INVEST_CLS='IC_HM'  where a.FBY='C' ;
+UPDATE md_km_map_temp a SET a.C_DV_INVEST_CLS='IC_SL'  where a.FBY='Y' ;
+
+--更新存款类上级科目名称到c_org_code
+UPDATE md_km_map_temp a SET a.c_org_code=(select b.facctname from md_laccount b 
+where b.facctcode=a.facctparent and b.c_fset=a.fset and b.c_year=a.fyear and b.src=a.src)
+where (a.FACCTCODE like '1002%' or a.FACCTCODE like '1003%' or (substr(a.FACCTCODE,1,6) between '112101' and '112106' ) 
+or (substr(a.FACCTCODE,1,6) between '430101' and '430106' ) or a.FACCTATTR like '%存款%协议_%')  ;
+
+--拼接证券内码
+update md_km_map_temp a
+   SET a.c_sec_code = (substr(a.facctcode,length(a.facctcode)-5,6)||' '||case when FACCTATTRID ='H' then 'SH' when FACCTATTRID = 'S' then 'SZ' when FACCTATTRID ='Y' then 'OTC'
+   when FACCTATTRID ='K' then 'HK' when FACCTATTRID = 'Z' then (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') else ' ' end)                       
+  where (a.FACCTATTR like '%债券%' or a.FACCTATTR like '%基金%' or a.FACCTATTR like '%股票%' or a.FACCTATTR like '%回购%' or a.FACCTATTR like '%融资券%' or a.FACCTATTR like '%票据%') AND a.facctlevel=6 AND c_km_Code is null;
+
+--通过基本信息修正品种
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code ),a.c_Sec_Var_Code)
+           where (a.FACCTATTR like '%债券%' or a.FACCTATTR like '%基金%' or a.FACCTATTR like '%股票%' or a.FACCTATTR like '%回购%' or a.FACCTATTR like '%融资券%' or a.FACCTATTR like '%票据%')  ;
+          
+--所有资产默认为普通，已上市
+update md_km_map_temp a set  c_dta_code = 'PT', C_DV_ISSUE_MODE = 'SS' 
+  where (a.FACCTATTR like '%债券%' or a.FACCTATTR like '%基金%' or a.FACCTATTR like '%股票%' or a.FACCTATTR like '%融资券%' or a.FACCTATTR like '%票据%') AND a.facctlevel=6  ;
+
+--新股
+update md_km_map_temp a set C_DV_ISSUE_MODE = 'WSS_WS' 
+  where a.FACCTATTR like '%新股%'  AND a.facctlevel=6  ;
+  
+--基金_开放式_保险产品
+update md_km_map_temp a set  c_dta_code = ' ', C_DV_ISSUE_MODE = ' ' 
+  where a.FACCTATTR like '%基金_开放式_保险产品%' AND a.facctlevel=6  ;
+  
+--银行存款、备付金、保证金 
+update md_km_map_temp a set C_DAI_CODE  = 'HBZJ',c_ca_code = fjjdm||'_'|| facctcode
+  WHERE (FACCTATTR like '银行存款%' or FACCTATTR like '清算备付金%' or FACCTATTR like '最低备付金%' or FACCTATTR like '结算保证金%' or FACCTATTR like '交易保证金%' or FACCTATTR like '存出保证金%') 
+  AND facctclass = '资产类'  ;
+    
+--更新存款类别
+update md_km_map_temp a set a.c_dv_acc_type  = (select c_dv_acc_type from T_P_BI_CASH_ACC b where a.c_ca_code = b.c_ca_code) where a.c_dv_acc_type = ''     ; 
+update md_km_map_temp a set a.c_dc_code  = (select c_dc_code from T_P_BI_CASH_ACC b where a.c_ca_code = b.c_ca_code) where a.c_dv_acc_type = ''     ; 
+
+--股票投资
+update md_km_map_temp set C_DAI_CODE  = 'ZQTZ_CB' WHERE FACCTATTR like '%投资%' AND facctclass = '资产类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'ZQTZ_CB',C_DV_ISSUE_MODE ='SS' WHERE FACCTATTR like '%股票投资%' AND facctclass = '资产类'     ;
+update md_km_map_temp set c_sec_var_code = 'GP_GP', C_DV_ISSUE_MODE = 'WSS_WS' WHERE  FACCTATTR like '%股票投资_新股%'  AND facctclass = '资产类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'ZQTZ_CB',C_DV_ISSUE_MODE ='SS',C_DTA_CODE = 'PT' WHERE FACCTATTR like '%长期股权投资%' AND facctclass = '资产类' ;
+--股票                          
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code = 'GP_GP'
+                          where a.facctclass = '资产类' AND a.facctattr like '%股票投资%'  ;
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code = 'GP_GQ',c_mkt_code =  'NEEQ' ,c_sec_code = SUBSTR(FACCTCODE,9) || ' OC'
+                          where a.facctclass = '资产类' AND a.facctattr like '%长期股权投资%'  ;
+
+update md_km_map_temp set c_dta_code = 'XY' where FACCTATTR like '股票投资%信用%'  AND facctclass = '资产类'     ;
+
+
+-- 词汇 'WSS_WX_FGK ' 后面不是空格，而是换行 (换行符已改为删除)
+update md_km_map_temp set C_DV_ISSUE_MODE = 'WSS_WX_FGK' WHERE FACCTATTR like '%投资%非公开%' and (FACCTATTR like '%新股%' or FACCTATTR like '%未上市%') AND facctclass = '资产类'  ;
+update md_km_map_temp set C_SEC_VAR_CODE = 'GP_GP' where facctattr like '股票投资_新股%'     ;
+
+--估值增值
+update md_km_map_temp set C_DAI_CODE  = 'ZQTZ_GYBD' WHERE FACCTATTR like '%价值调整%' AND facctclass = '资产类'     ;  
+ 
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'XCFE',a.C_SEC_VAR_CODE='ZQ_QT', a.C_DV_ISSUE_MODE='' 
+ where a.FACCTATTR like '%其他债券'  AND a.facctclass = '资产类' and facctname like '%期%年%' and (c_km_Code is null or length(c_km_Code)<2) ;
+ 
+----应收利息 上市代码相同，证券内码不同
+update md_km_map_temp a
+   SET a.c_sec_code = (substr(a.facctcode,length(a.facctcode)-5,6)||' '||case when FACCTATTRID ='H' then 'SH' when FACCTATTRID = 'S' then 'SZ' when FACCTATTRID ='Y' then 'OTC'
+   when FACCTATTRID ='K' then 'HK' when FACCTATTRID = 'Z' then (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') else ' ' end)  
+                          where ( a.FACCTATTR like '%应收利息_%债%' or a.FACCTATTR like '%应收利息_%融资券%' or FACCTATTR  LIKE '应收利息_%票据%' or FACCTATTR  LIKE '应收利息_%资产%证券%')
+                             AND a.facctclass = '资产类' 
+                          and (c_sec_var_code=' ' or c_sec_var_code is null)  ;
+
+update md_km_map_temp set C_DTA_CODE = 'PT' WHERE FACCTATTR like '应收利息%债%' and c_dta_code is null;
+update md_km_map_temp set C_DV_ISSUE_MODE = 'SS' WHERE FACCTATTR like '应收利息%债%' and C_DV_ISSUE_MODE is null;
+update md_km_map_temp set C_DTA_CODE = 'PT' WHERE FACCTATTR like '应收利息%资产证券化%' and c_dta_code is null;
+update md_km_map_temp set C_DV_ISSUE_MODE = 'SS' WHERE FACCTATTR like '应收利息%资产证券化%' and C_DV_ISSUE_MODE is null;
+
+update md_km_map_temp set C_SEC_VAR_CODE ='HG_ZYS' WHERE FACCTATTR like '应收利息%回购%'  ;
+update md_km_map_temp set C_SEC_VAR_CODE ='HG_MDS' WHERE FACCTATTR like '应收利息%买断式回购%'      ;
+ 
+        
+--债券溢折价
+update md_km_map_temp set C_DAI_CODE  = 'ZQTZ_YZJ' WHERE (FACCTATTR like '%溢折价%' ) AND facctclass = '资产类'     ;  
+
+--更新理财产品投资方式
+UPDATE md_km_map_temp a
+   SET a.c_dv_invest_mode =  nvl((select b.c_dv_qut_mod  from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code and (c_sec_var_code like 'JJ%' or c_sec_var_code like 'LC%')),a.c_dv_invest_mode)
+        where a.FACCTATTR like '%基金%';
+    
+--update md_km_map_temp a set a.C_DV_ISSUE_MODE = '' where c_mkt_code <> 'COTC' and  a.facctclass = '资产类' AND a.facctattr like '%基金投资%'     ;
+
+--票据投资                         
+update md_km_map_temp a set a.c_sec_var_code = 'LC_PJ' where a.facctattr like '%票据投资%' and a.facctclass = '资产类'     ;
+                                                              
+--信托
+UPDATE md_km_map_temp a SET a.c_mkt_code = 'COTC' , C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' where a.FACCTATTR like '%信托计划%' AND a.facctclass = '资产类';
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code = substr(a.facctcode,length(a.facctcode)-5,6)||' OTC'
+                         where a.FACCTATTR like '%信托计划%' AND a.facctclass = '资产类'   ;
+
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code = 'LC_XT' where a.c_sec_code <> ' '  AND a.facctclass = '资产类' AND a.facctattr like '%信托计划%'     ;
+
+--买入返售证券
+update md_km_map_temp set C_DAI_CODE  = 'MRFSJRZC' WHERE FACCTATTR like '买入%返售证券%' AND facctclass = '资产类'     ;
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  substr(a.facctcode,length(a.facctcode)-5,6)||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+        where a.FACCTATTR like '%买入%返售证券%' AND a.facctclass = '资产类'     ;
+
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  case when a.facctattr like '%买断式%' then 'HG_MDS' else 'HG_ZYS' end
+     where a.c_sec_code <> ' '  AND a.facctclass = '资产类' AND a.facctattr like '%买入%返售证券%'     ;
+                                                    
+update md_km_map_temp set C_DAI_CODE  = 'YSLX' WHERE FACCTATTR like '%应收利息%' AND facctclass = '资产类'     ;  
+--更新 应收利息－现金(保证金) 的 核算项、账户代码
+update md_km_map_temp a set C_DAI_CODE  = 'YSLX_ZJ' , c_ca_code = fjjdm || '_' ||
+   (select distinct regexp_substr(fvchzy,'[0-9]+',12,1) fkmdm
+                       from md_fcwvch b
+                      where b.fkmh = a.facctcode and b.c_year=a.fyear and b.fzqjyfs = 'JX'
+                        and b.c_fset =  a.fset and b.fpzly = 'FYHJX' and rownum =1)
+ WHERE (FACCTATTR like '%应收利息%金%' or FACCTATTR = '应收利息' or FACCTATTR = '应收利息_银行存款_活期')
+   AND facctclass = '资产类'     ; 
+
+UPDATE md_km_map_temp a SET a.c_mkt_code = ''  where a.FACCTATTR like '%应收利息%存款'  AND a.facctclass = '资产类'     ;
+update md_km_map_temp a set a.c_mkt_code = '' where a.FACCTATTR like '应收利息' AND facctclass = '资产类'     ;
+update md_km_map_temp a set a.c_mkt_code = '',c_dta_code = ' ', C_DV_ISSUE_MODE = ' '  where a.FACCTATTR like '%保证金%'     ;
+
+--更新存款类别
+update md_km_map_temp a set a.c_dv_acc_type  = (select c_dv_acc_type from T_P_BI_CASH_ACC b where a.c_ca_code = b.c_ca_code) 
+where a.c_ca_code <> ' '  and facctattr like '%应收利息%'     ;
+--根据现金账户代码更新账记类型
+update md_km_map_temp a
+   set a.C_DV_ACC_tYPE  =
+       (select C_DV_ACC_tYPE 
+          from T_P_BI_CASH_ACC  b
+         where b.c_ca_code = a.c_ca_code
+  ) where NVL(C_CA_CODE,' ') <> ' '     ;
+ 
+--应收申购款
+update md_km_map_temp set C_DAI_CODE  = 'YSK_SGK',c_ds_code = 'TAXS_SG' 
+ WHERE FACCTATTR = '应收申购款' AND facctclass = '资产类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'YSK_SGK',c_ds_code = 'TAXS_ZR' 
+ WHERE FACCTATTR = '应收申购款_转入' AND facctclass = '资产类'     ;
+
+--应收利息_证券
+update md_km_map_temp 
+ set C_DAI_CODE  = 'YSLX_ZQ' WHERE (FACCTATTR like '应收利息_%回购%' or FACCTATTR  LIKE '应收利息_%债%' or FACCTATTR  LIKE '应收利息_%票据%' 
+ or FACCTATTR  LIKE '应收利息_%资产证券化%')  AND facctclass = '资产类'     ;  
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  substr(a.facctcode,length(a.facctcode)-5,6) ||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+         where a.FACCTATTR like '%应收利息_%回购%' AND a.facctclass = '资产类'     ;
+
+--应收股利
+update md_km_map_temp set C_DAI_CODE  = 'YSK_GL',C_SEC_VAR_CODE ='GP_GP',C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '应收股利%' AND facctclass = '资产类'     ;  
+
+update md_km_map_temp set C_DV_ACC_TYPE = 'ACC_EX_RES',c_mkt_code=' ' WHERE FACCTATTR like '%备付金%' ;
+                         
+--应收基金红利_开放式_货币基金
+UPDATE md_km_map_temp a SET c_sec_var_code = 'JJ_KFS' ,C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ where a.FACCTATTR like '应收红利%基金%'  AND a.facctclass = '资产类'     ;
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code = substr(a.facctcode,length(a.facctcode)-5,6)||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+       where a.FACCTATTR = '应收红利_基金_开放式_货币'  AND a.facctclass = '资产类'     ;
+
+UPDATE md_km_map_temp a SET a.c_Sec_Var_Code =  'JJ_KFS_HBX'   where a.c_sec_code <> ' ' 
+   and a.facctclass = '资产类' and a.FACCTATTR like '应收红利_基金_开放式_货币'     ;
+ 
+update md_km_map_temp set C_DAI_CODE  = 'YSK_GL' WHERE FACCTATTR like '应收红利%基金%' AND facctclass = '资产类'     ;  
+
+
+       
+UPDATE md_km_map_temp a SET a.c_Sec_Var_Code =  'JJ_FBS'   where a.facctname like '%封闭%'
+   and a.facctclass = '资产类' and a.FACCTATTR like '应收红利%基金%'     ;
+
+--其他应收款
+update md_km_map_temp set C_DAI_CODE  = 'YSK_QTK' WHERE FACCTATTR like '其他应收款%' AND facctclass = '资产类'     ;  
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where a.facctname like b.c_fee_name || '%' ) where facctattr = '其他应收款'     ;
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where b.c_fee_name like a.facctname  || '%') where facctattr = '其他应收款' and a.C_FEE_CODE is null     ;
+update md_km_map_temp set C_FEE_CODE  = 'QTL_ZQLX' WHERE FACCTATTR like '其他应收款%利息%'  AND facctclass = '资产类'     ;
+update md_km_map_temp set C_FEE_CODE  = 'QTL_QT' WHERE FACCTATTR like '其他应收款%' and C_FEE_CODE IS NULL AND facctclass = '资产类'     ;
+update md_km_map_temp set C_MKT_CODE  = ' ' WHERE FACCTATTR like '其他应收款%' and C_MKT_CODE IS not NULL AND facctclass = '资产类'     ;
+
+--负债类
+--卖出回购证券款
+update md_km_map_temp set C_DAI_CODE  = 'MCHGJRZC' ,
+ c_sec_var_code =case when facctattr like '%买断式%' then 'HG_MDS' else 'HG_ZYS' end
+   WHERE FACCTATTR like '卖出%回购证券款%' AND facctclass = '负债类'     ;                            
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  substr(a.facctcode,length(a.facctcode)-5,6)||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END),
+   a.c_sec_var_code =case when a.facctattr like '%买断式%' then 'HG_MDS' else 'HG_ZYS' end
+     where a.FACCTATTR like '%卖出%回购证券款%' AND a.facctclass = '负债类' ;
+UPDATE md_km_map_temp a 
+ set C_SEC_VAR_CODE = 'HG_ZYS', c_sec_code = substr(FACCTCODE,-4)||'_'|| (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE')
+   where a.FACCTATTR LIKE '卖出%回购证券款%'  and a.FACCTATTRID='Z' and facctcode like '%R0__' AND a.facctclass = '负债类'   ;                        
+--应付利息
+--应付利息_回购
+update md_km_map_temp set C_DAI_CODE  = 'YFLX_ZQ',C_SEC_VAR_CODE ='HG_ZYS' WHERE FACCTATTR like '应付利息%回购' AND facctclass = '负债类'     ; 
+
+--应付利息更新C_SEC_CODE
+update md_km_map_temp a set C_SEC_CODE  = substr(a.facctcode,length(a.facctcode)-5,6)||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END) WHERE FACCTATTR like '应付利息%回购%' 
+    and length(a.facctcode)=14 AND facctclass = '负债类'   and NVL(c_sec_code,' ') not like 'R%'  ;
+update md_km_map_temp a set C_SEC_CODE  = 'HG9999 '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+  WHERE FACCTATTR like '应付利息%回购%' 
+    and length(a.facctcode)=10 AND facctclass = '负债类'     ;
+UPDATE md_km_map_temp a   SET a.c_Sec_Var_Code = 'HG_ZYS'
+     where  a.facctclass = '负债类' AND  a.FACCTATTR like '%应付利息_%回购%' ;
+
+--应付佣金(应付交易费用_佣金)
+update md_km_map_temp set C_DAI_CODE  = 'YFK_FY_YJ',C_MKT_CODE='' WHERE FACCTATTR like '应付佣金%' AND facctclass = '负债类'     ; 
+
+update md_km_map_temp a set c_td_chan_code=' ',C_ORG_CODE=nvl((select c_org_code from t_p_ab_td_chan b where c_td_chan_code=substr(a.facctcode,length(a.facctcode)-4)),' ') 
+where  FACCTATTR like '应付佣金%' and FACCTATTRID='H' and facctclass = '负债类' and TRIM(C_ORG_CODE) is null;
+update md_km_map_temp a set c_td_chan_code=' ',C_ORG_CODE=nvl((select c_org_code from t_p_ab_td_chan b where c_td_chan_code=substr(a.facctcode,length(a.facctcode)-5)),' ') 
+where  FACCTATTR like '应付佣金%' and FACCTATTRID='S' and facctclass = '负债类' and TRIM(C_ORG_CODE) is null;
+
+--应付营运费用
+update md_km_map_temp set C_DAI_CODE  = 'YFK_YYF',C_FEE_CODE = 'YYL_GLF' WHERE FACCTATTR like '其他应付款_管理费' AND facctclass = '负债类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'YFK_YYF',C_FEE_CODE = 'YYL_TGF' WHERE FACCTATTR like '其他应付款_托管费' AND facctclass = '负债类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'YFK_YYF',C_FEE_CODE = 'YYL_YJBCF' WHERE FACCTATTR like '其他应付款_业绩报酬' AND facctclass = '负债类'     ;
+--应付销售费
+update md_km_map_temp set C_DAI_CODE  = 'YFK_YYF',C_FEE_CODE = 'YYL_XSF' WHERE FACCTATTR like '其他应付款_销售费' AND facctclass = '负债类'     ;  
+--应付费用
+update md_km_map_temp set C_DAI_CODE  = 'YFK_QTK',C_FEE_CODE = 'SFL_JYFJF' WHERE FACCTATTR like '其他应付款_教育费附加' AND facctclass = '负债类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'YFK_SF_ZQ_YSX',C_FEE_CODE = 'SFL_CJS' WHERE FACCTATTR like '应交税金_城建税' AND facctclass = '负债类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'YFK_SF_ZQ_YSX',C_FEE_CODE = 'SFL_YYS' WHERE FACCTATTR like '应交税金_营业税' AND facctclass = '负债类'     ;  
+
+--应付赎回款
+update md_km_map_temp set C_DAI_CODE  = 'YFK_SHK',C_DS_CODE = 'TAXS_SH' WHERE FACCTATTR like '应付赎回款%' AND facctclass = '负债类'     ;  
+update md_km_map_temp set C_DS_CODE = 'TAXS_ZC' WHERE FACCTATTR like '应付赎回款_转出%' AND facctclass = '负债类'     ;
+--应付赎回费
+update md_km_map_temp set C_DAI_CODE  = 'YFK_SHF',C_DS_CODE = 'TAXS_SH' WHERE FACCTATTR like '应付赎回费%' AND facctclass = '负债类'     ;  
+update md_km_map_temp set C_DS_CODE = 'TAXS_ZC' WHERE FACCTATTR like '应付赎回费_转出%' AND facctclass = '负债类'     ;
+
+--其他应付款
+update md_km_map_temp set C_DAI_CODE  = 'YFK_QTK' WHERE FACCTATTR like '%其他应付款%'  AND facctclass = '负债类'  AND  trim(C_DAI_CODE) IS NULL ;  
+--update md_km_map_temp set C_FEE_CODE  = 'YFL_FXJ' WHERE FACCTATTR like '其他应付款_风险准备金'  AND facctclass = '负债类'     ;
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where a.facctname like b.c_fee_name || '%' ) where facctattr = '其他应付款'     ;
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where b.c_fee_name like a.facctname  || '%') where facctattr = '其他应付款' and a.C_FEE_CODE is null     ;
+--没有匹配上的放入科目“其他应付款_其他”
+update md_km_map_temp a set a.C_FEE_CODE  = 'QTL_QT' where facctattr like '%其他应付款%' and trim(a.C_FEE_CODE) is null     ;
+--应付收益
+update md_km_map_temp set c_dai_code = 'YFK_LR' where facctattr like '%应付收益%' and facctclass = '负债类'     ;
+
+--共同类
+update md_km_map_temp set C_DAI_CODE  = 'ZQQSK' WHERE FACCTATTR LIKE '证券清算款%' 
+ AND C_DV_KM_CLS = 'KC_GT'     ;
+ 
+--证券清算款_场外(银行间)
+update md_km_map_temp set C_DAI_CODE ='ZQQSK_SQK'  WHERE FACCTATTR LIKE '证券清算款%' and facctname like '%开放式%' AND C_DV_KM_CLS = 'KC_GT' ;  
+
+--ETF
+update md_km_map_temp set C_DAI_CODE = 'ZQQSK_XJCE' WHERE FACCTATTR like '证券清算款%' AND FACCTNAME LIKE '%现金差额%' AND C_DV_KM_CLS = 'KC_GT';
+update md_km_map_temp set C_DAI_CODE = 'ZQQSK_YTTD_KS' WHERE FACCTATTR = '证券清算款' AND FACCTNAME LIKE '%退补款%' AND C_DV_KM_CLS = 'KC_GT';
+update md_km_map_temp set C_DAI_CODE = 'ZQQSK_XJTD' WHERE FACCTATTR = '证券清算款' AND FACCTNAME LIKE '%现金替代款%' AND C_DV_KM_CLS = 'KC_GT';
+
+--证券清算款_新股
+update md_km_map_temp set C_DAI_CODE  = 'ZQQSK_SQK' WHERE FACCTATTR like '证券清算款_新股%' AND C_DV_KM_CLS = 'KC_GT'     ;  
+
+--证券清算款_非T+1清算_
+update md_km_map_temp set C_DAI_CODE  = 'ZQQSK_SQK' WHERE FACCTATTR like '证券清算款_非T+1%' AND C_DV_KM_CLS = 'KC_GT'   ;  
+--update md_km_map_temp set C_DS_CODE = 'TAXS_SG' WHERE FACCTATTR LIKE '证券清算款_场外%申购%' AND facctclass = '共同类'     ;
+--update md_km_map_temp set C_DS_CODE = 'TAXS_SH' WHERE FACCTATTR LIKE '证券清算款_场外%赎回%' AND facctclass = '共同类'     ;
+
+
+--衍生工具
+update md_km_map_temp set C_SEC_VAR_CODE = 'QH_GZ' WHERE FACCTATTR LIKE '套期工具%股指期货%' AND C_DV_KM_CLS = 'KC_GT'     ;
+update md_km_map_temp set C_SEC_VAR_CODE = 'QH_ZQ' WHERE FACCTATTR LIKE '套期工具%国债期货%' AND C_DV_KM_CLS = 'KC_GT'     ;
+update md_km_map_temp set C_DAI_CODE  = 'YSGJ_CB' WHERE FACCTATTR LIKE '套期工具%期货%' AND C_DV_KM_CLS = 'KC_GT'     ;
+update md_km_map_temp set C_DAI_CODE  = 'YSGJ_CDCB' WHERE FACCTATTR like '套期工具%期货_冲抵%' AND C_DV_KM_CLS = 'KC_GT' ;
+update md_km_map_temp set C_DAI_CODE  = 'YSGJ_GYBD' WHERE FACCTATTR  LIKE '价值调整_套期工具%期货%'  AND C_DV_KM_CLS = 'KC_GT'   ;
+update md_km_map_temp set C_DTA_CODE = 'TB_BUY' WHERE FACCTATTR like '%期货%多头%' AND C_DV_KM_CLS = 'KC_GT'    ;
+update md_km_map_temp set C_DTA_CODE = 'TB_SELL' WHERE FACCTATTR like '%期货%空头%' AND C_DV_KM_CLS = 'KC_GT'    ;
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  (select b.c_sec_code  from t_p_sv_sec_base b
+                        where substr(b.c_sec_code,0,6) = substr(a.facctcode,length(a.facctcode)-5,6) and b.c_sec_var_code like 'QH%' 
+                         AND B.C_MKT_CODE = A.C_MKT_CODE)
+                          where a.FACCTATTR like '套期工具%期货%' AND LENGTH(A.FACCTCODE)=19 AND a.C_DV_KM_CLS = 'KC_GT' and c_km_Code is null   ;
+
+--未实现利得
+update md_km_map_temp set C_DAI_CODE  = 'ZBGJ' WHERE FACCTATTR like '%未实现利得%' AND facctclass = '权益类'     ;   
+
+--实收资本
+update md_km_map_temp set C_DAI_CODE  = 'SSZB' ,c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1) WHERE FACCTATTR like '实收资本%' AND facctclass = '权益类'     ;   
+update md_km_map_temp set C_DAI_CODE  = 'SSZB_ZYZJ' , C_FEE_CODE='SSZB_ZH',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1) WHERE FACCTATTR like '实收资本%' AND FACCTNAME='帐户往来' AND facctclass = '权益类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'SSZB_ZYZJ' , C_FEE_CODE='SSZB_NB',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1) WHERE FACCTATTR like '实收资本%' AND FACCTNAME='内部往来' AND facctclass = '权益类'     ; 
+--本年利润
+update md_km_map_temp set C_DAI_CODE  = 'BNLR_YSX' WHERE FACCTATTR like '本期收益' AND facctclass = '权益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'BNLR_YSX',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1) WHERE FACCTATTR like '本期收益_已实现' AND facctclass = '权益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'BNLR_WSX',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1) WHERE FACCTATTR like '本期收益_未实现' AND facctclass = '权益类'     ;  
+
+--未分配收益
+update md_km_map_temp set C_DAI_CODE  = 'LRFP_WFP_YSX',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1)
+ WHERE FACCTATTR like '利润分配_未分配利润%' AND facctclass = '权益类'     ; 
+--利润分配_未分配利润_已实现
+update md_km_map_temp set C_DAI_CODE  = 'LRFP_WFP_YSX',c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1)
+ WHERE FACCTATTR like '利润分配_未分配利润_已实现%' AND facctclass = '权益类'     ;  
+--利润分配_未分配利润_未实现
+update md_km_map_temp set C_DAI_CODE  = 'LRFP_WFP_WSX' ,c_port_cls_code = regexp_substr(facctname,'[0-9]+',1,1)
+ WHERE FACCTATTR like '利润分配_未分配利润_未实现%' AND facctclass = '权益类'     ;  
+
+--收益分配_应付收益
+update md_km_map_temp set C_DAI_CODE  = 'LRFP_YFLR' WHERE FACCTATTR like '利润分配_应付收益' AND facctclass = '权益类'     ;  
+
+--权益类分级组合容错处理
+update md_km_map_temp set c_port_cls_code = '' where c_port_cls_code not in (select c_port_cls_code from t_p_aa_port_cls) and facctclass = '权益类'     ;
+
+--更新存款类别
+update md_km_map_temp a set a.c_dv_acc_type  = (select c_dv_acc_type from T_P_BI_CASH_ACC b where a.c_ca_code = b.c_ca_code) where a.c_dv_acc_type = ''     ; 
+
+--投资费用
+update md_km_map_temp set C_DAI_CODE  = 'QTFY',C_FEE_CODE = 'QTL_QT' WHERE FACCTATTR like '投资费用_其他' AND facctclass = '损益类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'YYFY',C_FEE_CODE = 'YYL_GLF' WHERE FACCTATTR like '投资费用_管理费' AND facctclass = '损益类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'YYFY',C_FEE_CODE = 'YYL_TGF' WHERE FACCTATTR like '投资费用_托管费' AND facctclass = '损益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'JYFY',C_FEE_CODE = 'YYL_YJBCF' WHERE FACCTATTR like '投资费用_业绩报酬' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'QTFY',C_FEE_CODE = 'QTL_KHF' WHERE FACCTATTR like '投资费用_银行费用' AND facctclass = '损益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'YYSF_ZQ_YSX',C_FEE_CODE = 'SFL_YYS' WHERE FACCTATTR like '营业税金%' AND facctclass = '损益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'YYSF',C_FEE_CODE = 'SFL_JYFJF' WHERE FACCTATTR like '营业税金_附加_教育费附加%' or (FACCTATTR like '营业税金_附加%' and FACCTNAME like '教育费附加%') AND facctclass = '损益类'     ; 
+update md_km_map_temp set C_DAI_CODE  = 'YYSF',C_FEE_CODE = 'SFL_CJS' WHERE FACCTATTR like '营业税金_附加_城建税%' or (FACCTATTR like '营业税金_附加%' and FACCTNAME like '城建税%') AND facctclass = '损益类'     ;  
+update md_km_map_temp set C_DAI_CODE  = 'YYSF',C_FEE_CODE = 'SFL_YYS' WHERE FACCTATTR like '营业税金_附加%' and FACCTNAME like '河道维护管理费%' AND facctclass = '损益类'     ; 
+
+update md_km_map_temp set C_DAI_CODE = 'TZSY_CJSR' WHERE FACCTATTR like '%投资收益%价差%' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_DTA_CODE = 'TL_BUY' WHERE FACCTATTR like '投资收益_套期工具%股指期货%多头%' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_DTA_CODE = 'TL_SELL' WHERE FACCTATTR like '投资收益_套期工具%股指期货%空头%' AND facctclass = '损益类'     ;
+
+--差价收入
+update md_km_map_temp set C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%价差%' and facctclass = '损益类' ;
+update md_km_map_temp set C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%' AND FACCTATTR not like '%期货%' and facctclass = '损益类' ;
+update md_km_map_temp set C_MKT_CODE ='XSHE',C_SEC_VAR_CODE = 'GP_GP_CYB' WHERE FACCTATTR like '%投资收益%' AND FACCTATTR like '%创业板%'  AND facctclass = '损益类'     ; 
+ 
+
+--利息收入
+update md_km_map_temp set C_DAI_CODE = 'LXSR_ZJ',C_DV_ACC_TYPE = 'ACC_SAV',c_ca_code = fjjdm||'_'|| facctcode WHERE FACCTATTR like '%存款利息收入%'  AND facctclass = '损益类'     ;  
+update md_km_map_temp set C_DAI_CODE = 'LXSR_ZJ',C_DV_ACC_TYPE = 'ACC_EX_RES',c_ca_code = fjjdm||'_'|| facctcode WHERE FACCTATTR like '%利息收入%' and FACCTATTR like '%备付金%' AND facctclass = '损益类';  
+update md_km_map_temp set C_DAI_CODE = 'LXSR_ZJ',C_DV_ACC_TYPE = decode(FACCTATTRID,'H','ACC_TD_BAIL_CG','S','ACC_TD_BAIL_CS','ACC_TD_BAIL'),
+C_CA_CODE = fjjdm||'_'|| facctcode,c_dta_code = ' ', C_DV_ISSUE_MODE = ' ' WHERE FACCTATTR like '%利息%' and FACCTATTR like '%保证金%' AND facctclass = '损益类';
+--股利
+update md_km_map_temp set C_DAI_CODE  = 'TZSY_HLSR', C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%股利%' AND facctclass = '损益类';
+--红利
+update md_km_map_temp set C_DAI_CODE  = 'TZSY_HLSR', C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%红利%' AND facctclass = '损益类';
+--未实现
+update md_km_map_temp set C_DAI_CODE  = 'GYBD', C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%未实现%' AND facctclass = '损益类';
+--债券利息收入
+update md_km_map_temp set C_DAI_CODE  = 'LXSR_ZQ', C_DTA_CODE = 'PT',C_DV_ISSUE_MODE='SS' 
+ WHERE FACCTATTR like '%投资收益%利息%' AND FACCTATTR not like '%保证金%' AND facctclass = '损益类';
+--定存利息收入
+update md_km_map_temp set C_DAI_CODE  = 'LXSR_ZQ',C_SEC_VAR_CODE ='CK_DQ',C_MKT_CODE ='COTC',C_DV_ACC_TYPE = '' WHERE FACCTATTR = '存款利息收入_定期%' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'LXSR_ZQ',C_SEC_VAR_CODE ='CK_XY',C_MKT_CODE ='COTC',C_DV_ACC_TYPE = '' WHERE FACCTATTR = '存款利息收入_协议%' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_DAI_CODE  = 'LXSR_ZQ',C_SEC_VAR_CODE ='CK_TZ',C_MKT_CODE ='COTC',C_DV_ACC_TYPE = '' WHERE FACCTATTR = '存款利息收入_通知%' AND facctclass = '损益类'     ;
+
+--买入返售证券收入
+update md_km_map_temp set C_DAI_CODE  = 'LXSR_ZQ',C_SEC_VAR_CODE ='HG_ZYS',c_mkt_code = 'XSHG' WHERE FACCTATTR like '买入%返售证券收入%' AND facctclass = '损益类'     ;
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  substr(a.facctcode,length(a.facctcode)-5,6) ||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+         where a.FACCTATTR like '买入%返售证券收入%' AND a.facctclass = '损益类'     ;
+--其他收入
+update md_km_map_temp set C_DAI_CODE  = 'QTSR' WHERE FACCTATTR like '其他收入%' AND facctclass = '损益类'   ;
+--匹配费用代码  
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where a.facctname like b.c_fee_name || '%' and b.c_src_mark = 'E') where facctattr like '其他收入%'     ;
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where b.c_fee_name like a.facctname  || '%' and b.c_src_mark = 'E') 
+ where facctattr like '其他收入%' and a.C_FEE_CODE is null     ;
+--没有匹配上的放入“其他收入_其他”
+update md_km_map_temp set C_FEE_CODE  = 'QTL_QT' WHERE FACCTATTR like '其他收入%' and trim(c_fee_code) is null AND facctclass = '损益类'   ;
+
+update md_km_map_temp set C_FEE_CODE  = 'ZQL_YHS' WHERE FACCTATTR like '其他收入%' AND FACCTNAME LIKE '%印花税%' AND facctclass = '损益类'   ;
+update md_km_map_temp set C_FEE_CODE  = 'XSL_SHF' WHERE FACCTATTR like '其他收入%' AND FACCTNAME LIKE '%赎回费%' AND facctclass = '损益类'   ;
+--卖出回购证券支出
+update md_km_map_temp set C_DAI_CODE  = 'LXZC_ZQ',C_SEC_VAR_CODE ='HG_ZYS' WHERE FACCTATTR like '卖出回购证券支出%' AND facctclass = '损益类'     ;  
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  substr(a.facctcode,length(a.facctcode)-5,6) ||' '||(case when a.c_mkt_code = 'XSHG' THEN 'SH' when a.c_mkt_code = 'XSHE' THEN 'SZ'
+   when a.c_mkt_code = 'XCFE' THEN (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') when a.c_mkt_code = 'COTC' THEN 'OTC' ELSE ' ' END)
+         where a.FACCTATTR like '卖出回购证券支出%' AND a.facctclass = '损益类'     ;
+--QTFY
+
+update md_km_map_temp set C_DAI_CODE  = 'QTFY' WHERE FACCTATTR like '其他费用%'  AND facctclass = '损益类'     ;
+UPDATE md_km_map_temp SET C_FEE_CODE = 'YYL_YYFWF' WHERE FACCTATTR = '其他费用_资产服务费'  AND facctclass = '损益类';
+UPDATE md_km_map_temp SET C_FEE_CODE = 'ZQL_JYF' WHERE FACCTATTR LIKE '其他费用_%交易费用'  AND facctclass = '损益类';
+--通配费用
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where a.facctname like b.c_fee_name || '%'  and b.c_src_mark = 'E') 
+ where facctattr = '其他费用'     ;
+update md_km_map_temp a set a.C_FEE_CODE  = (select b.c_fee_code from T_P_BI_IE b where b.c_fee_name like a.facctname  || '%'  and b.c_src_mark = 'E') 
+ where facctattr = '其他费用' and a.C_FEE_CODE is null     ;
+update md_km_map_temp set C_FEE_CODE  = 'YTL_SJF' WHERE FACCTATTR like '其他费用%' and facctname like '%审计费%' AND facctclass = '损益类'     ;
+update md_km_map_temp set C_FEE_CODE  = 'QTL_YHZHFWF' WHERE FACCTATTR like '其他费用%' and facctname like '%银行账户维护费%' AND facctclass = '损益类'     ;
+update md_km_map_temp set c_fee_code = 'ZQL_JSFWF' where FACCTATTR like '其他费用_结算服务费%'  AND facctclass = '损益类'     ;
+update md_km_map_temp set c_fee_code = 'QTL_YHZHFWF' where FACCTATTR like '其他费用_银行费用'  AND facctclass = '损益类'     ;
+--没有匹配上的费用放入“其他费用_其他”
+update md_km_map_temp set c_fee_code = 'YYL_QTF' where FACCTATTR like '其他费用%' AND trim(C_FEE_code) is null AND facctclass = '损益类'     ;
+--投资收益_股指期货差价收入
+update md_km_map_temp a set a.c_dai_code='TZSY_CJSR',a.c_sec_var_code='QH_GZ' 
+ where  a.facctattr LIKE '投资收益_套期工具价差_股指期货%'     ;
+UPDATE md_km_map_temp a set a.C_DTA_CODE = 'TL_BUY' 
+ where  a.facctattr LIKE '投资收益_套期工具价差_股指期货_多头%'     ;
+UPDATE md_km_map_temp a set a.C_DTA_CODE = 'TL_SELL' 
+ where  a.facctattr LIKE '投资收益_套期工具价差_股指期货_空头%'     ;
+ 
+--投资费用
+update md_km_map_temp set C_DAI_CODE  = 'JYFY' WHERE FACCTATTR like '投资费用%交易费用%' AND facctclass = '损益类'     ;  
+
+--银行存款去掉市场代码
+update md_km_map_temp  set c_mkt_code='' where facctattr like '%银行存款%'   ;
+--待摊费用
+update md_km_map_temp  set c_dai_code='DTFY' where facctattr like '%待摊费用%'   ;
+update md_km_map_temp  set c_fee_code='YTL_SSF' where facctattr like '%待摊费用%' and facctname like '%上市年费%'   ;
+update md_km_map_temp  set c_fee_code='YTL_SJF' where facctattr like '%待摊费用%' and facctname like '%审计费%'   ;
+update md_km_map_temp  set c_fee_code='YTL_XXPLF' where facctattr like '%待摊费用%' and facctname like '%信息披露费%'   ;
+
+--预提费用
+update md_km_map_temp  set c_dai_code='YTFY' where facctattr like '%预提费用%'   ;
+update md_km_map_temp  set c_fee_code='YTL_SSF' where facctattr like '%预提费用%' and facctname like '%上市年费%'   ;
+update md_km_map_temp  set c_fee_code='YTL_SJF' where facctattr like '%预提费用%' and facctname like '%审计费%'   ;
+update md_km_map_temp  set c_fee_code='YTL_XXPLF' where facctattr like '%预提费用%' and facctname like '%信息披露费%'   ;
+update md_km_map_temp  set c_fee_code='YYL_ZHGLF' where facctattr like '%预提费用%' and facctname like '%帐户管理费'   ;
+
+--以前年度损益调整
+update md_km_map_temp  set c_dai_code='NDSYTZ' where facctattr like '%以前年度损益调整%'   ;
+--利息支出
+update md_km_map_temp  set c_dai_code='LXZC_ZJ' where facctattr like '利息支出'   ;
+--存款投资
+update md_km_map_temp  set c_dai_code='HBZC_CK',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_XY',C_DV_INVEST_CLS = '' where facctattr like '银行存款%协议%'   ;
+update md_km_map_temp  set c_dai_code='HBZC_CK',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_DQ',C_DV_INVEST_CLS = '' where facctattr like '银行存款%定期%'   ;
+update md_km_map_temp  set c_dai_code='HBZC_CK',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_TZ',C_DV_INVEST_CLS = '' where facctattr like '银行存款%通知%'   ;
+
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  'CK'||substr(FACCTCODE,-6)||' OTC'  
+      where a.FACCTATTR like '%存款%' AND a.FACCTATTR NOT like '%活期%'     ;
+      
+UPDATE md_km_map_temp a
+   SET a.c_dv_sec_dur = (SELECT C_DV_QUT_MOD FROM T_P_SV_SEC_BASE WHERE  C_SEC_CODE='CK'||substr(FACCTCODE,-6)||' OTC')
+      where a.FACCTATTR like '%存款%' AND a.FACCTATTR NOT like '%活期%'     ;
+
+--存款投资应收利息
+update md_km_map_temp  set c_dai_code = 'HBZJ',C_DV_ACC_TYPE = 'ACC_SAV',C_DV_INVEST_CLS = '' where facctattr = '存款投资_活期存款'  AND facctclass = '资产类'     ;
+update md_km_map_temp  set c_dai_code = 'YSLX_ZQ',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_XY' where facctattr like '应收利息_银行存款%协议%'   ;
+update md_km_map_temp  set c_dai_code = 'YSLX_ZQ',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_DQ' where facctattr like '应收利息_银行存款%定期%'   ;
+update md_km_map_temp  set c_dai_code = 'YSLX_ZQ',C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_TZ' where facctattr like '应收利息_银行存款%通知%'   ;
+update md_km_map_temp set c_sec_code =  'CK'||substr(FACCTCODE,-6)||' OTC'  
+ where facctattr like '存款利息收入%定%存款' and facctclass = '资产类';
+update md_km_map_temp  set c_dai_code = 'LXSR_ZQ',c_dv_acc_type = '',c_mkt_code = 'COTC'
+  where facctattr like '存款利息收入_%存款' and facctclass = '损益类'     ;
+
+--其他应收款
+update md_km_map_temp set c_dai_code = 'YSK_QTK',c_fee_code = 'QTL_QT' where facctattr like '其他应收款%'   and facctclass = '资产类'   ;
+
+-- 基金红利收入
+update md_km_map_temp  set c_dai_code = 'TZSY_HLSR',C_SEC_VAR_CODE = 'JJ' where facctattr = '保险红利收入' AND facctclass = '损益类'     ;
+
+--将有溢折价的债券设为可供出售类
+UPDATE md_km_map_TEMP A SET c_dv_invest_cls = 'IC_FS' where 
+     A.C_SEC_VAR_CODE LIKE 'ZQ%' and facctattr like '%溢折价%'      ;
+   
+update md_km_map_temp set c_dai_code='HBZJ',c_dv_acc_type='ACC_SAV'  where facctcode like '1%' and facctattr = '银行存款'  ;
+update md_km_map_temp set c_dai_code='HBZJ',c_dv_acc_type='ACC_SAV'  where facctcode like '1%' and facctattr = '银行存款_深圳'  ;
+
+--基础设施
+--拼接证券内码
+update md_km_map_temp a
+   SET a.c_sec_code = (substr(a.facctcode,length(a.facctcode)-5,6)||' '||case when FACCTATTRID ='H' then 'SH' when FACCTATTRID = 'S' then 'SZ' when FACCTATTRID ='Y' then 'OTC'
+   when FACCTATTRID ='K' then 'HK' when FACCTATTRID = 'Z' then (select C_MKT_NO from t_p_bi_mkt where c_mkt_code ='XCFE') else ' ' end)                       
+  where a.FACCTATTR like '%基础设施%'  AND a.facctlevel=6 AND c_km_Code is null;
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code ),'LC_ZQJH')
+           where a.FACCTATTR like '%基础设施%'  ;
+update md_km_map_temp a set c_dta_code = ' ', C_DV_ISSUE_MODE = ' ', c_mkt_code='COTC',C_DV_INVEST_CLS='IC_SL',c_dv_invest_mode='INV_JCSSZQX'
+  where a.FACCTATTR like '%基础设施%' AND a.facctlevel=6  ;
+  update md_km_map_temp a set c_dai_code = 'YSLX_ZQ'
+  where a.FACCTATTR like '%应收利息_基础设施投资%' AND a.facctlevel=6  ;
+
+--银行存款_协议_非银行
+update md_km_map_temp  set C_MKT_CODE = 'COTC',C_SEC_VAR_CODE = 'CK_XY',C_DV_INVEST_CLS = '',C_DV_ACC_TYPE='',
+c_ca_code = fjjdm||'_'|| facctcode,c_sec_code =  'CK'||substr(FACCTCODE,-6)||' OTC'  where facctattr like '%存款%协议_%'   ;
+
+--最低备付金
+update md_km_map_temp set C_DV_ACC_TYPE = 'ACC_EX_RES_CG',c_mkt_code=' ' WHERE FACCTATTR like '%最低备付金%' and FACCTATTRID ='H'  ; 
+update md_km_map_temp set C_DV_ACC_TYPE = 'ACC_EX_RES_CS',c_mkt_code=' ' WHERE FACCTATTR like '%最低备付金%' and FACCTATTRID ='S' ; 
+
+--
+update md_km_map_temp set C_DV_ACC_TYPE = 'ACC_TD_BAIL_CG',c_mkt_code=' ' WHERE FACCTATTR like '%保证金%' and FACCTATTRID ='H'  ; 
+update md_km_map_temp set C_DV_ACC_TYPE = 'ACC_TD_BAIL_CS',c_mkt_code=' ' WHERE FACCTATTR like '%保证金%' and FACCTATTRID ='S' ; 
+--
+update md_km_map_temp a set c_dv_invest_mode='INV_HBX'
+  where a.FACCTATTR like '%基金%开放式_货币%' AND a.facctlevel=6  ;
+  
+--股票
+UPDATE md_km_map_temp a
+   SET a.c_sec_code =  (select b.c_sec_code  from t_p_sv_sec_base b
+                        where substr(b.c_sec_code,0,6) = substr(a.facctcode,length(a.facctcode)-5,6) and b.c_sec_var_code like 'GP%' 
+                          AND B.C_MKT_CODE = A.C_MKT_CODE and rownum = 1)
+                          where TRIM(A.C_SEC_CODE) IS NULL AND a.facctclass = '资产类'  and a.FACCTATTR like '%股票投资%'  ;                    
+
+---更新证券代码中的市场
+UPDATE md_km_map_temp a set c_sec_code=replace(c_sec_code,' CY',' '||(select c_mkt_no from T_P_BI_MKT where c_mkt_code='XCFE'));
+UPDATE md_km_map_temp a set c_sec_code=replace(c_sec_code,' SZ',' '||(select c_mkt_no from T_P_BI_MKT where c_mkt_code='XSHE'));
+UPDATE md_km_map_temp a set c_sec_code=replace(c_sec_code,' SH',' '||(select c_mkt_no from T_P_BI_MKT where c_mkt_code='XSHG'));
+UPDATE md_km_map_temp a set c_sec_code=replace(c_sec_code,' OTC',' '||(select c_mkt_no from T_P_BI_MKT where c_mkt_code='COTC'));
+
+--创业板品种oyf
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  'GP_GP_CYB'
+      where C_SEC_CODE LIKE '30%' AND C_SEC_VAR_CODE = 'GP_GP' AND   a.facctclass = '资产类' AND  a.FACCTATTR like '%股票投资%'  ;
+  
+--再通过基本信息修正品种
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code and c_sec_var_code like 'ZQ%'),a.c_Sec_Var_Code)
+           where  a.facctclass = '资产类' AND  (a.FACCTATTR like '%债券投资%' or a.FACCTATTR like '%溢折价%')    ;
+
+----应收利息通过基本信息修正品种
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code and c_sec_var_code like 'ZQ%'),a.c_Sec_Var_Code)
+           where  a.facctclass = '资产类' AND  
+           (a.FACCTATTR like '%应收利息_%债%' or a.FACCTATTR like '%应收利息_%融资券%' or FACCTATTR  LIKE '应收利息_%票据%' or FACCTATTR  LIKE '应收利息_%资产%证券化%')    ;
+
+--再通过基本信息修正品种
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code and c_sec_var_code like 'JJ%'),a.c_Sec_Var_Code)
+           where  a.facctclass = '资产类' AND  a.FACCTATTR like '%基金投资%' ;
+
+UPDATE md_km_map_temp a
+   SET a.c_Sec_Var_Code =  nvl((select b.c_Sec_Var_Code   from t_p_sv_sec_base b 
+        where b.c_sec_code  = a.c_sec_code and b.c_mkt_code = a.c_mkt_code and c_sec_var_code like 'JJ%'),a.c_Sec_Var_Code)
+           where  a.facctclass = '资产类' AND  a.FACCTATTR like '应收基金红利%' ;
+
+----根据债券成本的投资分类修正溢折价、应收利息、估值增值科目的投资分类
+update md_km_map_temp a set c_dv_invest_cls='IC_FS' where exists(
+     select  1 from md_km_map_temp  b where c_sec_var_code like 'ZQ%' and facctcode like '1%' and c_dai_code='ZQTZ_YZJ' 
+      and a.c_sec_code=b.c_sec_code and a.fset=b.fset
+    union 
+    select  1 from md_km_map  b where c_sec_var_code like 'ZQ%' and facctcode like '1%' and c_dai_code='ZQTZ_YZJ' 
+      and a.c_sec_code=b.c_sec_code and a.fset=b.fset
+) and c_dai_code in('ZQTZ_CB','ZQTZ_GYBD','YSLX_ZQ') ;
+ 
+UPDATE md_km_map_temp SET C_CA_CODE = '001',C_DV_ACC_TYPE = 'ACC_SAV' WHERE FACCTATTR like '%活期%' AND C_CA_CODE LIKE '%\_' ESCAPE '\';
+--财务顾问费
+UPDATE md_km_map_temp SET C_DAI_CODE = 'YFK_YYF', C_FEE_CODE = 'YYL_TZGWF' WHERE FACCTNAME = '应付财务顾问费' AND FACCTCODE = '2210';
+UPDATE md_km_map_temp SET C_DAI_CODE = 'YYFY', C_FEE_CODE = 'YYL_TZGWF' WHERE FACCTNAME = '财务顾问费' AND FACCTCODE = '6406';

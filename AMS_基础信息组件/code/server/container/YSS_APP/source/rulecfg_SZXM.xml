@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source code="SZXM" name="收支项目" funcode="ieitemquy" datasource="DB">
+	<exp>
+		<data id="item">
+			<table-name>T_S_IE_ITEM</table-name>
+			<!-- 数据查询SQL -->
+			<sqlmapping>
+				<!--查询表-->
+				<sql>select * from T_S_IE_ITEM  where C_IE_CODE in (select * from table(?))</sql>
+
+				<cons>
+					<cons_column ref-data="" ref-column="">
+						<value>C_IE_CODE</value>
+					</cons_column>
+				</cons>
+
+			</sqlmapping>			
+		</data>	
+	</exp>
+	
+	<imp>
+		<outfile name="dtatd">
+			<check_column>C_IE_CODE</check_column>
+		</outfile>
+	</imp>
+
+</source>

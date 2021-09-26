@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListHeaders>
+	<ListHeader id='base_feeRelaDict' desc='费用关联字典'>
+		<Header key='C_IE_CODE' text='收支项目' align='L' format=''
+			serviceId="IIeItemDataService"></Header>
+		<Header key='C_FEE_CODE' text='费用代码' align='L' format=''
+			serviceId="IFeeDataService"></Header>
+	</ListHeader>
+	<ListHeader id='base_feeRela' desc='费用关联的列头'>
+		<Header key='C_FEE_CODE' text='费用代码' algin='L' format=''
+			showConvert="false" serviceId="IFeeDataService"></Header>
+		<Header key='C_TD_TYPE' text='费用类型' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+		<Header key='C_IE_CODE' text='收支项目' algin='L' format=''
+			serviceId="IIeItemDataService"></Header>
+	</ListHeader>
+	<ListHeader id='base_feeBreed' desc='费用品种设置'>
+		<Header key='C_FEE_CODE' text='费用代码' align='left' format=''
+			showConvert="false"></Header>
+		<Header key='C_FEE_NAME' text='费用名称' align='left' format=''></Header>
+		<Header key='C_DV_FEE_TYPE' text='费用类型' align='left' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='left' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='left' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='left' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='left' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_orgmgr' desc='机构结算会员'>
+		<Header key='C_MBR_CODE' text='结算会员' align='L' format=''></Header>
+		<Header key='C_ORG_CODE' text='机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_ACC_CODE' text='资金账号' align='L' format=''></Header>
+		<Header key='C_ORG_NAME' text='开户行名称' align='L' format=''></Header>
+		<!-- 马向峰 测试，由于接口 ICADataService在uco中，以后放开-->
+		<Header key='C_CA_CODE' text='账户代码' align='L' format=''
+			serviceId="ICADataService"></Header>
+		<Header key='C_CA_NAME' text='名称' align='L' format=''></Header>
+		<!-- TASK190987:新增“券商代码”,AddBy-Bohua.Gu-2016/02/26 -->
+		<Header key='C_BROKER_CODE' text='券商代码' align='L' format=''></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<!-- liuxiang 2016-5-20 STORY #28860 上交所跨市场ETF基金产品整体需求 -->
+		<!-- <Header key='D_BEGIN' text='开始日期' align='L' format=''></Header> <Header 
+			key='D_END' text='结束日期' align='L' format=''></Header> -->
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_holidays_A' desc='节假日群设置'>
+		<Header key='C_HDAY_CODE' text='节假日代码' align='L' showConvert="false"></Header>
+		<Header key='C_HDAY_NAME' text='节假日名称' align='L'></Header>
+	</ListHeader>
+	<ListHeader id='base_exchange' desc='交易市场 '>
+		<Header key='C_MKT_NO' text='市场代码' align='L' format=''></Header>
+		<Header key='C_MKT_NAME' text='市场名称' align='L' format=''></Header>
+		<Header key='C_MKT_NAME_ST' text='市场简称' align='L' format=''></Header>
+		<Header key='C_MKT_NAME_EN' text='英文名称' align='L' format=''></Header>
+		<Header key='C_AREA_CODE' text='所属地区' align='L' format=''
+			serviceId="IAreaDataService"></Header>
+		<Header key='C_MKT_CODE' text='所属市场' align='L' format=''
+			serviceId="IMktVarDataService"></Header>
+		<Header key='C_SWIFT_CODE' text='SWIFT CODE' align='L' format=''></Header>
+		<Header key='C_FIX_CODE' text='FIX CODE' align='L' format=''></Header>
+		<Header key='C_HDAY_CODE' text='节假日群' align='L' format=''
+			serviceId="IHDayDataService"></Header>
+		<Header key='N_SETT_DAYS' text='结转天数' align='R' format=''></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_baseSourceRecord' desc='来源标识 '>
+		<Header key='C_SRC_SIGN_CODE' text='标识代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SRC_SIGN_NAME' text='标识名称' align='L' format=''></Header>
+		<Header key='C_DESC' text='标识描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_holidays' desc='节假日群设置 '>
+		<Header key='N_YEAR' text='年份' align='left' format=''></Header>
+		<Header key='D_HDAY' text='日期' align='left' format='yyyy-MM-dd'></Header>
+		<Header key='D_WEAK' text='星期' align='left' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='left' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='left' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_ieLink' desc='收支连接设置'>
+		<Header key='C_FEE_CODE' text='收支代码' align='L' format=''
+			showConvert="false" serviceId="IFeeDataService" />
+		<Header key='C_FEE_CODE' text='收支名称' align='L' format=''
+			showConvert="true" serviceId="IFeeDataService" />
+		<Header key='C_IE_CODE' text='收支项目' align='L' format=''
+			showConvert="true" serviceId="IIeItemDataService" />
+		<Header key='C_DESC' text='描述' align='L' format='' />
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService" />
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService" />
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format='' />
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService" />
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format='' />
+	</ListHeader>
+
+	<ListHeader id='base_currency' desc='币种信息'>
+		<Header key='C_DC_CODE' text='币种代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DC_NAME' text='币种名称' align='L' format=''></Header>
+		<Header key='C_DC_SIGN' text='币种符号' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_ie' desc='收支代码设置'>
+		<Header key='C_FEE_CODE' text='收支代码' align='L' format='' />
+		<Header key='C_FEE_NAME' text='收支名称' align='L' format='' />
+		<Header key='C_DESC' text='描述' align='L' format='' />
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService" />
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService" />
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format='' />
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService" />
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format='' />
+	</ListHeader>
+	<ListHeader id='cashaccount' desc='现金账户设置'>
+		<Header key='C_CA_CODE' text='账户代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_CA_NAME' text='账户名称' align='L' format=''></Header>
+		<Header key='C_DV_ACC_TYPE' text='账户类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+        <!-- <Header key='C_PORT_CODE' text='投资组合' align='L' format=''
+			serviceId="IPortDataService"></Header> -->
+		<Header key='C_PORT_CODE' text='投资组合' align='L' format=''></Header>
+		<Header key='C_DC_CODE' text='货币代码' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DV_ACC_NATURE' text='账户性质' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 关联机构 -->
+	<!-- 20170804 cehnbo BUG＃167789　【机构基本信息】界面字段重复出现，且加载的数据一致   -->
+	<ListHeader id='base_organ' desc='主体信息设置'>
+		<Header key='C_ORG_CODE' text='主体代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_ORG_NAME' text='主体名称' align='L' format=''></Header>
+		<Header key='C_DV_ORG_TYPE' text='主体类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_QUALIFICATION' text='主体资质' algin='L' format=''></Header>
+		<Header key='C_ORG_NAME_CN' text='中文名称' align='L' format=''></Header>
+		<!-- 成立时间 MeiYuan 2016.2.25 STORY #28264 机构基本信息 字段优化 -->
+		<Header key='D_FOUND_TIME' text='成立时间' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_ORG_NAME_ST' text='主体简称' align='L' format=''></Header>
+		<Header key='C_DV_ORG_ATTR' text='主体属性' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<!-- tanwenjie 2011.6.17 -->
+		<Header key='C_ORG_CODE_P' text='母公司' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_BANK_CODE' text='联行行号' align='L' format=''></Header>
+		<Header key='C_PAY_CODE' text='大额支付号' align='L' format=''></Header>
+		<Header key='C_DC_CODE' text='资本币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_REG_CAP' text='注册资本' align='R' format='#,##0.####'></Header>
+		<Header key='C_CORP_CODE' text='公司代码' align='L' format=''></Header>
+		<Header key='C_PLATE_CODE' text='行业类别' align='L' format=''
+			serviceId="IPlateDataService"></Header>
+		<Header key='C_LINK_MAN' text='联系人' align='L' format=''></Header>
+		<Header key='C_POST_NAME' text='岗位' align='L' format=''></Header>
+		<Header key='C_LINK_TEL' text='联系电话' align='L' format=''></Header>
+		<Header key='C_MO_TEL' text='手机号码' align='L' format=''></Header>
+		<Header key='C_EMAIL' text='电子邮箱' align='L' format=''></Header>
+		<Header key='C_REG_ADDR' text='注册地址' align='L' format=''></Header>
+		<Header key='C_REG_POST' text='注册邮编' align='L' format=''></Header>
+		<Header key='C_OFFIC_ADDR' text='办公地址' align='L' format=''></Header>
+		<Header key='C_OFFIC_POST' text='办公邮编' align='L' format=''></Header>
+		<Header key='C_FAX_TEL' text='传真号码' align='L' format=''></Header>
+		<Header key='C_CORP_REP' text='法人代表' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='left' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='left'
+			format='YYYY-MM-DD HH：MM：SS'></Header>
+	</ListHeader> 
+	<ListHeader id='base_area' desc='地区设置'>
+		<Header key='C_AREA_CODE' text='地区代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_AREA_NAME' text='地区名称' align='L' format=''></Header>
+		<Header key='C_AREA_SEQ' text='地区编号' align='L' format=''></Header>
+		<Header key='C_AREA_CODE_P' text='所属地区' align='L' format=''
+			serviceId="IAreaDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='C_AREA_CODE_EN' text='英文简称' align='L' format=''></Header>
+		<Header key='C_AREA_NAME_EN' text='英文名称' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_taselnet' desc='产品销售网点'>
+		<Header key='C_NET_CODE' text='网点代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_NET_NAME' text='网点名称' align='L' format=''
+			serviceId="INetDataService"></Header>
+		<Header key='C_DV_NET_TYPE' text='网点类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_NET_SOURCE' text='网点来源' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 货币对设置 组件化拆分 -->
+	<ListHeader id='base_currencyPair' desc='货币对设置'>
+		<Header key='C_CURY_PAIR_CODE' text='货币对代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_CURY_PAIR_NAME' text='货币对名称' align='L' format=''></Header>
+		<Header key='C_DC_CODE_MARK' text='基准货币' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DC_CODE_PRICE' text='计价货币' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_QTE_FACTO' text='报价因子' align='R' format='#,##0.####'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='portCurrency' desc='币种信息'>
+		<Header key='C_DC_CODE' text='组合币种代码' align='L' format=''
+			showConvert="false" serviceId="IDCDataService"></Header>
+		<Header key='C_DC_NAME' text='组合币种名称' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DC_SIGN' text='币种符号' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 转换字典 开始 -->
+	<ListHeader id="base_zhzd" desc="转换字典">
+		<Header key='C_S_CODE' text='源值' align='L' format=''></Header>
+		<Header key='C_T_CODE' text='转换值' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_zdorg' desc='字典组织架构'>
+		<Header key='C_GROUP_CODE' text='字典组织架构代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_GROUP_NAME' text='字典组织架构名称' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 转换字典 结束 -->
+
+	<!-- list_head.xml证券品种 -->
+	<ListHeader id='base_seccategory' desc='证券品种设置 '>
+		<Header key='C_SEC_VAR_CODE' text='品种代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_VAR_NAME' text='品种名称' align='L' format=''></Header>
+		<!-- Header key='C_DA_NAME' text='品种属性' align='L' format=''></Header> -->
+		<!-- <Header key='C_DESC' text='描述' align='L' format=''></Header> <Header 
+			key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header> 
+			<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header> 
+			<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header> <Header 
+			key='C_CHECK_BY' text='审核人' align='L' format=''></Header> <Header key='C_CHECK_TIME' 
+			text='审核时间' align='L' format=''></Header> -->
+	</ListHeader>
+	<ListHeader id='base_seccategoryquy' desc='证券品种设置 '>
+		<Header key='C_SEC_VAR_CODE' text='证券品种代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_VAR_NAME' text='证券品种名称' align='L' format=''></Header>
+		<Header key='C_DA_CODE' text='证券品种属性' align='L' format=''></Header>
+		<Header key='C_DA_CODE_P' text='证券品种属性上级代码' align='L' format=''></Header>
+		<!-- Added by huangsq 20160728 STORY #32244 词汇资源可控制是否显示 -->
+		<Header key='C_DV_STATE' text='状态' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+	</ListHeader>
+
+	<!-- 资产类型字典 list_head list_head.xml -->
+	<ListHeader id='base_accType' desc='资产类型字典'>
+		<Header key='C_DAT_CODE' text='资产类型代码' align='L' format=''></Header>
+		<Header key='C_DAT_NAME' text='资产类型名称' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_acctypequy' desc='资产类型的列头'>
+		<Header key='C_DAT_CODE' text='资产类型代码' algin='L' format=''
+			showConvert="false" serviceid='IAccTypeDataService'></Header>
+		<Header key='C_DAT_NAME' text='资产类型名称' algin='L' format=''></Header>
+		<Header key='C_DAT_TYPE' text='资产类型' algin='L' format=''></Header>
+		<Header key='C_DAT_CODE_P' text='资产类型代码父节点' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+	</ListHeader>
+
+	<!-- 交易方式字典 list_head.xml -->
+	<ListHeader id='base_dttdmode' desc='交易方式字典'>
+		<Header key='C_DT_NAME' text='凭证范围' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_dttdmodequy' desc='销售/交易方式的列头'>
+		<Header key='C_DT_CODE' text='交易方式代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DT_NAME' text='交易方式名称' algin='L' format=''></Header>
+		<Header key='C_BUSI_TYPE' text='业务类型' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_FUND_WAY' text='资金方向' algin='L' format=''></Header>
+		<Header key='N_CAPI_WAY' text='资本方向' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+	</ListHeader>
+	
+	<!-- 交易属性字典 list_head.xml-->	
+	<ListHeader id='base_dtatdattrquy' desc='交易属性的列头'>
+		<Header key='C_DTA_CODE' text='交易属性代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DTA_NAME' text='交易属性名称' algin='L' format=''></Header>
+		<Header key='C_BUSI_TYPE' text='业务类型' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+	</ListHeader>
+	
+	<!-- 核算项目字典 list_head.xml-->	
+	<ListHeader id='base_daidictquy' desc='核算项目的列头'>
+		<Header key='C_DAI_CODE' text='核算项目代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DAI_NAME' text='核算项目名称' algin='L' format=''></Header>
+		<Header key='C_DV_KM_CLS' text='科目类别' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_FUND_WAY' text='核算方向' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+		<Header key='C_DV_BOOL_TYPE_AM' text='数量标识' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_STOCK_CLS' text='库存类别' algin='L' format=''></Header>
+		<Header key='C_DAI_TYPE' text='核算类别' algin='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='base_DaiDict' desc='核算项目'>
+		<Header key='C_DAI_CODE' text='项目代码' align='L' format=''></Header>
+		<Header key='C_DAI_NAME' text='项目名称' align='L' format=''></Header>
+	</ListHeader>
+	
+	
+	<!-- 对账类型字典 -->
+	<ListHeader id='base_dzcode' desc='对账类型'>
+		<Header key='C_DZ_CODE' text='对账代码' align='L' format=''
+			showConvert="true" />
+		<Header key='C_DZ_NAME' text='对账名称' align='L' format=''
+			showConvert="true" />
+	</ListHeader>
+	
+	<ListHeader id='dzcode' desc='对账类型'>
+		<Header key='C_DZ_CODE' text='对账代码' align='L' format=''
+			showConvert="true" />
+		<Header key='C_DZ_NAME' text='对账名称' align='L' format=''
+			showConvert="true" />
+	</ListHeader>
+	
+	<!-- 核算业务项字典 list_head.xml-->	
+	<ListHeader id='base_dvaitem' desc='核算业务项 '>
+		<Header key='C_DVA_ITEM_NAME' text='项目名称' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='base_dvaitemquy' desc='核算业务的列头'>
+		<Header key='C_DVA_ITEM_CODE' text='核算项目代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DVA_ITEM_NAME' text='核算项目名称' align='L' format=''></Header>
+		<Header key='C_DVA_ITEM_CODE_P' text='父级代码' align='L' format=''
+			serviceId='IDvaItemDataService'></Header>
+		<Header key='N_ORDER' text='编号' align='L' format=''></Header>
+		<Header key='N_DETAIL' text='是否明细项 ' align='L' format=''
+			serviceId='IVocDataService'></Header>
+	</ListHeader>
+
+	<!-- 综合参数字典 list_head.xml-->
+	<ListHeader id="base_dspparaquy" desc='核算参数的列头'>
+		<Header key='C_DSP_CODE' text='参数代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DSP_NAME' text='参数名称' algin='L' format=''></Header>
+		<Header key='C_DSP_CLASS' text='分类' algin='L' format=''></Header>
+		<Header key='C_DSP_GROUP_CODE' text='参数类型代码' algin='L' format=''></Header>
+		<Header key='C_DSP_VALUE_TYPE' text='参数类型' algin='L' format=''></Header>
+		<Header key='C_DV_TYPE' text='词汇类型' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DSG_CODE' text='参数分组代码' algin='L' format=''></Header>
+		<Header key='C_DSG_NAME' text='参数分组名称' algin='L' format=''></Header>
+		<!--
+			<Header key='C_DV_PLAT_VALUE' text='C_DV_PLAT_VALUE' algin="L"
+			format=''></Header>
+		-->
+		<Header key='C_DESC' text='描述' algin='L' format=''></Header>
+		<Header key='C_DSP_GROUP_NAME' text='参数类型名称' algin='L' format=''></Header>
+		<Header key='C_DAT_CODE' text='资产类型' algin='L' format=''></Header>
+		<Header key='C_DS_TPYE' text='缓存来源' algin='L' format=''></Header>
+	</ListHeader>
+
+
+	<!-- 表达式字典 list_head.xml-->
+	<ListHeader id='base_deexpquy' desc='表达式的列头'>
+		<Header key='C_EXP_CODE' text='表达式代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_EXP_NAME' text='表达式名称' algin='L' format=''></Header>
+		<Header key='C_DV_EXP_TYPE' text='表达式类型' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_VALUE' text='表达式内容' algin='L' format=''></Header>
+		<!-- Added by huangsq 20160728 STORY #32244 词汇资源可控制是否显示 -->
+		<Header key='C_DV_STATE' text='状态' algin='L' format='' serviceId="IVocDataService"></Header>
+	</ListHeader>
+
+	<!-- 财务项目字典 list_head.xml-->
+	<ListHeader id='base_finitemquy' desc='财务项目的列头'>
+		<Header key='C_FIN_CODE' text='财务项目代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_FIN_NAME' text='财务项目名称' algin='L' format=''></Header>
+		<Header key='C_FIN_CODE_P' text='财务项目父级代码' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+	</ListHeader>
+
+	<!-- 收支项目字典 list_head.xml-->
+	<ListHeader id='base_IeItem' desc='收支项目'>
+		<Header key='C_IE_CODE' text='收支项目代码' align='L' format=''
+			showConvert="true" />
+		<Header key='C_IE_NAME' text='收支项目' align='L' format='' />
+	</ListHeader>
+	<ListHeader id='base_ieitemquy' desc='收支项目的列头'>
+		<Header key='C_IE_CODE' text='收支项目代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_IE_NAME' text='收支项目名称' algin='L' format=''></Header>
+		<Header key='C_DAI_CODE_REC' text='应收项目' algin='L' format=''></Header>
+		<Header key='C_DAI_CODE_COP' text='应付项目' algin='L' format=''></Header>
+		<Header key='C_DAI_CODE_INC' text='收入项目' algin='L' format=''></Header>
+		<Header key='C_DAI_CODE_FEE' text='支出项目' algin='L' format=''></Header>
+		<Header key='N_STATE' text='状态' algin='L' format=''></Header>
+		<Header key='N_ORDER' text='编号' algin='L' format=''></Header>
+	</ListHeader>
+
+	<!-- 交易市场字典 list_head.xml-->
+	<ListHeader id="base_mktsdiquy" desc='交易市场S的列头'>
+		<Header key='C_MKT_CODE' text='地区代码' algin='L' format=''
+			showConvert='false'></Header>
+		<Header key='C_MKT_NAME' text='地区名称' algin='L' format=''></Header>
+		<Header key='C_DV_MKT_TYPE' text='市场类型' algin='L' format=''
+			serviceId="IVocDataService"></Header>
+		<!-- Added by huangsq 20160728 STORY #32244 词汇资源可控制是否显示 -->
+		<Header key='C_DV_STATE' text='状态' algin='L' format='' serviceId="IVocDataService"></Header>
+	</ListHeader>
+
+
+	<!-- 合规指标类型字典 list_head.xml-->
+	<ListHeader id='base_indexdiquy' desc='合规指标类型的列头'>
+		<Header key='C_INDEX_CODE' text='指标代码' algin='L' format=''
+			showConvert='false'></Header>
+		<Header key='C_INDEX_NAME' text='指标名称' algin='L' format=''></Header>
+		<!--
+			<Header key='C_DATA_SOURCE' text='C_DATA_SOURCE' algin='L'
+			format=''></Header> <Header key='C_DATA_TYPE' text='指标类型' algin='L'
+			format=''></Header> <Header key='N_STATE' text='状态' algin='L'
+			format=''></Header> <Header key='N_ORDER' text='序号' algin='L'
+			format=''></Header> <Header key='C_NAV_TYPE' text='C_NAV_TYPE'
+			algin='L' format=''></Header> <Header key='N_DETAIL' text='N_DETAIL'
+			algin='L' format=''></Header> <Header key='C_KEY_CODE'
+			text='C_KEY_CODE' algin='L' format=''></Header> <Header
+			key='C_KEY_NAME' text='C_KEY_NAME' algin='L' format=''></Header>
+			<Header key='C_IS_SYS' text='C_IS_SYS' algin='L' fo rmat=''></Header>
+			<Header key='C_TRU' text='C_TRU' algin='L' format=''></Header>
+			<Header key='C_MODE' text='C_MODE' algin='L' format=''></Header>
+			<Header key='C_RET' text='C_RET' algin='L' format=''></Header>
+		-->
+	</ListHeader>
+
+	<!-- 合规指标项目字典 list_head.xml-->
+	<ListHeader id='base_sClIndex' desc='指标项目'>
+		<Header key='C_INDEX_NAME' text='指标名称' align='L' format=''></Header>
+		<Header key='C_INDEX_CODE' text='指标代码' align='L' format=''></Header>
+		<Header key='C_SEC_TYPE' text='证券品种' align='L' format=''></Header>
+	</ListHeader>
+	
+	<!-- 核算元素字典 list_head.xml-->
+	<ListHeader id='base_accelequy' desc='核算元素的列头'>
+		<Header key='C_DAE_CODE' text='核算元素代码' algin='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_DAE_NAME' text='核算元素名称' algin='L' format=''></Header>
+		<Header key='C_DS_TYPE' text='数据来源字符串' algin='L' format=''></Header>
+		<Header key='C_DAI_FIELD' text='核算级别表的字段名' algin='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='base_DaeElem' desc='核算元素'>
+		<Header key='C_DAE_CODE' text='元素代码' align='L' format=''></Header>
+		<Header key='C_DAE_NAME' text='元素名称' align='L' format=''></Header>
+		<Header key='C_DS_TYPE' text='元素类型' align='L' format=''></Header>
+	</ListHeader>
+	
+	
+	<!-- 支付平台银行账户信息迁移至基础information组件 -->	
+	<ListHeader id="fundAccInfo" desc="银行账户信息设置 ">
+		<Header key="C_ORG_CODE" text="开户机构" align="L" format=""
+			serviceId="IOrgDataService"></Header>
+		<Header key="C_OPEN_ACC_NAME" text="开户名称" align="L" format=""></Header>
+		<Header key="C_OPEN_ACC_NO" text="开户账号" align="" format=""></Header>
+		<Header key="C_OPEN_ADDR" text="开户行" align="" format=""></Header>
+		<Header key="C_OPEN_JC" text="开户行简称" align="L" format=""></Header>
+		<Header key="C_BANK_ADDR" text="开户地点" align="L" format=""></Header>
+		<!-- BUG #157433 清算指令界面报错-->
+		<Header key="C_DC_CODE" text="货币代码" align="L" format="" serviceId="IDCDataService"></Header>
+		<Header key="C_ACCOUNT_TYPE" text="账号类型" align="" format="" serviceId="IAccountTypeDataService"></Header>
+		<Header key="C_PAY_CODE" text="大额支付号" align="L" format=""></Header>
+		<Header key="C_HOLDER" text="所有人" align="" format="" serviceId="IOrgDataService"></Header>
+		<Header key="C_CA_CODE" text="现金账户" align="L" format="" serviceId="ICADataService"></Header>	
+		<Header key='C_DESC' text='描述' align='' format=''></Header>	
+		<Header key='D_BEGIN' text='开户日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='关户日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+		<Header key="N_FILE_COUNT" text="附件管理" align="L" fromat=""/>
+	</ListHeader>
+	
+	<ListHeader id='base_accountType' desc='账户类型设置'>
+		<Header key='C_DAC_NAME' text='账户类型名称' align='left' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DAC_CODE' text='账户类型代码' align='left' format=''></Header>
+		<Header key='C_DAC_CODE_P' text='上级账户类型' align='left' format='' serviceId="IAccountTypeDataService"></Header>
+		<Header key='C_DAC_TYPE' text='账户分类' align='left' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_STATE' text='是否启用' align='left' format='' serviceId="IVocDataService"></Header>
+	</ListHeader>
+	
+	 <!--FAST为兼容老版本老菜单也需要配置一份 start
+	<ListHeader id='holidays_A' desc='节假日群设置'>
+		<Header key='C_HDAY_CODE' text='节假日代码' align='L' showConvert="false"></Header>
+		<Header key='C_HDAY_NAME' text='节假日名称' align='L'></Header>
+	</ListHeader>
+	<ListHeader id='holidays' desc='节假日群设置 '>
+		<Header key='N_YEAR' text='年份' align='left' format=''></Header>
+		<Header key='D_HDAY' text='日期' align='left' format='yyyy-MM-dd'></Header>
+		<Header key='D_WEAK' text='星期' align='left' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='left' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='left' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='left' format=''></Header>
+	</ListHeader>
+	-->
+	 <!--FAST为兼容老版本老菜单也需要配置一份 end-->
+	<ListHeader id="base_areacity" desc="区域信息">
+		<Header key="C_Code" text="区域代码" align="L" format=""/>
+		<Header key="C_Name" text="区域名称" align="L" format=""/>
+		<Header key="C_Level" text="区域级别" align="L" format=""/>
+		<Header key="C_Parent_Code" text="上级区域代码" align="L" format="" />		
+	</ListHeader>
+	
+	<ListHeader id="base_accountTreeA" desc="账户树形A区">
+		<Header key='C_NODE_NAME' text='结构名称' align='' format=''></Header>
+		<Header key='C_NODE_CODE' text='结构名称' align='' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id="base_accountTreeB" desc="账户树形B区">
+		<Header key='C_NODE_CODE_P' text='所属节点名称' align='' format='' serviceId="IAccountTreeADataService"></Header>
+		<Header key='C_OPEN_ACC_NAME' text='账户名称' align='' format=''></Header>
+		<Header key='C_OPEN_ACC_NO' text='账户' align='' format=''></Header>
+		<Header key='C_OPEN_ADDR' text='开户行' align='' format=''></Header>
+		<Header key='C_ACCOUNT_TYPE' text='账户类型' align='' format='' serviceId="IAccountTypeDataService"></Header>
+		<Header key='C_DC_CODE' text='币种' align='' format='' serviceId="IDCDataService"></Header>
+		<Header key='C_ORG_CODE' text='开户机构' align='' format='' serviceId="IOrgDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+	<ListHeader id="base_portBusinessRange" desc="产品业务范围">
+		<Header key='C_PORT_CODE' text='组合代码' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='' format='' serviceId="IPortDataService"></Header>
+		<Header key='C_BUSINESS_CODE' text='业务类型' align='' format='' serviceId="IPortBusinessRangeService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+	<!-- STORY #90952 【鹏华基金】券商结算模式下数据文件扫描节点判断规则 -->
+	<ListHeader id="automaticSet" desc="自动化业务设置_外部券商">
+		<Header key='C_BUSINESS_TYPE_CODE' text='业务类型' align='' format='' serviceId="IAutomaticSetService"></Header>
+		<Header key='C_BUSINESS_CODE' text='明细类型代码' align='' format=''></Header>
+		<Header key='C_BUSINESS_CODE' text='明细类型名称' align='' format='' serviceId="IAutomaticSetService"></Header>
+		<Header key='C_PORT_CODE' text='组合代码' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='' format='' serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+	<!-- STORY #100516 【华夏基金】系统支持设置组合的责任会计信息（STORY #100065拆出给估值） -->
+	<ListHeader id="automaticSet_zrkj" desc="自动化业务设置_责任会计">
+		<Header key='C_BUSINESS_CODE' text='责任会计' align='' format=''></Header>
+		<Header key='C_PORT_CODE' text='组合代码' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='' format='' serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+	<!-- STORY #106083 【东证资管】券商结算模式增加动态判断的接口（105821拆出给估值） -->
+	<ListHeader id="automaticSet_wbqdzhljsz" desc="自动化业务设置_外部渠道组合路径设置">
+		<Header key='C_CHANEL_CODE' text='渠道明细代码' align='' format='' ></Header>
+		<Header key='C_CHANEL_TYPE' text='渠道明细类型' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='对应的组合代码' align='' format='' ></Header>
+		<Header key='C_PRODUCT_NAME' text='产品业务分类' align='' format='' ></Header>
+		<Header key='C_INTERFACE_GROUP' text='接口分组' align='' format='' ></Header>
+		<Header key='C_INTERFACE_CODE' text='接口代码' align='' format='' ></Header>
+		<Header key='C_INTERFACE_NAME' text='接口名称' align='' format='' ></Header>
+		<Header key='C_INTERFACE_PATH' text='接口对应的路径' align='' format='' ></Header>		
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+    <!-- STORY #106974 【海富通】【自动化业务设置】新增【估值指标】分页 （关联需求STORY #106396 ） -->
+	<ListHeader id="automaticSet_gzzb" desc="自动化业务设置_估值指标">
+		<Header key='C_INDEX_NAME' text='指标名称' align='' format='' ></Header>
+		<Header key='C_VA_ALIAS' text='估值表别名' align='' format='' ></Header>
+		<Header key='C_INDEX_ORDER' text='指标编号' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='组合代码' align='' format='' ></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='' format='' serviceId="IPortDataService"></Header>
+		<Header key='C_VA_TIME' text='所属估值表日期' align='' format='' ></Header>	
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+</ListHeaders>

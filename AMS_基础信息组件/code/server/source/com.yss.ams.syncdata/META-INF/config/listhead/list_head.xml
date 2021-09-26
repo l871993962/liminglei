@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ListHeaders>
+	<ListHeader id="syncdata" desc="数据同步">
+		<Header key='C_DV_STATE' text='消息状态' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_RECEIVE_TIME' text='接收时间' align='L' format=''></Header>
+		<Header key='C_SENDER' text='发送人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_DV_OPER_TYPE' text='操作类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_MODULE_CODE' text='同步模块' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_MESSAGE' text='信息主题' align='L' format=''></Header>
+	</ListHeader>
+</ListHeaders>

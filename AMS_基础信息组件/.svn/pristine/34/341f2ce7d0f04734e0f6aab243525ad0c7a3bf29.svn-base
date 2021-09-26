@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Readme>
+  <Standard>
+    <TempCode>HKZL_ZL</TempCode>
+    <TempName>标准传真划款指令模板</TempName>
+    <TempVersion>V4.0.0.0.1</TempVersion>
+    <TempType>TEMP_ZL</TempType>
+    <TempSecurity></TempSecurity>
+    <TempDesc>标准传真划款指令模板</TempDesc>
+    <InsName>传真划款指令标准指令书.xml</InsName>
+  <InsSuff>doc</InsSuff>
+  </Standard>
+  <ServerMode mode="Sql">
+  <SqlConfig>
+  <SqlCode>SQL_ZL</SqlCode>
+  <SqlName>指令信息抓取</SqlName>
+  <Sql>
+  SELECT
+  a.C_IDEN, 
+  nvl(c.C_PORT_NAME,' ') as portName, 
+  nvl(c.c_ass_code,c.c_port_code) as portCode,
+  to_char(sysdate,'yyyy') as year,
+  nvl(a.N_ORD_NUM,'0') as ordNum, 
+  date2Str(a.D_ORD) as ordDate,
+  date2Str(a.d_pay) as payDate,
+  a.c_pay_time as payTime,
+  date2Str(a.d_sett) as settDate,
+  a.c_sett_time as settTime,
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_name,a.c_open_acc_name_i) as openAccName,  
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_addr,a.c_open_addr_i) as openBank,  
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_no,a.c_open_acc_no_i) as openAccNo,
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_addr_i,a.c_open_addr) as openBankI,  
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_no_i,a.c_open_acc_no) as openAccNoI,
+  decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_name_i,a.c_open_acc_name) as openAccNameI,
+  p.c_pay_code as payCode,
+  p.c_bank_code as bankCode,
+  pi.c_pay_code as payCodeI,
+  pi.c_bank_code as bankCodeI,
+  substr(dealnum(abs(a.N_ORD_MONEY)),2) as ordMoney, 
+  money2chinese(abs(a.N_ORD_MONEY)) as chnMoney, 
+  nvl(a.C_USAGE,' ') as usage, 
+  nvl(a.C_DESC,' ') as ordDesc, 
+  createuser.c_user_name as createBy,
+  reviewuser.c_user_name as reviewBy,
+  checkuser.c_user_name as checkBy,
+  nvl((select c_img from t_c_cp_seal where c_dv_seal = 'comSeal' and rownum = 1 and n_check_state = 1),tmp.img) as orgLogo,
+  nvl(f_get_seal(a.c_port_code,a.c_create_by),tmp.img) as createLogo,
+  nvl(f_get_seal(a.c_port_code,a.c_review_by),tmp.img) as reviewLogo,
+  nvl(f_get_seal(a.c_port_code,a.c_check_by),tmp.img) as checkLogo,
+  decode(a.c_dv_ord_type,'ZHZLLX_ZF',m.c_img,tmp.img) as cancelLogo
+  FROM T_C_CM_MGR a 
+  left join (
+	select 'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAA1JREFUGFdjoA9gYAAAAGkAATCbkZAAAAAASUVORK5CYII=' as img from dual 
+  ) tmp on 1=1
+  left join (select C_PORT_CODE,C_PORT_NAME,c_ass_code from t_p_ab_port where n_check_state = 1) c on 
+  c.C_PORT_CODE = a.C_PORT_CODE
+  left join (select * from t_c_cp_seal where c_dv_seal = 'cancelSeal' and n_check_state = 1) m on m.c_dv_seal = 'cancelSeal'
+  left join (select o.c_pay_code,o.c_bank_code,n.c_open_acc_no from T_P_BI_ORG o left join T_C_CP_FUND_ACC  n on o.c_org_code=n.c_org_code ) p 
+  on p.c_open_acc_no= decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_no,a.c_open_acc_no_i)
+  left join (select oi.c_pay_code,oi.c_bank_code,n.c_open_acc_no from T_P_BI_ORG oi left join T_C_CP_FUND_ACC  n on oi.c_org_code=n.c_org_code ) pi 
+  on p.c_open_acc_no= decode(instr(a.n_ord_money,'-'),0,a.c_open_acc_no_i,a.c_open_acc_no) 
+  left join t_s_user createuser on a.c_create_by = createuser.c_user_code
+  left join t_s_user reviewuser on a.c_review_by = reviewuser.c_user_code
+  left join t_s_user checkuser on a.c_check_by = checkuser.c_user_code
+  WHERE a.C_IDEN in(select * from table(?))
+  </Sql>
+  </SqlConfig>
+  </ServerMode>
+  <ElemConfig>
+  <Element ElemType="ELEM_SERVER" ElemName="指令id" ElemCode="C_IDEN" />
+  <Element ElemType="ELEM_SERVER" ElemName="组合代码" ElemCode="portCode" />
+  <Element ElemType="ELEM_SERVER" ElemName="组合名称" ElemCode="portName" />
+  <Element ElemType="ELEM_SERVER" ElemName="编号" ElemCode="ordNum" />
+  <Element ElemType="ELEM_SERVER" ElemName="年份" ElemCode="year" />
+  <Element ElemType="ELEM_SERVER" ElemName="日期" ElemCode="ordDate" />
+  <Element ElemType="ELEM_SERVER" ElemName="划款日期" ElemCode="payDate" />
+  <Element ElemType="ELEM_SERVER" ElemName="划款时间" ElemCode="payTime" />
+  <Element ElemType="ELEM_SERVER" ElemName="到帐日期" ElemCode="settDate" />
+  <Element ElemType="ELEM_SERVER" ElemName="到帐时间" ElemCode="settTime"  />
+  <Element ElemType="ELEM_SERVER" ElemName="付款人名称" ElemCode="openAccNameI" />
+  <Element ElemType="ELEM_SERVER" ElemName="付款银行" ElemCode="openBankI" />
+  <Element ElemType="ELEM_SERVER" ElemName="付款银行帐号" ElemCode="openAccNoI" />
+  <Element ElemType="ELEM_SERVER" ElemName="付款行联行号" ElemCode="bankCodeI" />
+  <Element ElemType="ELEM_SERVER" ElemName="付款行大额支付号" ElemCode="payCodeI"  />
+  <Element ElemType="ELEM_SERVER" ElemName="收款人名称" ElemCode="openAccName" />
+  <Element ElemType="ELEM_SERVER" ElemName="收款人开户行" ElemCode="openBank" />
+  <Element ElemType="ELEM_SERVER" ElemName="收款方帐号" ElemCode="openAccNo" />
+  <Element ElemType="ELEM_SERVER" ElemName="收款行联行号" ElemCode="bankCode"  />
+  <Element ElemType="ELEM_SERVER" ElemName="收款行大额支付号" ElemCode="payCode" />
+  <Element ElemType="ELEM_SERVER" ElemName="划款金额(小写)" ElemCode="ordMoney" />
+  <Element ElemType="ELEM_SERVER" ElemName="划款金额(大写)" ElemCode="chnMoney"  />
+  <Element ElemType="ELEM_SERVER" ElemName="划款用途" ElemCode="usage" />
+  <Element ElemType="ELEM_SERVER" ElemName="备注" ElemCode="ordDesc"/>
+  <Element ElemType="ELEM_SERVER" ElemName="管理人签章" ElemCode="orgLogo" />
+  <Element ElemType="ELEM_SERVER" ElemName="审批人章" ElemCode="checkLogo"  />
+  <Element ElemType="ELEM_SERVER" ElemName="复核人章" ElemCode="reviewLogo" />
+  <Element ElemType="ELEM_SERVER" ElemName="经办人章" ElemCode="createLogo"/>
+  <Element ElemType="ELEM_SERVER" ElemName="撤销章" ElemCode="cancelLogo"  />
+  <Element ElemType="ELEM_SERVER" ElemName="审批人" ElemCode="checkBy"  />
+  <Element ElemType="ELEM_SERVER" ElemName="复核人" ElemCode="reviewBy" />
+  <Element ElemType="ELEM_SERVER" ElemName="经办人" ElemCode="createBy"  />
+  </ElemConfig>
+</Readme>

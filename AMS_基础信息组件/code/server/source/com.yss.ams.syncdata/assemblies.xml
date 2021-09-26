@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0  
+                    http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+    <!-- ID -->
+	<id>assembliesID</id>
+	<!-- 打包格式 -->
+	<formats>
+		<format>jar</format>
+	</formats>
+	<!-- 不把自己打入jar -->
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<!-- 将class打入jar -->
+		<fileSet>
+			<directory>${project.build.directory}/classes</directory>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}</directory>
+			<outputDirectory>/</outputDirectory>
+		    <includes>
+		    	<include>plugin.xml</include>
+		    </includes>
+		</fileSet>
+		<fileSet>
+			<directory>${basedir}/src/main/java</directory>
+			<outputDirectory>/</outputDirectory>
+		    <excludes>
+		    	<exclude>**/*.class</exclude>
+		    	<exclude>**/*.java</exclude>
+		    </excludes>
+		</fileSet>
+		<!-- 将cfg下配置文件打入jar -->
+		<fileSet>
+			<directory>${basedir}/cfg</directory>
+			<outputDirectory>/cfg</outputDirectory>
+		</fileSet>
+		<!-- 将META-INF文件夹打入jar -->
+		<fileSet>
+			<directory>${basedir}/META-INF</directory>
+			<outputDirectory>/META-INF</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/lib</directory>
+			<outputDirectory>/lib</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<!-- 依赖包输出到lib -->
+	<dependencySets>
+		<dependencySet>
+			<unpack>false</unpack>
+			<useProjectArtifact>false</useProjectArtifact>
+			<outputDirectory>/lib</outputDirectory>
+			<excludes>
+				<exclude>com.yss:client</exclude>
+				<exclude>com.yss:com.yss.fast.mq.common</exclude>
+			</excludes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

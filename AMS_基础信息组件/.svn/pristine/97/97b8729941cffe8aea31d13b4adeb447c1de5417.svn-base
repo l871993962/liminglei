@@ -1,0 +1,8 @@
+#BUG #286469 【紧急】【招商财富300】0930版本四要素查询指令接口由于新增字段，导致场外webservice接口调用无法正常查询
+#指令WebService查询接口添加字段，需要通过文本配置
+#字段名=1或者0（1：需要返回值 0:不需要返回值）
+C_DEPOSI_BEGIN_DATE=1
+C_DEPOSI_END_DATE=1
+C_SEC_NAME=1
+C_LIST_PLC_CODE=1
+

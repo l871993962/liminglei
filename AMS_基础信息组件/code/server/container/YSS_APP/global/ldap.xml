@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--所有配置文件信息如果修改，都需要重新启动服务器-->
+<ldap> 
+    <!--ldap控制信息 -->  
+    <ldapControlInfo> 
+        <!--是否支持删除ldap没有而本地有的数据信息，包括机构和用户，true表示支持，false表示不支持，默认配置为false -->  
+        <needDel>false</needDel>  
+        <!-- 登录方式 LDAP:仅支持ldap登录，LOCAL：仅支持本地登录,BOTH：ldap和本地登录都支持，ldap优先（只要用户在ldap中有记录，则走ldap，否则走本地）,请注意一定要大写 -->  
+        <enableLdapLogin>LOCAL</enableLdapLogin> 
+    </ldapControlInfo>  
+    <!--ldap连接信息 -->  
+    <ldapConnInfo> 
+        <!--ldap服务器ip -->  
+        <ldapHost>192.168.2.90</ldapHost>  
+        <!--ldap服务器端口 -->  
+        <ldapPort>389</ldapPort>  
+        <!--ldap服务器用户和机构信息的根dn -->  
+        <rootDn>cn=users,dc=efund,dc=com</rootDn>  
+        <!--ldap服务器登录用户名 -->  
+        <account>ittest2</account>  
+        <!--ldap服务器登录密码，第一次配置使用明文，系统启动后会自动加密为密文 -->  
+        <ldapPassword>A0E9E5C4EA2341E0F6965FBD2B1704673D70A127B29479C104DD004989F741BA0520BF32712BE984DD397FD63E9ACCFF</ldapPassword> 
+    </ldapConnInfo>  
+    <!--ldap机构信息同步配置 -->  
+    <ldapCorpOrgInfo> 
+        <!--机构信息dn地址 -->  
+        <dn>ou=业务系统邮箱用户,dc=efund,dc=com</dn>  
+        <!--ldap中机构名称属性值 -->  
+        <corpOrgNameAttr>department</corpOrgNameAttr>  
+        <!--ldap中机构编码属性值 如果不配置则默认值为destinationIndicator -->  
+        <corpOrgCodeAttr>departmentNumber</corpOrgCodeAttr>  
+        <!--ldap中机构编码属性值 可以不配置，不配置则各个机构为平行结构 -->  
+        <corpOrgCodePAttr/> 
+    </ldapCorpOrgInfo>  
+    <!--ldap用户信息同步配置 -->  
+    <ldapUserInfos> 
+        <ldapUserInfo> 
+            <!--用户信息dn地址-->  
+            <dn>ou=技术运营部支持,ou=业务系统邮箱用户,dc=efund,dc=com</dn>  
+            <!--ldap用户唯一编码属性值 如果不配置值，则默认为uid -->  
+            <userNameAttr>sAMAccountName</userNameAttr>  
+            <!--ldap用户密码属性值，如果不配置值，则默认为userPassword -->  
+            <userpwdAttr>Userpassword</userpwdAttr>  
+            <!--ldap用户部门编码属性值,如果不配置值，则默认为departmentNumber -->  
+            <userDeptAttr>departmentNumber</userDeptAttr>  
+            <!--手机号码属性，如果不配置，则默认为mobile -->  
+            <mobileAttr>mobile</mobileAttr>  
+            <!--ldap用户姓名属性值，如果不配置值，则默认为cn -->  
+            <empNameAttr>cn</empNameAttr>  
+            <!--手机号码属性，如果不配置，则默认为telephoneNumber-->  
+            <telphoneAttr>telephoneNumber</telphoneAttr>  
+            <!--邮箱属性，如果不配置，则默认为mail-->  
+            <eMailAttr>mail</eMailAttr> 
+        </ldapUserInfo>  
+        <ldapUserInfo> 
+            <!--用户信息dn地址-->  
+            <dn>ou=赢时胜,dc=efund,dc=com</dn>  
+            <!--ldap用户唯一编码属性值 如果不配置值，则默认为uid -->  
+            <userNameAttr>sAMAccountName</userNameAttr>  
+            <!--ldap用户密码属性值，如果不配置值，则默认为userPassword -->  
+            <userpwdAttr>Userpassword</userpwdAttr>  
+            <!--ldap用户部门编码属性值,如果不配置值，则默认为departmentNumber -->  
+            <userDeptAttr>departmentNumber</userDeptAttr>  
+            <!--ldap用户姓名属性值，如果不配置值，则默认为cn -->  
+            <empNameAttr>cn</empNameAttr>  
+            <!--手机号码属性，如果不配置，则默认为mobile -->  
+            <mobileAttr>mobile</mobileAttr>  
+            <!--手机号码属性，如果不配置，则默认为telephoneNumber-->  
+            <telphoneAttr>telephoneNumber</telphoneAttr>  
+            <!--邮箱属性，如果不配置，则默认为mail-->  
+            <eMailAttr>mail</eMailAttr> 
+        </ldapUserInfo>  
+        <ldapUserInfo> 
+            <!--用户信息dn地址-->  
+            <dn>ou=桌面框架组,dc=efund,dc=com</dn>  
+            <!--ldap用户唯一编码属性值 如果不配置值，则默认为uid -->  
+            <userNameAttr>sAMAccountName</userNameAttr>  
+            <!--ldap用户密码属性值，如果不配置值，则默认为userPassword -->  
+            <userpwdAttr>Userpassword</userpwdAttr>  
+            <!--ldap用户部门编码属性值,如果不配置值，则默认为departmentNumber -->  
+            <userDeptAttr>departmentNumber</userDeptAttr>  
+            <!--ldap用户姓名属性值，如果不配置值，则默认为cn -->  
+            <empNameAttr>cn</empNameAttr>  
+            <!--手机号码属性，如果不配置，则默认为mobile -->  
+            <mobileAttr>mobile</mobileAttr>  
+            <!--手机号码属性，如果不配置，则默认为telephoneNumber-->  
+            <telphoneAttr>telephoneNumber</telphoneAttr>  
+            <!--邮箱属性，如果不配置，则默认为mail-->  
+            <eMailAttr>mail</eMailAttr> 
+        </ldapUserInfo> 
+    </ldapUserInfos> 
+</ldap>

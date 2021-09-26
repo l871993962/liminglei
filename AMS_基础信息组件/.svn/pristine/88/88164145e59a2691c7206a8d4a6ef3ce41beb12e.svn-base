@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListHeaders>
+	
+	<!--电子对账参数设置 -->
+	<ListHeader id="dzPara" desc="电子对账参数设置">
+		<!--  <Header key='C_ASS_CODE' text='付款账户' align='L' format=''></Header> -->
+		<!-- <Header key='C_ASS_CODE' text='投资组合' align='L' format='' serviceId="IPortDataService"></Header>-->
+		<Header key='C_TGH_CODE' text='托管机构代码' align='L' format=''></Header>
+		<Header key='C_TGH_CODE' text='托管机构名称' align='L' format='' serviceId="IOrgDataService"></Header>
+		<Header key='C_BUS_TYPE' text='业务类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DZ_MODE' text="对账模式" align='L' format='' 
+			serviceId="IVocDataService"></Header>
+		<Header key='C_COMM_TYPE' text='通讯类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_MANAGE_CODE' text='管理人' align='L' format='' serviceId="IOrgDataService"></Header>
+		<Header key='C_TARGET_USER' text='目标UserId' align='L' format=''></Header>
+		<Header key='C_TARGET_APP_LOGO' text='目标AppId' align='L' format=''></Header>
+		<Header key='C_DEPT_CODE' text='公司代码' align='L' format=''></Header>
+		<Header key='C_CERT_ID' text='证书ID' align='L' format=''></Header>
+		<Header key='C_ErPara_Code' text='深证通参数' align='L' format='' serviceId="IErParaDataService"></Header>
+		<Header key='C_High_Time' text='重发次数' align='L' format=''></Header>
+		<Header key='C_KM_NAME_LENGTH' text='科目名称长度' align='C' format=''></Header>
+		<Header key='C_Interval' text='重发间隔' align='L' format=''></Header>
+		<Header key='C_Has_Branch' text='应用分机构' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<!-- STORY60297【富国基金】支持电子对账参数设置支持民生银行多管理人不同秘钥配置 -->
+		<Header key='C_DV_SECRETTYPE' text='加密方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_CHARSET' text='报文编码' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_LICORG' text='许可信息' align='L' format='' ></Header>
+		<!-- <Header key='C_SECRETKEY' text='管理人密钥' align='L' format=''
+			serviceId=""></Header> -->
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id="erPara" desc="深圳通参数设置">
+		<Header key='C_Para_Code' text='参数代码' align='L' format=''></Header>
+		<Header key='C_Para_Name' text='参数名称' align='L' format=''></Header>
+		<Header key='C_Src_UserId' text='源UserId' align='L' format=''></Header>
+		<Header key='C_Src_AppId' text='源AppId' align='L' format=''></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id="mrInfo" desc="主备信息设置">
+		<Header key='C_Dv_Switch_Mark' text='主备标识' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_Mr_Ip' text='连接IP' align='L' format=''></Header>
+		<Header key='C_Mr_Port' text="连接PORT" align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='dzRelaOrgan' desc='关联组合设置'>
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_ORG_NAME_P' text='上级机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_ORG_NAME' text='机构名称' align='L' format=''></Header>
+		<Header key='C_DV_ORG_TYPE' text='机构类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_TYPE_CODE' text='关联机构' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id="base_ervoc" desc="电子对账词汇字典">
+	    <Header key="C_DV_CODE" text="词汇代码" align="L" format=""></Header>
+	    <Header key="C_DV_NAME" text="词汇名称" align="L" format=""></Header>
+	</ListHeader>
+	
+	
+	<ListHeader id='erRptLog' desc='报文日志'>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L' format='' serviceId="IElecGeneDataService"></Header>
+		<Header key='C_ERR_INFO' text='提示信息' align='L' format=''></Header>
+		<Header key='D_HANDLE_TIME' text='更新时间' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PKG_ID' text='PkgID' align='L' format=''></Header>	
+	</ListHeader>
+</ListHeaders>
+

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.yss</groupId>
+	<artifactId>Aggregator_WebProjects</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>Aggregator_WebProjects</name>
+	
+	<properties>
+		<!-- 客户端 -->
+		<client.version>V1.300.7.0-SNAPSHOT</client.version>
+		
+		<!-- AMS_产品管理组件 -->
+		<ams.cpgl.version>V1.300.7.0-SNAPSHOT</ams.cpgl.version>
+		
+		<!-- AMS_基础信息组件 -->
+		<ams.jcxx.version>V1.300.7.0-SNAPSHOT</ams.jcxx.version>
+
+		<!-- AMS_资讯信息组件 -->
+		<ams.zxxx.version>V1.300.7.0-SNAPSHOT</ams.zxxx.version>
+		
+		<!-- FAST、FAST_脚本升级 -->
+		<ams.fast.version>V3.0.0.0-SNAPSHOT</ams.fast.version>
+	</properties>
+	
+	<!-- 配置deploy时的私服仓库 -->
+	<distributionManagement>
+		<repository>
+			<id>release</id>
+			<name>Release Repository</name>
+			<url>${ReleaseRepository}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<name>Snapshot Repository</name>
+			<url>${SnapshotRepository}</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+	<modules>
+		<!-- FAST_com.yss.platform -->
+		<!-- AMS_估值核算_com.yss.uco.bridge -->
+		<module>../../AMS_基础信息组件/server/container/com.yss.uco.bridge</module>
+	</modules>
+	
+</project>
