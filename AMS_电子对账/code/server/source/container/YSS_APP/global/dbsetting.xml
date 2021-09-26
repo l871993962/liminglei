@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DataSources xmlns="http://www.w3school.com.cn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3school.com.cn dbsetting.xsd">  
+  <!-- id:站点标识 reflog:关键日志标识 used:配置是否使用[true:表示使用 false:表示不使用] -->  
+  <dataSource id="dbservice001" reflog="" used="true"> 
+    <!-- 驱动程序 -->  
+    <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"/>  
+    <!-- 数据库连接参数 -->  
+    <!--  
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.13:1521:ora11g" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.30:1521:orcl" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.39:1521:ora10g" />
+		<property name="user" value="v45scl" />
+		<property name="password" value="qq" />
+		 -->  
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@${dbsetting_ip}:${dbsetting_port}:${dbsetting_orcl}"/>  
+    <property name="user" value="${dbsetting_user}"/>  
+    <property name="password" value="${dbsetting_password}"/>  
+		 <!---
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.1.3:1521:orcl"/>  
+    <property name="user" value="V45HTWB1"/>  
+    <property name="password" value="6E7906DE9BAF8FA8A2FF5D019B3B5A3EB07F3E6C62BDD5C41A808515DA94F2CD107FAB5B6BD4E316"/>  
+	-->
+    <!--
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.1.3:1521:orcl"/>  
+    <property name="user" value="v45pro_wng"/>  
+    <property name="password" value="6E7906DE9BAF8FA8A2FF5D019B3B5A3EB07F3E6C62BDD5C41A808515DA94F2CD107FAB5B6BD4E316"/> 
+    -->  
+    <!--	
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.16:1521:orcl"/>  
+    <property name="user" value="v45gfxc3"/>  
+    <property name="password" value="6E7906DE9BAF8FA8A2FF5D019B3B5A3EB07F3E6C62BDD5C41A808515DA94F2CD107FAB5B6BD4E316"/>  
+	-->  
+    <!-- 
+		 <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.16:1521:orcl" />
+		<property name="user" value="gfzq1" />
+		<property name="password" value="1" />
+		 -->  
+    <!--		 
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.16:1521:orcl"/>  
+    <property name="user" value="htfqd"/>  
+    <property name="password" value="6E7906DE9BAF8FA8A2FF5D019B3B5A3EB07F3E6C62BDD5C41A808515DA94F2CD107FAB5B6BD4E316"/>  
+	-->  
+    <!-- 
+		 <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.41:1521:orcl" />
+		<property name="user" value="v45yfdsc" />
+		<property name="password" value="qq" />
+		 -->  
+    <!-- <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.30:1521:orcl" />
+		<property name="user" value="v45dev" />
+		<property name="password" value="qq" /> -->  
+    <!-- 连接池中保留的最大连接数 -->  
+    <property name="maxPoolSize" value="20"/>  
+    <!-- 连接池中保留的最少连接数 -->  
+    <property name="minPoolSize" value="3"/> 
+	<property name="validationQuery" value="SELECT 1 FROM dual"/>  
+    <!-- 连接池中保留的最少连接数 -->  
+    <property name="testOnBorrow" value="false"/> 
+	<property name="testOnReturn" value="false"/> 
+
+  </dataSource>  
+  <!-- <dataSource id="logUser" used="true">
+		<property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.16.30:1521:orcl" />
+		<property name="user" value="v45devlog" />
+		<property name="password" value="qq" />
+		<property name="maxPoolSize" value="20" />
+		<property name="minPoolSize" value="1" />
+	</dataSource> -->  
+  <welcome-file-list> 
+    <welcome-file>WEB-INF/index.jsp</welcome-file> 
+  </welcome-file-list> 
+</DataSources>

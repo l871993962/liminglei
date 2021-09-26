@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <StyleCopTreatErrorsAsWarnings>true</StyleCopTreatErrorsAsWarnings>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79E55686-85FA-4B3B-AFB0-4C1FBA6DAF45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssElecReco</RootNamespace>
+    <AssemblyName>YssElecReco</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\AssociaType.cs" />
+    <Compile Include="Context\ElecrecoServiceIdConstant.cs" />
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PER_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PER_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_RELA_PER_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PER_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PER_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_RELA_PER_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PUB_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PUB_L.designer.cs">
+      <DependentUpon>Frm_ELEC_RELA_PUB_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PUB_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_PUB_S.designer.cs">
+      <DependentUpon>Frm_ELEC_RELA_PUB_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_SET_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Bi\Frm_ELEC_RELA_SET_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_RELA_SET_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DeployMess_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DeployMess_S.Designer.cs">
+      <DependentUpon>Frm_DeployMess_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepCfg_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepCfg_L.Designer.cs">
+      <DependentUpon>Frm_DZ_RepCfg_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepCfg_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepCfg_S.Designer.cs">
+      <DependentUpon>Frm_DZ_RepCfg_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepColCfg_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepColCfg_L.Designer.cs">
+      <DependentUpon>Frm_DZ_RepColCfg_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepColCfg_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_RepColCfg_S.Designer.cs">
+      <DependentUpon>Frm_DZ_RepColCfg_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_TransRepCfg_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_TransRepCfg_L.Designer.cs">
+      <DependentUpon>Frm_DZ_TransRepCfg_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_TransRepCfg_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_DZ_TransRepCfg_S.Designer.cs">
+      <DependentUpon>Frm_DZ_TransRepCfg_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BBINFO_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BBINFO_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_BBINFO_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BBINFO_L.processor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BBINFO_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BBINFO_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_BBINFO_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_DBL_GZ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_DBL_GZ_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_DBL_GZ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_DETAIL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_DETAIL_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_DETAIL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_GENE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_GENE_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_GENE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_GZ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_GZ_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_GZ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_HANDACCEPT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_HANDACCEPT_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_HANDACCEPT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_JZCBDB_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_JZCBDB_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_JZCBDB_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_KM_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_KM_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_KM_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_LR_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_LR_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_LR_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_Elec_Plan_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_Elec_Plan_S.Designer.cs">
+      <DependentUpon>Frm_Elec_Plan_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RECO_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RECO_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_RECO_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RESULT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RESULT_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_RESULT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RESULT_MX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RESULT_MX.Designer.cs">
+      <DependentUpon>Frm_ELEC_RESULT_MX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RPT_LOG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_RPT_LOG_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_RPT_LOG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_Send_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_Send_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_Send_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RELA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RELA_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_SPLIT_RELA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RELA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RELA_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_SPLIT_RELA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RULE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RULE_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_SPLIT_RULE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RULE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SPLIT_RULE_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_SPLIT_RULE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SYZQY_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_SYZQY_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_SYZQY_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TEMPLATE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TEMPLATE_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_TEMPLATE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TMPL_RELA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TMPL_RELA_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_TMPL_RELA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TMPL_RELA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_TMPL_RELA_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_TMPL_RELA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_YE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_YE_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_YE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_ZCFZ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_ZCFZ_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_ZCFZ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BATCHMX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Frm_ELEC_BATCHMX_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_BATCHMX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_ELEC_DSP_PARA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_ELEC_DSP_PARA_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_DSP_PARA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_DZRESULT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_DZRESULT_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_DZRESULT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_GZ_RESULT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_GZ_RESULT_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_GZ_RESULT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_IGNOREITEM_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_IGNOREITEM_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_INFO_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_INFO_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_INFO_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_KMMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_S.designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_KMMAP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KM_OUT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_KM_OUT_S.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_KM_OUT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_MESSAGE_DETAIL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_MESSAGE_DETAIL_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_MESSAGE_DETAIL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_PUBLIC_KMMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_PUBLIC_KMMAP_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_PUBLIC_KMMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_RESULT_DETAIL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_RESULT_DETAIL_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_RESULT_DETAIL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_TGH_KMMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_TGH_KMMAP_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_TGH_KMMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_L.designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_ZBMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_S.designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_ZBMAP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_L.designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_ASSMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_S.designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_ASSMAP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_PORT_KMMAP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Er\Reverse\Frm_ELEC_REVE_PORT_KMMAP_L.Designer.cs">
+      <DependentUpon>Frm_ELEC_REVE_PORT_KMMAP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun\DeployUtil.cs" />
+    <Compile Include="Fun\ElecBBInfoUtil.cs" />
+    <Compile Include="Fun\ElecClsTreeLeafList.cs" />
+    <Compile Include="Fun\ElecConstant.cs" />
+    <Compile Include="Fun\ElecEnums.cs" />
+    <Compile Include="Fun\ElecRelaTableListLoader.cs" />
+    <Compile Include="Fun\ErDspTableListLoader.cs" />
+    <Compile Include="Fun\ErGzbTableListLoader.cs" />
+    <Compile Include="Fun\ErYebTableListLoader.cs" />
+    <Compile Include="Fun\GzbHdTableListLoader.cs" />
+    <Compile Include="Fun\ReveDzResultTableListLoader.cs" />
+    <Compile Include="Fun\ReveDzTableListLoader.cs" />
+    <Compile Include="Fun\ReveElecDVCons.cs" />
+    <Compile Include="Fun\SplitRuleTableListLoader.cs" />
+    <Compile Include="Fun\YebHdTableListLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pojo\Bi\ElecPerRela.cs" />
+    <Compile Include="Pojo\Bi\ElecRela.cs" />
+    <Compile Include="Pojo\Bi\EleHk.cs" />
+    <Compile Include="Pojo\Deploy\Deploy.cs" />
+    <Compile Include="Pojo\Deploy\FileStreamParam.cs" />
+    <Compile Include="Pojo\Deploy\Info.cs" />
+    <Compile Include="Pojo\Er\DzRepCfg.cs" />
+    <Compile Include="Pojo\Er\DzRepColCfg.cs" />
+    <Compile Include="Pojo\Er\DzTemplate.cs" />
+    <Compile Include="Pojo\Er\DzTmplRela.cs" />
+    <Compile Include="Pojo\Er\DzTransRepCfg.cs" />
+    <Compile Include="Pojo\Er\ElecGroupRela.cs" />
+    <Compile Include="Pojo\Er\ErBbInfo.cs" />
+    <Compile Include="Pojo\Er\ErDblgzb.cs" />
+    <Compile Include="Pojo\Er\ErDzType.cs" />
+    <Compile Include="Pojo\Er\ErGzb.cs" />
+    <Compile Include="Pojo\Er\ErJzcbdb.cs" />
+    <Compile Include="Pojo\Er\ErLrb.cs" />
+    <Compile Include="Pojo\Er\ErResult.cs" />
+    <Compile Include="Pojo\Er\ErKmb.cs" />
+    <Compile Include="Pojo\Er\ErResultQuery.cs" />
+    <Compile Include="Pojo\Er\ErResview.cs" />
+    <Compile Include="Pojo\Er\ErRptLog.cs" />
+    <Compile Include="Pojo\Er\ErStepState.cs" />
+    <Compile Include="Pojo\Er\ErSplitRela.cs" />
+    <Compile Include="Pojo\Er\ErSplitRule.cs" />
+    <Compile Include="Pojo\Er\ErSyzqyb.cs" />
+    <Compile Include="Pojo\Er\ErYeb.cs" />
+    <Compile Include="Pojo\Er\ErZcfzb.cs" />
+    <Compile Include="Pojo\Para\ErDspManager.cs" />
+    <Compile Include="Pojo\Er\Reverse\AssMap.cs" />
+    <Compile Include="Pojo\Er\Reverse\ErGzbOut.cs" />
+    <Compile Include="Pojo\Er\Reverse\ErKmbOut.cs" />
+    <Compile Include="Pojo\Er\Reverse\ErReveInfo.cs" />
+    <Compile Include="Pojo\Er\Reverse\ErYebOut.cs" />
+    <Compile Include="Pojo\Er\Reverse\IgnoreItem.cs" />
+    <Compile Include="Pojo\Er\Reverse\KmMap.cs" />
+    <Compile Include="Pojo\Er\Reverse\KmRela.cs" />
+    <Compile Include="Pojo\Er\Reverse\KmRelaRecord.cs" />
+    <Compile Include="Pojo\Er\Reverse\KmRowRecord.cs" />
+    <Compile Include="Pojo\Er\Reverse\ResRela.cs" />
+    <Compile Include="Pojo\Er\Reverse\ReveResult.cs" />
+    <Compile Include="Pojo\Er\Reverse\ZbMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\BusinessSystemMenuConfigResource.cs" />
+    <Compile Include="Service\Bi\IElecPerRelaService.cs" />
+    <Compile Include="Service\Bi\IElecPubRelaService.cs" />
+    <Compile Include="Service\Bi\IElecRelaService.cs" />
+    <Compile Include="Service\Bi\IEleHkService.cs" />
+    <Compile Include="Service\Er\IDzRepCfgService.cs" />
+    <Compile Include="Service\Er\IDzRepColCfgService.cs" />
+    <Compile Include="Service\Er\IDzTemplateService.cs" />
+    <Compile Include="Service\Er\IDzTmplRelaService.cs" />
+    <Compile Include="Service\Er\IDzTransRepCfgService.cs" />
+    <Compile Include="Service\Er\IElecGeneService.cs" />
+    <Compile Include="Service\Er\IElecTaskService.cs" />
+    <Compile Include="Service\Er\IErBbInfoService.cs" />
+    <Compile Include="Service\Er\IErDataBusiOperService.cs" />
+    <Compile Include="Service\Er\IErDataControlService.cs" />
+    <Compile Include="Service\Er\IErDataService.cs" />
+    <Compile Include="Service\Er\IErDblgzbService.cs" />
+    <Compile Include="Service\Er\IErDzTypeDataService.cs" />
+    <Compile Include="Service\Er\IErGzbService.cs" />
+    <Compile Include="Service\Er\IErJzcbdbService.cs" />
+    <Compile Include="Service\Er\IErKmbService.cs" />
+    <Compile Include="Service\Er\IErLrbService.cs" />
+    <Compile Include="Service\Er\IErResultService.cs" />
+    <Compile Include="Service\Er\IErResviewService.cs" />
+    <Compile Include="Service\Er\IErRptLogService.cs" />
+    <Compile Include="Service\Er\IErStepStateService.cs" />
+    <Compile Include="Service\Er\IErSplitRelaService.cs" />
+    <Compile Include="Service\Er\IErSplitRuleService.cs" />
+    <Compile Include="Service\Er\IErSyzqybService.cs" />
+    <Compile Include="Service\Er\IErYebService.cs" />
+    <Compile Include="Service\Er\IErZcfzbService.cs" />
+    <Compile Include="Service\Para\IErDspManagerService.cs" />
+    <Compile Include="Service\Er\Reverse\IAssMapService.cs" />
+    <Compile Include="Service\Er\Reverse\IElecPortRelaService.cs" />
+    <Compile Include="Service\Er\Reverse\IElecTghRelaService.cs" />
+    <Compile Include="Service\Er\Reverse\IErGzbOutService.cs" />
+    <Compile Include="Service\Er\Reverse\IErKmbOutService.cs" />
+    <Compile Include="Service\Er\Reverse\IErReveInfoService.cs" />
+    <Compile Include="Service\Er\Reverse\IErYebOutService.cs" />
+    <Compile Include="Service\Er\Reverse\IIgnoreItemService.cs" />
+    <Compile Include="Service\Er\Reverse\IKmMapService.cs" />
+    <Compile Include="Service\Er\Reverse\IKmRelaRecordService.cs" />
+    <Compile Include="Service\Er\Reverse\IReveErKmRelaService.cs" />
+    <Compile Include="Service\Er\Reverse\IPortKmMapService.cs" />
+    <Compile Include="Service\Er\Reverse\IPublicKmMapService.cs" />
+    <Compile Include="Service\Er\Reverse\IResRelaService.cs" />
+    <Compile Include="Service\Er\Reverse\IReveDzService.cs" />
+    <Compile Include="Service\Er\Reverse\IReveResultService.cs" />
+    <Compile Include="Service\Er\Reverse\ITghKmMapService.cs" />
+    <Compile Include="Service\Er\Reverse\IZbMapService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YssSztTool\YssSztTool.csproj">
+      <Project>{639B6AD2-7B83-43DD-AE22-24DEA6534903}</Project>
+      <Name>YssSztTool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\YssTechnology.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Er\Frm_DeployMess_S.resx">
+      <DependentUpon>Frm_DeployMess_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_RepCfg_L.resx">
+      <DependentUpon>Frm_DZ_RepCfg_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_RepCfg_S.resx">
+      <DependentUpon>Frm_DZ_RepCfg_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_BBINFO_L.resx">
+      <DependentUpon>Frm_ELEC_BBINFO_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_BBINFO_S.resx">
+      <DependentUpon>Frm_ELEC_BBINFO_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_GENE_L.resx">
+      <DependentUpon>Frm_ELEC_GENE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_GZ_S.resx">
+      <DependentUpon>Frm_ELEC_GZ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_LR_S.resx">
+      <DependentUpon>Frm_ELEC_LR_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_RECO_L.resx">
+      <DependentUpon>Frm_ELEC_RECO_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_RESULT_L.resx">
+      <DependentUpon>Frm_ELEC_RESULT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_RESULT_MX.resx">
+      <DependentUpon>Frm_ELEC_RESULT_MX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_SYZQY_S.resx">
+      <DependentUpon>Frm_ELEC_SYZQY_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_TEMPLATE_L.resx">
+      <DependentUpon>Frm_ELEC_TEMPLATE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_TMPL_RELA_L.resx">
+      <DependentUpon>Frm_ELEC_TMPL_RELA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_TMPL_RELA_S.resx">
+      <DependentUpon>Frm_ELEC_TMPL_RELA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_YE_S.resx">
+      <DependentUpon>Frm_ELEC_YE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_ZCFZ_S.resx">
+      <DependentUpon>Frm_ELEC_ZCFZ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_SPLIT_RELA_L.resx">
+      <DependentUpon>Frm_ELEC_SPLIT_RELA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_SPLIT_RELA_S.resx">
+      <DependentUpon>Frm_ELEC_SPLIT_RELA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_SPLIT_RULE_L.resx">
+      <DependentUpon>Frm_ELEC_SPLIT_RULE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_SPLIT_RULE_S.resx">
+      <DependentUpon>Frm_ELEC_SPLIT_RULE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_TransRepCfg_L.resx">
+      <DependentUpon>Frm_DZ_TransRepCfg_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_TransRepCfg_S.resx">
+      <DependentUpon>Frm_DZ_TransRepCfg_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_DZRESULT_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_DZRESULT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_GZ_RESULT_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_GZ_RESULT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_IGNOREITEM_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_IGNOREITEM_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_IGNOREITEM_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_INFO_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_INFO_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_KMMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_KMMAP_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_KMMAP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_KM_OUT_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_KM_OUT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_MESSAGE_DETAIL_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_MESSAGE_DETAIL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_PUBLIC_KMMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_PUBLIC_KMMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_RESULT_DETAIL_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_RESULT_DETAIL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_TGH_KMMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_TGH_KMMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_ZBMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_ASSMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_ASSMAP_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_ASSMAP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_PORT_KMMAP_L.resx">
+      <DependentUpon>Frm_ELEC_REVE_PORT_KMMAP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Reverse\Frm_ELEC_REVE_ZBMAP_S.resx">
+      <DependentUpon>Frm_ELEC_REVE_ZBMAP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Bi\Frm_ELEC_RELA_PER_L.resx">
+      <DependentUpon>Frm_ELEC_RELA_PER_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Bi\Frm_ELEC_RELA_PER_S.resx">
+      <DependentUpon>Frm_ELEC_RELA_PER_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Bi\Frm_ELEC_RELA_PUB_L.resx">
+      <DependentUpon>Frm_ELEC_RELA_PUB_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Bi\Frm_ELEC_RELA_PUB_S.resx">
+      <DependentUpon>Frm_ELEC_RELA_PUB_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Bi\Frm_ELEC_RELA_SET_L.resx">
+      <DependentUpon>Frm_ELEC_RELA_SET_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_RepColCfg_L.resx">
+      <DependentUpon>Frm_DZ_RepColCfg_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_DZ_RepColCfg_S.resx">
+      <DependentUpon>Frm_DZ_RepColCfg_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_DETAIL_L.resx">
+      <DependentUpon>Frm_ELEC_DETAIL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_HANDACCEPT_S.resx">
+      <DependentUpon>Frm_ELEC_HANDACCEPT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_Elec_Plan_S.resx">
+      <DependentUpon>Frm_Elec_Plan_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Er\Frm_ELEC_BATCHMX_S.resx">
+      <DependentUpon>Frm_ELEC_BATCHMX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_ELEC_DSP_PARA_L.resx">
+      <DependentUpon>Frm_ELEC_DSP_PARA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\systemConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.5\StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

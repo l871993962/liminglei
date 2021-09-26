@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<service> 
+  <server id="default" ip="192.168.16.129" port="8080" targetNamespace="http://remote.portfolio.fwsengine.framework.fws.com" server="fwsEngine/services/fwsengine/expectedYieldRemote"/>  
+  <!-- add by tangshifeng , time 2013-05-13 -->  
+  <server id="interestRisk" ip="192.168.16.129" port="8080" targetNamespace="http://remote.risk.fwsfunc.framework.fws.com" server="fwsengine/services/fwsfunc/interestRateRemote"/>  
+  <!-- add by tangshifeng , time 2013-05-23 -->  
+  <!-- add by chenwenhai 20130514 -->  
+  <server id="varfx" ip="192.168.16.129" port="8080" targetNamespace="http://remote.risk.fwsfunc.framework.fws.com" server="fwsengine/services/fwsfunc/vaRRemote"/>  
+  <!-- add by chenwenhai 20130522 -->  
+  <server id="assetExecute" ip="192.168.16.129" port="8080" targetNamespace="http://portfolio.fwsengine.framework.fws.com" server="fwsengine/services/fwsengine/invokCountSetRemote"/>  
+  <server id="fundStock" ip="123.125.243.227" port="8520" targetNamespace="" server="bxfundacc/webservices/BXForZjglImpl"/>  
+  <!-- 	<server id="assetExecute" ip="192.168.16.232" port="9080" targetNamespace="http://remote.risk.fwsfunc.framework.fws.com" server="fwsengine/services/fwsengine/invokCountSetRemote"></server> -->  
+  <server id="queryOrder" port="8080" ip="127.0.0.1" server="YSSUCOBRIDGE/ws/com/yss/uco/transfer/support/service/IOrderMgrService"/>  
+  <server id="receiveBsOrder" port="8083" ip="127.0.0.1" server="YSSUCOBRIDGE/ws/com/yss/uco/transfer/support/service/IBsMgrService"/>  
+  <server id="NotificationSVC" port="8083" ip="127.0.0.1" server="YSSUCOBRIDGE/ws/dataservice/service/IDataService" timeout="30000"/>
+  <server id="WBSV_NF_OA" port="" ip="" server="http://192.168.1.14:8090/OA/ws?wsdl" timeout="50000"/>
+</service>

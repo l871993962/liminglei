@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ysstech xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CurrentVersion>VELECRECO_1.300.7.0</CurrentVersion>
+  <versions toolUpdate="true">
+    <version name="VELECRECO_1.300.7.0" date="16-08-18 18:01:09">
+      <file name="adodb.dll"/>
+      <file name="DevComponents.DotNetBar.dll"/>
+      <file name="icecs.dll"/>
+      <file name="ICSharpCode.SharpZipLib.dll"/>
+      <file name="Interop.FAXCOMLib.dll"/>
+      <file name="itextsharp.dll"/>
+      <file name="KStar.dll"/>
+      <file name="log4net.dll"/>
+      <file name="Microsoft.Office.Interop.Access.dll"/>
+      <file name="Microsoft.Office.Interop.Excel.dll"/>
+      <file name="Microsoft.Office.Interop.Word.dll"/>
+      <file name="Newtonsoft.Json.dll"/>
+      <file name="Office.dll"/>
+      <file name="System.Windows.Forms.DataVisualization.dll"/>
+      <file name="VisualUI.dll"/>
+      <file name="WaveFaxSDK5.1.dll"/>
+      <file name="Xilium.CefGlue.dll"/>
+      <file name="YssChart.dll"/>
+      <file name="ExtendsMsg.xml" dir="config"/>
+      <file name="MsgResource.xml" dir="config"/>
+      <file name="InfoOperType.xml" dir="config"/>
+      <file name="app.ini" dir="config"/>
+      <file name="help.chm" dir="config"/>
+      <file name="PrinterFax.xml" dir="config"/>
+      <file name="tray.xml" dir="config"/>
+      <file name="SysMsgCfg.xml" dir="config"/>
+      <file name="SignaSetting.xml" dir="config"/>
+      <file name="FAST.Common.Service.dll"/>
+      <file name="FAST.Core.dll"/>
+      <file name="FAST.Host.dll"/>
+      <file name="FAST.Platform.dll"/>
+      <file name="FAST.Resource.dll"/>
+      <file name="FAST.LocalDataService.exe"/>
+      <file name="FAST.LocalDataService.exe.config"/>
+      <file name="YssOuterDataVerify.dll"/>
+      <file name="YssRiskManagement.dll"/>
+      <file name="YssCmdMgr.dll"/>
+      <file name="YssCmdMgrUnifyPay.dll"/>
+      <file name="YssSpider.exe"/>
+      <file name="YssUCO.exe"/>
+      <file name="YssUCO.exe.config"/>
+      <file name="YssAval.dll"/>
+      <file name="YssBaseCls.dll"/>
+      <file name="YssData.dll"/>
+      <file name="YssDayf.dll"/>
+      <file name="YssFina.dll"/>
+      <file name="YssOption.dll"/>
+      <file name="YssPara.dll"/>
+      <file name="YssReport.dll"/>
+      <file name="YssToolBar.dll"/>
+      <file name="YssPool.dll"/>
+      <file name="YssXBRL.dll"/>
+      <file name="YssElecReco.dll"/>
+      <file name="YssPdMgr.dll"/>
+      <file name="YssOrder.dll"/>
+      <file name="YssDataMig.dll"/>
+      <file name="YssMonitor.dll"/>
+      <file name="YssAllocation.dll"/>
+      <file name="YssPeripheral.dll"/>
+      <file name="YssWorkSpace.dll"/>
+      <file name="AppCenterSupport.dll" delete="true" />
+      <file name="DataIntegrationSupport.dll" delete="true" />
+      <file name="DataMig.dll" delete="true" />
+      <file name="Framework.BusiOper.Support.dll" delete="true" />
+      <file name="Framework.Common.dll" delete="true" />
+      <file name="Framework.Communication.dll" delete="true" />
+      <file name="Framework.DataService.dll" delete="true" />
+      <file name="Framework.Service.dll" delete="true" />
+      <file name="Framework.UnitTest.exe" delete="true" />
+      <file name="Interop.ADOX.dll" delete="true" />
+      <file name="Interop.ET.dll" delete="true" />
+      <file name="Interop.Excel.dll" delete="true" />
+      <file name="Interop.KSO.dll" delete="true" />
+      <file name="Interop.MSXML2.dll" delete="true" />
+      <file name="Interop.VBA.dll" delete="true" />
+      <file name="Interop.VBRUN.dll" delete="true" />
+      <file name="InterProcessCommunication.dll" delete="true" />
+      <file name="LocalDataService.exe" delete="true" />
+      <file name="MessageCenterSupport.dll" delete="true" />
+      <file name="Microsoft.Vbe.Interop.dll" delete="true" />
+      <file name="Platform.Support.dll" delete="true" />
+      <file name="System.dll" delete="true" />
+      <file name="System.Data.dll" delete="true" />
+      <file name="System.Deployment.dll" delete="true" />
+      <file name="System.Drawing.dll" delete="true" />
+      <file name="System.Windows.Forms.dll" delete="true" />
+      <file name="System.Xml.dll" delete="true" />
+      <file name="YssApplication.dll" delete="true" />
+      <file name="YssAppView.exe" delete="true" />
+      <file name="YssAutoUpdate.exe" delete="true" />
+      <file name="YssBaseBiz.dll" delete="true" />
+      <file name="YssCommon.dll" delete="true" />
+      <file name="YssControls.dll" delete="true" />
+      <file name="YssCore.dll" delete="true" />
+      <file name="YssCP.dll" delete="true" />
+      <file name="YssDataCollector.dll" delete="true" />
+      <file name="YssDataIntegration.exe" delete="true" />
+      <file name="YssFileAdmin.dll" delete="true" />
+      <file name="YssFileLoadTactic.dll" delete="true" />
+      <file name="YssInfo.dll" delete="true" />
+      <file name="YssMsgCenter.exe" delete="true" />
+      <file name="YssOption.dll" delete="true" />
+      <file name="YssPanel.dll" delete="true" />
+      <file name="YssResources.dll" delete="true" />
+      <file name="YssSysMgr.dll" delete="true" />
+      <file name="YssSystem.dll" delete="true" />
+      <file name="YssTalk.exe" delete="true" />
+      <file name="YssTask.exe" delete="true" />
+      <file name="YssTask.dll" delete="true" />
+      <file name="YssTaskEx.exe" delete="true" />
+      <file name="YssTaskEx.dll" delete="true" />
+      <file name="YssTray.dll" delete="true" />
+      <file name="YssWorkflow.dll" delete="true" />
+    </version>
+  </versions>
+  <pages>
+
+    <page> 应用新增业务(1)： 1.完成稠州银行项目的需求功能合并到此版本，包括订单、资产池、产品管理、汇集调尾等新功能。
+			2.业务的拆分：权益拆分、收支结转拆分、新股新债业务拆分。
+		</page>
+    <page> 应用新增业务(2)： 3.新增报表：资产池核对报表、资产负债表、经营业务表。
+			4.新增接口：QDII外汇交易接口、QDII交易接口。
+		</page>
+    <page> 应用新增功能(3)： 5.数据复制，实现按权限、按产品的参数复制。 6.系统操作日志功能的下载。
+			7.客户端实现跨网与外网的自动更新。
+		</page>
+    <page> 应用新增功能(4)： 8.控件的优化：假表头支持排序、下拉框的优化、A区父子节点的同步、搜索定位功能等。
+			9.主界面的美化更新。
+		</page>
+    <page> 优化了如下功能： 1.财务模块的修改与优化，去除会计期间功能、科目代码操作定位及凭证录入的优化。
+			2.报表优化，实现报表与估值系统的整合，单次登录的实现、组合权限的控制。 3.A区与下拉框的数据排序不一致的问题。
+			4.功能、业务相关的BUG的修复。 5.控件相关BUG的修复。
+		</page>
+  </pages>
+</ysstech>

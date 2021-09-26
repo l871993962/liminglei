@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecDayDzTypeDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecDayDzTypeDynamicServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecEndWhereDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecEndWhereDynamicServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecOverTimeDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecOverTimeDynamicServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecResultParamServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecResultParamServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecRstCheckConditionDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecRstCheckConditionDynamicServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecZbDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecZbDynamicServiceController" />	
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecGeneTaskDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecGeneTaskDynamicServiceController" />
+		
+	<service class="com.yss.uco.elecreco.automic.task.controller.impl.ElecPortDynamicServiceControllerImpl" 
+		interface="com.yss.uco.elecreco.automic.task.controller.IElecPortDynamicServiceController" />		
+</services>

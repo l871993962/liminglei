@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 各个产品线的组件列表 -->
+<bundles> 
+  <bundleList productLine="ELECRECO" desc="电子对账" version="1.300.7.0">
+		<bundle code="com.yss.uco.elecreco_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.uco.elecreco.support_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.uco.elecreco.automic_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.ifa.szt.tool_1.0.0.jar" desc=""/> 
+		<bundle code="com.yss.ams.db.upgrade.elecreco_1.0.0.jar" desc=""/> 
+	    <dependencies>
+			<dependency productLine="FAST" version="3.0.0.0"> 
+				<bundle code="com.yss.framework_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.reference_1.0.0.jar" desc=""/> 	
+				<bundle code="com.yss.fast.runtime_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.runtime.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.servicecenter.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.db.upgrade_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.db.upgrade.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.webplus.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.atomicdata.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.mq.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.fast.right.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.fast.systemmanager.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.platform.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.cache_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.sso.client_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.fast.sso.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.uco.dataintegration.support_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.task.support_1.0.0.jar" desc="" />
+				<bundle code="com.yss.communicationProtocol.support_1.0.0.jar" desc=""/> 
+				<bundle code="com.yss.fast.workflow.support_1.0.0.jar" desc="" />   
+			</dependency>
+			<dependency productLine="BASEINFO" version="1.300.7.0"> 
+				<bundle code="com.yss.ams.base.information.support_1.0.0.jar" desc=""/>  
+				<bundle code="com.yss.ams.syncdata.support_1.0.0.jar" desc=""/>
+			</dependency>
+			<dependency productLine="PRODUCTINFO" version="1.300.7.0"> 
+				<bundle code="com.yss.ams.product.information.support_1.0.0.jar" desc=""/>  
+			</dependency>
+			<dependency productLine="SECINFO" version="1.300.7.0"> 
+				<bundle code="com.yss.ams.sec.information.support_1.0.0.jar" desc=""/>  
+			</dependency>
+			<dependency productLine="UCO" version="1.300.7.0"> 
+				<bundle code="com.yss.uco.support_1.0.0.jar" desc=""/>
+				<bundle code="com.yss.ams.api.support_1.0.0.jar" desc=""/>				
+			</dependency>	
+	    </dependencies>
+  </bundleList> 
+</bundles>

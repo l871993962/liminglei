@@ -1,0 +1,13 @@
+MRIP=127.0.0.1
+MRPort=3602
+MRIPBak=127.0.0.1
+MRPortBak=3602
+ServerName=ABC1
+AppName=test
+UserName=F_YINGSS02
+LocalIP=127.0.0.1
+LocalPort=8203
+AutoClose=2
+TimeOut=10
+AutoStart=0
+Version=V1.0.1

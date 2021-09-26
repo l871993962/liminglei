@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<classes>
+	<class id="IAutoStateService" menuId="base_erzyzb"
+		class="com.yss.uco.elecreco.er.autostate.service.AutoStateService"
+		interface="com.yss.uco.elecreco.support.service.IAutoStateService" />
+	<class id="IErDataControlService" menuId="dzData"
+		class="com.yss.uco.elecreco.er.erdata.control.service.impl.ErDataControlService"
+		interface="com.yss.uco.elecreco.er.erdata.control.service.IErDataControlService" />
+
+	<class id="IElecRelaService" menuId="dzPubRela"
+		class="com.yss.uco.elecreco.bi.elecrela.service.impl.ElecRelaService"
+		interface="com.yss.uco.elecreco.support.service.IElecRelaService" />
+	<class id="IElecIndexDataService" menuId=""
+		class="com.yss.uco.elecreco.bi.elecrela.service.impl.ElecIndexDataService"
+		interface="com.yss.uco.elecreco.bi.elecrela.service.IElecIndexDataService" />
+		
+	<class id="IErSpecialZbService" menuId="erSpecialZb"
+		class="com.yss.uco.elecreco.er.special.zb.service.impl.ErSpecialZbService"
+		interface="com.yss.uco.elecreco.support.service.IErSpecialZbService" />
+
+	<class id="IErDataService" menuId="dzData"
+		class="com.yss.uco.elecreco.er.erdata.service.impl.ErDataService"
+		interface="com.yss.uco.elecreco.er.erdata.service.IErDataService" />
+
+	<class id="IErResultService" menuId="dzResult"
+		class="com.yss.uco.elecreco.er.erresult.service.impl.ErResultService"
+		interface="com.yss.uco.elecreco.er.erresult.service.IErResultService" />
+
+	<class id="IErBbInfoService" menuId="dzBbInfo"
+		class="com.yss.uco.elecreco.er.erbbinfo.service.impl.ErBbInfoService"
+		interface="com.yss.uco.elecreco.support.service.IErBbInfoService" />
+
+	<class id="IErKmbService" menuId="erKmb"
+		class="com.yss.uco.elecreco.er.erkmb.service.impl.ErKmbService" interface="com.yss.uco.elecreco.er.erkmb.service.IErKmbService" />
+
+	<class id="IErGzbService" menuId="erGzb"
+		class="com.yss.uco.elecreco.er.ergzb.service.impl.ErGzbService" interface="com.yss.uco.elecreco.support.service.IErGzbService" />
+		
+	<class id="IErDblgzbService" menuId="erDblgzb"
+		class="com.yss.uco.elecreco.er.erdblgz.service.impl.ErDblgzbService" interface="com.yss.uco.elecreco.er.erdblgz.service.IErDblgzbService" />
+
+	<class id="IErYebService" menuId="erYeb"
+		class="com.yss.uco.elecreco.er.eryeb.service.impl.ErYebService" interface="com.yss.uco.elecreco.er.eryeb.service.IErYebService" />
+		
+	<class id="IErZcfzbService" menuId="erZcfzb"
+		class="com.yss.uco.elecreco.er.erzcfzb.service.impl.ErZcfzbService" interface="com.yss.uco.elecreco.er.erzcfzb.service.IErZcfzbService" />
+
+	<class id="IErJzcbdbService" menuId="erJzcbdb"
+		class="com.yss.uco.elecreco.er.erjzcbdb.service.impl.ErJzcbdbService" interface="com.yss.uco.elecreco.er.erjzcbdb.service.IErJzcbdbService" />
+		
+	<class id="IErLrbService" menuId="erLrb"
+		class="com.yss.uco.elecreco.er.erlrb.service.impl.ErLrbService" interface="com.yss.uco.elecreco.er.erlrb.service.IErLrbService" />
+
+	<class id="IErSyzqybService" menuId="erSyzqyb"
+		class="com.yss.uco.elecreco.er.ersyzqyb.service.impl.ErSyzqybService" interface="com.yss.uco.elecreco.er.ersyzqyb.service.IErSyzqybService" />
+
+	<class id="IElecGeneDataService" menuId="elecGene"
+		class="com.yss.uco.elecreco.er.erbbinfo.service.impl.ElecGeneDataService"
+		interface="com.yss.uco.elecreco.er.erbbinfo.service.IElecGeneDataService" />
+	<class id="IElecGeneService" menuId="elecGene"
+		class="com.yss.uco.elecreco.er.erbbinfo.service.impl.ElecGeneService"
+		interface="com.yss.uco.elecreco.er.erbbinfo.service.IElecGeneService" />
+	
+	<class id="IDzTemplateService" menuId= "dzTemplate" class="com.yss.uco.elecreco.er.template.service.impl.DzTemplateService"
+		interface="com.yss.uco.elecreco.er.template.service.IDzTemplateService"/>
+	<class id="IDzTemplateDataService" menuId= "dzTemplate" class="com.yss.uco.elecreco.er.template.service.impl.DzTemplateDataService"
+		interface="com.yss.uco.elecreco.er.template.service.IDzTemplateDataService"/>
+		
+	<class id="IDzTmplRelaService" menuId= "dzTmplRela" class="com.yss.uco.elecreco.er.tmplrela.service.impl.DzTmplRelaService"
+		interface="com.yss.uco.elecreco.er.tmplrela.service.IDzTmplRelaService"/>
+		
+	<class id="IElecTaskService" menuId= "elecGene" class="com.yss.uco.elecreco.er.task.service.ElecTaskService"
+		interface="com.yss.uco.elecreco.support.service.IElecTaskService"/>
+		
+	<class id="IDzRepCfgService" menuId= "dzRepCfg"
+		class="com.yss.uco.elecreco.er.repcfg.service.impl.DzRepCfgService"
+		interface="com.yss.uco.elecreco.support.service.IDzRepCfgService"/>
+		
+	<class id="IDzRepColCfgService" menuId= "dzRepColCfg"
+		class="com.yss.uco.elecreco.er.repcolcfg.service.impl.DzRepColCfgService"
+		interface="com.yss.uco.elecreco.er.repcolcfg.service.IDzRepColCfgService"/>
+	
+	<class id="IErStepStateService" menuId="erDetail"
+		class="com.yss.uco.elecreco.er.erinfostate.service.ErStepStateService"
+		interface="com.yss.uco.elecreco.support.service.IErStepStateService" />
+	<class id="IElecPerRelaService" menuId="dzPerRela"
+		class="com.yss.uco.elecreco.bi.elecrela.service.impl.ElecPerRelaService"
+		interface="com.yss.uco.elecreco.bi.elecrela.service.IElecPerRelaService" />
+		
+	<class id="IErResviewService" menuId="base_erzyzb"
+		class="com.yss.uco.elecreco.er.erresview.service.impl.ErResviewService"
+		interface="com.yss.uco.elecreco.er.erresview.service.IErResviewService" />
+		
+	<class id="ITaskGeneService" menuId= "elecGene" class="com.yss.uco.elecreco.er.task.service.TaskGeneService"
+		interface="com.yss.uco.elecreco.support.service.ITaskGeneService"/>
+		
+	<class id="ITaskSendService" menuId= "elecSend" class="com.yss.uco.elecreco.er.task.service.TaskSendService"
+		interface="com.yss.uco.elecreco.support.service.ITaskSendService"/>
+		
+	<class id="IErDspManagerService" menuId= "dzDspPara" class="com.yss.uco.elecreco.er.dsp.manager.service.impl.ErDspManagerService"
+		interface="com.yss.uco.elecreco.support.service.IErDspManagerService"/>
+		
+	<class id="IErOrgService" menuId= "erOrg" class="com.yss.uco.elecreco.er.org.service.impl.ErOrgService"
+		interface="com.yss.uco.elecreco.er.org.service.IErOrgService"/>
+	<class id="IAssMapService" menuId= "reveDzAssMap" class="com.yss.uco.elecreco.er.reverse.map.assmap.service.impl.AssMapService"
+		interface="com.yss.uco.elecreco.er.reverse.map.assmap.service.IAssMapService"/>
+		
+		
+	<class id="IErKmbOutService" menuId= "reveDzKmbOut" class="com.yss.uco.elecreco.er.reverse.out.erkmb.service.impl.ErKmbOutService"
+		interface="com.yss.uco.elecreco.er.reverse.out.erkmb.service.IErKmbOutService"/>
+	
+	<class id="IKmRelaRecordService" menuId= "reveDzKmMap" class="com.yss.uco.elecreco.er.reverse.map.kmrela.service.impl.KmRelaRecordService"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.service.IKmRelaRecordService"/>
+	<!-- 与估值重名，修改前台serivice，和此处的id  -->
+	<class id="IReveErKmRelaService" menuId= "reveDzKmRela" class="com.yss.uco.elecreco.er.reverse.map.kmrela.service.impl.KmRelaService"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.service.IKmRelaService"/>	
+		
+		
+	<class id="IPublicKmMapService" menuId= "reveDzPublicKmMap" class="com.yss.uco.elecreco.er.reverse.map.kmrela.service.impl.KmRelaRecordService"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.service.IKmRelaRecordService"/>
+	<class id="ITghKmMapService" menuId= "reveDzTghKmMap" class="com.yss.uco.elecreco.er.reverse.map.kmrela.service.impl.KmRelaRecordService"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.service.IKmRelaRecordService"/>
+	<class id="IPortKmMapService" menuId= "reveDzPortKmMap" class="com.yss.uco.elecreco.er.reverse.map.kmrela.service.impl.KmRelaRecordService"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.service.IKmRelaRecordService"/>
+	<class id="IZbMapService" menuId= "reveDzZbMap" class="com.yss.uco.elecreco.er.reverse.map.zbmap.service.impl.ZbMapService"
+		interface="com.yss.uco.elecreco.er.reverse.map.zbmap.service.IZbMapService"/>
+	<class id="IIgnoreItemService" menuId= "reveDzIgnoreItem" class="com.yss.uco.elecreco.er.reverse.manager.ignore.service.impl.IgnoreItemService"
+		interface="com.yss.uco.elecreco.er.reverse.manager.ignore.service.IIgnoreItemService"/>
+	<class id="IErReveInfoService" menuId= "reveDzInfo" class="com.yss.uco.elecreco.er.reverse.manager.info.service.impl.ErReveInfoService"
+		interface="com.yss.uco.elecreco.er.reverse.manager.info.service.IErReveInfoService"/>
+	<class id="IElecPortRelaService" menuId= "portfolio" class="com.yss.uco.elecreco.er.reverse.portrela.service.impl.ElecPortRelaService"
+		interface="com.yss.uco.elecreco.er.reverse.portrela.service.IElecPortRelaService"/>
+	<class id="IElecTghRelaService" menuId= "organ" class="com.yss.uco.elecreco.er.reverse.portrela.service.impl.ElecTghRelaService"
+		interface="com.yss.uco.elecreco.er.reverse.portrela.service.IElecTghRelaService"/>
+	<class id="IErGzbOutService" menuId= "reveDzGzbOut" class="com.yss.uco.elecreco.er.reverse.out.ergzb.service.impl.ErGzbOutService"
+		interface="com.yss.uco.elecreco.er.reverse.out.ergzb.service.IErGzbOutService"/>
+	<class id="IErYebOutService" menuId= "reveDzYebOut" class="com.yss.uco.elecreco.er.reverse.out.eryeb.service.impl.ErYebOutService"
+		interface="com.yss.uco.elecreco.er.reverse.out.eryeb.service.IErYebOutService"/>
+	
+	<class id="IReveDzService" menuId= "" class="com.yss.uco.elecreco.er.reverse.compare.service.impl.ReveDzService"
+		interface="com.yss.uco.elecreco.er.reverse.compare.service.IReveDzService"/>
+	<class id="IReveResultService" menuId= "reveDzResultDetail" class="com.yss.uco.elecreco.er.reverse.manager.result.service.impl.ReveResultService"
+		interface="com.yss.uco.elecreco.er.reverse.manager.result.service.IReveResultService"/>
+	<class id="IErSplitRelaService" menuId= "erSplitRela" class="com.yss.uco.elecreco.er.spilt.rela.service.impl.ErSplitRelaService"
+		interface="com.yss.uco.elecreco.er.spilt.rela.service.IErSplitRelaService"/>
+	<class id="IErSplitRuleService" menuId= "erSplitRule" class="com.yss.uco.elecreco.er.spilt.rule.service.impl.ErSplitRuleService"
+		interface="com.yss.uco.elecreco.er.spilt.rule.service.IErSplitRuleService"/>
+	<class id="IErTaskService" menuId="elecCheckMr"
+		class="com.yss.uco.elecreco.er.task.service.impl.ErTaskService"
+		interface="com.yss.uco.elecreco.support.service.IErTaskService" />
+	<class id="IErDzTypeDataService" menuId="base_erdztype"
+		class="com.yss.uco.elecreco.er.erdztype.service.impl.ErDzTypeDataService"
+		interface="com.yss.uco.elecreco.support.service.IErDzTypeDataService" />
+	<!-- STORY #90284 【富国基金】ETF重新跑账后对应的联接基金自动重新跑 -->
+	<class id="IDzdzAutomaticParamService" menuId=""
+		class="com.yss.uco.elecreco.service.automatic.DzdzAutomaticParamService"
+		interface="com.yss.uco.elecreco.support.service.IDzdzAutomaticParamService" />	
+	
+	<!-- STORY #88316 华夏基金-MOM产品个性化需求——场外和银行间交易数据发送托管行 -->	
+	<class id="IDzTransRepCfgService" menuId= "dzTransRepCfg"
+		class="com.yss.uco.elecreco.er.transrepcfg.DzTransRepCfgService"
+		interface="com.yss.uco.elecreco.support.transrepcfg.IDzTransRepCfgService"/>
+			
+	<class id="IDzdzMgrService" menuId=""
+		class="com.yss.uco.elecreco.mgr.service.impl.DzdzMgrServiceImpl"
+		interface="com.yss.ifa.szt.tool.thread.mgr.service.IDzdzMgrService"/>
+	
+	<!-- STORY #103644 华夏基金-新增托管行电子对账结果数据查询视图  -->	
+	<class id="IErXmlGzbService" menuId=""
+		class="com.yss.uco.elecreco.er.ergzb.service.impl.ErXmlGzbService"
+		interface="com.yss.uco.elecreco.support.dzdz.bus.gz.IErXmlGzbService"/>
+		
+		<!-- STORY #95888 【招商基金】【0331】【公募】新基金成立自动复制''对账指标关联'指标 -->
+	<class id="IElecPerRelaCopyService" menuId="dzPerRela"
+		class="com.yss.uco.elecreco.bi.elecrela.service.impl.ElecPerRelaCopyService"
+		interface="com.yss.uco.elecreco.support.service.IElecPerRelaCopyService"/>		
+</classes>

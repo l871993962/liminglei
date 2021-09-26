@@ -1,0 +1,2 @@
+create or replace view v_p_aa_port_cls as
+select c."C_PORT_CLS_CODE",c."C_PORT_CODE",c."C_PORT_CLS_NAME",c."C_DV_PORT_CLS_TYPE",c."C_DV_PORT_CLS_LEVEL",c."D_TO_LIST",c."D_OFF_LIST",c."C_DESC",c."N_CHECK_STATE",c."C_UPDATE_BY",c."C_UPDATE_TIME",c."C_CHECK_BY",c."C_CHECK_TIME",c."C_DV_PORT_CLS",c."C_DC_CODE",c."C_ALGO_CODE",c."C_IDEN", cury.c_dc_name from T_P_AA_PORT_CLS c left join T_S_DC_CURY cury on c.c_dc_code = cury.c_dc_code where c.n_check_state = 1;

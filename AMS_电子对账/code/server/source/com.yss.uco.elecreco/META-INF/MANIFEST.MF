@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Elecreco
+Bundle-SymbolicName: com.yss.uco.elecreco
+Bundle-Version: 1.0.0
+Bundle-Activator: com.yss.uco.elecreco.activator.ErActivator
+Bundle-Vendor: YSSUCO
+Bundle-IsLimitedUpload: TRUE
+Bundle-AppCode: YSSELECRECO
+Bundle-AppName: 电子对账
+Bundle-level: 8
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.9.000",
+ com.yss.uco.elecreco.support;bundle-version="1.0.0",
+ com.yss.uco.reference;bundle-version="1.0.0",
+ com.yss.framework;bundle-version="1.0.0",
+ com.yss.ifa.szt.tool;bundle-version="1.0.0",
+ com.yss.fast.mq.support;bundle-version="1.0.0",
+ com.yss.fast.task.support;bundle-version="1.0.0",
+ com.yss.platform.support,
+ com.yss.ams.sec.information.support,
+ com.yss.uco.support,
+ com.yss.ams.product.information.support;bundle-version="1.0.0"
+Bundle-ClassPath: .
+

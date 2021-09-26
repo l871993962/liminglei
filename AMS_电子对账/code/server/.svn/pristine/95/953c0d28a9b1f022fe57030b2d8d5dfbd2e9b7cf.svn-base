@@ -1,0 +1,68 @@
+<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Common.Service" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Common.Service.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Core" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Core.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Host" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Host.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.LocalDataService" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.LocalDataService.exe">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Platform" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Platform.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Resource" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Resource.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="FAST.Update" publicKeyToken="">
+    </assemblyIdentity>
+    <codeBase version="3.0.0.0" href="FAST.Update.exe">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="YssInformation" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="1.300.7.0" href="YssInformation.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="YssInformation.Support" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="1.300.7.0" href="YssInformation.Support.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="YssProductInfo" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="1.300.7.0" href="YssProductInfo.dll">
+    </codeBase>
+  </dependentAssembly>
+  <dependentAssembly>
+    <assemblyIdentity name="YssProductInfo.Support" publicKeyToken="D1F6C29D82026796">
+    </assemblyIdentity>
+    <codeBase version="1.300.7.0" href="YssProductInfo.Support.dll">
+    </codeBase>
+  </dependentAssembly>
+</assemblyBinding>

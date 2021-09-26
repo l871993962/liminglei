@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pojos>	
+	<pojo id="ElecRela" class="com.yss.uco.elecreco.support.bean.ElecRela"/>
+	<pojo id="ErGzb" class="com.yss.uco.elecreco.support.bean.ErGzb"/>
+	<pojo id="ErDblgzb" class="com.yss.uco.elecreco.er.erdblgz.pojo.ErDblgzb"/>
+	<pojo id="ErYeb" class="com.yss.uco.elecreco.er.eryeb.pojo.ErYeb"/>
+	<pojo id="ErKmb" class="com.yss.uco.elecreco.er.erkmb.pojo.ErKmb"/>
+	<pojo id="ErZcfzb" class="com.yss.uco.elecreco.er.erzcfzb.pojo.ErZcfzb"/>
+	<pojo id="ErJzcbdb" class="com.yss.uco.elecreco.er.erjzcbdb.pojo.ErJzcbdb"/>
+	<pojo id="ErLrb" class="com.yss.uco.elecreco.er.erlrb.pojo.ErLrb"/>
+	<pojo id="ErSyzqyb" class="com.yss.uco.elecreco.er.ersyzqyb.pojo.ErSyzqyb"/>
+	<pojo id="ErResult" class="com.yss.uco.elecreco.er.erresult.pojo.ErResult"/>
+	<pojo id="ErResultQuery" class="com.yss.uco.elecreco.er.erresult.pojo.ErResultQuery"/>
+	<pojo id="ErBbInfo" class="com.yss.uco.elecreco.support.bean.ErBbInfo"/>
+	<pojo id="ErSpecialZb" class="com.yss.uco.elecreco.support.bean.ErSpecialZb"/>	
+	
+	<pojo id="FileStreamParam" class="com.yss.uco.elecreco.er.template.pojo.FileStreamParam"/>
+	<pojo id="DzTemplate" class="com.yss.uco.elecreco.er.template.pojo.DzTemplate"/>
+	<pojo id="DzTmplRela" class="com.yss.uco.elecreco.er.tmplrela.pojo.DzTmplRela"/>
+	<pojo id="DzRepCfg" class="com.yss.uco.elecreco.er.repcfg.pojo.DzRepCfg"/>
+	<pojo id="DzRepColCfg" class="com.yss.uco.elecreco.er.repcolcfg.pojo.DzRepColCfg"/>
+	<pojo id="ErStepState" class="com.yss.uco.elecreco.support.dzdz.common.pojo.ErStepState"/>
+	<pojo id="ElecPerRela" class="com.yss.uco.elecreco.bi.elecrela.pojo.ElecPerRela"/>
+	<pojo id="ErResview" class="com.yss.uco.elecreco.er.erresview.pojo.ErResview"/>
+	<pojo id="AutoState" class="com.yss.uco.elecreco.support.bean.AutoState"/>
+	<pojo id="ErOrg" class="com.yss.uco.elecreco.er.org.pojo.ErOrg"/>
+	<pojo id="AssMap" class="com.yss.uco.elecreco.er.reverse.map.assmap.pojo.AssMap"/>
+	<pojo id="ErReveInfo" class="com.yss.uco.elecreco.er.reverse.manager.info.pojo.ErReveInfo"/>
+	<pojo id="IgnoreItem" class="com.yss.uco.elecreco.er.reverse.manager.ignore.pojo.IgnoreItem"/>
+	<pojo id="KmMap" class="com.yss.uco.elecreco.er.reverse.map.kmmap.pojo.KmMap"/>
+	<pojo id="ZbMap" class="com.yss.uco.elecreco.er.reverse.map.zbmap.pojo.ZbMap"/>
+	<pojo id="Port" class="com.yss.framework.api.common.co.Port" />
+	<pojo id="Org" class="com.yss.uco.elecreco.er.reverse.portrela.pojo.Org" />
+	<pojo id="KmRela" class="com.yss.uco.elecreco.er.reverse.map.kmrela.pojo.KmRela" />
+	<pojo id="ErKmbOut" class="com.yss.uco.elecreco.er.reverse.out.erkmb.pojo.ErKmbOut" />
+	<pojo id="ErGzbOut" class="com.yss.uco.elecreco.er.reverse.out.ergzb.pojo.ErGzbOut" />
+	<pojo id="ErYebOut" class="com.yss.uco.elecreco.er.reverse.out.eryeb.pojo.ErYebOut" />
+	<pojo id="KmRela" class="com.yss.uco.elecreco.er.reverse.map.kmrela.pojo.KmRela" />
+	<pojo id="KmRelaRecord" class="com.yss.uco.elecreco.er.reverse.map.kmrela.pojo.KmRelaRecord" />
+	<pojo id="KmRelaSingleReocrd" class="com.yss.uco.elecreco.er.reverse.map.kmrela.pojo.KmRelaSingleReocrd" />
+	
+	<pojo id="ReveResult" class="com.yss.uco.elecreco.er.reverse.manager.result.pojo.ReveResult" />
+	<pojo id="ErSplitRule" class="com.yss.uco.elecreco.er.spilt.rule.pojo.ErSplitRule" />
+	<pojo id="ErSplitRela" class="com.yss.uco.elecreco.er.spilt.rela.pojo.ErSplitRela" />
+	<pojo id="ErTask" class="com.yss.uco.elecreco.support.bean.ErTask" />
+	<pojo id="ErDspManager" class="com.yss.uco.elecreco.support.dzdz.common.pojo.ErDspManager"/>
+	<pojo id="ErDzType" class="com.yss.uco.elecreco.support.bean.ErDzType" />
+	
+	<!-- STORY #88316 华夏基金-MOM产品个性化需求——场外和银行间交易数据发送托管行 -->
+	<pojo id="DzTransRepCfg" class="com.yss.uco.elecreco.support.transrepcfg.pojo.DzTransRepCfg"/>
+	<!-- STORY #103644 华夏基金-新增托管行电子对账结果数据查询视图  -->
+	<pojo id="ErXmlGzb" class="com.yss.uco.elecreco.support.dzdz.bus.gz.pojo.ErXmlGzb"/>
+</pojos>

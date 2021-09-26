@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rights>
+	<increments exceptPost = "YWQNG,SYSMGR">
+		<increment funCode="usermanage">8796093022208,1152921504606846976,8589934592,17179869184</increment>
+		<increment funCode="syssecure">8589934592,17179869184</increment>
+		<increment funCode="AppManage">8589934592,17179869184</increment>
+		<increment funCode="fun">8589934592,17179869184</increment>
+		<increment funCode="Impconfig">1152921504606846976,549755813888,2199023255552,4398046511104,8589934592,17179869184,281474976710656</increment>
+		<increment funCode="Expconfig">549755813888,2199023255552,4398046511104,8589934592,17179869184,1152921504606846976</increment>
+		<increment funCode="RelevancyFun">4096,2147483648</increment>
+		<increment funCode="customFun">2,8,4,16384</increment>
+		<increment funCode="RecycleBin">17592186044416,128</increment>
+		<increment funCode="downLog">2147483648,2199023255552</increment>
+		<increment funCode="Documents">549755813888,4398046511104,8589934592,17179869184</increment>
+		<increment funCode="templateManager">1099511627776,2199023255552</increment>
+		<increment funCode="resourcemgr">1099511627776,2199023255552</increment>
+		<increment funCode="dataEnclosure">140737488355328,2147483648</increment>
+		<increment funCode="sourcemgr">32768,1048576</increment>
+		<increment funCode="Task">67108864,70368744177664</increment>
+		<increment funCode="processMonitor">17179869184</increment>
+		<increment funCode="processDeploy">549755813888,2199023255552</increment>
+		<increment funCode="workflowManage">8589934592,17179869184,35184372088832,1152921504606846976</increment>
+	</increments>
+</rights>

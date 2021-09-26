@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListHeaders>
+	<ListHeader id="dzPubRela" desc="电子对账指标关联设置 ">
+		<Header key="C_ZB_CODE" text="指标代码" align="L" format=""></Header>
+		<Header key="C_ZB_NAME" text="指标名称" align="L" format=""></Header>
+		<Header key="C_DZ_CODE" text="对账类型" align="L" format=""
+			serviceId="IDzTypeDataService"></Header>
+		<!-- serviceId="IClsPortDataService" -->
+		<Header key="C_DV_PORT_CLS_TYPE" text="分级类型" align="" format="" serviceId="IVocDataService"></Header>
+		<!-- STORY47037嘉实基金电子对账管理查看托管人反馈的信息时，分级指标名称需要展示至具体的分级代码 -->
+		<!-- <Header key="C_DV_PORT_CLS_LEVEL" text="级别类型" align="" format="" serviceId="IVocDataService"></Header>-->
+		<Header key="C_DV_PORT_CLS_LEVEL" text="分级级别" align="" format="" serviceId="IVocDataService"></Header>
+		<Header key="C_DV_PORT_CLS" text="级别类型" align="" format="" serviceId="IVocDataService"></Header>
+		<Header key="C_PORT_CODE_CLS" text="分级组合" align="" format=""></Header>
+		<!-- STORY #53570 【嘉实基金】电子对账-月报 产品分类配置 -->
+		<!--<Header key="C_REPORT_CODE" text="财务报表" align="" format="" serviceId="IReportDataService"></Header>-->
+		<Header key="C_REPORT_NAME" text="财务报表" align="" format="" serviceId=""></Header>
+		<Header key="C_DV_ZB_CODE" text="指标项名称" align="" format="" serviceId="IElecIndexDataService"></Header>
+		<Header key="C_ORG_CODE" text="托管机构" align="L" format=""
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_ROW' text='指定行' align='' format=''></Header>
+		<Header key='C_DESC' text='描述' align='' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+	<ListHeader id="dzPerRela" desc="电子对账个性指标设置 ">
+		<Header key="C_PORT_CODE" text="组合代码" align="L" format=""
+			serviceId="IPortDataService"></Header>
+		<Header key="C_DZ_CODE" text="对账类型" align="L" format=""
+			serviceId="IDzTypeDataService"></Header>
+		<Header key="C_ZB_CODE" text="指标代码" align="L" format=""></Header>
+		<Header key="C_ZB_NAME" text="指标名称" align="L" format=""></Header>
+		<Header key='C_SEND_MODE' text='是否发送' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT1' text='指标元素1' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE1' text='发送模式1' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT2' text='指标元素2' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE2' text='发送模式2' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT3' text='指标元素3' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE3' text='发送模式3' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT4' text='指标元素4' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE4' text='发送模式4' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT5' text='指标元素5' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE5' text='发送模式5' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT6' text='指标元素6' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE6' text='发送模式6' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT7' text='指标元素7' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE7' text='发送模式7' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT8' text='指标元素8' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE8' text='发送模式8' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ZB_ELEMENT9' text='指标元素9' align='L' formate=''></Header>
+		<Header key='C_ZB_VALUE9' text='发送模式9' align='L' formate=''
+			serviceId="IVocDataService"></Header>
+	</ListHeader>
+
+	<ListHeader id="dzResult" desc="对账结果浏览 ">
+		<Header key="C_SN" text="报文序号" align="L" format=""></Header>
+		<Header key="C_ASS_CODE" text="基金代码" align="L" format=""></Header>
+		<Header key="C_FILE_TYPE" text="对账类型" align="L" format=""></Header>
+		<Header key="D_TIME" text="对账日期" align="" format="yyyy-MM-dd"></Header>
+		<Header key="C_REF_NO" text="关联流水号" align="" format=""></Header>
+		<Header key="C_RESULT" text="对账结果" align="" format=""></Header>
+		<Header key="C_DEALER" text="处理人" align="" format=""></Header>
+	</ListHeader>
+
+	<ListHeader id="dzBbInfo" desc="电子对账管理">
+	    <Header key="C_PORT_CODE" text="组合代码" align="L" format=""></Header>
+		<Header key="C_PORT_CODE" text="组合名称" align="L" format=""
+			serviceId="IPortDataService"></Header>
+		<Header key="C_STATE" text="处理状态" align="" format=""
+			serviceId="IVocDataService"></Header>
+		<Header key="C_ERR_INFO" text="提示信息" align="L" format=""></Header>
+		<Header key="C_DV_RESULT" text="原因" align="L" format="" serviceId="IVocDataService"></Header>
+		<Header key="C_FILE_TYPE" text="文件类型" align="L" format=""
+			serviceId="IElecGeneDataService"></Header>
+		<Header key="C_RPT_TYPE" text="报表类型" align="L" format=""
+			serviceId="IElecGeneDataService"></Header>
+		<Header key="D_DATE" text="对账日期" align="L" format=""></Header>
+		<!-- STORY58759嘉实基金-电子对账-电子对账管理界面净值确认按钮修改 -->
+		<!-- <Header key='C_LOCK_EXECUTE' text='净值锁定' align='L' format=''
+		    serviceId=''></Header> -->
+		<Header key='C_CONFIRM_EXECUTE' text='净值确认' align='L' format=''
+            serviceId='IVocDataService'></Header>
+        <!-- STORY #104480 净值确认管理优化整合需求对电子对账管理的影响评估优化 -->    
+        <Header key='N_JZAUDIT_STATE' text='净值审核' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key="C_SN" text="报文序号" align="L" format=""></Header>
+		<Header key="C_ASS_CODE" text="资产代码" align="L" format=""></Header>
+		<Header key="C_DV_ER_WAY" text="对账方向" align="L" format=""
+			serviceId="IVocDataService"></Header>
+		<Header key='C_UPDATE_BY' text='处理人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='处理时间' align='L' format=''></Header>
+		<Header key='C_DEALER' text='托管行处理人' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+		<Header key='C_CONFIRM_ID' text='净值确认编号' align='L' format=''></Header>
+		<!-- STORY57828需求北京-【新华资产】ams估值核算【高】（关于新华资产系统需支持资管拆分估值表发送实现电子对账的需求） -->
+		<Header key='C_TGH_CODE' text='托管机构' align='L' format='' serviceId="IOrgDataService"></Header>
+		<Header key='C_SPLIT_CODE' text='拆分代码' align='L' format=''></Header>
+	</ListHeader>
+
+	<!-- 对账估值表 -->
+	<ListHeader id="erGzb" desc="电子对账估值表">
+		<!-- <Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header> -->
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+		<Header key='N_VA_PRICE' text='行情价格' align='R' format='#,##0.00########'></Header>
+		<Header key='N_QUOT_LOGO' text='行情标志 ' align='R'></Header>
+		<Header key='N_AMOUNT' text='证券数量' align='R' format='#,##0.00########'></Header>
+		<Header key='N_PORT_COST' text='证券成本' align='R' format='#,##0.00########'></Header>
+		<!-- edit by lyj 2016-1-14 BUG #125390 华泰证券0017等指标证券市值列保留了2位导致和估值表对不上 -->
+		<Header key='N_PORT_MV' text='证券市值' align='R' format='#,##0.00########'></Header> 
+		<Header key='N_PORT_IV' text='估值增值' align='R' format='#,##0.00########'></Header>
+		<Header key='C_CB_JZ_BL' text='成本占净值比' align='R' format='#,##0.0000'></Header>
+		<Header key='C_SZ_JZ_BL' text='市值占净值比' align='R' format='#,##0.0000'></Header>
+		<Header key='N_DETAIL' text='是否明细数据' align='R'></Header>
+		<!--<Header key='C_DV_ER_WAY' text='方向' align='L' format=''></Header> -->
+	</ListHeader>
+	
+	<!-- 对账估值表 -->
+	<ListHeader id="erDblgzb" desc="电子对账估值表">
+		<!-- <Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header> -->
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+		<Header key='N_VA_PRICE' text='行情价格' align='R' format='#,##0.00#############'></Header>
+		<Header key='N_QUOT_LOGO' text='行情标志 ' align='R'></Header>
+		<Header key='N_AMOUNT' text='证券数量' align='R' format='#,##0.00#############'></Header>
+		<Header key='N_PORT_COST' text='证券成本' align='R' format='#,##0.00#############'></Header>
+		<!-- edit by lyj 2016-1-14 BUG #125390 华泰证券0017等指标证券市值列保留了2位导致和估值表对不上 -->
+		<Header key='N_PORT_MV' text='证券市值' align='R' format='#,##0.00#############'></Header> 
+		<Header key='N_PORT_IV' text='估值增值' align='R' format='#,##0.00##'></Header>
+		<Header key='N_CB_JZ_BL' text='成本占净值比' align='R' format='#,##0.0000'></Header>
+		<Header key='N_SZ_JZ_BL' text='市值占净值比' align='R' format='#,##0.0000'></Header>
+		<Header key='N_DETAIL' text='是否明细数据' align='R'></Header>
+		<!--<Header key='C_DV_ER_WAY' text='方向' align='L' format=''></Header> -->
+	</ListHeader>
+	
+	<!-- 对账余额表 -->
+	<!-- BUG230782电子对账管理页面余额表对账明细数据页头错误、生成的对账数据中数值为0 余额表生成明细，list展示和树形展示界头都根据后台配置文件展示 -->
+	<!-- 原币[期初余额]，[]为一级界头 -->
+	<ListHeader id="erYeb" desc="电子对账余额表">
+		<!--<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header> -->
+		<Header key="C_KM_CODE" text="科目代码" align="L" format=""></Header>
+		<Header key="C_KM_NAME" text="科目名称" align="L" format=""></Header>
+		<Header key="C_DC_CODE" text="币种代码" align="L" format=""></Header>
+		<!-- 期初余额 -->
+		<Header key="N_ORIG_STARTBAL" text="原币[期初余额]" align="L" format="#,##0.00########"></Header>
+		<Header key="N_PORT_STARTBAL" text="本位币[期初余额]" align="L" format="#,##0.00########"></Header>
+		<Header key="N_AMOUNT_STARTBAL" text="数量[期初余额]" align="" format="#,##0.00########"></Header>
+		<!-- 本期借方发生额 -->
+		<Header key='N_ORIG_DEBIT' text='原币[本期借方发生额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_PORT_DEBIT' text='本位币[本期借方发生额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_AMOUNT_DEBIT' text='数量[本期借方发生额]' align='L' format='#,##0.00########'></Header>
+		<!-- 本期贷方发生额 -->
+		<Header key='N_ORIG_CREDIT' text='原币[本期贷方发生额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_PORT_CREDIT' text='本位币[本期贷方发生额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_AMOUNT_CREDIT' text='数量[本期贷方发生额]' align='L' format='#,##0.00########'></Header>
+		<!-- 期末余额 -->
+		<Header key='N_ORIG_ENDBAL' text='原币[期末余额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_PORT_ENDBAL' text='本位币[期末余额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_AMOUNT_ENDBAL' text='数量[期末余额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_DETAIL' text='是否最明细科目' align='L' format=''></Header>
+		<Header key='N_J_TOLTAL_AMOUNT' text='借方[累计发生额]' align='L' format='#,##0.00########'></Header>
+		<Header key='N_D_TOLTAL_AMOUNT' text='贷方[累计发生额]' align='L' format='#,##0.00########'></Header>
+	</ListHeader>
+	
+	<ListHeader id="erSyzqyb" desc="电子对账所有者权益（基金净值）变动表">
+		<!--<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header>-->
+		<Header key='C_INDEX_CODE' text='指标代码' align='L' format=''></Header>
+		<Header key='C_INDEX_NAME' text='指标名称' align='L' format=''></Header>
+		<Header key='N_THIS_NAV' text='本期实收基金' align='L' format='#,##0.00########'></Header>
+		<Header key='N_THIS_UNPROFIT' text='本期未分配利润' align='L' format='#,##0.00########'></Header>
+		<Header key='N_THIS_INTERESTS' text='本期所有者权益合计' align='L' format='#,##0.00########'></Header>
+		<Header key='N_LAST_NAV' text='上期实收基金' align='L' format='#,##0.00########'></Header>
+		<Header key='N_LAST_UNPROFIT' text='上期未分配利润' align='L' format='#,##0.00########'></Header>
+		<Header key='N_LAST_INTERESTS' text='上期所有者权益' align='L' format='#,##0.00########'></Header>
+	</ListHeader>
+	
+	<ListHeader id="erLrb" desc="电子对账利润表">
+		<!--<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header>-->
+		<Header key='C_INDEX_CODE' text='指标代码' align='L' format=''></Header>
+		<Header key='C_INDEX_NAME' text='指标名称' align='L' format=''></Header>
+		<Header key='N_CUR_VALUE' text='本期数' align='L' format='#,##0.00########'></Header>
+		<Header key='N_TOL_VALUE' text='本年数' align='L' format='#,##0.00########'></Header>
+	</ListHeader>
+	
+	<ListHeader id="erZcfzb" desc="电子对账资产负债表">
+		<!--<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header>-->
+		<Header key='C_INDEX_CODE' text='指标代码' align='L' format=''></Header>
+		<Header key='C_INDEX_NAME' text='指标名称' align='L' format=''></Header>
+		<Header key='N_BEGIN_VALUE' text='年初值' align='L' format='#,##0.00########'></Header>
+		<Header key='N_END_VALUE' text='期末值' align='L' format='#,##0.00########'></Header>
+	</ListHeader>
+
+	<!-- 对账科目表 -->
+	<ListHeader id="erKmb" desc="电子对账科目表">
+		<!--<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L'></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header>-->
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L' format=''></Header>
+		<Header key='C_KM_LEVEL' text='科目级别 ' align='L' format=''></Header>
+		<Header key='C_KM_CODE_P' text='上级科目代码 ' align='L' format=''></Header>
+		<Header key='C_DV_KM_CLS' text='科目类别 ' align='L' format=''></Header>
+		<Header key='C_DV_JD_WAY' text='余额方向  ' align='L' format=''></Header>
+		<Header key='N_DETAIL' text='是否明细科目  ' align='L' format=''></Header>
+	</ListHeader>
+	
+
+	<ListHeader id='dzTemplate' desc='电子对账模板部署'>
+		<Header key='C_TMPL_CODE' text='模板代码' align='L' format=''/>
+		<Header key='C_TMPL_NAME' text='模板名称' align='L' format=''/>
+		<Header key='C_TMPL_TYPE' text='模板类型' align='L' format='' 
+			serviceId='IDzTypeDataService'/>
+		<Header key='C_VERSION' text='版本号' align='L' format=''></Header>
+		<Header key='C_DV_TMPL_STATUS' text='部署状态' align='L' format='' 
+			serviceId="IVocDataService"/>
+		<Header key='C_DESC' text='描述信息' align='L' format=''/>
+		<Header key='Modifier' text='部署人' align='L' format='' 
+			serviceId="IUserDataService"/>
+		<Header key='ModifyDate' text='部署时间' align='L' format=''/>
+	</ListHeader>
+	
+	<ListHeader id='dzTmplRela' desc='电子对账模板关联'>
+		<Header key='C_TMPL_CODE' text='模板代码' align='L' format=''/>
+		<Header key='C_TMPL_CODE' text='模板名称' align='L' format=''
+			serviceId="IDzTemplateDataService"/>
+		<Header key='C_TMPL_TYPE' text='模板类型' align='L' format='' 
+		serviceId='IDzTypeDataService'/>
+		<Header key="C_PORT_CODE" text="投资组合" align="L" format=""
+			serviceId="IPortDataService"/>
+				<Header key='C_DESC' text='描述' align='' format=''/>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"/>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"/>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''/>
+		<Header key='C_CHECK_BY' text='审核人' align='' format=''
+			serviceId="IUserDataService"/>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''/>
+	</ListHeader>
+
+	<ListHeader id="dzRepCfg" desc="电子对账报表配置 ">
+		<Header key="C_ORG_CODE" text="机构代码" align="L" format=""></Header>
+		<Header key="C_ORG_NAME" text="机构名称" align="L" format=""
+			serviceId="IOrgDataService"></Header>
+		<Header key="C_DZ_NAME" text="电子对账报表" align="L" format=""
+			serviceId="IDzTypeDataService"></Header>
+		<Header key="C_REPORT_NAME" text="财务报表" align="L" format=""></Header>
+		<Header key="C_DAT_CODE" text="资产类型" align="L" format="" serviceId="IAccTypeDataService"></Header>
+		<Header key="C_PORT_CODE" text="组合/群组代码" align="L" format=""></Header>
+		<Header key="C_PORT_NAME" text="组合/群组名称" align="L" format=""
+			serviceId="IPortDataService"></Header>
+		<Header key="C_RPT_TYPE" text="报表类型" align="L" format="" serviceId="IVocDataService"></Header>	
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	<ListHeader id="dzBdzInfo" desc="电子对账不对账分页">
+	    <Header key="C_PORT_CODE" text="组合代码" align="L" format=""></Header>
+		<Header key="C_PORT_CODE" text="组合名称" align="L" format="" serviceId="IPortDataService"></Header>
+		<Header key='C_UPDATE_BY' text='操作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='操作时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id="base_erzyzb" desc="电子对账主要指标显示方案">
+	    <Header key="C_PLAN_CODE" text="方案代码" align="L" format=""></Header>
+	    <Header key="C_PLAN_NAME" text="方案名称" align="L" format=""></Header>
+	</ListHeader>
+	<ListHeader id="base_erdztype" desc="对账类型">
+	    <Header key="C_DZ_CODE" text="对账类型代码" align="L" format=""></Header>
+	    <Header key="C_DZ_NAME" text="对账类型名称" align="L" format=""></Header>
+	    <Header key="C_DZ_CODE_P" text="上级类型" align="L" format=""></Header>
+	</ListHeader>
+	<ListHeader id="dzRepColCfg" desc="电子报表个性列设置">
+	    <Header key="C_ELEC_COL" text="电子对账报表列" align="L" format="" serviceId="IVocDataService"></Header>
+	    <Header key="N_REPORT_COL" text="偏移量" align="L" format=""></Header>
+	</ListHeader> 
+	<ListHeader id='dzDspPara' desc='电子对账综合参数'>
+		<Header key='C_DV_PARAM_TYPE' text='参数类别' align='' format='' serviceId="IVocDataService"></Header>		
+		<Header key='C_PORT_CODE' text='组合/群组代码' align='' format='' serviceId=""></Header>
+		<Header key='C_PORT_NAME' text='组合/群组名称' align='' format='' ></Header>
+		<Header key='C_DSP_NAME' text='参数名称' align='' format=''></Header>
+		<Header key='C_DV_PARAMS_VALUE' text='参数值' align='' serviceId="IVocDataService"></Header>
+		<Header key='C_PORT_CLS_CODE' text='分级组合' align='' serviceId="IClsPortDataService"></Header>
+		<Header key='D_BEGIN' text='开始日期' align='' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='结束日期' align='' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='参数说明' align='' format=''></Header>
+		<Header key='C_DV_PLAT_VALUE' text='模板值' align='' serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align=''></Header>
+	</ListHeader>
+	<ListHeader id='reveDzIgnoreItem' desc='忽略设置管理'>
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_FILE_TYPE' text='对账类型' align='L' format=''
+			serviceId="IDzTypeDataService"></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_ER_WAY' text='对账方向' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_DATE' text='对账日期' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_DV_LOCK_STATE' text='锁定状态' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+		<Header key='N_FK_STATE' text='反馈状态' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_BF_DATA' text='本方数据' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_OUT_DATA' text='外部数据' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE' text='对账结果' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE' text='备注' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzIgnoreItem' desc='忽略设置管理'>
+		<Header key='C_FILE_TYPE' text='对账类型' align='L' format=''
+			serviceId="IDzTypeDataService"></Header>
+		<Header key='C_DV_IGNORE_TYPE' text='忽略类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ROW_FLAG' text='行标识' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_COL_FLAG' text='列标识' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+		<Header key='C_DV_SUB_SUIT' text='应用下级科目' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+		<Header key='C_DV_IGNORE_SCOPE' text='忽略方向' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+		<Header key='C_TGH_CODE' text='托管机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_PORT_CODE' text='产品组合' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzZbMap' desc='指标映射管理'>
+		<Header key='C_FILE_TYPE' text='对账类型' align='L' format=''
+			serviceId="IDzTypeDataService"></Header>
+		<Header key='C_ZB_CODE' text='内部指标代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_ZB_NAME' text='内部指标名称' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_ZB_CODE_OUT' text='外部指标代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_ZB_NAME_OUT' text='外部指标名称' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE' text='托管机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_PORT_CODE' text='产品组合' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzPortKmMap' desc='产品映射设置'>
+		<Header key='C_DV_KM_CLS' text='科目类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_KM_CODE_INNER' text='内部科目代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_NAME_INNER' text='内部科目名称' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_CODE_OUT' text='外部科目代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_KM_NAME_OUT' text='外部科目名称' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE_OUT' text='托管机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzTghKmMap' desc='托管方映射设置'>
+		<Header key='C_DV_KM_CLS' text='科目类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_KM_CODE_INNER' text='内部科目代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_NAME_INNER' text='内部科目名称' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_CODE_OUT' text='外部科目代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_KM_NAME_OUT' text='外部科目名称' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE_OUT' text='托管机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzPublicKmMap' desc='公共映射设置'>
+		<Header key='C_DV_KM_CLS' text='科目类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_KM_CODE_INNER' text='内部科目代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_NAME_INNER' text='内部科目名称' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_CODE_OUT' text='外部科目代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_KM_NAME_OUT' text='外部科目名称' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='reveDzAssMap' desc='资托资产映射'>
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_FILE_TYPE' text='对账类型' align='L' format=''
+			serviceId="IDzTypeDataService"></Header>
+		<Header key='C_TGH_CODE' text='托管银行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_PORT_CODE_OUT' text='托管行资产代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_DV_DZ_MODE' text='对账模式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 内部科目 -->
+	<ListHeader id="reveInnerKmb" desc="内部科目">
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 外部科目 -->
+	<ListHeader id="reveOutKmb" desc="外部科目">
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L' format=''></Header>
+		<Header key='C_TGH_CODE' text='托管行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+	</ListHeader>
+	<!-- 内外部科目映射 -->
+<!-- 	<ListHeader id="reveMapKmb" desc="内外部科目映射">
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L' format=''></Header>
+		<Header key='C_TGH_CODE' text='托管行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+	</ListHeader> -->
+	<!--
+	_INNER结尾表示本方数据，T_D_ER_REVE_RESRELA表里的字段
+	_OUT结尾表示对方数据，T_D_ER_REVE_RESRELA表里的字段
+	不用_INNER，_OUT结尾的为T_D_ER_REVE_RESULT的字段
+	text='科目代码[本方]' (括号内的为一级表头名称) 
+	 -->
+	<ListHeader id='reveDzResultDetail' desc='反向电子对账结果明细(估值表)'>
+		<!-- <Header key='C_PORT_CODE' text='投资组合' align='L' format=''
+			serviceId="IPortDataService"></Header> -->
+		<Header key='C_KM_CODE_INNER' text='科目代码[本方]' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_NAME_INNER' text='科目名称[本方]' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_CODE_OUT' text='科目代码[对方]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_KM_NAME_OUT' text='科目名称[对方]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE_OUT' text='托管行[对方]' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+			
+		<Header key='N_SL1_INNER' text='本方[数量]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_SL1_OUT' text='对方[数量]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_SL1' text='差值[数量]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE1_INNER' text='本方[行情]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE1_OUT' text='对方[行情]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE1' text='差值[行情]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE2_INNER' text='本方[本币成本]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE2_OUT' text='对方[本币成本]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE2' text='差值[本币成本]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE3_INNER' text='本方[本币市值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE3_OUT' text='对方[本币市值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE3' text='差值[本币市值]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE4_INNER' text='本方[本币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE4_OUT' text='对方[本币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE4' text='差值[本币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE5_INNER' text='本方[原币成本]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE5_OUT' text='对方[原币成本]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE5' text='差值[原币成本]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE6_INNER' text='本方[原币市值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE6_OUT' text='对方[原币市值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE6' text='差值[原币市值]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE7_INNER' text='本方[原币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE7_OUT' text='对方[原币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE7' text='差值[原币估值增值]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='C_DV_DZ_RESULT' text='对账结果' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+			
+	</ListHeader>
+	
+	<ListHeader id='reveDzResultDetail_YE' desc='反向电子对账结果明细(余额表)'>
+		<!-- <Header key='C_PORT_CODE' text='投资组合' align='L' format=''
+			serviceId="IPortDataService"></Header> -->
+		<Header key='C_KM_CODE_INNER' text='科目代码[本方]' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_NAME_INNER' text='科目名称[本方]' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_KM_CODE_OUT' text='科目代码[对方]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_KM_NAME_OUT' text='科目名称[对方]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='C_TGH_CODE_OUT' text='托管行[对方]' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+			
+		<Header key='N_JE1_INNER' text='本方[期初余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE1_OUT' text='对方[期初余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE1' text='差值[期初余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE2_INNER' text='本方[期初余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE2_OUT' text='对方[期初余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE2' text='差值[期初余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE3_INNER' text='本方[期初余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE3_OUT' text='对方[期初余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE3' text='差值[期初余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE4_INNER' text='本方[本期借方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE4_OUT' text='对方[本期借方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE4' text='差值[本期借方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE5_INNER' text='本方[本期借方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE5_OUT' text='对方[本期借方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE5' text='差值[本期借方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE6_INNER' text='本方[本期借方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE6_OUT' text='对方[本期借方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE6' text='差值[本期借方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE7_INNER' text='本方[本期贷方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE7_OUT' text='对方[本期贷方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE7' text='差值[本期贷方发生额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE8_INNER' text='本方[本期贷方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE8_OUT' text='对方[本期贷方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE8' text='差值[本期贷方发生额（本位币）]' align='L' format=''
+			serviceId=""></Header>
+			
+		<Header key='N_JE9_INNER' text='本方[本期贷方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE9_OUT' text='对方[本期贷方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE9' text='差值[本期贷方发生额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='N_JE10_INNER' text='本方[期末余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE10_OUT' text='对方[期末余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE10' text='差值[期末余额（原币）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE11_INNER' text='本方[期末余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE11_OUT' text='对方[期末余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE11' text='差值[期末余额（本位币）]' align='L' format=''
+			serviceId=""></Header>	
+			
+		<Header key='N_JE12_INNER' text='本方[期末余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_JE12_OUT' text='对方[期末余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CE_JE12' text='差值[期末余额（数量）]' align='L' format=''
+			serviceId=""></Header>	
+		
+		<Header key='C_DV_DZ_RESULT' text='对账结果' align='L' format=''
+			serviceId="IVocDataService"></Header>	
+			
+	</ListHeader>
+	
+	<ListHeader id='reveDzInfo' desc='反向电子对账管理'>
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_FILE_TYPE' text='对账类型' align='L' format=''
+			serviceId="IDzTypeDataService"></Header>	
+		<Header key="C_RPT_TYPE" text="报表类型" align="L" format=""
+			serviceId="IElecGeneDataService"></Header>
+		<Header key="C_DV_ER_WAY" text="对账方向" align="L" format=""
+			serviceId="IVocDataService"></Header>
+		<Header key="D_DATE" text="对账日期" align="L" format=""></Header>
+		<Header key='C_DV_LOCK_STATE' text='锁定状态' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_FK_STATE' text='反馈状态' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_B_DATA' text='本方数据' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_D_DATA' text='外部数据' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_DV_HANDLE_STATE' text='处理状态' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_HANDLE_INFO' text='处理详情' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_DV_DZ_RESULT' text='对账结果' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		
+		
+		<Header key='C_UPDATE_BY' text='处理人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='处理时间' align='L' format=''></Header>
+	</ListHeader>
+
+	<!-- 反向电子对账对账估值表 -->
+	<ListHeader id="reveDzGzbOut" desc="反向电子对账对账估值表">
+		<Header key='C_ASS_CODE' text='组合代码' align='L'></Header>
+		<Header key='C_ASS_NAME' text='组合名称' align='L'></Header>
+		<Header key='C_TGH_CODE' text='托管行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+		<Header key='C_CURR_TYPE' text='币种' align='L'></Header>
+		<Header key='C_EXRATE' text='汇率' align='L'></Header>
+		<Header key='N_AMOUNT' text='数量' align='L' format=''></Header>
+		<Header key='N_ORGI_UNIT_COST' text='成本价(原币)' align='L' format=''></Header>
+		<Header key='N_PORT_UNIT_COST' text='成本价(本币) ' align='L'></Header>
+		
+		<Header key='N_ORGI_COST' text='成本值(原币)' align='L' format=''></Header>
+		<Header key='N_PORT_COST' text='成本值(本币)' align='L' format=''></Header> 
+		<Header key='N_CB_JZ_BL' text='成本占资产的比例' align='L' format=''></Header>
+		<Header key='N_ORGI_VA_PRICE' text='市场价(原币)' align='L' format=''></Header>
+		<Header key='N_PORT_VA_PRICE' text='市场价(本币)' align='L' format=''></Header>
+		<Header key='N_ORGI_MV' text='市值(原币)' align='L'></Header>
+		<Header key='N_PORT_MV' text='市值(本币)' align='L'></Header>
+		<Header key='N_SZ_JZ_BL' text='市值占净值比' align='L'></Header>
+		<Header key='N_ORGI_IV' text='估值增值(原币)' align='L'></Header>
+		<Header key='N_PORT_IV' text='估值增值(本币)' align='L'></Header>
+		<Header key='C_TPXX' text='停牌标志' align='L'></Header>
+	</ListHeader>
+	
+	<!-- 反向电子对账对账余额表 -->
+	<ListHeader id="reveDzYebOut" desc="反向电子对账对账余额表">
+		<Header key='C_ASS_CODE' text='组合代码' align='L'></Header>
+		<Header key='C_ASS_NAME' text='组合名称' align='L'></Header>
+		<Header key='C_TGH_CODE' text='托管行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+		<Header key='C_DC_CODE' text='币种' align='L'></Header>
+		<Header key='N_ORIG_STARTBAL' text='期初余额（原币）' align='L' format=''></Header>
+		<Header key='N_PORT_STARTBAL' text='期初余额（本位币）' align='L' format=''></Header>
+		<Header key='N_AMOUNT_STARTBAL' text='期初余额（数量）' align='L'></Header>
+		<Header key='N_ORIG_DEBIT' text='本期借方发生额（原币）' align='L' format=''></Header>
+		<Header key='N_PORT_DEBIT' text='本期借方发生额（本位币）' align='L' format=''></Header> 
+		<Header key='N_AMOUNT_DEBIT' text='本期借方发生额（数量）' align='L' format=''></Header>
+		<Header key='N_ORIG_CREDIT' text='本期贷方发生额（原币）' align='L' format=''></Header>
+		<Header key='N_PORT_CREDIT' text='本期贷方发生额（本位币）' align='L' format=''></Header>
+		<Header key='N_AMOUNT_CREDIT' text='本期贷方发生额（数量）' align='L'></Header>
+		<Header key='N_ORIG_ENDBAL' text='期末余额（原币）' align='L'></Header>
+		<Header key='N_PORT_ENDBAL' text='期末余额（本位币）' align='L'></Header>
+		<Header key='N_AMOUNT_ENDBAL' text='期末余额（数量）' align='L'></Header>
+		<Header key='N_J_TOLTAL_AMOUNT' text='借方累计发生额' align='L'></Header>
+		<Header key='N_D_TOLTAL_AMOUNT' text='贷方累计发生额' align='L'></Header>
+	</ListHeader>
+	
+	<!-- 反向电子对账对账科目表 -->
+	<ListHeader id="reveDzKmbOut" desc="反向电子对账对账科目表 ">
+		<Header key='C_ASS_CODE' text='组合代码' align='L'></Header>
+		<Header key='C_ASS_NAME' text='组合名称' align='L'></Header>
+		<Header key='C_TGH_CODE' text='托管行' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+		<Header key='C_KM_LEVEL' text='科目级别' align='L'></Header>
+		<Header key='C_KM_CODE_P' text='上级科目代码' align='L'></Header>
+		<Header key='C_DETAIL' text='是否明细科目' align='L'></Header>
+		<Header key='C_DV_KM_CLS' text='科目类别' align='L'></Header>
+		<Header key='C_DV_JD_WAY' text='余额方向' align='L'></Header>
+	</ListHeader>
+	<ListHeader id='erSplitRela' desc='多托管行拆分设置'>
+		<Header key='C_PORT_CODE' text='组合代码' align='L' format=''
+			serviceId=""></Header>
+		<Header key='C_PORT_CODE' text='组合名称' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_TGH_CODE' text='托管机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>	
+		<Header key='C_SPLIT_CODE' text='拆分代码' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='D_START_DATE' text='开始日期' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='D_END_DATE' text='结束日期' align='L' format=''
+			serviceId=""></Header>	
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id="erSplitRule" desc="拆分规则设置 ">
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+	</ListHeader>
+	<!-- 拆分代码设置界面，组合科目和托管科目 -->
+	<ListHeader id="erSplitRuleKmShow" desc="拆分规则设置界面组合科目显示 ">
+		<Header key='C_KM_CODE' text='科目代码' align='L'></Header>
+		<Header key='C_KM_NAME' text='科目名称' align='L'></Header>
+	</ListHeader>
+	<ListHeader id="erJzcbdb" desc="电子对账净资产变动表">
+		<Header key='C_SN' text='报文序号' align='L' format=''></Header>
+		<Header key='C_FILE_TYPE' text='文件类型' align='L' format=''></Header>
+		<Header key='C_RPT_TYPE' text='报表类型' align='L'></Header>
+		<Header key='C_ASS_CODE' text='基金代码' align='L'></Header>
+		<Header key='D_START_DATE' text='开始日期' align='L'></Header>
+		<Header key='D_END_DATE' text='结束日期' align='L'></Header>
+		<Header key='C_INDEX_CODE' text='指标代码' align='L' format=''></Header>
+		<Header key='C_INDEX_NAME' text='指标名称' align='L' format=''></Header>
+		<Header key='N_CUR_VALUE' text='本期数' align='L' format='#,##0.00#############'></Header>
+		<Header key='N_TOL_VALUE' text='本年数' align='L' format='#,##0.00#############'></Header>
+	</ListHeader>
+	
+	<!-- STORY #88316 华夏基金-MOM产品个性化需求——场外和银行间交易数据发送托管行 -->
+	<ListHeader id="dzTransRepCfg" desc="电子对账交易数据配置 ">
+		<Header key="C_ORG_CODE" text="机构代码" align="L" format=""></Header>
+		<Header key="C_ORG_CODE" text="机构名称" align="L" format="" serviceId="IOrgDataService"></Header>
+		<Header key="C_TRANS_CODE" text="交易数据接口" align="L" format="" serviceId="IVocDataService"></Header>
+		<Header key="C_TPL_CODE" text="接口配置模板" align="L" format="" serviceId="IBasicDefineDataService"></Header>
+		<Header key="C_DAT_CODE" text="资产类型" align="L" format="" serviceId="IAccTypeDataService"></Header>
+		<Header key="C_PORT_CODE" text="组合代码" align="L" format=""></Header>
+		<Header key="C_PORT_CODE" text="投资组合" align="L" format="" serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format='' serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='' format='' serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='' formate=''></Header>
+	</ListHeader>
+	
+</ListHeaders>
+

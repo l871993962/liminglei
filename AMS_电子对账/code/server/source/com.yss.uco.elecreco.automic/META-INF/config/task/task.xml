@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskItems ProductDimension="电子对账" ProductCode = "Elecreco" AppCode = "YSSELECRECO">
+	<TaskItem Name="电子对账生成"
+		Class="com.yss.uco.elecreco.automic.task.AutomaticElecGeneTask"
+		TaskCode="automaticElecGeneTask" CustomWindowFlag="0">
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzType" Name="对账类型" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecGeneTaskDynamicService" />
+	    <CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzNodeState" Name="无法生成时的节点状态" Type="ComBox" Must="0" default="WARNING"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecNodeStateService" />
+	</TaskItem>
+	<TaskItem Name="电子对账发送"
+		Class="com.yss.uco.elecreco.automic.task.AutomaticElecSendTask"
+		TaskCode="automaticElecSendTask" CustomWindowFlag="0">
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzType" Name="对账类型" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecSendTaskDynamicService" />
+	    <CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzNodeState" Name="无法发送时的节点状态" Type="ComBox" Must="0" default="WARNING"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecNodeStateService" />
+	</TaskItem>
+	<TaskItem Name="对账结果检查" TaskType="M" ProductCode="SystemCheckTask" ProductDimension="检查任务"
+		Class="com.yss.uco.elecreco.automic.task.AutomaticElecResultCheckTask"
+		TaskCode="automaticElecResultCheckTask" CustomWindowFlag="0">
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzNewResult" Name="最新对账结果依据" Type="ComBox" Must="0" default="DZ_TIME_NEW"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecResultParamService" />
+			
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzType" Name="对账类型" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecDayDzTypeDynamicService" />
+		<CustomParam Code="SelectPortInfo" Name="组合信息" Type="SelectBox"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecPortDynamicService" />
+			
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数" Must="0"
+			Code="CheckNoResultPass" Name="无结果时允许通过" Type="CheckBox"
+			ImplClass="" DepandParam="frmCheckCount" />
+		<CustomParam Code="overOrForceRes" Name="超时/强制通过结果" Type="ComBox" Must="0"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecOverTimeDynamicService" />
+		<RouteParam  Code="ElecResult" Name="电子对账检查结果" Type="String" DictCode="CheckTaskResult" />
+	</TaskItem>
+	
+	<TaskItem Name="对账结果检查（二类）" TaskType="M" ProductCode="SystemCheckTask" ProductDimension="检查任务"
+		Class="com.yss.uco.elecreco.automic.task.AutomaticElecResultCheckTask"
+		TaskCode="automaticElecResultCheckTask2" CustomWindowFlag="0">
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzNewResult" Name="最新对账结果依据" Type="ComBox" Must="0" default="DZ_TIME_NEW"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecResultParamService" />
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzType" Name="对账类型" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecDayDzTypeDynamicService" />
+		<CustomParam Code="SelectPortInfo" Name="组合信息" Type="SelectBox"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecPortDynamicService" />
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数" Must="0"
+			Code="CheckNoResultPass" Name="无结果时允许通过" Type="CheckBox"
+			ImplClass="" DepandParam="frmCheckCount" />
+		<CustomParam Code="overOrForceRes" Name="超时/强制通过结果" Type="ComBox" Must="0"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecOverTimeDynamicService" />
+		<RouteParam  Code="ElecResult" Name="电子对账检查结果" Type="String" DictCode="CheckTaskResult" />
+	</TaskItem>
+	
+	<TaskItem Name="对账结果检查（估值表特殊指标）" TaskType="M" ProductCode="SystemCheckTask" ProductDimension="检查任务"
+		Class="com.yss.uco.elecreco.automic.task.AutomaticSpeZbResultCheckTask"
+		TaskCode="automaticSpeZbResultCheckTask" CustomWindowFlag="0">
+		<CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzNewResult" Name="最新对账结果依据" Type="ComBox" Must="0" default="PORT_MV_NEW"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecResultParamService" />
+		<!-- BUG #297526 电子对账相关的自动化节点中，将对账类型中暂时不支持的类型隐藏，不显示 -->
+		<!-- <CustomParam ParamGroupCode="ElecParam" ParamGroupName="对账参数"
+			Code="dzType" Name="对账类型" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecResultCheckTaskDynamicService" /> -->
+		<CustomParam Code="SelectPortInfo" Name="组合信息" Type="SelectBox"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecPortDynamicService" />
+		<CustomParam Code="SelectEndWhere" Name="轮询中止条件" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecEndWhereDynamicService" />
+		<CustomParam Code="SelectGreenWhere" Name="节点绿色通过条件" Type="SelectBox" Must="1"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecEndWhereDynamicService" />
+		<CustomParam Code="overOrForceRes" Name="超时/强制通过结果" Type="ComBox" Must="0"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecOverTimeDynamicService" />	
+		<CustomParam Code="SelectZbInfo" Name="特殊指标" Type="SelectBox"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecZbDynamicService" />
+		<CustomParam Code="SelectZbCheckCondition" Name="特殊指标检查条件" Type="SelectBox"
+			ImplClass="com.yss.uco.elecreco.automic.task.ElecRstCheckConditionDynamicService" />	
+		<RouteParam  Code="ElecResult" Name="电子对账检查结果" Type="String" DictCode="CheckTaskResult" />
+	</TaskItem>
+</TaskItems>

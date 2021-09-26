@@ -1,0 +1,10493 @@
+<html  xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="ProgId" content="Excel.Sheet">
+<meta name="Generator" content="Microsoft Excel 9">
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;}
+tr
+{mso-height-source:auto;}
+col
+{mso-width-source:auto;}
+br
+{mso-data-placement:same-cell;}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:top;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:top;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;}
+.xl53
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl74
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl57
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl46
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl37
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:bottom;
+}
+.xl25
+{mso-style-parent:style0;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl33
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl90
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl44
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl94
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+}
+.xl49
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+padding-bottom:7.5pt;
+}
+.xl87
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:middle;
+border-left:2.3pt none windowtext;
+border-top:2.3pt none windowtext;
+border-right:2.3pt none windowtext;
+border-bottom:2.3pt none windowtext;
+}
+.xl34
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl95
+{mso-style-parent:style0;
+white-space:normal;
+text-align:left;
+font-weight:700;
+font-style:italic;
+color:#999999;
+}
+.xl51
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+background:#E3E3FC;
+mso-pattern:auto none;
+}
+.xl48
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:middle;
+}
+.xl88
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl29
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl76
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl39
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:bottom;
+}
+.xl64
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl28
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl27
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl83
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl62
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl55
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl68
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl66
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl89
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl36
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+border-left:2.3pt none windowtext;
+border-top:2.3pt none windowtext;
+border-right:2.3pt none windowtext;
+border-bottom:2.3pt none windowtext;
+}
+.xl41
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl79
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl93
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl47
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:middle;
+}
+.xl78
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl45
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl61
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl69
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00000000";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl85
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl71
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00000000";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl31
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl58
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl84
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl80
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl52
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+background:#E3E3FC;
+mso-pattern:auto none;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl32
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:14.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+padding-top:2.3pt;
+padding-bottom:2.3pt;
+}
+.xl43
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl26
+{mso-style-parent:style0;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl86
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl92
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"yyyy\\-m\\-d\;\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl65
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl35
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl56
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl91
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"yyyy\\-m\\-d\;\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl67
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl73
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl72
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00000000";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl63
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl60
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl54
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl50
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+background:#E3E3FC;
+mso-pattern:auto none;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl77
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl30
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:middle;
+}
+.xl59
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl40
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:right;
+vertical-align:bottom;
+}
+.xl75
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl38
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl70
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00000000";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl81
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl42
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl82
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+}
+-->
+</style>
+<!--[if gte mso 9]>
+<xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>Sheet1</x:Name>
+<x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+<table class=xl32>
+<tr >
+<td class=xl49>
+<table >
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl30>
+<table >
+<tr >
+<td class=xl27>
+<span class=xl26>QDII估值表</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl30>
+<table  style='border-left:2.3pt none windowtext;
+border-top:2.3pt none windowtext;
+border-right:2.3pt none windowtext;
+border-bottom:2.3pt none windowtext;
+'>
+<tr >
+<td class=xl35>
+<span class=xl34>景顺长城基金管理有限公司——景顺长城大中华QDII基金——专用表</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl39>
+<span class=xl38>中国工商银行</span>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl40>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl43>
+<span class=xl38>估值日期：</span>
+</td>
+<td class=xl24>
+<table >
+<tr >
+<td class=xl46>
+<span class=xl45>2018年02月02日</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl48>
+<span class=xl45>币种：所有币种</span>
+</td>
+<td class=xl24>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl52>
+<span class=xl51>序号</span>
+</td>
+<td class=xl52>
+<span class=xl51>科目代码</span>
+</td>
+<td class=xl52>
+<span class=xl51>科目名称</span>
+</td>
+<td class=xl52>
+<span class=xl51>币种</span>
+</td>
+<td class=xl52>
+<span class=xl51>汇率<span style='mso-spacerun:yes'>&nbsp;</span></span>
+</td>
+<td class=xl52>
+<span class=xl51>数量</span>
+</td>
+<td class=xl52>
+<span class=xl51>成本价(原币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>成本价(本币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>成本值(原币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>成本值(本币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>成本占资产的比例</span>
+</td>
+<td class=xl52>
+<span class=xl51>市场价(原币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>市场价(本币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>市值(原币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>市值(本币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>市值占净值比</span>
+</td>
+<td class=xl52>
+<span class=xl51>估值增值(原币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>估值增值(本币)</span>
+</td>
+<td class=xl52>
+<span class=xl51>停牌标志</span>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>1</span>
+</td>
+<td class=xl57>
+<span class=xl56>1002</span>
+</td>
+<td class=xl57>
+<span class=xl56>银行存款</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>67334094.190000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.244809</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.244809</span>
+</td>
+<td class=xl64>
+<span class=xl59>-25004940.177000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>2</span>
+</td>
+<td class=xl57>
+<span class=xl56>100201</span>
+</td>
+<td class=xl57>
+<span class=xl56>活期存款</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>67334094.190000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.244809</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl64>
+<span class=xl59>42329154.013000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.244809</span>
+</td>
+<td class=xl64>
+<span class=xl59>-25004940.177000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>3</span>
+</td>
+<td class=xl57>
+<span class=xl56>10020101</span>
+</td>
+<td class=xl57>
+<span class=xl56>活期存款-人民币</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>19560100.380000</span>
+</td>
+<td class=xl64>
+<span class=xl59>19560100.380000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.113125</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>19560100.380000</span>
+</td>
+<td class=xl64>
+<span class=xl59>19560100.380000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.113125</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>4</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020101000001</span>
+</td>
+<td class=xl68>
+<span class=xl45>人民币活期存款-工商银行</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>19560100.380000</span>
+</td>
+<td class=xl76>
+<span class=xl38>19560100.380000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.113125</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>19560100.380000</span>
+</td>
+<td class=xl76>
+<span class=xl38>19560100.380000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.113125</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>5</span>
+</td>
+<td class=xl57>
+<span class=xl56>10020102</span>
+</td>
+<td class=xl57>
+<span class=xl56>活期存款-美元</span>
+</td>
+<td class=xl57>
+<span class=xl56>USD</span>
+</td>
+<td class=xl70>
+<span class=xl59>6.28850000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>232.920000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1464.721000</span>
+</td>
+<td class=xl66>
+<span class=xl59>8e-06</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>232.920569</span>
+</td>
+<td class=xl64>
+<span class=xl59>1464.721000</span>
+</td>
+<td class=xl66>
+<span class=xl59>8e-06</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000569</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>6</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020102000001</span>
+</td>
+<td class=xl68>
+<span class=xl45>美元活期存款-工行</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.000318</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.000318</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>7</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020102000001</span>
+</td>
+<td class=xl68>
+<span class=xl45>美元活期存款-工行</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2.140000</span>
+</td>
+<td class=xl76>
+<span class=xl38>13.460000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2.140415</span>
+</td>
+<td class=xl76>
+<span class=xl38>13.460000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000415</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>8</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020102000002</span>
+</td>
+<td class=xl68>
+<span class=xl45>美元活期存款-渣打</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>230.780000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1451.263000</span>
+</td>
+<td class=xl78>
+<span class=xl38>8e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>230.780472</span>
+</td>
+<td class=xl76>
+<span class=xl38>1451.263000</span>
+</td>
+<td class=xl78>
+<span class=xl38>8e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000472</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>9</span>
+</td>
+<td class=xl57>
+<span class=xl56>10020103</span>
+</td>
+<td class=xl57>
+<span class=xl56>活期存款-港币</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>21203087.890000</span>
+</td>
+<td class=xl64>
+<span class=xl59>17050039.055000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.098608</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>21203087.877582</span>
+</td>
+<td class=xl64>
+<span class=xl59>17050039.055000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.098608</span>
+</td>
+<td class=xl64>
+<span class=xl59>-0.012418</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>10</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020103000001</span>
+</td>
+<td class=xl68>
+<span class=xl45>港币活期存款-工行</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.004974</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.004974</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>11</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020103000001</span>
+</td>
+<td class=xl68>
+<span class=xl45>港币活期存款-工行</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>631130.010000</span>
+</td>
+<td class=xl76>
+<span class=xl38>507510.570000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.002935</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>631130.003855</span>
+</td>
+<td class=xl76>
+<span class=xl38>507510.570000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.002935</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.006145</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>12</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020103000002</span>
+</td>
+<td class=xl68>
+<span class=xl45>港币活期存款-渣打</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20571957.880000</span>
+</td>
+<td class=xl76>
+<span class=xl38>16542528.489000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.095673</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20571957.878701</span>
+</td>
+<td class=xl76>
+<span class=xl38>16542528.489000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.095673</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.001299</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>13</span>
+</td>
+<td class=xl57>
+<span class=xl56>10020105</span>
+</td>
+<td class=xl57>
+<span class=xl56>活期存款-新台币</span>
+</td>
+<td class=xl57>
+<span class=xl56>TWD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.21518273</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>26570673.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>5717549.857000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.033067</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>26570672.548861</span>
+</td>
+<td class=xl64>
+<span class=xl59>5717549.857000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.033067</span>
+</td>
+<td class=xl64>
+<span class=xl59>-0.451139</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>14</span>
+</td>
+<td class=xl68>
+<span class=xl45>10020105000002</span>
+</td>
+<td class=xl68>
+<span class=xl45>新台币活期存款-渣打</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>26570673.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5717549.857000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.033067</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>26570672.548861</span>
+</td>
+<td class=xl76>
+<span class=xl38>5717549.857000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.033067</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.451139</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>15</span>
+</td>
+<td class=xl57>
+<span class=xl56>1021</span>
+</td>
+<td class=xl57>
+<span class=xl56>结算备付金</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1728920.980000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1728920.980000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.009999</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1728920.980000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1728920.980000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.009999</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>16</span>
+</td>
+<td class=xl68>
+<span class=xl45>102161</span>
+</td>
+<td class=xl68>
+<span class=xl45>沪港通预付款</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1728920.980000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1728920.980000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.009999</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1728920.980000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1728920.980000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.009999</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>17</span>
+</td>
+<td class=xl57>
+<span class=xl56>1031</span>
+</td>
+<td class=xl57>
+<span class=xl56>存出保证金</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>279857.820000</span>
+</td>
+<td class=xl64>
+<span class=xl59>279857.820000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.001619</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>279857.820000</span>
+</td>
+<td class=xl64>
+<span class=xl59>279857.820000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.001619</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>18</span>
+</td>
+<td class=xl68>
+<span class=xl45>103161</span>
+</td>
+<td class=xl68>
+<span class=xl45>沪港通风控资金</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>279857.820000</span>
+</td>
+<td class=xl76>
+<span class=xl38>279857.820000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.001619</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>279857.820000</span>
+</td>
+<td class=xl76>
+<span class=xl38>279857.820000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.001619</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>19</span>
+</td>
+<td class=xl57>
+<span class=xl56>1102</span>
+</td>
+<td class=xl57>
+<span class=xl56>股票投资</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>7888886.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>25.269481</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>199348053.330000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.806766</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>22182653.074660</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.806766</span>
+</td>
+<td class=xl64>
+<span class=xl59>-177165400.255340</span>
+</td>
+<td class=xl64>
+<span class=xl59>22327155.880000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>20</span>
+</td>
+<td class=xl57>
+<span class=xl56>110201</span>
+</td>
+<td class=xl57>
+<span class=xl56>美元股票</span>
+</td>
+<td class=xl57>
+<span class=xl56>USD</span>
+</td>
+<td class=xl70>
+<span class=xl59>6.28850000</span>
+</td>
+<td class=xl62>
+<span class=xl59>10486.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>508.485083</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>5331974.580000</span>
+</td>
+<td class=xl64>
+<span class=xl59>12351448.230000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.071434</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1964132.659617</span>
+</td>
+<td class=xl64>
+<span class=xl59>12351448.230000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.071434</span>
+</td>
+<td class=xl64>
+<span class=xl59>-3367841.920383</span>
+</td>
+<td class=xl64>
+<span class=xl59>4102955.530000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>21</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020101</span>
+</td>
+<td class=xl57>
+<span class=xl56>美元成本</span>
+</td>
+<td class=xl57>
+<span class=xl56>USD</span>
+</td>
+<td class=xl70>
+<span class=xl59>6.28850000</span>
+</td>
+<td class=xl62>
+<span class=xl59>10486.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>117.205708</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1229019.050000</span>
+</td>
+<td class=xl64>
+<span class=xl59>8248492.700000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.047705</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1964132.659617</span>
+</td>
+<td class=xl64>
+<span class=xl59>12351448.230000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.071434</span>
+</td>
+<td class=xl64>
+<span class=xl59>735113.609617</span>
+</td>
+<td class=xl64>
+<span class=xl59>4102955.530000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>22</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020101US01609W1027</span>
+</td>
+<td class=xl68>
+<span class=xl45>BABA UN Equity</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>10486.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>117.205708</span>
+</td>
+<td class=xl76>
+<span class=xl38>786.620000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1229019.050000</span>
+</td>
+<td class=xl76>
+<span class=xl38>8248492.700000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.047705</span>
+</td>
+<td class=xl76>
+<span class=xl38>187.310000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1177.898935</span>
+</td>
+<td class=xl76>
+<span class=xl38>1964132.660000</span>
+</td>
+<td class=xl76>
+<span class=xl38>12351448.230000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.071434</span>
+</td>
+<td class=xl76>
+<span class=xl38>735113.610000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4102955.530000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>23</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020199</span>
+</td>
+<td class=xl57>
+<span class=xl56>美元估值增值</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>4102955.530000</span>
+</td>
+<td class=xl64>
+<span class=xl59>4102955.530000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.023729</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>-4102955.530000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>24</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020199US01609W1027</span>
+</td>
+<td class=xl68>
+<span class=xl45>BABA UN Equity</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>4102955.530000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.023729</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>25</span>
+</td>
+<td class=xl57>
+<span class=xl56>110203</span>
+</td>
+<td class=xl57>
+<span class=xl56>港币股票</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>5889500.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>13.830079</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>81452251.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>69600873.080000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.402533</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>86554255.008519</span>
+</td>
+<td class=xl64>
+<span class=xl59>69600873.080000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.402533</span>
+</td>
+<td class=xl64>
+<span class=xl59>5102003.248519</span>
+</td>
+<td class=xl64>
+<span class=xl59>10596727.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>26</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020301</span>
+</td>
+<td class=xl57>
+<span class=xl56>港币成本</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>5889500.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>12.030822</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>70855524.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>59004146.080000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.341248</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>86554255.008519</span>
+</td>
+<td class=xl64>
+<span class=xl59>69600873.080000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.402533</span>
+</td>
+<td class=xl64>
+<span class=xl59>15698730.248519</span>
+</td>
+<td class=xl64>
+<span class=xl59>10596727.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>27</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE1000002H1</span>
+</td>
+<td class=xl68>
+<span class=xl45>建设银行</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>1161000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.895700</span>
+</td>
+<td class=xl76>
+<span class=xl38>5.850000</span>
+</td>
+<td class=xl76>
+<span class=xl38>8005907.700000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6794293.620000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.039294</span>
+</td>
+<td class=xl76>
+<span class=xl38>8.950000</span>
+</td>
+<td class=xl76>
+<span class=xl38>7.196964</span>
+</td>
+<td class=xl76>
+<span class=xl38>10390950.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>8355674.620000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.048325</span>
+</td>
+<td class=xl76>
+<span class=xl38>2385042.300000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1561381.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>28</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE1000002R0</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国神华</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>234500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>25.174800</span>
+</td>
+<td class=xl76>
+<span class=xl38>20.370000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5903490.600000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4777281.700000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.027629</span>
+</td>
+<td class=xl76>
+<span class=xl38>25.550000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20.545522</span>
+</td>
+<td class=xl76>
+<span class=xl38>5991475.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4817924.790000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.027864</span>
+</td>
+<td class=xl76>
+<span class=xl38>87984.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>40643.090000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>29</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE100000353</span>
+</td>
+<td class=xl68>
+<span class=xl45>HISENSE KELON -H</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>334000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>9.194283</span>
+</td>
+<td class=xl76>
+<span class=xl38>7.760000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3070890.570000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2591513.860000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.014988</span>
+</td>
+<td class=xl76>
+<span class=xl38>10.180000</span>
+</td>
+<td class=xl76>
+<span class=xl38>8.186043</span>
+</td>
+<td class=xl76>
+<span class=xl38>3400120.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2734138.500000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.015813</span>
+</td>
+<td class=xl76>
+<span class=xl38>329229.430000</span>
+</td>
+<td class=xl76>
+<span class=xl38>142624.640000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>30</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE1000004X4</span>
+</td>
+<td class=xl68>
+<span class=xl45>株洲南车</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>30500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>51.643319</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.410000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1575121.220000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1324069.660000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.007658</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.650000</span>
+</td>
+<td class=xl76>
+<span class=xl38>35.100275</span>
+</td>
+<td class=xl76>
+<span class=xl38>1331325.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1070558.370000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.006192</span>
+</td>
+<td class=xl76>
+<span class=xl38>-243796.220000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-253511.290000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>31</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE100000Q35</span>
+</td>
+<td class=xl68>
+<span class=xl45>GUANGZHOU AUTOMOBILE</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>152000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>19.742988</span>
+</td>
+<td class=xl76>
+<span class=xl38>16.720000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3000934.110000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2541524.570000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.014699</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.500000</span>
+</td>
+<td class=xl76>
+<span class=xl38>14.072275</span>
+</td>
+<td class=xl76>
+<span class=xl38>2660000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2138985.800000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.012371</span>
+</td>
+<td class=xl76>
+<span class=xl38>-340934.110000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-402538.770000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>32</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301CNE100001M79</span>
+</td>
+<td class=xl68>
+<span class=xl45>SHANGHAI FOSUN</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>33500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>40.660341</span>
+</td>
+<td class=xl76>
+<span class=xl38>34.410000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1362121.440000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1152878.560000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.006668</span>
+</td>
+<td class=xl76>
+<span class=xl38>45.350000</span>
+</td>
+<td class=xl76>
+<span class=xl38>36.467296</span>
+</td>
+<td class=xl76>
+<span class=xl38>1519225.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1221654.400000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.007065</span>
+</td>
+<td class=xl76>
+<span class=xl38>157103.560000</span>
+</td>
+<td class=xl76>
+<span class=xl38>68775.840000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>33</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301HK0285041858</span>
+</td>
+<td class=xl68>
+<span class=xl45>比亚迪电子</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>327000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>18.284067</span>
+</td>
+<td class=xl76>
+<span class=xl38>15.170000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5978890.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4961795.160000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.028696</span>
+</td>
+<td class=xl76>
+<span class=xl38>19.160000</span>
+</td>
+<td class=xl76>
+<span class=xl38>15.407131</span>
+</td>
+<td class=xl76>
+<span class=xl38>6265320.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5038131.770000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.029138</span>
+</td>
+<td class=xl76>
+<span class=xl38>286430.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>76336.610000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>34</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301HK0656038673</span>
+</td>
+<td class=xl68>
+<span class=xl45>FOSUN INTERNATIONAL</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>208000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.473416</span>
+</td>
+<td class=xl76>
+<span class=xl38>14.560000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3634470.600000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3028167.120000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017513</span>
+</td>
+<td class=xl76>
+<span class=xl38>18.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>15.117644</span>
+</td>
+<td class=xl76>
+<span class=xl38>3910400.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3144469.950000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.018186</span>
+</td>
+<td class=xl76>
+<span class=xl38>275929.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>116302.830000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>35</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301HK0688002218</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国海外发展</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>122000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>30.663139</span>
+</td>
+<td class=xl76>
+<span class=xl38>24.940000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3740903.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3042495.900000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017596</span>
+</td>
+<td class=xl76>
+<span class=xl38>31.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>24.928030</span>
+</td>
+<td class=xl76>
+<span class=xl38>3782000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3041219.660000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017589</span>
+</td>
+<td class=xl76>
+<span class=xl38>41097.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-1276.240000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>36</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301HK1208013172</span>
+</td>
+<td class=xl68>
+<span class=xl45>MINMETALS</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>1452000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4.362871</span>
+</td>
+<td class=xl76>
+<span class=xl38>3.610000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6334888.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5234908.480000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.030276</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.180000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4.969523</span>
+</td>
+<td class=xl76>
+<span class=xl38>8973360.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>7215747.980000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.041732</span>
+</td>
+<td class=xl76>
+<span class=xl38>2638472.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1980839.500000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>37</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG211081248</span>
+</td>
+<td class=xl68>
+<span class=xl45>CHINA MEDICAL SYSTEM</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>93000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.769000</span>
+</td>
+<td class=xl76>
+<span class=xl38>14.950000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1652517.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1390031.200000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008039</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.060000</span>
+</td>
+<td class=xl76>
+<span class=xl38>13.718458</span>
+</td>
+<td class=xl76>
+<span class=xl38>1586580.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1275816.580000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.007379</span>
+</td>
+<td class=xl76>
+<span class=xl38>-65937.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-114214.620000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>38</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG2116J1085</span>
+</td>
+<td class=xl68>
+<span class=xl45>586.HK</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>184500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>21.850083</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.650000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4031340.300000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3255610.280000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.018829</span>
+</td>
+<td class=xl76>
+<span class=xl38>22.050000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17.731067</span>
+</td>
+<td class=xl76>
+<span class=xl38>4068225.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3271381.770000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.01892</span>
+</td>
+<td class=xl76>
+<span class=xl38>36884.700000</span>
+</td>
+<td class=xl76>
+<span class=xl38>15771.490000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>39</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG2163M1033</span>
+</td>
+<td class=xl68>
+<span class=xl45>CHINA EDUCATION</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>814000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.894934</span>
+</td>
+<td class=xl76>
+<span class=xl38>5.730000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5612476.600000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4665884.400000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.026985</span>
+</td>
+<td class=xl76>
+<span class=xl38>8.180000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.577783</span>
+</td>
+<td class=xl76>
+<span class=xl38>6658520.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5354315.690000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.030966</span>
+</td>
+<td class=xl76>
+<span class=xl38>1046043.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>688431.290000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>40</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG2953R1149</span>
+</td>
+<td class=xl68>
+<span class=xl45>AAC TECHNOLOGIES</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>21500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>149.778567</span>
+</td>
+<td class=xl76>
+<span class=xl38>127.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3220239.200000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2731162.400000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.015796</span>
+</td>
+<td class=xl76>
+<span class=xl38>141.100000</span>
+</td>
+<td class=xl76>
+<span class=xl38>113.462743</span>
+</td>
+<td class=xl76>
+<span class=xl38>3033650.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2439448.970000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.014108</span>
+</td>
+<td class=xl76>
+<span class=xl38>-186589.200000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-291713.430000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>41</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG608371046</span>
+</td>
+<td class=xl68>
+<span class=xl45>MICROPORT SCIENTIFIC</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>386000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.860211</span>
+</td>
+<td class=xl76>
+<span class=xl38>5.930000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2648041.390000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2287897.380000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.013232</span>
+</td>
+<td class=xl76>
+<span class=xl38>8.370000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.730568</span>
+</td>
+<td class=xl76>
+<span class=xl38>3230820.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2597999.290000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.015025</span>
+</td>
+<td class=xl76>
+<span class=xl38>582778.610000</span>
+</td>
+<td class=xl76>
+<span class=xl38>310101.910000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>42</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG6145U1094</span>
+</td>
+<td class=xl68>
+<span class=xl45>敏宝集团</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>74000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>47.453200</span>
+</td>
+<td class=xl76>
+<span class=xl38>39.730000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3511536.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2940315.110000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017005</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.950000</span>
+</td>
+<td class=xl76>
+<span class=xl38>35.341514</span>
+</td>
+<td class=xl76>
+<span class=xl38>3252300.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2615272.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.015125</span>
+</td>
+<td class=xl76>
+<span class=xl38>-259236.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-325043.110000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>43</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG875721634</span>
+</td>
+<td class=xl68>
+<span class=xl45>700.HK</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>32500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>181.468841</span>
+</td>
+<td class=xl76>
+<span class=xl38>150.040000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5897737.330000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4876198.940000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.028201</span>
+</td>
+<td class=xl76>
+<span class=xl38>452.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>363.788412</span>
+</td>
+<td class=xl76>
+<span class=xl38>14703000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>11823123.390000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.068378</span>
+</td>
+<td class=xl76>
+<span class=xl38>8805262.670000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6946924.450000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>44</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020301KYG989761062</span>
+</td>
+<td class=xl68>
+<span class=xl45>ZHOU HEI YA INTE</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>229500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>7.294200</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.140000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1674018.900000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1408117.740000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008144</span>
+</td>
+<td class=xl76>
+<span class=xl38>7.830000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6.296338</span>
+</td>
+<td class=xl76>
+<span class=xl38>1796985.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1445009.550000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008357</span>
+</td>
+<td class=xl76>
+<span class=xl38>122966.100000</span>
+</td>
+<td class=xl76>
+<span class=xl38>36891.810000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>45</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020399</span>
+</td>
+<td class=xl57>
+<span class=xl56>港币估值增值</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10596727.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10596727.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.061286</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10596727.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>46</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE1000002H1</span>
+</td>
+<td class=xl68>
+<span class=xl45>建设银行</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>1561381.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.00903</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>47</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE1000002R0</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国神华</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>40643.090000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000235</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>48</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE100000353</span>
+</td>
+<td class=xl68>
+<span class=xl45>HISENSE KELON -H</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>142624.640000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000825</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>49</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE1000004X4</span>
+</td>
+<td class=xl68>
+<span class=xl45>株洲南车</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-253511.290000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.001466</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>50</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE100000Q35</span>
+</td>
+<td class=xl68>
+<span class=xl45>GUANGZHOU AUTOMOBILE</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-402538.770000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.002328</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>51</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399CNE100001M79</span>
+</td>
+<td class=xl68>
+<span class=xl45>SHANGHAI FOSUN</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>68775.840000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000398</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>52</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399HK0285041858</span>
+</td>
+<td class=xl68>
+<span class=xl45>比亚迪电子</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>76336.610000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000441</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>53</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399HK0656038673</span>
+</td>
+<td class=xl68>
+<span class=xl45>FOSUN INTERNATIONAL</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>116302.830000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000673</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>54</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399HK0688002218</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国海外发展</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-1276.240000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-7e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>55</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399HK1208013172</span>
+</td>
+<td class=xl68>
+<span class=xl45>MINMETALS</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>1980839.500000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.011456</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>56</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG211081248</span>
+</td>
+<td class=xl68>
+<span class=xl45>CHINA MEDICAL SYSTEM</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-114214.620000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.000661</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>57</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG2116J1085</span>
+</td>
+<td class=xl68>
+<span class=xl45>586.HK</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>15771.490000</span>
+</td>
+<td class=xl78>
+<span class=xl38>9.1e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>58</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG2163M1033</span>
+</td>
+<td class=xl68>
+<span class=xl45>CHINA EDUCATION</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>688431.290000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.003982</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>59</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG2953R1149</span>
+</td>
+<td class=xl68>
+<span class=xl45>AAC TECHNOLOGIES</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-291713.430000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.001687</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>60</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG608371046</span>
+</td>
+<td class=xl68>
+<span class=xl45>MICROPORT SCIENTIFIC</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>310101.910000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.001793</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>61</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG6145U1094</span>
+</td>
+<td class=xl68>
+<span class=xl45>敏宝集团</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-325043.110000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.00188</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>62</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG875721634</span>
+</td>
+<td class=xl68>
+<span class=xl45>700.HK</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>6946924.450000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.040177</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>63</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020399KYG989761062</span>
+</td>
+<td class=xl68>
+<span class=xl45>ZHOU HEI YA INTE</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>36891.810000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000213</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>64</span>
+</td>
+<td class=xl57>
+<span class=xl56>110204</span>
+</td>
+<td class=xl57>
+<span class=xl56>台湾股票</span>
+</td>
+<td class=xl57>
+<span class=xl56>TWD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.21518273</span>
+</td>
+<td class=xl62>
+<span class=xl59>291000.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>221.264515</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>64387973.720000</span>
+</td>
+<td class=xl64>
+<span class=xl59>16690002.630000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.096526</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>77561998.725455</span>
+</td>
+<td class=xl64>
+<span class=xl59>16690002.630000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.096526</span>
+</td>
+<td class=xl64>
+<span class=xl59>13174025.005455</span>
+</td>
+<td class=xl64>
+<span class=xl59>3610290.700000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>65</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020401</span>
+</td>
+<td class=xl57>
+<span class=xl56>台湾成本</span>
+</td>
+<td class=xl57>
+<span class=xl56>TWD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.21518273</span>
+</td>
+<td class=xl62>
+<span class=xl59>291000.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>208.858017</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>60777683.020000</span>
+</td>
+<td class=xl64>
+<span class=xl59>13079711.930000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.075646</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>77561998.725455</span>
+</td>
+<td class=xl64>
+<span class=xl59>16690002.630000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.096526</span>
+</td>
+<td class=xl64>
+<span class=xl59>16784315.705455</span>
+</td>
+<td class=xl64>
+<span class=xl59>3610290.700000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>66</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020401TW0002330008</span>
+</td>
+<td class=xl68>
+<span class=xl45>TAIWAN SEMICONDUCTOR</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>226000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>194.632468</span>
+</td>
+<td class=xl76>
+<span class=xl38>41.530000</span>
+</td>
+<td class=xl76>
+<span class=xl38>43986937.660000</span>
+</td>
+<td class=xl76>
+<span class=xl38>9386761.560000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.054288</span>
+</td>
+<td class=xl76>
+<span class=xl38>259.500000</span>
+</td>
+<td class=xl76>
+<span class=xl38>55.839918</span>
+</td>
+<td class=xl76>
+<span class=xl38>58647000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>12619821.360000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.072986</span>
+</td>
+<td class=xl76>
+<span class=xl38>14660062.340000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3233059.800000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>67</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020401TW0002912003</span>
+</td>
+<td class=xl68>
+<span class=xl45>PRESIDENT CHAIN STOR</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>65000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>258.319159</span>
+</td>
+<td class=xl76>
+<span class=xl38>56.810000</span>
+</td>
+<td class=xl76>
+<span class=xl38>16790745.360000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3692950.370000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.021358</span>
+</td>
+<td class=xl76>
+<span class=xl38>291.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>62.618174</span>
+</td>
+<td class=xl76>
+<span class=xl38>18915000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4070181.270000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.02354</span>
+</td>
+<td class=xl76>
+<span class=xl38>2124254.640000</span>
+</td>
+<td class=xl76>
+<span class=xl38>377230.900000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>68</span>
+</td>
+<td class=xl57>
+<span class=xl56>11020499</span>
+</td>
+<td class=xl57>
+<span class=xl56>台湾估值增值</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3610290.700000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3610290.700000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.02088</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>-3610290.700000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>69</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020499TW0002330008</span>
+</td>
+<td class=xl68>
+<span class=xl45>TAIWAN SEMICONDUCTOR</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>3233059.800000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.018698</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>70</span>
+</td>
+<td class=xl68>
+<span class=xl45>11020499TW0002912003</span>
+</td>
+<td class=xl68>
+<span class=xl45>PRESIDENT CHAIN STOR</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>377230.900000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.002182</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>71</span>
+</td>
+<td class=xl57>
+<span class=xl56>110210</span>
+</td>
+<td class=xl57>
+<span class=xl56>上交所沪港通股票</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>1697900.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>28.373787</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>48175853.270000</span>
+</td>
+<td class=xl64>
+<span class=xl59>40853289.920000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.236273</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>50804335.020457</span>
+</td>
+<td class=xl64>
+<span class=xl59>40853289.920000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.236273</span>
+</td>
+<td class=xl64>
+<span class=xl59>2628481.750457</span>
+</td>
+<td class=xl64>
+<span class=xl59>4017182.650000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>72</span>
+</td>
+<td class=xl57>
+<span class=xl56>11021001</span>
+</td>
+<td class=xl57>
+<span class=xl56>上交所沪港通成本</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>1697900.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>26.007816</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>44158670.620000</span>
+</td>
+<td class=xl64>
+<span class=xl59>36836107.270000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.21304</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>50804335.020457</span>
+</td>
+<td class=xl64>
+<span class=xl59>40853289.920000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.236273</span>
+</td>
+<td class=xl64>
+<span class=xl59>6645664.400457</span>
+</td>
+<td class=xl64>
+<span class=xl59>4017182.650000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>73</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001BMG423131256</span>
+</td>
+<td class=xl68>
+<span class=xl45>海尔电器</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>187000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>25.088235</span>
+</td>
+<td class=xl76>
+<span class=xl38>20.810000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4691500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3890978.500000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.022503</span>
+</td>
+<td class=xl76>
+<span class=xl38>26.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>21.550684</span>
+</td>
+<td class=xl76>
+<span class=xl38>5011600.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4029977.910000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.023307</span>
+</td>
+<td class=xl76>
+<span class=xl38>320100.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>138999.410000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>74</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001CNE1000003X6</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国平安</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>67500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>61.472157</span>
+</td>
+<td class=xl76>
+<span class=xl38>52.170000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4149370.570000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3521308.440000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.020365</span>
+</td>
+<td class=xl76>
+<span class=xl38>90.700000</span>
+</td>
+<td class=xl76>
+<span class=xl38>72.934591</span>
+</td>
+<td class=xl76>
+<span class=xl38>6122250.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4923084.890000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.028472</span>
+</td>
+<td class=xl76>
+<span class=xl38>1972879.430000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1401776.450000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>75</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001CNE1000009Q7</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国太保</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>222000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>37.391171</span>
+</td>
+<td class=xl76>
+<span class=xl38>31.740000</span>
+</td>
+<td class=xl76>
+<span class=xl38>8300840.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>7047343.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.040758</span>
+</td>
+<td class=xl76>
+<span class=xl38>40.300000</span>
+</td>
+<td class=xl76>
+<span class=xl38>32.406439</span>
+</td>
+<td class=xl76>
+<span class=xl38>8946600.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>7194229.460000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.041607</span>
+</td>
+<td class=xl76>
+<span class=xl38>645760.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>146886.460000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>76</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001CNE100001922</span>
+</td>
+<td class=xl68>
+<span class=xl45>新华保险</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>43300.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>49.376905</span>
+</td>
+<td class=xl76>
+<span class=xl38>39.750000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2138020.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1721341.290000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.009955</span>
+</td>
+<td class=xl76>
+<span class=xl38>49.850000</span>
+</td>
+<td class=xl76>
+<span class=xl38>40.085881</span>
+</td>
+<td class=xl76>
+<span class=xl38>2158505.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1735718.630000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.010038</span>
+</td>
+<td class=xl76>
+<span class=xl38>20485.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>14377.340000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>77</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001HK0388045442</span>
+</td>
+<td class=xl68>
+<span class=xl45>香港交易所</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>11100.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>288.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>232.520000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3205680.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2580925.050000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.014927</span>
+</td>
+<td class=xl76>
+<span class=xl38>289.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>232.393570</span>
+</td>
+<td class=xl76>
+<span class=xl38>3207900.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2579568.630000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.014919</span>
+</td>
+<td class=xl76>
+<span class=xl38>2220.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-1356.420000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>78</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001HK0688002218</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国海外发展</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>108000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>31.235185</span>
+</td>
+<td class=xl76>
+<span class=xl38>25.310000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3373400.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2733703.100000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.01581</span>
+</td>
+<td class=xl76>
+<span class=xl38>31.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>24.928030</span>
+</td>
+<td class=xl76>
+<span class=xl38>3348000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2692227.240000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.01557</span>
+</td>
+<td class=xl76>
+<span class=xl38>-25400.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-41475.860000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>79</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001HK0817039453</span>
+</td>
+<td class=xl68>
+<span class=xl45>方兴地产</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>730000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4.957205</span>
+</td>
+<td class=xl76>
+<span class=xl38>4.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3618760.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2942712.980000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017019</span>
+</td>
+<td class=xl76>
+<span class=xl38>5.210000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4.189517</span>
+</td>
+<td class=xl76>
+<span class=xl38>3803300.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3058347.630000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.017688</span>
+</td>
+<td class=xl76>
+<span class=xl38>184540.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>115634.650000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>80</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001KYG2953R1149</span>
+</td>
+<td class=xl68>
+<span class=xl45>瑞声科技</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>37000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>138.781081</span>
+</td>
+<td class=xl76>
+<span class=xl38>112.580000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5134900.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4165436.440000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.024091</span>
+</td>
+<td class=xl76>
+<span class=xl38>141.100000</span>
+</td>
+<td class=xl76>
+<span class=xl38>113.462743</span>
+</td>
+<td class=xl76>
+<span class=xl38>5220700.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>4198121.490000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.02428</span>
+</td>
+<td class=xl76>
+<span class=xl38>85800.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>32685.050000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>81</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001KYG6145U1094</span>
+</td>
+<td class=xl68>
+<span class=xl45>敏实集团</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>50000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>34.522143</span>
+</td>
+<td class=xl76>
+<span class=xl38>30.080000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1726107.140000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1503750.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008697</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.950000</span>
+</td>
+<td class=xl76>
+<span class=xl38>35.341514</span>
+</td>
+<td class=xl76>
+<span class=xl38>2197500.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1767075.680000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.01022</span>
+</td>
+<td class=xl76>
+<span class=xl38>471392.860000</span>
+</td>
+<td class=xl76>
+<span class=xl38>263325.650000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>82</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001KYG6501M1050</span>
+</td>
+<td class=xl68>
+<span class=xl45>耐世特</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>133000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>11.833221</span>
+</td>
+<td class=xl76>
+<span class=xl38>10.310000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1573818.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1371280.720000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.007931</span>
+</td>
+<td class=xl76>
+<span class=xl38>16.860000</span>
+</td>
+<td class=xl76>
+<span class=xl38>13.557632</span>
+</td>
+<td class=xl76>
+<span class=xl38>2242380.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1803165.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.010429</span>
+</td>
+<td class=xl76>
+<span class=xl38>668561.600000</span>
+</td>
+<td class=xl76>
+<span class=xl38>431884.310000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>83</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021001KYG8087W1015</span>
+</td>
+<td class=xl68>
+<span class=xl45>申洲国际</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>109000.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>57.305271</span>
+</td>
+<td class=xl76>
+<span class=xl38>49.150000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6246274.510000</span>
+</td>
+<td class=xl76>
+<span class=xl38>5357327.720000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.030984</span>
+</td>
+<td class=xl76>
+<span class=xl38>78.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>63.043792</span>
+</td>
+<td class=xl76>
+<span class=xl38>8545600.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>6871773.330000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.039743</span>
+</td>
+<td class=xl76>
+<span class=xl38>2299325.490000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1514445.610000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>84</span>
+</td>
+<td class=xl57>
+<span class=xl56>11021099</span>
+</td>
+<td class=xl57>
+<span class=xl56>上交所沪港通估增</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>4017182.650000</span>
+</td>
+<td class=xl64>
+<span class=xl59>4017182.650000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.023233</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>-4017182.650000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>85</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099BMG423131256</span>
+</td>
+<td class=xl68>
+<span class=xl45>海尔电器</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>138999.410000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000804</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>86</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099CNE1000003X6</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国平安</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>1401776.450000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008107</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>87</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099CNE1000009Q7</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国太保</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>146886.460000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.00085</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>88</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099CNE100001922</span>
+</td>
+<td class=xl68>
+<span class=xl45>新华保险</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>14377.340000</span>
+</td>
+<td class=xl78>
+<span class=xl38>8.3e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>89</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099HK0388045442</span>
+</td>
+<td class=xl68>
+<span class=xl45>香港交易所</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-1356.420000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-8e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>90</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099HK0688002218</span>
+</td>
+<td class=xl68>
+<span class=xl45>中国海外发展</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>-41475.860000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.00024</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>91</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099HK0817039453</span>
+</td>
+<td class=xl68>
+<span class=xl45>方兴地产</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>115634.650000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000669</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>92</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099KYG2953R1149</span>
+</td>
+<td class=xl68>
+<span class=xl45>瑞声科技</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>32685.050000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000189</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>93</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099KYG6145U1094</span>
+</td>
+<td class=xl68>
+<span class=xl45>敏实集团</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>263325.650000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.001523</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>94</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099KYG6501M1050</span>
+</td>
+<td class=xl68>
+<span class=xl45>耐世特</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>431884.310000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.002498</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>95</span>
+</td>
+<td class=xl68>
+<span class=xl45>11021099KYG8087W1015</span>
+</td>
+<td class=xl68>
+<span class=xl45>申洲国际</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>1514445.610000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.008759</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl80>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>96</span>
+</td>
+<td class=xl68>
+<span class=xl45>12030301HK0011000095</span>
+</td>
+<td class=xl68>
+<span class=xl45>恒生银行</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002487</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.002487</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>97</span>
+</td>
+<td class=xl68>
+<span class=xl45>12030301HK0016000132</span>
+</td>
+<td class=xl68>
+<span class=xl45>新鸿基地产</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.002487</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.002000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.002487</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>98</span>
+</td>
+<td class=xl57>
+<span class=xl56>1204</span>
+</td>
+<td class=xl57>
+<span class=xl56>应收利息</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>11003.690000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10995.238000</span>
+</td>
+<td class=xl66>
+<span class=xl59>6.4e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10995.238000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10995.238000</span>
+</td>
+<td class=xl66>
+<span class=xl59>6.4e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>-8.452000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>99</span>
+</td>
+<td class=xl57>
+<span class=xl56>120401</span>
+</td>
+<td class=xl57>
+<span class=xl56>应收银行存款利息</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10555.480000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10547.028000</span>
+</td>
+<td class=xl66>
+<span class=xl59>6.1e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10547.028000</span>
+</td>
+<td class=xl64>
+<span class=xl59>10547.028000</span>
+</td>
+<td class=xl66>
+<span class=xl59>6.1e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>-8.452000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>100</span>
+</td>
+<td class=xl68>
+<span class=xl45>12040101</span>
+</td>
+<td class=xl68>
+<span class=xl45>活期存款-人民币</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>10512.320000</span>
+</td>
+<td class=xl76>
+<span class=xl38>10512.320000</span>
+</td>
+<td class=xl78>
+<span class=xl38>6.1e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>10512.320000</span>
+</td>
+<td class=xl76>
+<span class=xl38>10512.320000</span>
+</td>
+<td class=xl78>
+<span class=xl38>6.1e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>101</span>
+</td>
+<td class=xl68>
+<span class=xl45>12040102</span>
+</td>
+<td class=xl68>
+<span class=xl45>活期存款-工行美元</span>
+</td>
+<td class=xl68>
+<span class=xl45>USD</span>
+</td>
+<td class=xl72>
+<span class=xl38>6.28850000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000636</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000636</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>102</span>
+</td>
+<td class=xl68>
+<span class=xl45>12040103</span>
+</td>
+<td class=xl68>
+<span class=xl45>活期存款－工行港币</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004974</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.004974</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>103</span>
+</td>
+<td class=xl68>
+<span class=xl45>12040103</span>
+</td>
+<td class=xl68>
+<span class=xl45>活期存款－工行港币</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.160000</span>
+</td>
+<td class=xl76>
+<span class=xl38>34.700000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>43.152227</span>
+</td>
+<td class=xl76>
+<span class=xl38>34.700000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.007773</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>104</span>
+</td>
+<td class=xl68>
+<span class=xl45>120406</span>
+</td>
+<td class=xl68>
+<span class=xl45>应收利息-沪港通备付金</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>221.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>221.400000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>221.400000</span>
+</td>
+<td class=xl76>
+<span class=xl38>221.400000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>105</span>
+</td>
+<td class=xl68>
+<span class=xl45>120410</span>
+</td>
+<td class=xl68>
+<span class=xl45>应收利息-沪港通预付款</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>226.810000</span>
+</td>
+<td class=xl76>
+<span class=xl38>226.810000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>226.810000</span>
+</td>
+<td class=xl76>
+<span class=xl38>226.810000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-06</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>106</span>
+</td>
+<td class=xl57>
+<span class=xl56>1207</span>
+</td>
+<td class=xl57>
+<span class=xl56>应收申购款</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000913</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000913</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>107</span>
+</td>
+<td class=xl57>
+<span class=xl56>120701</span>
+</td>
+<td class=xl57>
+<span class=xl56>申购</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000913</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl64>
+<span class=xl59>157940.790000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000913</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>108</span>
+</td>
+<td class=xl68>
+<span class=xl45>12070199</span>
+</td>
+<td class=xl68>
+<span class=xl45>汇总销售商</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>157940.790000</span>
+</td>
+<td class=xl76>
+<span class=xl38>157940.790000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000913</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>157940.790000</span>
+</td>
+<td class=xl76>
+<span class=xl38>157940.790000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000913</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>109</span>
+</td>
+<td class=xl57>
+<span class=xl56>2203</span>
+</td>
+<td class=xl57>
+<span class=xl56>应付赎回款</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.00335</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.00335</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>110</span>
+</td>
+<td class=xl57>
+<span class=xl56>220301</span>
+</td>
+<td class=xl57>
+<span class=xl56>赎回</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.00335</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl64>
+<span class=xl59>579182.760000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.00335</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>111</span>
+</td>
+<td class=xl68>
+<span class=xl45>22030199</span>
+</td>
+<td class=xl68>
+<span class=xl45>汇总销售商</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>579182.760000</span>
+</td>
+<td class=xl76>
+<span class=xl38>579182.760000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.00335</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>579182.760000</span>
+</td>
+<td class=xl76>
+<span class=xl38>579182.760000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.00335</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>112</span>
+</td>
+<td class=xl57>
+<span class=xl56>2204</span>
+</td>
+<td class=xl57>
+<span class=xl56>应付赎回费</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.2e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.2e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>113</span>
+</td>
+<td class=xl57>
+<span class=xl56>220401</span>
+</td>
+<td class=xl57>
+<span class=xl56>赎回</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.2e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl64>
+<span class=xl59>2156.320000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.2e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>114</span>
+</td>
+<td class=xl68>
+<span class=xl45>22040199</span>
+</td>
+<td class=xl68>
+<span class=xl45>汇总销售商</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2156.320000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2156.320000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1.2e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2156.320000</span>
+</td>
+<td class=xl76>
+<span class=xl38>2156.320000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1.2e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>115</span>
+</td>
+<td class=xl57>
+<span class=xl56>2206</span>
+</td>
+<td class=xl57>
+<span class=xl56>应付管理人报酬</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>17122.800000</span>
+</td>
+<td class=xl64>
+<span class=xl59>17122.800000</span>
+</td>
+<td class=xl66>
+<span class=xl59>9.9e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>17122.800000</span>
+</td>
+<td class=xl64>
+<span class=xl59>17122.800000</span>
+</td>
+<td class=xl66>
+<span class=xl59>9.9e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>116</span>
+</td>
+<td class=xl68>
+<span class=xl45>220601</span>
+</td>
+<td class=xl68>
+<span class=xl45>应付基金管理费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17122.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17122.800000</span>
+</td>
+<td class=xl78>
+<span class=xl38>9.9e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17122.800000</span>
+</td>
+<td class=xl76>
+<span class=xl38>17122.800000</span>
+</td>
+<td class=xl78>
+<span class=xl38>9.9e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>117</span>
+</td>
+<td class=xl57>
+<span class=xl56>2207</span>
+</td>
+<td class=xl57>
+<span class=xl56>应付托管费</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3329.440000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3329.440000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.9e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3329.440000</span>
+</td>
+<td class=xl64>
+<span class=xl59>3329.440000</span>
+</td>
+<td class=xl66>
+<span class=xl59>1.9e-05</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>118</span>
+</td>
+<td class=xl68>
+<span class=xl45>220701</span>
+</td>
+<td class=xl68>
+<span class=xl45>应付托管费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3329.440000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3329.440000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1.9e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3329.440000</span>
+</td>
+<td class=xl76>
+<span class=xl38>3329.440000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1.9e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>119</span>
+</td>
+<td class=xl57>
+<span class=xl56>2209</span>
+</td>
+<td class=xl57>
+<span class=xl56>应付交易费用</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000119</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000119</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>120</span>
+</td>
+<td class=xl57>
+<span class=xl56>220901</span>
+</td>
+<td class=xl57>
+<span class=xl56>券商佣金</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000119</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl64>
+<span class=xl59>20597.430000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000119</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>121</span>
+</td>
+<td class=xl68>
+<span class=xl45>22090109</span>
+</td>
+<td class=xl68>
+<span class=xl45>高华证券</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-83855.440000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20597.430000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000119</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20597.430000</span>
+</td>
+<td class=xl76>
+<span class=xl38>20597.430000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000119</span>
+</td>
+<td class=xl76>
+<span class=xl38>104452.870000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>122</span>
+</td>
+<td class=xl57>
+<span class=xl56>2501</span>
+</td>
+<td class=xl57>
+<span class=xl56>预提费用</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>94337.490000</span>
+</td>
+<td class=xl64>
+<span class=xl59>94337.490000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000546</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>94337.490000</span>
+</td>
+<td class=xl64>
+<span class=xl59>94337.490000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.000546</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>123</span>
+</td>
+<td class=xl68>
+<span class=xl45>250101</span>
+</td>
+<td class=xl68>
+<span class=xl45>审计费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>65424.540000</span>
+</td>
+<td class=xl76>
+<span class=xl38>65424.540000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000378</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>65424.540000</span>
+</td>
+<td class=xl76>
+<span class=xl38>65424.540000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000378</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>124</span>
+</td>
+<td class=xl68>
+<span class=xl45>250102</span>
+</td>
+<td class=xl68>
+<span class=xl45>信息披露费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>27123.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>27123.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000157</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>27123.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>27123.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0.000157</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>125</span>
+</td>
+<td class=xl68>
+<span class=xl45>250105</span>
+</td>
+<td class=xl68>
+<span class=xl45>税务顾问费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1789.920000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1789.920000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1789.920000</span>
+</td>
+<td class=xl76>
+<span class=xl38>1789.920000</span>
+</td>
+<td class=xl78>
+<span class=xl38>1e-05</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>126</span>
+</td>
+<td class=xl57>
+<span class=xl56>3003</span>
+</td>
+<td class=xl57>
+<span class=xl56>证券清算款</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl60>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-11006065.090000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.060025</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.060025</span>
+</td>
+<td class=xl64>
+<span class=xl59>627365.830000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>127</span>
+</td>
+<td class=xl57>
+<span class=xl56>300303</span>
+</td>
+<td class=xl57>
+<span class=xl56>港币证券清算款</span>
+</td>
+<td class=xl57>
+<span class=xl56>HKD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.80413000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-3202971.360000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-2575605.360000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.014896</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-3202971.360352</span>
+</td>
+<td class=xl64>
+<span class=xl59>-2575605.360000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.014896</span>
+</td>
+<td class=xl64>
+<span class=xl59>-0.000352</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>128</span>
+</td>
+<td class=xl68>
+<span class=xl45>30030301</span>
+</td>
+<td class=xl68>
+<span class=xl45>港币证券清算款</span>
+</td>
+<td class=xl68>
+<span class=xl45>HKD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.80413000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-3202971.360000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-2575605.360000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.014896</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-3202971.360352</span>
+</td>
+<td class=xl76>
+<span class=xl38>-2575605.360000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.014896</span>
+</td>
+<td class=xl76>
+<span class=xl38>-0.000352</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>129</span>
+</td>
+<td class=xl57>
+<span class=xl56>300304</span>
+</td>
+<td class=xl57>
+<span class=xl56>新台币证券清算款</span>
+</td>
+<td class=xl57>
+<span class=xl56>TWD</span>
+</td>
+<td class=xl70>
+<span class=xl59>0.21518273</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.220000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.050000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.232361</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.050000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.012361</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>130</span>
+</td>
+<td class=xl68>
+<span class=xl45>30030401</span>
+</td>
+<td class=xl68>
+<span class=xl45>新台币证券清算款</span>
+</td>
+<td class=xl68>
+<span class=xl45>TWD</span>
+</td>
+<td class=xl72>
+<span class=xl38>0.21518273</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.220000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.050000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.232361</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.050000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.012361</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>131</span>
+</td>
+<td class=xl57>
+<span class=xl56>300319</span>
+</td>
+<td class=xl57>
+<span class=xl56>沪港通证券清算款</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-7803093.950000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-7803093.950000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.045129</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-7803093.950000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-7803093.950000</span>
+</td>
+<td class=xl66>
+<span class=xl59>-0.045129</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>132</span>
+</td>
+<td class=xl68>
+<span class=xl45>30031901</span>
+</td>
+<td class=xl68>
+<span class=xl45>沪港通证券清算款</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7803086.920000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7803086.920000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.045129</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7803086.920000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7803086.920000</span>
+</td>
+<td class=xl78>
+<span class=xl38>-0.045129</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>133</span>
+</td>
+<td class=xl68>
+<span class=xl45>30031902</span>
+</td>
+<td class=xl68>
+<span class=xl45>沪港通证券组合费</span>
+</td>
+<td class=xl68>
+<span class=xl45>RMB</span>
+</td>
+<td class=xl72>
+<span class=xl38>1.00000000</span>
+</td>
+<td class=xl74>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7.030000</span>
+</td>
+<td class=xl76>
+<span class=xl38>-7.030000</span>
+</td>
+<td class=xl78>
+<span class=xl38>0</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl76>
+<span class=xl38>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>134</span>
+</td>
+<td class=xl57>
+<span class=xl56>共同类合计:</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>-10378699.260000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>135</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>136</span>
+</td>
+<td class=xl57>
+<span class=xl56>[证券投资]合计:</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>117168457.980000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.67763838</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.806766</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>22327155.880000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>137</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>138</span>
+</td>
+<td class=xl57>
+<span class=xl56>A股投资</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>117168457.980000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.67763838</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.806766</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>22327155.880000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>139</span>
+</td>
+<td class=xl57>
+<span class=xl56>[股票投资]小计:</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>117168457.980000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.67763838</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0.806766</span>
+</td>
+<td class=xl64>
+<span class=xl59>139495613.860000</span>
+</td>
+<td class=xl64>
+<span class=xl59>22327155.880000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>140</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>141</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>142</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>143</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>144</span>
+</td>
+<td class=xl57>
+<span class=xl56>资产类合计</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>161675326.871000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>184002482.751000</span>
+</td>
+<td class=xl64>
+<span class=xl59>184002482.751000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>184002482.751000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>145</span>
+</td>
+<td class=xl57>
+<span class=xl56>负债类合计</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>11095425.550000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>11095425.550000</span>
+</td>
+<td class=xl64>
+<span class=xl59>11095425.550000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>11095425.550000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>146</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>147</span>
+</td>
+<td class=xl57>
+<span class=xl56>基金资产净值</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>102705894.040000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>150579901.321000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>172907057.201000</span>
+</td>
+<td class=xl64>
+<span class=xl59>172907057.201000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>172907057.201000</span>
+</td>
+<td class=xl64>
+<span class=xl59>22327155.880000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>148</span>
+</td>
+<td class=xl57>
+<span class=xl56>基金资产单位净值</span>
+</td>
+<td class=xl57>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1.466100</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1.684000</span>
+</td>
+<td class=xl64>
+<span class=xl59>1.684000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>1.684000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.217900</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>149</span>
+</td>
+<td class=xl57>
+<span class=xl56>损益平准金-未实现</span>
+</td>
+<td class=xl57>
+<span class=xl56>-4,196.6800</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>150</span>
+</td>
+<td class=xl57>
+<span class=xl56>损益平准金-已实现</span>
+</td>
+<td class=xl57>
+<span class=xl56>-16,065.4400</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>151</span>
+</td>
+<td class=xl57>
+<span class=xl56>损益平准金-合计</span>
+</td>
+<td class=xl57>
+<span class=xl56>-20,262.1200</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>152</span>
+</td>
+<td class=xl57>
+<span class=xl56>期初单位净值</span>
+</td>
+<td class=xl57>
+<span class=xl56>1.628</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>153</span>
+</td>
+<td class=xl57>
+<span class=xl56>今日单位净值</span>
+</td>
+<td class=xl57>
+<span class=xl56>1.684</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>154</span>
+</td>
+<td class=xl57>
+<span class=xl56>累计基金净值</span>
+</td>
+<td class=xl57>
+<span class=xl56>1.694</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>155</span>
+</td>
+<td class=xl57>
+<span class=xl56>累计派发现金金额</span>
+</td>
+<td class=xl57>
+<span class=xl56>0.0100</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>156</span>
+</td>
+<td class=xl57>
+<span class=xl56>净值增长率</span>
+</td>
+<td class=xl57>
+<span class=xl56>3.4398%</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>157</span>
+</td>
+<td class=xl57>
+<span class=xl56>可分配收益</span>
+</td>
+<td class=xl57>
+<span class=xl56>.5432</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>55792381.571000</span>
+</td>
+<td class=xl64>
+<span class=xl59>55792381.571000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>55792381.571000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>158</span>
+</td>
+<td class=xl57>
+<span class=xl56>单位现金余额</span>
+</td>
+<td class=xl57>
+<span class=xl56>0.00000</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>159</span>
+</td>
+<td class=xl57>
+<span class=xl56>今日可用头寸</span>
+</td>
+<td class=xl57>
+<span class=xl56>19,560,100.38</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+<tr >
+<td class=xl54>
+<span class=xl34>160</span>
+</td>
+<td class=xl57>
+<span class=xl56>明日可用头寸</span>
+</td>
+<td class=xl57>
+<span class=xl56>42,329,154.01</span>
+</td>
+<td class=xl57>
+<span class=xl56>RMB</span>
+</td>
+<td class=xl70>
+<span class=xl59>1.00000000</span>
+</td>
+<td class=xl62>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl66>
+<span class=xl59>0</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl64>
+<span class=xl59>0.000000</span>
+</td>
+<td class=xl68>
+</td>
+</tr>
+</table>
+<table  height=37.9 style='height:28.4pt'>
+<tr >
+<td class=xl83>
+</td>
+<td class=xl86>
+<span class=xl85>帐簿主管：</span>
+</td>
+<td class=xl87>
+<table >
+<tr >
+<td class=xl68>
+<span class=xl45>李秋</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl83>
+</td>
+<td class=xl83>
+</td>
+<td class=xl86>
+<span class=xl85>会计经办员：</span>
+</td>
+<td class=xl83>
+<table >
+<tr >
+<td class=xl46>
+<span class=xl45>欧阳莎</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl83>
+</td>
+<td class=xl83>
+</td>
+<td class=xl86>
+<span class=xl85>复核员：</span>
+</td>
+<td class=xl83>
+<table >
+<tr >
+<td class=xl68>
+<span class=xl45>范薇</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl83>
+</td>
+<td class=xl83>
+</td>
+<td class=xl90>
+<span class=xl89>-<span style='mso-spacerun:yes'>&nbsp;</span></span>
+<span class=xl89>1</span>
+<span class=xl89><span style='mso-spacerun:yes'>&nbsp;</span>-</span>
+</td>
+<td class=xl83>
+</td>
+<td class=xl92>
+<span class=xl89>43136</span>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+		<!-- STORY #90113 公募外包质控系统对接4.5对账系统新增接口需求  -->
+	<service class="com.yss.uco.elecreco.er.ws.impl.ElecCommWsAPI"
+		interface="com.yss.uco.elecreco.er.ws.IElecCommWsAPI"/>	
+</services>

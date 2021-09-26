@@ -1,0 +1,23 @@
+<nosql>
+	<type>mongodb</type>
+	<enable>false</enable>
+	<servers>
+		<server ip="192.168.1.123" port="4444"></server>
+		<!--
+		<server ip="192.168.1.123" port="5555"></server>
+		<server ip="192.168.1.123" port="6666"></server>
+		-->
+	</servers>
+	<connectionsPerHost>50</connectionsPerHost>
+	<threadsAllowedToBlock>50</threadsAllowedToBlock>
+	<maxWaitTime>120000</maxWaitTime>
+	<connectTimeout>60000</connectTimeout>
+	<socketTimeout>300000</socketTimeout>
+	<!--数据库验证-->
+	<credential>
+		<dbname>admin</dbname>
+		<username>admin</username>
+		<password>123456</password>
+	</credential>
+	
+</nosql>

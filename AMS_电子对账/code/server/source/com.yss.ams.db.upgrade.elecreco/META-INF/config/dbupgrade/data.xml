@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此文档的中class都要继承ScripDesc接口 -->
+<dbupgrade code="ElecrecoDbUp" name="电子对账">
+<script class="com.yss.ams.db.upgrade.elecreco.scripts.ScriptsImpl" />
+
+</dbupgrade>

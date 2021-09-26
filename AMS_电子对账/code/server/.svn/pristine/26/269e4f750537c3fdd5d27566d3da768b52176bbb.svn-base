@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(version2.0)|f158a0cf-e057-443d-966f-f5dd711940ad</title>
+<!-- Bootstrap core CSS -->
+<style class="anchorjs"></style>
+<link href="${serverUri}/YSSUCOBRIDGE/css/logView/bootstrap.css"
+ rel="stylesheet"/>
+<link href="${serverUri}/YSSUCOBRIDGE/css/logView/docs.css" rel="stylesheet"/>
+
+<link href="${serverUri}/YSSUCOBRIDGE/css/logView/NavigationTree.css"
+ rel="stylesheet"/>
+ 
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="${serverUri}/YSSUCOBRIDGE/js/logView/html5shiv.min.js"></script>
+  <script src="${serverUri}/YSSUCOBRIDGE/js/logView/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+h1,
+.h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h2,
+.h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h3,
+.h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h4,
+.h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h5,
+.h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+ padding-left: 0.5em;
+}
+h3 {
+ padding-left: 1em;
+}
+h4 {
+ padding-left: 1.5em;
+ font-weight:bold;
+ margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-size:20px;
+}
+.highLight {
+ opcity: 0.5;
+ background:#FF0000;
+}
+.searchHighLight{
+ background:yellow;
+ font-weight: bold;
+ color:red;
+}
+.errorText{
+ color:red;
+ font-weight:bold;
+}
+td,th{
+ padding:0px !important;
+}
+td button{
+ padding:3px !important;
+ margin:3px;
+}
+</style>
+<script>
+ var _hmt = _hmt || [];
+</script>
+</head>
+<div style="display:none;"><version>2.0</version></div>
+<body style="padding-top: 100px;">
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-right:20px">
+  <div class="container" style="padding: 10px;">
+   <div class="row">
+    <div class="btn" style="">
+      <b>业务日期：2018-04-03</b>
+    </div>
+    <div title="项目  : 鹏华银行分级" class="btn" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;display: inline-block;">
+     <b>项目  : 鹏华银行分级</b>
+    </div>
+    <div style="float: right;  padding: 6px 15px 6px 0;">
+     <input type="text" id="inputSearch" autofocus="autofocus" placeholder="请输入关键字搜索" style="height: 20px;">
+      <span class="glyphicon glyphicon-search" style="top: 2px;cursor: pointer;padding: 0px 5px;" id="searchBtn"> </span> 
+     <span onclick="exportHtml()" class="glyphicon glyphicon-export" style="top: 2px;cursor: pointer;padding: 0 5px;" id="basic-addon2"> </span>
+    </div>
+
+   </div>
+   <div style = "display: none;">
+    <div class="row" style="padding: 5px 12px;font-size: 20px;">
+     <div class="input-group">
+      <button type="submit" class="btn btn-danger" onclick="onlyShowError(this)">
+       <span class="hidden glyphicon glyphicon-ok"></span> 只显示错误日志 <span class="badge" id="errorCount"></span>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- 
+   <div class="row">
+    <div title="项目  : 鹏华银行分级" class="col-md-12" style=" white-space: nowrap; text-overflow: ellipsis; overflow: hidden;cursor:auto;margin: 15px 0px 10px 25px;">
+     <b>项目  : 鹏华银行分级</b>
+    </div>
+   </div>
+    -->
+  </div>
+ </nav>
+ <div class="container bs-docs-container" style="padding: 10px;margin-right:10px">
+
+  <div class="row">
+   <div role="main" id="logContent" style="width: 67%;float: left;margin-left: 15px; word-break:break-all;">
+    <div class="bs-docs-section"> <span class="glyphicon glyphicon-minus"  style="font-size: 25px; color: blue; cursor: pointer; display: block; float: right; top: 20px;" onclick="tiggerContent(this)"></span> <h1 id="28dd1ea9-051f-4607-80c4-7189ea82cc1b"  codeP="[root]" bizCode=" "  style=" font-size:14; font-weight:bolder; color:rgb(0,0,0);" class="page-header item">净值表确认</h1><div class="table-responsive" id="967a75d8-982e-41a9-a07d-a1d7cef2a827"  codeP="null" ><table class="table-bordered table-striped"><thead><tr><th style="width: 40px;"></th><th>净值确认</th><th>净值确认结果</th><th>建议处理方案</th><th>操作</th></tr></thead><tbody><tr><th><span class="glyphicon glyphicon-plus" style="color: blue; cursor: pointer;"onclick="tiggerRowContent('净值锁定成功！<br/>',this)"></span></th><td>组合[160631]净值表确认</td><td>信息</td><td> </td><td>&nbsp;</td></tr></tbody></table></div></div>
+   </div>
+
+   <div role="complementary" style="width: 30%;float: left;">
+    <div id="treeMenu" style="margin-left:5px;"></div>
+   </div>
+  </div>
+ </div>
+ <script src="${serverUri}/YSSUCOBRIDGE/js/logView/jquery-1.12.4.js"></script>
+ <script src="${serverUri}/YSSUCOBRIDGE/js/logView/jquery-color.js"></script>
+ <script src="${serverUri}/YSSUCOBRIDGE/js/logView/jquery.textSearch-1.0.js"></script>
+ <script src="${serverUri}/YSSUCOBRIDGE/js/logView/NavigationTree.js"></script>
+ <script src="${serverUri}/YSSUCOBRIDGE/js/logView/bootstrap.js"></script>
+ <script type="text/javascript">
+ 
+  $(document).on("click", "#searchBtn", function() {
+   var input = $('#inputSearch').val();
+   highlight(input);
+   var objs = $('#logContent').find('.bs-docs-section');
+   for (var i = 0; i < objs.length; i ++) {
+    if ($(objs[i]).html().indexOf(input) >= 0) {
+     fnScrollTo($(objs[i]).find('h1').attr('id'));
+     break;
+    }
+   }
+  });
+ 
+   function exportHtml(){
+    var urlStr = window.location.href;
+    $.ajax({
+     url : urlStr,
+     type: 'GET',
+     success : function(result) {
+      window.external.exportHtml(result);
+     }
+    });
+   };
+ 
+   function showFun(obj,funCode,dataId,openType){
+    var params = $(obj).attr('params');
+    window.external.navigateToWindow(funCode,dataId,params,openType);
+   };
+   
+   
+   $(function () {
+          var tree = $('#treeMenu').navigationTree({
+             data : [{"ID":"28dd1ea9-051f-4607-80c4-7189ea82cc1b","NodeName":"净值表确认","Children":[]}]
+          });
+      });
+ 
+  $(function() {
+   $('#inputSearch').focus();
+   var errorCount = $("tr[class='errorText'][name!='errorContent']").length
+   +$("p[class='errorText']").length;
+   $('#errorCount').text(errorCount);
+   
+   $('#inputSearch').keydown(function(e){
+    if(e.keyCode == 13){
+     highlight($(this).val());
+     var objs = $('#logContent').find('.bs-docs-section');
+     for (var i = 0; i < objs.length; i ++) {
+      if ($(objs[i]).html().indexOf($(this).val()) >= 0) {
+       fnScrollTo($(objs[i]).find('h1').attr('id'));
+       break;
+      }
+     }
+    }
+   });
+   
+   window.setTimeout(function(){
+    $('.side-catalog').height($(window).height()-160);
+    $('.toggle-button').css('display','none');
+    $('.side-bar').children('em').remove();
+    $('.side-bar').height($('.side-catalog').height()-60);
+    $('.catalog-list').children('dt').first().children('em').css({background:'none',borderRadius:'50%',border:'2px solid #ccc'});
+    $('.catalog-list').children('dt').last().children('em').css({background:'none',borderRadius:'50%',border:'2px solid #ccc'});
+   },1000);
+  });
+
+  function flash(target, total, speed) {
+   total--;
+   if (total >= 0) {
+    target.animate({
+     backgroundColor : "rgb(250,128,114)"
+    }, speed, function() {
+     target.animate({
+      backgroundColor : "rgb(255,255,255)"
+     }, speed, function() {
+      flash(target, total, speed);
+     });
+    });
+   }
+  }
+
+  function onlyShowError(target) {
+   $(target).children('span:eq(0)').toggleClass("hidden");
+   $("#logContent p:not([class*='errorText'])").toggleClass('hidden');
+   $("#logContent tr:not([class*='errorText'])").each(function(){
+    if($(this).parent()[0].tagName == 'THEAD')
+    {
+     if($(this).parent().parent().find('.errorText').length == 0)
+     {
+      $(this).toggleClass('hidden');
+     }
+    }
+    else{
+     $(this).toggleClass('hidden');
+    }
+   });
+   
+   var __findChildren = function(target,rs){
+    var _rs = rs || [];
+    var childrens = target.nextAll('[codep=\''+target.attr('id')+'\']');
+    childrens.each(function(){
+     if($(this).is('div.table-responsive,p'))
+     {
+      _rs.push($(this));
+     }else{
+      __findChildren($(this),_rs);
+     }
+    });
+    return _rs;
+   };
+   
+   $('.bs-docs-section').each(function(){
+    if(!$(this).find("[class=errorText]:eq(0)")[0]){
+     $(this).toggleClass('hidden');
+    }
+    if( $(this).find('.errorText').length != 0 && $(this).is(':visible')){
+     $(this).find('h1,h2,h3,h4,h5,h6').each(function(){
+      var code = $(this).attr('id');
+      var __this = $(this);
+      var needHidden = true;
+      if(($(this).hasClass('errorText')  ||  $(this).find('tr.errorText').length != 0 ) ){
+       needHidden = false;
+      }else{
+       var childrens = __findChildren(__this);
+       $.each(childrens,function(){
+        if(($(this).hasClass('errorText')  ||  $(this).find('tr.errorText').length != 0 ) )
+        {
+         needHidden = false;
+         return;
+        }
+       });
+      }
+      if(needHidden)
+      {
+       __this.toggleClass('hidden');
+      }
+      
+      
+     });
+    }
+   });
+  }
+
+
+  
+  function tiggerContent(target) {
+   if ($(target).hasClass("glyphicon-plus")) {
+    $(target).removeClass("glyphicon-plus").addClass(
+      "glyphicon-minus");
+   } else if ($(target).hasClass("glyphicon-minus")) {
+    $(target).removeClass("glyphicon-minus").addClass(
+      "glyphicon-plus");
+   }
+   $(target).next().nextAll().toggleClass('hidden');
+  }
+
+  function highlight(key){
+   $("#logContent").textSearch(key,{
+    markClass:"searchHighLight"
+   });
+  }
+    
+  function tiggerRowContent(content,row){
+   if(content == ''){
+    return;
+   }
+   
+   var parenttbody = $(row).parents('tbody');
+   var colspan = parenttbody.parent('table').find('tr:eq(0)').children('th').length;
+   
+   var parentTr = $(row).parents('tr:eq(0)');
+   if ($(row).hasClass("glyphicon-plus")) {
+    $(row).removeClass("glyphicon-plus").addClass(
+      "glyphicon-minus");
+    parentTr.after('<tr name="errorContent"><td colspan='+colspan+'>'+content+'</td></tr>');
+    if($(row).parents('tr:eq(0)').hasClass('errorText'))
+    {
+     $(row).parents('tr:eq(0)').next('tr:eq(0)').addClass('errorText');
+    }
+   } else if ($(row).hasClass("glyphicon-minus")) {
+    $(row).removeClass("glyphicon-minus").addClass(
+      "glyphicon-plus");
+    parentTr.next('tr').remove();
+   }
+  }
+  
+  function tiggerAllRowContent(row){
+   var parenttbody = $(row).parents('tbody');
+   if ($(row).hasClass("glyphicon-plus")) {
+    $(row).removeClass("glyphicon-plus").addClass(
+      "glyphicon-minus");
+   } else if ($(row).hasClass("glyphicon-minus")) {
+    $(row).removeClass("glyphicon-minus").addClass(
+      "glyphicon-plus");
+   }
+  }
+ </script>
+</body>
+</html>

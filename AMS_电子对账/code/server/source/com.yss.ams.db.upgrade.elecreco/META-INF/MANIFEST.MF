@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ElecrecoDbUp
+Bundle-SymbolicName: com.yss.ams.db.upgrade.elecreco
+Bundle-Version: 1.0.0
+Bundle-AppCode: ElecrecoDbUp
+Bundle-AppName: 电子对账脚本
+Bundle-level: 8
+Require-Bundle: com.yss.fast.db.upgrade.support;bundle-version="1.0.0",
+ org.eclipse.osgi;bundle-version="3.9.1"
+Bundle-Activator: com.yss.ams.db.upgrade.elecreco.activator.ElecDbUpActivator
+Bundle-Vendor: YSSUCO
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

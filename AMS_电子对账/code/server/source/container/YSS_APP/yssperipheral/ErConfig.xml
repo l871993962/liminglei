@@ -1,0 +1,34 @@
+﻿<config sleep = "5">
+<!-- group 节点主分类  -->
+	<group id="01" name="日报">
+		<!-- ietm 节点核对项 id 约定 的文件类型  filetype，name 界面选项描述  class 处理类  resultId 对账结果标识对应字段 c_CHECK_FLAG -->
+		<ietm id='1011' name='估值表' class="" resultId = "1"></ietm>
+		<ietm id='1013' name='双估值表' class="" resultId = "15"></ietm>
+		<ietm id='1001' name='余额表' class="" resultId = "0"></ietm>
+		<ietm id='1031' name='科目表' class="" resultId = " "></ietm>
+	</group>
+	<group id="03" name="月报">
+		<ietm id='03_1701' name='资产负债表' class="" resultId = "3"></ietm>
+		<ietm id='03_1801' name='利润表' class="" resultId = "4"></ietm>
+		<ietm id='03_1901' name='所有者权益（基金净值）变动表' class="" resultId = "5"></ietm>
+		<ietm id='03_1903' name='净资产变动表' class="" resultId = "8"></ietm>
+	</group>
+	<group id="04" name="季报">
+		<ietm id='04_1701' name='资产负债表' class="" resultId = "3"></ietm>
+		<ietm id='04_1801' name='利润表' class="" resultId = "4"></ietm>
+		<ietm id='04_1901' name='所有者权益（基金净值）变动表' class="" resultId = "5"></ietm>
+		<ietm id='04_1903' name='净资产变动表' class="" resultId = "8"></ietm>
+	</group>
+	<group id="05" name="半年报">
+		<ietm id='05_1701' name='资产负债表' class="" resultId = "3"></ietm>
+		<ietm id='05_1801' name='利润表' class="" resultId = "4"></ietm>
+		<ietm id='05_1901' name='所有者权益（基金净值）变动表' class="" resultId = "5"></ietm>
+		<ietm id='05_1903' name='净资产变动表' class="" resultId = "8"></ietm>
+	</group>
+	<group id="06" name="年报">
+		<ietm id='06_1701' name='资产负债表' class="" resultId = "3"></ietm>
+		<ietm id='06_1801' name='利润表' class="" resultId = "4"></ietm>
+		<ietm id='06_1901' name='所有者权益（基金净值）变动表' class="" resultId = "5"></ietm>
+		<ietm id='06_1903' name='净资产变动表' class="" resultId = "8"></ietm>
+	</group>
+</config>

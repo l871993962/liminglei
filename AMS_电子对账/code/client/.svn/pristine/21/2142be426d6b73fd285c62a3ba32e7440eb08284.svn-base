@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9082E0D4-755D-4FCB-BA0D-D36F6F51A55B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssElecRecoStar</RootNamespace>
+    <AssemblyName>YssElecRecoStar</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>YssElecRecoStar.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo\YssProductInfo.csproj">
+      <Project>{99A13B3F-C0AC-44D0-BA3C-98BAFF5FAC35}</Project>
+      <Name>YssProductInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_估值核算\client\source\YssUCO\YssDayf.Support\YssDayf.Support.csproj">
+      <Project>{875B9319-8052-4542-B33A-71C2CF13A56C}</Project>
+      <Name>YssDayf.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_估值核算\client\source\YssUCO\YssFina.Support\YssFina.Support.csproj">
+      <Project>{23FD638A-BBCB-46CF-8DF8-521966FF7065}</Project>
+      <Name>YssFina.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_估值核算\client\source\YssUCO\YssPara.Support\YssPara.Support.csproj">
+      <Project>{56A307A4-99AD-4F16-B67F-5D90C4BE367D}</Project>
+      <Name>YssPara.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation\YssInformation.csproj">
+      <Project>{4C9D8991-D93D-4A0A-B86C-CBFFEFD0CA7C}</Project>
+      <Name>YssInformation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Host\FAST.Host.csproj">
+      <Project>{53A59723-0C64-4649-BE12-A7E3617C0DD6}</Project>
+      <Name>FAST.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.LocalDataService\FAST.LocalDataService.csproj">
+      <Project>{181685F3-B209-4488-BB84-CB8CDE6D564F}</Project>
+      <Name>FAST.LocalDataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Update\FAST.Update.csproj">
+      <Project>{FDDC48C2-EE63-4555-A6CB-5A110621ACB0}</Project>
+      <Name>FAST.Update</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YssElecReco\YssElecReco.csproj">
+      <Project>{79E55686-85FA-4B3B-AFB0-4C1FBA6DAF45}</Project>
+      <Name>YssElecReco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--业务菜单配置-->
+  <!--
+  <Config funCode="dzhkInfo" funName="电子划款信息设置" listFormClass="YssElecReco.Form.Bi.Frm_ELE_INFO_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Bi.Frm_ELE_INFO_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Bi.IEleHkService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Bi.EleHk" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Bi.EleHk" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  -->
+  <!--<Config funCode="dzRela" funName="电子对账指标关联" listFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_SET_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="" dataServiceDll="" pojoClass="" pojoDll="" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  -->
+  <Config funCode="dzRela" funName="电子对账公共指标关联" listFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PUB_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PUB_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Bi.IElecRelaService" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Service.Bi.IElecRelaService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Bi.ElecRela" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Bi.ElecRela" dataPojoClass="YssElecReco.Pojo.Bi.ElecRela" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="C_ZB_CODE" cboDispName="C_ZB_NAME" cboDispColumn="C_ZB_CODE~C_ZB_NAME" />
+
+  <Config funCode="dzPubRela" funName="电子对账公共指标关联" listFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PUB_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PUB_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Bi.IElecRelaService" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Service.Bi.IElecRelaService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Bi.ElecRela" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Bi.ElecRela" dataPojoClass="YssElecReco.Pojo.Bi.ElecRela" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="C_ZB_CODE" cboDispName="C_ZB_NAME" cboDispColumn="C_ZB_CODE~C_ZB_NAME" />
+  <Config funCode="dzPerRela" funName="电子对账个性指标关联" listFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PER_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Bi.Frm_ELEC_RELA_PER_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Bi.IElecPerRelaService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="YssBaseCls.dll" pojoClass="YssElecReco.Pojo.Bi.ElecPerRela" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Bi.ElecPerRela" dataPojoClass="YssElecReco.Pojo.Bi.ElecPerRela" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzData" funName="产生核对数据" listFormClass="YssElecReco.Form.Er.Frm_ELEC_RECO_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.IErDataService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="" pojoDll="" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzResult" funName="浏览对账结果" listFormClass="YssElecReco.Form.Er.Frm_ELEC_RESULT_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_ELEC_RESULT_MX" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IErResultService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErResultQuery" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Er.ErResult" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzBbInfo" funName="电子对账管理" listFormClass="YssElecReco.Form.Er.Frm_ELEC_BBINFO_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.IErBbInfoService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErBbInfo" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Er.ErBbInfo" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="portorgan" funName="" listFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_ORG_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_ORG_S" setFormDll="YssElecReco.dll" serviceClass="YssPara.Service.Ab.IPortRelaService" serviceDll="YssPara.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssPara.Pojo.Ab.PortRelaOrgan" pojoDll="YssPara.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="elecGene" funName="产生电子对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ElecGroupRela" pojoDll="YssElecReco.dll" />
+  <Config funCode="elecDzDetail" funName="电子对账详细信息" listFormClass="YssElecReco.Form.Er.Frm_ELEC_YE_S" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IErResultService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErResult" pojoDll="YssElecReco.dll" />
+  <Config funCode="erGzb" funName="估值表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErGzb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erDblgzb" funName="双估值表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErDblgzb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erYeb" funName="余额表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErYeb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erKmb" funName="科目表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErKmb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erSyzqyb" funName="所有者权益（基金净值）变动表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.ErSyzqyb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erLrb" funName="利润表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.ErLrb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erZcfzb" funName="资产负债表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.ErZcfzb" pojoDll="YssElecReco.dll" />
+  <Config funCode="erJzcbdb" funName="净资产变动表对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_GENE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErJzcbdb" pojoDll="YssElecReco.dll" />
+  <!-- 移除
+  <Config funCode="dzPara" funName="电子对账参数设置" listFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzParaService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.DzPara" pojoDll="YssElecReco.dll" />
+  <Config funCode="dzRelaOrgan" funName="关联组合设置" listFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_ORG_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_PARA_ORG_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzPortRelaService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.DzRelaOrgan" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="erPara" funName="深圳通参数设置" listFormClass="YssElecReco.Form.Er.Frm_Er_Para_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_Er_Para_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IErParaService" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Service.Er.IErParaDataService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.pojo.Er.ErPara" pojoDll="YssElecReco.dll" dataPojoClass="YssElecReco.pojo.Er.ErPara" dataPojoDll="YssElecReco.dll" cboDispValue="C_Para_Code" cboDispName="C_Para_Name" cboDispColumn="C_Para_Code~C_Para_Name" />
+  <Config funCode="mrInfo" funName="主备信息设置" listFormClass="YssElecReco.Form.Er.Frm_Mr_Info_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_Mr_Info_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IMrInfoService" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Service.Er.IErParaDataService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.pojo.Er.MrInfo" pojoDll="YssElecReco.dll" dataPojoClass="YssElecReco.pojo.Er.ErPara" dataPojoDll="YssElecReco.dll" cboDispValue="C_Para_Code" cboDispName="C_Para_Name" cboDispColumn="C_Para_Code~C_Para_Name" />
+  -->
+  <Config funCode="dzTemplate" funName="电子对账模板部署" listFormClass="YssElecReco.Form.Er.Frm_ELEC_TEMPLATE_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.IDzTemplateService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.DzTemplate" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="YssElecReco.pojo.Er.DzTemplate" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="C_TMPL_CODE" cboDispName="C_TMPL_NAME" cboDispColumn="C_TMPL_CODE,C_TMPL_NAME" />
+  <Config funCode="dzTmplRela" funName="电子对账模板关联" listFormClass="YssElecReco.Form.Er.Frm_ELEC_TMPL_RELA_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_ELEC_TMPL_RELA_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzTmplRelaService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.DzTmplRela" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="YssElecReco.pojo.Er.DzTmplRela" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzResult" funName="浏览对账结果" listFormClass="YssElecReco.Form.Er.Frm_ELEC_RESULT_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_ELEC_RESULT_MX" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IErResultService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ErResult" pojoDll="YssElecReco.dll" PojoClass-left="YssElecReco.Pojo.Er.ErResult" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzRepCfg" funName="对账报表配置" listFormClass="YssElecReco.Form.Er.Frm_DZ_RepCfg_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_RepCfg_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzRepCfgService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.DzRepCfg" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="dzRepColCfg" funName="对账报表个性列配置" listFormClass="YssElecReco.Form.Er.Frm_DZ_RepColCfg_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_RepColCfg_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzRepColCfgService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.DzRepColCfg" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="elecSend" funName="发送电子对账" listFormClass="YssElecReco.Form.Er.Frm_ELEC_Send_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IElecGeneService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.Pojo.Er.ElecGroupRela" pojoDll="YssElecReco.dll" />
+  <Config funCode="erDetail" funName="对账明细结果" listFormClass="YssElecReco.Form.Er.Frm_ELEC_DETAIL_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Pojo.Er.ErStepState" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.ErStepState" pojoDll="YssElecReco.dll" />
+  <Config funCode="erRptLog" funName="接收数据明细" listFormClass="YssElecReco.Form.Er.Frm_ELEC_DETAIL_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="YssElecReco.dll" serviceClass="" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Pojo.Er.IErRptLogService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.ErRptLog" pojoDll="YssElecReco.dll" />
+  <Config funCode="base_erzyzb" funName="主要指标字典" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssElecReco.Service.Er.IErResviewService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.ErResview" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="YssElecReco.Pojo.Er.ErResview" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="C_PLAN_CODE" cboDispName="C_PLAN_NAME" cboDispColumn="C_PLAN_NAME" />
+  <Config funCode="base_erdztype" funName="对账类型" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="YssElecReco.Service.Er.IErDzTypeDataService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.ErDzType" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="YssElecReco.Pojo.Er.ErDzType" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="C_DZ_CODE" cboDispName="C_DZ_NAME" cboDispColumn="C_DZ_CODE~C_DZ_NAME" />
+  <Config funCode="dzDspPara" funName="电子对账综合参数" listFormClass="YssElecReco.Form.Para.Frm_ELEC_DSP_PARA_L" listFormDll="YssElecReco.dll" setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Para.IErDspManagerService" serviceDll="YssElecReco.dll" dataServiceClass="YssElecReco.Service.Para.IErDspManagerService" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Para.ErDspManager" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="YssElecReco.Pojo.Para.ErDspManager" dataPojoDll="YssElecReco.dll" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="reveDzPublicKmMap" funName="公共映射设置" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_PUBLIC_KMMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KMMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.IPublicKmMapService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IPublicKmMapService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.KmRelaRecord"
+          pojoDll="YssElecReco.dll" />
+
+  <Config funCode="reveDzTghKmMap" funName="托管方映射设置" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_TGH_KMMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KMMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.ITghKmMapService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.ITghKmMapService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.KmRelaRecord"
+          pojoDll="YssElecReco.dll" />
+
+  <Config funCode="reveDzPortKmMap" funName="产品映射设置" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_PORT_KMMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KMMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.IPortKmMapService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IPortKmMapService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.KmRelaRecord"
+          pojoDll="YssElecReco.dll" />
+
+  <Config funCode="reveDzKmMap" funName="科目映射管理" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KMMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KMMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass=""
+          serviceDll=""
+          dataServiceClass=""
+          dataServiceDll=""
+          pojoClass=""
+          pojoDll="" />
+
+
+  <Config funCode="reveDzZbMap" funName="指标映射管理" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_ZBMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_ZBMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.IZbMapService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IZbMapService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.ZbMap"
+          pojoDll="YssElecReco.dll" />
+
+  <Config funCode="reveDzAssMap" funName="资托资产映射" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_ASSMAP_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_ASSMAP_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.IAssMapService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IAssMapService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.AssMap"
+          pojoDll="YssElecReco.dll" />
+
+  <Config funCode="reveDzIgnoreItem" funName="忽略设置管理" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_IGNOREITEM_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_IGNOREITEM_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.Reverse.IIgnoreItemService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IIgnoreItemService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.IgnoreItem"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="reveInnerKmb" funName="科目映射-内部科目" listFormClass=""
+          listFormDll=""
+          setFormClass=""
+          setFormDll=""
+          serviceClass=""
+          serviceDll=""
+          dataServiceClass=""
+          dataServiceDll=""
+          pojoClass="YssElecReco.Pojo.Er.ErKmb"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="reveOutKmb" funName="科目映射-外部科目" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_IGNOREITEM_L"
+          listFormDll=""
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KM_OUT_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass=""
+          serviceDll=""
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IErKmbOutService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.ErKmbOut"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="reveDZAddOutKmb" funName="外部科目设置" listFormClass=""
+          listFormDll=""
+          setFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_KM_OUT_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass=""
+          serviceDll=""
+          dataServiceClass="YssElecReco.Service.Er.Reverse.IErKmbOutService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.Reverse.ErKmbOut"
+          pojoDll="YssElecReco.dll" />
+  
+  <Config funCode="reveDzInfo" funName="反向电子对账管理" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_INFO_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.Reverse.IErReveInfoService"
+          serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.Reverse.ErReveInfo" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+    <!--<RelationChildren>
+      <RelationChild FunCode="erDetail"></RelationChild>
+    </RelationChildren>-->
+  </Config>
+
+  <Config funCode="reveDzResultDetail" funName="反向电子对账结果明细" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_RESULT_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.Reverse.IReveResultService"
+          serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.Reverse.ReveResult" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+  </Config>
+  <!--<Config funCode="reveDzResultDetail" funName="反向电子对账结果明细" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_RESULT_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass="YssElecReco.Service.Er.Reverse.IReveResultService"
+          serviceDll="YssElecReco.dll" 
+          dataServiceClass="" 
+          dataServiceDll="" 
+          pojoClass="YssElecReco.Pojo.Er.Reverse.ReveResult" 
+          pojoDll="YssElecReco.dll">
+  </Config>-->
+  <Config funCode="reveDzGzbOut" funName="反向电子对账对账估值表" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_RESULT_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass=""
+          serviceDll="" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.Reverse.ErGzbOut" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+  </Config>
+  <Config funCode="reveDzYebOut" funName="反向电子对账对账余额表" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_RESULT_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass=""
+          serviceDll="" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.Reverse.ErYebOut" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+  </Config>
+  <Config funCode="reveDzKmbOut" funName="反向电子对账对账科目表" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_RESULT_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass=""
+          serviceDll="" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="YssElecReco.Pojo.Er.Reverse.ErKmbOut" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+  </Config>
+  <Config funCode="reveDzMessageDetail" funName="反向电子对方报文明细" listFormClass="YssElecReco.Form.Er.Reverse.Frm_ELEC_REVE_MESSAGE_DETAIL_L" listFormDll="YssElecReco.dll"
+          setFormClass="" setFormDll="" serviceClass=""
+          serviceDll="" dataServiceClass="" dataServiceDll="YssElecReco.dll" pojoClass="" pojoDll="YssElecReco.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue=""
+          cboDispName="" cboDispColumn="">
+  </Config>
+  <Config funCode="erSplitRela" funName="多托管行拆分设置" listFormClass="YssElecReco.Form.Er.Frm_ELEC_SPLIT_RELA_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Frm_ELEC_SPLIT_RELA_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.IErSplitRelaService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.IErSplitRelaService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.ErSplitRela"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="erSplitRule" funName="拆分规则设置" listFormClass="YssElecReco.Form.Er.Frm_ELEC_SPLIT_RULE_L"
+          listFormDll="YssElecReco.dll"
+          setFormClass="YssElecReco.Form.Er.Frm_ELEC_SPLIT_RULE_S"
+          setFormDll="YssElecReco.dll"
+          serviceClass="YssElecReco.Service.Er.IErSplitRuleService"
+          serviceDll="YssElecReco.dll"
+          dataServiceClass="YssElecReco.Service.Er.IErSplitRuleService"
+          dataServiceDll="YssElecReco.dll"
+          pojoClass="YssElecReco.Pojo.Er.ErSplitRule"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="erSplitRuleKmShow" funName="拆分规则设置界面组合科目显示" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="" serviceDll="" dataServiceClass="" dataServiceDll=""
+          pojoClass="YssElecReco.Pojo.Er.ErKmb"
+          pojoDll="YssElecReco.dll" />
+  <Config funCode="dzTransRepCfg" funName="对账交易数据配置" listFormClass="YssElecReco.Form.Er.Frm_DZ_TransRepCfg_L" listFormDll="YssElecReco.dll" setFormClass="YssElecReco.Form.Er.Frm_DZ_TransRepCfg_S" setFormDll="YssElecReco.dll" serviceClass="YssElecReco.Service.Er.IDzTransRepCfgService" serviceDll="YssElecReco.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssElecReco.pojo.Er.DzTransRepCfg" pojoDll="YssElecReco.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+</SystemConfig>

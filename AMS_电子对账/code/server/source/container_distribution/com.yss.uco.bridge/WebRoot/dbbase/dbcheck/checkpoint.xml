@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoints desc="数据库检测功能的检查点">
+	<checkpoint code="TABLE" name="表" />
+	<checkpoint code="VIEW" name="视图" />
+	<checkpoint code="SEQUENCE" name="序列" />
+	<checkpoint code="SYNONYM" name="同义词" />
+	<checkpoint code="FUNCTION" name="函数" />
+	<checkpoint code="PROCEDURE" name="存储过程" />
+	<checkpoint code="TYPE" name="自定义类型" />
+</checkpoints>

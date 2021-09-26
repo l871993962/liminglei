@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/WebRoot</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation>C:\Users\wlx\Desktop\WAR\21.6\YSSUCOBRIDGE.WAR</warLocation>
+    <extraInfo></extraInfo>
+    <webPath>/YSSUCOBRIDGE</webPath>
+</tomcatProjectProperties>

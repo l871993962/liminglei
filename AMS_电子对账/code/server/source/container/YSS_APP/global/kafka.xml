@@ -1,0 +1,8 @@
+<kafka>
+	<enable>false</enable>
+	<servers>
+		<server ip="192.168.1.111" port="9092"></server>
+	</servers>
+	<productorCount>3</productorCount>
+	
+</kafka>

@@ -1,0 +1,17 @@
+<doctor>
+<fastMonitor value="false"/>
+<!-- 监控数据库地址，id：dbsetting中数据源ID，type：指定使用mysql或oracle -->
+<dataSource id="dbservice001" type="oracle"></dataSource>
+<!--分析器配置-->
+<anlyzers>
+	<!--分析器配置 key标识消息类型 duration标识周期单位为秒 -->
+	<anlyzer key="SYSTEM" duration="60"></anlyzer>
+</anlyzers>
+<!--用来指定埋点数据保留几天的数据-->
+<dataClears period="1">
+	<dataClear key="SYS_THREADINFO_127.0.0.1_8083" day="1"></dataClear>
+	<dataClear key="SYS_SQLINFO_127.0.0.1_8083" day="1"></dataClear>
+	<dataClear key="SYS_HOSTINFO_127.0.0.1_8083" day="1"></dataClear>
+</dataClears>
+<systemMonitorCycle value="20"/>
+</doctor>

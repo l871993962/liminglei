@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rpcConfig>
+	<!-- 是否启用ZOOKEEPER -->
+    <isStartZk value="true" />
+	<!-- 是否启用分布式服务 -->
+    <isStartRpc value="true" />
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+	<!-- 集群配置方式 -->
+	<!--
+    <registry protocol="zookeeper" address="192.168.1.73:2181,192.168.1.73:2182,192.168.1.73:2183" appAddress="192.168.1.73:8083,192.168.1.73:9083" />
+	-->
+	<!--  如有调整 address 的端口必须与zoo.cfg的clientPort一致， appaddress即为站点-->
+	<registry protocol="zookeeper" address="127.0.0.1:2181" appAddress="127.0.0.1:8180" />
+    <!-- 服务之间的通讯协议 -->
+    <protocol name="http" ip = "127.0.0.1" port="8180" />
+    <!-- 服务注册 订阅失败重试时间 单位为 秒 -->
+    <retry  value = "10" />
+	<!-- 连接注册中心超时时间 （毫秒）-->
+	<connTimeOut value="30000"/>
+	<!-- 与注册中心的session保持时间（毫秒） -->
+	<sessionTimeOut value="10000"/>
+</rpcConfig>

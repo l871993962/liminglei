@@ -1,0 +1,6900 @@
+<html  xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="ProgId" content="Excel.Sheet">
+<meta name="Generator" content="Microsoft Excel 9">
+<style>
+<!--table
+{mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\,";}
+@page
+{margin:1.0in .75in 1.0in .75in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;}
+tr
+{mso-height-source:auto;}
+col
+{mso-width-source:auto;}
+br
+{mso-data-placement:same-cell;}
+.style0
+{mso-number-format:General;
+text-align:general;
+vertical-align:top;
+white-space:nowrap;
+mso-rotate:0;
+mso-background-source:auto;
+mso-pattern:auto;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+border:none;
+mso-protection:locked visible;
+mso-style-name:Normal;
+mso-style-id:0;}
+td
+{mso-style-parent:style0;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+mso-ignore:padding;
+color:windowtext;
+font-size:10.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Arial;
+mso-generic-font-family:auto;
+mso-font-charset:0;
+mso-number-format:General;
+text-align:general;
+vertical-align:top;
+border:none;
+mso-background-source:auto;
+mso-pattern:auto;
+mso-protection:locked visible;
+white-space:nowrap;
+mso-rotate:0;}
+.xl57
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl53
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl54
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:left;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl87
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl36
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:bottom;
+}
+.xl25
+{mso-style-parent:style0;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl71
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%;-\#\,\#\#0\.00%;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl68
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:left;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl90
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl86
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl94
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+}
+.xl45
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+padding-bottom:7.5pt;
+}
+.xl84
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:middle;
+border-left:2.3pt none windowtext;
+border-top:2.3pt none windowtext;
+border-right:2.3pt none windowtext;
+border-bottom:2.3pt none windowtext;
+}
+.xl34
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl95
+{mso-style-parent:style0;
+white-space:normal;
+text-align:left;
+font-weight:700;
+font-style:italic;
+color:#999999;
+}
+.xl47
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+background:#E3E3FC;
+mso-pattern:auto none;
+}
+.xl44
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:middle;
+}
+.xl88
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl60
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%;-\#\,\#\#0\.00%;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl29
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl24
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl38
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:bottom;
+}
+.xl28
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl27
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+border-left:0.8pt none #CCCCCC;
+border-top:0.8pt none #CCCCCC;
+border-right:0.8pt none #CCCCCC;
+border-bottom:0.8pt none #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl85
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:middle;
+}
+.xl66
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:left;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl56
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:left;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl51
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl65
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl72
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%;-\#\,\#\#0\.00%;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl89
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl39
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl33
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl73
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl93
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl35
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl42
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:middle;
+}
+.xl77
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.0000;-\#\,\#\#0\.0000;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl76
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.000;-\#\,\#\#0\.000;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl69
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl43
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl82
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl55
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:left;
+vertical-align:top;
+}
+.xl49
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#0";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl62
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl61
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00%;-\#\,\#\#0\.00%;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl31
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl78
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.0000;-\#\,\#\#0\.0000;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl81
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl67
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:left;
+vertical-align:top;
+}
+.xl48
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+background:#E3E3FC;
+mso-pattern:auto none;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl74
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl32
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:14.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+padding-top:2.3pt;
+padding-bottom:2.3pt;
+}
+.xl41
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl26
+{mso-style-parent:style0;
+color:#000000;
+font-size:12.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl83
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl92
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"yyyy\\-m\\-d\;\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl52
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+vertical-align:top;
+}
+.xl91
+{mso-style-parent:style0;
+color:#000000;
+font-size:8.0pt;
+font-family:SimSun;
+mso-number-format:"yyyy\\-m\\-d\;\@";
+text-align:center;
+vertical-align:middle;
+}
+.xl64
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl75
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.000;-\#\,\#\#0\.000;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl46
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+background:#E3E3FC;
+mso-pattern:auto none;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl50
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#0";
+text-align:center;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl63
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl30
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:middle;
+}
+.xl59
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl58
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-weight:700;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl37
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:right;
+vertical-align:top;
+}
+.xl70
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\#\,\#\#0\.00;-\#\,\#\#0\.00;\0022 \0022";
+text-align:right;
+vertical-align:top;
+border-left:0.8pt solid #CCCCCC;
+border-top:0.8pt solid #CCCCCC;
+border-right:0.8pt solid #CCCCCC;
+border-bottom:0.8pt solid #CCCCCC;
+padding-left:3.8pt;
+padding-top:2.3pt;
+padding-right:3.8pt;
+padding-bottom:2.3pt;
+}
+.xl79
+{mso-style-parent:style0;
+white-space:normal;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+}
+.xl40
+{mso-style-parent:style0;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+mso-number-format:"\@";
+text-align:right;
+vertical-align:middle;
+}
+.xl80
+{mso-style-parent:style0;
+white-space:nowrap;
+color:#000000;
+font-size:10.0pt;
+font-family:SimSun;
+text-align:center;
+vertical-align:top;
+padding-left:3.8pt;
+padding-right:3.8pt;
+}
+-->
+</style>
+<!--[if gte mso 9]>
+<xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>Sheet1</x:Name>
+<x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+<table class=xl32>
+<tr >
+<td class=xl45>
+<table >
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl30>
+<table >
+<tr >
+<td class=xl27>
+<span class=xl26>保险资产估值表</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl35>
+<span class=xl34>阳光资产管理股份有限公司——阳光人寿债券型投连——专用表</span>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl38>
+<span class=xl37>中国工商银行</span>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl41>
+<span class=xl37>估值日期：</span>
+</td>
+<td class=xl44>
+<span class=xl43>2018年07月31日</span>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl44>
+<span class=xl43>币种：人民币</span>
+</td>
+<td class=xl24>
+</td>
+<td class=xl44>
+<span class=xl43>单位：元</span>
+</td>
+</tr>
+<tr >
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+<td class=xl24>
+</td>
+</tr>
+</table>
+<table >
+<tr >
+<td class=xl48>
+<span class=xl47>编号</span>
+</td>
+<td class=xl48>
+<span class=xl47>科目代码</span>
+</td>
+<td class=xl48>
+<span class=xl47>科目名称</span>
+</td>
+<td class=xl48>
+<span class=xl47>数量</span>
+</td>
+<td class=xl48>
+<span class=xl47>单位成本</span>
+</td>
+<td class=xl48>
+<span class=xl47>成本</span>
+</td>
+<td class=xl48>
+<span class=xl47>占资产净值</span>
+</td>
+<td class=xl48 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl47>当日均价</span>
+</td>
+<td class=xl48>
+<span class=xl47>市值</span>
+</td>
+<td class=xl48>
+<span class=xl47>占资产净值</span>
+</td>
+<td class=xl48>
+<span class=xl47>估值增值</span>
+</td>
+<td class=xl48>
+<span class=xl47>假设费用</span>
+</td>
+<td class=xl48>
+<span class=xl47>停牌标志</span>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>1</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1002</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行存款</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>951604.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.004477</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>951604.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.004477</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>2</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>100201</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>活期存款</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>951604.1</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.004477</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>951604.100000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.004477</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>3</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1031</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>存出保证金</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26.93</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26.930000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>4</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>103101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>交易保证金</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26.93</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26.930000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>5</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>10310101</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>上交所交易保证金</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>26.93</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>26.930000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>6</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>交易性金融资产</span>
+</td>
+<td class=xl59>
+<span class=xl58>2740880.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>7</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>成本</span>
+</td>
+<td class=xl59>
+<span class=xl58>2740880.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270244596</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.271383</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>8</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>11010104</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>债券</span>
+</td>
+<td class=xl59>
+<span class=xl58>2740880.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270244596</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.271383</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>9</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101010402</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>金融债</span>
+</td>
+<td class=xl59>
+<span class=xl58>100000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10468546</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.04925</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10540000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.049586</span>
+</td>
+<td class=xl59>
+<span class=xl58>71454.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>10</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110101040200000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>100000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10468546</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.04925</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10540000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.049586</span>
+</td>
+<td class=xl59>
+<span class=xl58>71454.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>11</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104020000000300180205</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18国开05</span>
+</td>
+<td class=xl70>
+<span class=xl37>100000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>104.690000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>10468546</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.04925</span>
+</td>
+<td class=xl70>
+<span class=xl37>105.400000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>10540000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.049586</span>
+</td>
+<td class=xl70>
+<span class=xl37>71454.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>175.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>12</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101010403</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>企业债</span>
+</td>
+<td class=xl59>
+<span class=xl58>1600000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>159999450</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.752728</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>160800000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.756494</span>
+</td>
+<td class=xl59>
+<span class=xl58>800550.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>13</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110101040300000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>1600000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>159999450</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.752728</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>160800000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.756494</span>
+</td>
+<td class=xl59>
+<span class=xl58>800550.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>14</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104030000000301180006</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18阳煤SCP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>500000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>49999450</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.235226</span>
+</td>
+<td class=xl70>
+<span class=xl37>100.270000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>50135000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.235863</span>
+</td>
+<td class=xl70>
+<span class=xl37>135550.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>275.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>15</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104030000000301180014</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18晋煤SCP003</span>
+</td>
+<td class=xl70>
+<span class=xl37>300000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>30000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.141137</span>
+</td>
+<td class=xl70>
+<span class=xl37>100.350000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>30105000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.141631</span>
+</td>
+<td class=xl70>
+<span class=xl37>105000.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>225.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>16</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104030000000304180004</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18潞安CP001</span>
+</td>
+<td class=xl70>
+<span class=xl37>300000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>30000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.141137</span>
+</td>
+<td class=xl70>
+<span class=xl37>100.700000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>30210000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.142125</span>
+</td>
+<td class=xl70>
+<span class=xl37>210000.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>225.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>17</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104030000000304180013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18河钢集CP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>500000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>50000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.235228</span>
+</td>
+<td class=xl70>
+<span class=xl37>100.700000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>50350000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.236875</span>
+</td>
+<td class=xl70>
+<span class=xl37>350000.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>275.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>18</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101010404</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>40880.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4088000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.019232</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4350231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.020466</span>
+</td>
+<td class=xl59>
+<span class=xl58>262231.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>19</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110101040400000001</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>上海转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>40880.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4088000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.019232</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4350231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.020466</span>
+</td>
+<td class=xl59>
+<span class=xl58>262231.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>20</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104040000000100110034</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>九州转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>2360.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>236000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.00111</span>
+</td>
+<td class=xl70>
+<span class=xl37>106.220000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>250679.200000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001179</span>
+</td>
+<td class=xl70>
+<span class=xl37>14679.200000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>2.770000000000</span>
+</td>
+<td class=xl65>
+<span class=xl43>流通</span>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>21</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104040000000100113011</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>光大转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>33990.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>3399000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.015991</span>
+</td>
+<td class=xl70>
+<span class=xl37>106.710000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>3627072.900000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.017064</span>
+</td>
+<td class=xl70>
+<span class=xl37>228072.900000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>39.970000000000</span>
+</td>
+<td class=xl65>
+<span class=xl43>流通</span>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>22</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104040000000100113013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>国君转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>4530.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>100.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>453000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.002131</span>
+</td>
+<td class=xl70>
+<span class=xl37>104.300000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>472479.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.002223</span>
+</td>
+<td class=xl70>
+<span class=xl37>19479.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>5.200000000000</span>
+</td>
+<td class=xl65>
+<span class=xl43>流通</span>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>23</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101010407</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>95688600</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.450173</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>96300000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.45305</span>
+</td>
+<td class=xl59>
+<span class=xl58>611400.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>24</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110101040700000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>95688600</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.450173</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>96300000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.45305</span>
+</td>
+<td class=xl59>
+<span class=xl58>611400.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>25</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104070000000311180707</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD075</span>
+</td>
+<td class=xl70>
+<span class=xl37>500000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>95.680000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>47841700</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.225074</span>
+</td>
+<td class=xl70>
+<span class=xl37>96.270000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>48135000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.226454</span>
+</td>
+<td class=xl70>
+<span class=xl37>293300.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>275.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>26</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010104070000000311180709</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD090</span>
+</td>
+<td class=xl70>
+<span class=xl37>500000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>95.690000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>47846900</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.225099</span>
+</td>
+<td class=xl70>
+<span class=xl37>96.330000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>48165000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.226595</span>
+</td>
+<td class=xl70>
+<span class=xl37>318100.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>275.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>27</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110103</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>公允价值变动</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.008212</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>28</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>11010304</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>债券</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.008212</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>29</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101030402</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>金融债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>71454</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000336</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>30</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110103040200000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>71454</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000336</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>31</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304020000000300180205</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18国开05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>71454</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000336</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>32</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101030403</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>企业债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>800550</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.003766</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>33</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110103040300000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>800550</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.003766</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>34</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304030000000301180006</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18阳煤SCP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>135550</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000638</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>35</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304030000000301180014</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18晋煤SCP003</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>105000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000494</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>36</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304030000000304180004</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18潞安CP001</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>210000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000988</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>37</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304030000000304180013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18河钢集CP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>350000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001647</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>38</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101030404</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>262231.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001234</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>39</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110103040400000001</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>上海转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>262231.1</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001234</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>40</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304040000000100110034</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>九州转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>14679.2</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>6.9e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>41</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304040000000100113011</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>光大转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>228072.9</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001073</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>42</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304040000000100113013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>国君转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>19479</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>9.2e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>43</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1101030407</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>611400</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.002876</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>44</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>110103040700000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>611400</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.002876</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>45</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304070000000311180707</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD075</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>293300</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.00138</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>46</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11010304070000000311180709</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD090</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>318100</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001497</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>47</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1132</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5824394.14</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.027401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5824394.140000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.027401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>48</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113201</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收银行存款利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1484.22</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1484.220000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>49</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320101</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应收活期存款利息</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1484.22</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>7e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1484.220000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>7e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>50</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113204</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收债券利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5552243.31</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.026121</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5552243.310000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.026121</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>51</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>11320401</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收交易性债券利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5552243.31</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.026121</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>5552243.310000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.026121</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>52</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1132040102</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>金融债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>231298.63</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001088</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>231298.630000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001088</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>53</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113204010200000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>231298.63</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001088</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>231298.630000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001088</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>54</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401020000000300180205</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18国开05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>231298.63</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001088</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>231298.630000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001088</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>55</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1132040103</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>企业债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>3911356.16</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.018401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>3911356.160000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.018401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>56</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113204010300000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>3911356.16</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.018401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>3911356.160000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.018401</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>57</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401030000000301180006</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18阳煤SCP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1463287.67</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.006884</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1463287.670000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.006884</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>58</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401030000000301180014</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18晋煤SCP003</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>829972.6</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003905</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>829972.600000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003905</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>59</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401030000000304180004</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18潞安CP001</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>824219.18</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003878</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>824219.180000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003878</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>60</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401030000000304180013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18河钢集CP002</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>793876.71</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003735</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>793876.710000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003735</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>61</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1132040104</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7302.22</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.4e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7302.220000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.4e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>62</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113204010400000001</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>上海转债</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7302.22</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.4e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7302.220000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.4e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>63</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401040000000100110034</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>九州转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>768.13</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>4e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>768.130000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>4e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>64</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401040000000100113011</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>光大转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>6378.95</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>3e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>6378.950000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>3e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>65</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401040000000100113013</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>国君转债</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>155.14</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>1e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>155.140000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>1e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>66</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1132040107</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1402286.3</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.006597</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1402286.300000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.006597</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>67</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113204010700000003</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间同业存单</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1402286.3</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.006597</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1402286.300000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.006597</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>68</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401070000000311180707</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD075</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>771103.56</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003628</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>771103.560000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.003628</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>69</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>11320401070000000311180709</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>18招商银行CD090</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>631182.74</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.002969</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>631182.740000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.002969</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>70</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>113206</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收贷款及应收款利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270666.61</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001273</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270666.610000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001273</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>71</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>11320601</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应收信托计划利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270666.61</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001273</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270666.610000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.001273</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>72</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>113206012018071988</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>阳光-河钢集团基础设施债券计划</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>270666.61</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001273</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>270666.610000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.001273</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>73</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>113303</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>-39990000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>-0.188136</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>-39990000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>-0.188136</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>74</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>113303</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>39990000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.188136</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>39990000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.188136</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>75</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>1301</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>贷款及应收款</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>76</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>130101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>成本</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>77</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>13010101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>信托成本</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>40000000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.188183</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>78</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>130101012018071988</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>阳光-河钢集团基础设施债券计划</span>
+</td>
+<td class=xl70>
+<span class=xl37>40000000.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>1.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>40000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.188183</span>
+</td>
+<td class=xl70>
+<span class=xl37>1.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>40000000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.188183</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>79</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2111</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>卖出回购金融资产款</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>80</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>211103</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>81</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>21110301</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>质押式</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>82</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2111030101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>质押式</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>83</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2111030101001BR001</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间1天质押式回购</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>58900000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.277099</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>58900000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.277099</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>84</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2111030101001BR007</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间7天质押式回购</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>46973000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.220988</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>46973000.000000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.220988</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>85</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2207</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应付托管费</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>12103.21</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5.7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>12103.210000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5.7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>86</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>220701</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应付托管费</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>12103.21</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>5.7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>12103.210000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>5.7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>87</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2208</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应付账户资产管理费</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>107617.45</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000506</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>107617.450000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000506</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>88</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>220801</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应付账户资产管理费</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>107617.45</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000506</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>107617.450000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000506</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>89</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2221</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应交税费</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>189101.12</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.00089</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>189101.120000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.00089</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>90</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>222101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应交营业税</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>14840.49</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>14840.490000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>91</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>22210102</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>债券</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>14840.49</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>14840.490000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>7e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>92</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2221010203</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>14840.49</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>14840.490000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>93</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>222102</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应交城建税</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000.81</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000.810000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>94</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>22210202</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>债券</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000.81</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>1000.810000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>5e-06</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>95</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2221020203</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1000.81</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>5e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1000.810000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>5e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>96</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>222103</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应交教育费附加</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>-98.02</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>-98.020000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>97</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>22210302</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>债券</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>-98.02</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>-98.020000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>98</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2221030203</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>-98.02</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>-98.020000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>99</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>222104</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应交增值税</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>165370.52</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000778</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>165370.520000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000778</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>100</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>22210405</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>金融商品估值销项税（汇总）</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>98809.53</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000465</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>98809.530000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000465</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>101</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>22210406</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应交未交增值税</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>66560.99</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000313</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>66560.990000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000313</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>102</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>222106</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>附加税</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7987.32</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.8e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>7987.320000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>3.8e-05</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>103</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>22210601</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应交城建税</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>4659.27</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>2.2e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>4659.270000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>2.2e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>104</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>22210602</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应交教育费附加</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1996.83</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>9e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1996.830000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>9e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>105</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>22210603</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>应交地方教育费附加</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1331.22</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>6e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>1331.220000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>6e-06</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>106</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2231</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>应付卖出回购利息</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.6</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.600000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>107</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>223103</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>银行间</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.6</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.600000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>108</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>22310301</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>质押式</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.6</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.600000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>109</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>2231030101</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>质押式</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.6</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>26682.600000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.000126</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>110</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2231030101001BR001</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间1天质押式回购</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>3517.86</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>1.7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>3517.860000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>1.7e-05</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>111</span>
+</td>
+<td class=xl65 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl43>2231030101001BR007</span>
+</td>
+<td class=xl68 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl67>银行间7天质押式回购</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>23164.74</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000109</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl70>
+<span class=xl37>23164.740000000000</span>
+</td>
+<td class=xl72 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl37>0.000109</span>
+</td>
+<td class=xl70>
+<span class=xl37>0.000000000000</span>
+</td>
+<td class=xl74>
+<span class=xl43>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>112</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>113</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>[证券投资]合计:</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270244596</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.27138314</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>114</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>115</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>116</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>117</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>转债</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4088000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.01923226</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>4350231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.020466</span>
+</td>
+<td class=xl59>
+<span class=xl58>262231.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>118</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>政策性金融债</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10468546</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.04924995</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>10540000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.049586</span>
+</td>
+<td class=xl59>
+<span class=xl58>71454.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>119</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>企债</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>159999450</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.75272774</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>160800000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.756494</span>
+</td>
+<td class=xl59>
+<span class=xl58>800550.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>120</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>[债券投资]小计:</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>270244596</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.27138314</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>271990231.100000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>1.279596</span>
+</td>
+<td class=xl59>
+<span class=xl58>1745635.100000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>121</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>122</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>银行间市场卖出回购款</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.49808636</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>123</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>[卖出回购]小计:</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.49808636</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>105873000.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0.498086</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>124</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>125</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>资产类合计</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>357010621.17</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>358756256.270000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>126</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>负债类合计</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>146198504.38</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>146198504.380000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>127</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>假设费用</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>1772.940000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>128</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>129</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>基金资产净值</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl76>
+<span class=xl58>136060221.540000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>210812116.79</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>212559524.830000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>1747408.040000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>130</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>基金资产单位净值</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl78>
+<span class=xl58>1.5494</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl78>
+<span class=xl58>1.562300000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl78>
+<span class=xl58>0.012900000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>131</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>损益平准金-未实现</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>0.0000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>132</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>损益平准金-已实现</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>0.0000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>133</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>期初单位净值</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>1.4918</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>134</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>今日单位净值</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>1.5623</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>135</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>累计基金净值</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>1.5622</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>136</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>累计派发现金金额</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>0.0000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>137</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>净值增长率</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>4.7258%</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>138</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>可分配收益</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>.5485</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>74626625.300000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>139</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>单位现金余额</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>0.00000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>140</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>今日可用头寸</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>951,604.10</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+<tr >
+<td class=xl50 width=37.9 style='mso-width-source:userset;mso-width-alt:1384.8;width:28.4pt'>
+<span class=xl34>141</span>
+</td>
+<td class=xl53 width=189.1 style='mso-width-source:userset;mso-width-alt:6914.2;width:141.8pt'>
+<span class=xl52>明日可用头寸</span>
+</td>
+<td class=xl56 width=264.7 style='mso-width-source:userset;mso-width-alt:9678.9;width:198.5pt'>
+<span class=xl55>951,604.10</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59 width=70.0 style='mso-width-source:userset;mso-width-alt:2559.9;width:52.5pt'>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl61 width=80.0 style='mso-width-source:userset;mso-width-alt:2925.6;width:60.0pt'>
+<span class=xl58>0</span>
+</td>
+<td class=xl59>
+<span class=xl58>0.000000000000</span>
+</td>
+<td class=xl63>
+<span class=xl52>0.000000000000</span>
+</td>
+<td class=xl65>
+</td>
+</tr>
+</table>
+<table  height=37.9 style='height:28.4pt'>
+<tr >
+<td class=xl83>
+<span class=xl82>帐簿主管：</span>
+</td>
+<td class=xl84>
+<table >
+<tr >
+<td class=xl65>
+<span class=xl43>李秋</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl85>
+</td>
+<td class=xl83>
+<span class=xl82>会计经办员：</span>
+</td>
+<td class=xl85>
+<table >
+<tr >
+<td class=xl87>
+<span class=xl43>赵阳</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl85>
+</td>
+<td class=xl83>
+<span class=xl82>复核员：</span>
+</td>
+<td class=xl85>
+<table >
+<tr >
+<td class=xl65>
+<span class=xl43>胡捷</span>
+</td>
+</tr>
+</table>
+</td>
+<td class=xl85>
+</td>
+<td class=xl90>
+<span class=xl89>-<span style='mso-spacerun:yes'>&nbsp;</span></span>
+<span class=xl89>1</span>
+<span class=xl89><span style='mso-spacerun:yes'>&nbsp;</span>-</span>
+</td>
+<td class=xl92>
+<span class=xl89>43327</span>
+</td>
+</tr>
+</table>
+</body>
+</html>

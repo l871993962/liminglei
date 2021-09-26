@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskItems ProductDimension="电子对账" ProductCode = "Elecreco" AppCode = "YSSELECRECO">
+	
+	<TaskItem Name="生成电子对账" Class="com.yss.uco.elecreco.er.task.service.TaskGeneDzdz" Code="elecGene"
+		Desc="电子对账" FunCode="elecGene" ServiceId="ITaskGeneService" IsWorkflow="true"
+		IsOsgi="true">
+		<Param Key="C_PORT" Code="Port" Name="组合" Type="Strings"
+			methodName="getPort" />
+		<Param Key="C_ITEM" Code="Item" Name="项目" Type="Strings"
+			methodName="getItems" />
+	</TaskItem>
+	<TaskItem Name="发送电子对账" Class="com.yss.uco.elecreco.er.task.service.TaskSendDzdz" Code="elecSend"
+		Desc="电子对账" FunCode="elecSend" ServiceId="ITaskSendService" IsWorkflow="true"
+		IsOsgi="true">
+		<Param Key="C_PORT" Code="Port" Name="组合" Type="Strings"
+			methodName="getPort" />
+		<Param Key="C_ITEM" Code="Item" Name="项目" Type="Strings"
+			methodName="getItems" />
+	</TaskItem>
+</TaskItems>

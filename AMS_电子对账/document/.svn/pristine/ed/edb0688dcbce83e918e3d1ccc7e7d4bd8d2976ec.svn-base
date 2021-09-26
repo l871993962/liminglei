@@ -1,0 +1,357 @@
+2020-02-17 15:03:17,469 [1] INFO  CCGProxy.ProxyOrganization  初始化深证通服务成功
+2020-02-17 15:03:17,583 [1] INFO  CCGProxy.ProxyOrganization  启动Tcp侦听服务成功
+2020-02-17 15:03:27,499 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,501 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,503 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,505 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,509 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,511 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:27,512 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:37,517 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:37,520 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:37,523 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:37,525 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:37,529 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:47,532 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:47,534 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:47,537 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:47,539 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,546 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,550 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,554 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,556 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,558 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,561 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,565 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:03:57,567 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:07,571 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:07,573 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:07,575 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:07,577 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:07,578 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,583 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,586 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,589 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,594 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,598 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,602 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,610 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,616 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:17,622 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:27,627 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:37,629 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:37,631 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:37,633 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:37,635 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,641 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,643 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,648 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,650 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,654 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,656 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,659 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,662 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,664 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:47,666 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,678 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,685 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,690 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,698 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,702 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,706 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,711 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,717 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,722 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:04:57,725 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,732 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,736 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,739 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,746 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,750 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,755 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,761 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:07,765 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,771 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,774 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,777 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,781 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,786 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,792 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,795 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,799 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,801 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:17,803 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,809 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,812 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,815 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,818 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,821 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,829 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,833 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,837 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,841 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:27,847 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,852 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,855 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,858 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,861 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,864 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,867 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,870 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,874 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,877 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:37,880 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,886 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,888 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,892 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,895 [14] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,900 [6] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:47,904 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,911 [7] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,914 [11] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,916 [5] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,920 [8] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,925 [9] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,930 [12] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,937 [10] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:05:57,943 [13] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:06:02,318 [1] INFO  CCGProxy.ProxyOrganization  CCG代理服务已停止
+2020-02-17 15:34:46,786 [1] INFO  CCGProxy.ProxyOrganization  初始化深证通服务成功
+2020-02-17 15:34:46,897 [1] INFO  CCGProxy.ProxyOrganization  启动Tcp侦听服务成功
+2020-02-17 15:34:56,804 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,808 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,813 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,817 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,822 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,828 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,834 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,838 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,844 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:34:56,848 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,864 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,867 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,872 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,877 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,882 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,891 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,896 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,903 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:06,909 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,917 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,921 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,926 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,930 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,936 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,942 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,948 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,955 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,960 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:16,966 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:26,972 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:26,975 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:26,979 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:26,988 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:26,996 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:27,004 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:27,008 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:27,012 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:27,016 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,025 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,027 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,030 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,036 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,047 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,051 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,055 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,058 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,061 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:37,067 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,074 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,077 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,081 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,084 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,089 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,093 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,096 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,100 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,105 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:47,110 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,129 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,133 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,137 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,141 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,145 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,150 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,155 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,159 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,162 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:35:57,166 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,173 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,176 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,179 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,182 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,185 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,191 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:07,196 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:17,198 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:17,200 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:17,201 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,209 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,217 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,221 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,228 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,232 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,237 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,243 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:27,248 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,254 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,263 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,267 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,273 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,277 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,281 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,284 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,287 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,292 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:37,298 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,303 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,313 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,316 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,323 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,327 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,330 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,333 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,339 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,343 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:47,347 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,350 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,351 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,351 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,352 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,353 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:36:57,355 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,356 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,357 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,358 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,359 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,359 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,360 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:07,361 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,364 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,370 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,371 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,372 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,373 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:17,373 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:27,375 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,377 [21] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,378 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,379 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,379 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,380 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,381 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:37,382 [19] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,386 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,387 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,387 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,388 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,389 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,390 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,391 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:47,392 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:57,394 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:57,395 [27] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:57,396 [25] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:57,397 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:37:57,398 [22] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:07,401 [28] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:07,401 [23] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:07,402 [26] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:07,403 [24] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:07,404 [20] INFO  CCGProxy.ProxyOrganization  深证通服务未启动(-2)
+2020-02-17 15:38:12,235 [1] INFO  CCGProxy.ProxyOrganization  CCG代理服务已停止
+2020-02-17 15:38:57,682 [1] INFO  CCGProxy.ProxyAbc  初始化深证通服务成功
+2020-02-17 15:50:01,761 [1] INFO  CCGProxy.ProxyAbc  深证通服务连接已中断
+2020-02-17 15:50:01,762 [1] INFO  CCGProxy.ProxyAbc  CCG代理已停止服务
+2020-02-17 15:51:21,280 [1] INFO  CCGProxy.ProxyOrganization  初始化深证通服务成功
+2020-02-17 15:51:21,344 [1] INFO  CCGProxy.ProxyOrganization  启动Tcp侦听服务成功
+2020-02-17 15:52:36,303 [14] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:61192
+2020-02-17 15:52:36,431 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:61192
+2020-02-17 15:52:41,308 [14] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:61197
+2020-02-17 15:52:41,416 [42] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:61197
+2020-02-17 15:54:51,678 [39] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:61192
+2020-02-17 15:54:51,678 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:61192
+2020-02-17 15:54:51,690 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:61192
+2020-02-17 15:54:51,690 [39] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:61197
+2020-02-17 15:54:51,691 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:61197
+2020-02-17 15:54:51,692 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:61197
+2020-02-17 15:57:26,376 [14] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:61361
+2020-02-17 15:57:26,487 [40] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:61361
+2020-02-17 15:57:31,386 [14] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:61375
+2020-02-17 15:57:31,498 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:61375
+2020-02-17 15:59:06,948 [39] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:61375
+2020-02-17 15:59:06,949 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:61375
+2020-02-17 15:59:06,952 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:61375
+2020-02-17 15:59:06,952 [39] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:61361
+2020-02-17 15:59:06,952 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:61361
+2020-02-17 15:59:06,965 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:61361
+2020-02-17 16:03:55,339 [1] INFO  CCGProxy.ProxyOrganization  CCG代理服务已停止
+2020-02-17 16:04:10,408 [1] INFO  CCGProxy.ProxyOrganization  初始化深证通服务成功
+2020-02-17 16:04:10,472 [1] INFO  CCGProxy.ProxyOrganization  启动Tcp侦听服务成功
+2020-02-17 16:18:27,136 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62047
+2020-02-17 16:18:27,244 [40] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62047
+2020-02-17 16:18:32,142 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62053
+2020-02-17 16:18:32,253 [39] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62053
+2020-02-17 16:18:37,145 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62057
+2020-02-17 16:18:37,256 [38] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62057
+2020-02-17 16:18:42,151 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62066
+2020-02-17 16:18:42,259 [37] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62066
+2020-02-17 16:18:47,159 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62071
+2020-02-17 16:18:47,269 [36] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62071
+2020-02-17 16:18:50,655 [13] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62047
+2020-02-17 16:18:50,656 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62047
+2020-02-17 16:18:50,667 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62047
+2020-02-17 16:18:50,667 [13] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62053
+2020-02-17 16:18:50,668 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62053
+2020-02-17 16:18:50,681 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62053
+2020-02-17 16:18:50,681 [13] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62057
+2020-02-17 16:18:50,681 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62057
+2020-02-17 16:18:50,694 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62057
+2020-02-17 16:18:50,694 [13] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62066
+2020-02-17 16:18:50,694 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62066
+2020-02-17 16:18:50,705 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62066
+2020-02-17 16:18:52,161 [41] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62077
+2020-02-17 16:18:52,272 [35] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62077
+2020-02-17 16:19:50,848 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62071
+2020-02-17 16:19:50,850 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62071
+2020-02-17 16:19:55,859 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62077
+2020-02-17 16:19:55,862 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62077
+2020-02-17 16:21:57,308 [1] INFO  CCGProxy.ProxyOrganization  CCG代理服务已停止
+2020-02-17 16:21:59,200 [1] INFO  CCGProxy.ProxyOrganization  初始化深证通服务成功
+2020-02-17 16:21:59,266 [1] INFO  CCGProxy.ProxyOrganization  启动Tcp侦听服务成功
+2020-02-17 16:23:57,447 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62341
+2020-02-17 16:23:57,558 [24] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62341
+2020-02-17 16:24:59,368 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62341
+2020-02-17 16:24:59,379 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62341
+2020-02-17 16:25:28,206 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62378
+2020-02-17 16:25:28,316 [13] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62378
+2020-02-17 16:25:38,578 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:62382
+2020-02-17 16:25:38,689 [12] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:62382
+2020-02-17 16:26:19,483 [26] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62378
+2020-02-17 16:26:19,484 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62378
+2020-02-17 16:26:19,495 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62378
+2020-02-17 16:26:19,495 [26] INFO  CCGProxy.ProxyOrganization  检测到无效链接127.0.0.1:62382
+2020-02-17 16:26:19,496 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:62382
+2020-02-17 16:26:19,507 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:62382
+2020-02-17 16:41:30,177 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:63050
+2020-02-17 16:41:30,288 [24] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:63050
+2020-02-17 16:42:34,763 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:63050
+2020-02-17 16:42:34,773 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:63050
+2020-02-17 17:10:19,785 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:64073
+2020-02-17 17:10:19,895 [25] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:64073
+2020-02-17 17:11:20,198 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:64073
+2020-02-17 17:11:20,209 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:64073
+2020-02-17 17:11:37,391 [15] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	侦听到新连接	127.0.0.1:64117
+2020-02-17 17:11:37,501 [11] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	业务交易-请求[DataLen:65,SendToBsmrPkgNo:1]	 127.0.0.1:64117
+2020-02-17 17:12:40,305 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	ABC1	发送断开连接命令	127.0.0.1:64117
+2020-02-17 17:12:40,306 [26] INFO  CCGProxy.ProxyOrganization  F_YINGSS02	因对方连接已关闭或连接超时关闭连接	127.0.0.1:64117

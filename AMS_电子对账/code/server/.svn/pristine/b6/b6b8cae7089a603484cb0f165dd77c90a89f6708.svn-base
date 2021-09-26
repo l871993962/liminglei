@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service class="com.yss.uco.elecreco.restservice.ErResultRestfulServiceImpl"
+		interface="com.yss.uco.elecreco.support.restservice.IErResultRestfulService" />
+
+	<service
+		class="com.yss.uco.elecreco.bi.elecrela.controller.impl.ElecIndexDataServiceControllerImpl"
+		interface="com.yss.uco.elecreco.bi.elecrela.controller.IElecIndexDataServiceController" />
+	<service
+		class="com.yss.uco.elecreco.bi.elecrela.controller.impl.ElecPerRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.bi.elecrela.controller.IElecPerRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.bi.elecrela.controller.impl.ElecRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.bi.elecrela.controller.IElecRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erbbinfo.controller.impl.ElecGeneDataServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erbbinfo.controller.IElecGeneDataServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erbbinfo.controller.impl.ElecGeneServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erbbinfo.controller.IElecGeneServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erdata.control.controller.impl.ErDataControlServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erdata.control.controller.IErDataControlServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erdata.controller.impl.ErDataServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erdata.controller.IErDataServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erdblgz.controller.impl.ErDblgzbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erdblgz.controller.IErDblgzbServiceController" />
+
+	<service
+		class="com.yss.uco.elecreco.er.ergzb.controller.impl.ErGzbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.ergzb.controller.IErGzbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erjzcbdb.controller.impl.ErJzcbdbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erjzcbdb.controller.IErJzcbdbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erkmb.controller.impl.ErKmbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erkmb.controller.IErKmbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erlrb.controller.impl.ErLrbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erlrb.controller.IErLrbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erresult.controller.impl.ErResultServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erresult.controller.IErResultServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erresview.controller.impl.ErResviewServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erresview.controller.IErResviewServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.ersyzqyb.controller.impl.ErSyzqybServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.ersyzqyb.controller.IErSyzqybServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.eryeb.controller.impl.ErYebServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.eryeb.controller.IErYebServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erzcfzb.controller.impl.ErZcfzbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.erzcfzb.controller.IErZcfzbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.org.controller.impl.ErOrgServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.org.controller.IErOrgServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.repcolcfg.controller.impl.DzRepColCfgServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.repcolcfg.controller.IDzRepColCfgServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.compare.controller.impl.ReveDzServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.compare.controller.IReveDzServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.manager.ignore.controller.impl.IgnoreItemServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.manager.ignore.controller.IIgnoreItemServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.manager.info.controller.impl.ErReveInfoServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.manager.info.controller.IErReveInfoServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.manager.result.controller.impl.ReveResultServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.manager.result.controller.IReveResultServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.map.assmap.controller.impl.AssMapServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.map.assmap.controller.IAssMapServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.map.kmrela.controller.impl.KmRelaRecordServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.controller.IKmRelaRecordServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.map.kmrela.controller.impl.KmRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.map.kmrela.controller.IKmRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.map.zbmap.controller.impl.ZbMapServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.map.zbmap.controller.IZbMapServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.out.ergzb.controller.impl.ErGzbOutServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.out.ergzb.controller.IErGzbOutServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.out.erkmb.controller.impl.ErKmbOutServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.out.erkmb.controller.IErKmbOutServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.out.eryeb.controller.impl.ErYebOutServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.out.eryeb.controller.IErYebOutServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.portrela.controller.impl.ElecPortRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.portrela.controller.IElecPortRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.reverse.portrela.controller.impl.ElecTghRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.reverse.portrela.controller.IElecTghRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.spilt.rela.controller.impl.ErSplitRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.spilt.rela.controller.IErSplitRelaServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.spilt.rule.controller.impl.ErSplitRuleServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.spilt.rule.controller.IErSplitRuleServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.template.controller.impl.DzTemplateDataServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.template.controller.IDzTemplateDataServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.template.controller.impl.DzTemplateServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.template.controller.IDzTemplateServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.tmplrela.controller.impl.DzTmplRelaServiceControllerImpl"
+		interface="com.yss.uco.elecreco.er.tmplrela.controller.IDzTmplRelaServiceController" />
+
+	<service
+		class="com.yss.uco.elecreco.er.autostate.controller.impl.AutoStateServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IAutoStateServiceController" />
+	<service
+		class="com.yss.uco.elecreco.controller.impl.DzdzAutomaticParamServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IDzdzAutomaticParamServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.repcfg.controller.impl.DzRepCfgServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IDzRepCfgServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.task.controller.impl.ElecTaskServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IElecTaskServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erbbinfo.controller.impl.ErBbInfoServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErBbInfoServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.dsp.manager.controller.impl.ErDspManagerServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErDspManagerServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erdztype.controller.impl.ErDzTypeDataServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErDzTypeDataServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.special.zb.controller.impl.ErSpecialZbServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErSpecialZbServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.erinfostate.controller.impl.ErStepStateServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErStepStateServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.task.controller.impl.ErTaskServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IErTaskServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.task.controller.impl.TaskGeneServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.ITaskGeneServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.task.controller.impl.TaskSendServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.ITaskSendServiceController" />
+	<service
+		class="com.yss.uco.elecreco.er.transrepcfg.controller.impl.DzTransRepCfgServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IDzTransRepCfgServiceController" />
+	<service
+		class="com.yss.uco.elecreco.mgr.controller.impl.DzdzMgrControllerImpl"
+		interface="com.yss.ifa.szt.tool.thread.mgr.controller.IDzdzMgrController" />
+		<!-- STORY #95888 【招商基金】【0331】【公募】新基金成立自动复制''对账指标关联'指标 -->
+	<service
+		class="com.yss.uco.elecreco.bi.elecrela.controller.impl.ElecPerRelaCopyServiceControllerImpl"
+		interface="com.yss.uco.elecreco.support.controller.IElecPerRelaCopyServiceController" />
+</services>

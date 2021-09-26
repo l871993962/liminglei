@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品信息 描述文件
+	由于维护产品的层级关系。
+	注意：定义的模块代码不能重复
+-->
+<!-- code:产品代码， name:产品名称 -->
+<product code="ELEC" name="电子对账">
+	<!-- 系统模块  code:一级模块代码， name:一级模块名称-->
+	<module_1 code="PARAM" name="参数管理" >
+	</module_1>
+	<module_1 code="MANAGE" name="对账管理" >
+	</module_1>
+</product>

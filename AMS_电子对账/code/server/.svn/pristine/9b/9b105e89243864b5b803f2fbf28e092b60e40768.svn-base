@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ysstech> 
+  <channel code="ysstech" port="${mq_channel_port}" address="${mq_channel_address}"/>  
+  <ibmmq enabled="false"> 
+    <mqc mqtype="sender" address="${mq_sender_address}" port="${mq_sender_port}" manager="TEST" queuename="SENDER" ccsid="1381" channel="Test_Chl" username="re" password="5F5F8A3D6187FFF21C4B833685D5849C167B1A0B5CC195AD2B19DA017E5C36B9B7CE9E3E79D2489B"/>  
+    <mqc mqtype="receiver" address="${mq_receiver_address}" port="${mq_receiver_port}" manager="TEST" queuename="RECEIVER" ccsid="1381" channel="Test_Chl" username="re" password="5F5F8A3D6187FFF21C4B833685D5849C167B1A0B5CC195AD2B19DA017E5C36B9B7CE9E3E79D2489B"/> 
+  </ibmmq>  
+  <mq-startConfig> 
+    <useFastMq>1</useFastMq>  
+    <!-- 是否使用消息总线0否1是-->  
+    <startFastMq>1</startFastMq>  
+    <!-- 是否启动消息总线0否1是-->  
+    <isFastMqCluster>0</isFastMqCluster>  
+    <!-- 是否集群0否1是--> 
+  </mq-startConfig>  
+  <mq-namesrv address="${mq_server_address}"/>  
+  <mq-broker brokerStartFlag="1"> 
+    <listenPort>10911</listenPort>  
+    <!-- 本端口及其+1，-2都需要被征用-->  
+    <brokerClusterName>FastMqCluster</brokerClusterName>  
+    <brokerName>broker-a</brokerName>  
+    <!-- 不同集群，名称不能一样-->  
+    <brokerId>0</brokerId>  
+    <!--<brokerIP>192.168.1.80</brokerIP>  -->  
+    <!--实际ip，多网卡请配置-->  
+    <!-- 同机器多应用所有应用以下三项必须显示配置，并作区分，否则可能会串， -->  
+    <!--<storePathRootDir>d:\aa</storePathRootDir>  不配置默认使用 用户目录下store
+    <storePathCommitLog>d:\aa\ddd</storePathCommitLog>  不配置默认使用用户目录下 store/CommitLog
+    <consumerOffsetLocation>.rocketmq_offsets1</consumerOffsetLocation> 此项仅需指定文件名，不需指定文件路径 不配置默认使用用户目录下 .rocketmq_offsets--> 
+  </mq-broker> 
+</ysstech>

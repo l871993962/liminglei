@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此文档的中class都要继承ScripDesc接口 -->
+<dbupgrade code="ElecrecoDbUp" name="电子对账">
+	 <!-- 表 -->
+	 <struct class="com.yss.ams.db.upgrade.elecreco.structs.tables.TableDescImpl" />
+	 <!-- 序列 -->
+	 <struct class="com.yss.ams.db.upgrade.elecreco.structs.sequences.SequenceDescImpl" />
+	 <!-- 视图 -->
+	<struct class="com.yss.ams.db.upgrade.elecreco.structs.views.ViewDescImpl" />
+</dbupgrade>

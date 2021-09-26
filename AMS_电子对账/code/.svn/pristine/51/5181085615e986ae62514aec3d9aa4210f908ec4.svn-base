@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{639B6AD2-7B83-43DD-AE22-24DEA6534903}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssSztTool</RootNamespace>
+    <AssemblyName>YssSztTool</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\AssociaType.cs" />
+    <Compile Include="Form\Para\Frm_DZ_PARA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_L.Designer.cs">
+      <DependentUpon>Frm_DZ_PARA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_ORG_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_ORG_L.Designer.cs">
+      <DependentUpon>Frm_DZ_PARA_ORG_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_ORG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_ORG_S.Designer.cs">
+      <DependentUpon>Frm_DZ_PARA_ORG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_DZ_PARA_S.Designer.cs">
+      <DependentUpon>Frm_DZ_PARA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Er_Para_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Er_Para_L.Designer.cs">
+      <DependentUpon>Frm_Er_Para_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Er_Para_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Er_Para_S.Designer.cs">
+      <DependentUpon>Frm_Er_Para_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_MR_CHECK_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_MR_CHECK_S.Designer.cs">
+      <DependentUpon>Frm_MR_CHECK_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Mr_Info_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Mr_Info_L.Designer.cs">
+      <DependentUpon>Frm_Mr_Info_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Mr_Info_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Para\Frm_Mr_Info_S.Designer.cs">
+      <DependentUpon>Frm_Mr_Info_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pojo\Para\DzPara.cs" />
+    <Compile Include="Pojo\Para\DzRelaOrgan.cs" />
+    <Compile Include="Pojo\Para\ErOrg.cs" />
+    <Compile Include="Pojo\Para\ErPara.cs" />
+    <Compile Include="Pojo\Para\ErTask.cs" />
+    <Compile Include="Pojo\Para\ErVoc.cs" />
+    <Compile Include="Pojo\Para\MrInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\BusinessSystemMenuConfigResource.cs" />
+    <Compile Include="Service\Para\IDzParaService.cs" />
+    <Compile Include="Service\Para\IDzPortRelaService.cs" />
+    <Compile Include="Service\Para\IErOrgService.cs" />
+    <Compile Include="Service\Para\IErParaDataService.cs" />
+    <Compile Include="Service\Para\IErParaService.cs" />
+    <Compile Include="Service\Para\IErTaskService.cs" />
+    <Compile Include="Service\Para\IErVocDataService.cs" />
+    <Compile Include="Service\Para\IMrInfoService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\YssTechnology.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Para\Frm_DZ_PARA_L.resx">
+      <DependentUpon>Frm_DZ_PARA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_DZ_PARA_ORG_L.resx">
+      <DependentUpon>Frm_DZ_PARA_ORG_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_DZ_PARA_ORG_S.resx">
+      <DependentUpon>Frm_DZ_PARA_ORG_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_DZ_PARA_S.resx">
+      <DependentUpon>Frm_DZ_PARA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_Er_Para_L.resx">
+      <DependentUpon>Frm_Er_Para_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_Er_Para_S.resx">
+      <DependentUpon>Frm_Er_Para_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_MR_CHECK_S.resx">
+      <DependentUpon>Frm_MR_CHECK_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_Mr_Info_L.resx">
+      <DependentUpon>Frm_Mr_Info_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Para\Frm_Mr_Info_S.resx">
+      <DependentUpon>Frm_Mr_Info_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\systemConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
