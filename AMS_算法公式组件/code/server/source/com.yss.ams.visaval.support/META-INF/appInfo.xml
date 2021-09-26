@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<!-- <code>YSSAVAL</code>    STORY #55342 算法公式管理组件独立   mahzongyuan 20180503 -->
+	<code>ALGORITHM</code>
+	<name>算法应用</name>
+	<version>1.1.1.0.1</version>
+	<!-- 0 内部应用，1外部应用 -->
+	<feature>0</feature>
+</application>

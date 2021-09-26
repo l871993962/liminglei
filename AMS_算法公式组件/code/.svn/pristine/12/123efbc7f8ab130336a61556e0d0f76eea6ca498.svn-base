@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Api xmlns="http://www.ysstech.com/AlgoApiConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ysstech.com/AlgoApiConfig AlgoApi.xsd">
+	<algos>
+		<!-- 算法类型 -->
+		<algo name="YYFY" text="运营费用">
+			<!-- 算法类型内置参数 -->
+			<variables>
+				<variable name="组合" value="portCode" />
+				<variable name="日期" value="accDate" />
+				<variable name="运营费用设置" value="inveFee" />
+			</variables>
+		</algo>
+	</algos>
+	<functions>
+		<parent>
+			<function code="PORT" parent="Root" text="组合" hasConnection="false"/>
+			<!-- 函数分组父级集合 code:代码 parent:固定Root text:中文名称 -->
+			<function code="FINA" parent="Root" text="净值类" hasConnection="false"/>
+		</parent>
+		<child>
+			<function code="isBuildDate" parent="PORT" text="是否为产品成立日期"
+				value="portApi.isBuildDate" hasConnection="true">
+				<params>
+					<param code="portCode" name="组合代码" isdefault="false" source="portCode" />
+					<param code="accDate" name="日期" isdefault="false" source="accDate" />
+				</params>
+				<return>
+					<name>是否为产品成立日期</name>
+					<!-- 返回值类型 -->
+					<type>boolean</type>
+				</return>
+				<desc>
+					portCode:组合代码  \r\n
+					accDate:日期&#x000A;
+					是否为产品成立日期&#x000A;
+				</desc>
+			</function>
+			<!-- 应付利润：两个参数方法 -->
+			<!-- code:函数代码 parent:函数分组父级 text:函数中文名称 value:函数代码方法名称 hasConnection:方法是否有数据库连接 -->
+			<function code="FINA_FUNK" parent="FINA" text="应付利润1"
+				value="statsActItemBalance" hasConnection="true">
+				<params>
+					<!-- code:参数代码 name:参数名称 isdefault:是否默认值 source:不是默认值时来源 keyword:关键字 
+						value:默认值时的值 -->
+					<param code="portCode" name="组合代码" isdefault="false" source="portCode" />
+					<param code="clsPortCode" name="分级组合" isdefault="false"
+						source="accDate" />
+					<param code="baseDate" name="日期" keyword="chargingBase" hasdetails="true"/>
+					<param code="accItem" name="核算项" isdefault="true" value="'TTTT'"/>
+				</params>
+				<return>
+					<!-- 返回值名称 -->
+					<name>应付利润</name>
+					<!-- 返回值类型 -->
+					<type>List&lt;ArithResultExt&gt;</type>
+				</return>
+				<desc>
+					param1:组合代码
+					param2:分级组合
+					根据组合代码,分级组合,查询条件获取核算项目的余额数据
+				</desc>
+			</function>
+			<!-- 应付利润：三个参数的方法 -->
+			<function code="FINA_FUNC" parent="FINA" text="应付利润2"
+				value="statsActItemBalance" hasConnection="false">
+				<params>
+					<param code="portCode" name="组合代码" isdefault="false" source="portCode" />
+					<param code="clsPortCode" name="分级组合" isdefault="false" source="accDate" />
+					<param code="baseDate" name="计费基准" keyword="chargingBase" hasdetails="false" />
+					<param code="accItem" name="核算项" isdefault="true" value="YYYY"/>
+				</params>
+				<return>
+					<!-- 返回值名称 -->
+					<name>应付利润</name>
+					<!-- 返回值类型 -->
+					<type>List&lt;ArithResultExt&gt;</type>
+				</return>
+				<desc>
+					param1:组合代码&#x000A;
+					param2:分级组合&#x000A;
+					param3:日期&#x000A;
+					根据组合代码,分级组合,日期,查询条件获取核算项目的余额数据&#x000A;
+				</desc>
+			</function>
+		</child>
+	</functions>
+</Api>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3DFC9A4-8BD0-4C17-AB42-A48930A5FCF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssVisAval</RootNamespace>
+    <AssemblyName>YssVisAval</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\AssociaType.cs" />
+    <Compile Include="Form\AA\FrmFormulaEditor.cs">
+    </Compile>
+    <Compile Include="Form\AA\FrmFormulaEditor.Designer.cs">
+      <DependentUpon>FrmFormulaEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AA\Frm_ADVANCED_ALGORITHM_L.cs">
+    </Compile>
+    <Compile Include="Form\AA\Frm_ADVANCED_ALGORITHM_L.Designer.cs">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AA\Frm_ADVANCED_ALGORITHM_S.cs">
+    </Compile>
+    <Compile Include="Form\AA\Frm_ADVANCED_ALGORITHM_S.Designer.cs">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L.cs">
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L.Designer.cs">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L_CZ.cs">
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L_CZ.Designer.cs">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L_CZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_S.cs">
+    </Compile>
+    <Compile Include="Form\Algo\Frm_ADVANCED_ALGORITHM_S.Designer.cs">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun\ClsBizCons.cs" />
+    <Compile Include="Fun\ClsQuyStrUtil.cs" />
+    <Compile Include="Pojo\AA\AdvAlgo.cs" />
+    <Compile Include="Pojo\AA\AdvAlgoPara.cs" />
+    <Compile Include="Pojo\AA\ClsFunc.cs" />
+    <Compile Include="Pojo\AA\ClsKeyWord.cs" />
+    <Compile Include="Pojo\AA\Cls_FUNC_PARA.cs" />
+    <Compile Include="Pojo\AA\Cls_Advanecd_Algorithm.cs" />
+    <Compile Include="Pojo\AA\Cls_Parameter.cs" />
+    <Compile Include="Pojo\Cls_EXEC_PLAN.cs" />
+    <Compile Include="Pojo\If\Cls_IC_GROUP_RELA.cs" />
+    <Compile Include="Pojo\If\Cls_Pret_Plan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pojo\If\Cls_Pret_Plan_Sub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pojo\SelfAlgorithm\AlgoAPI.cs" />
+    <Compile Include="Pojo\SelfAlgorithm\AlgoAPIParam.cs" />
+    <Compile Include="Pojo\SelfAlgorithm\AlgoAPIReturn.cs" />
+    <Compile Include="Pojo\SelfAlgorithm\AlgoSetParam.cs" />
+    <Compile Include="Pojo\SelfAlgorithm\DataAPI.cs" />
+    <Compile Include="Pojo\SelfAlgorithm\Parameter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\IVisAdvAlgoService.cs" />
+    <Compile Include="service\IVisAlgoDataService.cs" />
+    <Compile Include="service\IVisKeyWordParamService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\AA\FrmFormulaEditor.resx">
+      <DependentUpon>FrmFormulaEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AA\Frm_ADVANCED_ALGORITHM_L.resx">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AA\Frm_ADVANCED_ALGORITHM_S.resx">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L.resx">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Algo\Frm_ADVANCED_ALGORITHM_L_CZ.resx">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_L_CZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Algo\Frm_ADVANCED_ALGORITHM_S.resx">
+      <DependentUpon>Frm_ADVANCED_ALGORITHM_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\YssTechnology.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.5\StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

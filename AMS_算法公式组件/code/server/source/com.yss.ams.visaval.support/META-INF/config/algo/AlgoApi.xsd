@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.ysstech.com/AlgoApiConfig" xmlns="http://www.ysstech.com/AlgoApiConfig"
+	elementFormDefault="qualified">
+	<xs:element name="Api">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="algos" />
+				<xs:element ref="functions" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="algos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="algo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="algo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="variables" />
+			</xs:sequence>
+			<xs:attribute name="name" use="required" type="xs:NCName" />
+			<xs:attribute name="text" use="required" type="xs:NCName" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="variables">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="variable" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="variable">
+		<xs:complexType>
+			<xs:attribute name="name" use="required" type="xs:NCName" />
+			<xs:attribute name="value" use="required" type="xs:NCName" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="functions">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="parent" />
+				<xs:element ref="child" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parent">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="function" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="child">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="function" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="function">
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="params" />
+				<xs:element ref="return" />
+				<xs:element ref="desc" />
+			</xs:sequence>
+			<!-- 函数代码 -->
+			<xs:attribute name="code" use="required" type="xs:ID" />
+			<!-- 函数父类 -->
+			<xs:attribute name="parent" use="required" type="xs:NCName" />
+			<!-- 函数名称 -->
+			<xs:attribute name="text" use="required" type="xs:NCName" />
+			<!-- 函数对应的代码名称 -->
+			<xs:attribute name="value" type="xs:NCName" />
+			<!-- 方法是否有数据库连接 -->
+			<xs:attribute name="hasConnection" use="required" type="xs:boolean"/>
+		</xs:complexType>
+		<xs:unique name="functionCodeUnique">
+			<xs:selector xpath="function"></xs:selector>
+			<xs:field xpath="@code"></xs:field>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="params">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="param" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="param">
+		<xs:complexType>
+			<!-- 参数代码 -->
+			<xs:attribute name="code" use="required" type="xs:NCName" />
+			<!-- 参数是否为默认参数 -->
+			<xs:attribute name="isdefault" type="xs:boolean" />
+			<!-- 参数关键字，参数来源于某些表 比如基准日期，保留位数 -->
+			<xs:attribute name="keyword" type="xs:NCName" />
+			<!-- 参数名称 -->
+			<xs:attribute name="name" use="required" type="xs:NCName" />
+			<!-- isdefault:false时内置参数参数来源 -->
+			<xs:attribute name="source" type="xs:NCName" />
+			<!-- isdefault:true时默认参数值 -->
+			<xs:attribute name="value" />
+			<!-- 有keyword时是否有明细数据 比如基准日期有明细数据：前一工作日，自然日等 -->
+			<xs:attribute name="hasdetails"></xs:attribute>
+			<!-- 表明keyword有值时isFromFile=true来源是不是来自keyparam_sql或者keyparam.xml -->
+			<xs:attribute name="isFromFile"></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="return">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="type" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="name" type="xs:NCName" />
+	<xs:element name="type" type="xs:string" />
+	<xs:element name="desc" type="xs:string" />
+</xs:schema>

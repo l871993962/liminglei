@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin> 
+     <extension point="org.eclipse.equinox.http.registry.resources">  
+        <resource alias="/api/css" base-name="WebRoot/css"/>  
+        <resource alias="/api/js" base-name="WebRoot/js"/>  
+     </extension>
+
+	 <extension point="org.eclipse.equinox.http.registry.servlets"> 		 
+		 <servlet alias="/api/*.html" class="org.eclipse.equinox.jsp.jasper.registry.JSPFactory:/WebRoot/page/"/>
+		 <servlet alias="/api" class="com.yss.ams.api.deploy.DeployServlet"/>
+	 </extension> 
+</plugin> 

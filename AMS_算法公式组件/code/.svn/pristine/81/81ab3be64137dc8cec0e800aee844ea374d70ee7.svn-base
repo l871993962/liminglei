@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+	<class id="IVisAdvAlgoService" menuId="AdvancedAlgorithm"
+		class="com.yss.ams.visaval.service.impl.AdvAlgoService" interface="com.yss.ams.visaval.support.service.IVisAdvAlgoService" />
+	<class id="IVisAlgoDataService" menuId="AdvancedAlgorithm"
+		class="com.yss.ams.visaval.service.impl.AdvAlgoDataService" interface="com.yss.ams.visaval.support.service.IVisAlgoDataService" />
+	<class id="IVisJythonFactoryWrap" menuId=""
+		class="com.yss.ams.visaval.service.impl.JythonFactoryWrap" interface="com.yss.ams.visaval.support.service.IVisJythonFactoryWrap" />
+	<class id="IVisKeyWordParamService" menuId="" interface="com.yss.ams.visaval.support.service.IVisKeyWordParamService"
+	class="com.yss.ams.visaval.service.impl.KeyWordParamService"></class>
+	<class id="IVisFunParamCNService" menuId="" interface="com.yss.ams.visaval.support.service.IVisFunParamCNService" class="com.yss.ams.visaval.service.impl.FunParamCNService"></class>
+</classes>

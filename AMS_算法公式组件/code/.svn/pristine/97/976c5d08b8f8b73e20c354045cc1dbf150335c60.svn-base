@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pojos>
+	<pojo id="AdvAlgo" class="com.yss.ams.visaval.support.pojo.AdvAlgo"/>
+</pojos> 

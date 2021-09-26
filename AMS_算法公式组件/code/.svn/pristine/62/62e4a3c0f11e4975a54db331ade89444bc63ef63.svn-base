@@ -1,0 +1,261 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name="IKeyWordParamService.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:47</timestamp>
+    <milliseconds>755</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IAdvAlgoService.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>417</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-457855688">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="-397359390">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="ClsFunc.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>911</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AdvAlgo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>81</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_Advanecd_Algorithm.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>37</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ClsKeyWord.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>868</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_IC_GROUP_RELA.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>826</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_Parameter.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>952</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_Pret_Plan_Sub.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>741</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_Pret_Plan.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>782</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AlgoAPI.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>697</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AlgoAPIParam.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>656</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Cls_FUNC_PARA.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>994</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AlgoAPIReturn.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>610</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AlgoSetParam.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>560</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DataAPI.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>516</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:06</timestamp>
+    <milliseconds>318</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IVisKeyWordParamService.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:48:16</timestamp>
+    <milliseconds>503</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Parameter.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:49</timestamp>
+    <milliseconds>468</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IVisAdvAlgoService.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:48:02</timestamp>
+    <milliseconds>104</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FrmFormulaEditor.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>434</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_L.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>316</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_L_CZ.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:47:58</timestamp>
+    <milliseconds>419</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_L_CZ.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>221</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_S.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:41:50</timestamp>
+    <milliseconds>126</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FrmFormulaEditor.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:47:58</timestamp>
+    <milliseconds>346</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_S.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:47:58</timestamp>
+    <milliseconds>462</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Frm_ADVANCED_ALGORITHM_L.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/04/2019 15:26:28</timestamp>
+      <milliseconds>609</milliseconds>
+    </settings>
+    <timestamp>07/02/2019 17:54:45</timestamp>
+    <milliseconds>911</milliseconds>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>

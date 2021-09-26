@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListHeaders>
+	<ListHeader id='AdvancedAlgorithm' desc='高级算法设置'>
+		<Header key='C_ALGO_CODE' text='算法代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_ALGO_NAME' text='算法名称' align='L' format=''></Header>
+		<Header key='C_DV_ALGO_TYPE' text='算法类型' align='L' format='true'
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+</ListHeaders>

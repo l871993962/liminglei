@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<param code="WS">
+		<value code="SV_JD_DWJZ_001" name="单位净值保留位数"></value>
+		<value code="SV_JD_DWJZ_002" name="单位净值截位方式"></value>
+		<value code="SV_JD_DWJZ_002" name="单位净值截位方式"></value>
+		<value code="SV_JD_JZRZZ_001" name="净值日增长率保留位数"></value>
+		<value code="SV_JD_JZRZZ_002" name="净值日增长率截位方式"></value>
+		<value code="SV_JD_JZZZ_001" name="净值增长率保留位数"></value>
+		<value code="SV_JD_JZZZ_002" name="净值增长率截位方式"></value>
+	</param>
+</params>
