@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STORY #42921 产品信息组件拆分开发 -->
+<ehcache updateCheck="false">
+	<diskStore path="java.io.tmpdir" />
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="com.yss.framework.api.common.co.Port" maxElementsInMemory="500000" eternal="false"
+		maxElementsOnDisk="500000" overflowToDisk="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.product.information.support.cache.PortCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+	<cache name="com.yss.ams.product.information.support.modules.aa.portcls.pojo.PortCls" maxElementsInMemory="500000" eternal="false"
+		maxElementsOnDisk="500000" overflowToDisk="false" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.product.information.support.cache.PortClsCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>
+</ehcache>  

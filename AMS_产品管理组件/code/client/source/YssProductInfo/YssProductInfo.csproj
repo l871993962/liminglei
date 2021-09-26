@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99A13B3F-C0AC-44D0-BA3C-98BAFF5FAC35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssProductInfo</RootNamespace>
+    <AssemblyName>YssProductInfo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_L.Designer.cs">
+      <DependentUpon>Frm_ASSETS_TREE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S.Designer.cs">
+      <DependentUpon>Frm_ASSETS_TREE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A.designer.cs">
+      <DependentUpon>Frm_ASSETS_TREE_S_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A_RULE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A_RULE.designer.cs">
+      <DependentUpon>Frm_ASSETS_TREE_S_A_RULE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_L.Designer.cs">
+      <DependentUpon>Frm_PORT_PD_ATTRIBUTE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_S.Designer.cs">
+      <DependentUpon>Frm_PORT_PD_ATTRIBUTE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_S.processor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aa\PortCls\Form\Frm_PORT_CLS_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aa\PortCls\Form\Frm_PORT_CLS_L.designer.cs">
+      <DependentUpon>Frm_PORT_CLS_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aa\PortCls\Form\Frm_PORT_CLS_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aa\PortCls\Form\Frm_PORT_CLS_S.designer.cs">
+      <DependentUpon>Frm_PORT_CLS_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_GroupRelaPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_GroupRelaPort.Designer.cs">
+      <DependentUpon>Frm_GroupRelaPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_A_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_A_S.Designer.cs">
+      <DependentUpon>Frm_PORT_GROUP_A_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_L.Designer.cs">
+      <DependentUpon>Frm_PORT_GROUP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\PortGroup\Form\Frm_PORT_GROUP_S.Designer.cs">
+      <DependentUpon>Frm_PORT_GROUP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_FUND_ACC_RELA_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_FUND_ACC_RELA_S.Designer.cs">
+      <DependentUpon>Frm_FUND_ACC_RELA_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_CT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_CT_L.designer.cs">
+      <DependentUpon>Frm_PORT_CT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_L.Designer.cs">
+      <DependentUpon>Frm_PORT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_RELA_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_RELA_L.designer.cs">
+      <DependentUpon>Frm_PORT_RELA_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\Port\Form\Frm_PORT_S.Designer.cs">
+      <DependentUpon>Frm_PORT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ab\ProductInFo\Form\Frm_PORT_MESS_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ab\ProductInFo\Form\Frm_PORT_MESS_L.Designer.cs">
+      <DependentUpon>Frm_PORT_MESS_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cp\Fax\Form\FrmPortSealRela_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cp\Fax\Form\FrmPortSealRela_L.designer.cs">
+      <DependentUpon>FrmPortSealRela_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cp\Fax\Form\FrmPortSealRela_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cp\Fax\Form\FrmPortSealRela_S.designer.cs">
+      <DependentUpon>FrmPortSealRela_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cp\Fax\Pojo\PortSealRelaInfo.cs" />
+    <Compile Include="DataCopy\Form\Frm_DataCopy_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCopy\Form\Frm_DataCopy_Check.Designer.cs">
+      <DependentUpon>Frm_DataCopy_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCopy\Form\Frm_DataCopy_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCopy\Form\Frm_DataCopy_L.designer.cs">
+      <DependentUpon>Frm_DataCopy_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan\Form\Frm_BUSINESS_PLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plan\Form\Frm_BUSINESS_PLAN.Designer.cs">
+      <DependentUpon>Frm_BUSINESS_PLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_L.resx">
+      <DependentUpon>Frm_ASSETS_TREE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S.resx">
+      <DependentUpon>Frm_ASSETS_TREE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A.resx">
+      <DependentUpon>Frm_ASSETS_TREE_S_A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_L.resx">
+      <DependentUpon>Frm_PORT_PD_ATTRIBUTE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\AttributeCls\Form\Frm_PORT_PD_ATTRIBUTE_S.resx">
+      <DependentUpon>Frm_PORT_PD_ATTRIBUTE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aa\PortCls\Form\Frm_PORT_CLS_L.resx">
+      <DependentUpon>Frm_PORT_CLS_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aa\PortCls\Form\Frm_PORT_CLS_S.resx">
+      <DependentUpon>Frm_PORT_CLS_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\PortGroup\Form\Frm_GroupRelaPort.resx">
+      <DependentUpon>Frm_GroupRelaPort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\PortGroup\Form\Frm_PORT_GROUP_A_S.resx">
+      <DependentUpon>Frm_PORT_GROUP_A_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\PortGroup\Form\Frm_PORT_GROUP_L.resx">
+      <DependentUpon>Frm_PORT_GROUP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\PortGroup\Form\Frm_PORT_GROUP_S.resx">
+      <DependentUpon>Frm_PORT_GROUP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\Port\Form\Frm_PORT_L.resx">
+      <DependentUpon>Frm_PORT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\Port\Form\Frm_PORT_S.resx">
+      <DependentUpon>Frm_PORT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cp\PubAcc\Form\Frm_PUB_ACC_L.resx">
+      <DependentUpon>Frm_PUB_ACC_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cp\PubAcc\Form\Frm_PUB_ACC_S.resx">
+      <DependentUpon>Frm_PUB_ACC_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Cp\PubAcc\Form\Frm_PUB_ACC_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cp\PubAcc\Form\Frm_PUB_ACC_L.designer.cs">
+      <DependentUpon>Frm_PUB_ACC_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cp\PubAcc\Form\Frm_PUB_ACC_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cp\PubAcc\Form\Frm_PUB_ACC_S.designer.cs">
+      <DependentUpon>Frm_PUB_ACC_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\BusinessSystemMenuConfigResource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Host\FAST.Host.csproj">
+      <Project>{53A59723-0C64-4649-BE12-A7E3617C0DD6}</Project>
+      <Name>FAST.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ab\AssetsTree\Form\Frm_ASSETS_TREE_S_A_RULE.resx">
+      <DependentUpon>Frm_ASSETS_TREE_S_A_RULE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\Port\Form\Frm_FUND_ACC_RELA_S.resx">
+      <DependentUpon>Frm_FUND_ACC_RELA_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\Port\Form\Frm_PORT_CT_L.resx">
+      <DependentUpon>Frm_PORT_CT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\Port\Form\Frm_PORT_RELA_L.resx">
+      <DependentUpon>Frm_PORT_RELA_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ab\ProductInFo\Form\Frm_PORT_MESS_L.resx">
+      <DependentUpon>Frm_PORT_MESS_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cp\Fax\Form\FrmPortSealRela_S.resx">
+      <DependentUpon>FrmPortSealRela_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCopy\Form\Frm_DataCopy_Check.resx">
+      <DependentUpon>Frm_DataCopy_Check.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCopy\Form\Frm_DataCopy_L.resx">
+      <DependentUpon>Frm_DataCopy_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan\Form\Frm_BUSINESS_PLAN.resx">
+      <DependentUpon>Frm_BUSINESS_PLAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\systemConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\YssTechnology.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

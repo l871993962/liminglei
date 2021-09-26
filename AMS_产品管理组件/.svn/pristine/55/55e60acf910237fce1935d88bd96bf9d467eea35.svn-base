@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品信息 -->
+<product code="ProductInfo" name="产品组件参数">
+	<module_1 code="MODULE_PARAMS" name="参数管理表"></module_1>
+</product>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <services>
+      <service class="com.yss.ams.product.information.modules.aa.portcls.controller.impl.ClsPortDataControllerImpl" interface="com.yss.ams.product.information.support.modules.aa.portcls.controller.IClsPortDataController" />
+      <service class="com.yss.ams.product.information.modules.aa.portcls.controller.impl.PortClsControllerImpl" interface="com.yss.ams.product.information.support.modules.aa.portcls.controller.IPortClsController" />
+      
+      <service class="com.yss.ams.product.information.modules.aa.portcustom.controller.impl.PortCustomControllerImpl" interface="com.yss.ams.product.information.support.modules.aa.portcustom.controller.IPortCustomController" />
+      <service class="com.yss.ams.product.information.modules.aa.portcustom.controller.impl.PortCustomDataControllerImpl" interface="com.yss.ams.product.information.support.modules.aa.portcustom.controller.IPortCustomDataController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.assetsTree_a.controller.impl.AssetsTree_AControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a.controller.IAssetsTree_AController" />
+      <service class="com.yss.ams.product.information.modules.ab.assetsTree_a.controller.impl.AssetTrees_ADataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a.controller.IAssetTrees_ADataController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.assetsTree_a_rule.controller.impl.AssetsTree_A_RuleControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a_rule.controller.IAssetsTree_A_RuleController" />
+      <service class="com.yss.ams.product.information.modules.ab.assetstree_b.controller.impl.AssetsTree_BControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetstree_b.controller.IAssetsTree_BController" />
+      <service class="com.yss.ams.product.information.modules.ab.assetstree_b.controller.impl.AssetsTreeCopyControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetstree_b.controller.IAssetsTreeCopyController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.port.cache.controller.impl.PortCacheDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.cache.controller.IPortCacheDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.AssetsTreeReportControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.assetsTree_report.controller.IAssetsTreeReportController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.right.controller.impl.RightDataRightProviderZHControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.right.controller.IRightDataRightProviderZHController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortADataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortADataController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortBDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortBDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortDocDynamicCheckDefaultControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortDocDynamicCheckDefaultController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortDocDynamicCheckServiceOneControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortDocDynamicCheckServiceOneController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.PortFundRelaControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IPortFundRelaController" />
+      <service class="com.yss.ams.product.information.modules.ab.port.controller.impl.RightPortControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.port.controller.IRightPortController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.portPdAttribute.controller.impl.PortPdAttributeControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portPdAttribute.controller.IPortPdAttributeController" />
+      
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaCashAccControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaCashAccController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaCashAccountControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaCashAccountController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaCashAccountIdControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaCashAccountIdController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaIndexControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaIndexController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaInvestMgrControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaInvestMgrController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaMemberControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaMemberController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaOrganControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaOrganController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaTradeAccountDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaTradeAccountDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaTradeAccountNoDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaTradeAccountNoDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaTradeChanDataControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaTradeChanDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaTradeOrgControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaTradeOrgController" />
+      <service class="com.yss.ams.product.information.modules.ab.portrela.controller.impl.PortRelaTradeSeatControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.portrela.controller.IPortRelaTradeSeatController" />
+      
+      <service class="com.yss.ams.product.information.modules.cp.fax.controller.impl.ElecSealRelaControllerImpl" interface="com.yss.ams.product.information.support.modules.cp.fax.controller.IElecSealRelaController" />
+      <service class="com.yss.ams.product.information.modules.cp.pubacc.controller.impl.PubAccControllerImpl" interface="com.yss.ams.product.information.support.modules.cp.pubacc.controller.IPubAccController" />
+      <service class="com.yss.ams.product.information.modules.cp.pubacc.controller.impl.PubAccDataControllerImpl" interface="com.yss.ams.product.information.support.modules.cp.pubacc.controller.IPubAccDataController" />
+      
+      <service class="com.yss.ams.product.information.modules.dataCopy.controller.impl.DataCopyControllerImpl" interface="com.yss.ams.product.information.support.modules.dataCopy.controller.IDataCopyController" />
+      
+      <service class="com.yss.ams.product.information.modules.pg.operport.controller.impl.OperPortControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.operport.controller.IOperPortController" />
+      
+      <service class="com.yss.ams.product.information.modules.pg.portgroup.controller.impl.PortGroupControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgroup.controller.IPortGroupController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgroup.controller.impl.PortGroupConverDataControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgroup.controller.IPortGroupConverDataController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgroup.controller.impl.PortGroupDataControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgroup.controller.IPortGroupDataController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgrouprela.controller.impl.PortGroupRelaControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgrouprela.controller.IPortGroupRelaController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgrouprela.controller.impl.PortGroupRelaCopyControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgrouprela.controller.IPortGroupRelaCopyController" />
+      
+      <service class="com.yss.fast.systemmanager.port.controller.impl.PortDataControllerImpl" interface="com.yss.platform.support.dataservice.controller.IPortDataController" />
+      <service class="com.yss.fast.systemmanager.port.controller.impl.PortDeductionControllerImpl" interface="com.yss.platform.support.dataservice.controller.IPortDeductionController" />
+      <service class="com.yss.fast.systemmanager.port.controller.impl.PortSTDataControllerImpl" interface="com.yss.platform.support.dataservice.controller.IPortSTDataController" />
+      
+      <service class="com.yss.fast.right.right.controller.impl.PortControllerImpl" interface="com.yss.right.controller.IPortController" />
+      
+      <service class="com.yss.ams.product.information.modules.pg.portassgroup.controller.impl.PortAssGroupDataProviderControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portassgroup.controller.IPortAssGroupDataProviderController" />
+      <service class="com.yss.fast.systemmanager.assetstree.controller.impl.FastAssetTreeControllerImpl" interface="com.yss.systemmanager.assetstree.controller.IBaseAssetTreeController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgrouprela.controller.impl.AutomaticPortGroupControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgrouprela.controller.IBaseAutomaticPortGroupController" />
+      <service class="com.yss.ams.product.information.fast.controller.FastPortcontrollerImpl" interface="com.yss.ams.product.information.support.fast.controller.IBaseFastPortController" />
+      <service class="com.yss.ams.product.information.fast.controller.FastAssetsTreeControllerImpl" interface="com.yss.ams.product.information.support.fast.controller.IBaseFastAssetsTreeController" />
+      <service class="com.yss.ams.product.information.fast.controller.FastCommonInfoControllerImpl" interface="com.yss.ams.product.information.support.fast.controller.IBaseFastCommonInfoController" />
+      <service class="com.yss.ams.product.information.fast.controller.FastPortPdAttributeControllerImpl" interface="com.yss.ams.product.information.support.fast.controller.IBaseFastPortPdAttributeController" />
+      <service class="com.yss.ams.product.information.modules.pg.portgroup.controller.impl.PortGroupDataProviderControllerImpl" interface="com.yss.ams.product.information.support.modules.pg.portgroup.controller.IPortGroupDataProviderController" />
+      
+      <service class="com.yss.ams.product.information.modules.aa.portcls.controller.impl.ClsPortCacheDataControllerImpl" interface="com.yss.ams.product.information.support.modules.aa.portcls.controller.IClsPortCacheDataController" />
+      <service class="com.yss.ams.product.information.modules.ab.productInfoQuery.controller.impl.ProductInfoQueryControllerImpl" interface="com.yss.ams.product.information.support.modules.ab.productInfoQuery.controller.IProductInfoQueryController" />
+  </services>

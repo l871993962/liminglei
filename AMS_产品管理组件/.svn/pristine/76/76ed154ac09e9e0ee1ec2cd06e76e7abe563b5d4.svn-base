@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+ 	<data type="1" typeName ="组合" clazz="com.yss.ams.product.information.support.modules.ab.port.right.service.IRightDataRightProviderZH" status="1"/>		  
+	<data type="GROUP" typeName ="群组" clazz="com.yss.ams.product.information.support.modules.pg.portgroup.service.IPortGroupDataProvider" status="1"/>  
+	<data type="AssType" typeName ="资产类型" clazz="com.yss.ams.product.information.support.modules.pg.portassgroup.service.IPortAssGroupDataProvider" status="1"/>  
+</datas>

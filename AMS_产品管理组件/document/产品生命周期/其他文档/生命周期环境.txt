@@ -1,0 +1,31 @@
+﻿数据库环境：
+1.创建生命周期数据库时IP、端口以及实例名与估值数据库一致。
+
+2.使用管理员用户创建用户、给用户赋权限：
+create user SMQZ identified by 1
+  default tablespace YSSUCO
+  temporary tablespace SMQZTEMP
+  profile DEFAULT;
+
+grant connect to SMQZ;
+grant resource to SMQZ;
+grant create view to SMQZ;
+grant imp_full_database,exp_full_database to SMQZ;
+grant create database link to SMQZ;
+grant create synonym to SMQZ; 
+grant unlimited tablespace to SMQZ;
+
+服务器环境：
+1.Tomcat6.0
+2.jdk1.6
+
+端口开通：
+1.开通Tomcat端口 8083
+2.开通两个socket端口 11911 11912（broker端口 +1或者-2的地址不允许冲突即不能和11913或者11910冲突）
+3.频道端口 45566
+4.开通zookeeper端口：2181
+
+
+浏览器：
+1.IE9.0以上
+2.Google50+

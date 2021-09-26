@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此文档的中class都要继承ScripDesc接口 -->
+<dbupgrade code="ProductinfoDbUp" name="产品组件脚本">
+	<!-- 产品组件脚本 -->
+	<script class="com.yss.ams.db.upgrade.productinfo.scripts.ProductInfoScriptsImpl" />
+</dbupgrade>

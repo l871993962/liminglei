@@ -1,0 +1,22 @@
+drop synonym T_T_RELATION;
+drop synonym T_T_TASK;
+drop synonym T_T_TRIGGER;
+drop synonym T_T_TASK_EXT;
+drop synonym T_T_PARAMS;
+drop synonym T_S_WF_DISPATCH;
+drop synonym T_S_WF_NAVIGATION;
+drop synonym  T_S_WF_CUST_LISTEN;
+drop synonym  T_S_WF_CUST_DELEGATE;
+drop synonym  T_T_TASK_LOCKS;
+drop synonym  T_T_ITEM;
+drop synonym T_T_PARAM_META;
+drop synonym T_S_WF_SYSFUN;
+drop synonym T_S_WF_SYSFUN_BTN;
+drop synonym T_S_WF_SYSFUN_VAR;
+drop synonym T_S_WF_PROCESS_INFO;
+
+drop synonym SEQU_S_WF_CUST_LISTEN;
+drop synonym SEQU_S_WF_NAVIGATION;
+drop synonym SEQU_T_PARAM_META;
+drop synonym SEQU_S_WF_SYSFUN_BTN;
+drop synonym SEQU_S_WF_SYSFUN;

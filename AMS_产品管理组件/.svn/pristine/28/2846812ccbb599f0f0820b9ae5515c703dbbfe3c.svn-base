@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- STORY #42921 产品信息组件拆分开发 -->
+<pojos>    
+	<!-- 产品基本信息 -->
+	<pojo id="Port" class="com.yss.framework.api.common.co.Port" />
+	<pojo id="Port_A" class="com.yss.framework.api.common.co.Port_A"/>	
+	<pojo id="PortTreeView" class="com.yss.ams.product.information.support.modules.ab.port.pojo.PortTreeView" />
+	<pojo id="Port_A_Rule" class="com.yss.ams.product.information.support.modules.ab.assetsTree_a_rule.pojo.AssetsTree_A_Rule" />
+	<!-- 产品属性分类 -->
+	<pojo id="PortPdAttribute" class="com.yss.ams.product.information.support.modules.ab.portPdAttribute.pojo.PortPdAttribute"/>
+	<!-- 产品树形结构 -->
+	<!-- 产品树形结构  STORY #55709 公共组合区树形结构优化-->
+	<pojo id="AssetsTreeA" class="com.yss.ams.product.information.support.modules.ab.assetsTree_a.pojo.AssetsTree_A"/>
+	<pojo id="AssetsTreeB" class="com.yss.ams.product.information.support.modules.ab.assetstree_b.pojo.AssetsTree_B"/>
+	<pojo id="AssetsTree_A" class="com.yss.ams.product.information.support.modules.ab.assetsTree_a.pojo.AssetsTree_A"/> 
+	<pojo id="AssetsTree_B" class="com.yss.ams.product.information.support.modules.ab.assetstree_b.pojo.AssetsTree_B"/>	
+	<!-- STORY #67057 技术平台与公共组件解耦  -->
+	<pojo id="FastAssetsTree_A" class="com.yss.framework.api.commonInfo.pojo.FastAssetsTree_A"/> 
+	<pojo id="FastAssetsTree_B" class="com.yss.framework.api.commonInfo.pojo.FastAssetsTree_B"/>
+	<pojo id="FastPort" class="com.yss.framework.api.common.co.Port"/>
+	<!-- 产品群组管理 -->
+	<pojo id="PortGroup" class="com.yss.ams.product.information.support.modules.pg.portgroup.pojo.PortGroup"/>
+	<pojo id="PortGroupRela" class="com.yss.ams.product.information.support.modules.pg.portgrouprela.pojo.PortGroupRela"/>
+	<pojo id="PortCacheData" class="com.yss.ams.product.information.support.modules.ab.port.pojo.PortCacheData" />
+	<!-- 产品分级信息 -->
+	<pojo id="PortCls" class="com.yss.ams.product.information.support.modules.aa.portcls.pojo.PortCls"/> 
+	<!-- 产品账户信息 -->
+	<!-- 	<pojo id="FundAcc" class="com.yss.ams.product.information.support.modules.cp.fundacc.pojo.FundAcc" /> -->
+	<!-- 公共账户信息 -->
+	<pojo id="PubAcc" class="com.yss.ams.product.information.support.modules.cp.pubacc.pojo.PubAcc" />
+	<pojo id="PortCustom" class="com.yss.ams.product.information.support.modules.aa.portcustom.pojo.PortCustom" />
+	<!-- STORY #65719 【21.6华泰】电子签章部分需要支持资产种类的选择  -->
+	<pojo id="BaseSealRelaInfo" class="com.yss.ams.product.information.support.modules.cp.fax.pojo.BaseSealRelaInfo" />
+	
+	<pojo id="PortRela" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRela"/>
+	<pojo id="PortRelaCashAcc" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaCashAcc"/>
+	<pojo id="PortRelaCashAccount" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaCashAccount"/>
+	<pojo id="PortRelaIndex" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaIndex"/>
+	<pojo id="PortRelaInvestMgr" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaInvestMgr"/>
+	<pojo id="PortRelaMember" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaMember"/>
+	<pojo id="PortRelaOrgan" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaOrgan"/>
+	<pojo id="PortRelaTradeOrg" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaTradeOrg"/>
+	<pojo id="PortRelaTradeSeat" class="com.yss.ams.product.information.support.modules.ab.portrela.pojo.PortRelaTradeSeat"/>
+	
+	<!-- 数据复制 -->
+	<pojo id="CopyData" class="com.yss.ams.product.information.support.modules.dataCopy.pojo.CopyData" />
+	
+	<!-- STORY64614富国基金-【运维】产品参数复制功能优化，需考虑重复复制的情况 -->
+	<pojo id="CopyDataCheck" class="com.yss.ams.product.information.support.modules.dataCopy.pojo.CopyDataCheck" />
+	<!-- STORY #99875 【估值核算】【国寿资产】【V1.300.7.0_GSZC_20201218】-增加产品信息查询界面  -->
+	<pojo id="ProductInfoQuery" class="com.yss.ams.product.information.support.modules.ab.productInfoQuery.pojo.ProductInfoQuery"/>
+</pojos> 

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STORY #42921 产品信息组件拆分开发 -->
+<classes>
+    <!-- 产品基本信息 -->
+	<class id="IPortService" menuId="pd_portfolio"
+		class="com.yss.ams.product.information.modules.ab.port.service.impl.PortService"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortService" />
+	<class id="IPortDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortDataService"
+		menuId="pd_portfolio" class="com.yss.ams.product.information.modules.ab.port.service.impl.PortDataService" />
+	<!-- STORY #67057 技术平台与公共组件解耦  start -->
+	<class id="IPortService" menuId="portfolio" isNew="false"
+		class="com.yss.fast.right.right.service.PortService"
+		interface="com.yss.right.service.IPortService" />
+	<class id="IPortDataService" isNew="false"
+		interface="com.yss.platform.support.dataservice.service.IPortDataService"
+		menuId="portfolio" class="com.yss.fast.systemmanager.port.PortDataService" />
+	<class id="IPortSTDataService" isNew="false"
+		interface="com.yss.platform.support.dataservice.service.IPortSTDataService"
+		menuId="portfolio" class="com.yss.fast.systemmanager.port.PortSTDataService" />
+	<class id="IPortDeductionService"
+		interface="com.yss.platform.support.dataservice.service.IPortDeductionService"
+		menuId="portfolio" class="com.yss.fast.systemmanager.port.PortDeductionService" />
+	<class id="IFastPortService"
+		interface="com.yss.framework.api.commonInfo.service.IFastPortService"
+		menuId="IFastPortService" class="com.yss.ams.product.information.fast.service.FastPortService" />
+	<class id="IFastAssetsTreeService"
+		interface="com.yss.framework.api.commonInfo.service.IFastAssetsTreeService"
+		menuId="IFastAssetsTreeService" class="com.yss.ams.product.information.fast.service.FastAssetsTreeService" />
+	<class id="IFastCommonInfoService"
+		interface="com.yss.framework.api.commonInfo.service.IFastCommonInfoService"
+		menuId="IFastAssetsTreeService" 
+		class="com.yss.ams.product.information.fast.service.FastCommonInfoService" />	
+	<!-- STORY #67057 技术平台与公共组件解耦  end-->
+	<class id="IPortADataService"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortADataService"
+		menuId="pd_portfolio_A" class="com.yss.ams.product.information.modules.ab.port.service.impl.PortADataService" />
+	<class id="IPortBDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortBDataService"
+		menuId="pd_portfolio" class="com.yss.ams.product.information.modules.ab.port.service.impl.PortBDataService" />
+	<class id="IPortCacheDataService" menuId="pd_portfolio"
+		class="com.yss.ams.product.information.modules.ab.port.cache.service.impl.PortCacheDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.port.cache.service.IPortCacheDataService" />
+	
+	<!-- Port文档动态检测 -->
+	<class id="IPortDocDynamicCheckDefaultService" menuId="portfolio"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortDocDynamicCheckDefaultService"
+		class="com.yss.ams.product.information.modules.ab.port.service.impl.PortDocDynamicCheckDefaultService"></class>
+	<class id="IPortDocDynamicCheckServiceOne" menuId="portfolio"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortDocDynamicCheckServiceOne"
+		class="com.yss.ams.product.information.modules.ab.port.service.impl.PortDocDynamicCheckServiceOne"></class>
+	
+	<!-- A区_常用产品设置 -->
+	<class id="IPortCustomDataService" menuId="pd_portcustom"
+		class="com.yss.ams.product.information.modules.aa.portcustom.service.impl.PortCustomDataService"
+		interface="com.yss.ams.product.information.support.modules.aa.portcustom.service.IPortCustomDataService" />
+	<!-- 组合数据权限接口 -->
+	<class id="IRightDataRightProviderZH" menuId="IRightDataRightProviderZH"
+		interface="com.yss.ams.product.information.support.modules.ab.port.right.service.IRightDataRightProviderZH"
+		class="com.yss.ams.product.information.modules.ab.port.right.service.impl.RightDataRightProviderZH" />
+	<class id="IPortCustomService" menuId="portcustom"
+		class="com.yss.ams.product.information.modules.aa.portcustom.service.impl.PortCustomService"
+		interface="com.yss.ams.product.information.support.modules.aa.portcustom.service.IPortCustomService" />
+		
+	<!-- 产品属性分类 -->
+	<class id="IPortPdAttributeService" menuId="pd_portPdAttribute"
+		interface="com.yss.ams.product.information.support.modules.ab.portPdAttribute.service.IPortPdAttributeService"
+		class="com.yss.ams.product.information.modules.ab.portPdAttribute.service.impl.PortPdAttributeService" />
+
+    <!-- 产品树形结构 -->
+    <class id="IAssertTree_AService" menuId="pd_assetsTree_A"
+		class="com.yss.ams.product.information.modules.ab.assetsTree_a.service.impl.AssetsTree_AService"
+		interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a.service.IAssetsTree_AService" />
+	<class id="IAssetsTree_ADataService" menuId="pd_assetsTree_A"
+		class="com.yss.ams.product.information.modules.ab.assetsTree_a.service.impl.AssetsTree_ADataService"
+		interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a.service.IAssetTrees_ADataService" />
+	<class id="IAssertTreeService" menuId="pd_assetsTree"
+		class="com.yss.ams.product.information.modules.ab.assetstree_b.service.impl.AssetsTree_BService"
+		interface="com.yss.ams.product.information.support.modules.ab.assetstree_b.service.IAssetsTree_BService" />
+	<!-- add by gh 2016-9-27 STORY28950参数复制功能优化-复制权限和群组以及产品数 -->
+	<class id="IAssetsTreeCopyService" menuId="pd_assetsTree"
+		interface="com.yss.ams.product.information.support.modules.ab.assetstree_b.service.IAssetsTreeCopyService"
+		class="com.yss.ams.product.information.modules.ab.assetstree_b.service.impl.AssetsTreeCopyService" />
+	<!-- add by yangru 20190717 STORY #72829 资产结构新增仅包含“存续期+待发行”的组合  -->
+	<class id="IAssetsTree_A_RuleService" menuId="pd_assetsTree_A_rule"
+		class="com.yss.ams.product.information.modules.ab.assetsTree_a_rule.service.impl.AssetsTree_A_RuleService" 
+		interface="com.yss.ams.product.information.support.modules.ab.assetsTree_a_rule.service.IAssetsTree_A_RuleService" />
+	
+	<!-- 产品群组管理 -->
+	<class id="IPortGroupRelaService" menuId="pd_portGroupRela"
+		class="com.yss.ams.product.information.modules.pg.portgrouprela.service.impl.PortGroupRelaService"
+		interface="com.yss.ams.product.information.support.modules.pg.portgrouprela.service.IPortGroupRelaService" />
+	<class id="IPortGroupRelaCopyService" menuId="pd_portGroupRela"
+		interface="com.yss.ams.product.information.support.modules.pg.portgrouprela.service.IPortGroupRelaCopyService"
+		class="com.yss.ams.product.information.modules.pg.portgrouprela.service.impl.PortGroupRelaCopyService" />
+	<class id="IPortGroupService" menuId="pd_portGroup"
+		class="com.yss.ams.product.information.modules.pg.portgroup.service.impl.PortGroupService"
+		interface="com.yss.ams.product.information.support.modules.pg.portgroup.service.IPortGroupService" />
+	<class id="IPortGroupConverDataService" menuId="pd_portGroup"
+		class="com.yss.ams.product.information.modules.pg.portgroup.service.impl.PortGroupConverDataService"
+		interface="com.yss.ams.product.information.support.modules.pg.portgroup.service.IPortGroupConverDataService" />
+	<class id="IPortGroupDataService" menuId="pd_portGroup"
+		class="com.yss.ams.product.information.modules.pg.portgroup.service.impl.PortGroupDataService"
+		interface="com.yss.ams.product.information.support.modules.pg.portgroup.service.IPortGroupDataService" />
+	<class id="IPortGroupDataProvider" menuId="IPortGroupDataProvider"
+		interface="com.yss.right.service.IDataRightProvider"
+		class="com.yss.ams.product.information.modules.pg.portgroup.service.impl.PortGroupDataProvider" />
+	<class id="IPortGroupDataProvider1" menuId="IPortGroupDataProvider"
+		interface="com.yss.ams.product.information.support.modules.pg.portgroup.service.IPortGroupDataProvider"
+		class="com.yss.ams.product.information.modules.pg.portgroup.service.impl.PortGroupDataProvider" />
+	
+	<class id="IOperPortService" menuId="pd_operPort"
+		class="com.yss.ams.product.information.modules.pg.operport.impl.OperPortService"
+		interface="com.yss.ams.product.information.support.modules.pg.operport.service.IOperPortService" />	
+		
+	<!-- 产品分级信息 -->
+	<class id="IPortClsService" menuId="pd_productgrade"
+		class="com.yss.ams.product.information.modules.aa.portcls.service.impl.PortClsService" 
+		interface="com.yss.ams.product.information.support.modules.aa.portcls.service.IPortClsService" />
+	<class id="IClsPortDataService" menuId="pd_productgrade"
+		class="com.yss.ams.product.information.modules.aa.portcls.service.impl.PortClsDataService"
+		interface="com.yss.ams.product.information.support.modules.aa.portcls.service.IClsPortDataService" />
+					
+ 	
+	<!-- 公共账户信息 -->
+	<class id="IPubAccService" menuId="pd_pubAccInfo"
+		class="com.yss.ams.product.information.modules.cp.pubacc.service.impl.PubAccService"
+		interface="com.yss.ams.product.information.support.modules.cp.pubacc.service.IPubAccService" />
+	<class id="IPubAccDataService" menuId="pd_pubAccInfo"
+		class="com.yss.ams.product.information.modules.cp.pubacc.service.impl.PubAccDataService"
+		interface="com.yss.ams.product.information.support.modules.cp.pubacc.service.IPubAccDataService" />	
+
+<class id="IRightPortService"
+  interface="com.yss.ams.product.information.support.modules.ab.port.service.IRightPortService"
+  menuId="" class="com.yss.ams.product.information.modules.ab.port.service.impl.PortService" />
+  
+  <class id="IPortCustomService" menuId="pd_portcustom"
+  class="com.yss.ams.product.information.modules.aa.portcustom.service.impl.PortCustomService"
+  interface="com.yss.ams.product.information.support.modules.aa.portcustom.service.IPortCustomService" />
+  <!-- <class id="IPortSyncService" menuId="productsInfo"
+  class="com.yss.ams.product.information.modules.ab.port.service.impl.PortSyncService"
+  interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortSyncService" />
+   -->
+    <class id="IAssetsTreeReportService" menuId="pd_assetstype"
+  class="com.yss.ams.product.information.modules.ab.port.service.impl.AssetsTreeReportService"
+  interface="com.yss.ams.product.information.support.modules.ab.assetsTree_report.service.IAssetsTreeReportService" />
+  <!-- STORY #66347 【招商基金】系统实现自动授权及权限优化需求 add by neil 2019-07-25 -->
+<class id="IPortAssGroupDataProvider" menuId="IPortAssGroupDataProvider"
+	interface="com.yss.right.service.IDataRightProvider"
+	class="com.yss.ams.product.information.modules.pg.portassgroup.service.impl.PortAssGroupDataProvider" />
+  
+  <class id="IPortAssGroupDataProvider1" menuId="IPortAssGroupDataProvider"
+	interface="com.yss.ams.product.information.support.modules.pg.portassgroup.service.IPortAssGroupDataProvider"
+	class="com.yss.ams.product.information.modules.pg.portassgroup.service.impl.PortAssGroupDataProvider" />
+   
+  <!-- STORY #65719 【21.6华泰】电子签章部分需要支持资产种类的选择  -->
+  <class id="IElecSealRelaService" menuId="portRelaSealInfo" 
+  interface="com.yss.ams.product.information.support.modules.cp.fax.service.IElecSealRelaService" 
+  class="com.yss.ams.product.information.modules.cp.fax.service.imp.ElecSealRelaService"/>
+  
+	<class id="IPortRelaCashAccountIdService" menuId="pd_portcashaccountid"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaCashAccountIdService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaCashAccountIdService" />
+	<class id="IPortRelaCashAccountService" menuId="pd_portcashaccount"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaCashAccountService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaCashAccountService" />
+	<class id="IPortRelaCashAccService" menuId="pd_portCashAcc"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaCashAccService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaCashAccService" />
+	<class id="IPortRelaIndexService" menuId="pd_portindex"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaIndexService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaIndexService" />
+	<class id="IPortRelaInvestMgrService" menuId="pd_portinvestmanager"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaInvestMgrService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaInvestMgrService" />
+	<class id="IPortRelaMemberService" menuId="pd_portOrgMbr"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaMemberService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaMemberService" />
+	<class id="IPortRelaOrganService" menuId="pd_portrelaorgan"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaOrganService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaOrganServcie" />
+	<class id="IPortRelaService" menuId="pd_portrelation"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaService" />
+	<class id="IPortRelaTradeAccDataService" menuId="pd_portrelatradeaccdata"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaTradeAccDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaTradeAccountDataService" />
+	<class id="IPortRelaTradeAccNoDataService" menuId="pd_portrelatradeaccnodata"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaTradeAccNoDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaTradeAccountNoDataService" />
+	<class id="IPortRelaTradeChanDataService" menuId="pd_portcashaccountid"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaTradeChanDataService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaTradeChanDataService" />
+	<class id="IPortRelaTradeOrgService" menuId="pd_portTradeOrg"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaTradeOrgService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaTradeOrgService" />
+	<class id="IPortRelaTradeSeatService" menuId="pd_portTradeSeat"
+		class="com.yss.ams.product.information.modules.ab.portrela.service.impl.PortRelaTradeSeatService"
+		interface="com.yss.ams.product.information.support.modules.ab.portrela.service.IPortRelaTradeSeatService" />
+  	<!-- 产品树形结构  STORY #55709 公共组合区树形结构优化-->
+    <class id="IFastAssetTreeService" menuId="assetsTreeA"
+		class="com.yss.fast.systemmanager.assetstree.service.impl.FastAssetTreeService"
+		interface="com.yss.fast.systemmanager.support.assetstree.service.IFastAssetTreeService" />
+	<!-- STORY #78622 华宝：路由条件上要支持选择群组的判断 -->
+	<class id="IAutomaticPortGroupService" menuId="pd_portGroupRela"
+		class="com.yss.ams.product.information.modules.pg.portgrouprela.service.impl.AutomaticPortGroupServiceImpl"
+		interface="com.yss.fast.task.support.automatic.service.IAutomaticPortGroupService" />
+	<class id="IFastPortService"
+		interface="com.yss.framework.api.commonInfo.service.IFastPortPdAttributeService"
+		menuId="IFastPortService" class="com.yss.ams.product.information.fast.service.FastPortPdAttributeService" />
+		
+	<!-- 数据复制 -->
+	<class id="IDataCopyService" menuId="dataCopy"
+		interface="com.yss.ams.product.information.support.modules.dataCopy.service.IDataCopyService"
+		class="com.yss.ams.product.information.modules.dataCopy.service.impl.DataCopyService" />
+	<class id="IPortFundRelaService" menuId="pd_relaPort"
+		interface="com.yss.ams.product.information.support.modules.ab.port.service.IPortFundRelaService"
+		class="com.yss.ams.product.information.modules.ab.port.service.impl.PortFundRelaService" />
+		
+	<class id="IClsPortCacheDataService" menuId="IClsPortCacheDataService"
+		interface="com.yss.ams.product.information.support.modules.aa.portcls.service.IClsPortCacheDataService"
+		class="com.yss.ams.product.information.modules.aa.portcls.service.impl.PortClsCacheDataService" />
+	<!-- STORY #99875 【估值核算】【国寿资产】【V1.300.7.0_GSZC_20201218】-增加产品信息查询界面  -->
+	<class id="IProductInfoService" menuId="ProductInfoQuery"
+		interface="com.yss.ams.product.information.support.modules.ab.productInfoQuery.service.IProductInfoService"
+		class="com.yss.ams.product.information.modules.ab.productInfoQuery.service.impl.ProductInfoService" />
+
+	
+
+</classes>

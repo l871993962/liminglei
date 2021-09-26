@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>券商保证金</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/券商保证金/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/券商保证金/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7373" class="ax_default label">
+        <div id="u7373_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7374" class="text">
+          <p><span>客户名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7375" class="ax_default text_field">
+        <input id="u7375_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7376" class="ax_default label">
+        <div id="u7376_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7377" class="text">
+          <p><span>资金账号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7378" class="ax_default text_field">
+        <input id="u7378_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7379" class="ax_default label">
+        <div id="u7379_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7380" class="text">
+          <p><span>交易账户</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7381" class="ax_default label">
+        <div id="u7381_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7382" class="text">
+          <p><span>登录交易密码/资金密码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7383" class="ax_default label">
+        <div id="u7383_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7384" class="text">
+          <p><span>备注</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7385" class="ax_default text_field">
+        <input id="u7385_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (下拉列表框) -->
+      <div id="u7386" class="ax_default droplist">
+        <select id="u7386_input">
+        </select>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u7387" class="ax_default" data-left="0" data-top="275" data-width="610" data-height="292">
+
+        <!-- Unnamed (组合) -->
+        <div id="u7388" class="ax_default" data-left="0" data-top="447" data-width="604" data-height="120">
+
+          <!-- Unnamed (表格) -->
+          <div id="u7389" class="ax_default">
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7390" class="ax_default table_cell">
+              <img id="u7390_img" class="img " src="images/主页/u3121.png"/>
+              <!-- Unnamed () -->
+              <div id="u7391" class="text">
+                <p><span>序号</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7392" class="ax_default table_cell">
+              <img id="u7392_img" class="img " src="images/主页/u3123.png"/>
+              <!-- Unnamed () -->
+              <div id="u7393" class="text">
+                <p><span>联系人类型</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7394" class="ax_default table_cell">
+              <img id="u7394_img" class="img " src="images/主页/u3125.png"/>
+              <!-- Unnamed () -->
+              <div id="u7395" class="text">
+                <p><span>姓名</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7396" class="ax_default table_cell">
+              <img id="u7396_img" class="img " src="images/主页/u3127.png"/>
+              <!-- Unnamed () -->
+              <div id="u7397" class="text">
+                <p><span>身份证号</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7398" class="ax_default table_cell">
+              <img id="u7398_img" class="img " src="images/主页/u3129.png"/>
+              <!-- Unnamed () -->
+              <div id="u7399" class="text">
+                <p><span>电话</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7400" class="ax_default table_cell">
+              <img id="u7400_img" class="img " src="images/主页/u3131.png"/>
+              <!-- Unnamed () -->
+              <div id="u7401" class="text">
+                <p><span>手机</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7402" class="ax_default table_cell">
+              <img id="u7402_img" class="img " src="images/主页/u3131.png"/>
+              <!-- Unnamed () -->
+              <div id="u7403" class="text">
+                <p><span>邮箱</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7404" class="ax_default table_cell">
+              <img id="u7404_img" class="img " src="images/主页/u3131.png"/>
+              <!-- Unnamed () -->
+              <div id="u7405" class="text">
+                <p><span>传真</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7406" class="ax_default table_cell">
+              <img id="u7406_img" class="img " src="images/主页/u3131.png"/>
+              <!-- Unnamed () -->
+              <div id="u7407" class="text">
+                <p><span>邮编</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7408" class="ax_default table_cell">
+              <img id="u7408_img" class="img " src="images/主页/u3131.png"/>
+              <!-- Unnamed () -->
+              <div id="u7409" class="text">
+                <p><span>地址</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7410" class="ax_default table_cell">
+              <img id="u7410_img" class="img " src="images/主页/u3141.png"/>
+              <!-- Unnamed () -->
+              <div id="u7411" class="text">
+                <p><span>备注</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7412" class="ax_default table_cell">
+              <img id="u7412_img" class="img " src="images/主页/u3143.png"/>
+              <!-- Unnamed () -->
+              <div id="u7413" class="text">
+                <p><span>1</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7414" class="ax_default table_cell">
+              <img id="u7414_img" class="img " src="images/主页/u3145.png"/>
+              <!-- Unnamed () -->
+              <div id="u7415" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7416" class="ax_default table_cell">
+              <img id="u7416_img" class="img " src="images/主页/u3147.png"/>
+              <!-- Unnamed () -->
+              <div id="u7417" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7418" class="ax_default table_cell">
+              <img id="u7418_img" class="img " src="images/主页/u3149.png"/>
+              <!-- Unnamed () -->
+              <div id="u7419" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7420" class="ax_default table_cell">
+              <img id="u7420_img" class="img " src="images/主页/u3151.png"/>
+              <!-- Unnamed () -->
+              <div id="u7421" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7422" class="ax_default table_cell">
+              <img id="u7422_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7423" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7424" class="ax_default table_cell">
+              <img id="u7424_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7425" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7426" class="ax_default table_cell">
+              <img id="u7426_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7427" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7428" class="ax_default table_cell">
+              <img id="u7428_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7429" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7430" class="ax_default table_cell">
+              <img id="u7430_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7431" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7432" class="ax_default table_cell">
+              <img id="u7432_img" class="img " src="images/主页/u3163.png"/>
+              <!-- Unnamed () -->
+              <div id="u7433" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7434" class="ax_default table_cell">
+              <img id="u7434_img" class="img " src="images/主页/u3143.png"/>
+              <!-- Unnamed () -->
+              <div id="u7435" class="text">
+                <p><span>2</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7436" class="ax_default table_cell">
+              <img id="u7436_img" class="img " src="images/主页/u3145.png"/>
+              <!-- Unnamed () -->
+              <div id="u7437" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7438" class="ax_default table_cell">
+              <img id="u7438_img" class="img " src="images/主页/u3147.png"/>
+              <!-- Unnamed () -->
+              <div id="u7439" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7440" class="ax_default table_cell">
+              <img id="u7440_img" class="img " src="images/主页/u3149.png"/>
+              <!-- Unnamed () -->
+              <div id="u7441" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7442" class="ax_default table_cell">
+              <img id="u7442_img" class="img " src="images/主页/u3151.png"/>
+              <!-- Unnamed () -->
+              <div id="u7443" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7444" class="ax_default table_cell">
+              <img id="u7444_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7445" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7446" class="ax_default table_cell">
+              <img id="u7446_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7447" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7448" class="ax_default table_cell">
+              <img id="u7448_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7449" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7450" class="ax_default table_cell">
+              <img id="u7450_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7451" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7452" class="ax_default table_cell">
+              <img id="u7452_img" class="img " src="images/主页/u3153.png"/>
+              <!-- Unnamed () -->
+              <div id="u7453" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7454" class="ax_default table_cell">
+              <img id="u7454_img" class="img " src="images/主页/u3163.png"/>
+              <!-- Unnamed () -->
+              <div id="u7455" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7456" class="ax_default table_cell">
+              <img id="u7456_img" class="img " src="images/主页/u3187.png"/>
+              <!-- Unnamed () -->
+              <div id="u7457" class="text">
+                <p><span>3</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7458" class="ax_default table_cell">
+              <img id="u7458_img" class="img " src="images/主页/u3189.png"/>
+              <!-- Unnamed () -->
+              <div id="u7459" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7460" class="ax_default table_cell">
+              <img id="u7460_img" class="img " src="images/主页/u3191.png"/>
+              <!-- Unnamed () -->
+              <div id="u7461" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7462" class="ax_default table_cell">
+              <img id="u7462_img" class="img " src="images/主页/u3193.png"/>
+              <!-- Unnamed () -->
+              <div id="u7463" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7464" class="ax_default table_cell">
+              <img id="u7464_img" class="img " src="images/主页/u3195.png"/>
+              <!-- Unnamed () -->
+              <div id="u7465" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7466" class="ax_default table_cell">
+              <img id="u7466_img" class="img " src="images/主页/u3197.png"/>
+              <!-- Unnamed () -->
+              <div id="u7467" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7468" class="ax_default table_cell">
+              <img id="u7468_img" class="img " src="images/主页/u3197.png"/>
+              <!-- Unnamed () -->
+              <div id="u7469" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7470" class="ax_default table_cell">
+              <img id="u7470_img" class="img " src="images/主页/u3197.png"/>
+              <!-- Unnamed () -->
+              <div id="u7471" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7472" class="ax_default table_cell">
+              <img id="u7472_img" class="img " src="images/主页/u3197.png"/>
+              <!-- Unnamed () -->
+              <div id="u7473" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7474" class="ax_default table_cell">
+              <img id="u7474_img" class="img " src="images/主页/u3197.png"/>
+              <!-- Unnamed () -->
+              <div id="u7475" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7476" class="ax_default table_cell">
+              <img id="u7476_img" class="img " src="images/主页/u3207.png"/>
+              <!-- Unnamed () -->
+              <div id="u7477" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7478" class="ax_default _图片">
+            <img id="u7478_img" class="img " src="images/主页/u3209.png"/>
+            <!-- Unnamed () -->
+            <div id="u7479" class="text" style="display:none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7480" class="ax_default _图片">
+            <img id="u7480_img" class="img " src="images/主页/u1735.png"/>
+            <!-- Unnamed () -->
+            <div id="u7481" class="text" style="display:none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u7482" class="ax_default" data-left="0" data-top="275" data-width="610" data-height="156">
+
+          <!-- Unnamed (表格) -->
+          <div id="u7483" class="ax_default">
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7484" class="ax_default table_cell">
+              <img id="u7484_img" class="img " src="images/主页/u1951.png"/>
+              <!-- Unnamed () -->
+              <div id="u7485" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7486" class="ax_default table_cell">
+              <img id="u7486_img" class="img " src="images/主页/u1951.png"/>
+              <!-- Unnamed () -->
+              <div id="u7487" class="text">
+                <p><span>序号</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7488" class="ax_default table_cell">
+              <img id="u7488_img" class="img " src="images/主页/u1955.png"/>
+              <!-- Unnamed () -->
+              <div id="u7489" class="text">
+                <p><span>文件名称</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7490" class="ax_default table_cell">
+              <img id="u7490_img" class="img " src="images/主页/u1957.png"/>
+              <!-- Unnamed () -->
+              <div id="u7491" class="text">
+                <p><span>上传人</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7492" class="ax_default table_cell">
+              <img id="u7492_img" class="img " src="images/主页/u1959.png"/>
+              <!-- Unnamed () -->
+              <div id="u7493" class="text">
+                <p><span>上传时间</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7494" class="ax_default table_cell">
+              <img id="u7494_img" class="img " src="images/主页/u1961.png"/>
+              <!-- Unnamed () -->
+              <div id="u7495" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7496" class="ax_default table_cell">
+              <img id="u7496_img" class="img " src="images/主页/u1961.png"/>
+              <!-- Unnamed () -->
+              <div id="u7497" class="text">
+                <p><span>1</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7498" class="ax_default table_cell">
+              <img id="u7498_img" class="img " src="images/主页/u1965.png"/>
+              <!-- Unnamed () -->
+              <div id="u7499" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7500" class="ax_default table_cell">
+              <img id="u7500_img" class="img " src="images/主页/u1967.png"/>
+              <!-- Unnamed () -->
+              <div id="u7501" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7502" class="ax_default table_cell">
+              <img id="u7502_img" class="img " src="images/主页/u1969.png"/>
+              <!-- Unnamed () -->
+              <div id="u7503" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7504" class="ax_default table_cell">
+              <img id="u7504_img" class="img " src="images/主页/u1971.png"/>
+              <!-- Unnamed () -->
+              <div id="u7505" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7506" class="ax_default table_cell">
+              <img id="u7506_img" class="img " src="images/主页/u1971.png"/>
+              <!-- Unnamed () -->
+              <div id="u7507" class="text">
+                <p><span>2</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7508" class="ax_default table_cell">
+              <img id="u7508_img" class="img " src="images/主页/u1975.png"/>
+              <!-- Unnamed () -->
+              <div id="u7509" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7510" class="ax_default table_cell">
+              <img id="u7510_img" class="img " src="images/主页/u1967.png"/>
+              <!-- Unnamed () -->
+              <div id="u7511" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7512" class="ax_default table_cell">
+              <img id="u7512_img" class="img " src="images/主页/u1979.png"/>
+              <!-- Unnamed () -->
+              <div id="u7513" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7514" class="ax_default table_cell">
+              <img id="u7514_img" class="img " src="images/主页/u1991.png"/>
+              <!-- Unnamed () -->
+              <div id="u7515" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7516" class="ax_default table_cell">
+              <img id="u7516_img" class="img " src="images/主页/u1991.png"/>
+              <!-- Unnamed () -->
+              <div id="u7517" class="text">
+                <p><span>3</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7518" class="ax_default table_cell">
+              <img id="u7518_img" class="img " src="images/主页/u1995.png"/>
+              <!-- Unnamed () -->
+              <div id="u7519" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7520" class="ax_default table_cell">
+              <img id="u7520_img" class="img " src="images/主页/u1997.png"/>
+              <!-- Unnamed () -->
+              <div id="u7521" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (单元格) -->
+            <div id="u7522" class="ax_default table_cell">
+              <img id="u7522_img" class="img " src="images/主页/u1999.png"/>
+              <!-- Unnamed () -->
+              <div id="u7523" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u7524" class="ax_default" data-left="9" data-top="348" data-width="20" data-height="76">
+
+            <!-- Unnamed (复选框) -->
+            <div id="u7525" class="ax_default checkbox">
+              <label for="u7525_input">
+                <!-- Unnamed () -->
+                <div id="u7526" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </label>
+              <input id="u7525_input" type="checkbox" value="checkbox"/>
+            </div>
+
+            <!-- Unnamed (复选框) -->
+            <div id="u7527" class="ax_default checkbox">
+              <label for="u7527_input">
+                <!-- Unnamed () -->
+                <div id="u7528" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </label>
+              <input id="u7527_input" type="checkbox" value="checkbox"/>
+            </div>
+
+            <!-- Unnamed (复选框) -->
+            <div id="u7529" class="ax_default checkbox">
+              <label for="u7529_input">
+                <!-- Unnamed () -->
+                <div id="u7530" class="text" style="display:none; visibility: hidden">
+                  <p><span></span></p>
+                </div>
+              </label>
+              <input id="u7529_input" type="checkbox" value="checkbox"/>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u7531" class="ax_default" data-left="74" data-top="284" data-width="65" data-height="23">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u7532" class="ax_default box_2">
+              <div id="u7532_div" class=""></div>
+              <!-- Unnamed () -->
+              <div id="u7533" class="text">
+                <p><span>&nbsp;&nbsp; 上传</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u7534" class="ax_default _图片">
+              <img id="u7534_img" class="img " src="images/主页/u1463.png"/>
+              <!-- Unnamed () -->
+              <div id="u7535" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u7536" class="ax_default" data-left="0" data-top="284" data-width="65" data-height="23">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u7537" class="ax_default box_2">
+              <div id="u7537_div" class=""></div>
+              <!-- Unnamed () -->
+              <div id="u7538" class="text">
+                <p><span>&nbsp;&nbsp; 下载</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u7539" class="ax_default _图片">
+              <img id="u7539_img" class="img " src="images/主页/u1468.png"/>
+              <!-- Unnamed () -->
+              <div id="u7540" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (水平线) -->
+          <div id="u7541" class="ax_default line">
+            <img id="u7541_img" class="img " src="images/主页/u1708.png"/>
+            <!-- Unnamed () -->
+            <div id="u7542" class="text" style="display:none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u7543" class="ax_default" data-left="222" data-top="284" data-width="65" data-height="23">
+
+            <!-- Unnamed (组合) -->
+            <div id="u7544" class="ax_default" data-left="222" data-top="284" data-width="65" data-height="23">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u7545" class="ax_default box_2">
+                <div id="u7545_div" class=""></div>
+                <!-- Unnamed () -->
+                <div id="u7546" class="text">
+                  <p><span>&nbsp;&nbsp;&nbsp; 删除</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u7547" class="ax_default _图片">
+              <img id="u7547_img" class="img " src="images/主页/u1474.png"/>
+              <!-- Unnamed () -->
+              <div id="u7548" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (组合) -->
+          <div id="u7549" class="ax_default" data-left="147" data-top="284" data-width="65" data-height="23">
+
+            <!-- Unnamed (组合) -->
+            <div id="u7550" class="ax_default" data-left="147" data-top="284" data-width="65" data-height="23">
+
+              <!-- Unnamed (组合) -->
+              <div id="u7551" class="ax_default" data-left="147" data-top="284" data-width="65" data-height="23">
+
+                <!-- Unnamed (矩形) -->
+                <div id="u7552" class="ax_default box_2">
+                  <div id="u7552_div" class=""></div>
+                  <!-- Unnamed () -->
+                  <div id="u7553" class="text">
+                    <p><span>&nbsp;&nbsp;&nbsp; 预览</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u7554" class="ax_default _图片">
+              <img id="u7554_img" class="img " src="images/主页/u1481.png"/>
+              <!-- Unnamed () -->
+              <div id="u7555" class="text" style="display:none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7556" class="ax_default label">
+        <div id="u7556_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7557" class="text">
+          <p><span>保证金信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7558" class="ax_default text_field">
+        <input id="u7558_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7559" class="ax_default label">
+        <div id="u7559_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7560" class="text">
+          <p><span>用途</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7561" class="ax_default text_field">
+        <input id="u7561_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7562" class="ax_default text_field">
+        <input id="u7562_input" type="text" value="******"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7563" class="ax_default _图片">
+        <img id="u7563_img" class="img " src="images/主页/u3964.png"/>
+        <!-- Unnamed () -->
+        <div id="u7564" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7565" class="ax_default label">
+        <div id="u7565_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7566" class="text">
+          <p><span>开户日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7567" class="ax_default text_field">
+        <input id="u7567_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7568" class="ax_default label">
+        <div id="u7568_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7569" class="text">
+          <p><span>销户日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u7570" class="ax_default text_field">
+        <input id="u7570_input" type="text" value=""/>
+      </div>
+    </div>
+  </body>
+</html>

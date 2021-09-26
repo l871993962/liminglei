@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 此文档的中class都要继承ScripDesc接口 -->
+<dbupgrade code="ProductInfo" name="产品组件参数">
+	 <!-- 表 -->
+	 <struct class="com.yss.ams.db.upgrade.productinfo.structs.tables.ProductInfoManageTableDescImpl" />
+	 <!-- 序列 -->
+	 <struct class="com.yss.ams.db.upgrade.productinfo.structs.sequences.ProductInfoSequenceDescImpl" />
+</dbupgrade>

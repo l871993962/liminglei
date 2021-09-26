@@ -1,0 +1,9 @@
+create or replace synonym v45axfund1.t_report_result for V45AXFUND.t_report_result;
+create or replace synonym v45axfund1.vb_port_baseinfo for V45AXFUND.vb_port_baseinfo;
+create or replace synonym v45axfund1.tc_task_config for V45AXFUND.tc_task_config;
+create or replace synonym v45axfund1.t_xbrl_report for V45AXFUND.t_xbrl_report;
+create or replace synonym v45axfund1.t_xbrl_report_adjust for V45AXFUND.t_xbrl_report_adjust;
+create or replace synonym v45axfund1.v_report_result for V45AXFUND.v_report_result;
+create or replace synonym v45axfund1.tc_task_info for V45AXFUND.tc_task_info;
+create or replace synonym v45axfund1.t_element_data for V45AXFUND.t_element_data;
+create or replace synonym v45axfund1.TC_PORT_PARAM for V45AXFUND.TC_PORT_PARAM;

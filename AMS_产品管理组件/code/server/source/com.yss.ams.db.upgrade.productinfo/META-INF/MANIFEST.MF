@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ProductinfoDbUp
+Bundle-SymbolicName: com.yss.ams.db.upgrade.productinfo
+Bundle-Version: 1.0.0
+Bundle-Activator: com.yss.ams.db.upgrade.productinfo.activator.ProductInfoDbUpActivator
+Bundle-Vendor: YSSUCO
+Bundle-IsLimitedUpload: true
+Bundle-level: 8
+Bundle-PluginCode: Product
+Bundle-PluginName: Product升级组件
+Bundle-AppCode: ProductinfoDbUp
+Bundle-AppName: 产品管理组件脚本升级工具
+Require-Bundle: com.yss.fast.db.upgrade.support;bundle-version="1.0.0",
+ org.eclipse.osgi;bundle-version="3.9.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

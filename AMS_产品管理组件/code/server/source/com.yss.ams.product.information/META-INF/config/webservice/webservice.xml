@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service class="com.yss.webservice.port.service.impl.PortDataWebService" 
+		interface="com.yss.webservice.port.IPortDataWebService"/>
+	<service class="com.yss.webservice.portcls.service.impl.PortClsDataWebService" 
+		interface="com.yss.webservice.portcls.IPortClsDataWebService"/>
+</services>
