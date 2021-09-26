@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SecinfoDbUp
+Bundle-SymbolicName: com.yss.ams.db.upgrade.secinfo
+Bundle-Version: 1.0.0
+Bundle-IsLimitedUpload: true
+Bundle-level: 8
+Bundle-PluginCode: Secinfo
+Bundle-PluginName: Secinfo升级组件
+Bundle-AppCode: SecinfoDbUp
+Bundle-AppName: 资讯管理组件脚本升级工具
+Bundle-Activator: com.yss.ams.db.upgrade.secinfo.activator.SecInfoDbUpActivator
+Bundle-Vendor: YSSUCO
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.osgi;bundle-version="3.9.1",
+ com.yss.uco.reference;bundle-version="1.0.0",
+ com.yss.fast.db.upgrade.support;bundle-version="1.0.0"
+

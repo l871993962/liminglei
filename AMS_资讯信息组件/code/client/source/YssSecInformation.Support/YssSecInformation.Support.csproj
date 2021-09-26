@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5222A51-AD43-4220-BF80-41829E7C2D0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssSecInformation.Support</RootNamespace>
+    <AssemblyName>YssSecInformation.Support</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aa\Etf\Pojo\Etf.cs" />
+    <Compile Include="Aa\Etf\Service\IEtfService.cs" />
+    <Compile Include="Ac\Etfskep\Pojo\EtfSkep.cs" />
+    <Compile Include="Ac\Etfskep\Service\IEtfSkepService.cs" />
+    <Compile Include="Cache\SecBaseCache.cs" />
+    <Compile Include="context\AssociaType.cs" />
+    <Compile Include="Func\ClsAdjustSecCode.cs" />
+    <Compile Include="Func\ClsSecTypeTip.cs" />
+    <Compile Include="Interface\I_BaseMkt.cs" />
+    <Compile Include="Mp\FwMkt\Pojo\Cls_SEC_FQ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Pojo\FwMktValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Service\IFwMktValueService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthqsec\Service\ICounterRateSecService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Pojo\CounterRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Service\ICounterRateService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\Indexmp\Service\IIndexMpService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mp\PreStock\Pojo\PreStockInterest.cs" />
+    <Compile Include="Mp\PreStock\Service\IPreStockInterestService.cs" />
+    <Compile Include="Mp\SecEq\Pojo\SecEqu.cs" />
+    <Compile Include="Mp\SecEq\Pojo\SecTransfer.cs" />
+    <Compile Include="Mp\SecEq\Pojo\SecTransferPara.cs" />
+    <Compile Include="Mp\SecEq\Pojo\SuspendedCond.cs" />
+    <Compile Include="Mp\SecEq\Pojo\TdChan.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecEquPdService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecEquService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecFxService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecLtService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecPrePubService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecPxService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecTransferParaService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISecTransferService.cs" />
+    <Compile Include="Mp\SecEq\Service\ISuspendedCondService.cs" />
+    <Compile Include="Mp\SecMktMap\Pojo\Cls_SEC_MKT.cs" />
+    <Compile Include="Mp\SecMktMap\Pojo\SecMkt.cs" />
+    <Compile Include="Mp\SecMktMap\Service\ICkMktService.cs" />
+    <Compile Include="Mp\SecMktMap\Service\IHlMktService.cs" />
+    <Compile Include="Mp\SecMktMap\Service\IOutMktService.cs" />
+    <Compile Include="Mp\SecMktMap\Service\ISecMktService.cs" />
+    <Compile Include="PlateSet\plateSub\Pojo\PlateSub.cs" />
+    <Compile Include="PlateSet\plateSub\Pojo\PlateSubExtend.cs" />
+    <Compile Include="PlateSet\plateSub\Service\IPlateSubService.cs" />
+    <Compile Include="PlateSet\plate\Pojo\Plate.cs" />
+    <Compile Include="PlateSet\plate\Pojo\PlateATreeView.cs" />
+    <Compile Include="PlateSet\plate\Service\IPlate_AService.cs" />
+    <Compile Include="PlateSet\plate\Service\IPlateDataService.cs" />
+    <Compile Include="Pojo\Mp\GzPrice.cs" />
+    <Compile Include="Pojo\Sec\SecBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\YssTechnology.snk" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pub\Pojo\IcGroupAndDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pub\Pojo\SysInitItemBean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pub\Service\IAssetStatsCtlInitService.cs" />
+    <Compile Include="Pub\Service\IDayfSysInitService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\Cls_SEC_EQU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\Cls_SEC_ZQLX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\FiIncome.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\FiPay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\FutureFactor.cs" />
+    <Compile Include="Sv\Pojo\IndexInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\IndexStock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\PayDay.cs" />
+    <Compile Include="Sv\Pojo\SecBaseJf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\SecBaseLcfxzq.cs" />
+    <Compile Include="Sv\Pojo\SecBaseQhbzj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\SecBaseQqbzj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\SecShortPojo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Pojo\SecSoldBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\IFiIncomeService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\IFiPayService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\IFutureFactorService.cs" />
+    <Compile Include="Sv\Service\IIndexInfoDataService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\IIndexInfoService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\IIndexStockService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseCjService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseCkService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseGpService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseHgService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseInfoDataService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseJfService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseLcService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseLLHHService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseLlService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBasePjService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseQhbzjService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseQhService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseQqService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseQzService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseWhService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseXhService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseYqService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseZhzqService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecBaseZqService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Service\ISecSoldBackService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

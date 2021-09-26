@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ListHeaders>
+	<ListHeader id="sv_sysInit" desc="系统初始化">
+		<Header key='C_DV_ITEM_CODE' text='项目' align='L' format=''
+			showConvert="true" serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='功能说明' align='L' format=''></Header>
+	</ListHeader>
+    <ListHeader id="sv_secTransfer_para" desc="证券代码转换选项">
+		<Header key='Id' text='序号' align='R' format=''></Header>
+		<Header key='C_LOGICAL_JUDGMENT' text='逻辑判断' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ITEM_NAME' text='规则名称' align='L' format=''></Header>
+		<Header key='C_ITEM_VALUE' text='应用条件' align='R' format=''
+			serviceId="IVocDataService"></Header>
+	</ListHeader>
+	<ListHeader id="sv_suspended_para" desc="停牌信息功能选项">
+		<Header key='Id' text='序号' align='R' format=''></Header>
+		<Header key='C_LOGICAL_JUDGMENT' text='逻辑判断' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ITEM_NAME' text='项目名称' align='L' format=''></Header>
+		<Header key='C_ITEM_VALUE' text='项目值' align='R' format=''
+			serviceId=""></Header>
+		<Header key='C_VALUE_TYPE' text='单位类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+	</ListHeader>
+    <ListHeader id="sv_indexinfo" desc="指数基本信息">
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''
+			serviceId="IPortDataService"></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_INDEX_CODE' text='指数代码' align='L' format=''></Header>
+		<Header key='C_INDEX_NAME' text='指数名称' align='L' format=''></Header>
+		<Header key='C_INDEX_TYPE' text='指数类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_INDEX_ORG_CODE' text='指数编制机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_INDEX_BASE' text='指数基准点数' align='R' format='#,##0.####'></Header>
+		<Header key='D_BASE' text='基准日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 指数成分券信息 2014/8/11 add by liuxiang-->
+	<ListHeader id ='sv_indexStock' desc='指数成分券信息'>
+		<Header key='C_INDEX_CODE' text='指数代码' algin='L' format=''/>
+		<Header key='C_INDEX_CODE' text='指数名称' algin='L' format=''
+			serviceId='IIndexInfoDataService'/>
+		<Header key='D_BEGIN' text='启用日期' align='R' format='yyyy-MM-dd'/>
+		<Header key='C_SEC_CODE' text='成分券内码' algin='L' format=''/>
+		<Header key='C_SEC_MKT_CODE' text='成分券上市代码' algin='L' format=''/>
+		<Header key='C_SEC_CODE' text='成分券名称' algin='L' format=''
+			serviceId='ISecBaseInfoDataService'/>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_dividend' desc='对价派息'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='证券名称' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_DS_CODE' text='权益类型' align='L' format=''
+			serviceId="IDtTdModeDataService"></Header>
+		<Header key='C_DV_CODE' text='分红类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DC_CODE' text='分红币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='D_REG' text='登记日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_EXR' text='除权日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_FINAL' text='到账日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_EQU_RATIO_PT' text='税前权益比例' align='R'
+			format='#,##0.########'></Header>
+		<Header key='N_EQU_RATIO_AT' text='税后权益比例' align='R'
+			format='#,##0.########'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_securitymatches' desc='证券配对信息'>
+		<Header key='C_SEC_CODE' text='交易证券(主)' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='证券名称(主)' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TAG' text='交易证券(子)' align='L' format=''></Header>
+		<Header key='C_SEC_CODE_TAG' text='证券名称(子)' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_secdist' desc='证券送配'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TAG' text='送配证券' align='L' format=''></Header>
+		<Header key='C_DS_CODE' text='送配类型' align='L' format=''
+			serviceId="IDtTdModeDataService"></Header>
+		<Header key='C_ZS_CODE' text='折算类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_REG' text='登记日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_FINAL' text='缴款截止日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_EXR' text='除权日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_EQU_RATIO_PT' text='税前权益比例' align='R'
+			format='#,##0.########'></Header>
+		<Header key='N_EQU_RATIO_AT' text='税后权益比例' align='R'
+			format='#,##0.########'></Header>
+		<Header key='N_PRICE_PLAC' text='配股价格' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='C_SEC_CODE_TMP' text='临时证券' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_securitycirculate' desc='证券流通'>
+		<!-- zhoushuhang 2016-2-17 STORY #27907 资讯管理->公司行为->证券流通信息，修改交易证券为证券代码，证券名称为证券名称。 -->
+		<!-- 证券流通信息LIST界面的 显示列修改为 交易证券 和 证券名称。 -->
+		<!-- <Header key='C_SEC_CODE' text='交易证券' align='L' format='' serviceId="ISecBaseInfoDataService"></Header> -->
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='证券名称' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_DTA_CODE' text='交易属性' align='L' format=''
+			serviceId="IDtaTdAttrDataService"></Header>
+		<Header key='C_DV_CODE' text='发行方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_EXR' text='流通日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_securityPublish' desc='证券发行'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TAG' text='发行代码' align='L' format=''></Header>
+		<Header key='N_PRICE_PLAC' text='发行价格' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='D_REG' text='发行日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_secTransfer' desc='证券代码转换'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='渠道代码' align='L' format=''></Header>
+		<Header key='C_TRANSFER_CODE' text='转换规则' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_PUB_CODE' text='披露代码' align='L' format=''></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 证券预发行信息 -->
+	<ListHeader id='sv_securityPrePublish' desc='证券预发行信息'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TAG' text='发行代码' align='L' format=''></Header>
+		<Header key='C_DV_CODE' text='招标类型' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='N_PRICE_PLAC' text='基准收益 ' align='R' format='#,##0.######'></Header>
+		<Header key='D_REG' text='开始日期 ' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_FINAL' text='交收日期 ' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_EXR' text=' 结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_secSoldBack' desc='证券回售基本信息'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>
+		<Header key='N_SOLDBACK_PRICE' text='回售价格' align='R' format='#,##0.####'></Header>
+		<Header key='D_SOLDBACK_BEGIN' text='回售开始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_SOLDBACK_END' text='回售结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_FINAL' text='回售资金到账日期' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_securitymatches' desc='证券配对信息'>
+		<Header key='C_SEC_CODE' text='交易证券(主)' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='证券名称(主)' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TAG' text='交易证券(子)' align='L' format=''></Header>
+		<Header key='C_SEC_CODE_TAG' text='证券名称(子)' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_stockinfo' desc='股票基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='股票名称' align='L' format=''></Header>
+		<Header key='C_SEC_NAME_CN' text='股票中文名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_FV_ISSUE' text='发行面值' align='R' format='#,##0.####'></Header>
+		<Header key='N_AMOUNT_HD' text='每手股数' align='R' format='#,##0.####'></Header>
+		<Header key='N_PRICE_FCR' text='报价因子' align='R' format='#,##0.####'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<ListHeader id='sv_fixinterest' desc='债券基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='债券名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_AMOUNT_HD' text='每手数量' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_QUT_MOD' text='报价方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_PRICE_FCR' text='报价因子' align='R' format='#,##0.####'></Header>
+		<Header key='N_FV_ISSUE' text='发行面值' align='R' format='#,##0.####'></Header>
+		<Header key='N_PRICE_ISSUE' text='发行价格' align='R' format='#,##0.####'></Header>
+		<Header key='N_FV_IR' text='票面利率' align='R' format='#,##0.########'></Header>
+		<Header key='N_RATE' text='税率' align='R' format='#,##0.########'></Header>
+		<Header key='C_DV_AI_MOD' text='计息方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_AI_EXPR' text='计息公式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='付息频率' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_PI_MOD' text='付息公式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_AI_BEGIN' text='债券起息日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_END' text='债券截息日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_TO_LIST' text='债券发行日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='债券到期日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_SETT_ORG' text='结算机构' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_RIGHT' text='含权标志' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_END' text='含权日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_SEC_CODE_TRG' text='关联标的证券' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_financial' desc='理财产品'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='理财名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_ORG_CODE' text='所属机构' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<!-- BUG #128020 【紧急】理财品种信息-发行面值小数位数精度太低 meiyuan 2016.3.17 -->
+		<Header key='N_FV_ISSUE' text='发行面值' align='R' format='#,##0.############'></Header>
+		<Header key='N_AMOUNT_HD' text='每手股数' align='R' format='#,##0.####'></Header>
+		<Header key='N_PRICE_FCR' text='报价因子' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_PI_MOD' text='收益类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_QUT_MOD' text='投资方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_AI_MOD' text='计息方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_ORG_CODE' text='机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='N_FV_IR' text='票面利率' align='R' format='#,##0.########'></Header>
+		<Header key='N_RATE' text='税率' align='R' format='#,##0.########'></Header>
+		<Header key='C_DV_VAR_DUR' text='付息频率' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_AI_EXPR' text='计息公式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_SQAI_BEGIN' text='首期起息日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_BEGIN' text='起息日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_END' text='截息日期' align='L' format='yyyy-MM-dd'></Header>
+        <!-- (合并代码 STORY24925)add by dingshlau 20160405 STORY #28335 保险资管业务-非标（债权、信托）支持存款计息模式 -->
+		<Header key='C_DV_RTA' text='利率类型' align='L' format='' serviceId="IVocDataService" />
+		<Header key='N_SPREAD' text='利差' align='L' format='#,##0.####' />
+		<Header key='C_EXPR_CODE' text='利率代码' align='L' format='' />
+		<Header key='N_BLXS' text='比例系数' align='L' format='#,##0.####' />
+		<Header key='C_JCJG' text='检查间隔' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='N_UPPER_LIMIT' text='利率上限' align='L' format='#,##0.####'></Header>
+		<Header key='N_LOWER_LIMIT' text='利率下限' align='L' format='#,##0.####'></Header>		
+		<!-- end -->
+
+		<Header key='D_TO_LIST' text='成立时间' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='到期时间' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_certificate' desc='权证基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='权证名称' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DV_PI_MOD' text='权证类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_SEC_CODE_TRG' text='标的证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_FV_ISSUE' text='发行面值' align='R' format='#,##0.####'></Header>
+		<Header key='N_AMOUNT_HD' text='每手数量' align='R' format='#,##0.####'></Header>
+		<Header key='N_PRICE_FCR' text='报价因子' align='R' format='#,##0.####'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='到期日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DV_VAR_DUR' text='行权代码' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_AI_BEGIN' text='行权起始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_END' text='行权截止日期' align='L' format=''></Header>
+		<Header key='C_DV_QUT_MOD' text='行权方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_FV_IR' text='行权比例' align='R' format='#,##0.########'></Header>
+		<Header key='N_PRICE_ISSUE' text='行权价格' align='R' format='#,##0.########'></Header>
+		<Header key='N_RATE' text='结算价格' align='R' format='#,##0.########'></Header>
+		<Header key='C_DV_AI_MOD' text='行权结算方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_purchase' desc='回购基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='回购名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='回购期限' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_ISSUE' text='核算方式' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_DV_QUT_MOD' text='利率年化天数' align='R' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='N_AMOUNT_HD' text='每手数量' align='R' format='#,##0.####'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_lending' desc='同业拆借基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='拆借名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='拆借期限' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_ISSUE' text='核算方式' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_DV_QUT_MOD' text='利率年化天数' align='R' format=''></Header>
+		<Header key='C_SJSSZQ' text='实际所属证券' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='N_AMOUNT_HD' text='每手数量' align='R' format='#,##0.####'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_billinfo' desc='票据基本信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='票据号码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='票据名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_FV_ISSUE' text='票面金额' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_QUT_MOD' text='票据介质' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_PRICE_ISSUE' text='加计天数' align='R' format=''></Header>
+		<Header key='C_ORG_NAME' text='出票人' align='L' format=''></Header>
+		<Header key='N_AMOUNT_HD' text='拆分单位' align='R' format=''></Header>
+		<Header key='C_OPEN_ACC_NAME' text='承兑人行名' align='L' format=''></Header>
+		<Header key='C_OPEN_ACC_NO' text='承兑人行号' align='L' format=''></Header>
+		<Header key='C_SYS_CODE' text='大额支付号' align='L' format=''></Header>
+        <Header key='C_DV_ISSUE' text='发行类型' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_ASSURE' text='担保方式' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='D_TO_LIST' text='出票日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='到期日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 优先股计息信息  add by yuankai 2017.6.26 -->
+	<ListHeader id='sv_preStockInterest' desc='优先股计息信息'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format='' serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_SEC_CODE_TRG' text='标的证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='D_AI_BEGIN' text='计息起始日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_END' text='计息截止日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_FV_IR' text='票面利率' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATE' text='税率' align='R' format='#,##0.####'></Header>	
+		<Header key='C_DV_QUT_MOD' text='报价方式' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_AI_MOD' text='计息方式' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_AI_EXPR' text='计息公式' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='付息频率' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_PI_MOD' text='付息公式' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_ACCOUNT_CODE' text='核算类型' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_TOTAL_INCOME' text='累计股息' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_ATTEND_PROFIT' text='参与分红' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_EXCHGE_STOCK' text='转换成普通股' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DV_DELAY_PAY' text='延期支付' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' formate='yyyy-MM-dd'></Header>
+	</ListHeader>
+	
+	<!-- 债券每日利息  add by yuankai 2017.6.26 -->
+	<ListHeader id="sv_secmbylx" desc="债券每百元利息">
+		<Header key="C_SEC_CODE" text="证券代码" align="" format=""
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key="C_DV_QUT_MOD" text="报价方式" align="" format=""
+			serviceId="IVocDataService"></Header>
+		<Header key="D_INCOME" text="计息日期" align="L" format="yyyy-MM-dd"></Header>
+		<Header key="N_INCOME_DAYS" text="计息天数" align="R" format=""></Header>
+		<Header key="N_COUP_RATE" text="票面利率" align="R" format="#,##0.###############"></Header>
+		<Header key="N_REM_COR" text="剩余本金" align="R" format="#,##0.###############"></Header>
+		<Header key="N_INCOME_PT" text="税前计息利息" align="R" format="#,##0.###############"></Header>
+		<Header key="N_INCOME_AT" text="税后计息利息" align="R" format="#,##0.###############"></Header>
+		<Header key="N_INCOME_PT_DUE" text="税前付息利息" align="R" format="#,##0.###############"></Header>
+		<Header key="N_INCOME_AT_DUE" text="税后付息利息" align="R" format="#,##0.###############"></Header>
+		<Header key="C_UPDATE_BY" text="制作人" align="" format=""
+			serviceId="IUserDataService"></Header>
+		<Header key="C_UPDATE_TIME" text="制作时间" align="" format=""></Header>
+		<Header key="N_CHECK_STATE" text="审核状态" align="" format=""
+			serviceId="ICheckStateDataService"></Header>
+		<Header key="C_CHECK_BY" text="审核人" align="" format=""
+			serviceId="IUserDataService"></Header>
+		<Header key="C_CHECK_TIME" text="审核时间" align="" format=""></Header>
+	</ListHeader>
+	
+	<!-- 债券历史付息信息  add by yuankai 2017.6.26 -->
+	<ListHeader id='sv_bondpayinterest' desc='债券历史付息'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_COUP_RATE' text='票面利率' align='R' format='#,##0.###############'></Header>
+		<Header key='D_ADJ' text='调息日' align='L' format='yyyy-MM-dd'></Header>
+		<!-- BUG #128020 【紧急】理财品种信息-发行面值小数位数精度太低 meiyuan 2016.3.17   -->
+		<Header key='N_REM_COR' text='剩余本金' align='R' format='#,##0.############'></Header>
+		<Header key='N_REPAY_AMOUNT' text='偿还数量比例' align='R' format='#,##0.####'></Header>
+		<Header key='D_BEGIN' text='本期起息日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='本期截息日' align='L' format='yyyy-MM-dd'></Header>
+		<!-- edit tdf BUG #115588 [紧急]浮动利率债券没有清算出财汇资讯数据 20150715 --> 
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<!-- 计费证券信息  add by yuankai 2017.6.26 -->
+	<ListHeader id='sv_chargingSec' desc='计费证券信息 '>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_NAME' text='证券名称' align='L' format=''></Header>
+		<Header key='C_SFJT' text='计费证券' align='L' format=''
+	        serviceId='IVocDataService'></Header>
+	    <Header key="C_PORT_CODE" text="投资组合" align="L" format=""
+			serviceId="IPortDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+		<!-- 板块信息设置 开始 -->
+	<ListHeader id='sv_sectorChild_A' desc='版块设置 '>
+		<Header key='C_PLATE_CODE' text='板块代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_PLATE_NAME' text='板块名称' align='L' format=''></Header>
+	</ListHeader>
+
+	<ListHeader id='sv_sectorChild' desc='版块设置 '>
+		<Header key='C_PLATE_CODE' text='版块名称' align='L' format=''
+			serviceId="IPlateDataService"></Header>
+		<Header key='C_SEC_CODE' text='证券代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_NAME' text='证券名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format='true'
+			serviceId="IMktDataService"></Header>
+		<Header key='C_Capital' text='总股本' align='R' format=''></Header>
+		<Header key='C_Cir_Capital' text='流通股本' align='R' format=''></Header>
+		<Header key='D_BEGIN' text='起始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='终止日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+	</ListHeader>
+	<!-- 板块信息设置 结束 -->
+	
+	
+	<ListHeader id='sv_marketvalue' desc='证券行情信息 '>
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_MKT_TIME' text='行情时间' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>   <!-- 去掉证券代码转成名称的功能 -->
+		<Header key='C_SEC_CODE' text='证券名称' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='C_DV_PLAT' text='行情来源' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<!--STORY #35353 （嘉实QD需求）原4.0需求：10354 【QDV4嘉实2011年11月09日01_A】估值检查步骤中，增加对除权股票的行情状态的判断  pyk 2016-11-21-->	
+		<Header key='C_MKT_STATUS' text='行情状态' align='L' format=''></Header>	
+		<Header key='N_TD_AMOUNT' text='成交数量' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_TD_MONEY' text='成交金额' align='R'
+			format='#,##0.###############'></Header>
+        <Header key='N_AMOUNT_TOTAL' text='总成交金额' align='R'
+			format='#,##0.###############'></Header>
+        <Header key='N_AMOUNT_TOTAL' text='总成交数量' align='R'></Header>								
+		<Header key='N_PRICE_CLOSE' text='收盘价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_AVG' text='平均价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_NEW' text='最新价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_HIGH' text='最高价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_LOW' text='最低价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_OPEN' text='开盘价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_BUY' text='买一价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='N_PRICE_SELL' text='卖一价' align='R'
+			format='#,##0.0000'></Header>
+		<!-- add by liyanjun 2016-4-29 STORY29425个股期权行情获取收盘价 -->
+		<Header key='N_PRICE_SETT' text='结算价' align='R'
+			format='#,##0.0000'></Header>
+		<Header key='C_HQZT_CODE' text='行情状态' align='R'
+			format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	
+	<ListHeader id='sv_outmarketvalue' desc='场外行情信息'>
+		<Header key='D_PUB' text='公告日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_MKT' text='净值日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>   <!-- 去掉证券代码转成名称的功能 -->
+		<Header key='C_SEC_CODE' text='证券名称' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_PRICE_CLOSE' text='净值/收益' align='R'
+			format='#,##0.###############'></Header>
+         	<!-- ADD BY ZXL 20130902 -->
+		<Header key='C_DV_PLAT' text='行情来源' align='L' format='' serviceId='IVocDataService'></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<!-- add by wangpeixu 20161105 -->	
+		<Header key='C_HQZT_CODE' text='行情状态' align='R'
+		format='' serviceId="IVocDataService"></Header>
+		<!-- ADD BY ZXL 20130902 -->
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	
+	<ListHeader id='sv_exratepriceadmin' desc='汇率资料'>
+		<!-- tanwenjie 1774 2011.04.25-->
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_MKT_TIME' text='行情时间' align='L' format=''></Header>
+		<!-- STORY #32163 QDII汇率数据接口优化 添加行情来源列头展示 xiaozhilong 20160719-->
+		<Header key='C_DV_PLAT' text='行情来源' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='C_SEC_CODE' text='货币对' align='L' format=''
+			serviceId="ICuryPairDataService"></Header>
+		<Header key='C_PORT_CODE' text='投资组合' align='L' format=''
+			serviceId="IPortDataService"></Header>	
+		<Header key='N_PRICE_NEW' text='最新价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_LOW' text='最低价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_HIGH' text='最高价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_OPEN' text='开盘价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_AVG' text='中间价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_CLOSE' text='收盘价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_BUY' text='买入报价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_SELL' text='卖出报价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	
+	<!-- 利率行情  zhaungyuchen 2011-2-23-->
+	<ListHeader id='sv_depositinterest' desc='利率行情 '>
+		<Header key='D_MKT' text='调息日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>   <!-- 去掉证券代码转成名称的功能 -->
+		<Header key='C_SEC_CODE' text='证券名称' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_PRICE_NEW' text='利率' align='R'
+			format='#,##0.###############'></Header>
+		<!-- add by wangpeixu 20161105 -->	
+		<Header key='C_HQZT_CODE' text='行情状态' align='R'
+		format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	
+	<!-- 远期外汇行情 -->
+	<ListHeader id='sv_fwmktvalue' desc='远期外汇行情'>
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_MKT_TIME' text='行情时间' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='货币对' align='L' format='true'
+			serviceId="ICuryPairDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='品种期限' align='L' format='' serviceId="IVocDataService"></Header>
+		<Header key='D_SPOT' text='即期日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_FW' text='远期日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_PRICE_BUY' text='买入价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_SELL' text='卖出价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_POINT_BUY' text='买入点数' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_POINT_SELL' text='卖出点数' align='R'
+			format='#,##0.###############'></Header>
+		<!-- add by wangpeixu 20161105 -->	
+		<Header key='C_HQZT_CODE' text='行情状态' align='R'
+		format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='C_DATA_IDF' text='数据来源' align="L" format='' serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 指数行情资料 -->
+	<ListHeader id='sv_indexmp' desc='指数行情资料 '>
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_MKT_TIME' text='行情时间' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format='' serviceId="IIndexInfoDataService"></Header>
+		<Header key='C_DV_PLAT' text='行情来源' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='N_PRICE_CLOSE' text='收盘价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_AVG' text='平均价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_NEW' text='最新价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_HIGH' text='最高价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_LOW' text='最低价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_OPEN' text='开盘价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_BUY' text='买一价' align='R'
+			format='#,##0.###############'></Header>
+		<Header key='N_PRICE_SELL' text='卖一价' align='R'
+			format='#,##0.###############'></Header>
+		<!-- add by wangpeixu 20161105 -->	
+		<Header key='C_HQZT_CODE' text='行情状态' align='R'
+			format='' serviceId="IVocDataService"></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- ETF股票篮子 -->
+	<ListHeader id='sv_etfgpbakt' desc='ETF股票篮'>
+		<Header key='D_TRADE' text='交易日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_TRADE_CODE' text='基金代码' align='L' format=''></Header>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''
+			></Header><!-- serviceId="ISecBaseInfoDataService" -->
+		<Header key='C_SEC_NAME' text='证券名称' align='L' format=''></Header>
+		<Header key='C_DC_CODE' text='币种代码' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_MKT_CODE' text='成分股市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='N_AMOUNT' text='证券数量' align='R' format='#,##0.####'></Header>
+		<Header key='C_REP_MARK' text='替代标志' align='L' format=''></Header>
+		<Header key='N_RATIO' text='溢价比例' align='R' format='#,##0.###############'></Header>
+		<Header key='N_SUB_MONEY' text='申购替代金额' align='R' format='#,##0.####'></Header>
+		<Header key='N_REDEM_MONEY' text='赎回替代金额' align='R' format='#,##0.####'></Header>
+		<Header key='C_DC_CODE_REPL' text='替代币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+	</ListHeader>
+	<!-- 回购收益行情 -->
+	<ListHeader id='sv_counterrate' desc='回购收益行情'>
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_BEGIN' text='启用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='停用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_DURATION' text='回购期限' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATE' text='回购利率' align='R' format='#,##0.####'></Header>
+		<Header key='C_BIZ_TYPE' text='业务类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 证券回购收益行情 -->
+	<ListHeader id='sv_counterratesec' desc='证券回购收益行情'>
+		<Header key='C_SEC_CODE' text='证券代码' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='D_MKT' text='行情日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_BEGIN' text='启用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_END' text='停用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_DURATION' text='回购期限' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATE' text='回购利率' align='R' format='#,##0.####'></Header>
+		<Header key='C_BIZ_TYPE' text='业务类型' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 现货品种信息 -->
+	<ListHeader id='sv_spot' desc='现货品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='现货代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_NAME' text='现货名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='N_FV_ISSUE' text='交易单位' align='R' format='#,##0.########'></Header>
+		<Header key='N_AMOUNT_HD' text='报价单位' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATE' text='保证金比例' align='R' format='#,##0.########'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 期货品种信息 -->
+	<ListHeader id='sv_future' desc='期货品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='期货代码' align='L' format=''
+			showConvert="false"></Header>
+		<Header key='C_SEC_NAME' text='期货名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_SEC_CODE_TRG' text='合约标的' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_FV_ISSUE' text='合约乘数' align='R' format='#,##0.########'></Header>
+		<Header key='N_RATE' text='保证金比例' align='R' format='#,##0.########'></Header>
+		<Header key='N_PRICE_ISSUE' text='固定保证金' align='R' format='#,##0.########'></Header>
+		<Header key='D_AI_END' text='最后交易日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_BEGIN' text='交割日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DV_QUT_MOD' text='交割方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<ListHeader id='sv_qhbzj' desc='期货保证金调整'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>
+		<Header key='D_START' text='启用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_RATE' text='保证金比例 (%)' align='R' format='#,##0.########'></Header>
+		<Header key='N_PRICE_ISSUE' text='固定保证金' align='R' format='#,##0.########'></Header>
+	</ListHeader>
+	<!-- 期权品种信息 -->
+	<ListHeader id='sv_option' desc='期权品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='期权代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='期权名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='期权品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='期权类型' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_SEC_CODE_TRG' text='合约标的' align='L' format=''></Header>
+		<Header key='N_FV_ISSUE' text='合约乘数' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATE' text='保证金比例' align='R' format='#,##0.####'></Header>
+		<Header key='N_RATIO' text='保证金比例1' align='R' format='#,##0.####'></Header>
+		<Header key='N_FV_IR' text='固定保证金' align='R' format='#,##0.####'></Header>
+		<Header key='N_AMOUNT_HD' text='合约单位' align='R' format='#,##0.####'></Header>
+		<Header key='C_DV_AI_MOD' text='行权方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_QUT_MOD' text='交割方式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_PRICE_ISSUE' text='行权价格' align='R' format='#,##0.####'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_BEGIN' text='行权起始日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_AI_END' text='行权截止日' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 远期品种信息 -->
+	<ListHeader id='sv_forward' desc='远期品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='远期代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='远期名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='远期品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_SEC_CODE_TRG' text='标的证券' align='L' format=''></Header>
+		<Header key='C_DV_VAR_DUR' text='期限' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='N_RATE' text='保证金比例' align='R' format=''></Header>
+		<Header key='N_FV_IR' text='期货保证金' align='R' format=''></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 利率互换品种 -->
+	<ListHeader id='sv_secswap' desc='利率互换品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='互换代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='互换名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='D_TO_LIST' text='开始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 互换品种信息 -->
+	<ListHeader id='interestRate' desc='利率品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='利率代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='利率名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_ORG_CODE' text='机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='N_RATE' text='税率' align='R' format='#,##0.########'></Header>
+		<Header key='C_DV_VAR_DUR' text='存款期限' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_RZRQ_MARK' text='融资融券标示' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_TO_LIST' text='开始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 外汇交易品种 -->
+	<ListHeader id='sv_forextradecat' desc='外汇交易品种'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_CODE_TRG' text='货币对' align='L' format=''
+			serviceId="ICuryPairDataService"></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='上市名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='期限' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 综合证券信息 -->
+	<ListHeader id='sv_sec' desc='证券信息 '>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='上市代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='证券名称' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='交易币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='N_FV_ISSUE' text='发行面值' align='R' format='#,##0.########'></Header>
+		<Header key='N_AMOUNT_HD' text='每手数量' align='R' format='#,##0.########'></Header>
+		<Header key='N_PRICE_FCR' text='报价因子' align='R' format='#,##0.########'></Header>
+		<Header key='D_TO_LIST' text='上市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='退市日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- zhuangyuchen 2011-3-2 根据需求修改 -->
+	<ListHeader id='sv_depositInfo' desc='存放品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_VAR_CODE' text='证券品种' align='L' format=''
+			serviceId="ISecVarDataService"></Header>
+		<Header key='C_SEC_MKT_CODE' text='存放代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='存放名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_DV_VAR_DUR' text='付息频率' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_DV_AI_MOD' text='计息方式' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='C_DV_AI_EXPR' text='计息公式' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_DV_ISSUE' text='核算方式' align='L' format=''
+			serviceId='IVocDataService'></Header>
+		<Header key='N_AMOUNT_HD' text='利率年化天数' align='R' format='#,##0.########'></Header>
+		<Header key='C_ORG_CODE' text='机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='C_DV_QUT_MOD' text='品种期限' align='L' format=''
+		    serviceId="IVocDataService"></Header>
+		<Header key='C_SJSSZQ' text='实际所属证券' align='L' format=''></Header>
+		<Header key='C_BANK_HEAD' text='银行总行' align='L' format='' serviceId="IOrgDataService"></Header>
+		<Header key='C_BANK_BRANCH' text='银行分行' align='L' format='' serviceId="IOrgDataService"></Header>
+		<Header key='D_TO_LIST' text='开始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+	<!-- 期权保证金 -->
+	<ListHeader id='sv_qqbzjtz' desc='期权保证金调整'>
+		<Header key='C_SEC_CODE' text='交易证券' align='L' format=''></Header>
+		<Header key='D_START' text='启用日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='N_RATE' text='保证金比例 (%)' align='R' format='#,##0.########'></Header>
+		<Header key='N_RATIO' text='保证金比例1 (%)' align='R' format='#,##0.########'></Header>
+		<Header key='N_PRICE_ISSUE' text='固定保证金' align='R' format='#,##0.########'></Header>
+	</ListHeader>
+	<!-- 国债期货债券转换 -->
+	<ListHeader id="sv_future_cfactor" desc="期货结算债券信息">
+<!--		<Header key='C_CONTRACT_CODE' text='合约代码' align='L' format=''-->
+<!--			serviceId="ISecBaseInfoDataService"></Header>-->
+		<Header key='C_CONTRACT_CODE' text='合约代码' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_SEC_CODE' text='债券代码' align='L' format=''
+			serviceId="ISecBaseInfoDataService"></Header>
+		<Header key='N_CONVERT_FACTOR' text='转换因子' align='R' format='#,##0.######'></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>	
+	</ListHeader>
+	<ListHeader id='sv_interestRate' desc='利率品种信息'>
+		<Header key='C_SEC_CODE' text='证券内码' align='L' format=''></Header>
+		<Header key='C_SEC_ISIN_CODE' text='ISIN代码' align='L' format=''></Header>
+		<Header key='C_SEC_MKT_CODE' text='利率代码' align='L' format=''></Header>
+		<Header key='C_SEC_NAME' text='利率名称' align='L' format=''></Header>
+		<Header key='C_MKT_CODE' text='交易市场' align='L' format=''
+			serviceId="IMktDataService"></Header>
+		<Header key='C_DC_CODE' text='币种' align='L' format=''
+			serviceId="IDCDataService"></Header>
+		<Header key='C_ORG_CODE' text='机构名称' align='L' format=''
+			serviceId="IOrgDataService"></Header>
+		<Header key='N_RATE' text='税率' align='R' format='#,##0.########'></Header>
+		<Header key='C_DV_VAR_DUR' text='存款期限' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='C_RZRQ_MARK' text='融资融券标示' align='L' format=''
+			serviceId="IVocDataService"></Header>
+		<Header key='D_TO_LIST' text='开始日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='D_OFF_LIST' text='结束日期' align='L' format='yyyy-MM-dd'></Header>
+		<Header key='C_DESC' text='描述' align='L' format=''></Header>
+		<Header key='N_CHECK_STATE' text='审核状态' align='L' format=''
+			serviceId="ICheckStateDataService"></Header>
+		<Header key='C_UPDATE_BY' text='制作人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_UPDATE_TIME' text='制作时间' align='L' format=''></Header>
+		<Header key='C_CHECK_BY' text='审核人' align='L' format=''
+			serviceId="IUserDataService"></Header>
+		<Header key='C_CHECK_TIME' text='审核时间' align='L' format=''></Header>
+	</ListHeader>
+</ListHeaders>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pojos>
+<!-- ADD BY chenbo 公共信息处理 -->
+	<pojo id="SysInitItemBean" class="com.yss.ams.sec.information.support.modules.pub.pojo.SysInitItemBean"/>
+<!-- 指数基本信息 -->
+	<pojo id="IndexInfo" class="com.yss.ams.sec.information.support.modules.sv.indexinfo.pojo.IndexInfo"/>
+<!-- 指数成分券信息 -->
+	<pojo id="IndexStock" class="com.yss.ams.sec.information.support.modules.sv.indexstock.pojo.IndexStock"/>
+<!-- 证券代码转换 -->
+	<pojo id="SecTransfer" class="com.yss.ams.sec.information.support.modules.mp.secTransfer.pojo.SecTransfer"/>
+<!--证券回售基本信息 -->
+	<pojo id="SecSoldBack" class="com.yss.ams.sec.information.support.modules.sv.secSoldBack.pojo.SecSoldBack"/>
+
+	<pojo id="SecEqu" class="com.yss.ams.sec.information.support.modules.mp.secequ.pojo.SecEqu"/>
+	<pojo id="CfSec" class="com.yss.ams.sec.information.support.modules.sv.base.pojo.CfSec"/>
+	<pojo id="SecBase" class="com.yss.ams.sec.information.support.modules.sv.base.pojo.SecBase"/>
+    <!--证券代码转换选项  -->
+    <pojo id="SecTransferPara" class="com.yss.ams.sec.information.support.modules.mp.secTransferPara.pojo.SecTransferPara"/>
+	<!-- 停牌功能选项 -->
+	<pojo id="SuspendedCond" class="com.yss.ams.sec.information.support.modules.sv.suspendedcond.pojo.SuspendedCond"/>
+	<!-- 优先股计息信息 -->
+	<pojo id="PreStockInterest" class="com.yss.ams.sec.information.support.modules.mp.preStockInterest.pojo.PreStockInterest"/>
+	<!-- 债券每日利息 -->
+	<pojo id="FiIncome" class="com.yss.ams.sec.information.support.modules.sv.fiincome.pojo.FiIncome"/>
+	<!-- 债券历史付息信息 -->
+	<pojo id="FiPay" class="com.yss.ams.sec.information.support.modules.sv.fipay.pojo.FiPay"/>
+	<!-- 计费证券信息 -->
+	<pojo id="SecBaseJf" class="com.yss.ams.sec.information.support.modules.sv.secbasejf.pojo.SecBaseJf"/>
+	<!-- 板块信息设置 结束 -->
+	<pojo id="Plate"
+		class="com.yss.ams.sec.information.support.modules.plateset.plate.pojo.Plate" />
+	<pojo id="PlateSub"
+		class="com.yss.ams.sec.information.support.modules.plateset.platesub.pojo.PlateSub" />
+	<pojo id="PlateSubExtend"
+		class="com.yss.ams.sec.information.support.modules.plateset.platesub.pojo.PlateSubExtend" />
+	<!-- 板块信息设置 结束 -->
+	
+	<!-- 行情资料pojo -->
+	<pojo id="SecMkt" class="com.yss.ams.sec.information.support.modules.mp.secmkt.pojo.SecMkt"/>
+	
+	<!-- 远期外汇行情 -->
+	<pojo id="FwMktValue" class="com.yss.ams.sec.information.support.modules.mp.FwMktValue.pojo.FwMktValue"/>
+	<!-- ETF股票篮子 -->
+	<pojo id="EtfSkep" class="com.yss.ams.sec.information.support.modules.ac.etfskep.pojo.EtfSkep"/>
+	<!-- 回购收益行情 -->
+	<pojo id="CounterRate" class="com.yss.ams.sec.information.support.modules.mp.hggthq.pojo.CounterRate"/>
+	<!-- 期货保证金 -->
+	<pojo id="SecBaseQhbzj" class="com.yss.ams.sec.information.support.modules.sv.base.pojo.SecBaseQhbzj"/>
+	<!-- 期权保证金 -->
+	<pojo id ="SecBaseQqbzj" class="com.yss.ams.sec.information.support.modules.sv.base.pojo.SecBaseQqbzj"/>
+	<!-- 国债期货债券转换因子 -->
+	<pojo id="FutureFactor" class="com.yss.ams.sec.information.support.modules.sv.base.pojo.FutureFactor"/>
+</pojos> 

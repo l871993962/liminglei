@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品信息 -->
+<product code="Secinfo" name="资讯信息">
+	<module_1 code="SECINFO" name="证券资讯信息" >
+	</module_1>
+</product>

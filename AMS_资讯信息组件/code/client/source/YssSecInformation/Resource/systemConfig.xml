@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 证券行情资料 -->
+  <Config funCode="sv_marketvalue" funName="证券行情"
+          listFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_ZQ_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_ZQ_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.Mp.SecMktMap.Service.ISecMktService" serviceDll="YssSecInformation.Support.dll"
+          dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecMktMap.Pojo.SecMkt" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Mp.SecMktMap.Pojo.Cls_SEC_MKT" dataPojoClass="" dataPojoDll=""
+          dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <!-- 场外净值行情 -->
+  <Config funCode="sv_outmarketvalue" funName="场外行情"
+          listFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_CW_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_CW_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.Mp.SecMktMap.Service.IOutMktService" serviceDll="YssSecInformation.Support.dll"
+          dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecMktMap.Pojo.SecMkt" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Mp.SecMktMap.Pojo.Cls_SEC_MKT" dataPojoClass="" dataPojoDll=""
+          dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <!-- 汇率行情资料 -->
+  <Config funCode="sv_exratepriceadmin" funName="汇率资料"
+          listFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_HL_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_HL_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.Mp.SecMktMap.Service.IHlMktService" serviceDll="YssSecInformation.Support.dll"
+          dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecMktMap.Pojo.SecMkt" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Mp.SecMktMap.Pojo.Cls_SEC_MKT" dataPojoClass="" dataPojoDll=""
+          dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <!-- 利率行情资料 -->
+  <Config funCode="sv_depositinterest" funName="利率行情"
+          listFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_LL_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Mp.SecMktMap.Form.Frm_SEC_MKT_LL_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.Mp.SecMktMap.Service.ICkMktService" serviceDll="YssSecInformation.Support.dll"
+          dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecMktMap.Pojo.SecMkt" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Mp.SecMktMap.Pojo.Cls_SEC_MKT" dataPojoClass="" dataPojoDll=""
+          dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <Config funCode="sv_stockinfo" funName=" 股票基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_GP_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_GP_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseGpService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE"
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME">
+    <RelationChildren>
+      <RelationChild FunCode="sv_securitycirculate"></RelationChild>
+      <RelationChild FunCode="sv_dividend"></RelationChild>
+      <RelationChild FunCode="sv_secdist"></RelationChild>
+      <RelationChild FunCode="sv_securityPublish"></RelationChild>
+      <RelationChild FunCode="sv_secTrans"></RelationChild>
+      <RelationChild FunCode="sv_preStockInterest"></RelationChild>
+      <RelationChild FunCode="sv_bondpayinterest"></RelationChild>
+      <RelationChild FunCode="sv_secmbylx"></RelationChild>
+    </RelationChildren>
+  </Config>
+
+  <Config funCode="sv_fixinterest" funName="债券基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_ZQ_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_ZQ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseZqService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE"
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" >
+    <RelationChildren>
+      <RelationChild FunCode="sv_bondpayinterest"></RelationChild>
+      <RelationChild FunCode="sv_secmbylx"></RelationChild>
+      <RelationChild FunCode="sv_securitycirculate"></RelationChild>
+      <RelationChild FunCode="sv_dividend"></RelationChild>
+      <RelationChild FunCode="sv_secdist"></RelationChild>
+      <RelationChild FunCode="sv_securityPublish"></RelationChild>
+      <RelationChild FunCode="sv_securityPrePublish"></RelationChild>
+      <RelationChild FunCode="sv_secSoldBack"></RelationChild>
+      <RelationChild FunCode="sv_secTransfer"></RelationChild>
+    </RelationChildren>
+  </Config>
+  <Config funCode="sv_financial" funName=" 理财产品信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LC_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LC_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseLcService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE"
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME">
+    <RelationChildren>
+      <RelationChild FunCode="sv_bondpayinterest"></RelationChild>
+      <RelationChild FunCode="sv_secmbylx"></RelationChild>
+      <RelationChild FunCode="sv_securitycirculate"></RelationChild>
+      <RelationChild FunCode="sv_dividend"></RelationChild>
+      <RelationChild FunCode="sv_secdist"></RelationChild>
+      <RelationChild FunCode="sv_securityPublish"></RelationChild>
+      <RelationChild FunCode="sv_portSecMap"></RelationChild>
+    </RelationChildren>
+  </Config>
+  <Config funCode="sv_certificate" funName="权证信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QZ_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QZ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseQzService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE"
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" >
+    <RelationChildren>
+      <RelationChild FunCode="sv_securitycirculate"></RelationChild>
+      <RelationChild FunCode="sv_dividend"></RelationChild>
+      <RelationChild FunCode="sv_secdist"></RelationChild>
+    </RelationChildren>
+  </Config>
+  <Config funCode="sv_purchase" funName="回购基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_HG_L" listFormDll="YssSecInformation.dll" 
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_HG_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseHgService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" 
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" 
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_lending" funName="同业拆借基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_CJ_L" listFormDll="YssSecInformation.dll" 
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_CJ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseCjService" 
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" 
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" 
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_depositInfo" funName="存放品种信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_CK_L" listFormDll="YssSecInformation.dll" 
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_CK_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseCkService" 
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" 
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE"
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_NAME" />
+  <Config funCode="sv_billinfo" funName=" 票据基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_PJ_L" listFormDll="YssSecInformation.dll" 
+          setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_PJ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBasePjService" 
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" 
+          PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" 
+          cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+
+  <!-- STORY #42948 资讯信息管理组件化拆分_前台配置信息 -->
+  <Config funCode="sv_spot" funName="现货信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_XH_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_XH_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseXhService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_future" funName="期货信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QH_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QH_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseQhService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_option" funName="期权信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QQ_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QQ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseQqService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_qhbzj" funName="期货保证金调整" listFormClass="" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QHBZJ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseQhbzjService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBaseQhbzj" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_qqbzjtz" funName="期权保证金调整" listFormClass="" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QQBZJ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseQhbzjService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBaseQqbzj" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_future_cfactor" funName="期货结算债券转换信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QHZH_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_QHZH_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.IFutureFactorService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Sv.Pojo.FutureFactor" pojoDll="YssSecInformation.Support.dll" />
+  <Config funCode="sv_forward" funName="远期品种信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_YQ_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_YQ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseYqService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_secswap" funName="利率互换品种信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LLHH_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LLHH_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseLLHHService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_interestRate" funName="利率品种信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LL_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_LL_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseLlService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_NAME" />
+  <Config funCode="sv_forextradecat" funName="外汇交易品种信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_WH_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_WH_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseWhService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME" />
+  <Config funCode="sv_sec" funName="证券信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_ZHZQ_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_GP_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseZhzqService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="YssSecInformation.Support.Sv.Service.ISecBaseInfoDataService" dataServiceDll="YssSecInformation.Support.dll" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoClass="YssSecInformation.Support.Pojo.Sec.SecBase" dataPojoDll="YssSecInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_SEC_CODE" cboDispName="C_SEC_NAME" cboDispColumn="C_SEC_CODE~C_SEC_NAME~C_SEC_MKT_CODE" />
+  <Config funCode="sv_preStockInterest" funName="优先股计息信息" listFormClass="YssSecInformation.Mp.PreStock.Form.Frm_SEC_EQU_YXG_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.PreStock.Form.Frm_SEC_EQU_YXG_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.PreStock.Service.IPreStockInterestService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.PreStock.Pojo.PreStockInterest" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_secmbylx" funName="债券每日利息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_MRLX_ZQ_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_MRLX_ZQ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.IFiIncomeService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Sv.Pojo.FiIncome" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Sv.Pojo.Cls_SEC_ZQLX" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_bondpayinterest" funName="历史付息信息" listFormClass="YssSecInformation.Sv.Form.Frm_FI_PAY_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_FI_PAY_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.IFiPayService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Sv.Pojo.FiPay" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_chargingSec" funName="计费证券信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_JF_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_JF_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecBaseJfService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pojo.Sec.SecBaseJf" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+  <!-- 板块信息设置  开始 -->
+  <Config funCode="sv_sectorChild" funName="板块信息" listFormClass="YssSecInformation.PlateSet.plateSub.Form.Frm_PLATE_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.PlateSet.plateSub.Form.Frm_PLATE_IV_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.PlateSet.plateSub.Service.IPlateSubService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.PlateSet.plateSub.Pojo.PlateSubExtend"
+          pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="" dataPojoDll=""
+          dataClass="YssSecInformation.Support.PlateSet.plateSub.Pojo.PlateSub" dataClassDll="YssSecInformation.Support.dll"
+          cboDispValue="C_PLATE_CODE" cboDispName="C_PLATE_NAME" cboDispColumn="C_PLATE_CODE~C_PLATE_NAME" />
+  <Config funCode="sv_sectorChild_A" funName="板块信息" listFormClass="YssSecInformation.PlateSet.plateSub.Form.Frm_PLATE_L" listFormDll="YssSecInformation.dll"
+          setFormClass="YssSecInformation.PlateSet.plate.Form.Frm_PLATE_S" setFormDll="YssSecInformation.dll"
+          serviceClass="YssSecInformation.Support.plate.Service.IPlate_AService"
+          serviceDll="YssSecInformation.Support.dll" dataServiceClass="YssSecInformation.Support.plate.Service.IPlateDataService" dataServiceDll="YssSecInformation.Support.dll" pojoClass="YssSecInformation.Support.PlateSet.plate.Pojo.PlateATreeView"
+          pojoDll="YssSecInformation.Support.dll"
+          PojoClass-left="" dataPojoClass="YssSecInformation.Support.PlateSet.plate.Pojo.PlateATreeView" dataPojoDll="YssSecInformation.Support.dll" dataClass="" dataClassDll="" cboDispValue="C_PLATE_CODE"
+          cboDispName="C_PLATE_NAME" cboDispColumn="C_PLATE_CODE~C_PLATE_NAME" />
+  <!-- 板块信息设置  结束 -->
+
+  <Config funCode="sv_fwmktvalue" funName="远期外汇行情" listFormClass="YssSecInformation.Mp.FwMkt.Form.Frm_SEC_MKT_FQ_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.FwMkt.Form.Frm_SEC_MKT_FQ_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.FwMkt.Service.IFwMktValueService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.FwMkt.Pojo.FwMktValue" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.FwMkt.Pojo.Cls_SEC_FQ" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_indexmp" funName="指数行情资料" listFormClass="YssSecInformation.Mp.Indexmp.Form.Frm_SEC_MKT_INDEX_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.Indexmp.Form.Frm_SEC_MKT_INDEX_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.Indexmp.Service.IIndexMpService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecMktMap.Pojo.SecMkt" pojoDll="YssSecInformation.Support.dll" />
+  <Config funCode="sv_etfgpbakt" funName="ETF股票篮子" listFormClass="YssSecInformation.Ac.Etfskep.Form.Frm_ETF_GP_BAKT_L" listFormDll="YssSecInformation.dll" setFormClass="" setFormDll="" serviceClass="YssSecInformation.Support.Ac.Etfskep.Service.IEtfSkepService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Ac.Etfskep.Pojo.EtfSkep" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_counterrate" funName="回购收益行情" listFormClass="YssSecInformation.Mp.Hggthq.Form.Frm_SEC_LL_GT_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.Hggthq.Form.Frm_SEC_LL_GT_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.Hggthq.Service.ICounterRateService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.Hggthq.Pojo.CounterRate" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_counterratesec" funName="证券回购收益行情" listFormClass="YssSecInformation.Mp.Hggthqsec.Form.Frm_SEC_LL_GTSEC_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.Hggthqsec.Form.Frm_SEC_LL_GTSEC_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.Hggthqsec.Service.ICounterRateSecService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.Hggthq.Pojo.CounterRate" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  
+  <Config funCode="sv_dividend" funName="对价派息" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_PX_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_PX_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecPxService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.SecEq.Pojo.Cls_SEC_EQU" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_secdist" funName="证券送配" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_SP_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_SP_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecEquService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.SecEq.Pojo.Cls_SEC_EQU" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_securitycirculate" funName="证券流通" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_LT_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_LT_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecLtService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.SecEq.Pojo.Cls_SEC_EQU" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_securityPublish" funName="证券发行" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_FX_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_FX_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecFxService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.SecEq.Pojo.Cls_SEC_EQU" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_securityPrePublish" funName="证券预发行信息" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_YFX_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_YFX_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecPrePubService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" />
+  <Config funCode="sv_securitymatches" funName="证券配对信息" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_PD_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_EQU_PD_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecEquPdService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecEqu" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Mp.SecEq.Pojo.Cls_SEC_EQU" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_secTransfer_para" funName="证券代码转换选项" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_TRANSFER_PARA" listFormDll="YssSecInformation.dll" setFormClass="" setFormDll="" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecTransferParaService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecTransferPara" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_secTransfer" funName="证券代码转换" listFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_TRANSFER_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Mp.SecEq.Form.Frm_SEC_TRANSFER_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISecTransferService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SecTransfer" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_secSoldBack" funName="证券回售基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_ZQHS_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_SEC_BASE_ZQHS_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.ISecSoldBackService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Sv.Pojo.SecSoldBack" pojoDll="YssSecInformation.Support.dll" PojoClass-left="YssSecInformation.Support.Sv.Pojo.SecSoldBack" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" />
+  <Config funCode="sv_indexinfo" funName="指数基本信息" listFormClass="YssSecInformation.Sv.Form.Frm_INDEX_INFO_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_INDEX_INFO_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.IIndexInfoService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="YssSecInformation.Support.Sv.Service.IIndexInfoDataService" dataServiceDll="YssSecInformation.Support.dll" pojoClass="YssSecInformation.Support.Sv.Pojo.IndexInfo" pojoDll="YssSecInformation.Support.dll" dataPojoClass="YssSecInformation.Support.Sv.Pojo.IndexInfo" dataPojoDll="YssSecInformation.Support.dll" cboDispValue="C_INDEX_CODE" cboDispName="C_INDEX_NAME" cboDispColumn="C_INDEX_CODE~C_INDEX_NAME" />
+  <Config funCode="sv_indexStock" funName="指数成分券信息" listFormClass="YssSecInformation.Sv.Form.Frm_INDEX_STOCK_L" listFormDll="YssSecInformation.dll" setFormClass="YssSecInformation.Sv.Form.Frm_INDEX_STOCK_S" setFormDll="YssSecInformation.dll" serviceClass="YssSecInformation.Support.Sv.Service.IIndexStockService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Sv.Pojo.IndexStock" pojoDll="YssSecInformation.Support.dll" dataPojoClass="" dataPojoDll="YssSecInformation.Support.dll" cboDispValue="" cboDispName="" cboDispColumn="" />
+  <Config funCode="sv_suspended_para" funName="停牌信息功能选项" listFormClass="" listFormDll="" setFormClass="" setFormDll="" serviceClass="YssSecInformation.Support.Mp.SecEq.Service.ISuspendedCondService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Mp.SecEq.Pojo.SuspendedCond" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+ <!--公共信息处理 -->
+  <Config funCode="sv_sysInit" funName="系统初始化" listFormClass="YssSecInformation.Pub.Form.Frm_PubClr" listFormDll="YssSecInformation.dll" setFormClass="" setFormDll="" serviceClass="YssSecInformation.Support.Pub.Service.IAssetStatsCtlInitService" serviceDll="YssSecInformation.Support.dll" dataServiceClass="" dataServiceDll="" pojoClass="YssSecInformation.Support.Pub.Pojo.SysInitItemBean" pojoDll="YssSecInformation.Support.dll" PojoClass-left="" dataPojoClass="" dataPojoDll="" dataClass="" dataClassDll="" cboDispValue="" cboDispName="" cboDispColumn="" />
+
+</SystemConfig>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function-configuration>
+	
+	<!-- 用户函数配置  请在这里定制您自己的函数-->
+
+	<bean class="com.yss.framework.tools.function.IKFunctions">
+		<function name="DATE" method="DATE">
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name="ROUND" method="ROUND">
+			<parameter-type>double</parameter-type>
+			<parameter-type>int</parameter-type>
+		</function>
+		<function name="STRING" method="STRING">
+			<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="BOOLEAN" method="BOOLEAN">
+			<parameter-type>boolean</parameter-type>
+		</function>		
+		<function name = "DATEYEAR" method = "DATEYEAR">
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "DATEMONTH" method = "DATEMONTH">
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "DATEDAY" method = "DATEDAY">
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "LEAPYEARS" method = "LEAPYEARS">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "LSPILTLEAPYEAR" method = "LSPILTLEAPYEAR">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "DATEDIFF" method = "DATEDIFF">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name = "DATEDIFF_30_360" method = "DATEDIFF_30_360">
+			<parameter-type>java.util.Date</parameter-type>
+			<parameter-type>java.util.Date</parameter-type>
+		</function>
+		<function name="YSSD_MUL" method="YSSD_MUL">
+			<parameter-type>double</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+		<function name="YSSD_DIV" method="YSSD_DIV">
+			<parameter-type>double</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+		<function name="YSSD_MULD" method="YSSD_MULD">
+			<parameter-type>double</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+		<function name="YSSD_DIVD" method="YSSD_DIVD">
+			<parameter-type>double</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+		<function name="YSSD_MULBD" method="YSSD_MULBD">
+			<parameter-type>java.math.BigDecimal</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+		<function name="YSSD_DIVBD" method="YSSD_DIVBD">
+			<parameter-type>java.math.BigDecimal</parameter-type>
+			<parameter-type>double</parameter-type>
+		</function>
+	</bean>
+
+	<!-- 
+	<bean class="test.Test">
+		<function name="add" method="add">
+				<parameter-type>java.lang.String</parameter-type>
+				<parameter-type>java.lang.String</parameter-type>
+		</function>
+		<function name="addint" method="addint">
+				<parameter-type>int</parameter-type>
+				<parameter-type>int</parameter-type>
+		</function>
+	</bean>
+ -->
+</function-configuration>

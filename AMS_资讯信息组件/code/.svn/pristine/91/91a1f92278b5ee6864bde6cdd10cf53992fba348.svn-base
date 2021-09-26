@@ -1,0 +1,1007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36408C53-83B4-46B1-A0B5-C9F4F813EE46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YssSecInformation</RootNamespace>
+    <AssemblyName>YssSecInformation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\YssTechnology.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar, Version=9.0.5.2, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\DevComponents.DotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="KStar, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\KStar.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=d1f6c29d82026796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FAST\client\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ac\Etfskep\Form\Frm_ETF_GP_BAKT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ac\Etfskep\Form\Frm_ETF_GP_BAKT_L.Designer.cs">
+      <DependentUpon>Frm_ETF_GP_BAKT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func\FrmLC_SelectDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func\FrmLC_SelectDate.Designer.cs">
+      <DependentUpon>FrmLC_SelectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_L.designer.cs">
+      <DependentUpon>Frm_SEC_MKT_FQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_FQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_L.Designer.cs">
+      <DependentUpon>Frm_SEC_LL_GTSEC_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_S.Designer.cs">
+      <DependentUpon>Frm_SEC_LL_GTSEC_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_L.Designer.cs">
+      <DependentUpon>Frm_SEC_LL_GT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_S.Designer.cs">
+      <DependentUpon>Frm_SEC_LL_GT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_INDEX_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_INDEX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_YXG_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_YXG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_FX_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_FX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_LT_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_LT_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_L.designer.cs">
+      <DependentUpon>Frm_SEC_EQU_PD_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_S.designer.cs">
+      <DependentUpon>Frm_SEC_EQU_PD_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_PX_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_PX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_SP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_SP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_L.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_YFX_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_S.Designer.cs">
+      <DependentUpon>Frm_SEC_EQU_YFX_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_L.Designer.cs">
+      <DependentUpon>Frm_SEC_TRANSFER_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_S.Designer.cs">
+      <DependentUpon>Frm_SEC_TRANSFER_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SUSPEND_PARA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_SUSPEND_PARA.Designer.cs">
+      <DependentUpon>Frm_SUSPEND_PARA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_TRANSFER_PARA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecEq\Form\Frm_TRANSFER_PARA.Designer.cs">
+      <DependentUpon>Frm_TRANSFER_PARA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_CW_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_CW_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_HL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_HL_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_LL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_LL_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_ZQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MKT_ZQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlateSet\plateSub\Form\Frm_PLATE_IV_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlateSet\plateSub\Form\Frm_PLATE_IV_S.Designer.cs">
+      <DependentUpon>Frm_PLATE_IV_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlateSet\plateSub\Form\Frm_PLATE_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlateSet\plateSub\Form\Frm_PLATE_L.Designer.cs">
+      <DependentUpon>Frm_PLATE_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlateSet\plate\Form\Frm_PLATE_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlateSet\plate\Form\Frm_PLATE_S.Designer.cs">
+      <DependentUpon>Frm_PLATE_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ac\Etfskep\Form\Frm_ETF_GP_BAKT_L.resx">
+      <DependentUpon>Frm_ETF_GP_BAKT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_L.resx">
+      <DependentUpon>Frm_SEC_MKT_FQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\FwMkt\Form\Frm_SEC_MKT_FQ_S.resx">
+      <DependentUpon>Frm_SEC_MKT_FQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_L.resx">
+      <DependentUpon>Frm_SEC_LL_GTSEC_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Hggthqsec\Form\Frm_SEC_LL_GTSEC_S.resx">
+      <DependentUpon>Frm_SEC_LL_GTSEC_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_L.resx">
+      <DependentUpon>Frm_SEC_LL_GT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Hggthq\Form\Frm_SEC_LL_GT_S.resx">
+      <DependentUpon>Frm_SEC_LL_GT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_L.resx">
+      <DependentUpon>Frm_SEC_MKT_INDEX_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\Indexmp\Form\Frm_SEC_MKT_INDEX_S.resx">
+      <DependentUpon>Frm_SEC_MKT_INDEX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_L.resx">
+      <DependentUpon>Frm_SEC_EQU_YXG_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\PreStock\Form\Frm_SEC_EQU_YXG_S.resx">
+      <DependentUpon>Frm_SEC_EQU_YXG_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_L.resx">
+      <DependentUpon>Frm_SEC_EQU_FX_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_FX_S.resx">
+      <DependentUpon>Frm_SEC_EQU_FX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_L.resx">
+      <DependentUpon>Frm_SEC_EQU_LT_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_LT_S.resx">
+      <DependentUpon>Frm_SEC_EQU_LT_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_L.resx">
+      <DependentUpon>Frm_SEC_EQU_PD_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_PD_S.resx">
+      <DependentUpon>Frm_SEC_EQU_PD_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_L.resx">
+      <DependentUpon>Frm_SEC_EQU_PX_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_PX_S.resx">
+      <DependentUpon>Frm_SEC_EQU_PX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_L.resx">
+      <DependentUpon>Frm_SEC_EQU_SP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_SP_S.resx">
+      <DependentUpon>Frm_SEC_EQU_SP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_L.resx">
+      <DependentUpon>Frm_SEC_EQU_YFX_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_EQU_YFX_S.resx">
+      <DependentUpon>Frm_SEC_EQU_YFX_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_L.resx">
+      <DependentUpon>Frm_SEC_TRANSFER_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SEC_TRANSFER_S.resx">
+      <DependentUpon>Frm_SEC_TRANSFER_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecEq\Form\Frm_SUSPEND_PARA.resx">
+      <DependentUpon>Frm_SUSPEND_PARA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_L.resx">
+      <DependentUpon>Frm_SEC_MKT_CW_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_CW_S.resx">
+      <DependentUpon>Frm_SEC_MKT_CW_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_L.resx">
+      <DependentUpon>Frm_SEC_MKT_HL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_HL_S.resx">
+      <DependentUpon>Frm_SEC_MKT_HL_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_L.resx">
+      <DependentUpon>Frm_SEC_MKT_LL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_LL_S.resx">
+      <DependentUpon>Frm_SEC_MKT_LL_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_L.resx">
+      <DependentUpon>Frm_SEC_MKT_ZQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp\SecMktMap\Form\Frm_SEC_MKT_ZQ_S.resx">
+      <DependentUpon>Frm_SEC_MKT_ZQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateSet\plateSub\Form\Frm_PLATE_IV_S.resx">
+      <DependentUpon>Frm_PLATE_IV_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateSet\plateSub\Form\Frm_PLATE_L.resx">
+      <DependentUpon>Frm_PLATE_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateSet\plate\Form\Frm_PLATE_S.resx">
+      <DependentUpon>Frm_PLATE_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_FI_PAY_L.resx">
+      <DependentUpon>Frm_FI_PAY_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_FI_PAY_S.resx">
+      <DependentUpon>Frm_FI_PAY_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_INDEX_INFO_L.resx">
+      <DependentUpon>Frm_INDEX_INFO_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_INDEX_INFO_S.resx">
+      <DependentUpon>Frm_INDEX_INFO_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_INDEX_STOCK_L.resx">
+      <DependentUpon>Frm_INDEX_STOCK_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_INDEX_STOCK_S.resx">
+      <DependentUpon>Frm_INDEX_STOCK_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_CJ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_CJ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_CJ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_CJ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_CK_L.resx">
+      <DependentUpon>Frm_SEC_BASE_CK_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_CK_S.resx">
+      <DependentUpon>Frm_SEC_BASE_CK_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_GP_L.resx">
+      <DependentUpon>Frm_SEC_BASE_GP_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Frm_SEC_BASE_GP_L1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_GP_S.resx">
+      <DependentUpon>Frm_SEC_BASE_GP_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_HG_L.resx">
+      <DependentUpon>Frm_SEC_BASE_HG_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_HG_S.resx">
+      <DependentUpon>Frm_SEC_BASE_HG_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_JF_L.resx">
+      <DependentUpon>Frm_SEC_BASE_JF_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_JF_S.resx">
+      <DependentUpon>Frm_SEC_BASE_JF_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LC_L.resx">
+      <DependentUpon>Frm_SEC_BASE_LC_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LC_S.resx">
+      <DependentUpon>Frm_SEC_BASE_LC_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LLHH_L.resx">
+      <DependentUpon>Frm_SEC_BASE_LLHH_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LLHH_S.resx">
+      <DependentUpon>Frm_SEC_BASE_LLHH_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LL_L.resx">
+      <DependentUpon>Frm_SEC_BASE_LL_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_LL_S.resx">
+      <DependentUpon>Frm_SEC_BASE_LL_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_PJ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_PJ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_PJ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_PJ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QHBZJ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QHBZJ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QHZH_L.resx">
+      <DependentUpon>Frm_SEC_BASE_QHZH_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QHZH_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QHZH_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QH_L.resx">
+      <DependentUpon>Frm_SEC_BASE_QH_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QH_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QH_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QQBZJ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QQBZJ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QQ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_QQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QQ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QZ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_QZ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_QZ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_QZ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_WH_L.resx">
+      <DependentUpon>Frm_SEC_BASE_WH_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_WH_S.resx">
+      <DependentUpon>Frm_SEC_BASE_WH_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_XH_L.resx">
+      <DependentUpon>Frm_SEC_BASE_XH_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_XH_S.resx">
+      <DependentUpon>Frm_SEC_BASE_XH_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_YQ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_YQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_YQ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_YQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZHZQ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_ZHZQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZHZQ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_ZHZQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZQHS_L.resx">
+      <DependentUpon>Frm_SEC_BASE_ZQHS_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZQHS_S.resx">
+      <DependentUpon>Frm_SEC_BASE_ZQHS_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZQ_L.resx">
+      <DependentUpon>Frm_SEC_BASE_ZQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_BASE_ZQ_S.resx">
+      <DependentUpon>Frm_SEC_BASE_ZQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_MRLX_ZQ_L.resx">
+      <DependentUpon>Frm_SEC_MRLX_ZQ_L.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sv\Form\Frm_SEC_MRLX_ZQ_S.resx">
+      <DependentUpon>Frm_SEC_MRLX_ZQ_S.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\YssTechnology.snk" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pub\Form\Frm_PubClr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\Form\Frm_PubClr.Designer.cs">
+      <DependentUpon>Frm_PubClr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\BusinessSystemMenuConfigResource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_FI_PAY_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_FI_PAY_L.designer.cs">
+      <DependentUpon>Frm_FI_PAY_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_FI_PAY_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_FI_PAY_S.designer.cs">
+      <DependentUpon>Frm_FI_PAY_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_INFO_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_INFO_L.Designer.cs">
+      <DependentUpon>Frm_INDEX_INFO_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_INFO_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_INFO_S.Designer.cs">
+      <DependentUpon>Frm_INDEX_INFO_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_STOCK_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_STOCK_L.Designer.cs">
+      <DependentUpon>Frm_INDEX_STOCK_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_STOCK_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_INDEX_STOCK_S.Designer.cs">
+      <DependentUpon>Frm_INDEX_STOCK_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CJ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CJ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_CJ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CJ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CJ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_CJ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CK_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CK_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_CK_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CK_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_CK_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_CK_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_GP_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_GP_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_GP_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_GP_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_GP_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_GP_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_HG_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_HG_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_HG_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_HG_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_HG_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_HG_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_JF_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_JF_L.designer.cs">
+      <DependentUpon>Frm_SEC_BASE_JF_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_JF_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_JF_S.designer.cs">
+      <DependentUpon>Frm_SEC_BASE_JF_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LC_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LC_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LC_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LC_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LC_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LC_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LLHH_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LLHH_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LLHH_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LLHH_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LLHH_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LLHH_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LL_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LL_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LL_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_LL_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_LL_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_PJ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_PJ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_PJ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_PJ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_PJ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_PJ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHBZJ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHBZJ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QHBZJ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHZH_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHZH_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QHZH_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHZH_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QHZH_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QHZH_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QH_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QH_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QH_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QH_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QH_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QH_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQBZJ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQBZJ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QQBZJ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QZ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QZ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QZ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QZ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_QZ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_QZ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_WH_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_WH_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_WH_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_WH_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_WH_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_WH_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_XH_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_XH_L.designer.cs">
+      <DependentUpon>Frm_SEC_BASE_XH_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_XH_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_XH_S.designer.cs">
+      <DependentUpon>Frm_SEC_BASE_XH_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_YQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_YQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_YQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_YQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_YQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_YQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZHZQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZHZQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZHZQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZHZQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZHZQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZHZQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQHS_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQHS_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZQHS_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQHS_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQHS_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZQHS_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_BASE_ZQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_BASE_ZQ_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_MRLX_ZQ_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_MRLX_ZQ_L.Designer.cs">
+      <DependentUpon>Frm_SEC_MRLX_ZQ_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_MRLX_ZQ_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sv\Form\Frm_SEC_MRLX_ZQ_S.Designer.cs">
+      <DependentUpon>Frm_SEC_MRLX_ZQ_S.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AMS_基础信息组件\client\source\YssInformation.Support\YssInformation.Support.csproj">
+      <Project>{CD9B870F-3D0E-4DFE-BBDF-25F477F7EA47}</Project>
+      <Name>YssInformation.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AMS_产品管理组件\client\source\YssProductInfo.Support\YssProductInfo.Support.csproj">
+      <Project>{FE263CF6-9B65-4AFD-B14F-06BBFBF42CBC}</Project>
+      <Name>YssProductInfo.Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Common.Service\FAST.Common.Service.csproj">
+      <Project>{8AAA58D1-DA22-440F-9C9D-9E35EBF2DDB8}</Project>
+      <Name>FAST.Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Core\FAST.Core.csproj">
+      <Project>{AE49305F-7131-453C-B8E9-88D53341D884}</Project>
+      <Name>FAST.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Platform\FAST.Platform.csproj">
+      <Project>{0A670D92-8B5A-43EF-B31D-7DF19DAE82C6}</Project>
+      <Name>FAST.Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FAST\client\source\FAST.Resource\FAST.Resource.csproj">
+      <Project>{6789BE83-9653-489D-8ACB-AA167EFF537D}</Project>
+      <Name>FAST.Resource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YssSecInformation.Support\YssSecInformation.Support.csproj">
+      <Project>{E5222A51-AD43-4220-BF80-41829E7C2D0D}</Project>
+      <Name>YssSecInformation.Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pub\Form\Frm_PubClr.resx">
+      <DependentUpon>Frm_PubClr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\systemConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

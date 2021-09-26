@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+    <!-- added by chenbo 公共信息处理 -->
+<!--     <class id="IDayfSysInitService" menuid="sv_sysInit" -->
+<!--     interface="com.yss.ams.sec.information.support.modules.pub.service.IDayfSysInitService" class="com.yss.ams.sec.information.modules.pub.service.impl.DayfSysInitService"/> -->
+<!--         <class id="IAssetStatsCtlInitService" menuid="sv_sysInit" -->
+<!--     interface="com.yss.ams.sec.information.support.modules.pub.service.IAssetStatsCtlInitService" class="com.yss.ams.sec.information.modules.pub.service.impl.AssetStatsCtlInitService"/> -->
+    
+    <!-- added by xzl 指数基本信息 -->
+	<class id="IIndexInfoService" menuId="sv_indexinfo"
+		interface="com.yss.ams.sec.information.support.modules.sv.indexinfo.service.IIndexInfoService" class="com.yss.ams.sec.information.modules.sv.indexinfo.service.impl.IndexInfoService" />
+	<!-- 指数基本信息数据服务 -->
+	<class id="IIndexInfoDataService" menuId="sv_indexinfo"
+		class="com.yss.ams.sec.information.modules.sv.indexinfo.service.impl.IndexInfoDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.indexinfo.service.IIndexInfoDataService" />
+	<!-- add by chenbo 指数成分券信息 -->	
+	<class id="IIndexStockService" menuId="sv_indexStock"
+		class="com.yss.ams.sec.information.modules.sv.indexstock.service.impl.IndexStockService"
+		interface="com.yss.ams.sec.information.support.modules.sv.indexstock.service.IIndexStockService" />
+		
+	<class id="ISecPxService" menuId="sv_dividend"
+		class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecPxService" interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecPxService" />	
+	<class id="ISecEquService" menuId="sv_secdist"
+		class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecEquService" interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecEquService" />	
+	<class id="ISecLtService" menuId="sv_securitycirculate"
+		class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecLtService" interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecLtService" />	
+	<class id="ISecFxService" menuId="sv_securityPublish"
+		class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecFxService" interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecFxService" />	
+	<!-- 证券预发行信息 Added By xzl -->
+	<class id="ISecPrePubService" menuId="sv_securityPrePublish"
+		interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecPrePubService" class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecPrePubService" />	
+	<!-- 证券代码转换选项 -->
+	<class id="ISecTransferParaService" menuId="sv_secTransfer_para"
+		class="com.yss.ams.sec.information.modules.mp.secTransferPara.service.impl.SecTransferParaService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.secTransferPara.service.ISecTransferParaService" />
+	<class id="ISecTransferService" menuId="sv_secTransfer"
+		class="com.yss.ams.sec.information.modules.mp.secTransfer.service.impl.SecTransferService" interface="com.yss.ams.sec.information.support.modules.mp.secTransfer.service.ISecTransferService" />	
+	<!-- 停牌信息功能选项 -->
+	<class id="ISuspendedCondService" menuId="sv_suspended_para"
+		class="com.yss.ams.sec.information.modules.sv.suspendedcond.service.impl.SuspendedCondService"
+		interface="com.yss.ams.sec.information.support.modules.sv.suspendedcond.service.ISuspendedCondService" />
+	<!-- 证券回售基本信息-->
+	<class id="ISecSoldBackService" menuId="sv_secSoldBack"
+		class="com.yss.ams.sec.information.modules.sv.secSoldBack.service.impl.SecSoldBackService" interface="com.yss.ams.sec.information.support.modules.sv.secSoldBack.service.ISecSoldBackService" />	
+	<!-- 证券配对信息  add by lyj-->
+	<class id="ISecEquPdService" menuId="sv_securitymatches"
+		class="com.yss.ams.sec.information.modules.mp.secequ.service.impl.SecEquPdService" interface="com.yss.ams.sec.information.support.modules.mp.secequ.service.ISecEquPdService" />
+
+	<class id="ISecBaseGPDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.dao.SecBaseGPDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseGPDataService" />
+	<class id="ISecBaseGpService" menuId="sv_stockinfo"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseGpService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseGpService" />
+	<class id="ISecBaseHGDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseHGDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseHGDataService" />
+	<class id="ISecBaseInfoDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseInfoDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseInfoDataService" />
+	<class id="ISecBaseJJDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseJJDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseJJDataService" />
+	<class id="ISecBaseLcService" menuId="sv_financial"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseLcService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseLcService" />
+	<class id="ISecBaseQHDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQHDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQHDataService" />
+	<class id="ISecBaseQZDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQZDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQZDataService" />
+	<class id="ISecBaseService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseService" />
+	<class id="ISecBaseZQDataService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseZQDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseZQDataService" />
+	<class id="ISecBaseZqService" menuId="sv_fixinterest"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseZqService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseZqService" />
+	<class id="ISecBaseQzService" menuId="sv_certificate"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQzService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQzService" />
+
+	<class id="ISecBaseHgService" menuId="sv_purchase"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseHgService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseHgService" />
+	<class id="ISecBaseCjService" menuId="sv_lending"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseCjService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseCjService" />
+	<class id="ISecBaseCkService" menuId="sv_depositInfo"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseCkService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseCkService" />
+	<class id="ISecBasePjService" menuId="sv_billinfo"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBasePjService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBasePjService" />	
+	<!-- 优先股计息信息 -->
+	<class id="IPreStockInterestService" menuId="sv_preStockInterest"
+		class="com.yss.ams.sec.information.modules.mp.preStockInterest.service.impl.PreStockInterestService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.preStockInterest.service.IPreStockInterestService" />
+	<!-- 债券每日利息 -->	
+	<class id="IFiIncomeService" menuId="sv_secmbylx"
+		class="com.yss.ams.sec.information.modules.sv.fiincome.service.impl.FiIncomeService"
+		interface="com.yss.ams.sec.information.support.modules.sv.fiincome.service.IFiIncomeService" />
+	<!-- 债券历史付息信息 -->	
+	<class id="IFiPayService" menuId="sv_bondpayinterest"
+		class="com.yss.ams.sec.information.modules.sv.fipay.service.impl.FiPayService" 
+		interface="com.yss.ams.sec.information.support.modules.sv.fipay.service.IFiPayService" />
+	<!-- 计费证券信息 -->	
+	<class id="ISecBaseJfService" menuId="sv_chargingSec"
+		class="com.yss.ams.sec.information.modules.sv.secbasejf.service.impl.SecBaseJfService"
+		interface="com.yss.ams.sec.information.support.modules.sv.secbasejf.service.ISecBaseJfService" />
+			<!-- 板块信息设置 开始 -->
+	<class id="IPlate_AService" menuId="sv_sectorChild_A"
+		class="com.yss.ams.sec.information.modules.plateset.plate.service.impl.Plate_AService"
+		interface="com.yss.ams.sec.information.support.modules.plateset.plate.service.IPlate_AService" />
+	<class id="IPlateDataService" menuId="sv_sectorChild_A"
+		class="com.yss.ams.sec.information.modules.plateset.plate.service.impl.PlateDataService"
+		interface="com.yss.ams.sec.information.support.modules.plateset.plate.service.IPlateDataService" />
+	<class id="IPlateSubService" menuId="sv_sectorChild"
+		class="com.yss.ams.sec.information.modules.plateset.platesub.service.impl.PlateSubService"
+		interface="com.yss.ams.sec.information.support.modules.plateset.platesub.service.IPlateSubService" />
+	<!-- 板块信息设置 结束 -->
+	
+	<!--证券行情资料-->
+	<class id="ISecMktService" menuId="sv_marketvalue"
+		class="com.yss.ams.sec.information.modules.mp.secmkt.service.impl.SecMktService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.secmkt.service.ISecMktService" />
+		
+	<!--场外净值行情-->
+	<class id="IOutMktService" menuId="sv_outmarketvalue"
+		class="com.yss.ams.sec.information.modules.mp.outmkt.service.impl.OutMktService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.outmkt.service.IOutMktService" />
+	
+ 	 <!--汇率行情资料-->	
+	<class id="IHlMktService" menuId="sv_exratepriceadmin"
+		class="com.yss.ams.sec.information.modules.mp.hlmkt.service.impl.HlMktService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.hlmkt.service.IHlMktService" />
+		
+ 	 <!--利率行情资料-->
+	<class id="ICkMktService" menuId="sv_depositinterest"
+		class="com.yss.ams.sec.information.modules.mp.ckmkt.service.impl.CkMktService" 
+		interface="com.yss.ams.sec.information.support.modules.mp.ckmkt.service.ICkMktService" />
+		
+	<!-- 远期外汇行情 -->
+	<class id="IFwMktValueService" menuId="sv_fwmktvalue"
+		class="com.yss.ams.sec.information.modules.mp.FwMktValue.service.impl.FwMktValueService"
+		interface="com.yss.ams.sec.information.support.modules.mp.FwMktValue.service.IFwMktValueService"/>
+	<!-- 指数行情资料 -->
+	<class id="IIndexMpService" menuId="sv_indexmp"
+		class="com.yss.ams.sec.information.modules.mp.indexmp.service.impl.IndexMpService"
+		interface="com.yss.ams.sec.information.support.modules.mp.indexmp.service.IIndexMpService"/>
+	<!-- ETF股票篮子 -->
+	<class id="IEtfSkepService" menuId="sv_etfgpbakt"
+		class="com.yss.ams.sec.information.modules.ac.etfskep.service.impl.EtfSkepService"
+		interface="com.yss.ams.sec.information.support.modules.ac.etfskep.service.IEtfSkepService"/>
+	<!-- 回购收益行情 -->
+	<class id="ICounterRateService" menuId="sv_counterrate"
+		class="com.yss.ams.sec.information.modules.mp.hggthq.service.impl.CounterRateService"
+		interface="com.yss.ams.sec.information.support.modules.mp.hggthq.service.ICounterRateService"/>
+	<!-- 证券回购收益行情 -->
+	<class id="ICounterRateSecService" menuId="sv_counterratesec"
+		class="com.yss.ams.sec.information.modules.mp.hggthq.service.impl.CounterRateSecService"
+		interface="com.yss.ams.sec.information.support.modules.mp.hggthq.service.ICounterRateSecService"/>
+	<!-- 现货品种信息 -->
+	<class id="ISecBaseXhService" menuId="sv_spot"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseXhService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseXhService" />
+	<!-- 期货品种信息 -->
+	<class id="ISecBaseQhService" menuId="sv_future"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQhService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQhService" />
+	<class id="ISecBaseQhbzjService" menuId="sv_qhbzj"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQhbzjService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQhbzjService" />
+	<!-- 国债期货债券转换因子 -->
+	<class id="IFutureFactorService" menuId="sv_future_cfactor"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.IFutureFactorService"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.FutureFactorService" />
+	<!-- 期权品种信息 -->
+	<class id="ISecBaseQqService" menuId="sv_option"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQqService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQqService" />
+	<class id="ISecBaseQhbzjService" menuId="sv_qqbzjtz"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseQhbzjService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseQhbzjService" />	
+	<!-- 远期品种信息 -->
+	<class id="ISecBaseYqService" menuId="sv_forward"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseYqService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseYqService" />
+	<!-- 利率互换品种 -->
+	<class id="ISecBaseLLHHService" menuId="sv_secswap"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseLLHHService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseLLHHService" />
+	<!-- 互换品种信息 -->
+	<class id="ISecBaseLlService" menuId="sv_interestRate"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseLlService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseLlService" />
+	<!-- 外汇交易品种 -->
+	<class id="ISecBaseWhService" menuId="sv_forextradecat"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseWhService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseWhService" />
+	<!-- 综合证券信息 -->
+	<class id="ISecBaseZhzqService" menuId="sv_sec"
+		class="com.yss.ams.sec.information.modules.sv.base.service.impl.SecBaseZhzqService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.service.ISecBaseZhzqService" />
+	<!-- 证券缓存查询服务 -->
+	<class id="ISecbaseCacheDataService" menuId="ISecbaseCacheDataService"
+		class="com.yss.ams.sec.information.modules.sv.base.cache.service.impl.SecbaseCacheDataService"
+		interface="com.yss.ams.sec.information.support.modules.sv.base.cache.service.ISecbaseCacheDataService" />
+	
+	
+</classes>

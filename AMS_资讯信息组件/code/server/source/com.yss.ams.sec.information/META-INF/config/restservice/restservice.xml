@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <services>
+      <service class="com.yss.ams.sec.information.modules.mp.ckmkt.controller.impl.CkMktControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.ckmkt.controller.ICkMktController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.FwMktValue.controller.impl.FwMktValueControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.FwMktValue.controller.IFwMktValueController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.hggthq.controller.impl.CounterRateControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.hggthq.controller.ICounterRateController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.hggthq.controller.impl.CounterRateSecControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.hggthq.controller.ICounterRateSecController"/>
+      
+      <service class="com.yss.ams.sec.information.modules.mp.hlmkt.controller.impl.HlMktControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.hlmkt.controller.IHlMktController" />
+      <service class="com.yss.ams.sec.information.modules.mp.indexmp.controller.impl.IndexMpControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.indexmp.controller.IIndexMpController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.outmkt.controller.impl.OutMktControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.outmkt.controller.IOutMktController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.preStockInterest.controller.impl.PreStockInterestControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.preStockInterest.controller.IPreStockInterestController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecEquControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecEquController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecEquPdControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecEquPdController" />
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecFxControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecFxController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecLtControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecLtController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecPrePubControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecPrePubController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secequ.controller.impl.SecPxControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secequ.controller.ISecPxController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secmkt.controller.SecMktControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secmkt.controller.ISecMktController"/>
+      
+      <service class="com.yss.ams.sec.information.modules.mp.secTransfer.controller.impl.SecTransferControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secTransfer.controller.ISecTransferController"/>
+      <service class="com.yss.ams.sec.information.modules.mp.secTransferPara.controller.impl.SecTransferParaControllerImpl" interface="com.yss.ams.sec.information.support.modules.mp.secTransferPara.controller.ISecTransferParaController"/>
+      <service class="com.yss.ams.sec.information.modules.plateset.plate.controller.impl.Plate_AControllerImpl" interface="com.yss.ams.sec.information.support.modules.plateset.plate.controller.IPlate_AController"/>
+      <service class="com.yss.ams.sec.information.modules.plateset.plate.controller.impl.PlateDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.plateset.plate.controller.IPlateDataController"/>
+      <service class="com.yss.ams.sec.information.modules.plateset.platesub.controller.impl.PlateSubControllerImpl" interface="com.yss.ams.sec.information.support.modules.plateset.platesub.controller.IPlateSubController"/>
+      
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.FutureFactorControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.IFutureFactorController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseCjControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseCjController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseCkControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseCkController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseGpControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseGpController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseGPDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseGPDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseHgControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseHgController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseHGDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseHGDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseInfoDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseInfoDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseJJDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseJJDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseLcControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseLcController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseLlControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseLlController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseLLHHControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseLLHHController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBasePjControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBasePjController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQhbzjControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQhbzjController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQhControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQhController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQHDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQHDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQqControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQqController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQzControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQzController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseQZDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseQZDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseWhControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseWhController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseXhControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseXhController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseYqControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseYqController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseZhzqControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseZhzqController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseZqControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseZqController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.base.controller.impl.SecBaseZQDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.controller.ISecBaseZQDataController"/>
+     
+      <service class="com.yss.ams.sec.information.modules.sv.fiincome.controller.impl.FiIncomeControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.fiincome.controller.IFiIncomeController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.fipay.controller.impl.FiPayControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.fipay.controller.IFiPayController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.indexinfo.controller.impl.IndexInfoControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.indexinfo.controller.IIndexInfoController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.indexinfo.controller.impl.IndexInfoDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.indexinfo.controller.IIndexInfoDataController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.indexstock.controller.impl.IndexStockControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.indexstock.controller.IIndexStockController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.secbasejf.controller.impl.SecBaseJfControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.secbasejf.controller.ISecBaseJfController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.secSoldBack.controller.impl.SecSoldBackControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.secSoldBack.controller.ISecSoldBackController"/>
+      <service class="com.yss.ams.sec.information.modules.sv.suspendedcond.controller.impl.SuspendedCondControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.suspendedcond.controller.ISuspendedCondController"/>
+     
+     <service class="com.yss.ams.sec.information.modules.sv.base.cache.controller.impl.SecbaseCacheDataControllerImpl" interface="com.yss.ams.sec.information.support.modules.sv.base.cache.controller.ISecbaseCacheDataController"/>
+      
+  </services>

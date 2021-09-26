@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+	<diskStore path="java.io.tmpdir" />
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+	
+	<cache name="com.yss.ams.sec.information.support.modules.sv.base.pojo.SecBase" maxElementsInMemory="500000" eternal="false"
+		maxElementsOnDisk="200000" overflowToDisk="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" secondLevel="true" memoryStoreEvictionPolicy="LFU">
+		<bootstrapCacheLoaderFactory
+			class="com.yss.framework.api.cache.EHCacheLoader" properties="cacheClass=com.yss.ams.sec.information.support.cache.SecBaseCache">
+		</bootstrapCacheLoaderFactory>
+	</cache>	
+</ehcache>  
+
+
